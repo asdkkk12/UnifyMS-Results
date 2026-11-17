@@ -1,0 +1,3541 @@
+{
+  "schemaVersion": "merm-view-v1",
+  "name": "loan",
+  "input": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/loan-guidance-loss05-isolated0-10seeds-20261110/report/visualizations/seed-149/loan.req",
+  "inputHash": "33a91c2c2df2b08db0223e4bca9cdc81aa6ec9211882d52e7ee0a271458301bb",
+  "metadata": {
+    "inputHash": "e666fbd5bb2b797d77a1bbdcc6731e1caf0dd99ed28dc3e29c5f79877ba563fa",
+    "runHash": "637ccc4d652479796f72348740423e470cc9615bc8c9cb2b095f6a18c06015bc",
+    "snapshotHash": "59957ffbaf2c4bc81ea8b909bae510d536dc3c0c40a975b49cf01b394649610b",
+    "taskKey": "1a28304f2834eec70fc55782115744bd29de6dc6eedd6242eb80c9175cc1be86",
+    "configId": "C5",
+    "seed": "149",
+    "exportVersion": "merm-export-v1"
+  },
+  "services": [
+    {
+      "id": "service-0",
+      "key": "0",
+      "name": "Microservice 0",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.0",
+      "entityContext": "/0/@DomainModel/@entitycontext.0"
+    },
+    {
+      "id": "service-1",
+      "key": "1",
+      "name": "Microservice 1",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.1",
+      "entityContext": "/0/@DomainModel/@entitycontext.1"
+    },
+    {
+      "id": "service-2",
+      "key": "2",
+      "name": "Microservice 2",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.2",
+      "entityContext": "/0/@DomainModel/@entitycontext.2"
+    },
+    {
+      "id": "service-3",
+      "key": "3",
+      "name": "Microservice 3",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.3",
+      "entityContext": "/0/@DomainModel/@entitycontext.3"
+    },
+    {
+      "id": "service-4",
+      "key": "4",
+      "name": "Microservice 4",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.4",
+      "entityContext": "/0/@DomainModel/@entitycontext.4"
+    },
+    {
+      "id": "service-5",
+      "key": "5",
+      "name": "Microservice 5",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.5",
+      "entityContext": "/0/@DomainModel/@entitycontext.5"
+    },
+    {
+      "id": "service-6",
+      "key": "6",
+      "name": "Microservice 6",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.6",
+      "entityContext": "/0/@DomainModel/@entitycontext.6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "uc",
+      "name": "evaluateLoanRequest",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "evaluateLoanRequest"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "uc",
+      "name": "manageLoanTerm",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "manageLoanTerm"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "uc",
+      "name": "enterValidatedCreditReferences",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "enterValidatedCreditReferences"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "uc",
+      "name": "generateLoanLetterAndAgreement",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "generateLoanLetterAndAgreement"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.3/@uc.1",
+      "kind": "uc",
+      "name": "bookNewLoan",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.3/@uc.1",
+        "attributes": {
+          "name": "bookNewLoan"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "uc",
+      "name": "loanPayment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "loanPayment"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+      "kind": "uc",
+      "name": "closeOutLoan",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+        "attributes": {
+          "name": "closeOutLoan"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+      "kind": "uc",
+      "name": "generateStandardPaymentNotice",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "generateStandardPaymentNotice"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+      "kind": "uc",
+      "name": "generateLateNotice",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+        "attributes": {
+          "name": "generateLateNotice"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+      "kind": "uc",
+      "name": "submitLoanRequest",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+        "attributes": {
+          "name": "submitLoanRequest"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0",
+      "kind": "actor",
+      "name": "Applicant",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.0",
+        "attributes": {
+          "name": "Applicant",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1",
+      "kind": "actor",
+      "name": "LoanAssistant",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.1",
+        "attributes": {
+          "name": "LoanAssistant",
+          "uc": "/0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2",
+      "kind": "actor",
+      "name": "LoanClerk",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.2",
+        "attributes": {
+          "name": "LoanClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3",
+      "kind": "actor",
+      "name": "LoanOfficer",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.3",
+        "attributes": {
+          "name": "LoanOfficer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4",
+      "kind": "actor",
+      "name": "Scheduler",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.4",
+        "attributes": {
+          "name": "Scheduler",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.1 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "addLoanTerm()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "approveLoanRequest()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "checkCreditHistory()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "chooseOneForReview()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "listAvaiableLoanTerm()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "listTenLoanRequest()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.5"
+        },
+        {
+          "name": "reviewCheckingAccount()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.6"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findApprovalLetterbyID()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.1/@operation.0"
+        },
+        {
+          "name": "findLoanAgreementbyID()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.1/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "entity",
+      "name": "ApprovalLetter",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "ApprovalLetter"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Content",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.1",
+      "kind": "entity",
+      "name": "LoanAgreement",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.1",
+        "attributes": {
+          "name": "LoanAgreement"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Content",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "createLoanTerm()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "deleteLoanTerm()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "modifyLoanTerm()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "queryLoanTerm()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findLoanRequestbyID()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "kind": "entity",
+      "name": "LoanRequest",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@entity.0",
+        "attributes": {
+          "name": "LoanRequest"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Status",
+          "type": "LoanRequesttatus[SUBMITTED|REFERENCESVALIDATED|APPROVED|READYFORREVIEW|INCOMPLETEINFORMATION]"
+        },
+        {
+          "name": "RequestID",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        },
+        {
+          "name": "LoanAmount",
+          "type": "Real"
+        },
+        {
+          "name": "LoanPurpose",
+          "type": "String"
+        },
+        {
+          "name": "Income",
+          "type": "Real"
+        },
+        {
+          "name": "PhoneNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "PostalAddress",
+          "type": "String"
+        },
+        {
+          "name": "ZipCode",
+          "type": "Integer"
+        },
+        {
+          "name": "Email",
+          "type": "String"
+        },
+        {
+          "name": "WorkReferences",
+          "type": "String"
+        },
+        {
+          "name": "CreditReferences",
+          "type": "String"
+        },
+        {
+          "name": "CheckingAccountNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "SecurityNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "CreditScore",
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "chooseLoanRequest()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "listSubmitedLoanRequest()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "markRequestValid()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findLoanTermbyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "entity",
+      "name": "LoanTerm",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "LoanTerm"
+        }
+      },
+      "attributes": [
+        {
+          "name": "ItemID",
+          "type": "Integer"
+        },
+        {
+          "name": "Content",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "bookNewLoan()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "emailToAppliant()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "generateLoanAgreement()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "genereateApprovalLetter()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "listApprovalRequest()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "printLoanAgreement()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.5"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findLoanAccountbyID()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@entity.0",
+      "kind": "entity",
+      "name": "LoanAccount",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@entity.0",
+        "attributes": {
+          "name": "LoanAccount"
+        }
+      },
+      "attributes": [
+        {
+          "name": "LoanAccountID",
+          "type": "Integer"
+        },
+        {
+          "name": "Balance",
+          "type": "Real"
+        },
+        {
+          "name": "Status",
+          "type": "LoanAccountStatus[NORMAL|HASPAIDINFULL]"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "closeOutLoan()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "loanPayment()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findCreditHistorybyID()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "entity",
+      "name": "CreditHistory",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "CreditHistory"
+        }
+      },
+      "attributes": [
+        {
+          "name": "OutstandingDebt",
+          "type": "Real"
+        },
+        {
+          "name": "BadDebits",
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "generateLateNotice()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "generateStandardPaymentNotice()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findCheckingAccountbyID()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@entity.0",
+      "kind": "entity",
+      "name": "CheckingAccount",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@entity.0",
+        "attributes": {
+          "name": "CheckingAccount"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Balance",
+          "type": "Real"
+        },
+        {
+          "name": "Status",
+          "type": "CheckingAccountStatus[GOODSTANDING|SUSPENDED]"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "accountStatusRequest()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "calculateScore()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "creditRequest()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "enterLoanInformation()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findLoanbyID()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@entity.0",
+      "kind": "entity",
+      "name": "Loan",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@entity.0",
+        "attributes": {
+          "name": "Loan"
+        }
+      },
+      "attributes": [
+        {
+          "name": "LoanID",
+          "type": "Integer"
+        },
+        {
+          "name": "RemainAmountToPay",
+          "type": "Real"
+        },
+        {
+          "name": "Status",
+          "type": "LoanStatus[LSOPEN|CLOSED]"
+        },
+        {
+          "name": "IsPaidinFull",
+          "type": "Boolean"
+        },
+        {
+          "name": "StartDate",
+          "type": "Date"
+        },
+        {
+          "name": "EndDate",
+          "type": "Date"
+        },
+        {
+          "name": "CurrentOverDueDate",
+          "type": "Date"
+        },
+        {
+          "name": "RePaymentDays",
+          "type": "Integer"
+        },
+        {
+          "name": "RepaymentAmount",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.0",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofApprovalLetter",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofApprovalLetter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.19"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.1",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofLoanAgreement",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofLoanAgreement",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.15 /0/@DomainModel/@systeminterface.20"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.2",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofLoanRequest",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.8 /0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.17 /0/@DomainModel/@systeminterface.23"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.3",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofLoanTerm",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofLoanTerm",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.11"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.4",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofLoanAccount",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofLoanAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.26"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.5",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofCreditHistory",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofCreditHistory",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.25"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.6",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofCheckingAccount",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofCheckingAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.24"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.7",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofLoan",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.18 /0/@DomainModel/@systeminterface.21 /0/@DomainModel/@systeminterface.22"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.8",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanRequest",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.8",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanTerm",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.9",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanTerm",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoan",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.10",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanTerm",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.11",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanTerm",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCheckingAccount",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.12",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCheckingAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCreditHistory",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.13",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCreditHistory",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofApprovalLetter",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.14",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofApprovalLetter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanAgreement",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.15",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanAgreement",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanRequest",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.16",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanRequest",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.17",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoan",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.18",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofApprovalLetter",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.19",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofApprovalLetter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.20",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanAgreement",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.20",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanAgreement",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.21",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoan",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.21",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.22",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoan",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.22",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.23",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanRequest",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.23",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.24",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCheckingAccount",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.24",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCheckingAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.25",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCreditHistory",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.25",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCreditHistory",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.26",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofLoanAccount",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.26",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    }
+  ],
+  "edges": [
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:0",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+        "attributes": {
+          "name": "Applicant",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:1",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "LoanAssistant",
+          "uc": "/0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:2",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.3/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "LoanClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:3",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "LoanClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:4",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "LoanClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:5",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "LoanClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3:uc:6",
+      "source": "/0/@UseCaseModel/@actor.3",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.3",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "LoanOfficer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3:uc:7",
+      "source": "/0/@UseCaseModel/@actor.3",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.3",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "LoanOfficer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:8",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.1 /0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "Scheduler",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.1 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:9",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.1 /0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "Scheduler",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.1 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.0:entity:10",
+      "source": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.6/@entity.0",
+      "kind": "association",
+      "name": "ApprovalLoan",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.6/@entity.0",
+        "attributes": {
+          "name": "ApprovalLoan",
+          "entity": "/0/@DomainModel/@entitycontext.6/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.1:entity:11",
+      "source": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.5/@entity.0",
+      "kind": "association",
+      "name": "RequestedCAHistory",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.5/@entity.0",
+        "attributes": {
+          "name": "RequestedCAHistory",
+          "entity": "/0/@DomainModel/@entitycontext.5/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.2:entity:12",
+      "source": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "association",
+      "name": "RequestedCreditHistory",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.2",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "RequestedCreditHistory",
+          "entity": "/0/@DomainModel/@entitycontext.4/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.3:entity:13",
+      "source": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "association",
+      "name": "AttachedApprovalLetter",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.3",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "AttachedApprovalLetter",
+          "entity": "/0/@DomainModel/@entitycontext.0/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.4:entity:14",
+      "source": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.0/@entity.1",
+      "kind": "association",
+      "name": "AttachedLoanAgreement",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.4",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.0/@entity.1",
+        "attributes": {
+          "name": "AttachedLoanAgreement",
+          "entity": "/0/@DomainModel/@entitycontext.0/@entity.1",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.5:entity:15",
+      "source": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "association",
+      "name": "AttachedLoanTerms [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.5",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "AttachedLoanTerms",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.0",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@entity.0/@reference.0:entity:16",
+      "source": "/0/@DomainModel/@entitycontext.6/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "kind": "association",
+      "name": "ReferedLoanRequest",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.6/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.1/@entity.0",
+        "attributes": {
+          "name": "ReferedLoanRequest",
+          "entity": "/0/@DomainModel/@entitycontext.1/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@entity.0/@reference.1:entity:17",
+      "source": "/0/@DomainModel/@entitycontext.6/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.3/@entity.0",
+      "kind": "association",
+      "name": "BelongedLoanAccount",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.6/@entity.0/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.3/@entity.0",
+        "attributes": {
+          "name": "BelongedLoanAccount",
+          "entity": "/0/@DomainModel/@entitycontext.3/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.8:provideinterface:18",
+      "source": "/0/@DomainModel/@systeminterface.8",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanRequest",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.8",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9:provideinterface:19",
+      "source": "/0/@DomainModel/@systeminterface.9",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanTerm",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.9",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanTerm",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10:provideinterface:20",
+      "source": "/0/@DomainModel/@systeminterface.10",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoan",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.10",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11:provideinterface:21",
+      "source": "/0/@DomainModel/@systeminterface.11",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanTerm",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.11",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanTerm",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12:provideinterface:22",
+      "source": "/0/@DomainModel/@systeminterface.12",
+      "target": "/0/@DomainModel/@systeminterface.6",
+      "kind": "interface",
+      "name": "ReceiveEntityofCheckingAccount",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.12",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCheckingAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13:provideinterface:23",
+      "source": "/0/@DomainModel/@systeminterface.13",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofCreditHistory",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.13",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCreditHistory",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14:provideinterface:24",
+      "source": "/0/@DomainModel/@systeminterface.14",
+      "target": "/0/@DomainModel/@systeminterface.0",
+      "kind": "interface",
+      "name": "ReceiveEntityofApprovalLetter",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.14",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofApprovalLetter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15:provideinterface:25",
+      "source": "/0/@DomainModel/@systeminterface.15",
+      "target": "/0/@DomainModel/@systeminterface.1",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanAgreement",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.15",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanAgreement",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16:provideinterface:26",
+      "source": "/0/@DomainModel/@systeminterface.16",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanRequest",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.16",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17:provideinterface:27",
+      "source": "/0/@DomainModel/@systeminterface.17",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanRequest",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.17",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18:provideinterface:28",
+      "source": "/0/@DomainModel/@systeminterface.18",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoan",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.18",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19:provideinterface:29",
+      "source": "/0/@DomainModel/@systeminterface.19",
+      "target": "/0/@DomainModel/@systeminterface.0",
+      "kind": "interface",
+      "name": "ReceiveEntityofApprovalLetter",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.19",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofApprovalLetter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.20:provideinterface:30",
+      "source": "/0/@DomainModel/@systeminterface.20",
+      "target": "/0/@DomainModel/@systeminterface.1",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanAgreement",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.20",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanAgreement",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.21:provideinterface:31",
+      "source": "/0/@DomainModel/@systeminterface.21",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoan",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.21",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.22:provideinterface:32",
+      "source": "/0/@DomainModel/@systeminterface.22",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoan",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.22",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoan",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.23:provideinterface:33",
+      "source": "/0/@DomainModel/@systeminterface.23",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanRequest",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.23",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanRequest",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.24:provideinterface:34",
+      "source": "/0/@DomainModel/@systeminterface.24",
+      "target": "/0/@DomainModel/@systeminterface.6",
+      "kind": "interface",
+      "name": "ReceiveEntityofCheckingAccount",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.24",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCheckingAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.25:provideinterface:35",
+      "source": "/0/@DomainModel/@systeminterface.25",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofCreditHistory",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.25",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCreditHistory",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.26:provideinterface:36",
+      "source": "/0/@DomainModel/@systeminterface.26",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofLoanAccount",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.26",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofLoanAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "uc": 10,
+    "actor": 5,
+    "userinterface": 14,
+    "entity": 8,
+    "systeminterface": 27,
+    "services": 7,
+    "interfaceEdges": 19,
+    "serviceEdges": 17
+  },
+  "diagnostics": [],
+  "layout": {
+    "usecases": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@UseCaseModel/@usecasecontext.3/@uc.0": [
+          274,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.3/@uc.1": [
+          274,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.2": [
+          56,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.0": [
+          1064,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.1": [
+          1064,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.5/@uc.0": [
+          274,
+          648,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.5/@uc.1": [
+          274,
+          736,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.4": [
+          56,
+          651,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0": [
+          1064,
+          648,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.3": [
+          846,
+          651,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.0": [
+          1064,
+          978,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.0": [
+          274,
+          1044,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.1": [
+          56,
+          1047,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.0": [
+          1064,
+          1308,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.0": [
+          846,
+          1311,
+          145,
+          96
+        ]
+      },
+      "services": {
+        "service-3": [
+          234,
+          170,
+          460,
+          286
+        ],
+        "service-4": [
+          1024,
+          170,
+          460,
+          286
+        ],
+        "service-5": [
+          234,
+          566,
+          460,
+          286
+        ],
+        "service-0": [
+          1024,
+          566,
+          460,
+          220
+        ],
+        "service-1": [
+          1024,
+          896,
+          460,
+          220
+        ],
+        "service-2": [
+          234,
+          962,
+          460,
+          220
+        ],
+        "service-6": [
+          1024,
+          1226,
+          460,
+          220
+        ]
+      },
+      "instances": [
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-3",
+          "box": [
+            56,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-4",
+          "box": [
+            846,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-5",
+          "box": [
+            56,
+            651,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.3",
+          "service": "service-0",
+          "box": [
+            846,
+            651,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.3",
+          "service": "service-1",
+          "box": [
+            846,
+            981,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-2",
+          "box": [
+            56,
+            1047,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-6",
+          "box": [
+            846,
+            1311,
+            145,
+            96
+          ],
+          "proxy": true
+        }
+      ],
+      "edges": {
+        "/0/@UseCaseModel/@actor.0:uc:0": {
+          "points": [
+            [
+              950,
+              1346
+            ],
+            [
+              1064,
+              1339.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:1": {
+          "points": [
+            [
+              160,
+              1082
+            ],
+            [
+              274,
+              1075.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:2": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:3": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:4": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:5": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.3:uc:6": {
+          "points": [
+            [
+              950,
+              686
+            ],
+            [
+              1064,
+              679.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.3:uc:7": {
+          "points": [
+            [
+              950,
+              1016
+            ],
+            [
+              1064,
+              1009.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:8": {
+          "points": [
+            [
+              160,
+              686
+            ],
+            [
+              274,
+              767.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:9": {
+          "points": [
+            [
+              160,
+              686
+            ],
+            [
+              274,
+              679.0
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    },
+    "domain": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@DomainModel/@entitycontext.1/@entity.0": [
+          76,
+          286,
+          288,
+          382
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.0": [
+          76,
+          726,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.1": [
+          386,
+          726,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.2": [
+          76,
+          860,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.10": [
+          386,
+          860,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.11": [
+          76,
+          934,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.12": [
+          386,
+          934,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.13": [
+          76,
+          1008,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.14": [
+          386,
+          1008,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.15": [
+          76,
+          1082,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.0": [
+          866,
+          286,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.1": [
+          1176,
+          286,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.0": [
+          866,
+          420,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.1": [
+          1176,
+          420,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.0": [
+          866,
+          554,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.1": [
+          1176,
+          554,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.8": [
+          866,
+          628,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.9": [
+          1176,
+          628,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.3/@entity.0": [
+          866,
+          953,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.0": [
+          866,
+          1141,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.1": [
+          1176,
+          1141,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.4": [
+          866,
+          1275,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.17": [
+          1176,
+          1275,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.18": [
+          866,
+          1349,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.19": [
+          1176,
+          1349,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.20": [
+          866,
+          1423,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.6/@entity.0": [
+          76,
+          1407,
+          288,
+          238
+        ],
+        "/0/@DomainModel/@entitycontext.6/@userinterface.0": [
+          76,
+          1703,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.6/@userinterface.1": [
+          386,
+          1703,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.7": [
+          76,
+          1837,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.23": [
+          386,
+          1837,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.24": [
+          76,
+          1911,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.25": [
+          386,
+          1911,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.26": [
+          76,
+          1985,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.0": [
+          866,
+          1748,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.0": [
+          866,
+          1900,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.1": [
+          1176,
+          1900,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.3": [
+          866,
+          2034,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.16": [
+          1176,
+          2034,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.4/@entity.0": [
+          76,
+          2310,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.0": [
+          76,
+          2462,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.1": [
+          386,
+          2462,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.5": [
+          76,
+          2596,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.21": [
+          386,
+          2596,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.5/@entity.0": [
+          866,
+          2359,
+          288,
+          112
+        ],
+        "/0/@DomainModel/@entitycontext.5/@userinterface.0": [
+          866,
+          2529,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.5/@userinterface.1": [
+          1176,
+          2529,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.6": [
+          866,
+          2663,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.22": [
+          1176,
+          2663,
+          288,
+          54
+        ]
+      },
+      "services": {
+        "service-1": [
+          52,
+          170,
+          660,
+          1011
+        ],
+        "service-0": [
+          842,
+          170,
+          660,
+          557
+        ],
+        "service-3": [
+          842,
+          837,
+          660,
+          685
+        ],
+        "service-6": [
+          52,
+          1291,
+          660,
+          793
+        ],
+        "service-2": [
+          842,
+          1632,
+          660,
+          501
+        ],
+        "service-4": [
+          52,
+          2194,
+          660,
+          501
+        ],
+        "service-5": [
+          842,
+          2243,
+          660,
+          519
+        ]
+      },
+      "instances": [],
+      "edges": {
+        "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.0:entity:10": {
+          "points": [
+            [
+              220.0,
+              668
+            ],
+            [
+              220.0,
+              686
+            ],
+            [
+              58,
+              686
+            ],
+            [
+              58,
+              1181
+            ],
+            [
+              197.2,
+              1181
+            ],
+            [
+              197.2,
+              1199
+            ],
+            [
+              197.2,
+              1273
+            ],
+            [
+              197.2,
+              1291
+            ],
+            [
+              220.0,
+              1291
+            ],
+            [
+              220.0,
+              1389
+            ],
+            [
+              220.0,
+              1407
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.1:entity:11": {
+          "points": [
+            [
+              220.0,
+              668
+            ],
+            [
+              220.0,
+              686
+            ],
+            [
+              368,
+              686
+            ],
+            [
+              368,
+              1181
+            ],
+            [
+              309.40000000000003,
+              1181
+            ],
+            [
+              309.40000000000003,
+              1199
+            ],
+            [
+              824,
+              1199
+            ],
+            [
+              824,
+              2225
+            ],
+            [
+              1099.4,
+              2225
+            ],
+            [
+              1099.4,
+              2243
+            ],
+            [
+              1010.0,
+              2243
+            ],
+            [
+              1010.0,
+              2341
+            ],
+            [
+              1010.0,
+              2359
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.2:entity:12": {
+          "points": [
+            [
+              220.0,
+              668
+            ],
+            [
+              220.0,
+              686
+            ],
+            [
+              382,
+              686
+            ],
+            [
+              382,
+              1181
+            ],
+            [
+              421.6,
+              1181
+            ],
+            [
+              421.6,
+              1199
+            ],
+            [
+              730,
+              1199
+            ],
+            [
+              730,
+              2176
+            ],
+            [
+              421.6,
+              2176
+            ],
+            [
+              421.6,
+              2194
+            ],
+            [
+              220.0,
+              2194
+            ],
+            [
+              220.0,
+              2292
+            ],
+            [
+              220.0,
+              2310
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.3:entity:13": {
+          "points": [
+            [
+              364,
+              477.0
+            ],
+            [
+              382,
+              477.0
+            ],
+            [
+              712,
+              477.0
+            ],
+            [
+              712,
+              908.03
+            ],
+            [
+              804.0,
+              908.03
+            ],
+            [
+              804.0,
+              576.61
+            ],
+            [
+              842,
+              576.61
+            ],
+            [
+              848,
+              576.61
+            ],
+            [
+              848,
+              324.0
+            ],
+            [
+              866,
+              324.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.4:entity:14": {
+          "points": [
+            [
+              364,
+              477.0
+            ],
+            [
+              382,
+              477.0
+            ],
+            [
+              382,
+              392.41999999999996
+            ],
+            [
+              712,
+              392.41999999999996
+            ],
+            [
+              750.0,
+              392.41999999999996
+            ],
+            [
+              750.0,
+              292.54
+            ],
+            [
+              842,
+              292.54
+            ],
+            [
+              842,
+              268
+            ],
+            [
+              1158,
+              268
+            ],
+            [
+              1158,
+              324.0
+            ],
+            [
+              1176,
+              324.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.1/@entity.0/@reference.5:entity:15": {
+          "points": [
+            [
+              220.0,
+              668
+            ],
+            [
+              220.0,
+              686
+            ],
+            [
+              220.0,
+              708
+            ],
+            [
+              368,
+              708
+            ],
+            [
+              368,
+              1154
+            ],
+            [
+              309.40000000000003,
+              1154
+            ],
+            [
+              309.40000000000003,
+              1181
+            ],
+            [
+              309.40000000000003,
+              1199
+            ],
+            [
+              309.40000000000003,
+              1273
+            ],
+            [
+              824,
+              1273
+            ],
+            [
+              824,
+              1540
+            ],
+            [
+              1099.4,
+              1540
+            ],
+            [
+              1099.4,
+              1614
+            ],
+            [
+              1099.4,
+              1632
+            ],
+            [
+              1010.0,
+              1632
+            ],
+            [
+              1010.0,
+              1730
+            ],
+            [
+              1010.0,
+              1748
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.6/@entity.0/@reference.0:entity:16": {
+          "points": [
+            [
+              220.0,
+              1407
+            ],
+            [
+              220.0,
+              1389
+            ],
+            [
+              421.6,
+              1389
+            ],
+            [
+              421.6,
+              1291
+            ],
+            [
+              421.6,
+              1273
+            ],
+            [
+              421.6,
+              1199
+            ],
+            [
+              421.6,
+              1181
+            ],
+            [
+              421.6,
+              1064
+            ],
+            [
+              382,
+              1064
+            ],
+            [
+              382,
+              708
+            ],
+            [
+              220.0,
+              708
+            ],
+            [
+              220.0,
+              686
+            ],
+            [
+              220.0,
+              668
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.6/@entity.0/@reference.1:entity:17": {
+          "points": [
+            [
+              364,
+              1526.0
+            ],
+            [
+              382,
+              1526.0
+            ],
+            [
+              712,
+              1526.0
+            ],
+            [
+              712,
+              1869.8899999999999
+            ],
+            [
+              804.0,
+              1869.8899999999999
+            ],
+            [
+              804.0,
+              1337.05
+            ],
+            [
+              842,
+              1337.05
+            ],
+            [
+              848,
+              1337.05
+            ],
+            [
+              848,
+              1018.0
+            ],
+            [
+              866,
+              1018.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.8:provideinterface:18": {
+          "points": [
+            [
+              842,
+              292.54
+            ],
+            [
+              750.0,
+              292.54
+            ],
+            [
+              750.0,
+              392.41999999999996
+            ],
+            [
+              712,
+              392.41999999999996
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.9:provideinterface:19": {
+          "points": [
+            [
+              1099.4,
+              727
+            ],
+            [
+              1099.4,
+              745
+            ],
+            [
+              824,
+              745
+            ],
+            [
+              824,
+              1614
+            ],
+            [
+              1099.4,
+              1614
+            ],
+            [
+              1099.4,
+              1632
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.10:provideinterface:20": {
+          "points": [
+            [
+              421.6,
+              1181
+            ],
+            [
+              421.6,
+              1199
+            ],
+            [
+              421.6,
+              1273
+            ],
+            [
+              421.6,
+              1291
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.11:provideinterface:21": {
+          "points": [
+            [
+              533.8,
+              1181
+            ],
+            [
+              533.8,
+              1199
+            ],
+            [
+              533.8,
+              1273
+            ],
+            [
+              730,
+              1273
+            ],
+            [
+              730,
+              1540
+            ],
+            [
+              1323.8,
+              1540
+            ],
+            [
+              1323.8,
+              1614
+            ],
+            [
+              1323.8,
+              1632
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.12:provideinterface:22": {
+          "points": [
+            [
+              197.2,
+              1181
+            ],
+            [
+              197.2,
+              1199
+            ],
+            [
+              730,
+              1199
+            ],
+            [
+              730,
+              2151
+            ],
+            [
+              987.2,
+              2151
+            ],
+            [
+              987.2,
+              2225
+            ],
+            [
+              987.2,
+              2243
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.13:provideinterface:23": {
+          "points": [
+            [
+              309.40000000000003,
+              1181
+            ],
+            [
+              309.40000000000003,
+              1199
+            ],
+            [
+              34,
+              1199
+            ],
+            [
+              34,
+              2176
+            ],
+            [
+              309.40000000000003,
+              2176
+            ],
+            [
+              309.40000000000003,
+              2194
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.14:provideinterface:24": {
+          "points": [
+            [
+              712,
+              736.1600000000001
+            ],
+            [
+              786.0,
+              736.1600000000001
+            ],
+            [
+              786.0,
+              481.92
+            ],
+            [
+              842,
+              481.92
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.15:provideinterface:25": {
+          "points": [
+            [
+              712,
+              908.03
+            ],
+            [
+              804.0,
+              908.03
+            ],
+            [
+              804.0,
+              576.61
+            ],
+            [
+              842,
+              576.61
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.16:provideinterface:26": {
+          "points": [
+            [
+              1323.8,
+              1632
+            ],
+            [
+              1323.8,
+              1614
+            ],
+            [
+              730,
+              1614
+            ],
+            [
+              730,
+              1199
+            ],
+            [
+              533.8,
+              1199
+            ],
+            [
+              533.8,
+              1181
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.17:provideinterface:27": {
+          "points": [
+            [
+              842,
+              987.7
+            ],
+            [
+              750.0,
+              987.7
+            ],
+            [
+              750.0,
+              392.41999999999996
+            ],
+            [
+              712,
+              392.41999999999996
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.18:provideinterface:28": {
+          "points": [
+            [
+              842,
+              1104.15
+            ],
+            [
+              768.0,
+              1104.15
+            ],
+            [
+              768.0,
+              1600.27
+            ],
+            [
+              712,
+              1600.27
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.19:provideinterface:29": {
+          "points": [
+            [
+              1211.6,
+              837
+            ],
+            [
+              1211.6,
+              819
+            ],
+            [
+              1211.6,
+              745
+            ],
+            [
+              1211.6,
+              727
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.20:provideinterface:30": {
+          "points": [
+            [
+              1323.8,
+              837
+            ],
+            [
+              1323.8,
+              819
+            ],
+            [
+              1323.8,
+              745
+            ],
+            [
+              1323.8,
+              727
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.21:provideinterface:31": {
+          "points": [
+            [
+              533.8,
+              2194
+            ],
+            [
+              533.8,
+              2176
+            ],
+            [
+              533.8,
+              2102
+            ],
+            [
+              533.8,
+              2084
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.22:provideinterface:32": {
+          "points": [
+            [
+              842,
+              2357.18
+            ],
+            [
+              750.0,
+              2357.18
+            ],
+            [
+              750.0,
+              1465.46
+            ],
+            [
+              712,
+              1465.46
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.23:provideinterface:33": {
+          "points": [
+            [
+              309.40000000000003,
+              1291
+            ],
+            [
+              309.40000000000003,
+              1273
+            ],
+            [
+              309.40000000000003,
+              1199
+            ],
+            [
+              309.40000000000003,
+              1181
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.24:provideinterface:34": {
+          "points": [
+            [
+              712,
+              1735.08
+            ],
+            [
+              786.0,
+              1735.08
+            ],
+            [
+              786.0,
+              2533.64
+            ],
+            [
+              842,
+              2533.64
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.25:provideinterface:35": {
+          "points": [
+            [
+              533.8,
+              2084
+            ],
+            [
+              533.8,
+              2102
+            ],
+            [
+              533.8,
+              2176
+            ],
+            [
+              533.8,
+              2194
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.26:provideinterface:36": {
+          "points": [
+            [
+              712,
+              1465.46
+            ],
+            [
+              750.0,
+              1465.46
+            ],
+            [
+              750.0,
+              987.7
+            ],
+            [
+              842,
+              987.7
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    }
+  }
+}

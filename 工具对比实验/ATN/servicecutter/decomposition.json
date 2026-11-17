@@ -1,0 +1,140 @@
+{
+  "method": "ServiceCutter",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "ServiceCutter entity/nanoentity clusters are retained as the decomposition.",
+    "Use-case responsibilities are mapped to remodel services by operation name.",
+    "Operations not present in ServiceCutter use-case responsibility are assigned to the largest cluster."
+  ],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "servicecutter.domain.User",
+        "servicecutter.service.ManageBankCardCRUDService",
+        "servicecutter.service.ManageUserCRUDService",
+        "servicecutter.service.ThirdPartyServices",
+        "servicecutter.service.withdrawCash"
+      ],
+      "servicecutter_nanoentities": [
+        "User.address"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "User.bankcard"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "User.integer"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "User.name"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "User.ownedcard"
+      ]
+    },
+    {
+      "name": "Service F",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "User.string"
+      ]
+    },
+    {
+      "name": "Service G",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "User.userid"
+      ]
+    },
+    {
+      "name": "Service H",
+      "members": [
+        "servicecutter.domain.BankCard",
+        "servicecutter.service.AutomatedTellerMachineSystem"
+      ],
+      "servicecutter_nanoentities": [
+        "BankCard.balance"
+      ]
+    },
+    {
+      "name": "Service I",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.belongeduser"
+      ]
+    },
+    {
+      "name": "Service J",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.cardcatalog"
+      ]
+    },
+    {
+      "name": "Service K",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.cardid"
+      ]
+    },
+    {
+      "name": "Service L",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.cardstatus"
+      ]
+    },
+    {
+      "name": "Service M",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.catalog"
+      ]
+    },
+    {
+      "name": "Service N",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.integer"
+      ]
+    },
+    {
+      "name": "Service O",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.password"
+      ]
+    },
+    {
+      "name": "Service P",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.real"
+      ]
+    },
+    {
+      "name": "Service Q",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "BankCard.user"
+      ]
+    }
+  ]
+}

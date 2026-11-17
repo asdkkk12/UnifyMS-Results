@@ -1,0 +1,39 @@
+{
+  "name": "ATM",
+  "entities": [
+    {
+      "name": "BankCard",
+      "nanoentities": [
+        "balance",
+        "belongeduser",
+        "cardcatalog",
+        "cardid",
+        "cardstatus",
+        "catalog",
+        "integer",
+        "password",
+        "real",
+        "user"
+      ]
+    },
+    {
+      "name": "User",
+      "nanoentities": [
+        "address",
+        "bankcard",
+        "integer",
+        "name",
+        "ownedcard",
+        "string",
+        "userid"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "origin": "BankCard",
+      "destination": "User",
+      "type": "AGGREGATION"
+    }
+  ]
+}

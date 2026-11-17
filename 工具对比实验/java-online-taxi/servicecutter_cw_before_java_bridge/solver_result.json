@@ -1,0 +1,219 @@
+{
+  "services": [
+    {
+      "nanoentities": [
+        "PassengerUser.profilePhoto",
+        "PassengerUser.id",
+        "PassengerUser.passengerName",
+        "PassengerUser.passengerPhone",
+        "PassengerUser.gmtModified",
+        "PassengerUser.gmtCreate",
+        "PassengerUser.state",
+        "PassengerUser.passengerGender"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "Car.nextFixDate",
+        "Car.commercialType",
+        "Car.vin",
+        "Car.vehicleColor",
+        "Car.feePrintId",
+        "Car.ownerName",
+        "Car.transArea",
+        "Car.transDateStart",
+        "Car.gmtModified",
+        "Car.address",
+        "Car.seats",
+        "Car.certifyDateA",
+        "Car.certifyDateB",
+        "Car.brand",
+        "Car.fareType",
+        "Car.gmtCreate",
+        "Car.model",
+        "Car.state",
+        "Car.vehicleType",
+        "Car.engineId",
+        "Car.plateColor",
+        "Car.transAgency",
+        "Car.trid",
+        "Car.registerDate",
+        "Car.transDateEnd",
+        "Car.fueType",
+        "Car.fixState",
+        "Car.tid",
+        "Car.vehicleNo",
+        "Car.trname",
+        "Car.id",
+        "Car.checkState",
+        "Car.gpsInstallDate",
+        "Car.gpsBrand",
+        "Car.engineDisplace",
+        "Car.gpsModel"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "OrderInfo.passengerGetoffTime",
+        "OrderInfo.id",
+        "OrderInfo.receiveOrderCarLongitude",
+        "OrderInfo.toPickUpPassengerAddress",
+        "OrderInfo.receiveOrderCarLatitude",
+        "OrderInfo.toPickUpPassengerLatitude",
+        "OrderInfo.carId",
+        "OrderInfo.encrypt",
+        "OrderInfo.pickUpPassengerLatitude",
+        "OrderInfo.orderStatus",
+        "OrderInfo.vehicleNo",
+        "OrderInfo.toPickUpPassengerLongitude",
+        "OrderInfo.destLongitude",
+        "OrderInfo.passengerGetoffLongitude",
+        "OrderInfo.passengerGetoffLatitude",
+        "OrderInfo.vehicleType",
+        "OrderInfo.destLatitude",
+        "OrderInfo.price",
+        "OrderInfo.passengerId",
+        "OrderInfo.cancelTime",
+        "OrderInfo.driverId",
+        "OrderInfo.cancelOperator",
+        "OrderInfo.fareType",
+        "OrderInfo.driveMile",
+        "OrderInfo.driverArrivedDepartureTime",
+        "OrderInfo.destination",
+        "OrderInfo.address",
+        "OrderInfo.driveTime",
+        "OrderInfo.gmtCreate",
+        "OrderInfo.passengerPhone",
+        "OrderInfo.departure",
+        "OrderInfo.driverPhone",
+        "OrderInfo.departTime",
+        "OrderInfo.fareVersion",
+        "OrderInfo.depLatitude",
+        "OrderInfo.gmtModified",
+        "OrderInfo.pickUpPassengerTime",
+        "OrderInfo.orderTime",
+        "OrderInfo.cancelTypeCode",
+        "OrderInfo.depLongitude",
+        "OrderInfo.pickUpPassengerLongitude",
+        "OrderInfo.licenseId",
+        "OrderInfo.receiveOrderTime",
+        "OrderInfo.toPickUpPassengerTime"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "PriceRule.cityCode",
+        "PriceRule.startFare",
+        "PriceRule.unitPricePerMile",
+        "PriceRule.fareType",
+        "PriceRule.unitPricePerMinute",
+        "PriceRule.startMile",
+        "PriceRule.vehicleType",
+        "PriceRule.fareVersion"
+      ],
+      "id": "D",
+      "name": "Service D"
+    },
+    {
+      "nanoentities": [
+        "DriverUser.licenseId",
+        "DriverUser.getDriverLicenseDate",
+        "DriverUser.gmtModified",
+        "DriverUser.gmtCreate",
+        "DriverUser.driverPhone",
+        "DriverUser.contractOn",
+        "DriverUser.networkCarIssueDate",
+        "DriverUser.networkCarProofOff",
+        "DriverUser.state",
+        "DriverUserWorkStatus.workStatus",
+        "DriverUser.address",
+        "DriverUser.driverBirthday",
+        "DriverUser.driverLicenseOn",
+        "DriverUser.driverNation",
+        "DriverUser.taxiDriver",
+        "DriverUser.driverGender",
+        "DriverUser.getNetworkCarProofDate",
+        "DriverUserWorkStatus.gmtCreate",
+        "DriverUserWorkStatus.gmtModified",
+        "DriverUser.commercialType",
+        "DriverUser.networkCarIssueOrganization",
+        "DriverUser.networkCarProofOn",
+        "DriverUser.contractOff",
+        "DriverUser.driverLicenseOff",
+        "DriverUser.contractCompany",
+        "DriverUserWorkStatus.id",
+        "DriverUser.driverContactAddress",
+        "DriverUser.registerDate",
+        "DriverUser.driverName",
+        "DriverUser.certificateNo",
+        "DriverUserWorkStatus.driverId",
+        "DriverUser.id"
+      ],
+      "id": "E",
+      "name": "Service E"
+    },
+    {
+      "nanoentities": [
+        "DicDistrict.level",
+        "DicDistrict.parentAddressCode",
+        "DicDistrict.addressName",
+        "DicDistrict.addressCode"
+      ],
+      "id": "F",
+      "name": "Service F"
+    },
+    {
+      "nanoentities": [
+        "DriverCarBindingRelationship.id",
+        "DriverCarBindingRelationship.driverId",
+        "DriverCarBindingRelationship.carId",
+        "DriverCarBindingRelationship.unBindingTime",
+        "DriverCarBindingRelationship.bindingTime",
+        "DriverCarBindingRelationship.bindState"
+      ],
+      "id": "G",
+      "name": "Service G"
+    }
+  ],
+  "relations": [],
+  "useCaseResponsibility": {
+    "Service G": [
+      "ApiBossDriverCarBindingRelationshipService",
+      "ServiceDriverUserDriverCarBindingRelationshipService"
+    ],
+    "Service F": [
+      "ServiceMapDicDistrictService"
+    ],
+    "Service E": [
+      "ApiBossDriverUserService",
+      "ApiDriverUserService",
+      "ApiDriverVerifyCodeService",
+      "ServiceDriverUserDriverUserService",
+      "ServiceDriverUserDriverUserWorkStatusService"
+    ],
+    "Service D": [
+      "ApiPassengerForecastPriceService",
+      "ServicePricePriceService"
+    ],
+    "Service C": [
+      "ApiPassengerOrderService",
+      "ServiceOrderOrderInfoService"
+    ],
+    "Service B": [
+      "ApiBossCarService",
+      "ApiDriverPointService",
+      "ServiceDriverUserCarService"
+    ],
+    "Service A": [
+      "ApiPassengerUserService",
+      "ApiPassengerVerifyCodeService",
+      "ServicePassengerUserUserService"
+    ]
+  }
+}

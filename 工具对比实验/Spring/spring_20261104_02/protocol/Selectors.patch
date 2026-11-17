@@ -1,0 +1,11 @@
+--- original/tuning/Selectors.java
++++ corrected/tuning/Selectors.java
+@@ -47,7 +47,7 @@
+             JSONObject state=SelectionEvidence.build(evidence);
+             List<String> ids=new ArrayList<>(state.getJSONObject("candidates").keySet());Collections.sort(ids);
+             record.put("request",request);long knownTokens=0;boolean allUsage=true;double totalMillis=0;
+-            for(int retry=0;retry<2;retry++) {
++            for(int retry=0;retry<1;retry++) {
+                 JSONObject attempt=new JSONObject();attempts.add(attempt);HttpURLConnection connection=null;long start=System.nanoTime();
+                 JSONObject response=null;
+                 try {

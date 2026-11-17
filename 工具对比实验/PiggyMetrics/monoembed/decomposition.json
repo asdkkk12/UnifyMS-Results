@@ -1,0 +1,81 @@
+{
+  "application": "PiggyMetrics",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/piggy_metrics_20261103_01/monoembed/java-input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/piggy_metrics_20261103_01/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceEmailServiceImpl",
+        "PiggyMetrics.service.NotificationServiceNotificationServiceImpl",
+        "PiggyMetrics.service.NotificationServiceRecipientServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "service_names": [
+        "NotificationServiceEmailServiceImpl",
+        "NotificationServiceNotificationServiceImpl",
+        "NotificationServiceRecipientServiceImpl",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "PiggyMetrics.service.AccountServiceAccountServiceImpl",
+        "PiggyMetrics.service.StatisticsServiceExchangeRatesServiceImpl",
+        "PiggyMetrics.service.StatisticsServiceStatisticsServiceImpl",
+        "PiggyMetrics.domain.StatisticsServiceDataPoint",
+        "PiggyMetrics.domain.StatisticsServiceDataPointId"
+      ],
+      "service_names": [
+        "AccountServiceAccountServiceImpl",
+        "StatisticsServiceExchangeRatesServiceImpl",
+        "StatisticsServiceStatisticsServiceImpl",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "PiggyMetrics.domain.AccountServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "PiggyMetrics.domain.AccountServiceItem",
+        "PiggyMetrics.domain.AccountServiceSaving",
+        "PiggyMetrics.domain.AccountServiceUser",
+        "PiggyMetrics.domain.NotificationServiceNotificationSettings",
+        "PiggyMetrics.domain.StatisticsServiceItem",
+        "PiggyMetrics.domain.StatisticsServiceSaving",
+        "PiggyMetrics.domain.StatisticsServiceItemMetric"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

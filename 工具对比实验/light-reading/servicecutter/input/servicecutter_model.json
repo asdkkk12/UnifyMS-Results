@@ -1,0 +1,175 @@
+{
+  "name": "LIGHT_READING_AST",
+  "entities": [
+    {
+      "name": "User",
+      "nanoentities": [
+        "id",
+        "uuid",
+        "userPwd",
+        "loginName",
+        "nickName",
+        "phoneNumber",
+        "headImgUrl",
+        "createTime",
+        "updateTime"
+      ]
+    },
+    {
+      "name": "UserBookshelf",
+      "nanoentities": [
+        "id",
+        "userId",
+        "bookId",
+        "lastChapterId",
+        "lastReadTime",
+        "createTime"
+      ]
+    },
+    {
+      "name": "UserLikeSee",
+      "nanoentities": [
+        "id",
+        "userId",
+        "bookId",
+        "createTime"
+      ]
+    },
+    {
+      "name": "Book",
+      "nanoentities": [
+        "id",
+        "authorId",
+        "dicCategory",
+        "dicChannel",
+        "dicSerialStatus",
+        "onlineStatus",
+        "bookId",
+        "bookName",
+        "bookScore",
+        "keyWord",
+        "imgUrl",
+        "authorName",
+        "introduction",
+        "isbn",
+        "wordCount",
+        "creater",
+        "createTime",
+        "updateTime",
+        "updater"
+      ]
+    },
+    {
+      "name": "BookAuthor",
+      "nanoentities": [
+        "id",
+        "name",
+        "introduction",
+        "headImgUrl",
+        "creater",
+        "createTime",
+        "updater",
+        "updateTime"
+      ]
+    },
+    {
+      "name": "BookChapter",
+      "nanoentities": [
+        "id",
+        "bookId",
+        "name",
+        "content",
+        "lockStatus",
+        "sortNumber",
+        "createTime",
+        "updateTime"
+      ]
+    },
+    {
+      "name": "DataDictionary",
+      "nanoentities": [
+        "id",
+        "dicType",
+        "dicTypeName",
+        "code",
+        "name",
+        "sortNumber"
+      ]
+    },
+    {
+      "name": "IndexBanner",
+      "nanoentities": [
+        "id",
+        "name",
+        "creater",
+        "createTime",
+        "updateTime",
+        "updater"
+      ]
+    },
+    {
+      "name": "IndexBannerItem",
+      "nanoentities": [
+        "id",
+        "bannerId",
+        "name",
+        "imgUrl",
+        "url",
+        "sortNumber",
+        "creater",
+        "createTime",
+        "updateTime",
+        "updater"
+      ]
+    },
+    {
+      "name": "IndexBooklist",
+      "nanoentities": [
+        "id",
+        "name",
+        "showNumber",
+        "style",
+        "moreType",
+        "moreUrl",
+        "bookIds",
+        "startDate",
+        "endDate",
+        "creater",
+        "createTime",
+        "updateTime",
+        "updater",
+        "showLikeCount"
+      ]
+    },
+    {
+      "name": "IndexBooklistItem",
+      "nanoentities": [
+        "id",
+        "booklistId",
+        "bookId",
+        "sortNumber",
+        "creater",
+        "createTime",
+        "updateTime",
+        "updater"
+      ]
+    },
+    {
+      "name": "IndexPageConfig",
+      "nanoentities": [
+        "id",
+        "pageType",
+        "itemType",
+        "itemId",
+        "startDate",
+        "endDate",
+        "sortNumber",
+        "creater",
+        "createTime",
+        "updateTime",
+        "updater"
+      ]
+    }
+  ],
+  "relations": []
+}

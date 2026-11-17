@@ -1,0 +1,48 @@
+[
+  {
+    "arm": "without-offline",
+    "module": "candidate-JEV",
+    "error": "IOException: HTTP 400",
+    "providerDetail": {
+      "error_type": "max_tokens_exceeded"
+    },
+    "count": 2
+  },
+  {
+    "arm": "without-offline",
+    "module": "generation-LLM",
+    "error": "TimeoutException: null",
+    "providerDetail": null,
+    "count": 2
+  },
+  {
+    "arm": "without-offline",
+    "module": "probability-JEV",
+    "error": "IOException: JEV HTTP 502",
+    "providerDetail": null,
+    "count": 1
+  },
+  {
+    "arm": "without-probability",
+    "module": "candidate-JEV",
+    "error": "IOException: HTTP 400",
+    "providerDetail": {
+      "error_type": "max_tokens_exceeded"
+    },
+    "count": 10
+  },
+  {
+    "arm": "without-probability",
+    "module": "candidate-JEV",
+    "error": "IOException: HTTP 502",
+    "providerDetail": null,
+    "count": 1
+  },
+  {
+    "arm": "without-probability",
+    "module": "generation-LLM",
+    "error": "IOException: invalid completion content",
+    "providerDetail": null,
+    "count": 1
+  }
+]

@@ -1,0 +1,87 @@
+		LoanedBook : Loan* (Association)
+Loan
+		ReservedBook : Reserve* (Association)
+Reserve
+		RecommendedBook : RecommendBook* (Association)
+RecommendBook
+		Copys : BookCopy* ! ( Association)
+BookCopy
+		Subject : Subject* (Association)
+Subject
+		SuperSubject : Subject ! ( Association)
+Subject
+		SubSubject : Subject* (Association)
+Subject
+		BookBelongs : Book (Association)
+Book
+		LoanedRecord : Loan* (Association)
+Loan
+		ReservationRecord : Reserve* (Association)
+Reserve
+		LoanedUser : User ! ( Association)
+User
+		LoanedCopy : BookCopy ! ( Association)
+BookCopy
+		LoanLibrarian : Librarian (Association)
+Librarian
+		ReturnLibrarian : Librarian (Association)
+Librarian
+		ReservedCopy : BookCopy ! ( Association)
+BookCopy
+		ReservedUser : User ! ( Association)
+User
+		RecommendUser : User ! ( Association)
+User
+makeReservation makeReservation
+makeReservation recommendBook
+makeReservation cancelReservation
+makeReservation searchBook
+makeReservation listBookHistory
+recommendBook makeReservation
+recommendBook recommendBook
+recommendBook cancelReservation
+recommendBook searchBook
+recommendBook listBookHistory
+cancelReservation makeReservation
+cancelReservation recommendBook
+cancelReservation cancelReservation
+cancelReservation searchBook
+cancelReservation listBookHistory
+searchBook makeReservation
+searchBook recommendBook
+searchBook cancelReservation
+searchBook searchBook
+searchBook listBookHistory
+listBookHistory makeReservation
+listBookHistory recommendBook
+listBookHistory cancelReservation
+listBookHistory searchBook
+listBookHistory listBookHistory
+listRecommendBook listRecommendBook
+dueSoonNotification dueSoonNotification
+dueSoonNotification countDownSuspensionDay
+dueSoonNotification checkOverDueandComputeOverDueFee
+countDownSuspensionDay dueSoonNotification
+countDownSuspensionDay countDownSuspensionDay
+countDownSuspensionDay checkOverDueandComputeOverDueFee
+checkOverDueandComputeOverDueFee dueSoonNotification
+checkOverDueandComputeOverDueFee countDownSuspensionDay
+checkOverDueandComputeOverDueFee checkOverDueandComputeOverDueFee
+sendNotificationEmail sendNotificationEmail
+borrowBook borrowBook
+borrowBook returnBook
+borrowBook renewBook
+borrowBook payOverDueFee
+returnBook borrowBook
+returnBook returnBook
+returnBook renewBook
+returnBook payOverDueFee
+renewBook borrowBook
+renewBook returnBook
+renewBook renewBook
+renewBook payOverDueFee
+payOverDueFee borrowBook
+payOverDueFee returnBook
+payOverDueFee renewBook
+payOverDueFee payOverDueFee
+without-probability seed=137 HV=0.47343604163565045

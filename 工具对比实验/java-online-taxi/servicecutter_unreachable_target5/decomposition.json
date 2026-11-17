@@ -1,0 +1,1179 @@
+{
+  "method": "ServiceCutter",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "ServiceCutter entity/nanoentity clusters are retained as the decomposition.",
+    "Use-case responsibilities are mapped to remodel services by operation name.",
+    "Operations not present in ServiceCutter use-case responsibility are assigned to the largest cluster."
+  ],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "servicecutter.domain.PassengerUser",
+        "servicecutter.service.ApiBossCarService",
+        "servicecutter.service.ApiBossDriverCarBindingRelationshipService",
+        "servicecutter.service.ApiBossDriverUserService",
+        "servicecutter.service.ApiDriverPointService",
+        "servicecutter.service.ApiDriverUserService",
+        "servicecutter.service.ApiDriverVerifyCodeService",
+        "servicecutter.service.ApiPassengerForecastPriceService",
+        "servicecutter.service.ApiPassengerOrderService",
+        "servicecutter.service.ApiPassengerTokenService",
+        "servicecutter.service.ApiPassengerUserService",
+        "servicecutter.service.ApiPassengerVerifyCodeService",
+        "servicecutter.service.ServiceDriverUserCarService",
+        "servicecutter.service.ServiceDriverUserDriverCarBindingRelationshipService",
+        "servicecutter.service.ServiceDriverUserDriverUserService",
+        "servicecutter.service.ServiceDriverUserDriverUserWorkStatusService",
+        "servicecutter.service.ServiceMapDicDistrictService",
+        "servicecutter.service.ServiceMapDirectionService",
+        "servicecutter.service.ServiceMapMapDicDistrictClient",
+        "servicecutter.service.ServiceMapMapDirectionClient",
+        "servicecutter.service.ServiceMapPointClient",
+        "servicecutter.service.ServiceMapPointService",
+        "servicecutter.service.ServiceMapServiceClient",
+        "servicecutter.service.ServiceMapServiceMapService",
+        "servicecutter.service.ServiceMapTerminalClient",
+        "servicecutter.service.ServiceMapTerminalService",
+        "servicecutter.service.ServiceMapTrackClient",
+        "servicecutter.service.ServiceMapTrackService",
+        "servicecutter.service.ServiceOrderOrderInfoService",
+        "servicecutter.service.ServicePassengerUserUserService",
+        "servicecutter.service.ServicePricePriceService",
+        "servicecutter.service.ServiceVerifycodeVerifyCodeService"
+      ],
+      "servicecutter_nanoentities": [
+        "PassengerUser.date"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.gmtcreate"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.gmtmodified"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.id"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.integer"
+      ]
+    },
+    {
+      "name": "Service F",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.passengergender"
+      ]
+    },
+    {
+      "name": "Service G",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.passengername"
+      ]
+    },
+    {
+      "name": "Service H",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.passengerphone"
+      ]
+    },
+    {
+      "name": "Service I",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.profilephoto"
+      ]
+    },
+    {
+      "name": "Service J",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.state"
+      ]
+    },
+    {
+      "name": "Service K",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PassengerUser.string"
+      ]
+    },
+    {
+      "name": "Service L",
+      "members": [
+        "servicecutter.domain.DriverUserWorkStatus"
+      ],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.date"
+      ]
+    },
+    {
+      "name": "Service M",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.driverid"
+      ]
+    },
+    {
+      "name": "Service N",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.gmtcreate"
+      ]
+    },
+    {
+      "name": "Service O",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.gmtmodified"
+      ]
+    },
+    {
+      "name": "Service P",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.id"
+      ]
+    },
+    {
+      "name": "Service Q",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.integer"
+      ]
+    },
+    {
+      "name": "Service R",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUserWorkStatus.workstatus"
+      ]
+    },
+    {
+      "name": "Service S",
+      "members": [
+        "servicecutter.domain.DicDistrict"
+      ],
+      "servicecutter_nanoentities": [
+        "DicDistrict.addresscode"
+      ]
+    },
+    {
+      "name": "Service T",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DicDistrict.addressname"
+      ]
+    },
+    {
+      "name": "Service U",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DicDistrict.integer"
+      ]
+    },
+    {
+      "name": "Service V",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DicDistrict.level"
+      ]
+    },
+    {
+      "name": "Service W",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DicDistrict.parentaddresscode"
+      ]
+    },
+    {
+      "name": "Service X",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DicDistrict.string"
+      ]
+    },
+    {
+      "name": "Service Y",
+      "members": [
+        "servicecutter.domain.Car"
+      ],
+      "servicecutter_nanoentities": [
+        "Car.address"
+      ]
+    },
+    {
+      "name": "Service Z",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.brand"
+      ]
+    },
+    {
+      "name": "Service [",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.certifydatea"
+      ]
+    },
+    {
+      "name": "Service \\",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.certifydateb"
+      ]
+    },
+    {
+      "name": "Service ]",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.checkstate"
+      ]
+    },
+    {
+      "name": "Service ^",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.commercialtype"
+      ]
+    },
+    {
+      "name": "Service _",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.date"
+      ]
+    },
+    {
+      "name": "Service `",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.enginedisplace"
+      ]
+    },
+    {
+      "name": "Service a",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.engineid"
+      ]
+    },
+    {
+      "name": "Service b",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.faretype"
+      ]
+    },
+    {
+      "name": "Service c",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.feeprintid"
+      ]
+    },
+    {
+      "name": "Service d",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.fixstate"
+      ]
+    },
+    {
+      "name": "Service e",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.fuetype"
+      ]
+    },
+    {
+      "name": "Service f",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.gmtcreate"
+      ]
+    },
+    {
+      "name": "Service g",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.gmtmodified"
+      ]
+    },
+    {
+      "name": "Service h",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.gpsbrand"
+      ]
+    },
+    {
+      "name": "Service i",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.gpsinstalldate"
+      ]
+    },
+    {
+      "name": "Service j",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.gpsmodel"
+      ]
+    },
+    {
+      "name": "Service k",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.id"
+      ]
+    },
+    {
+      "name": "Service l",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.integer"
+      ]
+    },
+    {
+      "name": "Service m",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.model"
+      ]
+    },
+    {
+      "name": "Service n",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.nextfixdate"
+      ]
+    },
+    {
+      "name": "Service o",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.ownername"
+      ]
+    },
+    {
+      "name": "Service p",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.platecolor"
+      ]
+    },
+    {
+      "name": "Service q",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.registerdate"
+      ]
+    },
+    {
+      "name": "Service r",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.seats"
+      ]
+    },
+    {
+      "name": "Service s",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.state"
+      ]
+    },
+    {
+      "name": "Service t",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.string"
+      ]
+    },
+    {
+      "name": "Service u",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.tid"
+      ]
+    },
+    {
+      "name": "Service v",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.transagency"
+      ]
+    },
+    {
+      "name": "Service w",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.transarea"
+      ]
+    },
+    {
+      "name": "Service x",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.transdateend"
+      ]
+    },
+    {
+      "name": "Service y",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.transdatestart"
+      ]
+    },
+    {
+      "name": "Service z",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.trid"
+      ]
+    },
+    {
+      "name": "Service {",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.trname"
+      ]
+    },
+    {
+      "name": "Service |",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.vehiclecolor"
+      ]
+    },
+    {
+      "name": "Service }",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.vehicleno"
+      ]
+    },
+    {
+      "name": "Service ~",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.vehicletype"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "Car.vin"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [
+        "servicecutter.domain.PriceRule"
+      ],
+      "servicecutter_nanoentities": [
+        "PriceRule.citycode"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.faretype"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.fareversion"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.integer"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.real"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.startfare"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.startmile"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.string"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.unitpricepermile"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.unitpriceperminute"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "PriceRule.vehicletype"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [
+        "servicecutter.domain.OrderInfo"
+      ],
+      "servicecutter_nanoentities": [
+        "OrderInfo.address"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.canceloperator"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.canceltime"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.canceltypecode"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.carid"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.date"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.departtime"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.departure"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.deplatitude"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.deplongitude"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.destination"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.destlatitude"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.destlongitude"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.drivemile"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.driverarriveddeparturetime"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.driverid"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.driverphone"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.drivetime"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.encrypt"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.faretype"
+      ]
+    },
+    {
+      "name": "Service ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.fareversion"
+      ]
+    },
+    {
+      "name": "Service  ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.gmtcreate"
+      ]
+    },
+    {
+      "name": "Service ¡",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.gmtmodified"
+      ]
+    },
+    {
+      "name": "Service ¢",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.id"
+      ]
+    },
+    {
+      "name": "Service £",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.integer"
+      ]
+    },
+    {
+      "name": "Service ¤",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.licenseid"
+      ]
+    },
+    {
+      "name": "Service ¥",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.orderstatus"
+      ]
+    },
+    {
+      "name": "Service ¦",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.ordertime"
+      ]
+    },
+    {
+      "name": "Service §",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.passengergetofflatitude"
+      ]
+    },
+    {
+      "name": "Service ¨",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.passengergetofflongitude"
+      ]
+    },
+    {
+      "name": "Service ©",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.passengergetofftime"
+      ]
+    },
+    {
+      "name": "Service ª",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.passengerid"
+      ]
+    },
+    {
+      "name": "Service «",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.passengerphone"
+      ]
+    },
+    {
+      "name": "Service ¬",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.pickuppassengerlatitude"
+      ]
+    },
+    {
+      "name": "Service ­",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.pickuppassengerlongitude"
+      ]
+    },
+    {
+      "name": "Service ®",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.pickuppassengertime"
+      ]
+    },
+    {
+      "name": "Service ¯",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.price"
+      ]
+    },
+    {
+      "name": "Service °",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.real"
+      ]
+    },
+    {
+      "name": "Service ±",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.receiveordercarlatitude"
+      ]
+    },
+    {
+      "name": "Service ²",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.receiveordercarlongitude"
+      ]
+    },
+    {
+      "name": "Service ³",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.receiveordertime"
+      ]
+    },
+    {
+      "name": "Service ´",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.string"
+      ]
+    },
+    {
+      "name": "Service µ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.topickuppassengeraddress"
+      ]
+    },
+    {
+      "name": "Service ¶",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.topickuppassengerlatitude"
+      ]
+    },
+    {
+      "name": "Service ·",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.topickuppassengerlongitude"
+      ]
+    },
+    {
+      "name": "Service ¸",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.topickuppassengertime"
+      ]
+    },
+    {
+      "name": "Service ¹",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.vehicleno"
+      ]
+    },
+    {
+      "name": "Service º",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "OrderInfo.vehicletype"
+      ]
+    },
+    {
+      "name": "Service »",
+      "members": [
+        "servicecutter.domain.DriverCarBindingRelationship"
+      ],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.bindingtime"
+      ]
+    },
+    {
+      "name": "Service ¼",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.bindstate"
+      ]
+    },
+    {
+      "name": "Service ½",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.carid"
+      ]
+    },
+    {
+      "name": "Service ¾",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.date"
+      ]
+    },
+    {
+      "name": "Service ¿",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.driverid"
+      ]
+    },
+    {
+      "name": "Service À",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.id"
+      ]
+    },
+    {
+      "name": "Service Á",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.integer"
+      ]
+    },
+    {
+      "name": "Service Â",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverCarBindingRelationship.unbindingtime"
+      ]
+    },
+    {
+      "name": "Service Ã",
+      "members": [
+        "servicecutter.domain.DriverUser"
+      ],
+      "servicecutter_nanoentities": [
+        "DriverUser.address"
+      ]
+    },
+    {
+      "name": "Service Ä",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.certificateno"
+      ]
+    },
+    {
+      "name": "Service Å",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.commercialtype"
+      ]
+    },
+    {
+      "name": "Service Æ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.contractcompany"
+      ]
+    },
+    {
+      "name": "Service Ç",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.contractoff"
+      ]
+    },
+    {
+      "name": "Service È",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.contracton"
+      ]
+    },
+    {
+      "name": "Service É",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.date"
+      ]
+    },
+    {
+      "name": "Service Ê",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.driverbirthday"
+      ]
+    },
+    {
+      "name": "Service Ë",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.drivercontactaddress"
+      ]
+    },
+    {
+      "name": "Service Ì",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.drivergender"
+      ]
+    },
+    {
+      "name": "Service Í",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.driverlicenseoff"
+      ]
+    },
+    {
+      "name": "Service Î",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.driverlicenseon"
+      ]
+    },
+    {
+      "name": "Service Ï",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.drivername"
+      ]
+    },
+    {
+      "name": "Service Ð",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.drivernation"
+      ]
+    },
+    {
+      "name": "Service Ñ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.driverphone"
+      ]
+    },
+    {
+      "name": "Service Ò",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.getdriverlicensedate"
+      ]
+    },
+    {
+      "name": "Service Ó",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.getnetworkcarproofdate"
+      ]
+    },
+    {
+      "name": "Service Ô",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.gmtcreate"
+      ]
+    },
+    {
+      "name": "Service Õ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.gmtmodified"
+      ]
+    },
+    {
+      "name": "Service Ö",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.id"
+      ]
+    },
+    {
+      "name": "Service ×",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.integer"
+      ]
+    },
+    {
+      "name": "Service Ø",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.licenseid"
+      ]
+    },
+    {
+      "name": "Service Ù",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.networkcarissuedate"
+      ]
+    },
+    {
+      "name": "Service Ú",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.networkcarissueorganization"
+      ]
+    },
+    {
+      "name": "Service Û",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.networkcarproofoff"
+      ]
+    },
+    {
+      "name": "Service Ü",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.networkcarproofon"
+      ]
+    },
+    {
+      "name": "Service Ý",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.registerdate"
+      ]
+    },
+    {
+      "name": "Service Þ",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.state"
+      ]
+    },
+    {
+      "name": "Service ß",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.string"
+      ]
+    },
+    {
+      "name": "Service à",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "DriverUser.taxidriver"
+      ]
+    }
+  ]
+}

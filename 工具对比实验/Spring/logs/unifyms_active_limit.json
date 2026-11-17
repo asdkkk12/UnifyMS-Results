@@ -1,0 +1,56 @@
+{
+  "started_at": "2026-11-04T01:27:24.982498+08:00",
+  "policy": "Existing wave in two pairs, then allow the two remaining queued seeds; no restart or budget changes.",
+  "runner_pid": 51519,
+  "workers": [
+    {
+      "pid": 52597,
+      "seed": 113,
+      "controller": 52589
+    },
+    {
+      "pid": 52598,
+      "seed": 127,
+      "controller": 52591
+    },
+    {
+      "pid": 52614,
+      "seed": 131,
+      "controller": 52607
+    },
+    {
+      "pid": 52679,
+      "seed": 137,
+      "controller": 52671
+    }
+  ],
+  "paused_worker_pids": [
+    52614,
+    52679
+  ],
+  "runner_paused": true,
+  "runner_resumed": true,
+  "events": [
+    {
+      "at": "2026-11-04T01:27:24.990584+08:00",
+      "stage": "two_workers_active",
+      "seeds": [
+        113,
+        127
+      ]
+    },
+    {
+      "at": "2026-11-04T01:32:29.597211+08:00",
+      "stage": "second_pair_resumed",
+      "seeds": [
+        131,
+        137
+      ]
+    },
+    {
+      "at": "2026-11-04T01:37:11.918470+08:00",
+      "stage": "wave_complete"
+    }
+  ],
+  "ended_at": "2026-11-04T01:37:11.932726+08:00"
+}

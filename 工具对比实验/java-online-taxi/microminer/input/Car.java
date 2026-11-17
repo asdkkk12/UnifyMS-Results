@@ -1,0 +1,42 @@
+// Structural input generated from java-online-taxi.remodel; not recovered implementation code.
+public class Car {
+    private address;
+    private brand;
+    private certifydatea;
+    private certifydateb;
+    private checkstate;
+    private commercialtype;
+    private date;
+    private enginedisplace;
+    private engineid;
+    private faretype;
+    private feeprintid;
+    private fixstate;
+    private fuetype;
+    private gmtcreate;
+    private gmtmodified;
+    private gpsbrand;
+    private gpsinstalldate;
+    private gpsmodel;
+    private id;
+    private integer;
+    private model;
+    private nextfixdate;
+    private ownername;
+    private platecolor;
+    private registerdate;
+    private seats;
+    private state;
+    private string;
+    private tid;
+    private transagency;
+    private transarea;
+    private transdateend;
+    private transdatestart;
+    private trid;
+    private trname;
+    private vehiclecolor;
+    private vehicleno;
+    private vehicletype;
+    private vin;
+}

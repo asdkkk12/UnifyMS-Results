@@ -1,0 +1,671 @@
+{
+  "application": "COCOME",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/input/cocome.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/monoembed/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "Bailian API encoder + StandardScaler + Affinity Propagation; not the paper weights."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 5,
+  "provided_interface_total": 43,
+  "CHD": 0.37725000000000003,
+  "Instability": 0.6087334887334888,
+  "IFN": 8.6,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "COCOME.service.ManageStoreCRUDService",
+        "COCOME.service.ManageProductCatalogCRUDService",
+        "COCOME.service.ManageCashDeskCRUDService",
+        "COCOME.service.ManageCashierCRUDService",
+        "COCOME.service.ManageSupplierCRUDService",
+        "COCOME.service.OpenCashDeskService"
+      ],
+      "provided_interface": 20,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 35,
+      "required_interface": 35,
+      "instability": 0.6363636363636364,
+      "CHD": 0.2
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "COCOME.service.CoCoMESystem",
+        "COCOME.domain.Store",
+        "COCOME.domain.CashDesk",
+        "COCOME.domain.Sale",
+        "COCOME.domain.Cashier"
+      ],
+      "provided_interface": 8,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 10,
+      "required_interface": 10,
+      "instability": 0.5555555555555556,
+      "CHD": 0.23958333333333337
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "COCOME.service.ManageItemCRUDService",
+        "COCOME.domain.ProductCatalog",
+        "COCOME.domain.SalesLineItem",
+        "COCOME.domain.Item"
+      ],
+      "provided_interface": 4,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 7,
+      "required_interface": 7,
+      "instability": 0.6363636363636364,
+      "CHD": 1.0
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "COCOME.service.ThirdPartyServices",
+        "COCOME.service.ProcessSale",
+        "COCOME.domain.Payment",
+        "COCOME.domain.CashPayment",
+        "COCOME.domain.CardPayment"
+      ],
+      "provided_interface": 6,
+      "required_interface_external_calls": 1,
+      "required_interface_implicit_crud": 8,
+      "required_interface": 9,
+      "instability": 0.6,
+      "CHD": 0.16666666666666666
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "COCOME.service.OrderProducts",
+        "COCOME.domain.OrderEntry",
+        "COCOME.domain.Supplier",
+        "COCOME.domain.OrderProduct"
+      ],
+      "provided_interface": 5,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 8,
+      "required_interface": 8,
+      "instability": 0.6153846153846154,
+      "CHD": 0.28
+    }
+  ],
+  "UCM": 0.15283000598199173,
+  "UCM_pair_count": 45,
+  "Intra_Cohesion": 0.3692052061086911,
+  "Inter_Coupling": 0.21017638169369018,
+  "CMQ": 0.15902882441500094,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "Store": [
+        "address",
+        "associationcashdeskes",
+        "boolean",
+        "cashdesk",
+        "cashier",
+        "cashiers",
+        "id",
+        "integer",
+        "isopened",
+        "item",
+        "items",
+        "name",
+        "productcatalog",
+        "productcatalogs",
+        "sale",
+        "sales",
+        "store",
+        "string"
+      ],
+      "ProductCatalog": [
+        "containeditems",
+        "id",
+        "integer",
+        "item",
+        "name",
+        "productcatalog",
+        "string"
+      ],
+      "CashDesk": [
+        "belongedstore",
+        "boolean",
+        "cashdesk",
+        "containedsales",
+        "id",
+        "integer",
+        "isopened",
+        "name",
+        "sale",
+        "store",
+        "string"
+      ],
+      "Sale": [
+        "amount",
+        "assoicatedpayment",
+        "belongedcashdesk",
+        "belongedstore",
+        "boolean",
+        "cashdesk",
+        "containedsalesline",
+        "iscomplete",
+        "isreadytopay",
+        "payment",
+        "real",
+        "sale",
+        "saleslineitem",
+        "store"
+      ],
+      "Cashier": [
+        "cashier",
+        "id",
+        "integer",
+        "name",
+        "store",
+        "string",
+        "workedstore"
+      ],
+      "SalesLineItem": [
+        "belongeditem",
+        "belongedsale",
+        "integer",
+        "item",
+        "quantity",
+        "real",
+        "sale",
+        "saleslineitem",
+        "subamount"
+      ],
+      "Item": [
+        "barcode",
+        "belongedcatalog",
+        "integer",
+        "item",
+        "name",
+        "orderprice",
+        "price",
+        "productcatalog",
+        "real",
+        "stocknumber",
+        "string"
+      ],
+      "Payment": [
+        "amounttendered",
+        "belongedsale",
+        "payment",
+        "real",
+        "sale"
+      ],
+      "CashPayment": [
+        "balance",
+        "cashpayment",
+        "payment",
+        "real"
+      ],
+      "CardPayment": [
+        "cardaccountnumber",
+        "cardpayment",
+        "payment",
+        "string"
+      ],
+      "OrderEntry": [
+        "integer",
+        "item",
+        "orderentry",
+        "quantity",
+        "real",
+        "subamount"
+      ],
+      "Supplier": [
+        "id",
+        "integer",
+        "name",
+        "string",
+        "supplier"
+      ],
+      "OrderProduct": [
+        "amount",
+        "containedentries",
+        "date",
+        "id",
+        "integer",
+        "orderentry",
+        "orderproduct",
+        "real",
+        "supplier",
+        "time"
+      ]
+    },
+    "effective_entity_clusters": {
+      "Store": 1,
+      "CashDesk": 1,
+      "Sale": 1,
+      "Cashier": 1,
+      "ProductCatalog": 2,
+      "SalesLineItem": 2,
+      "Item": 2,
+      "Payment": 3,
+      "CashPayment": 3,
+      "CardPayment": 3,
+      "OrderEntry": 4,
+      "Supplier": 4,
+      "OrderProduct": 4
+    },
+    "intra_pair_count": 15,
+    "inter_pair_count": 63,
+    "pairs": [
+      {
+        "a": "Store",
+        "b": "ProductCatalog",
+        "similarity": 0.5345224838248488
+      },
+      {
+        "a": "Store",
+        "b": "CashDesk",
+        "similarity": 0.6396021490668313
+      },
+      {
+        "a": "Store",
+        "b": "Sale",
+        "similarity": 0.2519763153394848
+      },
+      {
+        "a": "Store",
+        "b": "Cashier",
+        "similarity": 0.5345224838248488
+      },
+      {
+        "a": "Store",
+        "b": "SalesLineItem",
+        "similarity": 0.23570226039551584
+      },
+      {
+        "a": "Store",
+        "b": "Item",
+        "similarity": 0.3553345272593507
+      },
+      {
+        "a": "Store",
+        "b": "Payment",
+        "similarity": 0.10540925533894598
+      },
+      {
+        "a": "Store",
+        "b": "CashPayment",
+        "similarity": 0.0
+      },
+      {
+        "a": "Store",
+        "b": "CardPayment",
+        "similarity": 0.11785113019775793
+      },
+      {
+        "a": "Store",
+        "b": "OrderEntry",
+        "similarity": 0.19245008972987526
+      },
+      {
+        "a": "Store",
+        "b": "Supplier",
+        "similarity": 0.4216370213557839
+      },
+      {
+        "a": "Store",
+        "b": "OrderProduct",
+        "similarity": 0.14907119849998599
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "CashDesk",
+        "similarity": 0.4558423058385518
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "Sale",
+        "similarity": 0.0
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "Cashier",
+        "similarity": 0.5714285714285714
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "SalesLineItem",
+        "similarity": 0.2519763153394848
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "Item",
+        "similarity": 0.5698028822981898
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "Payment",
+        "similarity": 0.0
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "CashPayment",
+        "similarity": 0.0
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "CardPayment",
+        "similarity": 0.1889822365046136
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "OrderEntry",
+        "similarity": 0.3086066999241838
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "Supplier",
+        "similarity": 0.6761234037828132
+      },
+      {
+        "a": "ProductCatalog",
+        "b": "OrderProduct",
+        "similarity": 0.23904572186687872
+      },
+      {
+        "a": "CashDesk",
+        "b": "Sale",
+        "similarity": 0.4029114820126901
+      },
+      {
+        "a": "CashDesk",
+        "b": "Cashier",
+        "similarity": 0.5698028822981898
+      },
+      {
+        "a": "CashDesk",
+        "b": "SalesLineItem",
+        "similarity": 0.20100756305184242
+      },
+      {
+        "a": "CashDesk",
+        "b": "Item",
+        "similarity": 0.2727272727272727
+      },
+      {
+        "a": "CashDesk",
+        "b": "Payment",
+        "similarity": 0.13483997249264842
+      },
+      {
+        "a": "CashDesk",
+        "b": "CashPayment",
+        "similarity": 0.0
+      },
+      {
+        "a": "CashDesk",
+        "b": "CardPayment",
+        "similarity": 0.15075567228888181
+      },
+      {
+        "a": "CashDesk",
+        "b": "OrderEntry",
+        "similarity": 0.12309149097933272
+      },
+      {
+        "a": "CashDesk",
+        "b": "Supplier",
+        "similarity": 0.5393598899705937
+      },
+      {
+        "a": "CashDesk",
+        "b": "OrderProduct",
+        "similarity": 0.19069251784911848
+      },
+      {
+        "a": "Sale",
+        "b": "Cashier",
+        "similarity": 0.10101525445522107
+      },
+      {
+        "a": "Sale",
+        "b": "SalesLineItem",
+        "similarity": 0.2672612419124244
+      },
+      {
+        "a": "Sale",
+        "b": "Item",
+        "similarity": 0.08058229640253803
+      },
+      {
+        "a": "Sale",
+        "b": "Payment",
+        "similarity": 0.35856858280031806
+      },
+      {
+        "a": "Sale",
+        "b": "CashPayment",
+        "similarity": 0.2672612419124244
+      },
+      {
+        "a": "Sale",
+        "b": "CardPayment",
+        "similarity": 0.1336306209562122
+      },
+      {
+        "a": "Sale",
+        "b": "OrderEntry",
+        "similarity": 0.1091089451179962
+      },
+      {
+        "a": "Sale",
+        "b": "Supplier",
+        "similarity": 0.0
+      },
+      {
+        "a": "Sale",
+        "b": "OrderProduct",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "Cashier",
+        "b": "SalesLineItem",
+        "similarity": 0.1259881576697424
+      },
+      {
+        "a": "Cashier",
+        "b": "Item",
+        "similarity": 0.3418817293789138
+      },
+      {
+        "a": "Cashier",
+        "b": "Payment",
+        "similarity": 0.0
+      },
+      {
+        "a": "Cashier",
+        "b": "CashPayment",
+        "similarity": 0.0
+      },
+      {
+        "a": "Cashier",
+        "b": "CardPayment",
+        "similarity": 0.1889822365046136
+      },
+      {
+        "a": "Cashier",
+        "b": "OrderEntry",
+        "similarity": 0.1543033499620919
+      },
+      {
+        "a": "Cashier",
+        "b": "Supplier",
+        "similarity": 0.6761234037828132
+      },
+      {
+        "a": "Cashier",
+        "b": "OrderProduct",
+        "similarity": 0.23904572186687872
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "Item",
+        "similarity": 0.30151134457776363
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "Payment",
+        "similarity": 0.4472135954999579
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "CashPayment",
+        "similarity": 0.16666666666666666
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "CardPayment",
+        "similarity": 0.0
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "OrderEntry",
+        "similarity": 0.6804138174397717
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "Supplier",
+        "similarity": 0.14907119849998599
+      },
+      {
+        "a": "SalesLineItem",
+        "b": "OrderProduct",
+        "similarity": 0.21081851067789195
+      },
+      {
+        "a": "Item",
+        "b": "Payment",
+        "similarity": 0.13483997249264842
+      },
+      {
+        "a": "Item",
+        "b": "CashPayment",
+        "similarity": 0.15075567228888181
+      },
+      {
+        "a": "Item",
+        "b": "CardPayment",
+        "similarity": 0.15075567228888181
+      },
+      {
+        "a": "Item",
+        "b": "OrderEntry",
+        "similarity": 0.3692744729379982
+      },
+      {
+        "a": "Item",
+        "b": "Supplier",
+        "similarity": 0.40451991747794525
+      },
+      {
+        "a": "Item",
+        "b": "OrderProduct",
+        "similarity": 0.19069251784911848
+      },
+      {
+        "a": "Payment",
+        "b": "CashPayment",
+        "similarity": 0.4472135954999579
+      },
+      {
+        "a": "Payment",
+        "b": "CardPayment",
+        "similarity": 0.22360679774997896
+      },
+      {
+        "a": "Payment",
+        "b": "OrderEntry",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "Payment",
+        "b": "Supplier",
+        "similarity": 0.0
+      },
+      {
+        "a": "Payment",
+        "b": "OrderProduct",
+        "similarity": 0.1414213562373095
+      },
+      {
+        "a": "CashPayment",
+        "b": "CardPayment",
+        "similarity": 0.25
+      },
+      {
+        "a": "CashPayment",
+        "b": "OrderEntry",
+        "similarity": 0.20412414523193154
+      },
+      {
+        "a": "CashPayment",
+        "b": "Supplier",
+        "similarity": 0.0
+      },
+      {
+        "a": "CashPayment",
+        "b": "OrderProduct",
+        "similarity": 0.15811388300841897
+      },
+      {
+        "a": "CardPayment",
+        "b": "OrderEntry",
+        "similarity": 0.0
+      },
+      {
+        "a": "CardPayment",
+        "b": "Supplier",
+        "similarity": 0.22360679774997896
+      },
+      {
+        "a": "CardPayment",
+        "b": "OrderProduct",
+        "similarity": 0.0
+      },
+      {
+        "a": "OrderEntry",
+        "b": "Supplier",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "OrderEntry",
+        "b": "OrderProduct",
+        "similarity": 0.3872983346207417
+      },
+      {
+        "a": "Supplier",
+        "b": "OrderProduct",
+        "similarity": 0.4242640687119285
+      }
+    ]
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "application": "Loan",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/microminer/input/loan.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "Loan.service.SubmitLoanRequest",
+        "Loan.domain.LoanRequest",
+        "Loan.domain.CheckingAccount",
+        "Loan.domain.CreditHistory"
+      ],
+      "service_names": [
+        "SubmitLoanRequest"
+      ],
+      "membership_scores": {
+        "LoanRequest": {
+          "SubmitLoanRequest": 1.0875,
+          "ThirdPartyServices": 0.09684475334265662,
+          "EnterValidatedCreditReferences": 1.0500567859353935,
+          "EvaluateLoanRequest": 1.0913061090812415,
+          "GenerateLoanLetterAndAgreement": 1.095851447563404,
+          "LoanProcessingSystemSystem": 1.0142886901662351,
+          "ManageLoanTermCRUDService": 0.039131189606246314
+        },
+        "CheckingAccount": {
+          "SubmitLoanRequest": 1.0903696114115065,
+          "ThirdPartyServices": 0.10716517624676404,
+          "EnterValidatedCreditReferences": 0.0,
+          "EvaluateLoanRequest": 0.06735753140545633,
+          "GenerateLoanLetterAndAgreement": 0.0,
+          "LoanProcessingSystemSystem": 0.0,
+          "ManageLoanTermCRUDService": 0.0
+        },
+        "CreditHistory": {
+          "SubmitLoanRequest": 1.0451848057057531,
+          "ThirdPartyServices": 0.07144345083117604,
+          "EnterValidatedCreditReferences": 0.04308202184276645,
+          "EvaluateLoanRequest": 0.06735753140545633,
+          "GenerateLoanLetterAndAgreement": 0.0,
+          "LoanProcessingSystemSystem": 0.0,
+          "ManageLoanTermCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "Loan.service.ThirdPartyServices"
+      ],
+      "service_names": [
+        "ThirdPartyServices"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "Loan.service.EnterValidatedCreditReferences",
+        "Loan.domain.LoanRequest"
+      ],
+      "service_names": [
+        "EnterValidatedCreditReferences"
+      ],
+      "membership_scores": {
+        "LoanRequest": {
+          "SubmitLoanRequest": 1.0875,
+          "ThirdPartyServices": 0.09684475334265662,
+          "EnterValidatedCreditReferences": 1.0500567859353935,
+          "EvaluateLoanRequest": 1.0913061090812415,
+          "GenerateLoanLetterAndAgreement": 1.095851447563404,
+          "LoanProcessingSystemSystem": 1.0142886901662351,
+          "ManageLoanTermCRUDService": 0.039131189606246314
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "Loan.service.EvaluateLoanRequest",
+        "Loan.domain.LoanRequest",
+        "Loan.domain.LoanTerm"
+      ],
+      "service_names": [
+        "EvaluateLoanRequest"
+      ],
+      "membership_scores": {
+        "LoanRequest": {
+          "SubmitLoanRequest": 1.0875,
+          "ThirdPartyServices": 0.09684475334265662,
+          "EnterValidatedCreditReferences": 1.0500567859353935,
+          "EvaluateLoanRequest": 1.0913061090812415,
+          "GenerateLoanLetterAndAgreement": 1.095851447563404,
+          "LoanProcessingSystemSystem": 1.0142886901662351,
+          "ManageLoanTermCRUDService": 0.039131189606246314
+        },
+        "LoanTerm": {
+          "SubmitLoanRequest": 0.04518480570575319,
+          "ThirdPartyServices": 0.03572172541558802,
+          "EnterValidatedCreditReferences": 0.04308202184276645,
+          "EvaluateLoanRequest": 1.0673575314054564,
+          "GenerateLoanLetterAndAgreement": 0.04124789556921527,
+          "LoanProcessingSystemSystem": 0.03689323936863109,
+          "ManageLoanTermCRUDService": 1.1010362971081844
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "Loan.service.GenerateLoanLetterAndAgreement",
+        "Loan.domain.LoanRequest",
+        "Loan.domain.Loan",
+        "Loan.domain.ApprovalLetter",
+        "Loan.domain.LoanAgreement"
+      ],
+      "service_names": [
+        "GenerateLoanLetterAndAgreement"
+      ],
+      "membership_scores": {
+        "LoanRequest": {
+          "SubmitLoanRequest": 1.0875,
+          "ThirdPartyServices": 0.09684475334265662,
+          "EnterValidatedCreditReferences": 1.0500567859353935,
+          "EvaluateLoanRequest": 1.0913061090812415,
+          "GenerateLoanLetterAndAgreement": 1.095851447563404,
+          "LoanProcessingSystemSystem": 1.0142886901662351,
+          "ManageLoanTermCRUDService": 0.039131189606246314
+        },
+        "Loan": {
+          "SubmitLoanRequest": 0.09660917830792959,
+          "ThirdPartyServices": 0.057282196186948,
+          "EnterValidatedCreditReferences": 0.04605661864718383,
+          "EvaluateLoanRequest": 0.05400617248673217,
+          "GenerateLoanLetterAndAgreement": 1.0440958551844097,
+          "LoanProcessingSystemSystem": 1.0197202659436653,
+          "ManageLoanTermCRUDService": 0.027003086243366083
+        },
+        "ApprovalLetter": {
+          "SubmitLoanRequest": 0.0,
+          "ThirdPartyServices": 0.0,
+          "EnterValidatedCreditReferences": 0.0,
+          "EvaluateLoanRequest": 0.0,
+          "GenerateLoanLetterAndAgreement": 1.1010362971081844,
+          "LoanProcessingSystemSystem": 0.0,
+          "ManageLoanTermCRUDService": 0.0
+        },
+        "LoanAgreement": {
+          "SubmitLoanRequest": 0.05533985905294664,
+          "ThirdPartyServices": 0.04375,
+          "EnterValidatedCreditReferences": 0.05276448530110863,
+          "EvaluateLoanRequest": 0.04124789556921527,
+          "GenerateLoanLetterAndAgreement": 1.1010362971081844,
+          "LoanProcessingSystemSystem": 0.04518480570575319,
+          "ManageLoanTermCRUDService": 0.0618718433538229
+        }
+      }
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "Loan.service.LoanProcessingSystemSystem",
+        "Loan.domain.LoanRequest",
+        "Loan.domain.Loan",
+        "Loan.domain.LoanAccount"
+      ],
+      "service_names": [
+        "LoanProcessingSystemSystem"
+      ],
+      "membership_scores": {
+        "LoanRequest": {
+          "SubmitLoanRequest": 1.0875,
+          "ThirdPartyServices": 0.09684475334265662,
+          "EnterValidatedCreditReferences": 1.0500567859353935,
+          "EvaluateLoanRequest": 1.0913061090812415,
+          "GenerateLoanLetterAndAgreement": 1.095851447563404,
+          "LoanProcessingSystemSystem": 1.0142886901662351,
+          "ManageLoanTermCRUDService": 0.039131189606246314
+        },
+        "Loan": {
+          "SubmitLoanRequest": 0.09660917830792959,
+          "ThirdPartyServices": 0.057282196186948,
+          "EnterValidatedCreditReferences": 0.04605661864718383,
+          "EvaluateLoanRequest": 0.05400617248673217,
+          "GenerateLoanLetterAndAgreement": 1.0440958551844097,
+          "LoanProcessingSystemSystem": 1.0197202659436653,
+          "ManageLoanTermCRUDService": 0.027003086243366083
+        },
+        "LoanAccount": {
+          "SubmitLoanRequest": 0.11739356881873896,
+          "ThirdPartyServices": 0.09280776503073435,
+          "EnterValidatedCreditReferences": 0.03731012536223182,
+          "EvaluateLoanRequest": 0.05833333333333333,
+          "GenerateLoanLetterAndAgreement": 0.03572172541558802,
+          "LoanProcessingSystemSystem": 1.0319504825211347,
+          "ManageLoanTermCRUDService": 0.04375
+        }
+      }
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "Loan.service.ManageLoanTermCRUDService",
+        "Loan.domain.LoanTerm"
+      ],
+      "service_names": [
+        "ManageLoanTermCRUDService"
+      ],
+      "membership_scores": {
+        "LoanTerm": {
+          "SubmitLoanRequest": 0.04518480570575319,
+          "ThirdPartyServices": 0.03572172541558802,
+          "EnterValidatedCreditReferences": 0.04308202184276645,
+          "EvaluateLoanRequest": 1.0673575314054564,
+          "GenerateLoanLetterAndAgreement": 0.04124789556921527,
+          "LoanProcessingSystemSystem": 0.03689323936863109,
+          "ManageLoanTermCRUDService": 1.1010362971081844
+        }
+      }
+    }
+  ],
+  "entity_memberships": {
+    "LoanRequest": [
+      {
+        "service": "SubmitLoanRequest",
+        "score": 1.0875
+      },
+      {
+        "service": "EnterValidatedCreditReferences",
+        "score": 1.050057
+      },
+      {
+        "service": "EvaluateLoanRequest",
+        "score": 1.091306
+      },
+      {
+        "service": "GenerateLoanLetterAndAgreement",
+        "score": 1.095851
+      },
+      {
+        "service": "LoanProcessingSystemSystem",
+        "score": 1.014289
+      }
+    ],
+    "CheckingAccount": [
+      {
+        "service": "SubmitLoanRequest",
+        "score": 1.09037
+      }
+    ],
+    "CreditHistory": [
+      {
+        "service": "SubmitLoanRequest",
+        "score": 1.045185
+      }
+    ],
+    "LoanTerm": [
+      {
+        "service": "EvaluateLoanRequest",
+        "score": 1.067358
+      },
+      {
+        "service": "ManageLoanTermCRUDService",
+        "score": 1.101036
+      }
+    ],
+    "Loan": [
+      {
+        "service": "GenerateLoanLetterAndAgreement",
+        "score": 1.044096
+      },
+      {
+        "service": "LoanProcessingSystemSystem",
+        "score": 1.01972
+      }
+    ],
+    "ApprovalLetter": [
+      {
+        "service": "GenerateLoanLetterAndAgreement",
+        "score": 1.101036
+      }
+    ],
+    "LoanAgreement": [
+      {
+        "service": "GenerateLoanLetterAndAgreement",
+        "score": 1.101036
+      }
+    ],
+    "LoanAccount": [
+      {
+        "service": "LoanProcessingSystemSystem",
+        "score": 1.03195
+      }
+    ]
+  }
+}

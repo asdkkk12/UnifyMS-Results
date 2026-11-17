@@ -1,0 +1,42 @@
+{
+  "case": "Library",
+  "input_original": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/library.remodel",
+  "input_sha256": "2f46f25515e81daff152fa32ce0f572c6f27f726243e970040236e3d20034b79",
+  "corrections": [
+    "Annotated properties retained",
+    "Own entity names in CMQ features",
+    "Only real entities in refs",
+    "Entity extends headers parsed, parent retained as reference; inherited properties not flattened",
+    "UnifyMS ignores line comments",
+    "JEV attempts limited to one"
+  ],
+  "formal_seeds": [
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "protocol_hashes": {
+    "compute_airms_metrics.py": "9884cba3b79daef9a7a2f2aa9b2ab5abd4b3b8692aa9f65af8217258d57a7bff",
+    "remodel_to_monoembed.py": "249e39bc87e8c9a58606c05c092aa2c61f00af70a0e9dbdcc2f8e2dead379ef5",
+    "microminer_remodel_decompose.py": "feeb9af1adb7ebaa87a20373a330832fd2c096cdf68c585a14d0b2be1cbbd5d2",
+    "api_decompose.py": "2c7249234738aeb844c72b0d0fdff1b54cf1870123738f1c474b5b9dae4a5169",
+    "run_library_comparison.py": "7a2751608bfa14abf27e63340622d110908f84669574b9e36aa68d38c98b71d5",
+    "report_library_comparison.py": "55248b5e36616f5fae675cb766b7cd30d3fd2278d1a99b33e00e52eb6615330f",
+    "remodelparse.patch": "5697c38a07c0257dcaa0cca4ba8dff328f6b8f18c7c4cba2863ed3d97d8d9169",
+    "Selectors.patch": "7691d240f57708a4deaa92e00d2495e33e5d02e59dff74ba7a6674bfb356d63a",
+    "remodel_to_microminer_input.py": "c124b12fef284cd9d821284f866b52b66857b3a40a6a5b7796ef996e9bb49a5b",
+    "remodel_to_servicecutter.py": "0cea3456126ca31edd03f6d93a77ca70f49db0007bc5a02eed3d3ee8e60fa27a",
+    "servicecutter_result_to_metrics_input.py": "2ed13572f5c8a744314ae9142fe7e31b8f65dbfb1aebe7176d20b1528f6f794e"
+  },
+  "status": "completed",
+  "formal_runs_completed": 10,
+  "jev_requests": 1,
+  "strict_req_exports": 10
+}

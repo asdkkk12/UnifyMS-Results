@@ -1,0 +1,149 @@
+{
+  "services": [
+    {
+      "nanoentities": [
+        "LoanAgreement.content",
+        "LoanAgreement.string",
+        "ApprovalLetter.content",
+        "LoanRequest.approvalloan",
+        "LoanRequest.attachedapprovalletter",
+        "LoanRequest.attachedloanagreement",
+        "LoanRequest.attachedloanterms",
+        "LoanRequest.checkingaccount",
+        "LoanRequest.checkingaccountnumber",
+        "LoanRequest.credithistory",
+        "LoanRequest.creditreferences",
+        "LoanRequest.creditscore",
+        "LoanRequest.email",
+        "LoanRequest.income",
+        "LoanRequest.integer",
+        "LoanRequest.loan",
+        "LoanRequest.loanagreement",
+        "LoanRequest.loanamount",
+        "LoanRequest.loanpurpose",
+        "LoanRequest.loanrequesttatus",
+        "LoanRequest.loanterm",
+        "LoanRequest.name",
+        "LoanRequest.phonenumber",
+        "LoanRequest.postaladdress",
+        "LoanRequest.real",
+        "LoanRequest.requestedcahistory",
+        "LoanRequest.requestedcredithistory",
+        "LoanRequest.requestid",
+        "LoanRequest.securitynumber",
+        "LoanRequest.status",
+        "LoanRequest.string",
+        "LoanRequest.workreferences",
+        "LoanRequest.zipcode",
+        "ApprovalLetter.string",
+        "Loan.belongedloanaccount",
+        "Loan.boolean",
+        "Loan.currentoverduedate",
+        "Loan.date",
+        "Loan.enddate",
+        "Loan.integer",
+        "Loan.ispaidinfull",
+        "Loan.loanaccount",
+        "Loan.loanid",
+        "Loan.loanrequest",
+        "Loan.loanstatus",
+        "Loan.real",
+        "Loan.referedloanrequest",
+        "Loan.remainamounttopay",
+        "Loan.repaymentamount",
+        "Loan.repaymentdays",
+        "Loan.startdate",
+        "LoanRequest.approvalletter",
+        "Loan.status"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "LoanTerm.content"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "LoanTerm.integer",
+        "LoanTerm.itemid",
+        "LoanTerm.string"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "LoanAccount.balance",
+        "LoanAccount.integer",
+        "LoanAccount.loanaccountid",
+        "LoanAccount.loanaccountstatus",
+        "LoanAccount.real",
+        "LoanAccount.status"
+      ],
+      "id": "D",
+      "name": "Service D"
+    },
+    {
+      "nanoentities": [
+        "CreditHistory.baddebits",
+        "CreditHistory.integer",
+        "CreditHistory.outstandingdebt",
+        "CreditHistory.real",
+        "CheckingAccount.balance",
+        "CheckingAccount.checkingaccountstatus",
+        "CheckingAccount.real",
+        "CheckingAccount.status"
+      ],
+      "id": "E",
+      "name": "Service E"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "LoanTerm.content"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service D",
+      "sharedEntities": [
+        "LoanAccount.balance"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service E",
+      "sharedEntities": [
+        "LoanRequest.approvalletter"
+      ],
+      "direction": "INCOMING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service E": [
+      "submitLoanRequest"
+    ],
+    "Service B": [
+      "manageLoanTerm"
+    ],
+    "Service A": [
+      "evaluateLoanRequest",
+      "enterValidatedCreditReferences",
+      "generateLoanLetterAndAgreement",
+      "bookNewLoan",
+      "loanPayment",
+      "closeOutLoan",
+      "generateStandardPaymentNotice",
+      "generateLateNotice"
+    ]
+  }
+}

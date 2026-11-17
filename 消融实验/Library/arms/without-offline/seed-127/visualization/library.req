@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="2f46f25515e81daff152fa32ce0f572c6f27f726243e970040236e3d20034b79" runHash="b8f4bab7d9170e731a408c6fda10d5aa379a4a0465674919c33ed6044ca9bca5" snapshotHash="56232c31136c06c815736bbfdf7c3cc1387719cf16465cfed22ac51d7bb25983" taskKey="11a1830a508283b765e91c20a028cab58669975a29bec7a7262bb570c5ff69db" configId="C0" seed="127" exportVersion="merm-export-v1">
+    <UseCaseModel name="library.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="searchBook" />
+        <uc name="cancelReservation" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="listBookHistory" />
+        <uc name="makeReservation" />
+        <uc name="recommendBook" />
+        <uc name="listRecommendBook" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 2" serviceId="2">
+        <uc name="borrowBook" />
+        <uc name="renewBook" />
+        <uc name="payOverDueFee" />
+        <uc name="returnBook" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 3" serviceId="3">
+        <uc name="checkOverDueandComputeOverDueFee" />
+        <uc name="dueSoonNotification" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 4" serviceId="4">
+        <uc name="countDownSuspensionDay" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 5" serviceId="5">
+        <uc name="sendNotificationEmail" />
+      </usecasecontext>
+      <actor name="Administrator" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.3" />
+      <actor name="Faculty" uc="" superActor="/0/@UseCaseModel/@actor.6" />
+      <actor name="Librarian" uc="/0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.3" />
+      <actor name="Scheduler" uc="/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.3/@uc.1" />
+      <actor name="Student" uc="" superActor="/0/@UseCaseModel/@actor.6" />
+      <actor name="ThirdPartSystem" uc="/0/@UseCaseModel/@usecasecontext.5/@uc.0" />
+      <actor name="User" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0" />
+    </UseCaseModel>
+    <DomainModel name="library.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.0 /0/@DomainModel/@systeminterface.1 /0/@DomainModel/@systeminterface.8 /0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.10">
+        <userinterface name="UserInterface">
+          <operation name="searchBookByAuthor()" />
+          <operation name="searchBookByBarCode()" />
+          <operation name="searchBookByISBN()" />
+          <operation name="searchBookBySubject()" />
+          <operation name="searchBookByTitle()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findBookbyID()" />
+          <operation name="findRecommendBookbyID()" />
+        </userinterface>
+        <entity name="Book">
+          <attributes name="CallNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Edition">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Author">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Publisher">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="ISBn">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="CopyNum">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <reference name="Copys" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="true" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="Subject" entity="/0/@DomainModel/@entitycontext.5/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="RecommendBook" superEntity="/0/@DomainModel/@entitycontext.0/@entity.0">
+          <attributes name="RecommendDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <reference name="RecommendUser" entity="/0/@DomainModel/@entitycontext.2/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.2 /0/@DomainModel/@systeminterface.3 /0/@DomainModel/@systeminterface.11 /0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.15">
+        <userinterface name="UserInterface">
+          <operation name="listBorrowHistory()" />
+          <operation name="listHodingBook()" />
+          <operation name="listOverDueBook()" />
+          <operation name="listRecommendBook()" />
+          <operation name="listReservationBook()" />
+          <operation name="makeReservation()" />
+          <operation name="recommendBook()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findBookCopybyID()" />
+          <operation name="findLibrarianbyID()" />
+        </userinterface>
+        <entity name="BookCopy">
+          <attributes name="Barcode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="CopyStatus[AVAILABLE|INPROCESSING|LIBUSEONLY|ONHOLDSHELF|LOANED]" />
+          </attributes>
+          <attributes name="Location">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="IsReserved">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="BookBelongs" entity="/0/@DomainModel/@entitycontext.0/@entity.0" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="LoanedRecord" entity="/0/@DomainModel/@entitycontext.3/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ReservationRecord" entity="/0/@DomainModel/@entitycontext.4/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Administrator">
+          <attributes name="AdminID">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="UserName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="Librarian">
+          <attributes name="LibrarianID">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext2" serviceId="2" systeminterface="/0/@DomainModel/@systeminterface.4 /0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.17 /0/@DomainModel/@systeminterface.18 /0/@DomainModel/@systeminterface.19">
+        <userinterface name="UserInterface">
+          <operation name="borrowBook()" />
+          <operation name="payOverDueFee()" />
+          <operation name="renewBook()" />
+          <operation name="returnBook()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findUserbyID()" />
+        </userinterface>
+        <entity name="User">
+          <attributes name="UserID">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Sex">
+            <type xsi:type="req:EnumTypeCS" name="Sex[M|F]" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Email">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Faculty">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="LoanedNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="BorrowStatus">
+            <type xsi:type="req:EnumTypeCS" name="BorrowStatus[NORMAL|SUSPEND]" />
+          </attributes>
+          <attributes name="SuspensionDays">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="OverDueFee">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="LoanedBook" entity="/0/@DomainModel/@entitycontext.3/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ReservedBook" entity="/0/@DomainModel/@entitycontext.4/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="RecommendedBook" entity="/0/@DomainModel/@entitycontext.0/@entity.1" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Student" superEntity="/0/@DomainModel/@entitycontext.2/@entity.0">
+          <attributes name="Major">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Programme">
+            <type xsi:type="req:EnumTypeCS" name="Programme[BACHELOR|MASTER|PHD]" />
+          </attributes>
+          <attributes name="RegistrationStatus">
+            <type xsi:type="req:EnumTypeCS" name="StudentStatus[GRADUATED|PROGRAMMING]" />
+          </attributes>
+        </entity>
+        <entity name="Faculty" superEntity="/0/@DomainModel/@entitycontext.2/@entity.0">
+          <attributes name="Position">
+            <type xsi:type="req:EnumTypeCS" name="FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR]" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="FacultyStatus[HASRETIRED|INPOSITION]" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext3" serviceId="3" systeminterface="/0/@DomainModel/@systeminterface.5 /0/@DomainModel/@systeminterface.20 /0/@DomainModel/@systeminterface.21 /0/@DomainModel/@systeminterface.22">
+        <userinterface name="UserInterface">
+          <operation name="checkOverDueandComputeOverDueFee()" />
+          <operation name="dueSoonNotification()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findLoanbyID()" />
+        </userinterface>
+        <entity name="Loan">
+          <attributes name="LoanDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="RenewDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="DueDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="ReturnDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="RenewedTimes">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="IsReturned">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDueFee">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="OverDue3Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDue10Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDue17Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDue31Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="LoanedUser" entity="/0/@DomainModel/@entitycontext.2/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="LoanedCopy" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="LoanLibrarian" entity="/0/@DomainModel/@entitycontext.1/@entity.2" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ReturnLibrarian" entity="/0/@DomainModel/@entitycontext.1/@entity.2" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext4" serviceId="4" systeminterface="/0/@DomainModel/@systeminterface.6 /0/@DomainModel/@systeminterface.23 /0/@DomainModel/@systeminterface.24">
+        <userinterface name="UserInterface">
+          <operation name="countDownSuspensionDay()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findReservebyID()" />
+        </userinterface>
+        <entity name="Reserve">
+          <attributes name="ReserveDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="IsReserveClosed">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="ReservedCopy" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="ReservedUser" entity="/0/@DomainModel/@entitycontext.2/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext5" serviceId="5" systeminterface="/0/@DomainModel/@systeminterface.7">
+        <userinterface name="UserInterface">
+          <operation name="sendNotificationEmail()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findSubjectbyID()" />
+        </userinterface>
+        <entity name="Subject">
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <reference name="SuperSubject" entity="/0/@DomainModel/@entitycontext.5/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="SubSubject" entity="/0/@DomainModel/@entitycontext.5/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofBook" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.12" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofRecommendBook" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.15 /0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.21 /0/@DomainModel/@systeminterface.24" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLibrarian" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.22" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofUser" entitycontext="/0/@DomainModel/@entitycontext.2" receiveinterface="/0/@DomainModel/@systeminterface.8 /0/@DomainModel/@systeminterface.11 /0/@DomainModel/@systeminterface.20 /0/@DomainModel/@systeminterface.23" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.3" receiveinterface="/0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.17" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofReserve" entitycontext="/0/@DomainModel/@entitycontext.4" receiveinterface="/0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.18" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofSubject" entitycontext="/0/@DomainModel/@entitycontext.5" receiveinterface="/0/@DomainModel/@systeminterface.9" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofUser" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofSubject" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofUser" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBook" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofReserve" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.6" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofRecommendBook" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofReserve" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.6" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofRecommendBook" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofUser" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLibrarian" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofUser" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.2" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

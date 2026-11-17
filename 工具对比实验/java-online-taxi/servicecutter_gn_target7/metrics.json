@@ -1,0 +1,2031 @@
+{
+  "application": "JavaOnlineTaxi",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/input/java-online-taxi.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/servicecutter/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "The decomposition is the official ServiceCutter solver result, bridged from its entity/nanoentity clusters."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 160,
+  "provided_interface_total": 49,
+  "CHD": 0.052894627238650564,
+  "Instability": 0.5377358490566038,
+  "IFN": 0.30625,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "servicecutter.domain.PassengerUser",
+        "servicecutter.service.ApiBossCarService",
+        "servicecutter.service.ApiBossDriverCarBindingRelationshipService",
+        "servicecutter.service.ApiBossDriverUserService",
+        "servicecutter.service.ApiDriverPointService",
+        "servicecutter.service.ApiDriverUserService",
+        "servicecutter.service.ApiDriverVerifyCodeService",
+        "servicecutter.service.ApiPassengerForecastPriceService",
+        "servicecutter.service.ApiPassengerOrderService",
+        "servicecutter.service.ApiPassengerTokenService",
+        "servicecutter.service.ApiPassengerUserService",
+        "servicecutter.service.ApiPassengerVerifyCodeService",
+        "servicecutter.service.ServiceDriverUserCarService",
+        "servicecutter.service.ServiceDriverUserDriverCarBindingRelationshipService",
+        "servicecutter.service.ServiceDriverUserDriverUserService",
+        "servicecutter.service.ServiceDriverUserDriverUserWorkStatusService",
+        "servicecutter.service.ServiceMapDicDistrictService",
+        "servicecutter.service.ServiceMapDirectionService",
+        "servicecutter.service.ServiceMapMapDicDistrictClient",
+        "servicecutter.service.ServiceMapMapDirectionClient",
+        "servicecutter.service.ServiceMapPointClient",
+        "servicecutter.service.ServiceMapPointService",
+        "servicecutter.service.ServiceMapServiceClient",
+        "servicecutter.service.ServiceMapServiceMapService",
+        "servicecutter.service.ServiceMapTerminalClient",
+        "servicecutter.service.ServiceMapTerminalService",
+        "servicecutter.service.ServiceMapTrackClient",
+        "servicecutter.service.ServiceMapTrackService",
+        "servicecutter.service.ServiceOrderOrderInfoService",
+        "servicecutter.service.ServicePassengerUserUserService",
+        "servicecutter.service.ServicePricePriceService",
+        "servicecutter.service.ServiceVerifycodeVerifyCodeService"
+      ],
+      "provided_interface": 49,
+      "required_interface_external_calls": 26,
+      "required_interface_implicit_crud": 31,
+      "required_interface": 57,
+      "instability": 0.5377358490566038,
+      "CHD": 0.052894627238650564
+    },
+    {
+      "cluster": 1,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 2,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 3,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 4,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 5,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 6,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 7,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 8,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 9,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 10,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 11,
+      "members": [
+        "servicecutter.domain.DriverUserWorkStatus"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 12,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 13,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 14,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 15,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 16,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 17,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 18,
+      "members": [
+        "servicecutter.domain.DicDistrict"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 19,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 20,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 21,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 22,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 23,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 24,
+      "members": [
+        "servicecutter.domain.Car"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 25,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 26,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 27,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 28,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 29,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 30,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 31,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 32,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 33,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 34,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 35,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 36,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 37,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 38,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 39,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 40,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 41,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 42,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 43,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 44,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 45,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 46,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 47,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 48,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 49,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 50,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 51,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 52,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 53,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 54,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 55,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 56,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 57,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 58,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 59,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 60,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 61,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 62,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 63,
+      "members": [
+        "servicecutter.domain.PriceRule"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 64,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 65,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 66,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 67,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 68,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 69,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 70,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 71,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 72,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 73,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 74,
+      "members": [
+        "servicecutter.domain.OrderInfo"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 75,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 76,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 77,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 78,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 79,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 80,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 81,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 82,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 83,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 84,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 85,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 86,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 87,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 88,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 89,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 90,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 91,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 92,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 93,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 94,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 95,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 96,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 97,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 98,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 99,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 100,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 101,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 102,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 103,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 104,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 105,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 106,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 107,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 108,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 109,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 110,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 111,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 112,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 113,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 114,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 115,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 116,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 117,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 118,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 119,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 120,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 121,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 122,
+      "members": [
+        "servicecutter.domain.DriverCarBindingRelationship"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 123,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 124,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 125,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 126,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 127,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 128,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 129,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 130,
+      "members": [
+        "servicecutter.domain.DriverUser"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 131,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 132,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 133,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 134,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 135,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 136,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 137,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 138,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 139,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 140,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 141,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 142,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 143,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 144,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 145,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 146,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 147,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 148,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 149,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 150,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 151,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 152,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 153,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 154,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 155,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 156,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 157,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 158,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 159,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    }
+  ],
+  "UCM": 0.037849462365591335,
+  "UCM_pair_count": 465,
+  "Intra_Cohesion": 0.0,
+  "Inter_Coupling": 0.22914807690352154,
+  "CMQ": -0.22914807690352154,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "Car": [
+        "address",
+        "brand",
+        "car",
+        "certifydatea",
+        "certifydateb",
+        "checkstate",
+        "commercialtype",
+        "date",
+        "enginedisplace",
+        "engineid",
+        "faretype",
+        "feeprintid",
+        "fixstate",
+        "fuetype",
+        "gmtcreate",
+        "gmtmodified",
+        "gpsbrand",
+        "gpsinstalldate",
+        "gpsmodel",
+        "id",
+        "integer",
+        "model",
+        "nextfixdate",
+        "ownername",
+        "platecolor",
+        "registerdate",
+        "seats",
+        "state",
+        "string",
+        "tid",
+        "transagency",
+        "transarea",
+        "transdateend",
+        "transdatestart",
+        "trid",
+        "trname",
+        "vehiclecolor",
+        "vehicleno",
+        "vehicletype",
+        "vin"
+      ],
+      "DicDistrict": [
+        "addresscode",
+        "addressname",
+        "dicdistrict",
+        "integer",
+        "level",
+        "parentaddresscode",
+        "string"
+      ],
+      "DriverCarBindingRelationship": [
+        "bindingtime",
+        "bindstate",
+        "carid",
+        "date",
+        "drivercarbindingrelationship",
+        "driverid",
+        "id",
+        "integer",
+        "unbindingtime"
+      ],
+      "DriverUser": [
+        "address",
+        "certificateno",
+        "commercialtype",
+        "contractcompany",
+        "contractoff",
+        "contracton",
+        "date",
+        "driverbirthday",
+        "drivercontactaddress",
+        "drivergender",
+        "driverlicenseoff",
+        "driverlicenseon",
+        "drivername",
+        "drivernation",
+        "driverphone",
+        "driveruser",
+        "getdriverlicensedate",
+        "getnetworkcarproofdate",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "licenseid",
+        "networkcarissuedate",
+        "networkcarissueorganization",
+        "networkcarproofoff",
+        "networkcarproofon",
+        "registerdate",
+        "state",
+        "string",
+        "taxidriver"
+      ],
+      "DriverUserWorkStatus": [
+        "date",
+        "driverid",
+        "driveruserworkstatus",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "workstatus"
+      ],
+      "PassengerUser": [
+        "date",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "passengergender",
+        "passengername",
+        "passengerphone",
+        "passengeruser",
+        "profilephoto",
+        "state",
+        "string"
+      ],
+      "PriceRule": [
+        "citycode",
+        "faretype",
+        "fareversion",
+        "integer",
+        "pricerule",
+        "real",
+        "startfare",
+        "startmile",
+        "string",
+        "unitpricepermile",
+        "unitpriceperminute",
+        "vehicletype"
+      ],
+      "OrderInfo": [
+        "address",
+        "canceloperator",
+        "canceltime",
+        "canceltypecode",
+        "carid",
+        "date",
+        "departtime",
+        "departure",
+        "deplatitude",
+        "deplongitude",
+        "destination",
+        "destlatitude",
+        "destlongitude",
+        "drivemile",
+        "driverarriveddeparturetime",
+        "driverid",
+        "driverphone",
+        "drivetime",
+        "encrypt",
+        "faretype",
+        "fareversion",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "licenseid",
+        "orderinfo",
+        "orderstatus",
+        "ordertime",
+        "passengergetofflatitude",
+        "passengergetofflongitude",
+        "passengergetofftime",
+        "passengerid",
+        "passengerphone",
+        "pickuppassengerlatitude",
+        "pickuppassengerlongitude",
+        "pickuppassengertime",
+        "price",
+        "real",
+        "receiveordercarlatitude",
+        "receiveordercarlongitude",
+        "receiveordertime",
+        "string",
+        "topickuppassengeraddress",
+        "topickuppassengerlatitude",
+        "topickuppassengerlongitude",
+        "topickuppassengertime",
+        "vehicleno",
+        "vehicletype"
+      ]
+    },
+    "effective_entity_clusters": {
+      "PassengerUser": 0,
+      "DriverUserWorkStatus": 11,
+      "DicDistrict": 18,
+      "Car": 24,
+      "PriceRule": 63,
+      "OrderInfo": 74,
+      "DriverCarBindingRelationship": 122,
+      "DriverUser": 130
+    },
+    "intra_pair_count": 0,
+    "inter_pair_count": 28,
+    "pairs": [
+      {
+        "a": "Car",
+        "b": "DicDistrict",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "Car",
+        "b": "DriverCarBindingRelationship",
+        "similarity": 0.15811388300841897
+      },
+      {
+        "a": "Car",
+        "b": "DriverUser",
+        "similarity": 0.2839809171235324
+      },
+      {
+        "a": "Car",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.2795084971874737
+      },
+      {
+        "a": "Car",
+        "b": "PassengerUser",
+        "similarity": 0.3195048252113469
+      },
+      {
+        "a": "Car",
+        "b": "PriceRule",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "Car",
+        "b": "OrderInfo",
+        "similarity": 0.22587697572631282
+      },
+      {
+        "a": "DicDistrict",
+        "b": "DriverCarBindingRelationship",
+        "similarity": 0.1259881576697424
+      },
+      {
+        "a": "DicDistrict",
+        "b": "DriverUser",
+        "similarity": 0.13576884666042613
+      },
+      {
+        "a": "DicDistrict",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.1336306209562122
+      },
+      {
+        "a": "DicDistrict",
+        "b": "PassengerUser",
+        "similarity": 0.2182178902359924
+      },
+      {
+        "a": "DicDistrict",
+        "b": "PriceRule",
+        "similarity": 0.2182178902359924
+      },
+      {
+        "a": "DicDistrict",
+        "b": "OrderInfo",
+        "similarity": 0.10798984943120776
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "DriverUser",
+        "similarity": 0.17960530202677488
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.47140452079103173
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "PassengerUser",
+        "similarity": 0.28867513459481287
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "PriceRule",
+        "similarity": 0.09622504486493763
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "OrderInfo",
+        "similarity": 0.23809523809523808
+      },
+      {
+        "a": "DriverUser",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.31750031750047625
+      },
+      {
+        "a": "DriverUser",
+        "b": "PassengerUser",
+        "similarity": 0.36293309315564887
+      },
+      {
+        "a": "DriverUser",
+        "b": "PriceRule",
+        "similarity": 0.10369516947304253
+      },
+      {
+        "a": "DriverUser",
+        "b": "OrderInfo",
+        "similarity": 0.23092110260585344
+      },
+      {
+        "a": "DriverUserWorkStatus",
+        "b": "PassengerUser",
+        "similarity": 0.5103103630798288
+      },
+      {
+        "a": "DriverUserWorkStatus",
+        "b": "PriceRule",
+        "similarity": 0.10206207261596577
+      },
+      {
+        "a": "DriverUserWorkStatus",
+        "b": "OrderInfo",
+        "similarity": 0.30304576336566325
+      },
+      {
+        "a": "PassengerUser",
+        "b": "PriceRule",
+        "similarity": 0.16666666666666666
+      },
+      {
+        "a": "PassengerUser",
+        "b": "OrderInfo",
+        "similarity": 0.28867513459481287
+      },
+      {
+        "a": "PriceRule",
+        "b": "OrderInfo",
+        "similarity": 0.24743582965269675
+      }
+    ]
+  }
+}

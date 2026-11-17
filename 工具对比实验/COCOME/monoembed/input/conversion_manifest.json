@@ -1,0 +1,622 @@
+{
+  "application": "COCOME",
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/input/cocome.remodel",
+  "services": [
+    {
+      "name": "CoCoMESystem",
+      "operations": [
+        {
+          "name": "openCashDesk",
+          "args": [
+            "cashDeskID"
+          ]
+        },
+        {
+          "name": "closeCashDesk",
+          "args": [
+            "cashDeskID"
+          ]
+        },
+        {
+          "name": "openStore",
+          "args": [
+            "storeID"
+          ]
+        },
+        {
+          "name": "closeStore",
+          "args": [
+            "storeID"
+          ]
+        },
+        {
+          "name": "changePrice",
+          "args": [
+            "barcode",
+            "newPrice"
+          ]
+        },
+        {
+          "name": "receiveOrderedProduct",
+          "args": [
+            "orderID"
+          ]
+        },
+        {
+          "name": "listSuppliers",
+          "args": []
+        },
+        {
+          "name": "showStockReports",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ThirdPartyServices",
+      "operations": [
+        {
+          "name": "thirdPartyCardPaymentService",
+          "args": [
+            "cardAccountNumber",
+            "expiryDate",
+            "fee"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ProcessSale",
+      "operations": [
+        {
+          "name": "makeNewSale",
+          "args": []
+        },
+        {
+          "name": "enterItem",
+          "args": [
+            "barcode",
+            "quantity"
+          ]
+        },
+        {
+          "name": "endSale",
+          "args": []
+        },
+        {
+          "name": "makeCashPayment",
+          "args": [
+            "amount"
+          ]
+        },
+        {
+          "name": "makeCardPayment",
+          "args": [
+            "cardAccountNumber",
+            "expiryDate",
+            "fee"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageStoreCRUDService",
+      "operations": [
+        {
+          "name": "createStore",
+          "args": [
+            "id",
+            "name",
+            "address",
+            "isopened"
+          ]
+        },
+        {
+          "name": "queryStore",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "modifyStore",
+          "args": [
+            "id",
+            "name",
+            "address",
+            "isopened"
+          ]
+        },
+        {
+          "name": "deleteStore",
+          "args": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageProductCatalogCRUDService",
+      "operations": [
+        {
+          "name": "createProductCatalog",
+          "args": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "queryProductCatalog",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "modifyProductCatalog",
+          "args": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "deleteProductCatalog",
+          "args": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageCashDeskCRUDService",
+      "operations": [
+        {
+          "name": "createCashDesk",
+          "args": [
+            "id",
+            "name",
+            "isopened"
+          ]
+        },
+        {
+          "name": "queryCashDesk",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "modifyCashDesk",
+          "args": [
+            "id",
+            "name",
+            "isopened"
+          ]
+        },
+        {
+          "name": "deleteCashDesk",
+          "args": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageCashierCRUDService",
+      "operations": [
+        {
+          "name": "createCashier",
+          "args": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "queryCashier",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "modifyCashier",
+          "args": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "deleteCashier",
+          "args": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageItemCRUDService",
+      "operations": [
+        {
+          "name": "createItem",
+          "args": [
+            "barcode",
+            "name",
+            "price",
+            "stocknumber",
+            "orderprice"
+          ]
+        },
+        {
+          "name": "queryItem",
+          "args": [
+            "barcode"
+          ]
+        },
+        {
+          "name": "modifyItem",
+          "args": [
+            "barcode",
+            "name",
+            "price",
+            "stocknumber",
+            "orderprice"
+          ]
+        },
+        {
+          "name": "deleteItem",
+          "args": [
+            "barcode"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageSupplierCRUDService",
+      "operations": [
+        {
+          "name": "createSupplier",
+          "args": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "querySupplier",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "modifySupplier",
+          "args": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "deleteSupplier",
+          "args": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OrderProducts",
+      "operations": [
+        {
+          "name": "makeNewOrder",
+          "args": [
+            "orderid"
+          ]
+        },
+        {
+          "name": "listAllOutOfStoreProducts",
+          "args": []
+        },
+        {
+          "name": "orderItem",
+          "args": [
+            "barcode",
+            "quantity"
+          ]
+        },
+        {
+          "name": "chooseSupplier",
+          "args": [
+            "supplierID"
+          ]
+        },
+        {
+          "name": "placeOrder",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "OpenCashDeskService",
+      "operations": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "Store",
+      "fields": [
+        [
+          "Id",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "Address",
+          "String"
+        ],
+        [
+          "IsOpened",
+          "Boolean"
+        ],
+        [
+          "AssociationCashdeskes",
+          "CashDesk"
+        ],
+        [
+          "Productcatalogs",
+          "ProductCatalog"
+        ],
+        [
+          "Items",
+          "Item"
+        ],
+        [
+          "Cashiers",
+          "Cashier"
+        ],
+        [
+          "Sales",
+          "Sale"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "ProductCatalog",
+      "fields": [
+        [
+          "Id",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "ContainedItems",
+          "Item"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "CashDesk",
+      "fields": [
+        [
+          "Id",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "IsOpened",
+          "Boolean"
+        ],
+        [
+          "ContainedSales",
+          "Sale"
+        ],
+        [
+          "BelongedStore",
+          "Store"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Sale",
+      "fields": [
+        [
+          "IsComplete",
+          "Boolean"
+        ],
+        [
+          "Amount",
+          "Real"
+        ],
+        [
+          "IsReadytoPay",
+          "Boolean"
+        ],
+        [
+          "Belongedstore",
+          "Store"
+        ],
+        [
+          "BelongedCashDesk",
+          "CashDesk"
+        ],
+        [
+          "ContainedSalesLine",
+          "SalesLineItem"
+        ],
+        [
+          "AssoicatedPayment",
+          "Payment"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Cashier",
+      "fields": [
+        [
+          "Id",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "WorkedStore",
+          "Store"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "SalesLineItem",
+      "fields": [
+        [
+          "Quantity",
+          "Integer"
+        ],
+        [
+          "Subamount",
+          "Real"
+        ],
+        [
+          "BelongedSale",
+          "Sale"
+        ],
+        [
+          "BelongedItem",
+          "Item"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Item",
+      "fields": [
+        [
+          "Barcode",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "Price",
+          "Real"
+        ],
+        [
+          "StockNumber",
+          "Integer"
+        ],
+        [
+          "OrderPrice",
+          "Real"
+        ],
+        [
+          "BelongedCatalog",
+          "ProductCatalog"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Payment",
+      "fields": [
+        [
+          "AmountTendered",
+          "Real"
+        ],
+        [
+          "BelongedSale",
+          "Sale"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "CashPayment",
+      "fields": [
+        [
+          "Balance",
+          "Real"
+        ]
+      ],
+      "parent": "Payment"
+    },
+    {
+      "name": "CardPayment",
+      "fields": [
+        [
+          "CardAccountNumber",
+          "String"
+        ]
+      ],
+      "parent": "Payment"
+    },
+    {
+      "name": "OrderEntry",
+      "fields": [
+        [
+          "Quantity",
+          "Integer"
+        ],
+        [
+          "SubAmount",
+          "Real"
+        ],
+        [
+          "Item",
+          "Item"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Supplier",
+      "fields": [
+        [
+          "Id",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "OrderProduct",
+      "fields": [
+        [
+          "Id",
+          "Integer"
+        ],
+        [
+          "Time",
+          "Date"
+        ],
+        [
+          "Amount",
+          "Real"
+        ],
+        [
+          "Supplier",
+          "Supplier"
+        ],
+        [
+          "ContainedEntries",
+          "OrderEntry"
+        ]
+      ],
+      "parent": null
+    }
+  ],
+  "note": "Synthetic source-like content derived from .remodel; not recovered implementation code."
+}

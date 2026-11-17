@@ -1,0 +1,109 @@
+--- original/Evaluation/QualityCalculate.java
++++ cached/Evaluation/QualityCalculate.java
+@@ -5,6 +5,31 @@
+ import java.util.*;
+ 
+ public class QualityCalculate {
++
++    // Input-only Jaccard values. Addition order in functionalCohesion is unchanged.
++    private static Object similarityModel;
++    private static Map<String,Integer> similarityIndex;
++    private static double[][] similarityValues;
++    private static void ensureSimilarities() {
++        if(similarityModel==DiagramParser.instancegetOPstoEntity && similarityValues!=null)return;
++        Set<String> names=new TreeSet<>(DiagramParser.instancegetOPstoEntity.keySet());
++        for(Set<String> ops:DiagramParser.instancegetUCtoOp.values())names.addAll(ops);
++        List<String> list=new ArrayList<>(names);similarityIndex=new HashMap<>();
++        similarityValues=new double[list.size()][list.size()];
++        for(int i=0;i<list.size();i++)similarityIndex.put(list.get(i),i);
++        for(int i=0;i<list.size();i++)for(int j=0;j<list.size();j++) {
++            Set<String> first=new HashSet<>(),second=new HashSet<>(),union=new HashSet<>();
++            String a=list.get(i),b=list.get(j);
++            if(a.startsWith("*"))first.add(a.substring(1));
++            else if(DiagramParser.instancegetOPstoEntity.get(a)!=null)first.addAll(DiagramParser.instancegetOPstoEntity.get(a));
++            if(b.startsWith("*")){second.add(b.substring(1));union.add(b.substring(1));}
++            else if(DiagramParser.instancegetOPstoEntity.get(b)!=null){second.addAll(DiagramParser.instancegetOPstoEntity.get(b));union.addAll(DiagramParser.instancegetOPstoEntity.get(b));}
++            second.retainAll(first);union.addAll(first);
++            similarityValues[i][j]=union.isEmpty()?0:(double)second.size()/union.size();
++        }
++        similarityModel=DiagramParser.instancegetOPstoEntity;
++    }
++
+ 
+ 
+     //计算实体属于哪个微服务
+@@ -147,46 +172,12 @@
+                 continue;
+             }
+ 
+-            for (int j = 0; j < oplist.size(); j++) {//计算OP两两之间的领域相关度####
+-                String firstOP = oplist.get(j);
+-                HashSet<String> firsetESet = new HashSet<>();
+-                if(firstOP.startsWith("*")){
+-                    firsetESet.add(firstOP.substring(1));
+-                }
+-                else{
+-                    HashSet<String> tempset = getOPstoEntity.get(firstOP);
+-                    if (tempset != null)
+-                        firsetESet.addAll(tempset);
+-                    //firsetESet = getOPstoEntity.get(firstOP);
+-                }
+-                for (int k = j+1; k < oplist.size(); k++) {
+-                    String secondOP = oplist.get(k);
+-                    HashSet<String> secondSet = new HashSet<>();
+-                    HashSet<String> thirdSet = new HashSet<>();
+-                    if(secondOP.startsWith("*")){
+-                        secondSet.add(secondOP.substring(1));
+-                        thirdSet.add(secondOP.substring(1));
+-                    }
+-                    else{
+-                        HashSet<String> tempset = getOPstoEntity.get(secondOP);
+-                        if (tempset!=null) {
+-                            for (String s : tempset) {
+-                                secondSet.add(s);
+-                                thirdSet.add(s);
+-                            }
+-                        }
+-
+-                    }
+-                    secondSet.retainAll(firsetESet);
+-                    thirdSet.addAll(firsetESet);
+-                    double x = secondSet.size();
+-                    double y = thirdSet.size();
+-                    if (y==0)
+-                        continue;
+-                    tempresult += x/y;
+-                }
+-
+-
++            ensureSimilarities();
++            int[] opids=new int[oplist.size()];
++            for(int j=0;j<opids.length;j++)opids[j]=similarityIndex.get(oplist.get(j));
++            for(int j=0;j<opids.length;j++) {
++                double[] similarities=similarityValues[opids[j]];
++                for(int k=j+1;k<opids.length;k++)tempresult+=similarities[opids[k]];
+             }
+             if (oplist.size()==0)
+                 continue;
+@@ -268,8 +259,8 @@
+         // for(int i=0;i< EtoE.size();i++)
+         //     flag[i]=0;
+ 
+-        for (int i = 0 ; i< EtoE.toArray().length; i++){  //断开关系
+-            for (int j = 0 ; j<EtoE.toArray().length ; j++){
++        for (int i = 0 ; i< EtoE.size(); i++){  //断开关系
++            for (int j = 0 ; j<EtoE.size() ; j++){
+                 if (EtoE.get(i)[j] == 1){
+                     if (!M.containsKey(i) ||!M.containsKey(j))
+                         continue;
+@@ -328,8 +319,8 @@
+     public double calServiceGranularity(ArrayList<double[]> UCtoE, ArrayList<double[]>EtoE, ArrayList<ArrayList<Integer>>divi){
+         Map<Integer, Integer> M = ContexttoEntity(UCtoE,divi);
+         double cnt = 0;
+-        for (int i = 0 ; i< EtoE.toArray().length; i++){
+-            for (int j=0; j<EtoE.toArray().length ;j++){
++        for (int i = 0 ; i< EtoE.size(); i++){
++            for (int j=0; j<EtoE.size() ;j++){
+                 if (EtoE.get(i)[j] == 1){
+                     if(M.get(i) == M.get(j)){
+                         cnt = cnt+1;

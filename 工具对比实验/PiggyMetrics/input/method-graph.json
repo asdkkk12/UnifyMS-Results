@@ -1,0 +1,1494 @@
+{
+  "io.spring2go.cathelper.CatContext#addProperty/2@13": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.cathelper.CatContext#getProperty/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.cathelper.CatRestInterceptor#intercept/3@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.cathelper.CatServletFilter#init/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.cathelper.CatServletFilter#doFilter/3@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "io.spring2go.cathelper.CatContext#addProperty/2@13"
+    ]
+  },
+  "io.spring2go.cathelper.CatServletFilter#destroy/0@66": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.AccountApplication#main/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.CatAopService#aroundMethod/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.CatFilterConfigure#catFilter/0@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.client.StatisticsServiceClient#updateStatistics/2@16": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.client.StatisticsServiceClientFallback#updateStatistics/2@12",
+      "io.spring2go.piggymetrics.statistics.controller.StatisticsController#saveAccountStatistics/2@29"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.client.StatisticsServiceClientFallback#updateStatistics/2@12": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.client.UserServiceClient#createUser/2@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.controller.AccountController#getAccountByName/1@18": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountService#findByName/1@14"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.controller.AccountController#getCurrentAccount/1@23": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountService#findByName/1@14"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.controller.AccountController#saveCurrentAccount/2@28": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "AccountServiceItem",
+      "AccountServiceSaving",
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountService#saveChanges/2@33"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.controller.AccountController#createNewAccount/1@33": {
+    "direct_entities": [
+      "AccountServiceAccount",
+      "AccountServiceUser"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "AccountServiceSaving",
+      "AccountServiceUser"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountService#create/1@24"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.controller.ErrorHandler#processValidationError/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#getName/0@36": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#setName/1@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#getLastSeen/0@44": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#setLastSeen/1@48": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#getIncomes/0@52": {
+    "direct_entities": [
+      "AccountServiceItem"
+    ],
+    "reachable_entities": [
+      "AccountServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#setIncomes/1@56": {
+    "direct_entities": [
+      "AccountServiceItem"
+    ],
+    "reachable_entities": [
+      "AccountServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#getExpenses/0@60": {
+    "direct_entities": [
+      "AccountServiceItem"
+    ],
+    "reachable_entities": [
+      "AccountServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#setExpenses/1@64": {
+    "direct_entities": [
+      "AccountServiceItem"
+    ],
+    "reachable_entities": [
+      "AccountServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#getSaving/0@68": {
+    "direct_entities": [
+      "AccountServiceSaving"
+    ],
+    "reachable_entities": [
+      "AccountServiceSaving"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#setSaving/1@72": {
+    "direct_entities": [
+      "AccountServiceSaving"
+    ],
+    "reachable_entities": [
+      "AccountServiceSaving"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#getNote/0@76": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Account#setNote/1@80": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Currency#getDefault/0@7": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#getTitle/0@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#setTitle/1@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#getAmount/0@34": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#setAmount/1@38": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#getCurrency/0@42": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#setCurrency/1@46": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#getPeriod/0@50": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#setPeriod/1@54": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#getIcon/0@58": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Item#setIcon/1@62": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#getAmount/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#setAmount/1@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#getCurrency/0@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#setCurrency/1@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#getInterest/0@39": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#setInterest/1@43": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#getDeposit/0@47": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#setDeposit/1@51": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#getCapitalization/0@55": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.Saving#setCapitalization/1@59": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.User#getUsername/0@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.User#setUsername/1@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.User#getPassword/0@25": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.domain.User#setPassword/1@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.account.service.AccountService#findByName/1@14": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountServiceImpl#findByName/1@39"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.service.AccountService#create/1@24": {
+    "direct_entities": [
+      "AccountServiceAccount",
+      "AccountServiceUser"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "AccountServiceSaving",
+      "AccountServiceUser"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountServiceImpl#create/1@51"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.service.AccountService#saveChanges/2@33": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "AccountServiceItem",
+      "AccountServiceSaving",
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.service.AccountServiceImpl#saveChanges/2@82"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.service.AccountServiceImpl#findByName/1@39": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.service.AccountServiceImpl#create/1@51": {
+    "direct_entities": [
+      "AccountServiceAccount",
+      "AccountServiceSaving",
+      "AccountServiceUser"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "AccountServiceSaving",
+      "AccountServiceUser"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.client.UserServiceClient#createUser/2@15",
+      "io.spring2go.piggymetrics.account.domain.Account#getName/0@36",
+      "io.spring2go.piggymetrics.account.domain.Account#setLastSeen/1@48",
+      "io.spring2go.piggymetrics.account.domain.Account#setName/1@40",
+      "io.spring2go.piggymetrics.account.domain.Account#setSaving/1@72",
+      "io.spring2go.piggymetrics.account.domain.Currency#getDefault/0@7",
+      "io.spring2go.piggymetrics.account.domain.Saving#setAmount/1@27",
+      "io.spring2go.piggymetrics.account.domain.Saving#setCapitalization/1@59",
+      "io.spring2go.piggymetrics.account.domain.Saving#setCurrency/1@35",
+      "io.spring2go.piggymetrics.account.domain.Saving#setDeposit/1@51",
+      "io.spring2go.piggymetrics.account.domain.Saving#setInterest/1@43",
+      "io.spring2go.piggymetrics.account.domain.User#getPassword/0@25",
+      "io.spring2go.piggymetrics.account.domain.User#getUsername/0@17",
+      "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10"
+    ]
+  },
+  "io.spring2go.piggymetrics.account.service.AccountServiceImpl#saveChanges/2@82": {
+    "direct_entities": [
+      "AccountServiceAccount"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "AccountServiceItem",
+      "AccountServiceSaving",
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.client.StatisticsServiceClient#updateStatistics/2@16",
+      "io.spring2go.piggymetrics.account.domain.Account#getExpenses/0@60",
+      "io.spring2go.piggymetrics.account.domain.Account#getIncomes/0@52",
+      "io.spring2go.piggymetrics.account.domain.Account#getNote/0@76",
+      "io.spring2go.piggymetrics.account.domain.Account#getSaving/0@68",
+      "io.spring2go.piggymetrics.account.domain.Account#setExpenses/1@64",
+      "io.spring2go.piggymetrics.account.domain.Account#setIncomes/1@56",
+      "io.spring2go.piggymetrics.account.domain.Account#setLastSeen/1@48",
+      "io.spring2go.piggymetrics.account.domain.Account#setNote/1@80",
+      "io.spring2go.piggymetrics.account.domain.Account#setSaving/1@72",
+      "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10"
+    ]
+  },
+  "io.spring2go.piggymetrics.gateway.CatFilterConfigure#catFilter/0@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.GatewayApplication#main/1@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.GatewayApplication#restTemplate/0@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.CatHeaderFilter#shouldFilter/0@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.CatHeaderFilter#run/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.CatHeaderFilter#filterType/0@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.CatHeaderFilter#filterOrder/0@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#shouldFilter/0@37": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#run/0@64": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#getBase64Credentials/0@35",
+      "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#getTokenIntrospectEndpoint/0@27"
+    ]
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#filterType/0@105": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#filterOrder/0@110": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#getClientCredentials/0@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#setClientCredentials/1@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#getTokenIntrospectEndpoint/0@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#setTokenIntrospectEndpoint/1@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#getBase64Credentials/0@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.gateway.filter.ValidationConfig#initBase64Creds/0@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.CatAopService#aroundMethod/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.CatFilterConfigure#catFilter/0@13": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.NotificationServiceApplication#main/1@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.client.AccountServiceClient#getAccount/1@16": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "AccountServiceAccount"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.account.controller.AccountController#getAccountByName/1@18"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.controller.RecipientController#getCurrentNotificationsSettings/1@22": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.RecipientService#findByAccountName/1@16"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.controller.RecipientController#saveCurrentNotificationsSettings/2@27": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.RecipientService#save/2@34"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.domain.Frequency#getDays/0@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Frequency#withDays/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationSettings#getActive/0@16": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationSettings#setActive/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationSettings#getFrequency/0@24": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationSettings#setFrequency/1@28": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationSettings#getLastNotified/0@32": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationSettings#setLastNotified/1@36": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationType#getSubject/0@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationType#getText/0@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.NotificationType#getAttachment/0@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#getAccountName/0@24": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#setAccountName/1@28": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#getEmail/0@32": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#setEmail/1@36": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#getScheduledNotifications/0@40": {
+    "direct_entities": [
+      "NotificationServiceNotificationSettings"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#setScheduledNotifications/1@44": {
+    "direct_entities": [
+      "NotificationServiceNotificationSettings"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.domain.Recipient#toString/0@49": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findByAccountName/1@14": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findReadyForBackup/0@19": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findReadyForRemind/0@24": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.notification.repository.converter.FrequencyReaderConverter#convert/1@11": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.domain.Frequency#withDays/1@19"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.repository.converter.FrequencyWriterConverter#convert/1@11": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.domain.Frequency#getDays/0@15"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.EmailService#send/3@11": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.EmailServiceImpl#send/3@38"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.EmailServiceImpl#send/3@38": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.domain.NotificationType#getAttachment/0@26",
+      "io.spring2go.piggymetrics.notification.domain.NotificationType#getSubject/0@18",
+      "io.spring2go.piggymetrics.notification.domain.NotificationType#getText/0@22",
+      "io.spring2go.piggymetrics.notification.domain.Recipient#getAccountName/0@24",
+      "io.spring2go.piggymetrics.notification.domain.Recipient#getEmail/0@32"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.NotificationService#sendBackupNotifications/0@5": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl#sendBackupNotifications/0@33"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.NotificationService#sendRemindNotifications/0@7": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl#sendRemindNotifications/0@54"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl#sendBackupNotifications/0@33": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "AccountServiceAccount",
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.client.AccountServiceClient#getAccount/1@16",
+      "io.spring2go.piggymetrics.notification.service.EmailService#send/3@11",
+      "io.spring2go.piggymetrics.notification.service.RecipientService#findReadyToNotify/1@25",
+      "io.spring2go.piggymetrics.notification.service.RecipientService#markNotified/2@43"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl#sendRemindNotifications/0@54": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.EmailService#send/3@11",
+      "io.spring2go.piggymetrics.notification.service.RecipientService#findReadyToNotify/1@25",
+      "io.spring2go.piggymetrics.notification.service.RecipientService#markNotified/2@43"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientService#findByAccountName/1@16": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findByAccountName/1@26"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientService#findReadyToNotify/1@25": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findReadyToNotify/1@59"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientService#save/2@34": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#save/2@37"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientService#markNotified/2@43": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findByAccountName/1@26": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findByAccountName/1@14"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#save/2@37": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.domain.Recipient#getScheduledNotifications/0@40",
+      "io.spring2go.piggymetrics.notification.domain.Recipient#setAccountName/1@28"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findReadyToNotify/1@59": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findReadyForBackup/0@19",
+      "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findReadyForRemind/0@24"
+    ]
+  },
+  "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79": {
+    "direct_entities": [
+      "NotificationServiceRecipient"
+    ],
+    "reachable_entities": [
+      "NotificationServiceNotificationSettings",
+      "NotificationServiceRecipient"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.notification.domain.Recipient#getScheduledNotifications/0@40"
+    ]
+  },
+  "io.spring2go.piggymetrics.registry.CatFilterConfigure#catFilter/0@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.registry.RegistryApplication#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.CatAopService#aroundMethod/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.CatFilterConfigure#catFilter/0@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.StatisticsApplication#main/1@24": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClient#getRates/1@16": {
+    "direct_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClientFallback#getRates/1@13"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClientFallback#getRates/1@13": {
+    "direct_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.domain.Currency#getBase/0@7",
+      "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#setBase/1@30",
+      "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#setRates/1@38"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.controller.StatisticsController#getCurrentAccountStatistics/1@19": {
+    "direct_entities": [
+      "StatisticsServiceDataPoint"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.StatisticsService#findByAccountName/1@16"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.controller.StatisticsController#getStatisticsByAccountName/1@24": {
+    "direct_entities": [
+      "StatisticsServiceDataPoint"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.StatisticsService#findByAccountName/1@16"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.controller.StatisticsController#saveAccountStatistics/2@29": {
+    "direct_entities": [
+      "StatisticsServiceAccount"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.StatisticsService#save/2@28"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Account#getIncomes/0@27": {
+    "direct_entities": [
+      "StatisticsServiceItem"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Account#setIncomes/1@31": {
+    "direct_entities": [
+      "StatisticsServiceItem"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Account#getExpenses/0@35": {
+    "direct_entities": [
+      "StatisticsServiceItem"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Account#setExpenses/1@39": {
+    "direct_entities": [
+      "StatisticsServiceItem"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItem"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Account#getSaving/0@43": {
+    "direct_entities": [
+      "StatisticsServiceSaving"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceSaving"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Account#setSaving/1@47": {
+    "direct_entities": [
+      "StatisticsServiceSaving"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceSaving"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Currency#getBase/0@7": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getDate/0@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#setDate/1@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getBase/0@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#setBase/1@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getRates/0@34": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#setRates/1@38": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#toString/0@43": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#getTitle/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#setTitle/1@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#getAmount/0@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#setAmount/1@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#getCurrency/0@39": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#setCurrency/1@43": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#getPeriod/0@47": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Item#setPeriod/1@51": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#getAmount/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#setAmount/1@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#getCurrency/0@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#setCurrency/1@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#getInterest/0@39": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#setInterest/1@43": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#getDeposit/0@47": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#setDeposit/1@51": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#getCapitalization/0@55": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.Saving#setCapitalization/1@59": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.TimePeriod#getBaseRatio/0@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.TimePeriod#getBase/0@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#getId/0@29": {
+    "direct_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setId/1@33": {
+    "direct_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#getIncomes/0@37": {
+    "direct_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setIncomes/1@41": {
+    "direct_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#getExpenses/0@45": {
+    "direct_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setExpenses/1@49": {
+    "direct_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#getStatistics/0@53": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setStatistics/1@57": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#getRates/0@61": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setRates/1@65": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId#getAccount/0@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId#getDate/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId#toString/0@28": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric#getTitle/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric#getAmount/0@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric#equals/1@32": {
+    "direct_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceItemMetric"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric#hashCode/0@43": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.repository.DataPointRepository#findByIdAccount/1@15": {
+    "direct_entities": [
+      "StatisticsServiceDataPoint"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPoint"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.repository.converter.DataPointIdReaderConverter#convert/1@14": {
+    "direct_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": []
+  },
+  "io.spring2go.piggymetrics.statistics.repository.converter.DataPointIdWriterConverter#convert/1@15": {
+    "direct_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId#getAccount/0@19",
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId#getDate/0@23"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService#getCurrentRates/0@16": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService#convert/3@26": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#convert/3@69"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38": {
+    "direct_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClient#getRates/1@16",
+      "io.spring2go.piggymetrics.statistics.domain.Currency#getBase/0@7",
+      "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getDate/0@18",
+      "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getRates/0@34"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#convert/3@69": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.StatisticsService#findByAccountName/1@16": {
+    "direct_entities": [
+      "StatisticsServiceDataPoint"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#findByAccountName/1@45"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.StatisticsService#save/2@28": {
+    "direct_entities": [
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#findByAccountName/1@45": {
+    "direct_entities": [
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.repository.DataPointRepository#findByIdAccount/1@15"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56": {
+    "direct_entities": [
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceAccount",
+      "StatisticsServiceDataPoint",
+      "StatisticsServiceDataPointId",
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.domain.Account#getExpenses/0@35",
+      "io.spring2go.piggymetrics.statistics.domain.Account#getIncomes/0@27",
+      "io.spring2go.piggymetrics.statistics.domain.Account#getSaving/0@43",
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setExpenses/1@49",
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setId/1@33",
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setIncomes/1@41",
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setRates/1@65",
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setStatistics/1@57",
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService#getCurrentRates/0@16",
+      "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85": {
+    "direct_entities": [
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItemMetric",
+      "StatisticsServiceSaving"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.domain.Currency#getBase/0@7",
+      "io.spring2go.piggymetrics.statistics.domain.Saving#getAmount/0@23",
+      "io.spring2go.piggymetrics.statistics.domain.Saving#getCurrency/0@31",
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService#convert/3@26"
+    ]
+  },
+  "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createItemMetric/1@108": {
+    "direct_entities": [
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric"
+    ],
+    "reachable_entities": [
+      "StatisticsServiceExchangeRatesContainer",
+      "StatisticsServiceItem",
+      "StatisticsServiceItemMetric"
+    ],
+    "calls": [
+      "io.spring2go.piggymetrics.statistics.domain.Currency#getBase/0@7",
+      "io.spring2go.piggymetrics.statistics.domain.Item#getAmount/0@31",
+      "io.spring2go.piggymetrics.statistics.domain.Item#getCurrency/0@39",
+      "io.spring2go.piggymetrics.statistics.domain.Item#getPeriod/0@47",
+      "io.spring2go.piggymetrics.statistics.domain.Item#getTitle/0@23",
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService#convert/3@26"
+    ]
+  }
+}

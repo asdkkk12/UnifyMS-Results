@@ -1,0 +1,640 @@
+{
+  "application": "LightReading",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/light_reading_20261103_01/microminer/input/light-reading.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserBookshelfServiceImpl",
+        "LightReading.domain.UserBookshelf",
+        "LightReading.domain.Book"
+      ],
+      "service_names": [
+        "ReadingCloudAccountUserBookshelfServiceImpl"
+      ],
+      "membership_scores": {
+        "UserBookshelf": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0667423812471915,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.028577380332470412,
+          "ReadingCloudAccountUserServiceImpl": 0.03337119062359573,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 0.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserLikeSeeServiceImpl",
+        "LightReading.domain.UserLikeSee",
+        "LightReading.domain.Book"
+      ],
+      "service_names": [
+        "ReadingCloudAccountUserLikeSeeServiceImpl"
+      ],
+      "membership_scores": {
+        "UserLikeSee": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.03517632353407242,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0903696114115065,
+          "ReadingCloudAccountUserServiceImpl": 0.03517632353407242,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserServiceImpl",
+        "LightReading.domain.User"
+      ],
+      "service_names": [
+        "ReadingCloudAccountUserServiceImpl"
+      ],
+      "membership_scores": {
+        "User": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.03046358979224712,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.026087459737497546,
+          "ReadingCloudAccountUserServiceImpl": 1.0304635897922472,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 0.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "LightReading.service.ReadingCloudBookBookChapterServiceImpl",
+        "LightReading.domain.Book",
+        "LightReading.domain.BookChapter"
+      ],
+      "service_names": [
+        "ReadingCloudBookBookChapterServiceImpl"
+      ],
+      "membership_scores": {
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "BookChapter": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.03046358979224712,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.026087459737497546,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0673575314054564,
+          "ReadingCloudBookBookServiceImpl": 0.038188130791298666,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.03367876570272817,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.03572172541558802,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 0.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "LightReading.service.ReadingCloudBookBookServiceImpl",
+        "LightReading.domain.Book"
+      ],
+      "service_names": [
+        "ReadingCloudBookBookServiceImpl"
+      ],
+      "membership_scores": {
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "LightReading.service.ReadingCloudBookDataDictionaryServiceImpl",
+        "LightReading.domain.DataDictionary"
+      ],
+      "service_names": [
+        "ReadingCloudBookDataDictionaryServiceImpl"
+      ],
+      "membership_scores": {
+        "DataDictionary": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 1.0777777777777777,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 0.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageBookCenterServiceImpl",
+        "LightReading.domain.Book"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageBookCenterServiceImpl"
+      ],
+      "membership_scores": {
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 7,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageIndexBannerServiceImpl",
+        "LightReading.domain.IndexBanner",
+        "LightReading.domain.IndexBannerItem"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageIndexBannerServiceImpl"
+      ],
+      "membership_scores": {
+        "IndexBanner": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 1.0782623792124926,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.029580398915498077,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.03689323936863109,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.035,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBannerItem": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 1.0639009650422693,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.048304589153964794,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.03012320380383546,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0285773803324705,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 8,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "LightReading.domain.UserLikeSee",
+        "LightReading.domain.Book",
+        "LightReading.domain.IndexBooklist",
+        "LightReading.domain.IndexBooklistItem"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageIndexBooklistItemServiceImpl"
+      ],
+      "membership_scores": {
+        "UserLikeSee": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.03517632353407242,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0903696114115065,
+          "ReadingCloudAccountUserServiceImpl": 0.03517632353407242,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBooklist": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.029166666666666664,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0440958551844097,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.054997194092287,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0260874597374976,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBooklistItem": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.03432032364918221,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0778311782494157,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.0647150228929434,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 0.030697030675746025,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 9,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageIndexBooklistServiceImpl",
+        "LightReading.domain.UserLikeSee",
+        "LightReading.domain.Book",
+        "LightReading.domain.IndexBooklist"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageIndexBooklistServiceImpl"
+      ],
+      "membership_scores": {
+        "UserLikeSee": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.03517632353407242,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0903696114115065,
+          "ReadingCloudAccountUserServiceImpl": 0.03517632353407242,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBooklist": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.029166666666666664,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0440958551844097,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.054997194092287,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0260874597374976,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 10,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "LightReading.domain.UserLikeSee",
+        "LightReading.domain.Book",
+        "LightReading.domain.IndexBanner",
+        "LightReading.domain.IndexBannerItem",
+        "LightReading.domain.IndexBooklist",
+        "LightReading.domain.IndexPageConfig"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageIndexPageConfigServiceImpl"
+      ],
+      "membership_scores": {
+        "UserLikeSee": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.03517632353407242,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0903696114115065,
+          "ReadingCloudAccountUserServiceImpl": 0.03517632353407242,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "Book": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 1.0224988521286629,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 1.0192668658897113,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 1.0248734169081546,
+          "ReadingCloudBookBookServiceImpl": 1.0282038037408883,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.02487341690815455,
+          "ReadingCloudHomepageBookCenterServiceImpl": 1.0263822426505542,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.0,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBanner": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 1.0782623792124926,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.029580398915498077,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.03689323936863109,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.035,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBannerItem": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 1.0639009650422693,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.048304589153964794,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.03012320380383546,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0285773803324705,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexBooklist": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.029166666666666664,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 1.0440958551844097,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 1.054997194092287,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0260874597374976,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        },
+        "IndexPageConfig": {
+          "ReadingCloudAccountUserBookshelfServiceImpl": 0.0,
+          "ReadingCloudAccountUserLikeSeeServiceImpl": 0.0,
+          "ReadingCloudAccountUserServiceImpl": 0.0,
+          "ReadingCloudBookBookChapterServiceImpl": 0.0,
+          "ReadingCloudBookBookServiceImpl": 0.0,
+          "ReadingCloudBookDataDictionaryServiceImpl": 0.0,
+          "ReadingCloudHomepageBookCenterServiceImpl": 0.0,
+          "ReadingCloudHomepageIndexBannerServiceImpl": 0.03093592167691145,
+          "ReadingCloudHomepageIndexBooklistItemServiceImpl": 0.023385358667337132,
+          "ReadingCloudHomepageIndexBooklistServiceImpl": 0.029166666666666664,
+          "ReadingCloudHomepageIndexPageConfigServiceImpl": 1.0830097885794199,
+          "ReadingCloudHomepageSearchServiceImpl": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 11,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageSearchServiceImpl"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageSearchServiceImpl"
+      ],
+      "membership_scores": {}
+    }
+  ],
+  "entity_memberships": {
+    "UserBookshelf": [
+      {
+        "service": "ReadingCloudAccountUserBookshelfServiceImpl",
+        "score": 1.066742
+      }
+    ],
+    "Book": [
+      {
+        "service": "ReadingCloudAccountUserBookshelfServiceImpl",
+        "score": 1.022499
+      },
+      {
+        "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+        "score": 1.019267
+      },
+      {
+        "service": "ReadingCloudBookBookChapterServiceImpl",
+        "score": 1.024873
+      },
+      {
+        "service": "ReadingCloudBookBookServiceImpl",
+        "score": 1.028204
+      },
+      {
+        "service": "ReadingCloudHomepageBookCenterServiceImpl",
+        "score": 1.026382
+      },
+      {
+        "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "score": 1.0
+      },
+      {
+        "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+        "score": 1.0
+      },
+      {
+        "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "score": 1.0
+      }
+    ],
+    "UserLikeSee": [
+      {
+        "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+        "score": 1.09037
+      },
+      {
+        "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "score": 1.0
+      },
+      {
+        "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+        "score": 1.0
+      },
+      {
+        "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "score": 1.0
+      }
+    ],
+    "User": [
+      {
+        "service": "ReadingCloudAccountUserServiceImpl",
+        "score": 1.030464
+      }
+    ],
+    "BookChapter": [
+      {
+        "service": "ReadingCloudBookBookChapterServiceImpl",
+        "score": 1.067358
+      }
+    ],
+    "DataDictionary": [
+      {
+        "service": "ReadingCloudBookDataDictionaryServiceImpl",
+        "score": 1.077778
+      }
+    ],
+    "IndexBanner": [
+      {
+        "service": "ReadingCloudHomepageIndexBannerServiceImpl",
+        "score": 1.078262
+      },
+      {
+        "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "score": 1.035
+      }
+    ],
+    "IndexBannerItem": [
+      {
+        "service": "ReadingCloudHomepageIndexBannerServiceImpl",
+        "score": 1.063901
+      },
+      {
+        "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "score": 1.028577
+      }
+    ],
+    "IndexBooklist": [
+      {
+        "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "score": 1.044096
+      },
+      {
+        "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+        "score": 1.054997
+      },
+      {
+        "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "score": 1.026087
+      }
+    ],
+    "IndexBooklistItem": [
+      {
+        "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "score": 1.077831
+      }
+    ],
+    "IndexPageConfig": [
+      {
+        "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "score": 1.08301
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="e666fbd5bb2b797d77a1bbdcc6731e1caf0dd99ed28dc3e29c5f79877ba563fa" runHash="82dd9e21aac8f2ba79fbffde21fa5957e1ae6fde23001046d5a511d97049f6d1" snapshotHash="59957ffbaf2c4bc81ea8b909bae510d536dc3c0c40a975b49cf01b394649610b" taskKey="e34cc45a174a796728a2a06f19da1f7f4908662fd49f4458ee016d541dc1c2c6" configId="C5" seed="101" exportVersion="merm-export-v1">
+    <UseCaseModel name="loan.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="evaluateLoanRequest" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="manageLoanTerm" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 2" serviceId="2">
+        <uc name="enterValidatedCreditReferences" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 3" serviceId="3">
+        <uc name="generateLoanLetterAndAgreement" />
+        <uc name="bookNewLoan" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 4" serviceId="4">
+        <uc name="loanPayment" />
+        <uc name="closeOutLoan" />
+        <uc name="generateStandardPaymentNotice" />
+        <uc name="generateLateNotice" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 5" serviceId="5">
+        <uc name="submitLoanRequest" />
+      </usecasecontext>
+      <actor name="Applicant" uc="/0/@UseCaseModel/@usecasecontext.5/@uc.0" />
+      <actor name="LoanAssistant" uc="/0/@UseCaseModel/@usecasecontext.2/@uc.0" />
+      <actor name="LoanClerk" uc="/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0" />
+      <actor name="LoanOfficer" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0" />
+      <actor name="Scheduler" uc="/0/@UseCaseModel/@usecasecontext.4/@uc.3 /0/@UseCaseModel/@usecasecontext.4/@uc.2" />
+    </UseCaseModel>
+    <DomainModel name="loan.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.0 /0/@DomainModel/@systeminterface.8 /0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.11 /0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.13">
+        <userinterface name="UserInterface">
+          <operation name="addLoanTerm()" />
+          <operation name="approveLoanRequest()" />
+          <operation name="checkCreditHistory()" />
+          <operation name="chooseOneForReview()" />
+          <operation name="listAvaiableLoanTerm()" />
+          <operation name="listTenLoanRequest()" />
+          <operation name="reviewCheckingAccount()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findLoanRequestbyID()" />
+        </userinterface>
+        <entity name="LoanRequest">
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="LoanRequesttatus[SUBMITTED|REFERENCESVALIDATED|APPROVED|READYFORREVIEW|INCOMPLETEINFORMATION]" />
+          </attributes>
+          <attributes name="RequestID">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="LoanAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="LoanPurpose">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Income">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="PhoneNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="PostalAddress">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="ZipCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Email">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="WorkReferences">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="CreditReferences">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="CheckingAccountNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="SecurityNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="CreditScore">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <reference name="ApprovalLoan" entity="/0/@DomainModel/@entitycontext.5/@entity.0" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="RequestedCAHistory" entity="/0/@DomainModel/@entitycontext.3/@entity.0" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="RequestedCreditHistory" entity="/0/@DomainModel/@entitycontext.2/@entity.0" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="AttachedApprovalLetter" entity="/0/@DomainModel/@entitycontext.4/@entity.0" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="AttachedLoanAgreement" entity="/0/@DomainModel/@entitycontext.4/@entity.1" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="AttachedLoanTerms" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.1">
+        <userinterface name="UserInterface">
+          <operation name="createLoanTerm()" />
+          <operation name="deleteLoanTerm()" />
+          <operation name="modifyLoanTerm()" />
+          <operation name="queryLoanTerm()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findLoanTermbyID()" />
+        </userinterface>
+        <entity name="LoanTerm">
+          <attributes name="ItemID">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Content">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext2" serviceId="2" systeminterface="/0/@DomainModel/@systeminterface.2 /0/@DomainModel/@systeminterface.14">
+        <userinterface name="UserInterface">
+          <operation name="chooseLoanRequest()" />
+          <operation name="listSubmitedLoanRequest()" />
+          <operation name="markRequestValid()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findCreditHistorybyID()" />
+        </userinterface>
+        <entity name="CreditHistory">
+          <attributes name="OutstandingDebt">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="BadDebits">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext3" serviceId="3" systeminterface="/0/@DomainModel/@systeminterface.3 /0/@DomainModel/@systeminterface.4 /0/@DomainModel/@systeminterface.15 /0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.17 /0/@DomainModel/@systeminterface.18">
+        <userinterface name="UserInterface">
+          <operation name="bookNewLoan()" />
+          <operation name="emailToAppliant()" />
+          <operation name="generateLoanAgreement()" />
+          <operation name="genereateApprovalLetter()" />
+          <operation name="listApprovalRequest()" />
+          <operation name="printLoanAgreement()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findCheckingAccountbyID()" />
+          <operation name="findLoanAccountbyID()" />
+        </userinterface>
+        <entity name="CheckingAccount">
+          <attributes name="Balance">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="CheckingAccountStatus[GOODSTANDING|SUSPENDED]" />
+          </attributes>
+        </entity>
+        <entity name="LoanAccount">
+          <attributes name="LoanAccountID">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Balance">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="LoanAccountStatus[NORMAL|HASPAIDINFULL]" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext4" serviceId="4" systeminterface="/0/@DomainModel/@systeminterface.5 /0/@DomainModel/@systeminterface.6 /0/@DomainModel/@systeminterface.19">
+        <userinterface name="UserInterface">
+          <operation name="closeOutLoan()" />
+          <operation name="generateLateNotice()" />
+          <operation name="generateStandardPaymentNotice()" />
+          <operation name="loanPayment()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findApprovalLetterbyID()" />
+          <operation name="findLoanAgreementbyID()" />
+        </userinterface>
+        <entity name="ApprovalLetter">
+          <attributes name="Content">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="LoanAgreement">
+          <attributes name="Content">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext5" serviceId="5" systeminterface="/0/@DomainModel/@systeminterface.7 /0/@DomainModel/@systeminterface.20 /0/@DomainModel/@systeminterface.21 /0/@DomainModel/@systeminterface.22 /0/@DomainModel/@systeminterface.23">
+        <userinterface name="UserInterface">
+          <operation name="accountStatusRequest()" />
+          <operation name="calculateScore()" />
+          <operation name="creditRequest()" />
+          <operation name="enterLoanInformation()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findLoanbyID()" />
+        </userinterface>
+        <entity name="Loan">
+          <attributes name="LoanID">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="RemainAmountToPay">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="LoanStatus[LSOPEN|CLOSED]" />
+          </attributes>
+          <attributes name="IsPaidinFull">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="StartDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="EndDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="CurrentOverDueDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="RePaymentDays">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="RepaymentAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="ReferedLoanRequest" entity="/0/@DomainModel/@entitycontext.0/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="BelongedLoanAccount" entity="/0/@DomainModel/@entitycontext.3/@entity.1" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLoanRequest" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.15 /0/@DomainModel/@systeminterface.20" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLoanTerm" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.9" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofCreditHistory" entitycontext="/0/@DomainModel/@entitycontext.2" receiveinterface="/0/@DomainModel/@systeminterface.11 /0/@DomainModel/@systeminterface.22" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofCheckingAccount" entitycontext="/0/@DomainModel/@entitycontext.3" receiveinterface="/0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.21" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLoanAccount" entitycontext="/0/@DomainModel/@entitycontext.3" receiveinterface="/0/@DomainModel/@systeminterface.23" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofApprovalLetter" entitycontext="/0/@DomainModel/@entitycontext.4" receiveinterface="/0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.17" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLoanAgreement" entitycontext="/0/@DomainModel/@entitycontext.4" receiveinterface="/0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.18" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.5" receiveinterface="/0/@DomainModel/@systeminterface.8 /0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanTerm" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofCheckingAccount" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofCreditHistory" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofApprovalLetter" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanAgreement" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.6" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanRequest" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanRequest" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofApprovalLetter" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanAgreement" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.6" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoan" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanRequest" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofCheckingAccount" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofCreditHistory" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofLoanAccount" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.4" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

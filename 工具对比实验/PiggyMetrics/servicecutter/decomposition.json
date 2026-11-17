@@ -1,0 +1,110 @@
+{
+  "method": "ServiceCutter official Chinese Whispers + Java AST bridge",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/piggy_metrics_20261103_01/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "Native use-case responsibilities map directly to Java @Service proxy IDs, then to that class public methods.",
+    "A class remains one input unit, matching MicroMiner/MonoEmbed class granularity.",
+    "Use-case proxies lacking native responsibility fall back to the largest nanoentity cluster; their list is explicit.",
+    "Entity ownership uses the majority of its actual fields; no native field partition is changed."
+  ],
+  "fallback_cluster": 3,
+  "fallback_services": [],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "PiggyMetrics.service.NotificationServiceRecipientServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceNotificationSettings"
+      ],
+      "servicecutter_nanoentities": [
+        "NotificationServiceNotificationSettings.lastNotified",
+        "NotificationServiceNotificationSettings.active",
+        "NotificationServiceNotificationSettings.frequency"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [
+        "PiggyMetrics.service.NotificationServiceNotificationServiceImpl",
+        "PiggyMetrics.domain.AccountServiceAccount",
+        "PiggyMetrics.domain.AccountServiceItem",
+        "PiggyMetrics.domain.AccountServiceSaving"
+      ],
+      "servicecutter_nanoentities": [
+        "AccountServiceAccount.expenses",
+        "AccountServiceItem.title",
+        "AccountServiceItem.icon",
+        "AccountServiceItem.period",
+        "AccountServiceItem.currency",
+        "AccountServiceItem.amount",
+        "AccountServiceSaving.capitalization",
+        "AccountServiceSaving.interest",
+        "AccountServiceAccount.incomes",
+        "AccountServiceAccount.note",
+        "AccountServiceSaving.currency",
+        "AccountServiceSaving.amount",
+        "AccountServiceAccount.lastSeen",
+        "AccountServiceAccount.saving",
+        "AccountServiceSaving.deposit",
+        "AccountServiceAccount.name"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [
+        "PiggyMetrics.service.NotificationServiceEmailServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "servicecutter_nanoentities": [
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications",
+        "NotificationServiceRecipient.accountName"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [
+        "PiggyMetrics.service.AccountServiceAccountServiceImpl",
+        "PiggyMetrics.service.StatisticsServiceExchangeRatesServiceImpl",
+        "PiggyMetrics.service.StatisticsServiceStatisticsServiceImpl",
+        "PiggyMetrics.domain.AccountServiceUser",
+        "PiggyMetrics.domain.StatisticsServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceDataPoint",
+        "PiggyMetrics.domain.StatisticsServiceDataPointId",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer",
+        "PiggyMetrics.domain.StatisticsServiceItem",
+        "PiggyMetrics.domain.StatisticsServiceItemMetric",
+        "PiggyMetrics.domain.StatisticsServiceSaving"
+      ],
+      "servicecutter_nanoentities": [
+        "StatisticsServiceDataPoint.expenses",
+        "StatisticsServiceSaving.amount",
+        "StatisticsServiceDataPoint.id",
+        "StatisticsServiceDataPoint.rates",
+        "StatisticsServiceExchangeRatesContainer.base",
+        "AccountServiceUser.username",
+        "StatisticsServiceDataPoint.incomes",
+        "StatisticsServiceDataPointId.account",
+        "StatisticsServiceSaving.capitalization",
+        "StatisticsServiceDataPointId.date",
+        "StatisticsServiceAccount.expenses",
+        "StatisticsServiceExchangeRatesContainer.rates",
+        "StatisticsServiceItem.title",
+        "StatisticsServiceItemMetric.title",
+        "StatisticsServiceExchangeRatesContainer.date",
+        "StatisticsServiceAccount.incomes",
+        "StatisticsServiceDataPoint.statistics",
+        "StatisticsServiceSaving.interest",
+        "StatisticsServiceItem.period",
+        "AccountServiceUser.password",
+        "StatisticsServiceItem.amount",
+        "StatisticsServiceSaving.currency",
+        "StatisticsServiceItemMetric.amount",
+        "StatisticsServiceSaving.deposit",
+        "StatisticsServiceAccount.saving",
+        "StatisticsServiceItem.currency"
+      ]
+    }
+  ]
+}

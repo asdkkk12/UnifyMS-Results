@@ -1,0 +1,92 @@
+{
+  "status": "verified",
+  "groups": [
+    {
+      "arm": "without-offline",
+      "runs": 10,
+      "generations": 100,
+      "evaluations": 602111,
+      "candidateEvaluations": 111,
+      "selected": 0,
+      "probability-JEV": 90,
+      "generation-LLM": 360,
+      "candidate-JEV": 0
+    },
+    {
+      "arm": "without-probability",
+      "runs": 10,
+      "generations": 100,
+      "evaluations": 602106,
+      "candidateEvaluations": 106,
+      "selected": 0,
+      "probability-JEV": 0,
+      "generation-LLM": 360,
+      "candidate-JEV": 0
+    },
+    {
+      "arm": "without-guidance",
+      "runs": 10,
+      "generations": 100,
+      "evaluations": 602000,
+      "candidateEvaluations": 0,
+      "selected": 0,
+      "probability-JEV": 90,
+      "generation-LLM": 0,
+      "candidate-JEV": 0
+    }
+  ],
+  "rejectionCounts": {
+    "Invalid service assignment": 270,
+    "TARGET_NOT_STRICTLY_IMPROVED_AT_STORED_PRECISION": 217,
+    "Duplicate/base partition": 512,
+    "Service count changed/empty service": 441
+  },
+  "distinctPopulationHashes": 22,
+  "populationHashes": {
+    "arms/without-probability/seed-103/run.json": "58bdb64db393823abc5ccdf2fdb2b37570cfc8b9bf713d07bce64fa4c71484a5",
+    "arms/without-probability/seed-127/run.json": "8d6a82c518ceaf927637c621f39f80cff23cb2e25e4493b91772ac4373aed448",
+    "arms/without-probability/seed-107/run.json": "56b2c8f03b9bc4831cf6f36174b79ba8ae896928be535d356bf5867393cc1b2f",
+    "arms/without-probability/seed-131/run.json": "093f801392455da494d1da49f7048d69075e2bd7c8de7e755c5f184cbc139c42",
+    "arms/without-probability/seed-109/run.json": "6cee6b9926bd6217da9375038f359ba7b267229b3fbd884abf5b11d95ab7b59c",
+    "arms/without-probability/seed-137/run.json": "b73a4ab6ca1ca1137f97aa347e9d13768777ddf46eaf8426e9da05eba6aff0a4",
+    "arms/without-probability/seed-139/run.json": "cbdbddfed795c7d1b26eb487577de75fbc0694895554991b2ed3bd179e7b6f96",
+    "arms/without-probability/seed-101/run.json": "9bff2a350e0961143d42a5d11e62557340651c83456ae2c1e73ba21e8bce89eb",
+    "arms/without-probability/seed-113/run.json": "12ff89d74aee7342028f3fa6a8d74ce2c4924770abc134dc23d0937e013985ec",
+    "arms/without-probability/seed-149/run.json": "7f57e1d6c09040d7e0fb10fbfb2b105763a64eabb0bd2563c211d303467b3b87",
+    "arms/without-guidance/seed-103/run.json": "b2d2a9be58fcca772507448a4aa96d1d0014ad8ac550b07313aae01a995500c1",
+    "arms/without-guidance/seed-127/run.json": "1ff382cf18afc959a1b4b630543c3ad5fc179eb3751db66579204c864ef89d9e",
+    "arms/without-guidance/seed-107/run.json": "09965e1000057326923f28718c25183701b11459c9c0de343874f7adfeede93e",
+    "arms/without-guidance/seed-131/run.json": "e30a1fedacdc84a83a4c2198696b4b5911504b9b24b6df3ce1d728333d75adf3",
+    "arms/without-guidance/seed-109/run.json": "7fb0f89f4e0f961dbfdd8b8875d8ee0af714750465d2fe350abe85adb55f517c",
+    "arms/without-guidance/seed-137/run.json": "2cc49e44eb26eab48ebafcf19a5a99b1860ccc477408335233c4fd6b4e316f89",
+    "arms/without-guidance/seed-139/run.json": "498900d3d0ace93ada596b08d7bd8d628453b19dfc0105f29cfa28977aeed031",
+    "arms/without-guidance/seed-101/run.json": "ab5eb763fe05adf584454ece13d71cfd7a444e194192b4661113784e311ddb7d",
+    "arms/without-guidance/seed-113/run.json": "201631068c5318eca0a4d9a9905d2b71dfa8add795596d80a3155d7e2d834035",
+    "arms/without-guidance/seed-149/run.json": "fd4a4266b114714ee3e5fc63873e36541cd5eeb67fb256c66dd97e3e233631a1",
+    "arms/without-offline/seed-103/run.json": "b2d2a9be58fcca772507448a4aa96d1d0014ad8ac550b07313aae01a995500c1",
+    "arms/without-offline/seed-127/run.json": "1ff382cf18afc959a1b4b630543c3ad5fc179eb3751db66579204c864ef89d9e",
+    "arms/without-offline/seed-107/run.json": "09965e1000057326923f28718c25183701b11459c9c0de343874f7adfeede93e",
+    "arms/without-offline/seed-131/run.json": "e30a1fedacdc84a83a4c2198696b4b5911504b9b24b6df3ce1d728333d75adf3",
+    "arms/without-offline/seed-109/run.json": "640759d35cfce927887e62dc803fa81e0a39b1a8bd9c9560fa411c1663e1676c",
+    "arms/without-offline/seed-137/run.json": "2cc49e44eb26eab48ebafcf19a5a99b1860ccc477408335233c4fd6b4e316f89",
+    "arms/without-offline/seed-139/run.json": "498900d3d0ace93ada596b08d7bd8d628453b19dfc0105f29cfa28977aeed031",
+    "arms/without-offline/seed-101/run.json": "ab5eb763fe05adf584454ece13d71cfd7a444e194192b4661113784e311ddb7d",
+    "arms/without-offline/seed-113/run.json": "201631068c5318eca0a4d9a9905d2b71dfa8add795596d80a3155d7e2d834035",
+    "arms/without-offline/seed-149/run.json": "c5ac96330d716819a14ce10c2eecb245f0a63f908ff446b85cb68d4406f36310"
+  },
+  "distinctFinalFrontMetricSets": 1,
+  "distinctRepresentativeChromosomes": 1,
+  "recomputation": {
+    "savedSolutions": 6245,
+    "enumeratedPartitions": 2386,
+    "frontMetricVectors": [
+      "[-0.0, 0.4766, 0.0, 0.0, 0.2933]",
+      "[0.6667, 0.553, 0.0, 0.3333, 0.5111]",
+      "[0.75, 0.5893, 0.0, 0.25, 0.5083]",
+      "[0.75, 0.5958, 0.0, 0.25, 0.3538]",
+      "[1.0, 0.6945, 0.0, 0.5, 0.4143]",
+      "[1.0, 0.7569, 0.0, 0.5, 0.38]"
+    ],
+    "hv": 0.24125731312371923
+  }
+}

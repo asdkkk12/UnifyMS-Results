@@ -1,0 +1,653 @@
+{
+  "application": "LightReading",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/light_reading_20261103_01/input/light-reading.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/light_reading_20261103_01/servicecutter/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "The decomposition is the official ServiceCutter solver result, bridged from its entity/nanoentity clusters."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 5,
+  "provided_interface_total": 30,
+  "CHD": 0.46564594356261013,
+  "Instability": 0.49767711962833916,
+  "IFN": 6.0,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "LightReading.domain.BookChapter"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserBookshelfServiceImpl",
+        "LightReading.service.ReadingCloudAccountUserLikeSeeServiceImpl",
+        "LightReading.service.ReadingCloudBookBookChapterServiceImpl",
+        "LightReading.service.ReadingCloudBookBookServiceImpl",
+        "LightReading.service.ReadingCloudHomepageBookCenterServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBannerServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBooklistServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "LightReading.service.ReadingCloudHomepageSearchServiceImpl",
+        "LightReading.domain.Book",
+        "LightReading.domain.IndexBanner",
+        "LightReading.domain.IndexBannerItem",
+        "LightReading.domain.IndexBooklist",
+        "LightReading.domain.IndexBooklistItem",
+        "LightReading.domain.IndexPageConfig",
+        "LightReading.domain.UserBookshelf",
+        "LightReading.domain.UserLikeSee"
+      ],
+      "provided_interface": 24,
+      "required_interface_external_calls": 17,
+      "required_interface_implicit_crud": 41,
+      "required_interface": 58,
+      "instability": 0.7073170731707317,
+      "CHD": 0.23693783068783045
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "LightReading.service.ReadingCloudBookDataDictionaryServiceImpl",
+        "LightReading.domain.DataDictionary"
+      ],
+      "provided_interface": 1,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 1,
+      "required_interface": 1,
+      "instability": 0.5,
+      "CHD": 1.0
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserServiceImpl",
+        "LightReading.domain.User"
+      ],
+      "provided_interface": 5,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 2,
+      "required_interface": 2,
+      "instability": 0.2857142857142857,
+      "CHD": 0.16
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "LightReading.domain.BookAuthor"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    }
+  ],
+  "UCM": 0.06363636363636366,
+  "UCM_pair_count": 66,
+  "Intra_Cohesion": 0.5465886547893419,
+  "Inter_Coupling": 0.4870408494148685,
+  "CMQ": 0.059547805374473406,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "User": [
+        "createtime",
+        "date",
+        "headimgurl",
+        "id",
+        "integer",
+        "loginname",
+        "nickname",
+        "phonenumber",
+        "string",
+        "updatetime",
+        "user",
+        "userpwd",
+        "uuid"
+      ],
+      "UserBookshelf": [
+        "bookid",
+        "createtime",
+        "date",
+        "id",
+        "integer",
+        "lastchapterid",
+        "lastreadtime",
+        "string",
+        "userbookshelf",
+        "userid"
+      ],
+      "UserLikeSee": [
+        "bookid",
+        "createtime",
+        "date",
+        "id",
+        "integer",
+        "string",
+        "userid",
+        "userlikesee"
+      ],
+      "Book": [
+        "authorid",
+        "authorname",
+        "book",
+        "bookid",
+        "bookname",
+        "bookscore",
+        "creater",
+        "createtime",
+        "date",
+        "diccategory",
+        "dicchannel",
+        "dicserialstatus",
+        "id",
+        "imgurl",
+        "integer",
+        "introduction",
+        "isbn",
+        "keyword",
+        "onlinestatus",
+        "string",
+        "updater",
+        "updatetime",
+        "wordcount"
+      ],
+      "BookAuthor": [
+        "bookauthor",
+        "creater",
+        "createtime",
+        "date",
+        "headimgurl",
+        "id",
+        "integer",
+        "introduction",
+        "name",
+        "string",
+        "updater",
+        "updatetime"
+      ],
+      "BookChapter": [
+        "bookchapter",
+        "bookid",
+        "content",
+        "createtime",
+        "date",
+        "id",
+        "integer",
+        "lockstatus",
+        "name",
+        "sortnumber",
+        "string",
+        "updatetime"
+      ],
+      "DataDictionary": [
+        "code",
+        "datadictionary",
+        "dictype",
+        "dictypename",
+        "id",
+        "integer",
+        "name",
+        "sortnumber",
+        "string"
+      ],
+      "IndexBanner": [
+        "creater",
+        "createtime",
+        "date",
+        "id",
+        "indexbanner",
+        "integer",
+        "name",
+        "string",
+        "updater",
+        "updatetime"
+      ],
+      "IndexBannerItem": [
+        "bannerid",
+        "creater",
+        "createtime",
+        "date",
+        "id",
+        "imgurl",
+        "indexbanneritem",
+        "integer",
+        "name",
+        "sortnumber",
+        "string",
+        "updater",
+        "updatetime",
+        "url"
+      ],
+      "IndexBooklist": [
+        "bookids",
+        "creater",
+        "createtime",
+        "date",
+        "enddate",
+        "id",
+        "indexbooklist",
+        "integer",
+        "moretype",
+        "moreurl",
+        "name",
+        "showlikecount",
+        "shownumber",
+        "startdate",
+        "string",
+        "style",
+        "updater",
+        "updatetime"
+      ],
+      "IndexBooklistItem": [
+        "bookid",
+        "booklistid",
+        "creater",
+        "createtime",
+        "date",
+        "id",
+        "indexbooklistitem",
+        "integer",
+        "sortnumber",
+        "string",
+        "updater",
+        "updatetime"
+      ],
+      "IndexPageConfig": [
+        "creater",
+        "createtime",
+        "date",
+        "enddate",
+        "id",
+        "indexpageconfig",
+        "integer",
+        "itemid",
+        "itemtype",
+        "pagetype",
+        "sortnumber",
+        "startdate",
+        "string",
+        "updater",
+        "updatetime"
+      ]
+    },
+    "effective_entity_clusters": {
+      "BookChapter": 0,
+      "Book": 1,
+      "IndexBanner": 1,
+      "IndexBannerItem": 1,
+      "IndexBooklist": 1,
+      "IndexBooklistItem": 1,
+      "IndexPageConfig": 1,
+      "UserBookshelf": 1,
+      "UserLikeSee": 1,
+      "DataDictionary": 2,
+      "User": 3,
+      "BookAuthor": 4
+    },
+    "intra_pair_count": 28,
+    "inter_pair_count": 38,
+    "pairs": [
+      {
+        "a": "User",
+        "b": "UserBookshelf",
+        "similarity": 0.43852900965351466
+      },
+      {
+        "a": "User",
+        "b": "UserLikeSee",
+        "similarity": 0.4902903378454601
+      },
+      {
+        "a": "User",
+        "b": "Book",
+        "similarity": 0.34698895917974415
+      },
+      {
+        "a": "User",
+        "b": "BookAuthor",
+        "similarity": 0.560448538317805
+      },
+      {
+        "a": "User",
+        "b": "BookChapter",
+        "similarity": 0.48038446141526137
+      },
+      {
+        "a": "User",
+        "b": "DataDictionary",
+        "similarity": 0.2773500981126145
+      },
+      {
+        "a": "User",
+        "b": "IndexBanner",
+        "similarity": 0.5262348115842176
+      },
+      {
+        "a": "User",
+        "b": "IndexBannerItem",
+        "similarity": 0.4447495899966607
+      },
+      {
+        "a": "User",
+        "b": "IndexBooklist",
+        "similarity": 0.39223227027636803
+      },
+      {
+        "a": "User",
+        "b": "IndexBooklistItem",
+        "similarity": 0.48038446141526137
+      },
+      {
+        "a": "User",
+        "b": "IndexPageConfig",
+        "similarity": 0.4296689244236597
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "UserLikeSee",
+        "similarity": 0.7826237921249264
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "Book",
+        "similarity": 0.3956282840374722
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "BookAuthor",
+        "similarity": 0.45643546458763845
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "BookChapter",
+        "similarity": 0.5477225575051661
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "DataDictionary",
+        "similarity": 0.31622776601683794
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "IndexBanner",
+        "similarity": 0.5
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "IndexBannerItem",
+        "similarity": 0.4225771273642583
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "IndexBooklist",
+        "similarity": 0.37267799624996495
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "IndexBooklistItem",
+        "similarity": 0.5477225575051661
+      },
+      {
+        "a": "UserBookshelf",
+        "b": "IndexPageConfig",
+        "similarity": 0.408248290463863
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "Book",
+        "similarity": 0.4423258684646914
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "BookAuthor",
+        "similarity": 0.5103103630798288
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "BookChapter",
+        "similarity": 0.6123724356957946
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "DataDictionary",
+        "similarity": 0.3535533905932738
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "IndexBanner",
+        "similarity": 0.5590169943749475
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "IndexBannerItem",
+        "similarity": 0.472455591261534
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "IndexBooklist",
+        "similarity": 0.4166666666666667
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "IndexBooklistItem",
+        "similarity": 0.6123724356957946
+      },
+      {
+        "a": "UserLikeSee",
+        "b": "IndexPageConfig",
+        "similarity": 0.45643546458763845
+      },
+      {
+        "a": "Book",
+        "b": "BookAuthor",
+        "similarity": 0.5417363388859614
+      },
+      {
+        "a": "Book",
+        "b": "BookChapter",
+        "similarity": 0.4213504858001922
+      },
+      {
+        "a": "Book",
+        "b": "DataDictionary",
+        "similarity": 0.20851441405707474
+      },
+      {
+        "a": "Book",
+        "b": "IndexBanner",
+        "similarity": 0.5275043787166296
+      },
+      {
+        "a": "Book",
+        "b": "IndexBannerItem",
+        "similarity": 0.5015503913178175
+      },
+      {
+        "a": "Book",
+        "b": "IndexBooklist",
+        "similarity": 0.3931785497463924
+      },
+      {
+        "a": "Book",
+        "b": "IndexBooklistItem",
+        "similarity": 0.5417363388859614
+      },
+      {
+        "a": "Book",
+        "b": "IndexPageConfig",
+        "similarity": 0.4307055216465324
+      },
+      {
+        "a": "BookAuthor",
+        "b": "BookChapter",
+        "similarity": 0.5833333333333334
+      },
+      {
+        "a": "BookAuthor",
+        "b": "DataDictionary",
+        "similarity": 0.3849001794597505
+      },
+      {
+        "a": "BookAuthor",
+        "b": "IndexBanner",
+        "similarity": 0.8215838362577491
+      },
+      {
+        "a": "BookAuthor",
+        "b": "IndexBannerItem",
+        "similarity": 0.6943650748294136
+      },
+      {
+        "a": "BookAuthor",
+        "b": "IndexBooklist",
+        "similarity": 0.6123724356957945
+      },
+      {
+        "a": "BookAuthor",
+        "b": "IndexBooklistItem",
+        "similarity": 0.6666666666666666
+      },
+      {
+        "a": "BookAuthor",
+        "b": "IndexPageConfig",
+        "similarity": 0.5962847939999439
+      },
+      {
+        "a": "BookChapter",
+        "b": "DataDictionary",
+        "similarity": 0.4811252243246881
+      },
+      {
+        "a": "BookChapter",
+        "b": "IndexBanner",
+        "similarity": 0.6390096504226938
+      },
+      {
+        "a": "BookChapter",
+        "b": "IndexBannerItem",
+        "similarity": 0.6172133998483676
+      },
+      {
+        "a": "BookChapter",
+        "b": "IndexBooklist",
+        "similarity": 0.4762896722078402
+      },
+      {
+        "a": "BookChapter",
+        "b": "IndexBooklistItem",
+        "similarity": 0.6666666666666666
+      },
+      {
+        "a": "BookChapter",
+        "b": "IndexPageConfig",
+        "similarity": 0.5217491947499509
+      },
+      {
+        "a": "DataDictionary",
+        "b": "IndexBanner",
+        "similarity": 0.4216370213557839
+      },
+      {
+        "a": "DataDictionary",
+        "b": "IndexBannerItem",
+        "similarity": 0.44543540318737396
+      },
+      {
+        "a": "DataDictionary",
+        "b": "IndexBooklist",
+        "similarity": 0.31426968052735443
+      },
+      {
+        "a": "DataDictionary",
+        "b": "IndexBooklistItem",
+        "similarity": 0.3849001794597505
+      },
+      {
+        "a": "DataDictionary",
+        "b": "IndexPageConfig",
+        "similarity": 0.34426518632954817
+      },
+      {
+        "a": "IndexBanner",
+        "b": "IndexBannerItem",
+        "similarity": 0.760638829255665
+      },
+      {
+        "a": "IndexBanner",
+        "b": "IndexBooklist",
+        "similarity": 0.6708203932499369
+      },
+      {
+        "a": "IndexBanner",
+        "b": "IndexBooklistItem",
+        "similarity": 0.7302967433402214
+      },
+      {
+        "a": "IndexBanner",
+        "b": "IndexPageConfig",
+        "similarity": 0.6531972647421809
+      },
+      {
+        "a": "IndexBannerItem",
+        "b": "IndexBooklist",
+        "similarity": 0.5669467095138409
+      },
+      {
+        "a": "IndexBannerItem",
+        "b": "IndexBooklistItem",
+        "similarity": 0.6943650748294136
+      },
+      {
+        "a": "IndexBannerItem",
+        "b": "IndexPageConfig",
+        "similarity": 0.6210590034081188
+      },
+      {
+        "a": "IndexBooklist",
+        "b": "IndexBooklistItem",
+        "similarity": 0.5443310539518174
+      },
+      {
+        "a": "IndexBooklist",
+        "b": "IndexPageConfig",
+        "similarity": 0.6085806194501846
+      },
+      {
+        "a": "IndexBooklistItem",
+        "b": "IndexPageConfig",
+        "similarity": 0.6708203932499369
+      }
+    ]
+  }
+}

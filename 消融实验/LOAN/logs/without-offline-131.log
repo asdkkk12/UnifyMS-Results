@@ -1,0 +1,43 @@
+		ApprovalLoan : Loan Association
+Loan
+		RequestedCAHistory : CheckingAccount Association
+CheckingAccount
+		RequestedCreditHistory : CreditHistory Association
+CreditHistory
+		AttachedApprovalLetter : ApprovalLetter Association
+ApprovalLetter
+		AttachedLoanAgreement : LoanAgreement Association
+LoanAgreement
+		AttachedLoanTerms : LoanTerm* Association
+LoanTerm
+		ReferedLoanRequest : LoanRequest ! Association
+LoanRequest
+		BelongedLoanAccount : LoanAccount Association
+LoanAccount
+enterValidatedCreditReferences enterValidatedCreditReferences
+loanPayment loanPayment
+loanPayment closeOutLoan
+loanPayment bookNewLoan
+loanPayment generateLoanLetterAndAgreement
+closeOutLoan loanPayment
+closeOutLoan closeOutLoan
+closeOutLoan bookNewLoan
+closeOutLoan generateLoanLetterAndAgreement
+bookNewLoan loanPayment
+bookNewLoan closeOutLoan
+bookNewLoan bookNewLoan
+bookNewLoan generateLoanLetterAndAgreement
+generateLoanLetterAndAgreement loanPayment
+generateLoanLetterAndAgreement closeOutLoan
+generateLoanLetterAndAgreement bookNewLoan
+generateLoanLetterAndAgreement generateLoanLetterAndAgreement
+evaluateLoanRequest evaluateLoanRequest
+evaluateLoanRequest manageLoanTerm
+manageLoanTerm evaluateLoanRequest
+manageLoanTerm manageLoanTerm
+generateStandardPaymentNotice generateStandardPaymentNotice
+generateStandardPaymentNotice generateLateNotice
+generateLateNotice generateStandardPaymentNotice
+generateLateNotice generateLateNotice
+submitLoanRequest submitLoanRequest
+without-offline seed=131 HV=0.5298232165825184

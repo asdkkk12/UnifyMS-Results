@@ -1,0 +1,260 @@
+[
+  {
+    "simpleName": "openCashDesk",
+    "fullName": "COCOME.service.CoCoMESystem.openCashDesk(Object cashDeskID)",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void openCashDesk(Object cashDeskID) {} }"
+  },
+  {
+    "simpleName": "closeCashDesk",
+    "fullName": "COCOME.service.CoCoMESystem.closeCashDesk(Object cashDeskID)",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void closeCashDesk(Object cashDeskID) {} }"
+  },
+  {
+    "simpleName": "openStore",
+    "fullName": "COCOME.service.CoCoMESystem.openStore(Object storeID)",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void openStore(Object storeID) {} }"
+  },
+  {
+    "simpleName": "closeStore",
+    "fullName": "COCOME.service.CoCoMESystem.closeStore(Object storeID)",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void closeStore(Object storeID) {} }"
+  },
+  {
+    "simpleName": "changePrice",
+    "fullName": "COCOME.service.CoCoMESystem.changePrice(Object barcode, Object newPrice)",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void changePrice(Object barcode, Object newPrice) {} }"
+  },
+  {
+    "simpleName": "receiveOrderedProduct",
+    "fullName": "COCOME.service.CoCoMESystem.receiveOrderedProduct(Object orderID)",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void receiveOrderedProduct(Object orderID) {} }"
+  },
+  {
+    "simpleName": "listSuppliers",
+    "fullName": "COCOME.service.CoCoMESystem.listSuppliers()",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void listSuppliers() {} }"
+  },
+  {
+    "simpleName": "showStockReports",
+    "fullName": "COCOME.service.CoCoMESystem.showStockReports()",
+    "serviceName": "CoCoMESystem",
+    "content": "class CoCoMESystem { public void showStockReports() {} }"
+  },
+  {
+    "simpleName": "thirdPartyCardPaymentService",
+    "fullName": "COCOME.service.ThirdPartyServices.thirdPartyCardPaymentService(Object cardAccountNumber, Object expiryDate, Object fee)",
+    "serviceName": "ThirdPartyServices",
+    "content": "class ThirdPartyServices { public void thirdPartyCardPaymentService(Object cardAccountNumber, Object expiryDate, Object fee) {} }"
+  },
+  {
+    "simpleName": "makeNewSale",
+    "fullName": "COCOME.service.ProcessSale.makeNewSale()",
+    "serviceName": "ProcessSale",
+    "content": "class ProcessSale { public void makeNewSale() {} }"
+  },
+  {
+    "simpleName": "enterItem",
+    "fullName": "COCOME.service.ProcessSale.enterItem(Object barcode, Object quantity)",
+    "serviceName": "ProcessSale",
+    "content": "class ProcessSale { public void enterItem(Object barcode, Object quantity) {} }"
+  },
+  {
+    "simpleName": "endSale",
+    "fullName": "COCOME.service.ProcessSale.endSale()",
+    "serviceName": "ProcessSale",
+    "content": "class ProcessSale { public void endSale() {} }"
+  },
+  {
+    "simpleName": "makeCashPayment",
+    "fullName": "COCOME.service.ProcessSale.makeCashPayment(Object amount)",
+    "serviceName": "ProcessSale",
+    "content": "class ProcessSale { public void makeCashPayment(Object amount) {} }"
+  },
+  {
+    "simpleName": "makeCardPayment",
+    "fullName": "COCOME.service.ProcessSale.makeCardPayment(Object cardAccountNumber, Object expiryDate, Object fee)",
+    "serviceName": "ProcessSale",
+    "content": "class ProcessSale { public void makeCardPayment(Object cardAccountNumber, Object expiryDate, Object fee) {} }"
+  },
+  {
+    "simpleName": "createStore",
+    "fullName": "COCOME.service.ManageStoreCRUDService.createStore(Object id, Object name, Object address, Object isopened)",
+    "serviceName": "ManageStoreCRUDService",
+    "content": "class ManageStoreCRUDService { public void createStore(Object id, Object name, Object address, Object isopened) {} }"
+  },
+  {
+    "simpleName": "queryStore",
+    "fullName": "COCOME.service.ManageStoreCRUDService.queryStore(Object id)",
+    "serviceName": "ManageStoreCRUDService",
+    "content": "class ManageStoreCRUDService { public void queryStore(Object id) {} }"
+  },
+  {
+    "simpleName": "modifyStore",
+    "fullName": "COCOME.service.ManageStoreCRUDService.modifyStore(Object id, Object name, Object address, Object isopened)",
+    "serviceName": "ManageStoreCRUDService",
+    "content": "class ManageStoreCRUDService { public void modifyStore(Object id, Object name, Object address, Object isopened) {} }"
+  },
+  {
+    "simpleName": "deleteStore",
+    "fullName": "COCOME.service.ManageStoreCRUDService.deleteStore(Object id)",
+    "serviceName": "ManageStoreCRUDService",
+    "content": "class ManageStoreCRUDService { public void deleteStore(Object id) {} }"
+  },
+  {
+    "simpleName": "createProductCatalog",
+    "fullName": "COCOME.service.ManageProductCatalogCRUDService.createProductCatalog(Object id, Object name)",
+    "serviceName": "ManageProductCatalogCRUDService",
+    "content": "class ManageProductCatalogCRUDService { public void createProductCatalog(Object id, Object name) {} }"
+  },
+  {
+    "simpleName": "queryProductCatalog",
+    "fullName": "COCOME.service.ManageProductCatalogCRUDService.queryProductCatalog(Object id)",
+    "serviceName": "ManageProductCatalogCRUDService",
+    "content": "class ManageProductCatalogCRUDService { public void queryProductCatalog(Object id) {} }"
+  },
+  {
+    "simpleName": "modifyProductCatalog",
+    "fullName": "COCOME.service.ManageProductCatalogCRUDService.modifyProductCatalog(Object id, Object name)",
+    "serviceName": "ManageProductCatalogCRUDService",
+    "content": "class ManageProductCatalogCRUDService { public void modifyProductCatalog(Object id, Object name) {} }"
+  },
+  {
+    "simpleName": "deleteProductCatalog",
+    "fullName": "COCOME.service.ManageProductCatalogCRUDService.deleteProductCatalog(Object id)",
+    "serviceName": "ManageProductCatalogCRUDService",
+    "content": "class ManageProductCatalogCRUDService { public void deleteProductCatalog(Object id) {} }"
+  },
+  {
+    "simpleName": "createCashDesk",
+    "fullName": "COCOME.service.ManageCashDeskCRUDService.createCashDesk(Object id, Object name, Object isopened)",
+    "serviceName": "ManageCashDeskCRUDService",
+    "content": "class ManageCashDeskCRUDService { public void createCashDesk(Object id, Object name, Object isopened) {} }"
+  },
+  {
+    "simpleName": "queryCashDesk",
+    "fullName": "COCOME.service.ManageCashDeskCRUDService.queryCashDesk(Object id)",
+    "serviceName": "ManageCashDeskCRUDService",
+    "content": "class ManageCashDeskCRUDService { public void queryCashDesk(Object id) {} }"
+  },
+  {
+    "simpleName": "modifyCashDesk",
+    "fullName": "COCOME.service.ManageCashDeskCRUDService.modifyCashDesk(Object id, Object name, Object isopened)",
+    "serviceName": "ManageCashDeskCRUDService",
+    "content": "class ManageCashDeskCRUDService { public void modifyCashDesk(Object id, Object name, Object isopened) {} }"
+  },
+  {
+    "simpleName": "deleteCashDesk",
+    "fullName": "COCOME.service.ManageCashDeskCRUDService.deleteCashDesk(Object id)",
+    "serviceName": "ManageCashDeskCRUDService",
+    "content": "class ManageCashDeskCRUDService { public void deleteCashDesk(Object id) {} }"
+  },
+  {
+    "simpleName": "createCashier",
+    "fullName": "COCOME.service.ManageCashierCRUDService.createCashier(Object id, Object name)",
+    "serviceName": "ManageCashierCRUDService",
+    "content": "class ManageCashierCRUDService { public void createCashier(Object id, Object name) {} }"
+  },
+  {
+    "simpleName": "queryCashier",
+    "fullName": "COCOME.service.ManageCashierCRUDService.queryCashier(Object id)",
+    "serviceName": "ManageCashierCRUDService",
+    "content": "class ManageCashierCRUDService { public void queryCashier(Object id) {} }"
+  },
+  {
+    "simpleName": "modifyCashier",
+    "fullName": "COCOME.service.ManageCashierCRUDService.modifyCashier(Object id, Object name)",
+    "serviceName": "ManageCashierCRUDService",
+    "content": "class ManageCashierCRUDService { public void modifyCashier(Object id, Object name) {} }"
+  },
+  {
+    "simpleName": "deleteCashier",
+    "fullName": "COCOME.service.ManageCashierCRUDService.deleteCashier(Object id)",
+    "serviceName": "ManageCashierCRUDService",
+    "content": "class ManageCashierCRUDService { public void deleteCashier(Object id) {} }"
+  },
+  {
+    "simpleName": "createItem",
+    "fullName": "COCOME.service.ManageItemCRUDService.createItem(Object barcode, Object name, Object price, Object stocknumber, Object orderprice)",
+    "serviceName": "ManageItemCRUDService",
+    "content": "class ManageItemCRUDService { public void createItem(Object barcode, Object name, Object price, Object stocknumber, Object orderprice) {} }"
+  },
+  {
+    "simpleName": "queryItem",
+    "fullName": "COCOME.service.ManageItemCRUDService.queryItem(Object barcode)",
+    "serviceName": "ManageItemCRUDService",
+    "content": "class ManageItemCRUDService { public void queryItem(Object barcode) {} }"
+  },
+  {
+    "simpleName": "modifyItem",
+    "fullName": "COCOME.service.ManageItemCRUDService.modifyItem(Object barcode, Object name, Object price, Object stocknumber, Object orderprice)",
+    "serviceName": "ManageItemCRUDService",
+    "content": "class ManageItemCRUDService { public void modifyItem(Object barcode, Object name, Object price, Object stocknumber, Object orderprice) {} }"
+  },
+  {
+    "simpleName": "deleteItem",
+    "fullName": "COCOME.service.ManageItemCRUDService.deleteItem(Object barcode)",
+    "serviceName": "ManageItemCRUDService",
+    "content": "class ManageItemCRUDService { public void deleteItem(Object barcode) {} }"
+  },
+  {
+    "simpleName": "createSupplier",
+    "fullName": "COCOME.service.ManageSupplierCRUDService.createSupplier(Object id, Object name)",
+    "serviceName": "ManageSupplierCRUDService",
+    "content": "class ManageSupplierCRUDService { public void createSupplier(Object id, Object name) {} }"
+  },
+  {
+    "simpleName": "querySupplier",
+    "fullName": "COCOME.service.ManageSupplierCRUDService.querySupplier(Object id)",
+    "serviceName": "ManageSupplierCRUDService",
+    "content": "class ManageSupplierCRUDService { public void querySupplier(Object id) {} }"
+  },
+  {
+    "simpleName": "modifySupplier",
+    "fullName": "COCOME.service.ManageSupplierCRUDService.modifySupplier(Object id, Object name)",
+    "serviceName": "ManageSupplierCRUDService",
+    "content": "class ManageSupplierCRUDService { public void modifySupplier(Object id, Object name) {} }"
+  },
+  {
+    "simpleName": "deleteSupplier",
+    "fullName": "COCOME.service.ManageSupplierCRUDService.deleteSupplier(Object id)",
+    "serviceName": "ManageSupplierCRUDService",
+    "content": "class ManageSupplierCRUDService { public void deleteSupplier(Object id) {} }"
+  },
+  {
+    "simpleName": "makeNewOrder",
+    "fullName": "COCOME.service.OrderProducts.makeNewOrder(Object orderid)",
+    "serviceName": "OrderProducts",
+    "content": "class OrderProducts { public void makeNewOrder(Object orderid) {} }"
+  },
+  {
+    "simpleName": "listAllOutOfStoreProducts",
+    "fullName": "COCOME.service.OrderProducts.listAllOutOfStoreProducts()",
+    "serviceName": "OrderProducts",
+    "content": "class OrderProducts { public void listAllOutOfStoreProducts() {} }"
+  },
+  {
+    "simpleName": "orderItem",
+    "fullName": "COCOME.service.OrderProducts.orderItem(Object barcode, Object quantity)",
+    "serviceName": "OrderProducts",
+    "content": "class OrderProducts { public void orderItem(Object barcode, Object quantity) {} }"
+  },
+  {
+    "simpleName": "chooseSupplier",
+    "fullName": "COCOME.service.OrderProducts.chooseSupplier(Object supplierID)",
+    "serviceName": "OrderProducts",
+    "content": "class OrderProducts { public void chooseSupplier(Object supplierID) {} }"
+  },
+  {
+    "simpleName": "placeOrder",
+    "fullName": "COCOME.service.OrderProducts.placeOrder()",
+    "serviceName": "OrderProducts",
+    "content": "class OrderProducts { public void placeOrder() {} }"
+  }
+]

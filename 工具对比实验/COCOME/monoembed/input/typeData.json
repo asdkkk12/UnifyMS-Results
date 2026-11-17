@@ -1,0 +1,194 @@
+[
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "CoCoMESystem",
+    "fullName": "COCOME.service.CoCoMESystem",
+    "serviceName": "CoCoMESystem",
+    "content": "// Derived from RapidOOD .remodel\n// service CoCoMESystem: openCashDesk, closeCashDesk, openStore, closeStore, changePrice, receiveOrderedProduct, listSuppliers, showStockReports\npublic class CoCoMESystem {\n    public void openCashDesk(Object cashDeskID) {}\n    public void closeCashDesk(Object cashDeskID) {}\n    public void openStore(Object storeID) {}\n    public void closeStore(Object storeID) {}\n    public void changePrice(Object barcode, Object newPrice) {}\n    public void receiveOrderedProduct(Object orderID) {}\n    public void listSuppliers() {}\n    public void showStockReports() {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ThirdPartyServices",
+    "fullName": "COCOME.service.ThirdPartyServices",
+    "serviceName": "ThirdPartyServices",
+    "content": "// Derived from RapidOOD .remodel\n// service ThirdPartyServices: thirdPartyCardPaymentService\npublic class ThirdPartyServices {\n    public void thirdPartyCardPaymentService(Object cardAccountNumber, Object expiryDate, Object fee) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ProcessSale",
+    "fullName": "COCOME.service.ProcessSale",
+    "serviceName": "ProcessSale",
+    "content": "// Derived from RapidOOD .remodel\n// service ProcessSale: makeNewSale, enterItem, endSale, makeCashPayment, makeCardPayment\npublic class ProcessSale {\n    public void makeNewSale() {}\n    public void enterItem(Object barcode, Object quantity) {}\n    public void endSale() {}\n    public void makeCashPayment(Object amount) {}\n    public void makeCardPayment(Object cardAccountNumber, Object expiryDate, Object fee) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageStoreCRUDService",
+    "fullName": "COCOME.service.ManageStoreCRUDService",
+    "serviceName": "ManageStoreCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageStoreCRUDService: createStore, queryStore, modifyStore, deleteStore\npublic class ManageStoreCRUDService {\n    public void createStore(Object id, Object name, Object address, Object isopened) {}\n    public void queryStore(Object id) {}\n    public void modifyStore(Object id, Object name, Object address, Object isopened) {}\n    public void deleteStore(Object id) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageProductCatalogCRUDService",
+    "fullName": "COCOME.service.ManageProductCatalogCRUDService",
+    "serviceName": "ManageProductCatalogCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageProductCatalogCRUDService: createProductCatalog, queryProductCatalog, modifyProductCatalog, deleteProductCatalog\npublic class ManageProductCatalogCRUDService {\n    public void createProductCatalog(Object id, Object name) {}\n    public void queryProductCatalog(Object id) {}\n    public void modifyProductCatalog(Object id, Object name) {}\n    public void deleteProductCatalog(Object id) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageCashDeskCRUDService",
+    "fullName": "COCOME.service.ManageCashDeskCRUDService",
+    "serviceName": "ManageCashDeskCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageCashDeskCRUDService: createCashDesk, queryCashDesk, modifyCashDesk, deleteCashDesk\npublic class ManageCashDeskCRUDService {\n    public void createCashDesk(Object id, Object name, Object isopened) {}\n    public void queryCashDesk(Object id) {}\n    public void modifyCashDesk(Object id, Object name, Object isopened) {}\n    public void deleteCashDesk(Object id) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageCashierCRUDService",
+    "fullName": "COCOME.service.ManageCashierCRUDService",
+    "serviceName": "ManageCashierCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageCashierCRUDService: createCashier, queryCashier, modifyCashier, deleteCashier\npublic class ManageCashierCRUDService {\n    public void createCashier(Object id, Object name) {}\n    public void queryCashier(Object id) {}\n    public void modifyCashier(Object id, Object name) {}\n    public void deleteCashier(Object id) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageItemCRUDService",
+    "fullName": "COCOME.service.ManageItemCRUDService",
+    "serviceName": "ManageItemCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageItemCRUDService: createItem, queryItem, modifyItem, deleteItem\npublic class ManageItemCRUDService {\n    public void createItem(Object barcode, Object name, Object price, Object stocknumber, Object orderprice) {}\n    public void queryItem(Object barcode) {}\n    public void modifyItem(Object barcode, Object name, Object price, Object stocknumber, Object orderprice) {}\n    public void deleteItem(Object barcode) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageSupplierCRUDService",
+    "fullName": "COCOME.service.ManageSupplierCRUDService",
+    "serviceName": "ManageSupplierCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageSupplierCRUDService: createSupplier, querySupplier, modifySupplier, deleteSupplier\npublic class ManageSupplierCRUDService {\n    public void createSupplier(Object id, Object name) {}\n    public void querySupplier(Object id) {}\n    public void modifySupplier(Object id, Object name) {}\n    public void deleteSupplier(Object id) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "OrderProducts",
+    "fullName": "COCOME.service.OrderProducts",
+    "serviceName": "OrderProducts",
+    "content": "// Derived from RapidOOD .remodel\n// service OrderProducts: makeNewOrder, listAllOutOfStoreProducts, orderItem, chooseSupplier, placeOrder\npublic class OrderProducts {\n    public void makeNewOrder(Object orderid) {}\n    public void listAllOutOfStoreProducts() {}\n    public void orderItem(Object barcode, Object quantity) {}\n    public void chooseSupplier(Object supplierID) {}\n    public void placeOrder() {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "OpenCashDeskService",
+    "fullName": "COCOME.service.OpenCashDeskService",
+    "serviceName": "OpenCashDeskService",
+    "content": "// Derived from RapidOOD .remodel\n// service OpenCashDeskService: \npublic class OpenCashDeskService {\n\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Store",
+    "fullName": "COCOME.domain.Store",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Store {\n    private Integer Id;\n    private String Name;\n    private String Address;\n    private Boolean IsOpened;\n    private CashDesk AssociationCashdeskes;\n    private ProductCatalog Productcatalogs;\n    private Item Items;\n    private Cashier Cashiers;\n    private Sale Sales;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ProductCatalog",
+    "fullName": "COCOME.domain.ProductCatalog",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class ProductCatalog {\n    private Integer Id;\n    private String Name;\n    private Item ContainedItems;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "CashDesk",
+    "fullName": "COCOME.domain.CashDesk",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class CashDesk {\n    private Integer Id;\n    private String Name;\n    private Boolean IsOpened;\n    private Sale ContainedSales;\n    private Store BelongedStore;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Sale",
+    "fullName": "COCOME.domain.Sale",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Sale {\n    private Boolean IsComplete;\n    private Real Amount;\n    private Boolean IsReadytoPay;\n    private Store Belongedstore;\n    private CashDesk BelongedCashDesk;\n    private SalesLineItem ContainedSalesLine;\n    private Payment AssoicatedPayment;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Cashier",
+    "fullName": "COCOME.domain.Cashier",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Cashier {\n    private Integer Id;\n    private String Name;\n    private Store WorkedStore;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "SalesLineItem",
+    "fullName": "COCOME.domain.SalesLineItem",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class SalesLineItem {\n    private Integer Quantity;\n    private Real Subamount;\n    private Sale BelongedSale;\n    private Item BelongedItem;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Item",
+    "fullName": "COCOME.domain.Item",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Item {\n    private Integer Barcode;\n    private String Name;\n    private Real Price;\n    private Integer StockNumber;\n    private Real OrderPrice;\n    private ProductCatalog BelongedCatalog;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Payment",
+    "fullName": "COCOME.domain.Payment",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Payment {\n    private Real AmountTendered;\n    private Sale BelongedSale;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "CashPayment",
+    "fullName": "COCOME.domain.CashPayment",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class CashPayment extends Payment {\n    private Real Balance;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "CardPayment",
+    "fullName": "COCOME.domain.CardPayment",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class CardPayment extends Payment {\n    private String CardAccountNumber;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "OrderEntry",
+    "fullName": "COCOME.domain.OrderEntry",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class OrderEntry {\n    private Integer Quantity;\n    private Real SubAmount;\n    private Item Item;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Supplier",
+    "fullName": "COCOME.domain.Supplier",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Supplier {\n    private Integer Id;\n    private String Name;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "OrderProduct",
+    "fullName": "COCOME.domain.OrderProduct",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class OrderProduct {\n    private Integer Id;\n    private Date Time;\n    private Real Amount;\n    private Supplier Supplier;\n    private OrderEntry ContainedEntries;\n}"
+  }
+]

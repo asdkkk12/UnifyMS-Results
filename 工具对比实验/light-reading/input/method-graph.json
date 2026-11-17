@@ -1,0 +1,2368 @@
+{
+  "cn.zealon.readingcloud.account.AccountApplication#main/1@11": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#buildUserBookshelfQueueThreadPool/0@32": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getCorePoolSize/0@41",
+      "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getKeepAliveTime/0@57",
+      "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getMaximumPoolSize/0@49",
+      "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getQueueCapacity/0@65"
+    ]
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getCorePoolSize/0@41": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#setCorePoolSize/1@45": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getMaximumPoolSize/0@49": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#setMaximumPoolSize/1@53": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getKeepAliveTime/0@57": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#setKeepAliveTime/1@61": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#getQueueCapacity/0@65": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#setQueueCapacity/1@69": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.MybatisConfig#sqlSessionFactoryBean/1@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.config.MybatisConfig#getPageHelper/0@61"
+    ]
+  },
+  "cn.zealon.readingcloud.account.common.config.MybatisConfig#setSqlSessionTemplate/1@56": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.MybatisConfig#getPageHelper/0@61": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.RedisConfig#redisTemplate/1@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.config.RedisConfig#setSerializer/1@70"
+    ]
+  },
+  "cn.zealon.readingcloud.account.common.config.RedisConfig#keyGenerator/0@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.RedisConfig#cacheManager/1@56": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.RedisConfig#setSerializer/1@70": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#buildCommonQueueThreadPool/0@33": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getCorePoolSize/0@42",
+      "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getKeepAliveTime/0@58",
+      "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getMaximumPoolSize/0@50",
+      "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getQueueCapacity/0@66"
+    ]
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getCorePoolSize/0@42": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#setCorePoolSize/1@46": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getMaximumPoolSize/0@50": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#setMaximumPoolSize/1@54": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getKeepAliveTime/0@58": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#setKeepAliveTime/1@62": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#getQueueCapacity/0@66": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#setQueueCapacity/1@70": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.datasource.AccountCenterDataSourceConfig#accountCenterDataSource/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.datasource.AccountCenterDataSourceConfig#setTransactionManager/1@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserSalt/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserEncryptPassword/2@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserSalt/1@17",
+      "cn.zealon.readingcloud.common.utils.MD5Util#MD5Encode/2@20"
+    ]
+  },
+  "cn.zealon.readingcloud.account.common.utils.UserUtil#main/1@36": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserEncryptPassword/2@31"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.LikeSeeController#likeSeeClick/2@33": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserLikeSeeService#likeSeeClick/3@19",
+      "cn.zealon.readingcloud.common.request.RequestParams#getIntValue/1@22",
+      "cn.zealon.readingcloud.common.request.RequestParams#getStringValue/1@42"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.LikeSeeController#getBookLikesCount/1@44": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserLikeSeeService#getBookLikesCount/1@29"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.LikeSeeController#getUserLikeBookList/3@55": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserLikeSeeService#getUserLikeBookList/3@38"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.LikeSeeController#userLikeThisBook/2@65": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserLikeSeeService#userLikeThisBook/2@46"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.UserBookshelfController#syncUserBookshelf/2@31": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserBookshelfService#syncUserBookshelf/2@19"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.UserBookshelfController#getUserBookshelf/1@40": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserBookshelfService#getUserBookshelf/1@26"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.UserBookshelfController#userBookshelfExistBook/2@50": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserBookshelfService#userBookshelfExistBook/2@34"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.UserController#register/1@28": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserService#register/1@19"
+    ]
+  },
+  "cn.zealon.readingcloud.account.controller.UserController#login/1@39": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.UserService#login/2@27",
+      "cn.zealon.readingcloud.common.request.RequestParams#getStringValue/1@42"
+    ]
+  },
+  "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#deleteById/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#insert/1@17": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#updateByUserIdAndBookId/1@19": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#selectCountByUserAndBookId/2@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#selectById/1@24": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#findPageWithResult/1@26": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#deleteByUserIdAndBookId/2@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#insert/1@18": {
+    "direct_entities": [
+      "UserLikeSee"
+    ],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#selectCountByUserAndBookId/2@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#findPageWithResult/1@23": {
+    "direct_entities": [
+      "UserLikeSee"
+    ],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#findPageWithCount/1@25": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserMapper#insert/1@12": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserMapper#updateByLoginName/1@14": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.dao.UserMapper#selectByLoginName/1@16": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.service.UserBookshelfService#syncUserBookshelf/2@19": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#syncUserBookshelf/2@45"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserBookshelfService#getUserBookshelf/1@26": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserBookshelfService#userBookshelfExistBook/2@34": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#userBookshelfExistBook/2@76"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserLikeSeeService#likeSeeClick/3@19": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#likeSeeClick/3@50"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserLikeSeeService#getBookLikesCount/1@29": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getBookLikesCount/1@73"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserLikeSeeService#getUserLikeBookList/3@38": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getUserLikeBookList/3@83"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserLikeSeeService#userLikeThisBook/2@46": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#userLikeThisBook/2@105"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserService#register/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserService#login/2@27": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserService#logout/1@34": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#logout/1@87"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserService#update/1@41": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#update/1@92"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.UserService#updatePassword/1@48": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#updatePassword/1@97"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#syncUserBookshelf/2@45": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57": {
+    "direct_entities": [
+      "Book",
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "Book",
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#findPageWithResult/1@26",
+      "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#userBookshelfExistBook/2@76": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#selectCountByUserAndBookId/2@21",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#likeSeeClick/3@50": {
+    "direct_entities": [
+      "UserLikeSee"
+    ],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#deleteByUserIdAndBookId/2@15",
+      "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#insert/1@18",
+      "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getBookLikesCount/1@73": {
+    "direct_entities": [
+      "UserLikeSee"
+    ],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#findPageWithCount/1@25",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getUserLikeBookList/3@83": {
+    "direct_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#findPageWithResult/1@23",
+      "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+      "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#userLikeThisBook/2@105": {
+    "direct_entities": [
+      "UserLikeSee"
+    ],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#selectCountByUserAndBookId/2@20",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserEncryptPassword/2@31",
+      "cn.zealon.readingcloud.account.dao.UserMapper#insert/1@12",
+      "cn.zealon.readingcloud.account.dao.UserMapper#selectByLoginName/1@16",
+      "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12",
+      "cn.zealon.readingcloud.common.result.ResultUtil#verificationFailed/0@231",
+      "cn.zealon.readingcloud.common.utils.CommonUtil#getUUID/0@35"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserEncryptPassword/2@31",
+      "cn.zealon.readingcloud.account.dao.UserMapper#selectByLoginName/1@16",
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#getLoginExpre/0@105",
+      "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+      "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.common.result.ResultUtil#verificationFailed/0@231"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#logout/1@87": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#update/1@92": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#updatePassword/1@97": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#getLoginExpre/0@105": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.service.task.LikeSeeClickTask#run/0@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#hashHasKey/2@425",
+      "cn.zealon.readingcloud.common.cache.RedisService#hashIncrement/3@429"
+    ]
+  },
+  "cn.zealon.readingcloud.account.service.task.UserBookshelfTask#run/0@23": {
+    "direct_entities": [
+      "UserBookshelf"
+    ],
+    "reachable_entities": [
+      "UserBookshelf"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#deleteById/1@15",
+      "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#insert/1@17",
+      "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#updateByUserIdAndBookId/1@19"
+    ]
+  },
+  "cn.zealon.readingcloud.book.BookApplication#main/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.BookSwaggerConfig#bookDocket/0@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43"
+    ]
+  },
+  "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.config.MybatisConfig#sqlSessionFactoryBean/1@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.book.common.config.MybatisConfig#getPageHelper/0@52"
+    ]
+  },
+  "cn.zealon.readingcloud.book.common.config.MybatisConfig#setSqlSessionTemplate/1@47": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.config.MybatisConfig#getPageHelper/0@52": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.config.RedisConfig#redisTemplate/1@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.book.common.config.RedisConfig#setSerializer/1@69"
+    ]
+  },
+  "cn.zealon.readingcloud.book.common.config.RedisConfig#keyGenerator/0@39": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.config.RedisConfig#cacheManager/1@55": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.config.RedisConfig#setSerializer/1@69": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.datasource.BookCenterDataSourceConfig#bookCenterDataSource/0@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.common.datasource.BookCenterDataSourceConfig#setTransactionManager/1@28": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.controller.BookChapterController#getChapter/2@32": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.BookChapterService#getChapterById/2@26"
+    ]
+  },
+  "cn.zealon.readingcloud.book.controller.BookChapterController#getBookChapterList/1@42": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.BookChapterService#getBookChapterListByBookId/1@19"
+    ]
+  },
+  "cn.zealon.readingcloud.book.controller.BookChapterController#readChapter/2@53": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.BookChapterService#readChapter/2@34"
+    ]
+  },
+  "cn.zealon.readingcloud.book.controller.BookController#getBookById/1@32": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.BookService#getBookById/1@18"
+    ]
+  },
+  "cn.zealon.readingcloud.book.controller.BookController#getBookDetails/1@42": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.BookService#getBookDetails/1@25"
+    ]
+  },
+  "cn.zealon.readingcloud.book.dao.BookAuthorMapper#findPageWithResult/1@14": {
+    "direct_entities": [
+      "BookAuthor"
+    ],
+    "reachable_entities": [
+      "BookAuthor"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookAuthorMapper#findPageWithCount/1@16": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookChapterMapper#selectById/1@15": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookChapterMapper#findPageWithResult/1@17": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookChapterMapper#findPageWithCount/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookChapterMapper#selectPreChapterId/2@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookChapterMapper#selectNextChapterId/2@44": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookMapper#selectById/1@14": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookMapper#selectByBookId/1@16": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookMapper#findPageWithResult/7@18": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.BookMapper#findPageWithCount/7@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.DataDictionaryMapper#selectById/1@14": {
+    "direct_entities": [
+      "DataDictionary"
+    ],
+    "reachable_entities": [
+      "DataDictionary"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.DataDictionaryMapper#selectByDicTypeAndCode/2@16": {
+    "direct_entities": [
+      "DataDictionary"
+    ],
+    "reachable_entities": [
+      "DataDictionary"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.DataDictionaryMapper#findPageWithResult/1@18": {
+    "direct_entities": [
+      "DataDictionary"
+    ],
+    "reachable_entities": [
+      "DataDictionary"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.dao.DataDictionaryMapper#findPageWithCount/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.book.service.BookChapterService#getBookChapterListByBookId/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getBookChapterListByBookId/1@47"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.BookChapterService#getChapterById/2@26": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterById/2@71"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.BookChapterService#readChapter/2@34": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.BookService#getBookById/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.BookService#getBookDetails/1@25": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.DataDictionaryService#getDictionarys/2@12": {
+    "direct_entities": [
+      "DataDictionary"
+    ],
+    "reachable_entities": [
+      "DataDictionary"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getDictionarys/2@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getBookChapterListByBookId/1@47": {
+    "direct_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.dao.BookChapterMapper#findPageWithResult/1@17",
+      "cn.zealon.readingcloud.book.service.BookService#getBookById/1@18",
+      "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterListKey/1@21",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCacheForList/2@156",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+      "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterById/2@71": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.dao.BookChapterMapper#selectById/1@15",
+      "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterKey/1@16",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book",
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.BookService#getBookById/1@18",
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterContent/2@201",
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.dao.BookChapterMapper#findPageWithResult/1@17",
+      "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterNodeKey/1@26",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashObject/3@399",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValsExpire/3@420"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterContent/2@201": {
+    "direct_entities": [
+      "BookChapter"
+    ],
+    "reachable_entities": [
+      "BookChapter"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterById/2@71"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.dao.BookMapper#selectByBookId/1@16",
+      "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookKey/1@11",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33",
+      "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getDictionarys/2@30": {
+    "direct_entities": [
+      "DataDictionary"
+    ],
+    "reachable_entities": [
+      "DataDictionary"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.dao.DataDictionaryMapper#findPageWithResult/1@18",
+      "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getMap/1@46",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValsExpire/3@420"
+    ]
+  },
+  "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getMap/1@46": {
+    "direct_entities": [
+      "DataDictionary"
+    ],
+    "reachable_entities": [
+      "DataDictionary"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookKey/1@11": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterKey/1@16": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterListKey/1@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterNodeKey/1@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getHomepageKey/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBannerVoKey/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistDbKey/1@25": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistVoKey/1@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistRandomVoKey/1@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistItemPagingKey/1@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#inInit/0@49": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#removeCache/1@63": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#removeCacheComm/1@76"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#removeCacheComm/1@76": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#hasKey/1@137"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#removeList/1@91": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getKeyRegualr/1@104": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getExpire/1@127": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#hasKey/1@137": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/1@178"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getCacheForList/2@156": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/1@178"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/1@178"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getCache/1@178": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setCache/2@188": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setExpireCacheDefault/2@201": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setCache/2@230": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#setCache/2@188",
+      "cn.zealon.readingcloud.common.cache.RedisService#setCache/2@230"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setExpireCacheDefault/2@240": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#rightPushAll/2@269": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#rightPushAllExpireDefault/2@290": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#rightPushAll/2@269",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#rightPushAllExpire/3@306": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#rightPushAll/2@269",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#leftPushAll/2@317": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#leftPushAllExpireDefault/2@338": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#leftPushAll/2@317",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#leftPushAllExpire/3@354": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#leftPushAll/2@317",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getRedisList/2@367": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getHashObject/3@399": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#setHashValsExpire/3@420": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#hashHasKey/2@425": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#hashIncrement/3@429": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#zSetAddExpireDefault/2@442": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpire/2@117"
+    ]
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#zSetRange/4@472": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#zSetGetSize/1@497": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.cache.RedisService#zSetRangeByPage/4@509": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisService#zSetRange/4@472"
+    ]
+  },
+  "cn.zealon.readingcloud.common.enums.BookCategoryEnum#getValue/0@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.enums.BookCategoryEnum#getName/0@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.enums.BookSerialStatusEnum#getValue/0@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.enums.BookSerialStatusEnum#getName/0@25": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.enums.BooklistMoreTypeEnum#getValue/0@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.enums.BooklistMoreTypeEnum#getName/0@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.request.RequestParams#getIntValue/1@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.request.RequestParams#getStringValue/1@42": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.Result#buildMessage/1@36": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.Result#setMsg/1@64"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.Result#buildData/1@46": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.Result#setData/1@72"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.Result#getCode/0@52": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.Result#setCode/1@56": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.Result#getMsg/0@60": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.Result#setMsg/1@64": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.Result#getData/0@68": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.Result#setData/1@72": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#successAndNoMsg/0@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#successAndNoMsg/1@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#fail/1@55": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#error/0@63": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#error/1@73": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#paramError/0@80": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#paramError/1@89": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#authExpired/0@97": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#unAuthorized/0@105": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#unAuthorized/1@114": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#forbidden/0@123": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#forbidden/1@132": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#notFound/1@151": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#notAcceptable/0@160": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#notAcceptable/1@170": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#gone/0@179": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#gone/1@189": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#unprocesableEntity/0@197": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#unprocesableEntity/1@206": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#unKnowError/0@214": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#unKnowError/1@223": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#verificationFailed/0@231": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#verificationFailed/1@240": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#custom/1@249": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getMessage/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#custom/2@257": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.result.ResultUtil#custom/3@267": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.utils.CommonUtil#isNotEmpty/1@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18"
+    ]
+  },
+  "cn.zealon.readingcloud.common.utils.CommonUtil#getUUID/0@35": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.common.utils.MD5Util#MD5Encode/2@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.utils.MD5Util#byteArrayToHexString/1@36"
+    ]
+  },
+  "cn.zealon.readingcloud.common.utils.MD5Util#byteArrayToHexString/1@36": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.utils.MD5Util#byteToHexString/1@44"
+    ]
+  },
+  "cn.zealon.readingcloud.common.utils.MD5Util#byteToHexString/1@44": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.account.feign.client.LikeSeeClient#getBookLikesCount/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.controller.LikeSeeController#getBookLikesCount/1@44"
+    ]
+  },
+  "cn.zealon.readingcloud.account.feign.fallback.LikeSeeClientFallBack#create/1@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.controller.BookController#getBookById/1@32"
+    ]
+  },
+  "cn.zealon.readingcloud.book.feign.fallback.BookClientFallBack#create/1@24": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+    ]
+  },
+  "cn.zealon.readingcloud.gateway.GatewayApplication#main/1@9": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.gateway.common.config.RedisRateLimiterConfig#ipKeyResolver/0@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#authExpired/0@97",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.common.result.ResultUtil#unAuthorized/0@105"
+    ]
+  },
+  "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#main/1@53": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.Result#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.Result#getData/0@68",
+      "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24"
+    ]
+  },
+  "cn.zealon.readingcloud.gateway.controller.FallbackController#fallback/0@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48"
+    ]
+  },
+  "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41": {
+    "direct_entities": [
+      "User"
+    ],
+    "reachable_entities": [
+      "User"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.HttpCodeEnum#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.Result#getCode/0@52",
+      "cn.zealon.readingcloud.common.result.Result#getData/0@68",
+      "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "cn.zealon.readingcloud.gateway.filter.AuthFilter#getWhiteList/0@97"
+    ]
+  },
+  "cn.zealon.readingcloud.gateway.filter.AuthFilter#getOrder/0@89": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.gateway.filter.AuthFilter#getWhiteList/0@97": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.HomepageApplication#main/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.Test#main/1@10": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#customDocket/0@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.HystrixConfig#getServlet/0@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.MybatisConfig#sqlSessionFactoryBean/1@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.common.config.MybatisConfig#getPageHelper/0@52"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.common.config.MybatisConfig#setSqlSessionTemplate/1@47": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.MybatisConfig#getPageHelper/0@52": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.RedisConfig#redisTemplate/1@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.common.config.RedisConfig#setSerializer/1@70"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.common.config.RedisConfig#keyGenerator/0@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.RedisConfig#cacheManager/1@56": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.config.RedisConfig#setSerializer/1@70": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.datasource.BookCenterDataSourceConfig#bookCenterDataSource/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.common.datasource.BookCenterDataSourceConfig#setTransactionManager/1@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.controller.IndexBooklistItemController#getBooklistPagingBooks/3@31": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklistItem"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistPagingBooks/3@21"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.controller.IndexBooklistItemController#getBooklistExchange/2@42": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistExchange/2@29"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.controller.IndexPageConfigController#getIndexPageByType/3@30": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBanner",
+      "IndexBannerItem",
+      "IndexBooklist",
+      "IndexPageConfig",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.IndexPageConfigService#getIndexPageByType/3@19"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.controller.SearchController#getSearchResultBooks/3@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.SearchService#getSearchResultBooks/3@26"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.controller.SearchController#getHotSearchWordList/1@39": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.SearchService#getHotSearchWordList/1@17"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.dao.HotSearchWordMapper#getHotSearchWordList/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexBannerItemMapper#selectById/1@14": {
+    "direct_entities": [
+      "IndexBannerItem"
+    ],
+    "reachable_entities": [
+      "IndexBannerItem"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexBannerItemMapper#findPageWithResult/1@21": {
+    "direct_entities": [
+      "IndexBannerItem"
+    ],
+    "reachable_entities": [
+      "IndexBannerItem"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexBannerMapper#selectById/1@12": {
+    "direct_entities": [
+      "IndexBanner"
+    ],
+    "reachable_entities": [
+      "IndexBanner"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexBooklistItemMapper#findPageWithResult/1@19": {
+    "direct_entities": [
+      "IndexBooklistItem"
+    ],
+    "reachable_entities": [
+      "IndexBooklistItem"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexBooklistMapper#selectById/1@12": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "IndexBooklist"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexPageConfigMapper#selectById/1@18": {
+    "direct_entities": [
+      "IndexPageConfig"
+    ],
+    "reachable_entities": [
+      "IndexPageConfig"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.dao.IndexPageConfigMapper#findPageWithResult/1@25": {
+    "direct_entities": [
+      "IndexPageConfig"
+    ],
+    "reachable_entities": [
+      "IndexPageConfig"
+    ],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.domain.RequestQuery#toString/0@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "cn.zealon.readingcloud.homepage.service.BookCenterService#getBookById/1@17": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBannerService#getBannerVO/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "IndexBanner",
+      "IndexBannerItem"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl#getBannerVO/1@38"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistPagingBooks/3@21": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklistItem"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistPagingBooks/3@63"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistExchange/2@29": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistExchange/2@94"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistRandomBooks/5@39": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistRandomBooks/5@120"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistOrderBooks/4@49": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistOrderBooks/4@147"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getIndexBooklistVO/2@19": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getIndexBooklistById/1@26": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "IndexBooklist"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistById/1@70"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getRandomIndexBooklistVO/2@34": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.IndexPageConfigService#getIndexPageByType/3@19": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "IndexBanner",
+      "IndexBannerItem",
+      "IndexBooklist",
+      "IndexPageConfig",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.SearchService#getHotSearchWordList/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getHotSearchWordList/1@50"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.SearchService#getSearchResultBooks/3@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResultBooks/3@56"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl#getBannerVO/1@38": {
+    "direct_entities": [
+      "IndexBanner",
+      "IndexBannerItem"
+    ],
+    "reachable_entities": [
+      "IndexBanner",
+      "IndexBannerItem"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBannerVoKey/1@20",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+      "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18",
+      "cn.zealon.readingcloud.homepage.dao.IndexBannerItemMapper#findPageWithResult/1@21",
+      "cn.zealon.readingcloud.homepage.dao.IndexBannerMapper#selectById/1@12"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistPagingBooks/3@63": {
+    "direct_entities": [
+      "IndexBooklistItem"
+    ],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklistItem"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistItemPagingKey/1@40",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18",
+      "cn.zealon.readingcloud.homepage.dao.IndexBooklistItemMapper#findPageWithResult/1@19",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistExchange/2@94": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getIndexBooklistById/1@26",
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getRandomIndexBooklistVO/2@34"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistRandomBooks/5@120": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistOrderBooks/4@147",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getClientBookIds/2@209"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistOrderBooks/4@147": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Book",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.account.feign.client.LikeSeeClient#getBookLikesCount/1@18",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186": {
+    "direct_entities": [
+      "Book"
+    ],
+    "reachable_entities": [
+      "Book"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.service.BookCenterService#getBookById/1@17"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getClientBookIds/2@209": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistRandomVoKey/1@35",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistVoKey/1@30",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+      "cn.zealon.readingcloud.common.enums.BooklistMoreTypeEnum#getValue/0@22",
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistOrderBooks/4@49",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistById/1@70",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistById/1@70": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "IndexBooklist"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistDbKey/1@25",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+      "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+      "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+      "cn.zealon.readingcloud.homepage.dao.IndexBooklistMapper#selectById/1@12"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83": {
+    "direct_entities": [
+      "IndexBooklist"
+    ],
+    "reachable_entities": [
+      "Book",
+      "IndexBooklist",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistRandomVoKey/1@35",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistRandomBooks/5@39"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47": {
+    "direct_entities": [
+      "IndexPageConfig"
+    ],
+    "reachable_entities": [
+      "Book",
+      "IndexBanner",
+      "IndexBannerItem",
+      "IndexBooklist",
+      "IndexPageConfig",
+      "UserLikeSee"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getHomepageKey/1@15",
+      "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407",
+      "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18",
+      "cn.zealon.readingcloud.homepage.service.IndexBannerService#getBannerVO/1@17",
+      "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getIndexBooklistVO/2@19",
+      "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageWithPaging/3@109"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageWithPaging/3@109": {
+    "direct_entities": [
+      "IndexPageConfig"
+    ],
+    "reachable_entities": [
+      "IndexPageConfig"
+    ],
+    "calls": [
+      "cn.zealon.readingcloud.homepage.dao.IndexPageConfigMapper#findPageWithResult/1@25"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getHotSearchWordList/1@50": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.homepage.dao.HotSearchWordMapper#getHotSearchWordList/1@20"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResultBooks/3@56": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+      "cn.zealon.readingcloud.homepage.domain.RequestQuery#toString/0@26",
+      "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79"
+    ]
+  },
+  "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  }
+}

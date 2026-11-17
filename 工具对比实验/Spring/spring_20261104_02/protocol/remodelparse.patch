@@ -1,0 +1,160 @@
+--- original/GA/remodelparse.java
++++ corrected/GA/remodelparse.java
+@@ -12,6 +12,22 @@
+ import java.util.regex.Pattern;
+ 
+ public class remodelparse {
++    private static class CommentReader extends BufferedReader {
++        CommentReader(FileReader reader) { super(reader); }
++        @Override public String readLine() throws IOException {
++            String line=super.readLine(); if(line==null)return null;
++            boolean quoted=false, escaped=false;
++            for(int i=0;i<line.length();i++) {
++                char c=line.charAt(i);
++                if(escaped){escaped=false;continue;}
++                if(c=='\\' && quoted){escaped=true;continue;}
++                if(c=='"'){quoted=!quoted;continue;}
++                if(!quoted && c=='/' && i+1<line.length() && line.charAt(i+1)=='/')return line.substring(0,i);
++            }
++            return line;
++        }
++    }
++
+     static String pattern_Actor = "Actor ([A-z]*).*\\{";
+     static String pattern_ExtendActor = "Actor ([A-z]*) extends ([A-z]*) \\{";
+     static String pattern_UC = "UC::([A-z]*).*";
+@@ -68,7 +84,7 @@
+         //HashMap<String , Integer> Actors = new HashMap<>();
+         HashMap<String, HashSet<String>> result = new HashMap<>();
+         try {
+-            BufferedReader in = new BufferedReader(new FileReader(s));
++            BufferedReader in = new CommentReader(new FileReader(s));
+             String str;
+             while ((str = in.readLine()) != null) {
+                 Actor_Matcher = Actor_Catcher.matcher(str);
+@@ -125,7 +141,7 @@
+         Matcher UC_Matcher;
+         String path = System.getProperty("user.dir");
+         try {
+-            BufferedReader in = new BufferedReader(new FileReader(s));
++            BufferedReader in = new CommentReader(new FileReader(s));
+             String str;
+             int cnt = 0;
+             while ((str = in.readLine()) != null) {
+@@ -150,7 +166,7 @@
+         HashMap <String,Integer> EntitySet = getEntityPos(file_name);
+         HashSet<String> result = new HashSet<>();
+         try{
+-            BufferedReader in = new BufferedReader(new FileReader(file_name));
++            BufferedReader in = new CommentReader(new FileReader(file_name));
+             String str;
+             while ((str = in.readLine()) != null){
+                 Contract_Matcher = Contract_Catcher.matcher(str);
+@@ -184,7 +200,7 @@
+         HashMap <String,Integer> EntitySet = getEntityPos(file_name);
+         HashMap<String, HashSet<String>> result = new HashMap<>();
+         try{
+-            BufferedReader in = new BufferedReader(new FileReader(file_name));
++            BufferedReader in = new CommentReader(new FileReader(file_name));
+             String str;
+             while ((str = in.readLine()) != null){
+                 Contract_Matcher = Contract_Catcher.matcher(str);
+@@ -221,7 +237,7 @@
+         Matcher UC_Matcher,Service_Matcher,CRUDService_Matcher,Contract_Matcher;
+         String path = System.getProperty("user.dir");
+         try {
+-            BufferedReader in = new BufferedReader(new FileReader(s));
++            BufferedReader in = new CommentReader(new FileReader(s));
+             String str;
+             int cnt = 0;
+             while ((str = in.readLine()) != null) {
+@@ -235,7 +251,7 @@
+                     // System.out.println("用例名称为"+base);
+ 
+                     //base = base[0] -'a' +'A';
+-                    BufferedReader in2 = new BufferedReader(new FileReader(s));
++                    BufferedReader in2 = new CommentReader(new FileReader(s));
+                     String str2;
+                     while ((str2 = in2.readLine()) != null) {
+                         Service_Matcher = Service_Catcher.matcher(str2);
+@@ -249,7 +265,7 @@
+                             break;
+                         }
+                     }
+-                    BufferedReader in3 = new BufferedReader(new FileReader(s));
++                    BufferedReader in3 = new CommentReader(new FileReader(s));
+                     //in2.reset();
+                     if(flag == 1){
+                         while ((str2 = in3.readLine()) != null){
+@@ -342,7 +358,7 @@
+         Matcher UC_Matcher,Service_Matcher,CRUDService_Matcher,Contract_Matcher,Service_Matcher2;
+         String path = System.getProperty("user.dir");
+         try {
+-            BufferedReader in = new BufferedReader(new FileReader(s));
++            BufferedReader in = new CommentReader(new FileReader(s));
+             String str;
+             int cnt = 0;
+             while ((str = in.readLine()) != null) {
+@@ -355,7 +371,7 @@
+                    // System.out.println("用例名称为"+base);
+ 
+                     //base = base[0] -'a' +'A';
+-                    BufferedReader in2 = new BufferedReader(new FileReader(s));
++                    BufferedReader in2 = new CommentReader(new FileReader(s));
+                     String str2;
+                     while ((str2 = in2.readLine()) != null) {
+                         Service_Matcher = Service_Catcher.matcher(str2);
+@@ -370,7 +386,7 @@
+                             break;
+                         }
+                     }
+-                    BufferedReader in3 = new BufferedReader(new FileReader(s));
++                    BufferedReader in3 = new CommentReader(new FileReader(s));
+                     //in2.reset();
+                     if(flag == 1){
+                         while ((str2 = in3.readLine()) != null){
+@@ -446,7 +462,7 @@
+         HashMap<String , Integer> EntityPos = new HashMap<>();
+         String path = System.getProperty("user.dir");
+         try {
+-            BufferedReader in = new BufferedReader(new FileReader(s));
++            BufferedReader in = new CommentReader(new FileReader(s));
+             String str;
+             int cnt = 0;
+             while ((str = in.readLine()) != null) {
+@@ -475,7 +491,7 @@
+         Matcher Entity_Matcher,ReferMatcher,EntityEntend_Matcher;
+         HashMap<String , Integer> EntityPos = getEntityPos(s);
+         try {
+-            BufferedReader in2 = new BufferedReader(new FileReader(s));
++            BufferedReader in2 = new CommentReader(new FileReader(s));
+             String str;
+             while ((str = in2.readLine()) != null) {
+                 EntityEntend_Matcher = EntityExtend_Catcher.matcher(str);
+@@ -524,7 +540,7 @@
+         int size = EntityPos.size();
+         double[][] EtoE = new double[size][size];
+         try {
+-            BufferedReader in2 = new BufferedReader(new FileReader(s));
++            BufferedReader in2 = new CommentReader(new FileReader(s));
+             String str;
+             while ((str = in2.readLine()) != null) {
+                 Entity_Matcher = Entity_Catcher.matcher(str);
+@@ -699,7 +715,7 @@
+         Matcher IncludedUC_Matcher;
+         HashMap<String , Integer> mapp = getUCPos(s);
+         try {
+-            BufferedReader in = new BufferedReader(new FileReader(s));
++            BufferedReader in = new CommentReader(new FileReader(s));
+            // System.out.println(remodel);
+             String str;
+             while ((str = in.readLine()) != null) {
+@@ -745,7 +761,7 @@
+             int ExtNum = 0;
+             int GenNum = 0;
+             try {
+-                BufferedReader in = new BufferedReader(new FileReader(remodel));
++                BufferedReader in = new CommentReader(new FileReader(remodel));
+                 System.out.println(remodel);
+                 String str;
+                 while ((str = in.readLine()) != null) {

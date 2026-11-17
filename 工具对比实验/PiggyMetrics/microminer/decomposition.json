@@ -1,0 +1,429 @@
+{
+  "application": "PiggyMetrics",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/piggy_metrics_20261103_01/microminer/input/PiggyMetrics.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "PiggyMetrics.service.AccountServiceAccountServiceImpl",
+        "PiggyMetrics.domain.AccountServiceAccount",
+        "PiggyMetrics.domain.AccountServiceItem",
+        "PiggyMetrics.domain.AccountServiceSaving",
+        "PiggyMetrics.domain.AccountServiceUser",
+        "PiggyMetrics.domain.StatisticsServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer",
+        "PiggyMetrics.domain.StatisticsServiceItem",
+        "PiggyMetrics.domain.StatisticsServiceSaving",
+        "PiggyMetrics.domain.StatisticsServiceDataPoint",
+        "PiggyMetrics.domain.StatisticsServiceDataPointId",
+        "PiggyMetrics.domain.StatisticsServiceItemMetric"
+      ],
+      "service_names": [
+        "AccountServiceAccountServiceImpl"
+      ],
+      "membership_scores": {
+        "AccountServiceAccount": {
+          "AccountServiceAccountServiceImpl": 1.1029609709475465,
+          "NotificationServiceEmailServiceImpl": 0.04341215710622296,
+          "NotificationServiceNotificationServiceImpl": 1.0366899692852671,
+          "NotificationServiceRecipientServiceImpl": 0.08406728074767074,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.03432032364918221,
+          "StatisticsServiceStatisticsServiceImpl": 0.11006990785580141
+        },
+        "AccountServiceItem": {
+          "AccountServiceAccountServiceImpl": 1.0782623792124926,
+          "NotificationServiceEmailServiceImpl": 0.049497474683058325,
+          "NotificationServiceNotificationServiceImpl": 0.04183300132670378,
+          "NotificationServiceRecipientServiceImpl": 0.06390096504226937,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.039131189606246314,
+          "StatisticsServiceStatisticsServiceImpl": 0.08366600265340755
+        },
+        "AccountServiceSaving": {
+          "AccountServiceAccountServiceImpl": 1.0782623792124926,
+          "NotificationServiceEmailServiceImpl": 0.049497474683058325,
+          "NotificationServiceNotificationServiceImpl": 0.04183300132670378,
+          "NotificationServiceRecipientServiceImpl": 0.06390096504226937,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.039131189606246314,
+          "StatisticsServiceStatisticsServiceImpl": 0.08366600265340755
+        },
+        "AccountServiceUser": {
+          "AccountServiceAccountServiceImpl": 1.1010362971081844,
+          "NotificationServiceEmailServiceImpl": 0.06390096504226937,
+          "NotificationServiceNotificationServiceImpl": 0.05400617248673217,
+          "NotificationServiceRecipientServiceImpl": 0.08249579113843054,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.05051814855409226,
+          "StatisticsServiceStatisticsServiceImpl": 0.10801234497346433
+        },
+        "StatisticsServiceAccount": {
+          "AccountServiceAccountServiceImpl": 1.0824957911384305,
+          "NotificationServiceEmailServiceImpl": 0.05217491947499509,
+          "NotificationServiceNotificationServiceImpl": 0.04409585518440983,
+          "NotificationServiceRecipientServiceImpl": 0.06735753140545633,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.08249579113843054,
+          "StatisticsServiceStatisticsServiceImpl": 1.1322875655532294
+        },
+        "StatisticsServiceExchangeRatesContainer": {
+          "AccountServiceAccountServiceImpl": 1.04375,
+          "NotificationServiceEmailServiceImpl": 0.05533985905294664,
+          "NotificationServiceNotificationServiceImpl": 0.046770717334674264,
+          "NotificationServiceRecipientServiceImpl": 0.03572172541558802,
+          "StatisticsServiceExchangeRatesServiceImpl": 1.175,
+          "StatisticsServiceStatisticsServiceImpl": 1.0935414346693486
+        },
+        "StatisticsServiceItem": {
+          "AccountServiceAccountServiceImpl": 1.0412478955692153,
+          "NotificationServiceEmailServiceImpl": 0.05217491947499509,
+          "NotificationServiceNotificationServiceImpl": 0.04409585518440983,
+          "NotificationServiceRecipientServiceImpl": 0.03367876570272817,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.08249579113843054,
+          "StatisticsServiceStatisticsServiceImpl": 1.0881917103688197
+        },
+        "StatisticsServiceSaving": {
+          "AccountServiceAccountServiceImpl": 1.0391311896062463,
+          "NotificationServiceEmailServiceImpl": 0.049497474683058325,
+          "NotificationServiceNotificationServiceImpl": 0.04183300132670378,
+          "NotificationServiceRecipientServiceImpl": 0.031950482521134686,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.07826237921249263,
+          "StatisticsServiceStatisticsServiceImpl": 1.0836660026534075
+        },
+        "StatisticsServiceDataPoint": {
+          "AccountServiceAccountServiceImpl": 1.035721725415588,
+          "NotificationServiceEmailServiceImpl": 0.04518480570575319,
+          "NotificationServiceNotificationServiceImpl": 0.038188130791298666,
+          "NotificationServiceRecipientServiceImpl": 0.029166666666666664,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.10716517624676404,
+          "StatisticsServiceStatisticsServiceImpl": 1.0763762615825974
+        },
+        "StatisticsServiceDataPointId": {
+          "AccountServiceAccountServiceImpl": 1.0935414346693486,
+          "NotificationServiceEmailServiceImpl": 0.059160797830996155,
+          "NotificationServiceNotificationServiceImpl": 0.049999999999999996,
+          "NotificationServiceRecipientServiceImpl": 0.07637626158259733,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.09354143466934853,
+          "StatisticsServiceStatisticsServiceImpl": 1.15
+        },
+        "StatisticsServiceItemMetric": {
+          "AccountServiceAccountServiceImpl": 1.04375,
+          "NotificationServiceEmailServiceImpl": 0.05533985905294664,
+          "NotificationServiceNotificationServiceImpl": 0.046770717334674264,
+          "NotificationServiceRecipientServiceImpl": 0.03572172541558802,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.0875,
+          "StatisticsServiceStatisticsServiceImpl": 1.0935414346693486
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceEmailServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "service_names": [
+        "NotificationServiceEmailServiceImpl"
+      ],
+      "membership_scores": {
+        "NotificationServiceRecipient": {
+          "AccountServiceAccountServiceImpl": 0.04124789556921527,
+          "NotificationServiceEmailServiceImpl": 1.1565247584249851,
+          "NotificationServiceNotificationServiceImpl": 1.0881917103688197,
+          "NotificationServiceRecipientServiceImpl": 1.1010362971081844,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.04124789556921527,
+          "StatisticsServiceStatisticsServiceImpl": 0.04409585518440983
+        }
+      }
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceNotificationServiceImpl",
+        "PiggyMetrics.domain.AccountServiceAccount",
+        "PiggyMetrics.domain.NotificationServiceNotificationSettings",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "service_names": [
+        "NotificationServiceNotificationServiceImpl"
+      ],
+      "membership_scores": {
+        "AccountServiceAccount": {
+          "AccountServiceAccountServiceImpl": 1.1029609709475465,
+          "NotificationServiceEmailServiceImpl": 0.04341215710622296,
+          "NotificationServiceNotificationServiceImpl": 1.0366899692852671,
+          "NotificationServiceRecipientServiceImpl": 0.08406728074767074,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.03432032364918221,
+          "StatisticsServiceStatisticsServiceImpl": 0.11006990785580141
+        },
+        "NotificationServiceNotificationSettings": {
+          "AccountServiceAccountServiceImpl": 0.04375,
+          "NotificationServiceEmailServiceImpl": 0.11067971810589328,
+          "NotificationServiceNotificationServiceImpl": 1.0935414346693486,
+          "NotificationServiceRecipientServiceImpl": 1.071443450831176,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.04375,
+          "StatisticsServiceStatisticsServiceImpl": 0.046770717334674264
+        },
+        "NotificationServiceRecipient": {
+          "AccountServiceAccountServiceImpl": 0.04124789556921527,
+          "NotificationServiceEmailServiceImpl": 1.1565247584249851,
+          "NotificationServiceNotificationServiceImpl": 1.0881917103688197,
+          "NotificationServiceRecipientServiceImpl": 1.1010362971081844,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.04124789556921527,
+          "StatisticsServiceStatisticsServiceImpl": 0.04409585518440983
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceRecipientServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceNotificationSettings",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "service_names": [
+        "NotificationServiceRecipientServiceImpl"
+      ],
+      "membership_scores": {
+        "NotificationServiceNotificationSettings": {
+          "AccountServiceAccountServiceImpl": 0.04375,
+          "NotificationServiceEmailServiceImpl": 0.11067971810589328,
+          "NotificationServiceNotificationServiceImpl": 1.0935414346693486,
+          "NotificationServiceRecipientServiceImpl": 1.071443450831176,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.04375,
+          "StatisticsServiceStatisticsServiceImpl": 0.046770717334674264
+        },
+        "NotificationServiceRecipient": {
+          "AccountServiceAccountServiceImpl": 0.04124789556921527,
+          "NotificationServiceEmailServiceImpl": 1.1565247584249851,
+          "NotificationServiceNotificationServiceImpl": 1.0881917103688197,
+          "NotificationServiceRecipientServiceImpl": 1.1010362971081844,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.04124789556921527,
+          "StatisticsServiceStatisticsServiceImpl": 0.04409585518440983
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "PiggyMetrics.service.StatisticsServiceExchangeRatesServiceImpl",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer"
+      ],
+      "service_names": [
+        "StatisticsServiceExchangeRatesServiceImpl"
+      ],
+      "membership_scores": {
+        "StatisticsServiceExchangeRatesContainer": {
+          "AccountServiceAccountServiceImpl": 1.04375,
+          "NotificationServiceEmailServiceImpl": 0.05533985905294664,
+          "NotificationServiceNotificationServiceImpl": 0.046770717334674264,
+          "NotificationServiceRecipientServiceImpl": 0.03572172541558802,
+          "StatisticsServiceExchangeRatesServiceImpl": 1.175,
+          "StatisticsServiceStatisticsServiceImpl": 1.0935414346693486
+        }
+      }
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "PiggyMetrics.service.StatisticsServiceStatisticsServiceImpl",
+        "PiggyMetrics.domain.StatisticsServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer",
+        "PiggyMetrics.domain.StatisticsServiceItem",
+        "PiggyMetrics.domain.StatisticsServiceSaving",
+        "PiggyMetrics.domain.StatisticsServiceDataPoint",
+        "PiggyMetrics.domain.StatisticsServiceDataPointId",
+        "PiggyMetrics.domain.StatisticsServiceItemMetric"
+      ],
+      "service_names": [
+        "StatisticsServiceStatisticsServiceImpl"
+      ],
+      "membership_scores": {
+        "StatisticsServiceAccount": {
+          "AccountServiceAccountServiceImpl": 1.0824957911384305,
+          "NotificationServiceEmailServiceImpl": 0.05217491947499509,
+          "NotificationServiceNotificationServiceImpl": 0.04409585518440983,
+          "NotificationServiceRecipientServiceImpl": 0.06735753140545633,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.08249579113843054,
+          "StatisticsServiceStatisticsServiceImpl": 1.1322875655532294
+        },
+        "StatisticsServiceExchangeRatesContainer": {
+          "AccountServiceAccountServiceImpl": 1.04375,
+          "NotificationServiceEmailServiceImpl": 0.05533985905294664,
+          "NotificationServiceNotificationServiceImpl": 0.046770717334674264,
+          "NotificationServiceRecipientServiceImpl": 0.03572172541558802,
+          "StatisticsServiceExchangeRatesServiceImpl": 1.175,
+          "StatisticsServiceStatisticsServiceImpl": 1.0935414346693486
+        },
+        "StatisticsServiceItem": {
+          "AccountServiceAccountServiceImpl": 1.0412478955692153,
+          "NotificationServiceEmailServiceImpl": 0.05217491947499509,
+          "NotificationServiceNotificationServiceImpl": 0.04409585518440983,
+          "NotificationServiceRecipientServiceImpl": 0.03367876570272817,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.08249579113843054,
+          "StatisticsServiceStatisticsServiceImpl": 1.0881917103688197
+        },
+        "StatisticsServiceSaving": {
+          "AccountServiceAccountServiceImpl": 1.0391311896062463,
+          "NotificationServiceEmailServiceImpl": 0.049497474683058325,
+          "NotificationServiceNotificationServiceImpl": 0.04183300132670378,
+          "NotificationServiceRecipientServiceImpl": 0.031950482521134686,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.07826237921249263,
+          "StatisticsServiceStatisticsServiceImpl": 1.0836660026534075
+        },
+        "StatisticsServiceDataPoint": {
+          "AccountServiceAccountServiceImpl": 1.035721725415588,
+          "NotificationServiceEmailServiceImpl": 0.04518480570575319,
+          "NotificationServiceNotificationServiceImpl": 0.038188130791298666,
+          "NotificationServiceRecipientServiceImpl": 0.029166666666666664,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.10716517624676404,
+          "StatisticsServiceStatisticsServiceImpl": 1.0763762615825974
+        },
+        "StatisticsServiceDataPointId": {
+          "AccountServiceAccountServiceImpl": 1.0935414346693486,
+          "NotificationServiceEmailServiceImpl": 0.059160797830996155,
+          "NotificationServiceNotificationServiceImpl": 0.049999999999999996,
+          "NotificationServiceRecipientServiceImpl": 0.07637626158259733,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.09354143466934853,
+          "StatisticsServiceStatisticsServiceImpl": 1.15
+        },
+        "StatisticsServiceItemMetric": {
+          "AccountServiceAccountServiceImpl": 1.04375,
+          "NotificationServiceEmailServiceImpl": 0.05533985905294664,
+          "NotificationServiceNotificationServiceImpl": 0.046770717334674264,
+          "NotificationServiceRecipientServiceImpl": 0.03572172541558802,
+          "StatisticsServiceExchangeRatesServiceImpl": 0.0875,
+          "StatisticsServiceStatisticsServiceImpl": 1.0935414346693486
+        }
+      }
+    }
+  ],
+  "entity_memberships": {
+    "AccountServiceAccount": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.102961
+      },
+      {
+        "service": "NotificationServiceNotificationServiceImpl",
+        "score": 1.03669
+      }
+    ],
+    "AccountServiceItem": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.078262
+      }
+    ],
+    "AccountServiceSaving": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.078262
+      }
+    ],
+    "AccountServiceUser": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.101036
+      }
+    ],
+    "StatisticsServiceAccount": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.082496
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.132288
+      }
+    ],
+    "StatisticsServiceExchangeRatesContainer": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.04375
+      },
+      {
+        "service": "StatisticsServiceExchangeRatesServiceImpl",
+        "score": 1.175
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.093541
+      }
+    ],
+    "StatisticsServiceItem": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.041248
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.088192
+      }
+    ],
+    "StatisticsServiceSaving": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.039131
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.083666
+      }
+    ],
+    "StatisticsServiceDataPoint": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.035722
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.076376
+      }
+    ],
+    "StatisticsServiceDataPointId": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.093541
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.15
+      }
+    ],
+    "StatisticsServiceItemMetric": [
+      {
+        "service": "AccountServiceAccountServiceImpl",
+        "score": 1.04375
+      },
+      {
+        "service": "StatisticsServiceStatisticsServiceImpl",
+        "score": 1.093541
+      }
+    ],
+    "NotificationServiceRecipient": [
+      {
+        "service": "NotificationServiceEmailServiceImpl",
+        "score": 1.156525
+      },
+      {
+        "service": "NotificationServiceNotificationServiceImpl",
+        "score": 1.088192
+      },
+      {
+        "service": "NotificationServiceRecipientServiceImpl",
+        "score": 1.101036
+      }
+    ],
+    "NotificationServiceNotificationSettings": [
+      {
+        "service": "NotificationServiceNotificationServiceImpl",
+        "score": 1.093541
+      },
+      {
+        "service": "NotificationServiceRecipientServiceImpl",
+        "score": 1.071443
+      }
+    ]
+  }
+}

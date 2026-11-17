@@ -1,0 +1,3032 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="11b712b6f27c990ddb86be946ceb57f0e1dd4b4cbc2787089db4df647bacfa02" runHash="5fa8795b8b12ef447d2a194f622065fc1def96bbbc1a42b0452086f7cc5ce5fa" snapshotHash="094c0c56951630c53888470f19a32d1c8cdb65d1933cd3d3042c533dae43bdec" taskKey="a888b5e30e04f54381c57d7e34acc4d8ebcd878b4ba84590d608b69d2b254b79" configId="C0" seed="127" exportVersion="merm-export-v1">
+    <UseCaseModel name="Spring.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="ShopActivityShopActivityApiActivityServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="ShopActivityShopActivityApiAppDiscountCouponServiceImpl" />
+        <uc name="ShopActivityShopActivityApiExchangeServiceImpl" />
+        <uc name="ShopManageCommonEnumService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 2" serviceId="2">
+        <uc name="ShopActivityShopActivityApiAssembleServiceImpl" />
+        <uc name="ShopActivityShopActivityApiCouponTemplateServiceImpl" />
+        <uc name="ShopManageSysUserClientService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 3" serviceId="3">
+        <uc name="ShopActivityShopActivityApiAssembleServiceRuleImpl" />
+        <uc name="ShopPlatformShopPlatformApiFormServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 4" serviceId="4">
+        <uc name="ShopActivityShopActivityApiBannerServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 5" serviceId="5">
+        <uc name="ShopActivityShopActivityApiDiscountCouponServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 6" serviceId="6">
+        <uc name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 7" serviceId="7">
+        <uc name="ShopActivityShopActivityApiExchangeActivityRuleServiceImpl" />
+        <uc name="ShopUserShopUserApiSignServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 8" serviceId="8">
+        <uc name="ShopAuthShopAuthServerApiUserServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 9" serviceId="9">
+        <uc name="ShopCartShopCartApiCartServiceImpl" />
+        <uc name="ShopManageMenuServiceImpl" />
+        <uc name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl" />
+        <uc name="ShopUserShopUserApiGoodsCartServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 10" serviceId="10">
+        <uc name="ShopCartShopCartApiOrderCartServiceImpl" />
+        <uc name="ShopUserShopUserApiSMSCodeServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 11" serviceId="11">
+        <uc name="ShopElasticsearchShopElasticsearchApiGoodsServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 12" serviceId="12">
+        <uc name="ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 13" serviceId="13">
+        <uc name="ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 14" serviceId="14">
+        <uc name="ShopGoodsShopGoodsApiAppClassificationServiceImpl" />
+        <uc name="ShopSellerShopSellerApiSellerSubscribeServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 15" serviceId="15">
+        <uc name="ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 16" serviceId="16">
+        <uc name="ShopGoodsShopGoodsApiGoodsApproveServiceImpl" />
+        <uc name="ShopGoodsShopGoodsApiGoodsClassServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 17" serviceId="17">
+        <uc name="ShopGoodsShopGoodsApiGoodsServiceImpl" />
+        <uc name="ShopManageGeneratorService" />
+        <uc name="ShopPlatformShopPlatformApiSMSTemplateServiceImpl" />
+        <uc name="ShopSettlementShopSettlementApiSettlementOrderServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 18" serviceId="18">
+        <uc name="ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl" />
+        <uc name="ShopUserShopUserApiAddressServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 19" serviceId="19">
+        <uc name="ShopGoodsShopGoodsApiGoodsSkuServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 20" serviceId="20">
+        <uc name="ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 21" serviceId="21">
+        <uc name="ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 22" serviceId="22">
+        <uc name="ShopGoodsShopGoodsApiGoodsSpuServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 23" serviceId="23">
+        <uc name="ShopJobShopJobApiJobServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 24" serviceId="24">
+        <uc name="ShopManageDashboardServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 25" serviceId="25">
+        <uc name="ShopManageDynamicFormServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 26" serviceId="26">
+        <uc name="ShopManagePermissionServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 27" serviceId="27">
+        <uc name="ShopManageRoleServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 28" serviceId="28">
+        <uc name="ShopManageSysUserServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 29" serviceId="29">
+        <uc name="ShopManageSystemConfigServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 30" serviceId="30">
+        <uc name="ShopOrderShopOrderApiAppUserOrderServiceImpl" />
+        <uc name="ShopOrderShopOrderApiUserOrderServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 31" serviceId="31">
+        <uc name="ShopOrderShopOrderApiOrderTradeServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 32" serviceId="32">
+        <uc name="ShopOrderShopOrderApiSellerOrderServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 33" serviceId="33">
+        <uc name="ShopOssAliyunServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 34" serviceId="34">
+        <uc name="ShopOssQiniuServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 35" serviceId="35">
+        <uc name="ShopPlatformShopPlatformApiDynamicFormServiceImpl" />
+        <uc name="ShopUserShopUserApiAreaServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 36" serviceId="36">
+        <uc name="ShopPlatformShopPlatformApiFieldServiceImpl" />
+        <uc name="ShopPlatformShopPlatformApiSystemConfigServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 37" serviceId="37">
+        <uc name="ShopPlatformShopPlatformApiSMSServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 38" serviceId="38">
+        <uc name="ShopRiskShopRiskApiBlackListServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 39" serviceId="39">
+        <uc name="ShopRiskShopRiskApiWhiteListServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 40" serviceId="40">
+        <uc name="ShopSellerShopSellerApiSellerLoginServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 41" serviceId="41">
+        <uc name="ShopUserShopUserApiInitService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 42" serviceId="42">
+        <uc name="ShopUserShopUserApiReceiverService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 43" serviceId="43">
+        <uc name="ShopUserShopUserApiFeedbackServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 44" serviceId="44">
+        <uc name="ShopUserShopUserApiNativeMessageServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 45" serviceId="45">
+        <uc name="ShopUserShopUserApiUserAccountServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 46" serviceId="46">
+        <uc name="ShopUserShopUserApiUserServiceImpl" />
+      </usecasecontext>
+      <actor name="ShopActivityRole" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1" />
+      <actor name="ShopAuthRole" uc="/0/@UseCaseModel/@usecasecontext.8/@uc.0" />
+      <actor name="ShopCartRole" uc="/0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0" />
+      <actor name="ShopElasticsearchRole" uc="/0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.0" />
+      <actor name="ShopGoodsRole" uc="/0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.15/@uc.0 /0/@UseCaseModel/@usecasecontext.16/@uc.0 /0/@UseCaseModel/@usecasecontext.16/@uc.1 /0/@UseCaseModel/@usecasecontext.17/@uc.0 /0/@UseCaseModel/@usecasecontext.18/@uc.0 /0/@UseCaseModel/@usecasecontext.19/@uc.0 /0/@UseCaseModel/@usecasecontext.20/@uc.0 /0/@UseCaseModel/@usecasecontext.21/@uc.0 /0/@UseCaseModel/@usecasecontext.22/@uc.0" />
+      <actor name="ShopJobRole" uc="/0/@UseCaseModel/@usecasecontext.23/@uc.0" />
+      <actor name="ShopManageRole" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.2 /0/@UseCaseModel/@usecasecontext.24/@uc.0 /0/@UseCaseModel/@usecasecontext.25/@uc.0 /0/@UseCaseModel/@usecasecontext.17/@uc.1 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.26/@uc.0 /0/@UseCaseModel/@usecasecontext.27/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.28/@uc.0 /0/@UseCaseModel/@usecasecontext.29/@uc.0" />
+      <actor name="ShopOrderRole" uc="/0/@UseCaseModel/@usecasecontext.30/@uc.0 /0/@UseCaseModel/@usecasecontext.31/@uc.0 /0/@UseCaseModel/@usecasecontext.32/@uc.0 /0/@UseCaseModel/@usecasecontext.30/@uc.1" />
+      <actor name="ShopOssRole" uc="/0/@UseCaseModel/@usecasecontext.33/@uc.0 /0/@UseCaseModel/@usecasecontext.34/@uc.0" />
+      <actor name="ShopPlatformRole" uc="/0/@UseCaseModel/@usecasecontext.35/@uc.0 /0/@UseCaseModel/@usecasecontext.36/@uc.0 /0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.37/@uc.0 /0/@UseCaseModel/@usecasecontext.17/@uc.2 /0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.36/@uc.1" />
+      <actor name="ShopRiskRole" uc="/0/@UseCaseModel/@usecasecontext.38/@uc.0 /0/@UseCaseModel/@usecasecontext.39/@uc.0" />
+      <actor name="ShopSellerRole" uc="/0/@UseCaseModel/@usecasecontext.40/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1" />
+      <actor name="ShopSettlementRole" uc="/0/@UseCaseModel/@usecasecontext.17/@uc.3" />
+      <actor name="ShopUserRole" uc="/0/@UseCaseModel/@usecasecontext.18/@uc.1 /0/@UseCaseModel/@usecasecontext.35/@uc.1 /0/@UseCaseModel/@usecasecontext.43/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.3 /0/@UseCaseModel/@usecasecontext.41/@uc.0 /0/@UseCaseModel/@usecasecontext.44/@uc.0 /0/@UseCaseModel/@usecasecontext.42/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.45/@uc.0 /0/@UseCaseModel/@usecasecontext.46/@uc.0" />
+    </UseCaseModel>
+    <DomainModel name="Spring.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.0 /0/@DomainModel/@systeminterface.1 /0/@DomainModel/@systeminterface.2 /0/@DomainModel/@systeminterface.43 /0/@DomainModel/@systeminterface.44">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiActivityServiceImplCount()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplCreate()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplGetById()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplList()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplModify()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplNonExists()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplPage()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplQueryInfo()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplQueryList()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplQueryPage()" />
+          <operation name="ShopActivityShopActivityApiActivityServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopCartShopCartApiGoodsCartbyID()" />
+          <operation name="findShopManageMenubyID()" />
+          <operation name="findShopUserShopUserApiUserAccountbyID()" />
+        </userinterface>
+        <entity name="ShopCartShopCartApiGoodsCart">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="quantity">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopManageMenu">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="parentId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sequence">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="menuType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="path">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="component">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="redirect">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="icon">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="permission">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="router">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="hidden">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopUserShopUserApiUserAccount">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="integral">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.3 /0/@DomainModel/@systeminterface.4 /0/@DomainModel/@systeminterface.45 /0/@DomainModel/@systeminterface.46 /0/@DomainModel/@systeminterface.47 /0/@DomainModel/@systeminterface.48 /0/@DomainModel/@systeminterface.49">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiAppDiscountCouponServiceImplQueryCoupons()" />
+          <operation name="ShopActivityShopActivityApiExchangeServiceImplRecord()" />
+          <operation name="ShopManageCommonEnumServiceGetCommonEnumInfo()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopJobShopJobApiJobGroupbyID()" />
+          <operation name="findShopPlatformShopPlatformApiSMSTemplatebyID()" />
+        </userinterface>
+        <entity name="ShopJobShopJobApiJobGroup">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="groupName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="sequence">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopOrderShopOrderApiOrderEvaluate">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="content">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopPlatformShopPlatformApiSMSTemplate">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="templateCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="templateContent">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext2" serviceId="2" systeminterface="/0/@DomainModel/@systeminterface.5 /0/@DomainModel/@systeminterface.50 /0/@DomainModel/@systeminterface.51 /0/@DomainModel/@systeminterface.52 /0/@DomainModel/@systeminterface.53 /0/@DomainModel/@systeminterface.54 /0/@DomainModel/@systeminterface.55 /0/@DomainModel/@systeminterface.56">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiAssembleServiceImplMembers()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplCount()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplCreate()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplGetById()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplInfo()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplList()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplModify()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplPage()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplQueryPage()" />
+          <operation name="ShopActivityShopActivityApiCouponTemplateServiceImplToPage()" />
+          <operation name="ShopManageSysUserClientServiceGetRolesBySysUserId()" />
+          <operation name="ShopManageSysUserClientServiceQuerySysUserByUsername()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopManageRolebyID()" />
+        </userinterface>
+        <entity name="ShopManageRole">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="roleName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="master">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopOrderShopOrderApiOrderItem">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="userOrderId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerOrderId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsSkuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="purchaseAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="purchaseQuantity">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopOrderShopOrderApiSaleAfterOrder">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext3" serviceId="3" systeminterface="/0/@DomainModel/@systeminterface.57 /0/@DomainModel/@systeminterface.58 /0/@DomainModel/@systeminterface.59 /0/@DomainModel/@systeminterface.60 /0/@DomainModel/@systeminterface.61">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplCount()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplGetById()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplInfo()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplList()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplPage()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplRule()" />
+          <operation name="ShopActivityShopActivityApiAssembleServiceRuleImplToPage()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplCount()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplCreate()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplGet()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplGetBaseMapper()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplGetById()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplGetOne()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplList()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplModify()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplPage()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplQueryList()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplQueryPage()" />
+          <operation name="ShopPlatformShopPlatformApiFormServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext4" serviceId="4" systeminterface="/0/@DomainModel/@systeminterface.62 /0/@DomainModel/@systeminterface.63">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiBannerServiceImplBanners()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplChannel()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplCount()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplCreate()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplGetById()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplList()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplModify()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplPage()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplQueryList()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplQueryPage()" />
+          <operation name="ShopActivityShopActivityApiBannerServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopActivityShopActivityApiInviteCode">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="templateId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="code">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext5" serviceId="5" systeminterface="/0/@DomainModel/@systeminterface.6 /0/@DomainModel/@systeminterface.7 /0/@DomainModel/@systeminterface.64 /0/@DomainModel/@systeminterface.65">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplCount()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplGetById()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplInfo()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplList()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplListOverloadB()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplPage()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplPublish()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplQueryPage()" />
+          <operation name="ShopActivityShopActivityApiDiscountCouponServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopOrderShopOrderApiUserOrderbyID()" />
+          <operation name="findShopPlatformShopPlatformApiFieldPropsbyID()" />
+        </userinterface>
+        <entity name="ShopOrderShopOrderApiUserOrder">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="addrId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="couponId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="payType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="integral">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="orderAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="payAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="integralAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="discountAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="self">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopPlatformShopPlatformApiFieldProps">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="fieldId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="type">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="maxLength">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="minLength">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="placeholder">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="clearable">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="disabled">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="size">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="prefixIcon">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="suffixIcon">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="rows">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="autosize">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="step">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="datasource">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext6" serviceId="6" systeminterface="/0/@DomainModel/@systeminterface.8 /0/@DomainModel/@systeminterface.66">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplCount()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetById()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplList()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplPage()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityHistoryServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopGoodsShopGoodsApiGoodsSpubyID()" />
+        </userinterface>
+        <entity name="ShopGoodsShopGoodsApiGoodsSpu">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="spuName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="spuImage">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="sequence">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext7" serviceId="7" systeminterface="/0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.67 /0/@DomainModel/@systeminterface.68">
+        <userinterface name="UserInterface">
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplCount()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplCreate()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplDelete()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetBaseMapper()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetById()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetOne()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplList()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplModify()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplPage()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplQueryList()" />
+          <operation name="ShopActivityShopActivityApiExchangeActivityRuleServiceImplToPage()" />
+          <operation name="ShopUserShopUserApiSignServiceImplGetSignDays()" />
+          <operation name="ShopUserShopUserApiSignServiceImplSign()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiExchangeActivityMemberbyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiExchangeActivityMember">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="ruleId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopActivityShopActivityApiSecKillRule">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext8" serviceId="8" systeminterface="/0/@DomainModel/@systeminterface.10">
+        <userinterface name="UserInterface">
+          <operation name="ShopAuthShopAuthServerApiUserServiceImplLoadUserBySMS()" />
+          <operation name="ShopAuthShopAuthServerApiUserServiceImplLoadUserByUsername()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopGoodsShopGoodsApiGoodsSkuImagebyID()" />
+        </userinterface>
+        <entity name="ShopGoodsShopGoodsApiGoodsSkuImage">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="images">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext9" serviceId="9" systeminterface="/0/@DomainModel/@systeminterface.11 /0/@DomainModel/@systeminterface.69 /0/@DomainModel/@systeminterface.70 /0/@DomainModel/@systeminterface.71">
+        <userinterface name="UserInterface">
+          <operation name="ShopCartShopCartApiCartServiceImplCreate()" />
+          <operation name="ShopCartShopCartApiCartServiceImplDelete()" />
+          <operation name="ShopCartShopCartApiCartServiceImplDeleteBatch()" />
+          <operation name="ShopCartShopCartApiCartServiceImplList()" />
+          <operation name="ShopCartShopCartApiCartServiceImplPage()" />
+          <operation name="ShopManageMenuServiceImplCount()" />
+          <operation name="ShopManageMenuServiceImplCreate()" />
+          <operation name="ShopManageMenuServiceImplDelete()" />
+          <operation name="ShopManageMenuServiceImplGetBaseMapper()" />
+          <operation name="ShopManageMenuServiceImplGetById()" />
+          <operation name="ShopManageMenuServiceImplGetOne()" />
+          <operation name="ShopManageMenuServiceImplList()" />
+          <operation name="ShopManageMenuServiceImplModify()" />
+          <operation name="ShopManageMenuServiceImplPage()" />
+          <operation name="ShopManageMenuServiceImplQueryList()" />
+          <operation name="ShopManageMenuServiceImplToPage()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplCount()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplCreate()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetBaseMapper()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetById()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetOne()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplList()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplModify()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplPage()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplQueryList()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigDetailServiceImplToPage()" />
+          <operation name="ShopUserShopUserApiGoodsCartServiceImplGoodsCarts()" />
+          <operation name="ShopUserShopUserApiGoodsCartServiceImplModifyGoodsCart()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopGoodsShopGoodsApiGoodsSkubyID()" />
+        </userinterface>
+        <entity name="ShopGoodsShopGoodsApiGoodsSku">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="skuCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="weight">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="skuAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="discountAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+        </entity>
+        <entity name="ShopJobShopJobApiJobLog">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="jobGroupId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="jobId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="executorServiceName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="executorServiceMethod">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="executorParam">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="triggerTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="triggerCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="triggerMsg">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="handleTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="handleCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="handleMsg">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="alarmStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext10" serviceId="10" systeminterface="/0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.72 /0/@DomainModel/@systeminterface.73">
+        <userinterface name="UserInterface">
+          <operation name="ShopCartShopCartApiOrderCartServiceImplOrders()" />
+          <operation name="ShopUserShopUserApiSMSCodeServiceImplSend()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopManageSysRolebyID()" />
+          <operation name="findShopPlatformShopPlatformApiSystemConfigDetailbyID()" />
+        </userinterface>
+        <entity name="ShopManageSysRole">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="roleId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sysUserId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopPlatformShopPlatformApiSystemConfigDetail">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configValue">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configKey">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext11" serviceId="11" systeminterface="/0/@DomainModel/@systeminterface.74">
+        <userinterface name="UserInterface">
+          <operation name="ShopElasticsearchShopElasticsearchApiGoodsServiceImplQueryPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopActivityShopActivityApiIntegralLog">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="integral">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext12" serviceId="12" systeminterface="/0/@DomainModel/@systeminterface.14">
+        <userinterface name="UserInterface">
+          <operation name="ShopElasticsearchShopElasticsearchApiSellerOrderServiceImplQueryPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopElasticsearchShopElasticsearchApiESUserOrderbyID()" />
+        </userinterface>
+        <entity name="ShopElasticsearchShopElasticsearchApiESUserOrder">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="ids">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext13" serviceId="13" systeminterface="/0/@DomainModel/@systeminterface.15 /0/@DomainModel/@systeminterface.75">
+        <userinterface name="UserInterface">
+          <operation name="ShopElasticsearchShopElasticsearchApiUserOrderServiceImplQueryPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopGoodsShopGoodsApiGoodsApprovebyID()" />
+        </userinterface>
+        <entity name="ShopGoodsShopGoodsApiGoodsApprove">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="publishStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext14" serviceId="14" systeminterface="/0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.17 /0/@DomainModel/@systeminterface.76 /0/@DomainModel/@systeminterface.77 /0/@DomainModel/@systeminterface.78 /0/@DomainModel/@systeminterface.79 /0/@DomainModel/@systeminterface.80">
+        <userinterface name="UserInterface">
+          <operation name="ShopGoodsShopGoodsApiAppClassificationServiceImplClassification()" />
+          <operation name="ShopGoodsShopGoodsApiAppClassificationServiceImplSpus()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiDiscountCouponTemplatebyID()" />
+          <operation name="findShopOrderShopOrderApiOrderTradebyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiDiscountCouponTemplate">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="couponAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="discountStrength">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="templateType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="templateName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="beginTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="endTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+        <entity name="ShopOrderShopOrderApiOrderTrade">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="tradeType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="payType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="outTradeNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="tradeNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="totalAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext15" serviceId="15" systeminterface="/0/@DomainModel/@systeminterface.18 /0/@DomainModel/@systeminterface.81">
+        <userinterface name="UserInterface">
+          <operation name="ShopGoodsShopGoodsApiAppGoodsSkuServiceImplQuerySku()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopRiskShopRiskApiBlackListbyID()" />
+        </userinterface>
+        <entity name="ShopRiskShopRiskApiBlackList">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext16" serviceId="16" systeminterface="/0/@DomainModel/@systeminterface.82 /0/@DomainModel/@systeminterface.83 /0/@DomainModel/@systeminterface.84 /0/@DomainModel/@systeminterface.85 /0/@DomainModel/@systeminterface.86">
+        <userinterface name="UserInterface">
+          <operation name="ShopGoodsShopGoodsApiGoodsApproveServiceImplCreate()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsApproveServiceImplDetail()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplCount()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplCreate()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplDelete()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplGetBaseMapper()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplGetById()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplGetOne()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplList()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplModify()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplQueryBySpuId()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplQueryPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsClassServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext17" serviceId="17" systeminterface="/0/@DomainModel/@systeminterface.87 /0/@DomainModel/@systeminterface.88 /0/@DomainModel/@systeminterface.89 /0/@DomainModel/@systeminterface.90 /0/@DomainModel/@systeminterface.91 /0/@DomainModel/@systeminterface.92 /0/@DomainModel/@systeminterface.93 /0/@DomainModel/@systeminterface.94 /0/@DomainModel/@systeminterface.95 /0/@DomainModel/@systeminterface.96 /0/@DomainModel/@systeminterface.97 /0/@DomainModel/@systeminterface.98 /0/@DomainModel/@systeminterface.99">
+        <userinterface name="UserInterface">
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplCount()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplCreate()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplDelete()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplDetail()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplGetBaseMapper()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplGetById()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplGetOne()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplList()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplModify()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplQueryPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplState()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsServiceImplToPage()" />
+          <operation name="ShopManageGeneratorServiceGenerator()" />
+          <operation name="ShopManageGeneratorServiceTables()" />
+          <operation name="ShopManageGeneratorServiceTablesOverloadB()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplCount()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplCreate()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplGetBaseMapper()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplGetById()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplGetOne()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplList()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplModify()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplPage()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplQueryPage()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplSms()" />
+          <operation name="ShopPlatformShopPlatformApiSMSTemplateServiceImplToPage()" />
+          <operation name="ShopSettlementShopSettlementApiSettlementOrderServiceImplCheck()" />
+          <operation name="ShopSettlementShopSettlementApiSettlementOrderServiceImplCreateOrder()" />
+          <operation name="ShopSettlementShopSettlementApiSettlementOrderServiceImplSubmit()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext18" serviceId="18" systeminterface="/0/@DomainModel/@systeminterface.19 /0/@DomainModel/@systeminterface.100">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiAddressServiceImplAddress()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplCount()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplCreate()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplGetBaseMapper()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplGetById()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplGetOne()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplList()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplModify()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplPage()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplQueryByPrimaryKey()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplQueryPage()" />
+          <operation name="ShopUserShopUserApiAddressServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiActivitybyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiActivity">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityImg">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="beginTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="endTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext19" serviceId="19" systeminterface="/0/@DomainModel/@systeminterface.101 /0/@DomainModel/@systeminterface.102 /0/@DomainModel/@systeminterface.103 /0/@DomainModel/@systeminterface.104">
+        <userinterface name="UserInterface">
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplCount()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplGetBaseMapper()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplGetById()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplGetOne()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplList()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplQueryList()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplQuerySku()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSkuServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext20" serviceId="20">
+        <userinterface name="UserInterface" />
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext21" serviceId="21" systeminterface="/0/@DomainModel/@systeminterface.20">
+        <userinterface name="UserInterface" />
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopPlatformShopPlatformApiFieldbyID()" />
+        </userinterface>
+        <entity name="ShopPlatformShopPlatformApiField">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="formId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="type">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext22" serviceId="22" systeminterface="/0/@DomainModel/@systeminterface.105 /0/@DomainModel/@systeminterface.106 /0/@DomainModel/@systeminterface.107">
+        <userinterface name="UserInterface">
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplCount()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplCreate()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplDelete()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplGetBaseMapper()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplGetById()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplGetOne()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplList()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplModify()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplQueryList()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplQueryPage()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplSpuTree()" />
+          <operation name="ShopGoodsShopGoodsApiGoodsSpuServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext23" serviceId="23" systeminterface="/0/@DomainModel/@systeminterface.21 /0/@DomainModel/@systeminterface.108 /0/@DomainModel/@systeminterface.109">
+        <userinterface name="UserInterface">
+          <operation name="ShopJobShopJobApiJobServiceImplCreate()" />
+          <operation name="ShopJobShopJobApiJobServiceImplCreateOverloadB()" />
+          <operation name="ShopJobShopJobApiJobServiceImplDoJob()" />
+          <operation name="ShopJobShopJobApiJobServiceImplInfo()" />
+          <operation name="ShopJobShopJobApiJobServiceImplModify()" />
+          <operation name="ShopJobShopJobApiJobServiceImplQueryGroupList()" />
+          <operation name="ShopJobShopJobApiJobServiceImplQueryList()" />
+          <operation name="ShopJobShopJobApiJobServiceImplQueryPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopPlatformShopPlatformApiDynamicFormbyID()" />
+        </userinterface>
+        <entity name="ShopPlatformShopPlatformApiDynamicForm">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="bizType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="type">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="icon">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="model">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="defaultValue">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="width">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="remoteUrl">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="dataType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="pattern">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="placeholder">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="startPlaceholder">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="endPlaceholder">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="format">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="customClass">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="rules">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="min">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="max">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="step">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="beRange">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="showInput">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="arrowControl">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="disabled">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="inline">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="readonly">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="editable">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="clearable">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="timestamp">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="allowHalf">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="showAlpha">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="multiple">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="showLabel">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="filterable">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext24" serviceId="24">
+        <userinterface name="UserInterface" />
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopActivityShopActivityApiExchangeActivityGoods">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="ruleId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext25" serviceId="25" systeminterface="/0/@DomainModel/@systeminterface.22 /0/@DomainModel/@systeminterface.110 /0/@DomainModel/@systeminterface.111 /0/@DomainModel/@systeminterface.112">
+        <userinterface name="UserInterface">
+          <operation name="ShopManageDynamicFormServiceImplCreate()" />
+          <operation name="ShopManageDynamicFormServiceImplGet()" />
+          <operation name="ShopManageDynamicFormServiceImplModify()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopUserShopUserApiNativeMessagebyID()" />
+        </userinterface>
+        <entity name="ShopUserShopUserApiNativeMessage">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="content">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="status">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext26" serviceId="26" systeminterface="/0/@DomainModel/@systeminterface.113 /0/@DomainModel/@systeminterface.114">
+        <userinterface name="UserInterface">
+          <operation name="ShopManagePermissionServiceImplGrant()" />
+          <operation name="ShopManagePermissionServiceImplPermission()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopElasticsearchShopElasticsearchApiESSellerOrder">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="ids">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext27" serviceId="27" systeminterface="/0/@DomainModel/@systeminterface.115 /0/@DomainModel/@systeminterface.116 /0/@DomainModel/@systeminterface.117">
+        <userinterface name="UserInterface">
+          <operation name="ShopManageRoleServiceImplCount()" />
+          <operation name="ShopManageRoleServiceImplCreate()" />
+          <operation name="ShopManageRoleServiceImplDelete()" />
+          <operation name="ShopManageRoleServiceImplGetBaseMapper()" />
+          <operation name="ShopManageRoleServiceImplGetById()" />
+          <operation name="ShopManageRoleServiceImplGetOne()" />
+          <operation name="ShopManageRoleServiceImplList()" />
+          <operation name="ShopManageRoleServiceImplModify()" />
+          <operation name="ShopManageRoleServiceImplPage()" />
+          <operation name="ShopManageRoleServiceImplQueryList()" />
+          <operation name="ShopManageRoleServiceImplQueryPage()" />
+          <operation name="ShopManageRoleServiceImplQueryRolePermission()" />
+          <operation name="ShopManageRoleServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopOrderShopOrderApiSellerOrder">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="addrId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="orderCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="deliveryTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="orderType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="payType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="orderAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="discountAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="self">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext28" serviceId="28" systeminterface="/0/@DomainModel/@systeminterface.118 /0/@DomainModel/@systeminterface.119 /0/@DomainModel/@systeminterface.120 /0/@DomainModel/@systeminterface.121 /0/@DomainModel/@systeminterface.122">
+        <userinterface name="UserInterface">
+          <operation name="ShopManageSysUserServiceImplAdminInfo()" />
+          <operation name="ShopManageSysUserServiceImplCreate()" />
+          <operation name="ShopManageSysUserServiceImplModify()" />
+          <operation name="ShopManageSysUserServiceImplQueryDownload()" />
+          <operation name="ShopManageSysUserServiceImplQueryList()" />
+          <operation name="ShopManageSysUserServiceImplQueryPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopActivityShopActivityApiAssembleActivityGoods">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="ruleId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext29" serviceId="29" systeminterface="/0/@DomainModel/@systeminterface.23 /0/@DomainModel/@systeminterface.123">
+        <userinterface name="UserInterface">
+          <operation name="ShopManageSystemConfigServiceImplCreate()" />
+          <operation name="ShopManageSystemConfigServiceImplDelete()" />
+          <operation name="ShopManageSystemConfigServiceImplModify()" />
+          <operation name="ShopManageSystemConfigServiceImplQueryList()" />
+          <operation name="ShopManageSystemConfigServiceImplQueryPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopElasticsearchShopElasticsearchApiESGoodsbyID()" />
+        </userinterface>
+        <entity name="ShopElasticsearchShopElasticsearchApiESGoods">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="brandId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="gcsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsPropertyGroupId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="spuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="publishStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="recommend">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="unit">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext30" serviceId="30" systeminterface="/0/@DomainModel/@systeminterface.24 /0/@DomainModel/@systeminterface.124">
+        <userinterface name="UserInterface">
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplCancel()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplConfirm()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplDetail()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplEvaluate()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplOrders()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplQuantity()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplRefund()" />
+          <operation name="ShopOrderShopOrderApiAppUserOrderServiceImplSubmit()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplCount()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplDetail()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplGetBaseMapper()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplGetById()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplGetOne()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplList()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplPage()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplQueryPage()" />
+          <operation name="ShopOrderShopOrderApiUserOrderServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopUserShopUserApiUserbyID()" />
+        </userinterface>
+        <entity name="ShopUserShopUserApiUser">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext31" serviceId="31" systeminterface="/0/@DomainModel/@systeminterface.125">
+        <userinterface name="UserInterface">
+          <operation name="ShopOrderShopOrderApiOrderTradeServiceImplCreate()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext32" serviceId="32">
+        <userinterface name="UserInterface">
+          <operation name="ShopOrderShopOrderApiSellerOrderServiceImplCreate()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext33" serviceId="33" systeminterface="/0/@DomainModel/@systeminterface.25 /0/@DomainModel/@systeminterface.26">
+        <userinterface name="UserInterface">
+          <operation name="ShopOssAliyunServiceImplDownload()" />
+          <operation name="ShopOssAliyunServiceImplSupport()" />
+          <operation name="ShopOssAliyunServiceImplUploadFile()" />
+          <operation name="ShopOssAliyunServiceImplUploadStream()" />
+          <operation name="ShopOssAliyunServiceImplUploadToByte()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiAssembleActivityMemberbyID()" />
+          <operation name="findShopActivityShopActivityApiAssembleActivityRulebyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiAssembleActivityMember">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="recordId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="username">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="master">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopActivityShopActivityApiAssembleActivityRule">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="serverStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="purchaseLimit">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="assembleCount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopGoodsShopGoodsApiGoodsSkuTag">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext34" serviceId="34" systeminterface="/0/@DomainModel/@systeminterface.27">
+        <userinterface name="UserInterface">
+          <operation name="ShopOssQiniuServiceImplDownload()" />
+          <operation name="ShopOssQiniuServiceImplSupport()" />
+          <operation name="ShopOssQiniuServiceImplUploadFile()" />
+          <operation name="ShopOssQiniuServiceImplUploadStream()" />
+          <operation name="ShopOssQiniuServiceImplUploadToByte()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopGoodsShopGoodsApiGoodsClassbyID()" />
+        </userinterface>
+        <entity name="ShopGoodsShopGoodsApiGoodsClass">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="spuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="className">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="sequence">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext35" serviceId="35" systeminterface="/0/@DomainModel/@systeminterface.28 /0/@DomainModel/@systeminterface.29 /0/@DomainModel/@systeminterface.30 /0/@DomainModel/@systeminterface.126">
+        <userinterface name="UserInterface">
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplCount()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplCreate()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplGet()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplGetBaseMapper()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplGetById()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplGetOne()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplList()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplModify()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplPage()" />
+          <operation name="ShopPlatformShopPlatformApiDynamicFormServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiBannerbyID()" />
+          <operation name="findShopUserShopUserApiFeedbackbyID()" />
+          <operation name="findShopUserShopUserApiUserInfobyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiBanner">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="bannerUrl">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="bannerClickUrl">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="bannerType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="shareUrl">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="shareTitle">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="shareSubtitle">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="shareIcon">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="shareChannel">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="bannerStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopActivityShopActivityApiInviteRewardRecord">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="inviteUserId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="rewardType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopUserShopUserApiFeedback">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="content">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="images">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopUserShopUserApiUserInfo">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="username">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="gender">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="birthday">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="avatar">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext36" serviceId="36" systeminterface="/0/@DomainModel/@systeminterface.31 /0/@DomainModel/@systeminterface.32 /0/@DomainModel/@systeminterface.33 /0/@DomainModel/@systeminterface.127 /0/@DomainModel/@systeminterface.128">
+        <userinterface name="UserInterface">
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplCount()" />
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplGetBaseMapper()" />
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplGetById()" />
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplGetOne()" />
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplList()" />
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplPage()" />
+          <operation name="ShopPlatformShopPlatformApiFieldServiceImplToPage()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplCount()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplCreate()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplExecuteTask()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplGetBaseMapper()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplGetById()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplGetOne()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplList()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplModify()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplPage()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplQueryList()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplQueryPage()" />
+          <operation name="ShopPlatformShopPlatformApiSystemConfigServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopGoodsShopGoodsApiGoodsSkuStockbyID()" />
+          <operation name="findShopManageSysUserbyID()" />
+          <operation name="findShopPlatformShopPlatformApiSystemConfigbyID()" />
+        </userinterface>
+        <entity name="ShopGoodsShopGoodsApiGoodsSkuStock">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="stock">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopManageSysUser">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="username">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="beAdmin">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="avatar">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopPlatformShopPlatformApiSystemConfig">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="configStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext37" serviceId="37" systeminterface="/0/@DomainModel/@systeminterface.34 /0/@DomainModel/@systeminterface.35 /0/@DomainModel/@systeminterface.129">
+        <userinterface name="UserInterface">
+          <operation name="ShopPlatformShopPlatformApiSMSServiceImplSendSms()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiExchangeActivityRulebyID()" />
+          <operation name="findShopPlatformShopPlatformApiFormbyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiExchangeActivityRule">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="ruleName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopPlatformShopPlatformApiForm">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="bizType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="remark">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext38" serviceId="38" systeminterface="/0/@DomainModel/@systeminterface.36 /0/@DomainModel/@systeminterface.130">
+        <userinterface name="UserInterface">
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplCount()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplCreate()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplDelete()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplGetBaseMapper()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplGetById()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplGetOne()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplList()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplModify()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplPage()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplQueryList()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplQueryPage()" />
+          <operation name="ShopRiskShopRiskApiBlackListServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopManageRoleMenubyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiAssembleActivityRecord">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="activityId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="status">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+        <entity name="ShopManageRoleMenu">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="roleId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="permission">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext39" serviceId="39" systeminterface="/0/@DomainModel/@systeminterface.37 /0/@DomainModel/@systeminterface.38 /0/@DomainModel/@systeminterface.131">
+        <userinterface name="UserInterface">
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplCount()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplCreate()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplDelete()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplGetBaseMapper()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplGetById()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplGetOne()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplList()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplModify()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplPage()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplQueryList()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplQueryPage()" />
+          <operation name="ShopRiskShopRiskApiWhiteListServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopJobShopJobApiJobInfobyID()" />
+          <operation name="findShopUserShopUserApiAddressbyID()" />
+        </userinterface>
+        <entity name="ShopJobShopJobApiJobInfo">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="jobGroupId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="jobStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="jobName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="jobGroup">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="cron">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="serviceName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="serviceMethod">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="params">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopUserShopUserApiAddress">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="mobile">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="username">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="cityName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="deliveryAddress">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="houseNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="label">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="defaultAddress">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="latitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="longitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext40" serviceId="40">
+        <userinterface name="UserInterface" />
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext41" serviceId="41" systeminterface="/0/@DomainModel/@systeminterface.39 /0/@DomainModel/@systeminterface.40 /0/@DomainModel/@systeminterface.41">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiInitServiceInit()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopActivityShopActivityApiDiscountCouponbyID()" />
+          <operation name="findShopCartShopCartApiOrderCartbyID()" />
+          <operation name="findShopGoodsShopGoodsApiGoodsbyID()" />
+        </userinterface>
+        <entity name="ShopActivityShopActivityApiDiscountCoupon">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="templateId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="beginTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="endTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="used">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="ShopCartShopCartApiOrderCart">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="userId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="userOrderId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="sellerOrderId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="quantity">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="skuAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="discountAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+        </entity>
+        <entity name="ShopGoodsShopGoodsApiGoods">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="goodsClassId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="publishStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="goodsState">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="recommend">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="beginTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="endTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="unit">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext42" serviceId="42">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiReceiverServiceOnMessage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext43" serviceId="43" systeminterface="/0/@DomainModel/@systeminterface.132">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiFeedbackServiceImplCount()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplCreate()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplGetBaseMapper()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplGetById()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplGetOne()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplList()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplPage()" />
+          <operation name="ShopUserShopUserApiFeedbackServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="ShopPlatformShopPlatformApiArea">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="areaCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="areaName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="parentAreaCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext44" serviceId="44" systeminterface="/0/@DomainModel/@systeminterface.42 /0/@DomainModel/@systeminterface.133">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplCount()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplCountOverloadB()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplDelete()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplGetBaseMapper()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplGetById()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplGetOne()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplInfo()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplList()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplModify()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplPage()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplQueryAppPage()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplQueryPage()" />
+          <operation name="ShopUserShopUserApiNativeMessageServiceImplToPage()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findShopRiskShopRiskApiWhitelistbyID()" />
+        </userinterface>
+        <entity name="ShopRiskShopRiskApiWhitelist">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="createUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="updateUser">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="createTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="updateTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="deleteStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="phone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext45" serviceId="45" systeminterface="/0/@DomainModel/@systeminterface.134">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiUserAccountServiceImplAccount()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext46" serviceId="46" systeminterface="/0/@DomainModel/@systeminterface.135 /0/@DomainModel/@systeminterface.136">
+        <userinterface name="UserInterface">
+          <operation name="ShopUserShopUserApiUserServiceImplBatchProfile()" />
+          <operation name="ShopUserShopUserApiUserServiceImplLogin()" />
+          <operation name="ShopUserShopUserApiUserServiceImplProfile()" />
+          <operation name="ShopUserShopUserApiUserServiceImplProfileInfo()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopCartShopCartApiGoodsCart" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.69 /0/@DomainModel/@systeminterface.89" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopManageMenu" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.53 /0/@DomainModel/@systeminterface.70 /0/@DomainModel/@systeminterface.113 /0/@DomainModel/@systeminterface.115 /0/@DomainModel/@systeminterface.118" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopUserShopUserApiUserAccount" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.134" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopJobShopJobApiJobGroup" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.108" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiSMSTemplate" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.73 /0/@DomainModel/@systeminterface.98 /0/@DomainModel/@systeminterface.129" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopManageRole" entitycontext="/0/@DomainModel/@entitycontext.2" receiveinterface="/0/@DomainModel/@systeminterface.116 /0/@DomainModel/@systeminterface.119" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopOrderShopOrderApiUserOrder" entitycontext="/0/@DomainModel/@entitycontext.5" receiveinterface="/0/@DomainModel/@systeminterface.124" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiFieldProps" entitycontext="/0/@DomainModel/@entitycontext.5" receiveinterface="/0/@DomainModel/@systeminterface.60 /0/@DomainModel/@systeminterface.111" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoodsSpu" entitycontext="/0/@DomainModel/@entitycontext.6" receiveinterface="/0/@DomainModel/@systeminterface.80 /0/@DomainModel/@systeminterface.86 /0/@DomainModel/@systeminterface.96 /0/@DomainModel/@systeminterface.107" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiExchangeActivityMember" entitycontext="/0/@DomainModel/@entitycontext.7" receiveinterface="/0/@DomainModel/@systeminterface.48 /0/@DomainModel/@systeminterface.66" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoodsSkuImage" entitycontext="/0/@DomainModel/@entitycontext.8" receiveinterface="/0/@DomainModel/@systeminterface.79 /0/@DomainModel/@systeminterface.94 /0/@DomainModel/@systeminterface.103" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoodsSku" entitycontext="/0/@DomainModel/@entitycontext.9" receiveinterface="/0/@DomainModel/@systeminterface.78 /0/@DomainModel/@systeminterface.85 /0/@DomainModel/@systeminterface.93 /0/@DomainModel/@systeminterface.102" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopManageSysRole" entitycontext="/0/@DomainModel/@entitycontext.10" receiveinterface="/0/@DomainModel/@systeminterface.55 /0/@DomainModel/@systeminterface.121" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiSystemConfigDetail" entitycontext="/0/@DomainModel/@entitycontext.10" receiveinterface="/0/@DomainModel/@systeminterface.63 /0/@DomainModel/@systeminterface.71 /0/@DomainModel/@systeminterface.128" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopElasticsearchShopElasticsearchApiESUserOrder" entitycontext="/0/@DomainModel/@entitycontext.12" receiveinterface="/0/@DomainModel/@systeminterface.75" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoodsApprove" entitycontext="/0/@DomainModel/@entitycontext.13" receiveinterface="/0/@DomainModel/@systeminterface.83" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiDiscountCouponTemplate" entitycontext="/0/@DomainModel/@entitycontext.14" receiveinterface="/0/@DomainModel/@systeminterface.47 /0/@DomainModel/@systeminterface.52 /0/@DomainModel/@systeminterface.65 /0/@DomainModel/@systeminterface.88" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopOrderShopOrderApiOrderTrade" entitycontext="/0/@DomainModel/@entitycontext.14" receiveinterface="/0/@DomainModel/@systeminterface.97 /0/@DomainModel/@systeminterface.125" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopRiskShopRiskApiBlackList" entitycontext="/0/@DomainModel/@entitycontext.15" receiveinterface="/0/@DomainModel/@systeminterface.130" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiActivity" entitycontext="/0/@DomainModel/@entitycontext.18" receiveinterface="/0/@DomainModel/@systeminterface.43 /0/@DomainModel/@systeminterface.45 /0/@DomainModel/@systeminterface.50 /0/@DomainModel/@systeminterface.57 /0/@DomainModel/@systeminterface.67" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiField" entitycontext="/0/@DomainModel/@entitycontext.21" receiveinterface="/0/@DomainModel/@systeminterface.59 /0/@DomainModel/@systeminterface.110 /0/@DomainModel/@systeminterface.127" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiDynamicForm" entitycontext="/0/@DomainModel/@entitycontext.23" receiveinterface="/0/@DomainModel/@systeminterface.126" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopUserShopUserApiNativeMessage" entitycontext="/0/@DomainModel/@entitycontext.25" receiveinterface="/0/@DomainModel/@systeminterface.133" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopElasticsearchShopElasticsearchApiESGoods" entitycontext="/0/@DomainModel/@entitycontext.29" receiveinterface="/0/@DomainModel/@systeminterface.74 /0/@DomainModel/@systeminterface.81" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopUserShopUserApiUser" entitycontext="/0/@DomainModel/@entitycontext.30" receiveinterface="/0/@DomainModel/@systeminterface.135" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiAssembleActivityMember" entitycontext="/0/@DomainModel/@entitycontext.33" receiveinterface="/0/@DomainModel/@systeminterface.51" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiAssembleActivityRule" entitycontext="/0/@DomainModel/@entitycontext.33" receiveinterface="/0/@DomainModel/@systeminterface.58" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoodsClass" entitycontext="/0/@DomainModel/@entitycontext.34" receiveinterface="/0/@DomainModel/@systeminterface.77 /0/@DomainModel/@systeminterface.84 /0/@DomainModel/@systeminterface.92 /0/@DomainModel/@systeminterface.106" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiBanner" entitycontext="/0/@DomainModel/@entitycontext.35" receiveinterface="/0/@DomainModel/@systeminterface.62 /0/@DomainModel/@systeminterface.105" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopUserShopUserApiFeedback" entitycontext="/0/@DomainModel/@entitycontext.35" receiveinterface="/0/@DomainModel/@systeminterface.132" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopUserShopUserApiUserInfo" entitycontext="/0/@DomainModel/@entitycontext.35" receiveinterface="/0/@DomainModel/@systeminterface.136" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoodsSkuStock" entitycontext="/0/@DomainModel/@entitycontext.36" receiveinterface="/0/@DomainModel/@systeminterface.95 /0/@DomainModel/@systeminterface.104" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopManageSysUser" entitycontext="/0/@DomainModel/@entitycontext.36" receiveinterface="/0/@DomainModel/@systeminterface.56 /0/@DomainModel/@systeminterface.122" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiSystemConfig" entitycontext="/0/@DomainModel/@entitycontext.36" receiveinterface="/0/@DomainModel/@systeminterface.44 /0/@DomainModel/@systeminterface.123" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiExchangeActivityRule" entitycontext="/0/@DomainModel/@entitycontext.37" receiveinterface="/0/@DomainModel/@systeminterface.49 /0/@DomainModel/@systeminterface.68" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopPlatformShopPlatformApiForm" entitycontext="/0/@DomainModel/@entitycontext.37" receiveinterface="/0/@DomainModel/@systeminterface.61 /0/@DomainModel/@systeminterface.112" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopManageRoleMenu" entitycontext="/0/@DomainModel/@entitycontext.38" receiveinterface="/0/@DomainModel/@systeminterface.54 /0/@DomainModel/@systeminterface.114 /0/@DomainModel/@systeminterface.117 /0/@DomainModel/@systeminterface.120" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopJobShopJobApiJobInfo" entitycontext="/0/@DomainModel/@entitycontext.39" receiveinterface="/0/@DomainModel/@systeminterface.109" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopUserShopUserApiAddress" entitycontext="/0/@DomainModel/@entitycontext.39" receiveinterface="/0/@DomainModel/@systeminterface.99 /0/@DomainModel/@systeminterface.100" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopActivityShopActivityApiDiscountCoupon" entitycontext="/0/@DomainModel/@entitycontext.41" receiveinterface="/0/@DomainModel/@systeminterface.46 /0/@DomainModel/@systeminterface.64 /0/@DomainModel/@systeminterface.87" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopCartShopCartApiOrderCart" entitycontext="/0/@DomainModel/@entitycontext.41" receiveinterface="/0/@DomainModel/@systeminterface.72 /0/@DomainModel/@systeminterface.90" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopGoodsShopGoodsApiGoods" entitycontext="/0/@DomainModel/@entitycontext.41" receiveinterface="/0/@DomainModel/@systeminterface.76 /0/@DomainModel/@systeminterface.82 /0/@DomainModel/@systeminterface.91 /0/@DomainModel/@systeminterface.101" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofShopRiskShopRiskApiWhitelist" entitycontext="/0/@DomainModel/@entitycontext.44" receiveinterface="/0/@DomainModel/@systeminterface.131" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiActivity" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSystemConfig" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.33" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiActivity" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCoupon" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.39" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCouponTemplate" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.16" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiExchangeActivityMember" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.9" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiExchangeActivityRule" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.34" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiActivity" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiAssembleActivityMember" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.25" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCouponTemplate" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.16" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageMenu" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageRoleMenu" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.36" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageSysRole" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.12" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageSysUser" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.32" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiActivity" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiAssembleActivityRule" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.26" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiField" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.20" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiFieldProps" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiForm" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.35" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiBanner" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.28" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSystemConfigDetail" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.13" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCoupon" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.39" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCouponTemplate" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.16" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiExchangeActivityMember" entitycontext="/0/@DomainModel/@entitycontext.6" provideinterface="/0/@DomainModel/@systeminterface.9" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiActivity" entitycontext="/0/@DomainModel/@entitycontext.7" provideinterface="/0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiExchangeActivityRule" entitycontext="/0/@DomainModel/@entitycontext.7" provideinterface="/0/@DomainModel/@systeminterface.34" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopCartShopCartApiGoodsCart" entitycontext="/0/@DomainModel/@entitycontext.9" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageMenu" entitycontext="/0/@DomainModel/@entitycontext.9" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSystemConfigDetail" entitycontext="/0/@DomainModel/@entitycontext.9" provideinterface="/0/@DomainModel/@systeminterface.13" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopCartShopCartApiOrderCart" entitycontext="/0/@DomainModel/@entitycontext.10" provideinterface="/0/@DomainModel/@systeminterface.40" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSMSTemplate" entitycontext="/0/@DomainModel/@entitycontext.10" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopElasticsearchShopElasticsearchApiESGoods" entitycontext="/0/@DomainModel/@entitycontext.11" provideinterface="/0/@DomainModel/@systeminterface.23" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopElasticsearchShopElasticsearchApiESUserOrder" entitycontext="/0/@DomainModel/@entitycontext.13" provideinterface="/0/@DomainModel/@systeminterface.14" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoods" entitycontext="/0/@DomainModel/@entitycontext.14" provideinterface="/0/@DomainModel/@systeminterface.41" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsClass" entitycontext="/0/@DomainModel/@entitycontext.14" provideinterface="/0/@DomainModel/@systeminterface.27" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSku" entitycontext="/0/@DomainModel/@entitycontext.14" provideinterface="/0/@DomainModel/@systeminterface.11" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSkuImage" entitycontext="/0/@DomainModel/@entitycontext.14" provideinterface="/0/@DomainModel/@systeminterface.10" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSpu" entitycontext="/0/@DomainModel/@entitycontext.14" provideinterface="/0/@DomainModel/@systeminterface.8" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopElasticsearchShopElasticsearchApiESGoods" entitycontext="/0/@DomainModel/@entitycontext.15" provideinterface="/0/@DomainModel/@systeminterface.23" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoods" entitycontext="/0/@DomainModel/@entitycontext.16" provideinterface="/0/@DomainModel/@systeminterface.41" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsApprove" entitycontext="/0/@DomainModel/@entitycontext.16" provideinterface="/0/@DomainModel/@systeminterface.15" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsClass" entitycontext="/0/@DomainModel/@entitycontext.16" provideinterface="/0/@DomainModel/@systeminterface.27" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSku" entitycontext="/0/@DomainModel/@entitycontext.16" provideinterface="/0/@DomainModel/@systeminterface.11" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSpu" entitycontext="/0/@DomainModel/@entitycontext.16" provideinterface="/0/@DomainModel/@systeminterface.8" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCoupon" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.39" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiDiscountCouponTemplate" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.16" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopCartShopCartApiGoodsCart" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopCartShopCartApiOrderCart" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.40" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoods" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.41" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsClass" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.27" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSku" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.11" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSkuImage" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.10" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSkuStock" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.31" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSpu" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.8" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopOrderShopOrderApiOrderTrade" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.17" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSMSTemplate" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiAddress" entitycontext="/0/@DomainModel/@entitycontext.17" provideinterface="/0/@DomainModel/@systeminterface.38" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiAddress" entitycontext="/0/@DomainModel/@entitycontext.18" provideinterface="/0/@DomainModel/@systeminterface.38" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoods" entitycontext="/0/@DomainModel/@entitycontext.19" provideinterface="/0/@DomainModel/@systeminterface.41" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSku" entitycontext="/0/@DomainModel/@entitycontext.19" provideinterface="/0/@DomainModel/@systeminterface.11" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSkuImage" entitycontext="/0/@DomainModel/@entitycontext.19" provideinterface="/0/@DomainModel/@systeminterface.10" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSkuStock" entitycontext="/0/@DomainModel/@entitycontext.19" provideinterface="/0/@DomainModel/@systeminterface.31" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopActivityShopActivityApiBanner" entitycontext="/0/@DomainModel/@entitycontext.22" provideinterface="/0/@DomainModel/@systeminterface.28" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsClass" entitycontext="/0/@DomainModel/@entitycontext.22" provideinterface="/0/@DomainModel/@systeminterface.27" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopGoodsShopGoodsApiGoodsSpu" entitycontext="/0/@DomainModel/@entitycontext.22" provideinterface="/0/@DomainModel/@systeminterface.8" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopJobShopJobApiJobGroup" entitycontext="/0/@DomainModel/@entitycontext.23" provideinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopJobShopJobApiJobInfo" entitycontext="/0/@DomainModel/@entitycontext.23" provideinterface="/0/@DomainModel/@systeminterface.37" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiField" entitycontext="/0/@DomainModel/@entitycontext.25" provideinterface="/0/@DomainModel/@systeminterface.20" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiFieldProps" entitycontext="/0/@DomainModel/@entitycontext.25" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiForm" entitycontext="/0/@DomainModel/@entitycontext.25" provideinterface="/0/@DomainModel/@systeminterface.35" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageMenu" entitycontext="/0/@DomainModel/@entitycontext.26" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageRoleMenu" entitycontext="/0/@DomainModel/@entitycontext.26" provideinterface="/0/@DomainModel/@systeminterface.36" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageMenu" entitycontext="/0/@DomainModel/@entitycontext.27" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageRole" entitycontext="/0/@DomainModel/@entitycontext.27" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageRoleMenu" entitycontext="/0/@DomainModel/@entitycontext.27" provideinterface="/0/@DomainModel/@systeminterface.36" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageMenu" entitycontext="/0/@DomainModel/@entitycontext.28" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageRole" entitycontext="/0/@DomainModel/@entitycontext.28" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageRoleMenu" entitycontext="/0/@DomainModel/@entitycontext.28" provideinterface="/0/@DomainModel/@systeminterface.36" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageSysRole" entitycontext="/0/@DomainModel/@entitycontext.28" provideinterface="/0/@DomainModel/@systeminterface.12" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopManageSysUser" entitycontext="/0/@DomainModel/@entitycontext.28" provideinterface="/0/@DomainModel/@systeminterface.32" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSystemConfig" entitycontext="/0/@DomainModel/@entitycontext.29" provideinterface="/0/@DomainModel/@systeminterface.33" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopOrderShopOrderApiUserOrder" entitycontext="/0/@DomainModel/@entitycontext.30" provideinterface="/0/@DomainModel/@systeminterface.6" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopOrderShopOrderApiOrderTrade" entitycontext="/0/@DomainModel/@entitycontext.31" provideinterface="/0/@DomainModel/@systeminterface.17" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiDynamicForm" entitycontext="/0/@DomainModel/@entitycontext.35" provideinterface="/0/@DomainModel/@systeminterface.21" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiField" entitycontext="/0/@DomainModel/@entitycontext.36" provideinterface="/0/@DomainModel/@systeminterface.20" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSystemConfigDetail" entitycontext="/0/@DomainModel/@entitycontext.36" provideinterface="/0/@DomainModel/@systeminterface.13" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopPlatformShopPlatformApiSMSTemplate" entitycontext="/0/@DomainModel/@entitycontext.37" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopRiskShopRiskApiBlackList" entitycontext="/0/@DomainModel/@entitycontext.38" provideinterface="/0/@DomainModel/@systeminterface.18" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopRiskShopRiskApiWhitelist" entitycontext="/0/@DomainModel/@entitycontext.39" provideinterface="/0/@DomainModel/@systeminterface.42" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiFeedback" entitycontext="/0/@DomainModel/@entitycontext.43" provideinterface="/0/@DomainModel/@systeminterface.29" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiNativeMessage" entitycontext="/0/@DomainModel/@entitycontext.44" provideinterface="/0/@DomainModel/@systeminterface.22" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiUserAccount" entitycontext="/0/@DomainModel/@entitycontext.45" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiUser" entitycontext="/0/@DomainModel/@entitycontext.46" provideinterface="/0/@DomainModel/@systeminterface.24" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofShopUserShopUserApiUserInfo" entitycontext="/0/@DomainModel/@entitycontext.46" provideinterface="/0/@DomainModel/@systeminterface.30" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

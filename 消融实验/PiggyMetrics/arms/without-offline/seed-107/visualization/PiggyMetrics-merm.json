@@ -1,0 +1,1384 @@
+{
+  "schemaVersion": "merm-view-v1",
+  "name": "PiggyMetrics",
+  "input": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/piggymetrics-ablation-20261114/arms/without-offline/seed-107/visualization/PiggyMetrics.req",
+  "inputHash": "fe4fe375fd4df2d3b7af528c8193243194a8e30048d472bbc669a1b46e4c0e60",
+  "metadata": {
+    "inputHash": "88bcf174ce5a8d9c719dda60f8f9f3380005c52064b48bd5b213c5bb0cec7af2",
+    "runHash": "1c542ef7cb80aade7d3e1f960a33b3f479517d1ad98d4739f1e06342e7ba99ef",
+    "snapshotHash": "7aa91617c591f467806718f5bdefaeeaf2b9d8187d1e4c21edd9fd9aab79d09a",
+    "taskKey": "63733967830c51bf2f8095e357387c692bcfdd7251c3bcb09ed2d0f9898b387a",
+    "configId": "C0",
+    "seed": "107",
+    "exportVersion": "merm-export-v1"
+  },
+  "services": [
+    {
+      "id": "service-0",
+      "key": "0",
+      "name": "Microservice 0",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.0",
+      "entityContext": "/0/@DomainModel/@entitycontext.0"
+    },
+    {
+      "id": "service-1",
+      "key": "1",
+      "name": "Microservice 1",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.1",
+      "entityContext": "/0/@DomainModel/@entitycontext.1"
+    },
+    {
+      "id": "service-2",
+      "key": "2",
+      "name": "Microservice 2",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.2",
+      "entityContext": "/0/@DomainModel/@entitycontext.2"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "uc",
+      "name": "AccountServiceAccountServiceImpl",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "AccountServiceAccountServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "kind": "uc",
+      "name": "StatisticsServiceStatisticsServiceImpl",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+        "attributes": {
+          "name": "StatisticsServiceStatisticsServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "uc",
+      "name": "NotificationServiceEmailServiceImpl",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "NotificationServiceEmailServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+      "kind": "uc",
+      "name": "NotificationServiceNotificationServiceImpl",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+        "attributes": {
+          "name": "NotificationServiceNotificationServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.2",
+      "kind": "uc",
+      "name": "NotificationServiceRecipientServiceImpl",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.2",
+        "attributes": {
+          "name": "NotificationServiceRecipientServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "uc",
+      "name": "StatisticsServiceExchangeRatesServiceImpl",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "StatisticsServiceExchangeRatesServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0",
+      "kind": "actor",
+      "name": "AccountServiceRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.0",
+        "attributes": {
+          "name": "AccountServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1",
+      "kind": "actor",
+      "name": "NotificationServiceRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.1",
+        "attributes": {
+          "name": "NotificationServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2",
+      "kind": "actor",
+      "name": "StatisticsServiceRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.2",
+        "attributes": {
+          "name": "StatisticsServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "AccountServiceAccountServiceImplCreate()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "AccountServiceAccountServiceImplFindByName()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "AccountServiceAccountServiceImplSaveChanges()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "StatisticsServiceStatisticsServiceImplFindByAccountName()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "StatisticsServiceStatisticsServiceImplSave()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.4"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findAccountServiceAccountbyID()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "entity",
+      "name": "AccountServiceAccount",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "AccountServiceAccount"
+        }
+      },
+      "attributes": [
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "lastSeen",
+          "type": "Date"
+        },
+        {
+          "name": "incomes",
+          "type": "AccountServiceItem"
+        },
+        {
+          "name": "expenses",
+          "type": "AccountServiceItem"
+        },
+        {
+          "name": "saving",
+          "type": "AccountServiceSaving"
+        },
+        {
+          "name": "note",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.1",
+      "kind": "entity",
+      "name": "AccountServiceItem",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.1",
+        "attributes": {
+          "name": "AccountServiceItem"
+        }
+      },
+      "attributes": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "amount",
+          "type": "Real"
+        },
+        {
+          "name": "currency",
+          "type": "String"
+        },
+        {
+          "name": "period",
+          "type": "String"
+        },
+        {
+          "name": "icon",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.2",
+      "kind": "entity",
+      "name": "AccountServiceSaving",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.2",
+        "attributes": {
+          "name": "AccountServiceSaving"
+        }
+      },
+      "attributes": [
+        {
+          "name": "amount",
+          "type": "Real"
+        },
+        {
+          "name": "currency",
+          "type": "String"
+        },
+        {
+          "name": "interest",
+          "type": "Real"
+        },
+        {
+          "name": "deposit",
+          "type": "String"
+        },
+        {
+          "name": "capitalization",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.3",
+      "kind": "entity",
+      "name": "AccountServiceUser",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.3",
+        "attributes": {
+          "name": "AccountServiceUser"
+        }
+      },
+      "attributes": [
+        {
+          "name": "username",
+          "type": "String"
+        },
+        {
+          "name": "password",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.4",
+      "kind": "entity",
+      "name": "StatisticsServiceAccount",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.4",
+        "attributes": {
+          "name": "StatisticsServiceAccount"
+        }
+      },
+      "attributes": [
+        {
+          "name": "incomes",
+          "type": "StatisticsServiceItem"
+        },
+        {
+          "name": "expenses",
+          "type": "StatisticsServiceItem"
+        },
+        {
+          "name": "saving",
+          "type": "StatisticsServiceSaving"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.5",
+      "kind": "entity",
+      "name": "StatisticsServiceItem",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.5",
+        "attributes": {
+          "name": "StatisticsServiceItem"
+        }
+      },
+      "attributes": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "amount",
+          "type": "Real"
+        },
+        {
+          "name": "currency",
+          "type": "String"
+        },
+        {
+          "name": "period",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.6",
+      "kind": "entity",
+      "name": "StatisticsServiceSaving",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.6",
+        "attributes": {
+          "name": "StatisticsServiceSaving"
+        }
+      },
+      "attributes": [
+        {
+          "name": "amount",
+          "type": "Real"
+        },
+        {
+          "name": "currency",
+          "type": "String"
+        },
+        {
+          "name": "interest",
+          "type": "Real"
+        },
+        {
+          "name": "deposit",
+          "type": "String"
+        },
+        {
+          "name": "capitalization",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.7",
+      "kind": "entity",
+      "name": "StatisticsServiceDataPoint",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.7",
+        "attributes": {
+          "name": "StatisticsServiceDataPoint"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "StatisticsServiceDataPointId"
+        },
+        {
+          "name": "incomes",
+          "type": "StatisticsServiceItemMetric"
+        },
+        {
+          "name": "expenses",
+          "type": "StatisticsServiceItemMetric"
+        },
+        {
+          "name": "statistics",
+          "type": "String"
+        },
+        {
+          "name": "rates",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.8",
+      "kind": "entity",
+      "name": "StatisticsServiceItemMetric",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.8",
+        "attributes": {
+          "name": "StatisticsServiceItemMetric"
+        }
+      },
+      "attributes": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "amount",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "NotificationServiceEmailServiceImplSend()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "NotificationServiceNotificationServiceImplSendBackupNotifications()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "NotificationServiceNotificationServiceImplSendRemindNotifications()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "NotificationServiceRecipientServiceImplFindByAccountName()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "NotificationServiceRecipientServiceImplFindReadyToNotify()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "NotificationServiceRecipientServiceImplMarkNotified()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.5"
+        },
+        {
+          "name": "NotificationServiceRecipientServiceImplSave()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.6"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findStatisticsServiceDataPointIdbyID()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.0",
+      "kind": "entity",
+      "name": "NotificationServiceNotificationSettings",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@entity.0",
+        "attributes": {
+          "name": "NotificationServiceNotificationSettings"
+        }
+      },
+      "attributes": [
+        {
+          "name": "active",
+          "type": "String"
+        },
+        {
+          "name": "frequency",
+          "type": "String"
+        },
+        {
+          "name": "lastNotified",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.1",
+      "kind": "entity",
+      "name": "NotificationServiceRecipient",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@entity.1",
+        "attributes": {
+          "name": "NotificationServiceRecipient"
+        }
+      },
+      "attributes": [
+        {
+          "name": "accountName",
+          "type": "String"
+        },
+        {
+          "name": "email",
+          "type": "String"
+        },
+        {
+          "name": "scheduledNotifications",
+          "type": "NotificationServiceNotificationSettings"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@entity.2",
+      "kind": "entity",
+      "name": "StatisticsServiceDataPointId",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@entity.2",
+        "attributes": {
+          "name": "StatisticsServiceDataPointId"
+        }
+      },
+      "attributes": [
+        {
+          "name": "account",
+          "type": "String"
+        },
+        {
+          "name": "date",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "StatisticsServiceExchangeRatesServiceImplConvert()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "StatisticsServiceExchangeRatesServiceImplGetCurrentRates()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findStatisticsServiceExchangeRatesContainerbyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "entity",
+      "name": "StatisticsServiceExchangeRatesContainer",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "StatisticsServiceExchangeRatesContainer"
+        }
+      },
+      "attributes": [
+        {
+          "name": "date",
+          "type": "Date"
+        },
+        {
+          "name": "base",
+          "type": "String"
+        },
+        {
+          "name": "rates",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.0",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofAccountServiceAccount",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofAccountServiceAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.1",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofStatisticsServiceDataPointId",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofStatisticsServiceDataPointId",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.2",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofStatisticsServiceExchangeRatesContainer",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofStatisticsServiceExchangeRatesContainer",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.3",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofStatisticsServiceExchangeRatesContainer",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofStatisticsServiceExchangeRatesContainer",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.4",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofStatisticsServiceDataPointId",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofStatisticsServiceDataPointId",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.5",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofAccountServiceAccount",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofAccountServiceAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    }
+  ],
+  "edges": [
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:0",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "AccountServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:1",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2",
+        "attributes": {
+          "name": "NotificationServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:2",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2",
+        "attributes": {
+          "name": "NotificationServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:3",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2",
+        "attributes": {
+          "name": "NotificationServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:4",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.1",
+        "attributes": {
+          "name": "StatisticsServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:5",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.1",
+        "attributes": {
+          "name": "StatisticsServiceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.3:provideinterface:6",
+      "source": "/0/@DomainModel/@systeminterface.3",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofStatisticsServiceExchangeRatesContainer",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.3",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofStatisticsServiceExchangeRatesContainer",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.4:provideinterface:7",
+      "source": "/0/@DomainModel/@systeminterface.4",
+      "target": "/0/@DomainModel/@systeminterface.1",
+      "kind": "interface",
+      "name": "ReceiveEntityofStatisticsServiceDataPointId",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.4",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofStatisticsServiceDataPointId",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.5:provideinterface:8",
+      "source": "/0/@DomainModel/@systeminterface.5",
+      "target": "/0/@DomainModel/@systeminterface.0",
+      "kind": "interface",
+      "name": "ReceiveEntityofAccountServiceAccount",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.5",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofAccountServiceAccount",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "uc": 6,
+    "actor": 3,
+    "userinterface": 6,
+    "entity": 13,
+    "systeminterface": 6,
+    "services": 3,
+    "interfaceEdges": 3,
+    "serviceEdges": 3
+  },
+  "diagnostics": [],
+  "layout": {
+    "usecases": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.0": [
+          274,
+          252,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.1": [
+          274,
+          340,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.2": [
+          274,
+          428,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@actor.1": [
+          56,
+          255,
+          145,
+          114
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0": [
+          1064,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.1": [
+          1064,
+          340,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@actor.0": [
+          846,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@actor.2": [
+          846,
+          365,
+          145,
+          114
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.0": [
+          1064,
+          710,
+          380,
+          66
+        ]
+      },
+      "services": {
+        "service-1": [
+          234,
+          170,
+          460,
+          374
+        ],
+        "service-0": [
+          1024,
+          170,
+          460,
+          348
+        ],
+        "service-2": [
+          1024,
+          628,
+          460,
+          238
+        ]
+      },
+      "instances": [
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-1",
+          "box": [
+            56,
+            255,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-0",
+          "box": [
+            846,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-0",
+          "box": [
+            846,
+            365,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-2",
+          "box": [
+            846,
+            713,
+            145,
+            114
+          ],
+          "proxy": true
+        }
+      ],
+      "edges": {
+        "/0/@UseCaseModel/@actor.0:uc:0": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:1": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              285.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:2": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              373.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:3": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              461.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:4": {
+          "points": [
+            [
+              950,
+              748
+            ],
+            [
+              1064,
+              743.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:5": {
+          "points": [
+            [
+              950,
+              400
+            ],
+            [
+              1064,
+              373.0
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    },
+    "domain": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@DomainModel/@entitycontext.0/@entity.0": [
+          76,
+          286,
+          288,
+          166
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.1": [
+          386,
+          286,
+          288,
+          148
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.2": [
+          76,
+          472,
+          288,
+          148
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.3": [
+          386,
+          472,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.4": [
+          76,
+          640,
+          288,
+          112
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.5": [
+          386,
+          640,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.6": [
+          76,
+          790,
+          288,
+          148
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.7": [
+          386,
+          790,
+          288,
+          184
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.8": [
+          76,
+          994,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.0": [
+          76,
+          1146,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.1": [
+          386,
+          1146,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.0": [
+          76,
+          1280,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.3": [
+          386,
+          1280,
+          288,
+          72
+        ],
+        "/0/@DomainModel/@systeminterface.4": [
+          76,
+          1372,
+          288,
+          72
+        ],
+        "/0/@DomainModel/@entitycontext.1/@entity.0": [
+          866,
+          286,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.1/@entity.1": [
+          1176,
+          286,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.1/@entity.2": [
+          866,
+          436,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.0": [
+          866,
+          588,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.1": [
+          1176,
+          588,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.1": [
+          866,
+          722,
+          288,
+          72
+        ],
+        "/0/@DomainModel/@systeminterface.5": [
+          1176,
+          722,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.0": [
+          866,
+          1065,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.0": [
+          866,
+          1253,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.1": [
+          1176,
+          1253,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.2": [
+          866,
+          1387,
+          288,
+          72
+        ]
+      },
+      "services": {
+        "service-0": [
+          52,
+          170,
+          660,
+          1319
+        ],
+        "service-1": [
+          842,
+          170,
+          660,
+          669
+        ],
+        "service-2": [
+          842,
+          949,
+          660,
+          555
+        ]
+      },
+      "instances": [],
+      "edges": {
+        "/0/@DomainModel/@systeminterface.3:provideinterface:6": {
+          "points": [
+            [
+              712,
+              460.18
+            ],
+            [
+              750.0,
+              460.18
+            ],
+            [
+              750.0,
+              1071.1
+            ],
+            [
+              842,
+              1071.1
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.4:provideinterface:7": {
+          "points": [
+            [
+              712,
+              684.41
+            ],
+            [
+              768.0,
+              684.41
+            ],
+            [
+              768.0,
+              430.91
+            ],
+            [
+              842,
+              430.91
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.5:provideinterface:8": {
+          "points": [
+            [
+              842,
+              544.6400000000001
+            ],
+            [
+              786.0,
+              544.6400000000001
+            ],
+            [
+              786.0,
+              908.6400000000001
+            ],
+            [
+              712,
+              908.6400000000001
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    }
+  }
+}

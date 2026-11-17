@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="88bcf174ce5a8d9c719dda60f8f9f3380005c52064b48bd5b213c5bb0cec7af2" runHash="06303a8f15acd86d5584b24f064c5aae9d94861c489443b04325bc6ee6145d72" snapshotHash="7aa91617c591f467806718f5bdefaeeaf2b9d8187d1e4c21edd9fd9aab79d09a" taskKey="472ee7832e0cf34180c75f27eb67fbb39969602366d600c165396bb7b10355cd" configId="C0" seed="101" exportVersion="merm-export-v1">
+    <UseCaseModel name="PiggyMetrics.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="AccountServiceAccountServiceImpl" />
+        <uc name="StatisticsServiceExchangeRatesServiceImpl" />
+        <uc name="StatisticsServiceStatisticsServiceImpl" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="NotificationServiceEmailServiceImpl" />
+        <uc name="NotificationServiceNotificationServiceImpl" />
+        <uc name="NotificationServiceRecipientServiceImpl" />
+      </usecasecontext>
+      <actor name="AccountServiceRole" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.0" />
+      <actor name="NotificationServiceRole" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2" />
+      <actor name="StatisticsServiceRole" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2" />
+    </UseCaseModel>
+    <DomainModel name="PiggyMetrics.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.0 /0/@DomainModel/@systeminterface.2">
+        <userinterface name="UserInterface">
+          <operation name="AccountServiceAccountServiceImplCreate()" />
+          <operation name="AccountServiceAccountServiceImplFindByName()" />
+          <operation name="AccountServiceAccountServiceImplSaveChanges()" />
+          <operation name="StatisticsServiceExchangeRatesServiceImplConvert()" />
+          <operation name="StatisticsServiceExchangeRatesServiceImplGetCurrentRates()" />
+          <operation name="StatisticsServiceStatisticsServiceImplFindByAccountName()" />
+          <operation name="StatisticsServiceStatisticsServiceImplSave()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findAccountServiceAccountbyID()" />
+        </userinterface>
+        <entity name="AccountServiceAccount">
+          <attributes name="name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="lastSeen">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="incomes">
+            <type xsi:type="req:PrimitiveTypeCS" name="AccountServiceItem" />
+          </attributes>
+          <attributes name="expenses">
+            <type xsi:type="req:PrimitiveTypeCS" name="AccountServiceItem" />
+          </attributes>
+          <attributes name="saving">
+            <type xsi:type="req:PrimitiveTypeCS" name="AccountServiceSaving" />
+          </attributes>
+          <attributes name="note">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="AccountServiceItem">
+          <attributes name="title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="currency">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="period">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="icon">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="AccountServiceSaving">
+          <attributes name="amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="currency">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="interest">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="deposit">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="capitalization">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceAccount">
+          <attributes name="incomes">
+            <type xsi:type="req:PrimitiveTypeCS" name="StatisticsServiceItem" />
+          </attributes>
+          <attributes name="expenses">
+            <type xsi:type="req:PrimitiveTypeCS" name="StatisticsServiceItem" />
+          </attributes>
+          <attributes name="saving">
+            <type xsi:type="req:PrimitiveTypeCS" name="StatisticsServiceSaving" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceExchangeRatesContainer">
+          <attributes name="date">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="base">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="rates">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceItem">
+          <attributes name="title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="currency">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="period">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceSaving">
+          <attributes name="amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="currency">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="interest">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="deposit">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="capitalization">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceDataPoint">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="StatisticsServiceDataPointId" />
+          </attributes>
+          <attributes name="incomes">
+            <type xsi:type="req:PrimitiveTypeCS" name="StatisticsServiceItemMetric" />
+          </attributes>
+          <attributes name="expenses">
+            <type xsi:type="req:PrimitiveTypeCS" name="StatisticsServiceItemMetric" />
+          </attributes>
+          <attributes name="statistics">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="rates">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceDataPointId">
+          <attributes name="account">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="date">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+        <entity name="StatisticsServiceItemMetric">
+          <attributes name="title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.1 /0/@DomainModel/@systeminterface.3">
+        <userinterface name="UserInterface">
+          <operation name="NotificationServiceEmailServiceImplSend()" />
+          <operation name="NotificationServiceNotificationServiceImplSendBackupNotifications()" />
+          <operation name="NotificationServiceNotificationServiceImplSendRemindNotifications()" />
+          <operation name="NotificationServiceRecipientServiceImplFindByAccountName()" />
+          <operation name="NotificationServiceRecipientServiceImplFindReadyToNotify()" />
+          <operation name="NotificationServiceRecipientServiceImplMarkNotified()" />
+          <operation name="NotificationServiceRecipientServiceImplSave()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findAccountServiceUserbyID()" />
+        </userinterface>
+        <entity name="AccountServiceUser">
+          <attributes name="username">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="NotificationServiceNotificationSettings">
+          <attributes name="active">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="frequency">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="lastNotified">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+        <entity name="NotificationServiceRecipient">
+          <attributes name="accountName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="email">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="scheduledNotifications">
+            <type xsi:type="req:PrimitiveTypeCS" name="NotificationServiceNotificationSettings" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofAccountServiceAccount" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofAccountServiceUser" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofAccountServiceUser" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofAccountServiceAccount" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.0" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

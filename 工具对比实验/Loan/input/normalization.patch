@@ -1,0 +1,411 @@
+--- loan.original.remodel
++++ loan.remodel
+@@ -1,15 +1,15 @@
+ UseCaseModel LoanProcessingSystem {
+ 
+-	UC::evaluateLoanRequest() definedBySSD(EvaluateLoanRequestSD) relatedService(EvaluateLoanRequestModule) @Description( "The loan officer reviews the online information about the pending loan request to determine whether the loan should be approved" )
++	UC::evaluateLoanRequest() definedBySSD(EvaluateLoanRequestSD) relatedService(EvaluateLoanRequest) @Description( "The loan officer reviews the online information about the pending loan request to determine whether the loan should be approved" )
+ 	UC::manageLoanTerm() relatedService(ManageLoanTermCRUDService)
+ 	UC::enterValidatedCreditReferences()
+-	UC::generateLoanLetterAndAgreement() definedBySSD(GenerateLoanLetterAndAgreementSSD) relatedService(GenerateLoanLetterAndAgreementModule) @Description( "a loan clerk has the system genereate an approval letter for the applicant" )
++	UC::generateLoanLetterAndAgreement() definedBySSD(GenerateLoanLetterAndAgreementSSD) relatedService(GenerateLoanLetterAndAgreement) @Description( "a loan clerk has the system genereate an approval letter for the applicant" )
+ 	UC::bookNewLoan() @Description( "Once a loan aggrement has been sighed by the customer and returned to the bank, the loan clerk has the system create a loan account based on the agreed-on terms and conditions" )
+ 	UC::loanPayment() @Description( "Payment is received from the customer, the loan clerk enters the payment into the appropriate loan account" )
+ 	UC::closeOutLoan() @Description( "The loan has been paid in full by the customer, and the loan will be closed" )
+ 	UC::generateStandardPaymentNotice() @Description( "when the monthly billing time occurs, the loan system genereates the bill statements for mailing to the customer" )
+ 	UC::generateLateNotice() @Description( "The loan system genereates the late notice for mailling to the customer" )
+-	UC::submitLoanRequest() relatedService(SubmitLoanRequestModule)
++	UC::submitLoanRequest() relatedService(SubmitLoanRequest)
+ 
+ 	Actor LoanOfficer {
+ 		evaluateLoanRequest
+@@ -38,65 +38,65 @@
+ 
+ 	Interaction EvaluateLoanRequestSD {
+ 
+-		[Participants: LoanOfficer EvaluateLoanRequestModule]
+-
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage1(listTenLoanRequest InteractionEvaluateLoanRequestModuleCallMessage1SendingEnd -> InteractionEvaluateLoanRequestModuleExecution1StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage1Return(InteractionEvaluateLoanRequestModuleExecution1FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage1ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage1)
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage3(chooseOneForReview InteractionEvaluateLoanRequestModuleCallMessage3SendingEnd -> InteractionEvaluateLoanRequestModuleExecution2StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage3Return(InteractionEvaluateLoanRequestModuleExecution2FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage3ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage3)
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage5(checkCreditHistory InteractionEvaluateLoanRequestModuleCallMessage5SendingEnd -> InteractionEvaluateLoanRequestModuleExecution3StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage5Return(InteractionEvaluateLoanRequestModuleExecution3FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage5ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage5)
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage7(reviewCheckingAccount InteractionEvaluateLoanRequestModuleCallMessage7SendingEnd -> InteractionEvaluateLoanRequestModuleExecution4StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage7Return(InteractionEvaluateLoanRequestModuleExecution4FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage7ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage7)
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage9(listAvaiableLoanTerm InteractionEvaluateLoanRequestModuleCallMessage9SendingEnd -> InteractionEvaluateLoanRequestModuleExecution5StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage9Return(InteractionEvaluateLoanRequestModuleExecution5FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage9ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage9)
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage11(addLoanTerm InteractionEvaluateLoanRequestModuleCallMessage11SendingEnd -> InteractionEvaluateLoanRequestModuleExecution6StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage11Return(InteractionEvaluateLoanRequestModuleExecution6FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage11ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage11)
+-		CallMessage::InteractionEvaluateLoanRequestModuleCallMessage13(approveLoanRequest InteractionEvaluateLoanRequestModuleCallMessage13SendingEnd -> InteractionEvaluateLoanRequestModuleExecution7StartEnd)
+-		ReturnMessage::InteractionEvaluateLoanRequestModuleCallMessage13Return(InteractionEvaluateLoanRequestModuleExecution7FinishEnd -> InteractionEvaluateLoanRequestModuleCallMessage13ReturnReceivingEnd InteractionEvaluateLoanRequestModuleCallMessage13)
+-
+-		Execution::InteractionEvaluateLoanRequestModuleExecution1(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution1StartEnd InteractionEvaluateLoanRequestModuleExecution1FinishEnd)
+-		Execution::InteractionEvaluateLoanRequestModuleExecution2(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution2StartEnd InteractionEvaluateLoanRequestModuleExecution2FinishEnd)
+-		Execution::InteractionEvaluateLoanRequestModuleExecution3(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution3StartEnd InteractionEvaluateLoanRequestModuleExecution3FinishEnd)
+-		Execution::InteractionEvaluateLoanRequestModuleExecution4(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution4StartEnd InteractionEvaluateLoanRequestModuleExecution4FinishEnd)
+-		Execution::InteractionEvaluateLoanRequestModuleExecution5(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution5StartEnd InteractionEvaluateLoanRequestModuleExecution5FinishEnd)
+-		Execution::InteractionEvaluateLoanRequestModuleExecution6(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution6StartEnd InteractionEvaluateLoanRequestModuleExecution6FinishEnd)
+-		Execution::InteractionEvaluateLoanRequestModuleExecution7(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution7StartEnd InteractionEvaluateLoanRequestModuleExecution7FinishEnd)
+-
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage1SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage1)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution1StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution1)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution1FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution1)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage1ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage1Return)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage3SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage3)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution2StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution2)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution2FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution2)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage3ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage3Return)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage5SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage5)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution3StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution3)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution3FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution3)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage5ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage5Return)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage7SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage7)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution4StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution4)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution4FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution4)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage7ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage7Return)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage9SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage9)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution5StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution5)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution5FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution5)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage9ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage9Return)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage11SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage11)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution6StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution6)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution6FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution6)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage11ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage11Return)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage13SendingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage13)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution7StartEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution7)
+-		ExecutionEnd::InteractionEvaluateLoanRequestModuleExecution7FinishEnd(EvaluateLoanRequestModule InteractionEvaluateLoanRequestModuleExecution7)
+-		MessageEnd::InteractionEvaluateLoanRequestModuleCallMessage13ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestModuleCallMessage13Return)
++		[Participants: LoanOfficer EvaluateLoanRequest]
++
++		CallMessage::InteractionEvaluateLoanRequestCallMessage1(listTenLoanRequest InteractionEvaluateLoanRequestCallMessage1SendingEnd -> InteractionEvaluateLoanRequestExecution1StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage1Return(InteractionEvaluateLoanRequestExecution1FinishEnd -> InteractionEvaluateLoanRequestCallMessage1ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage1)
++		CallMessage::InteractionEvaluateLoanRequestCallMessage3(chooseOneForReview InteractionEvaluateLoanRequestCallMessage3SendingEnd -> InteractionEvaluateLoanRequestExecution2StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage3Return(InteractionEvaluateLoanRequestExecution2FinishEnd -> InteractionEvaluateLoanRequestCallMessage3ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage3)
++		CallMessage::InteractionEvaluateLoanRequestCallMessage5(checkCreditHistory InteractionEvaluateLoanRequestCallMessage5SendingEnd -> InteractionEvaluateLoanRequestExecution3StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage5Return(InteractionEvaluateLoanRequestExecution3FinishEnd -> InteractionEvaluateLoanRequestCallMessage5ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage5)
++		CallMessage::InteractionEvaluateLoanRequestCallMessage7(reviewCheckingAccount InteractionEvaluateLoanRequestCallMessage7SendingEnd -> InteractionEvaluateLoanRequestExecution4StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage7Return(InteractionEvaluateLoanRequestExecution4FinishEnd -> InteractionEvaluateLoanRequestCallMessage7ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage7)
++		CallMessage::InteractionEvaluateLoanRequestCallMessage9(listAvaiableLoanTerm InteractionEvaluateLoanRequestCallMessage9SendingEnd -> InteractionEvaluateLoanRequestExecution5StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage9Return(InteractionEvaluateLoanRequestExecution5FinishEnd -> InteractionEvaluateLoanRequestCallMessage9ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage9)
++		CallMessage::InteractionEvaluateLoanRequestCallMessage11(addLoanTerm InteractionEvaluateLoanRequestCallMessage11SendingEnd -> InteractionEvaluateLoanRequestExecution6StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage11Return(InteractionEvaluateLoanRequestExecution6FinishEnd -> InteractionEvaluateLoanRequestCallMessage11ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage11)
++		CallMessage::InteractionEvaluateLoanRequestCallMessage13(approveLoanRequest InteractionEvaluateLoanRequestCallMessage13SendingEnd -> InteractionEvaluateLoanRequestExecution7StartEnd)
++		ReturnMessage::InteractionEvaluateLoanRequestCallMessage13Return(InteractionEvaluateLoanRequestExecution7FinishEnd -> InteractionEvaluateLoanRequestCallMessage13ReturnReceivingEnd InteractionEvaluateLoanRequestCallMessage13)
++
++		Execution::InteractionEvaluateLoanRequestExecution1(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution1StartEnd InteractionEvaluateLoanRequestExecution1FinishEnd)
++		Execution::InteractionEvaluateLoanRequestExecution2(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution2StartEnd InteractionEvaluateLoanRequestExecution2FinishEnd)
++		Execution::InteractionEvaluateLoanRequestExecution3(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution3StartEnd InteractionEvaluateLoanRequestExecution3FinishEnd)
++		Execution::InteractionEvaluateLoanRequestExecution4(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution4StartEnd InteractionEvaluateLoanRequestExecution4FinishEnd)
++		Execution::InteractionEvaluateLoanRequestExecution5(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution5StartEnd InteractionEvaluateLoanRequestExecution5FinishEnd)
++		Execution::InteractionEvaluateLoanRequestExecution6(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution6StartEnd InteractionEvaluateLoanRequestExecution6FinishEnd)
++		Execution::InteractionEvaluateLoanRequestExecution7(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution7StartEnd InteractionEvaluateLoanRequestExecution7FinishEnd)
++
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage1SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage1)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution1StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution1)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution1FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution1)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage1ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage1Return)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage3SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage3)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution2StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution2)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution2FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution2)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage3ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage3Return)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage5SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage5)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution3StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution3)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution3FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution3)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage5ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage5Return)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage7SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage7)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution4StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution4)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution4FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution4)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage7ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage7Return)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage9SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage9)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution5StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution5)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution5FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution5)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage9ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage9Return)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage11SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage11)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution6StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution6)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution6FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution6)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage11ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage11Return)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage13SendingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage13)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution7StartEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution7)
++		ExecutionEnd::InteractionEvaluateLoanRequestExecution7FinishEnd(EvaluateLoanRequest InteractionEvaluateLoanRequestExecution7)
++		MessageEnd::InteractionEvaluateLoanRequestCallMessage13ReturnReceivingEnd(LoanOfficer InteractionEvaluateLoanRequestCallMessage13Return)
+ 
+ 	}
+ 
+ 	Interaction GenerateLoanLetterAndAgreementSSD {
+ 
+-		[Participants: LoanClerk GenerateLoanLetterAndAgreementModule]
++		[Participants: LoanClerk GenerateLoanLetterAndAgreement]
+ 
+ 		CallMessage::InteractionGenerateLoanLetterAndAgreementCallMessage1(listApprovalRequest InteractionGenerateLoanLetterAndAgreementCallMessage1SendingEnd -> InteractionGenerateLoanLetterAndAgreementExecution1StartEnd)
+ 		ReturnMessage::InteractionGenerateLoanLetterAndAgreementCallMessage1Return(InteractionGenerateLoanLetterAndAgreementExecution1FinishEnd -> InteractionGenerateLoanLetterAndAgreementCallMessage1ReturnReceivingEnd InteractionGenerateLoanLetterAndAgreementCallMessage1)
+@@ -109,31 +109,31 @@
+ 		CallMessage::InteractionGenerateLoanLetterAndAgreementCallMessage9(printLoanAgreement InteractionGenerateLoanLetterAndAgreementCallMessage9SendingEnd -> InteractionGenerateLoanLetterAndAgreementExecution5StartEnd)
+ 		ReturnMessage::InteractionGenerateLoanLetterAndAgreementCallMessage9Return(InteractionGenerateLoanLetterAndAgreementExecution5FinishEnd -> InteractionGenerateLoanLetterAndAgreementCallMessage9ReturnReceivingEnd InteractionGenerateLoanLetterAndAgreementCallMessage9)
+ 
+-		Execution::InteractionGenerateLoanLetterAndAgreementExecution1(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution1StartEnd InteractionGenerateLoanLetterAndAgreementExecution1FinishEnd)
+-		Execution::InteractionGenerateLoanLetterAndAgreementExecution2(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution2StartEnd InteractionGenerateLoanLetterAndAgreementExecution2FinishEnd)
+-		Execution::InteractionGenerateLoanLetterAndAgreementExecution3(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution3StartEnd InteractionGenerateLoanLetterAndAgreementExecution3FinishEnd)
+-		Execution::InteractionGenerateLoanLetterAndAgreementExecution4(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution4StartEnd InteractionGenerateLoanLetterAndAgreementExecution4FinishEnd)
+-		Execution::InteractionGenerateLoanLetterAndAgreementExecution5(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution5StartEnd InteractionGenerateLoanLetterAndAgreementExecution5FinishEnd)
++		Execution::InteractionGenerateLoanLetterAndAgreementExecution1(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution1StartEnd InteractionGenerateLoanLetterAndAgreementExecution1FinishEnd)
++		Execution::InteractionGenerateLoanLetterAndAgreementExecution2(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution2StartEnd InteractionGenerateLoanLetterAndAgreementExecution2FinishEnd)
++		Execution::InteractionGenerateLoanLetterAndAgreementExecution3(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution3StartEnd InteractionGenerateLoanLetterAndAgreementExecution3FinishEnd)
++		Execution::InteractionGenerateLoanLetterAndAgreementExecution4(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution4StartEnd InteractionGenerateLoanLetterAndAgreementExecution4FinishEnd)
++		Execution::InteractionGenerateLoanLetterAndAgreementExecution5(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution5StartEnd InteractionGenerateLoanLetterAndAgreementExecution5FinishEnd)
+ 
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage1SendingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage1)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution1StartEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution1)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution1FinishEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution1)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution1StartEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution1)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution1FinishEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution1)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage1ReturnReceivingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage1Return)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage3SendingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage3)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution2StartEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution2)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution2FinishEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution2)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution2StartEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution2)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution2FinishEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution2)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage3ReturnReceivingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage3Return)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage5SendingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage5)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution3StartEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution3)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution3FinishEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution3)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution3StartEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution3)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution3FinishEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution3)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage5ReturnReceivingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage5Return)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage7SendingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage7)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution4StartEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution4)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution4FinishEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution4)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution4StartEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution4)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution4FinishEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution4)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage7ReturnReceivingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage7Return)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage9SendingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage9)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution5StartEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution5)
+-		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution5FinishEnd(GenerateLoanLetterAndAgreementModule InteractionGenerateLoanLetterAndAgreementExecution5)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution5StartEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution5)
++		ExecutionEnd::InteractionGenerateLoanLetterAndAgreementExecution5FinishEnd(GenerateLoanLetterAndAgreement InteractionGenerateLoanLetterAndAgreementExecution5)
+ 		MessageEnd::InteractionGenerateLoanLetterAndAgreementCallMessage9ReturnReceivingEnd(LoanClerk InteractionGenerateLoanLetterAndAgreementCallMessage9Return)
+ 
+ 	}
+@@ -222,7 +222,7 @@
+ 
+ 	}
+ 
+-	Servicee ManageLoanTermCRUDServic {
++	Service ManageLoanTermCRUDService {
+ 
+ 		[Operation]
+ 		createLoanTerm(itemid, content)
+@@ -233,7 +233,7 @@
+ 	}
+ 
+ //entity create operation 
+-	Contract  SubmitLoanRequestModule::enterLoanInformation(requestid : Integer, name : String, loanamount : Real, loanpurpose : String, income : Real, phonenumber : Integer, postaladdress : String, zipcode : Integer, email : String, workreferences : String, creditreferences : String, checkingaccountnumber : Integer, securitynumber : Integer) : Boolean {
++	Contract  SubmitLoanRequest::enterLoanInformation(requestid : Integer, name : String, loanamount : Real, loanpurpose : String, income : Real, phonenumber : Integer, postaladdress : String, zipcode : Integer, email : String, workreferences : String, creditreferences : String, checkingaccountnumber : Integer, securitynumber : Integer) : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -292,7 +292,7 @@
+ 			result = true
+ 	}
+ 
+-	Contract SubmitLoanRequestModule::creditRequest() : Boolean {
++	Contract SubmitLoanRequest::creditRequest() : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -320,8 +320,8 @@
+ 
+ 	}
+ 
+-//Contract SubmitLoanRequestModule::accountStatusRequest Skeleton
+-	Contract SubmitLoanRequestModule::accountStatusRequest() : Boolean {
++//Contract SubmitLoanRequest::accountStatusRequest Skeleton
++	Contract SubmitLoanRequest::accountStatusRequest() : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -348,8 +348,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract SubmitLoanRequestModule::calculateScore Skeleton
+-	Contract SubmitLoanRequestModule::calculateScore() : Integer {
++//Contract SubmitLoanRequest::calculateScore Skeleton
++	Contract SubmitLoanRequest::calculateScore() : Integer {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -376,8 +376,8 @@
+ 	}
+ 
+ // LoanStatus[SUBMITTED|REFERENCESVALIDATED|APPROVED|READYFORREVIEW|INCOMPLETEINFORMATION]
+-//Contract EnterValidatedCreditReferencesModule::listSubmitedLoanRequest Skeleton
+-	Contract EnterValidatedCreditReferencesModule::listSubmitedLoanRequest() : Set(LoanRequest) {
++//Contract EnterValidatedCreditReferences::listSubmitedLoanRequest Skeleton
++	Contract EnterValidatedCreditReferences::listSubmitedLoanRequest() : Set(LoanRequest) {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -404,8 +404,8 @@
+ 			result = rs
+ 	}
+ 
+-//Contract EnterValidatedCreditReferencesModule::chooseLoanRequest Skeleton
+-	Contract EnterValidatedCreditReferencesModule::chooseLoanRequest(requestid : Integer) : LoanRequest {
++//Contract EnterValidatedCreditReferences::chooseLoanRequest Skeleton
++	Contract EnterValidatedCreditReferences::chooseLoanRequest(requestid : Integer) : LoanRequest {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -432,8 +432,8 @@
+ 			result = rs
+ 	}
+ 
+-//Contract EnterValidatedCreditReferencesModule::markRequestValid Skeleton
+-	Contract EnterValidatedCreditReferencesModule::markRequestValid() : Boolean {
++//Contract EnterValidatedCreditReferences::markRequestValid Skeleton
++	Contract EnterValidatedCreditReferences::markRequestValid() : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -452,8 +452,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::listTenLoanRequest Skeleton
+-	Contract EvaluateLoanRequestModule::listTenLoanRequest() : Set(LoanRequest) {
++//Contract EvaluateLoanRequest::listTenLoanRequest Skeleton
++	Contract EvaluateLoanRequest::listTenLoanRequest() : Set(LoanRequest) {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -480,8 +480,8 @@
+ 			result = rs
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::chooseOneForReview Skeleton
+-	Contract EvaluateLoanRequestModule::chooseOneForReview(requestid : Integer) : LoanRequest {
++//Contract EvaluateLoanRequest::chooseOneForReview Skeleton
++	Contract EvaluateLoanRequest::chooseOneForReview(requestid : Integer) : LoanRequest {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -508,8 +508,8 @@
+ 			result = rs
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::checkCreditHistory Skeleton
+-	Contract EvaluateLoanRequestModule::checkCreditHistory() : CreditHistory {
++//Contract EvaluateLoanRequest::checkCreditHistory Skeleton
++	Contract EvaluateLoanRequest::checkCreditHistory() : CreditHistory {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -528,8 +528,8 @@
+ 			result = LoanRequest.RequestedCreditHistory
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::reviewCheckingAccount Skeleton
+-	Contract EvaluateLoanRequestModule::reviewCheckingAccount() : CheckingAccount {
++//Contract EvaluateLoanRequest::reviewCheckingAccount Skeleton
++	Contract EvaluateLoanRequest::reviewCheckingAccount() : CheckingAccount {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -549,8 +549,8 @@
+ 
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::listAvaiableLoanTerm Skeleton
+-	Contract EvaluateLoanRequestModule::listAvaiableLoanTerm() : Set(LoanTerm) {
++//Contract EvaluateLoanRequest::listAvaiableLoanTerm Skeleton
++	Contract EvaluateLoanRequest::listAvaiableLoanTerm() : Set(LoanTerm) {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -567,8 +567,8 @@
+ 			result = LoanTerm.allInstance()
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::addLoanTerm Skeleton
+-	Contract EvaluateLoanRequestModule::addLoanTerm(termid : Integer) : Boolean {
++//Contract EvaluateLoanRequest::addLoanTerm Skeleton
++	Contract EvaluateLoanRequest::addLoanTerm(termid : Integer) : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -597,8 +597,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract EvaluateLoanRequestModule::approveLoanRequest Skeleton
+-	Contract EvaluateLoanRequestModule::approveLoanRequest() : Boolean {
++//Contract EvaluateLoanRequest::approveLoanRequest Skeleton
++	Contract EvaluateLoanRequest::approveLoanRequest() : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -617,8 +617,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract GenerateLoanLetterAndAgreementModule::listApprovalRequest Skeleton
+-	Contract GenerateLoanLetterAndAgreementModule::listApprovalRequest() : Set(LoanRequest) {
++//Contract GenerateLoanLetterAndAgreement::listApprovalRequest Skeleton
++	Contract GenerateLoanLetterAndAgreement::listApprovalRequest() : Set(LoanRequest) {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -645,8 +645,8 @@
+ 			result = rs
+ 	}
+ 
+-//Contract GenerateLoanLetterAndAgreementModule::genereateApprovalLetter Skeleton
+-	Contract GenerateLoanLetterAndAgreementModule::genereateApprovalLetter(id : Integer) : Boolean {
++//Contract GenerateLoanLetterAndAgreement::genereateApprovalLetter Skeleton
++	Contract GenerateLoanLetterAndAgreement::genereateApprovalLetter(id : Integer) : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Definition
+@@ -683,8 +683,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract GenerateLoanLetterAndAgreementModule::emailToAppliant Skeleton
+-	Contract GenerateLoanLetterAndAgreementModule::emailToAppliant() : Boolean {
++//Contract GenerateLoanLetterAndAgreement::emailToAppliant Skeleton
++	Contract GenerateLoanLetterAndAgreement::emailToAppliant() : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -704,8 +704,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract GenerateLoanLetterAndAgreementModule::generateLoanAgreement Skeleton
+-	Contract GenerateLoanLetterAndAgreementModule::generateLoanAgreement() : Boolean {
++//Contract GenerateLoanLetterAndAgreement::generateLoanAgreement Skeleton
++	Contract GenerateLoanLetterAndAgreement::generateLoanAgreement() : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -732,8 +732,8 @@
+ 			result = true
+ 	}
+ 
+-//Contract GenerateLoanLetterAndAgreementModule::printLoanAgreement Skeleton
+-	Contract GenerateLoanLetterAndAgreementModule::printLoanAgreement(number : Integer) : Boolean {
++//Contract GenerateLoanLetterAndAgreement::printLoanAgreement Skeleton
++	Contract GenerateLoanLetterAndAgreement::printLoanAgreement(number : Integer) : Boolean {
+ 
+ 		/*
+ 		 * Generated by RM2DOc - Precondition
+@@ -753,7 +753,7 @@
+ 	}
+ 
+ ////entity create operation 
+-//Contract  GenerateLoanLetterAndAgreementModule::createLoanAccount(loanaccountid : Integer, balance : Real, status : LoanAccountStatus[NORMAL|HASPAIDINFULL]) : Boolean {
++//Contract  GenerateLoanLetterAndAgreement::createLoanAccount(loanaccountid : Integer, balance : Real, status : LoanAccountStatus[NORMAL|HASPAIDINFULL]) : Boolean {
+ //	
+ //	/* definition: find specific LoanAccount instance by loanaccountid */
+ //	definition:

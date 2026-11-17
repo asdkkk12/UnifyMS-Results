@@ -1,0 +1,1264 @@
+{
+  "com.jayden.apiboss.ApiBossApplication#main/1@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apiboss.controller.CarController#addCar/1@26": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.apiboss.service.CarService#addCar/1@17"
+    ]
+  },
+  "com.jayden.apiboss.controller.DriverCarBindingRelationshipController#bind/1@29": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.apiboss.service.DriverCarBindingRelationshipService#bind/1@23"
+    ]
+  },
+  "com.jayden.apiboss.controller.DriverCarBindingRelationshipController#unbind/1@35": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.apiboss.service.DriverCarBindingRelationshipService#unbind/1@27"
+    ]
+  },
+  "com.jayden.apiboss.controller.DriverUserController#addDriverUser/1@19": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser",
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.apiboss.service.DriverUserService#addDriverUser/1@15"
+    ]
+  },
+  "com.jayden.apiboss.controller.DriverUserController#updateDriverUser/1@24": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.apiboss.service.DriverUserService#updateDriverUser/1@21"
+    ]
+  },
+  "com.jayden.apiboss.remote.ServiceDriverUserClient#addDriverUser/1@14": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser",
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.UserController#addUser/1@24"
+    ]
+  },
+  "com.jayden.apiboss.remote.ServiceDriverUserClient#updateDriverUser/1@17": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.UserController#updateUser/1@35"
+    ]
+  },
+  "com.jayden.apiboss.remote.ServiceDriverUserClient#addCar/1@21": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.CarController#addCar/1@27"
+    ]
+  },
+  "com.jayden.apiboss.remote.ServiceDriverUserClient#bind/1@24": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.DriverCarBindingRelationshipController#bind/1@29"
+    ]
+  },
+  "com.jayden.apiboss.remote.ServiceDriverUserClient#unbind/1@27": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.DriverCarBindingRelationshipController#unbind/1@35"
+    ]
+  },
+  "com.jayden.apiboss.service.CarService#addCar/1@17": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.apiboss.remote.ServiceDriverUserClient#addCar/1@21",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.apiboss.service.DriverCarBindingRelationshipService#bind/1@23": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.apiboss.remote.ServiceDriverUserClient#bind/1@24"
+    ]
+  },
+  "com.jayden.apiboss.service.DriverCarBindingRelationshipService#unbind/1@27": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.apiboss.remote.ServiceDriverUserClient#unbind/1@27"
+    ]
+  },
+  "com.jayden.apiboss.service.DriverUserService#addDriverUser/1@15": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser",
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.apiboss.remote.ServiceDriverUserClient#addDriverUser/1@14"
+    ]
+  },
+  "com.jayden.apiboss.service.DriverUserService#updateDriverUser/1@21": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.apiboss.remote.ServiceDriverUserClient#updateDriverUser/1@17"
+    ]
+  },
+  "com.jayden.apidriver.ApiDriverApplication#main/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apidriver.ApiDriverApplication#test/0@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apidriver.controller.PointController#upload/1@21": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.apidriver.service.PointService#upload/1@22"
+    ]
+  },
+  "com.jayden.apidriver.controller.TestController#testAuth/0@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apidriver.controller.TestController#testNoAuth/0@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apidriver.controller.UserController#updateUser/1@18": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.apidriver.service.UserService#updateUser/1@15"
+    ]
+  },
+  "com.jayden.apidriver.controller.VerifyCodeController#verifyCode/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34"
+    ]
+  },
+  "com.jayden.apidriver.controller.VerifyCodeController#verifyCodeCheck/1@24": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59"
+    ]
+  },
+  "com.jayden.apidriver.interceptor.InterceptorConfig#jwtInterceptor/0@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apidriver.interceptor.InterceptorConfig#addInterceptors/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.apidriver.interceptor.InterceptorConfig#jwtInterceptor/0@12"
+    ]
+  },
+  "com.jayden.apidriver.interceptor.JwtInterceptor#preHandle/3@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+    ]
+  },
+  "com.jayden.apidriver.remote.ServiceDriverUserClient#updateUser/1@14": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.UserController#updateUser/1@35"
+    ]
+  },
+  "com.jayden.apidriver.remote.ServiceDriverUserClient#checkDriver/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.UserController#getUser/1@45"
+    ]
+  },
+  "com.jayden.apidriver.remote.ServiceDriverUserClient#getCarById/1@21": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.controller.CarController#getCarById/1@33"
+    ]
+  },
+  "com.jayden.apidriver.remote.ServiceMapClient#upload/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.controller.PointController#upload/1@20"
+    ]
+  },
+  "com.jayden.apidriver.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.serviceverifycode.controller.VerifyCodeController#verifyCodeGet/1@17"
+    ]
+  },
+  "com.jayden.apidriver.service.PointService#upload/1@22": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.apidriver.remote.ServiceDriverUserClient#getCarById/1@21",
+      "com.jayden.apidriver.remote.ServiceMapClient#upload/1@15"
+    ]
+  },
+  "com.jayden.apidriver.service.UserService#updateUser/1@15": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.apidriver.remote.ServiceDriverUserClient#updateUser/1@14"
+    ]
+  },
+  "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.apidriver.remote.ServiceDriverUserClient#checkDriver/1@18",
+      "com.jayden.apidriver.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13",
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/0@21",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19"
+    ]
+  },
+  "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+    ]
+  },
+  "com.jayden.apipassenger.ApiPassengerApplication#main/1@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apipassenger.controller.ForecastPriceController#forecastPrice/1@21": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26"
+    ]
+  },
+  "com.jayden.apipassenger.controller.OrderController#add/1@23": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "OrderInfo"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.service.OrderService#add/1@15"
+    ]
+  },
+  "com.jayden.apipassenger.controller.TestController#test/0@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apipassenger.controller.TestController#authTest/0@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.apipassenger.controller.TestController#noauthTest/0@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.apipassenger.controller.TokenController#refreshToken/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.apipassenger.service.TokenService#refreshToken/1@23"
+    ]
+  },
+  "com.jayden.apipassenger.controller.UserController#getUser/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20"
+    ]
+  },
+  "com.jayden.apipassenger.controller.VerifyCodeController#verifyCodeGet/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30"
+    ]
+  },
+  "com.jayden.apipassenger.controller.VerifyCodeController#verifyCodeCheck/1@26": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54"
+    ]
+  },
+  "com.jayden.apipassenger.interceptor.InterceptorConfig#jwtInterceptor/0@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.apipassenger.interceptor.InterceptorConfig#addInterceptors/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.apipassenger.interceptor.InterceptorConfig#jwtInterceptor/0@12"
+    ]
+  },
+  "com.jayden.apipassenger.interceptor.JwtInterceptor#preHandle/3@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+    ]
+  },
+  "com.jayden.apipassenger.remote.ServiceOrderClient#add/1@13": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "OrderInfo"
+    ],
+    "calls": [
+      "com.jayden.serviceorder.controller.OrderInfoController#add/1@17"
+    ]
+  },
+  "com.jayden.apipassenger.remote.ServicePassengerUserClient#loginOrRegisterUser/1@13": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.servicepassengeruser.controller.UserController#loginOrRegisterUser/1@16"
+    ]
+  },
+  "com.jayden.apipassenger.remote.ServicePassengerUserClient#getUserByPhone/1@16": {
+    "direct_entities": [
+      "PassengerUser"
+    ],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.servicepassengeruser.controller.UserController#getUser/1@22"
+    ]
+  },
+  "com.jayden.apipassenger.remote.ServicePriceClient#forecast/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26"
+    ]
+  },
+  "com.jayden.apipassenger.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.serviceverifycode.controller.VerifyCodeController#verifyCodeGet/1@17"
+    ]
+  },
+  "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.remote.ServicePriceClient#forecast/1@15",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.apipassenger.service.OrderService#add/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "OrderInfo"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.remote.ServiceOrderClient#add/1@13"
+    ]
+  },
+  "com.jayden.apipassenger.service.TokenService#refreshToken/1@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62",
+      "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+    ]
+  },
+  "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20": {
+    "direct_entities": [
+      "PassengerUser"
+    ],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.remote.ServicePassengerUserClient#getUserByPhone/1@16",
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62"
+    ]
+  },
+  "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.apipassenger.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19"
+    ]
+  },
+  "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.apipassenger.remote.ServicePassengerUserClient#loginOrRegisterUser/1@13",
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19",
+      "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+    ]
+  },
+  "com.jayden.internalcommon.dto.DriverUserWorkStatus#toString/0@42": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.dto.ResponseResult#success/0@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.dto.ResponseResult#success/1@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.dto.ResponseResult#fail/1@41": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.dto.ResponseResult#fail/2@51": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.dto.ResponseResult#fail/3@62": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.BigDecimalUtils#add/2@13": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.BigDecimalUtils#substract/2@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.BigDecimalUtils#multiply/2@38": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.BigDecimalUtils#divide/2@50": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45"
+    ]
+  },
+  "com.jayden.internalcommon.util.JwtUtils#main/1@72": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+      "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45"
+    ]
+  },
+  "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicedriveruser.ServiceDriverUserApplication#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicedriveruser.controller.CarController#addCar/1@27": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.CarService#addCar/1@26"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.CarController#getCarById/1@33": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.CarService#getCarById/1@50"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.DriverCarBindingRelationshipController#bind/1@29": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.DriverCarBindingRelationshipController#unbind/1@35": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.DriverUserWorkStatusController#changeWorkStatus/1@27": {
+    "direct_entities": [
+      "DriverUserWorkStatus"
+    ],
+    "reachable_entities": [
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.DriverUserWorkStatusService#changeWorkStatus/2@27"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.TestController#test/0@16": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicedriveruser.controller.TestController#testGetUser/0@21": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.DriverUserService#testGetDriverUser/0@27"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.UserController#addUser/1@24": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser",
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.UserController#updateUser/1@35": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48"
+    ]
+  },
+  "com.jayden.servicedriveruser.controller.UserController#getUser/1@45": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56"
+    ]
+  },
+  "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicedriveruser.remote.ServiceMapClient#addTerminal/2@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.controller.TerminalController#add/2@29"
+    ]
+  },
+  "com.jayden.servicedriveruser.remote.ServiceMapClient#addTrack/1@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.controller.TrackController#add/1@19"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.CarService#addCar/1@26": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.servicedriveruser.remote.ServiceMapClient#addTerminal/2@15",
+      "com.jayden.servicedriveruser.remote.ServiceMapClient#addTrack/1@18"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.CarService#getCarById/1@50": {
+    "direct_entities": [
+      "Car"
+    ],
+    "reachable_entities": [
+      "Car"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67": {
+    "direct_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "reachable_entities": [
+      "DriverCarBindingRelationship"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverUserService#testGetDriverUser/0@27": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32": {
+    "direct_entities": [
+      "DriverUser",
+      "DriverUserWorkStatus"
+    ],
+    "reachable_entities": [
+      "DriverUser",
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56": {
+    "direct_entities": [
+      "DriverUser"
+    ],
+    "reachable_entities": [
+      "DriverUser"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicedriveruser.service.DriverUserWorkStatusService#changeWorkStatus/2@27": {
+    "direct_entities": [
+      "DriverUserWorkStatus"
+    ],
+    "reachable_entities": [
+      "DriverUserWorkStatus"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicemap.ServiceMapApplication#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicemap.ServiceMapApplication#restTemplate/0@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicemap.controller.DicDistrictController#initDicDistrict/1@16": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DicDistrict"
+    ],
+    "calls": [
+      "com.jayden.servicemap.service.DicDistrictService#initDicDistrict/1@24"
+    ]
+  },
+  "com.jayden.servicemap.controller.DirectionController#driving/1@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.DirectionService#driving/4@23"
+    ]
+  },
+  "com.jayden.servicemap.controller.PointController#upload/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.PointService#upload/1@15"
+    ]
+  },
+  "com.jayden.servicemap.controller.ServiceController#add/1@26": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.ServiceMapService#add/1@19"
+    ]
+  },
+  "com.jayden.servicemap.controller.TerminalController#add/2@29": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.TerminalService#add/2@18"
+    ]
+  },
+  "com.jayden.servicemap.controller.TerminalController#aroundsearch/2@40": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.TerminalService#aroundsearch/2@22"
+    ]
+  },
+  "com.jayden.servicemap.controller.TerminalController#trsearch/3@53": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.TerminalService#trsearch/3@27"
+    ]
+  },
+  "com.jayden.servicemap.controller.TrackController#add/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.service.TrackService#add/1@14"
+    ]
+  },
+  "com.jayden.servicemap.remote.MapDicDistrictClient#dicDistrict/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicemap.remote.MapDirectionClient#direction/4@24": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.MapDirectionClient#parseDirectionEntity/1@50"
+    ]
+  },
+  "com.jayden.servicemap.remote.MapDirectionClient#parseDirectionEntity/1@50": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicemap.remote.PointClient#upload/1@28": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+    ]
+  },
+  "com.jayden.servicemap.remote.ServiceClient#add/1@21": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicemap.remote.TerminalClient#add/2@31": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicemap.remote.TrackClient#add/1@25": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.servicemap.service.DicDistrictService#initDicDistrict/1@24": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DicDistrict"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.servicemap.remote.MapDicDistrictClient#dicDistrict/1@20",
+      "com.jayden.servicemap.service.DicDistrictService#insertDicDistrictFromJSON/2@42"
+    ]
+  },
+  "com.jayden.servicemap.service.DicDistrictService#insertDicDistrictFromJSON/2@42": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "DicDistrict"
+    ],
+    "calls": [
+      "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "com.jayden.servicemap.service.DicDistrictService#insertDicDistrictFromJSON/2@42"
+    ]
+  },
+  "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61": {
+    "direct_entities": [
+      "DicDistrict"
+    ],
+    "reachable_entities": [
+      "DicDistrict"
+    ],
+    "calls": [
+      "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75"
+    ]
+  },
+  "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicemap.service.DirectionService#driving/4@23": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.servicemap.remote.MapDirectionClient#direction/4@24"
+    ]
+  },
+  "com.jayden.servicemap.service.PointService#upload/1@15": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.PointClient#upload/1@28"
+    ]
+  },
+  "com.jayden.servicemap.service.ServiceMapService#add/1@19": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.ServiceClient#add/1@21"
+    ]
+  },
+  "com.jayden.servicemap.service.TerminalService#add/2@18": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.TerminalClient#add/2@31"
+    ]
+  },
+  "com.jayden.servicemap.service.TerminalService#aroundsearch/2@22": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64"
+    ]
+  },
+  "com.jayden.servicemap.service.TerminalService#trsearch/3@27": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112"
+    ]
+  },
+  "com.jayden.servicemap.service.TrackService#add/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.remote.TrackClient#add/1@25"
+    ]
+  },
+  "com.jayden.serviceorder.ServiceOrderInfoApplication#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.serviceorder.controller.OrderInfoController#add/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "OrderInfo"
+    ],
+    "calls": [
+      "com.jayden.serviceorder.service.OrderInfoService#add/1@26"
+    ]
+  },
+  "com.jayden.serviceorder.controller.TestController#test/0@10": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.serviceorder.service.OrderInfoService#add/1@26": {
+    "direct_entities": [
+      "OrderInfo"
+    ],
+    "reachable_entities": [
+      "OrderInfo"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+    ]
+  },
+  "com.jayden.servicepassengeruser.ServicePassengerUserApplication#main/1@12": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.servicepassengeruser.controller.UserController#loginOrRegisterUser/1@16": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21"
+    ]
+  },
+  "com.jayden.servicepassengeruser.controller.UserController#getUser/1@22": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48"
+    ]
+  },
+  "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21": {
+    "direct_entities": [
+      "PassengerUser"
+    ],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+    ]
+  },
+  "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48": {
+    "direct_entities": [
+      "PassengerUser"
+    ],
+    "reachable_entities": [
+      "PassengerUser"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.serviceprice.ServicePriceApplication#main/1@14": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26": {
+    "direct_entities": [],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42"
+    ]
+  },
+  "com.jayden.serviceprice.remote.ServiceMapClient#direction/1@16": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.servicemap.controller.DirectionController#driving/1@21"
+    ]
+  },
+  "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42": {
+    "direct_entities": [
+      "PriceRule"
+    ],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.serviceprice.remote.ServiceMapClient#direction/1@16",
+      "com.jayden.serviceprice.service.PriceService#getPrice/3@121"
+    ]
+  },
+  "com.jayden.serviceprice.service.PriceService#calculatePrice/4@93": {
+    "direct_entities": [
+      "PriceRule"
+    ],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "com.jayden.serviceprice.service.PriceService#getPrice/3@121"
+    ]
+  },
+  "com.jayden.serviceprice.service.PriceService#getPrice/3@121": {
+    "direct_entities": [
+      "PriceRule"
+    ],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.internalcommon.util.BigDecimalUtils#add/2@13",
+      "com.jayden.internalcommon.util.BigDecimalUtils#divide/2@50",
+      "com.jayden.internalcommon.util.BigDecimalUtils#multiply/2@38",
+      "com.jayden.internalcommon.util.BigDecimalUtils#substract/2@26"
+    ]
+  },
+  "com.jayden.serviceprice.service.PriceService#main/1@157": {
+    "direct_entities": [
+      "PriceRule"
+    ],
+    "reachable_entities": [
+      "PriceRule"
+    ],
+    "calls": [
+      "com.jayden.serviceprice.service.PriceService#getPrice/3@121"
+    ]
+  },
+  "com.jayden.serviceverifycode.ServiceVerifyCodeApplication#main/1@11": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  },
+  "com.jayden.serviceverifycode.controller.VerifyCodeController#verifyCodeGet/1@17": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.serviceverifycode.service.VerifyCodeService#generateCode/1@10"
+    ]
+  },
+  "com.jayden.serviceverifycode.service.VerifyCodeService#generateCode/1@10": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": [
+      "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+    ]
+  },
+  "com.jayden.serviceverifycode.service.VerifyCodeService#main/1@20": {
+    "direct_entities": [],
+    "reachable_entities": [],
+    "calls": []
+  }
+}

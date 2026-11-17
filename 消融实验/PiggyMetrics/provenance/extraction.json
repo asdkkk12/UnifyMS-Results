@@ -1,0 +1,1433 @@
+{
+  "parser": "javalang 0.13.0",
+  "parsed_classes": 72,
+  "routing_config": [
+    {
+      "path": "config/account-service.properties",
+      "sha256": "5557be0fa80d15bc7a4b47ea947d80a0d7a3c5cec38488d952b818530260f147",
+      "application_name": "account-service",
+      "context_path": "/accounts"
+    },
+    {
+      "path": "config/gateway.properties",
+      "sha256": "1dbbde1aeb33a8074820fbadf331102df83ab13f4eef68a38f1445eaa59a6c93",
+      "application_name": "gateway",
+      "context_path": ""
+    },
+    {
+      "path": "config/notification-service.properties",
+      "sha256": "07d801d8da3ff3a9d2f365d364dc8f39c0b14a388acc17b8f0b3dc08860c0176",
+      "application_name": "notification-service",
+      "context_path": "/notifications"
+    },
+    {
+      "path": "config/registry.properties",
+      "sha256": "d192ffd320e193d9056e73be0ea9e99f10000fd7a938676dc913cc27332c5b96",
+      "application_name": "registry",
+      "context_path": ""
+    },
+    {
+      "path": "config/statistics-service.properties",
+      "sha256": "9aabf694e8b422e8d0d167ee22c800601b70f96ee09180fa2a7a3cced9aecd41",
+      "application_name": "statistics-service",
+      "context_path": "/statistics"
+    }
+  ],
+  "spring_applications": {
+    "account-service": "account-service",
+    "gateway": "gateway",
+    "notification-service": "notification-service",
+    "registry": "registry",
+    "statistics-service": "statistics-service"
+  },
+  "duplicate_fqn_sources": [
+    {
+      "fqn": "io.spring2go.cathelper.CatContext",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "duplicate_path": "gateway/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatHttpConstants",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "duplicate_path": "gateway/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatRestInterceptor",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "duplicate_path": "gateway/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatServletFilter",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "duplicate_path": "gateway/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatContext",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "duplicate_path": "notification-service/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatHttpConstants",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "duplicate_path": "notification-service/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatRestInterceptor",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "duplicate_path": "notification-service/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatServletFilter",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "duplicate_path": "notification-service/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatContext",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "duplicate_path": "registry/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatHttpConstants",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "duplicate_path": "registry/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatRestInterceptor",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "duplicate_path": "registry/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatServletFilter",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "duplicate_path": "registry/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatContext",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "duplicate_path": "statistics-service/src/main/java/io/spring2go/cathelper/CatContext.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatHttpConstants",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "duplicate_path": "statistics-service/src/main/java/io/spring2go/cathelper/CatHttpConstants.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatRestInterceptor",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "duplicate_path": "statistics-service/src/main/java/io/spring2go/cathelper/CatRestInterceptor.java",
+      "identical": true
+    },
+    {
+      "fqn": "io.spring2go.cathelper.CatServletFilter",
+      "first_path": "account-service/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "duplicate_path": "statistics-service/src/main/java/io/spring2go/cathelper/CatServletFilter.java",
+      "identical": true
+    }
+  ],
+  "interface_implementations": {
+    "com.dianping.cat.Cat": [
+      "io.spring2go.cathelper.CatContext"
+    ],
+    "org.springframework.http.client.ClientHttpRequestInterceptor": [
+      "io.spring2go.cathelper.CatRestInterceptor"
+    ],
+    "Filter": [
+      "io.spring2go.cathelper.CatServletFilter"
+    ],
+    "io.spring2go.piggymetrics.account.client.StatisticsServiceClient": [
+      "io.spring2go.piggymetrics.account.client.StatisticsServiceClientFallback"
+    ],
+    "io.spring2go.piggymetrics.account.service.AccountService": [
+      "io.spring2go.piggymetrics.account.service.AccountServiceImpl"
+    ],
+    "org.springframework.core.convert.converter.Converter": [
+      "io.spring2go.piggymetrics.notification.repository.converter.FrequencyReaderConverter",
+      "io.spring2go.piggymetrics.notification.repository.converter.FrequencyWriterConverter",
+      "io.spring2go.piggymetrics.statistics.repository.converter.DataPointIdReaderConverter",
+      "io.spring2go.piggymetrics.statistics.repository.converter.DataPointIdWriterConverter"
+    ],
+    "io.spring2go.piggymetrics.notification.service.EmailService": [
+      "io.spring2go.piggymetrics.notification.service.EmailServiceImpl"
+    ],
+    "io.spring2go.piggymetrics.notification.service.NotificationService": [
+      "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl"
+    ],
+    "io.spring2go.piggymetrics.notification.service.RecipientService": [
+      "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl"
+    ],
+    "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClient": [
+      "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClientFallback"
+    ],
+    "java.io.Serializable": [
+      "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId"
+    ],
+    "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService": [
+      "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl"
+    ],
+    "io.spring2go.piggymetrics.statistics.service.StatisticsService": [
+      "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl"
+    ]
+  },
+  "mapper_xml": [],
+  "services": {
+    "io.spring2go.piggymetrics.account.service.AccountServiceImpl": "AccountServiceAccountServiceImpl",
+    "io.spring2go.piggymetrics.notification.service.EmailServiceImpl": "NotificationServiceEmailServiceImpl",
+    "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl": "NotificationServiceNotificationServiceImpl",
+    "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl": "NotificationServiceRecipientServiceImpl",
+    "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl": "StatisticsServiceExchangeRatesServiceImpl",
+    "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl": "StatisticsServiceStatisticsServiceImpl"
+  },
+  "operations": [
+    {
+      "id": "AccountServiceAccountServiceImplFindByName",
+      "service": "AccountServiceAccountServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.account.service.AccountServiceImpl#findByName/1@39",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/service/AccountServiceImpl.java",
+      "line": 39,
+      "direct_entities": [
+        "AccountServiceAccount"
+      ],
+      "entities": [
+        "AccountServiceAccount"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "AccountServiceAccountServiceImplCreate",
+      "service": "AccountServiceAccountServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.account.service.AccountServiceImpl#create/1@51",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/service/AccountServiceImpl.java",
+      "line": 51,
+      "direct_entities": [
+        "AccountServiceAccount",
+        "AccountServiceSaving",
+        "AccountServiceUser"
+      ],
+      "entities": [
+        "AccountServiceAccount",
+        "AccountServiceSaving",
+        "AccountServiceUser"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.account.client.UserServiceClient#createUser/2@15",
+        "io.spring2go.piggymetrics.account.domain.Account#getName/0@36",
+        "io.spring2go.piggymetrics.account.domain.Account#setLastSeen/1@48",
+        "io.spring2go.piggymetrics.account.domain.Account#setName/1@40",
+        "io.spring2go.piggymetrics.account.domain.Account#setSaving/1@72",
+        "io.spring2go.piggymetrics.account.domain.Currency#getDefault/0@7",
+        "io.spring2go.piggymetrics.account.domain.Saving#setAmount/1@27",
+        "io.spring2go.piggymetrics.account.domain.Saving#setCapitalization/1@59",
+        "io.spring2go.piggymetrics.account.domain.Saving#setCurrency/1@35",
+        "io.spring2go.piggymetrics.account.domain.Saving#setDeposit/1@51",
+        "io.spring2go.piggymetrics.account.domain.Saving#setInterest/1@43",
+        "io.spring2go.piggymetrics.account.domain.User#getPassword/0@25",
+        "io.spring2go.piggymetrics.account.domain.User#getUsername/0@17",
+        "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "AccountServiceAccountServiceImplSaveChanges",
+      "service": "AccountServiceAccountServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.account.service.AccountServiceImpl#saveChanges/2@82",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/service/AccountServiceImpl.java",
+      "line": 82,
+      "direct_entities": [
+        "AccountServiceAccount"
+      ],
+      "entities": [
+        "AccountServiceAccount",
+        "AccountServiceItem",
+        "AccountServiceSaving",
+        "StatisticsServiceAccount",
+        "StatisticsServiceDataPoint",
+        "StatisticsServiceDataPointId",
+        "StatisticsServiceExchangeRatesContainer",
+        "StatisticsServiceItem",
+        "StatisticsServiceItemMetric",
+        "StatisticsServiceSaving"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.account.client.StatisticsServiceClient#updateStatistics/2@16",
+        "io.spring2go.piggymetrics.account.domain.Account#getExpenses/0@60",
+        "io.spring2go.piggymetrics.account.domain.Account#getIncomes/0@52",
+        "io.spring2go.piggymetrics.account.domain.Account#getNote/0@76",
+        "io.spring2go.piggymetrics.account.domain.Account#getSaving/0@68",
+        "io.spring2go.piggymetrics.account.domain.Account#setExpenses/1@64",
+        "io.spring2go.piggymetrics.account.domain.Account#setIncomes/1@56",
+        "io.spring2go.piggymetrics.account.domain.Account#setLastSeen/1@48",
+        "io.spring2go.piggymetrics.account.domain.Account#setNote/1@80",
+        "io.spring2go.piggymetrics.account.domain.Account#setSaving/1@72",
+        "io.spring2go.piggymetrics.account.repository.AccountRepository#findByName/1@10"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "StatisticsServiceStatisticsServiceImpl",
+          "operation": "StatisticsServiceStatisticsServiceImplSave",
+          "java_method": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56"
+        }
+      ]
+    },
+    {
+      "id": "NotificationServiceEmailServiceImplSend",
+      "service": "NotificationServiceEmailServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.EmailServiceImpl#send/3@38",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/EmailServiceImpl.java",
+      "line": 38,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.domain.NotificationType#getAttachment/0@26",
+        "io.spring2go.piggymetrics.notification.domain.NotificationType#getSubject/0@18",
+        "io.spring2go.piggymetrics.notification.domain.NotificationType#getText/0@22",
+        "io.spring2go.piggymetrics.notification.domain.Recipient#getAccountName/0@24",
+        "io.spring2go.piggymetrics.notification.domain.Recipient#getEmail/0@32"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "NotificationServiceNotificationServiceImplSendBackupNotifications",
+      "service": "NotificationServiceNotificationServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl#sendBackupNotifications/0@33",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/NotificationServiceImpl.java",
+      "line": 33,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "AccountServiceAccount",
+        "NotificationServiceNotificationSettings",
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.client.AccountServiceClient#getAccount/1@16",
+        "io.spring2go.piggymetrics.notification.service.EmailService#send/3@11",
+        "io.spring2go.piggymetrics.notification.service.RecipientService#findReadyToNotify/1@25",
+        "io.spring2go.piggymetrics.notification.service.RecipientService#markNotified/2@43"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "AccountServiceAccountServiceImpl",
+          "operation": "AccountServiceAccountServiceImplFindByName",
+          "java_method": "io.spring2go.piggymetrics.account.service.AccountServiceImpl#findByName/1@39"
+        },
+        {
+          "service": "NotificationServiceEmailServiceImpl",
+          "operation": "NotificationServiceEmailServiceImplSend",
+          "java_method": "io.spring2go.piggymetrics.notification.service.EmailServiceImpl#send/3@38"
+        },
+        {
+          "service": "NotificationServiceRecipientServiceImpl",
+          "operation": "NotificationServiceRecipientServiceImplFindReadyToNotify",
+          "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findReadyToNotify/1@59"
+        },
+        {
+          "service": "NotificationServiceRecipientServiceImpl",
+          "operation": "NotificationServiceRecipientServiceImplMarkNotified",
+          "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79"
+        }
+      ]
+    },
+    {
+      "id": "NotificationServiceNotificationServiceImplSendRemindNotifications",
+      "service": "NotificationServiceNotificationServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.NotificationServiceImpl#sendRemindNotifications/0@54",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/NotificationServiceImpl.java",
+      "line": 54,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "NotificationServiceNotificationSettings",
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.service.EmailService#send/3@11",
+        "io.spring2go.piggymetrics.notification.service.RecipientService#findReadyToNotify/1@25",
+        "io.spring2go.piggymetrics.notification.service.RecipientService#markNotified/2@43"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "NotificationServiceEmailServiceImpl",
+          "operation": "NotificationServiceEmailServiceImplSend",
+          "java_method": "io.spring2go.piggymetrics.notification.service.EmailServiceImpl#send/3@38"
+        },
+        {
+          "service": "NotificationServiceRecipientServiceImpl",
+          "operation": "NotificationServiceRecipientServiceImplFindReadyToNotify",
+          "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findReadyToNotify/1@59"
+        },
+        {
+          "service": "NotificationServiceRecipientServiceImpl",
+          "operation": "NotificationServiceRecipientServiceImplMarkNotified",
+          "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79"
+        }
+      ]
+    },
+    {
+      "id": "NotificationServiceRecipientServiceImplFindByAccountName",
+      "service": "NotificationServiceRecipientServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findByAccountName/1@26",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/RecipientServiceImpl.java",
+      "line": 26,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findByAccountName/1@14"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "NotificationServiceRecipientServiceImplSave",
+      "service": "NotificationServiceRecipientServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#save/2@37",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/RecipientServiceImpl.java",
+      "line": 37,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "NotificationServiceNotificationSettings",
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.domain.Recipient#getScheduledNotifications/0@40",
+        "io.spring2go.piggymetrics.notification.domain.Recipient#setAccountName/1@28"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "NotificationServiceRecipientServiceImplFindReadyToNotify",
+      "service": "NotificationServiceRecipientServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#findReadyToNotify/1@59",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/RecipientServiceImpl.java",
+      "line": 59,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findReadyForBackup/0@19",
+        "io.spring2go.piggymetrics.notification.repository.RecipientRepository#findReadyForRemind/0@24"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "NotificationServiceRecipientServiceImplMarkNotified",
+      "service": "NotificationServiceRecipientServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/service/RecipientServiceImpl.java",
+      "line": 79,
+      "direct_entities": [
+        "NotificationServiceRecipient"
+      ],
+      "entities": [
+        "NotificationServiceNotificationSettings",
+        "NotificationServiceRecipient"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.notification.domain.Recipient#getScheduledNotifications/0@40"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "StatisticsServiceExchangeRatesServiceImplGetCurrentRates",
+      "service": "StatisticsServiceExchangeRatesServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/service/ExchangeRatesServiceImpl.java",
+      "line": 38,
+      "direct_entities": [
+        "StatisticsServiceExchangeRatesContainer"
+      ],
+      "entities": [
+        "StatisticsServiceExchangeRatesContainer"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClient#getRates/1@16",
+        "io.spring2go.piggymetrics.statistics.domain.Currency#getBase/0@7",
+        "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getDate/0@18",
+        "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer#getRates/0@34"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "StatisticsServiceExchangeRatesServiceImplConvert",
+      "service": "StatisticsServiceExchangeRatesServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#convert/3@69",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/service/ExchangeRatesServiceImpl.java",
+      "line": 69,
+      "direct_entities": [],
+      "entities": [
+        "StatisticsServiceExchangeRatesContainer"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "StatisticsServiceStatisticsServiceImplFindByAccountName",
+      "service": "StatisticsServiceStatisticsServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#findByAccountName/1@45",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/service/StatisticsServiceImpl.java",
+      "line": 45,
+      "direct_entities": [
+        "StatisticsServiceDataPoint",
+        "StatisticsServiceDataPointId"
+      ],
+      "entities": [
+        "StatisticsServiceDataPoint",
+        "StatisticsServiceDataPointId"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.statistics.repository.DataPointRepository#findByIdAccount/1@15"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "StatisticsServiceStatisticsServiceImplSave",
+      "service": "StatisticsServiceStatisticsServiceImpl",
+      "java_method": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/service/StatisticsServiceImpl.java",
+      "line": 56,
+      "direct_entities": [
+        "StatisticsServiceAccount",
+        "StatisticsServiceDataPoint",
+        "StatisticsServiceDataPointId",
+        "StatisticsServiceItemMetric"
+      ],
+      "entities": [
+        "StatisticsServiceAccount",
+        "StatisticsServiceDataPoint",
+        "StatisticsServiceDataPointId",
+        "StatisticsServiceExchangeRatesContainer",
+        "StatisticsServiceItem",
+        "StatisticsServiceItemMetric",
+        "StatisticsServiceSaving"
+      ],
+      "calls": [
+        "io.spring2go.piggymetrics.statistics.domain.Account#getExpenses/0@35",
+        "io.spring2go.piggymetrics.statistics.domain.Account#getIncomes/0@27",
+        "io.spring2go.piggymetrics.statistics.domain.Account#getSaving/0@43",
+        "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setExpenses/1@49",
+        "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setId/1@33",
+        "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setIncomes/1@41",
+        "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setRates/1@65",
+        "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint#setStatistics/1@57",
+        "io.spring2go.piggymetrics.statistics.service.ExchangeRatesService#getCurrentRates/0@16",
+        "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "StatisticsServiceExchangeRatesServiceImpl",
+          "operation": "StatisticsServiceExchangeRatesServiceImplConvert",
+          "java_method": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#convert/3@69"
+        },
+        {
+          "service": "StatisticsServiceExchangeRatesServiceImpl",
+          "operation": "StatisticsServiceExchangeRatesServiceImplGetCurrentRates",
+          "java_method": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "AccountServiceAccount",
+      "java_class": "io.spring2go.piggymetrics.account.domain.Account",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/domain/Account.java",
+      "fields": [
+        {
+          "name": "name",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "lastSeen",
+          "java_type": "Date",
+          "java_type_arguments": [
+            "java.util.Date"
+          ],
+          "model_type": "Date",
+          "entity_references": []
+        },
+        {
+          "name": "incomes",
+          "java_type": "List",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.account.domain.Item",
+            "java.util.List"
+          ],
+          "model_type": "AccountServiceItem",
+          "entity_references": [
+            "AccountServiceItem"
+          ]
+        },
+        {
+          "name": "expenses",
+          "java_type": "List",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.account.domain.Item",
+            "java.util.List"
+          ],
+          "model_type": "AccountServiceItem",
+          "entity_references": [
+            "AccountServiceItem"
+          ]
+        },
+        {
+          "name": "saving",
+          "java_type": "Saving",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.account.domain.Saving"
+          ],
+          "model_type": "AccountServiceSaving",
+          "entity_references": [
+            "AccountServiceSaving"
+          ]
+        },
+        {
+          "name": "note",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "AccountServiceItem",
+      "java_class": "io.spring2go.piggymetrics.account.domain.Item",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/domain/Item.java",
+      "fields": [
+        {
+          "name": "title",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "amount",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        },
+        {
+          "name": "currency",
+          "java_type": "Currency",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.account.domain.Currency"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "period",
+          "java_type": "TimePeriod",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.account.domain.TimePeriod"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "icon",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "AccountServiceSaving",
+      "java_class": "io.spring2go.piggymetrics.account.domain.Saving",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/domain/Saving.java",
+      "fields": [
+        {
+          "name": "amount",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        },
+        {
+          "name": "currency",
+          "java_type": "Currency",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.account.domain.Currency"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "interest",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        },
+        {
+          "name": "deposit",
+          "java_type": "Boolean",
+          "java_type_arguments": [
+            "Boolean"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "capitalization",
+          "java_type": "Boolean",
+          "java_type_arguments": [
+            "Boolean"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "AccountServiceUser",
+      "java_class": "io.spring2go.piggymetrics.account.domain.User",
+      "path": "account-service/src/main/java/io/spring2go/piggymetrics/account/domain/User.java",
+      "fields": [
+        {
+          "name": "username",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "password",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "NotificationServiceNotificationSettings",
+      "java_class": "io.spring2go.piggymetrics.notification.domain.NotificationSettings",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/domain/NotificationSettings.java",
+      "fields": [
+        {
+          "name": "active",
+          "java_type": "Boolean",
+          "java_type_arguments": [
+            "Boolean"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "frequency",
+          "java_type": "Frequency",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.notification.domain.Frequency"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "lastNotified",
+          "java_type": "Date",
+          "java_type_arguments": [
+            "java.util.Date"
+          ],
+          "model_type": "Date",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "NotificationServiceRecipient",
+      "java_class": "io.spring2go.piggymetrics.notification.domain.Recipient",
+      "path": "notification-service/src/main/java/io/spring2go/piggymetrics/notification/domain/Recipient.java",
+      "fields": [
+        {
+          "name": "accountName",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "email",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "scheduledNotifications",
+          "java_type": "Map",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.notification.domain.NotificationSettings",
+            "io.spring2go.piggymetrics.notification.domain.NotificationType",
+            "java.util.Map"
+          ],
+          "model_type": "NotificationServiceNotificationSettings",
+          "entity_references": [
+            "NotificationServiceNotificationSettings"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceAccount",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.Account",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/Account.java",
+      "fields": [
+        {
+          "name": "incomes",
+          "java_type": "List",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Item",
+            "java.util.List"
+          ],
+          "model_type": "StatisticsServiceItem",
+          "entity_references": [
+            "StatisticsServiceItem"
+          ]
+        },
+        {
+          "name": "expenses",
+          "java_type": "List",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Item",
+            "java.util.List"
+          ],
+          "model_type": "StatisticsServiceItem",
+          "entity_references": [
+            "StatisticsServiceItem"
+          ]
+        },
+        {
+          "name": "saving",
+          "java_type": "Saving",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Saving"
+          ],
+          "model_type": "StatisticsServiceSaving",
+          "entity_references": [
+            "StatisticsServiceSaving"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceExchangeRatesContainer",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.ExchangeRatesContainer",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/ExchangeRatesContainer.java",
+      "fields": [
+        {
+          "name": "date",
+          "java_type": "LocalDate",
+          "java_type_arguments": [
+            "java.time.LocalDate"
+          ],
+          "model_type": "Date",
+          "entity_references": []
+        },
+        {
+          "name": "base",
+          "java_type": "Currency",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Currency"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "rates",
+          "java_type": "Map",
+          "java_type_arguments": [
+            "String",
+            "java.math.BigDecimal",
+            "java.util.Map"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceItem",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.Item",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/Item.java",
+      "fields": [
+        {
+          "name": "title",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "amount",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        },
+        {
+          "name": "currency",
+          "java_type": "Currency",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Currency"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "period",
+          "java_type": "TimePeriod",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.TimePeriod"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceSaving",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.Saving",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/Saving.java",
+      "fields": [
+        {
+          "name": "amount",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        },
+        {
+          "name": "currency",
+          "java_type": "Currency",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Currency"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "interest",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        },
+        {
+          "name": "deposit",
+          "java_type": "Boolean",
+          "java_type_arguments": [
+            "Boolean"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "capitalization",
+          "java_type": "Boolean",
+          "java_type_arguments": [
+            "Boolean"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceDataPoint",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPoint",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/timeseries/DataPoint.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "DataPointId",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId"
+          ],
+          "model_type": "StatisticsServiceDataPointId",
+          "entity_references": [
+            "StatisticsServiceDataPointId"
+          ]
+        },
+        {
+          "name": "incomes",
+          "java_type": "Set",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric",
+            "java.util.Set"
+          ],
+          "model_type": "StatisticsServiceItemMetric",
+          "entity_references": [
+            "StatisticsServiceItemMetric"
+          ]
+        },
+        {
+          "name": "expenses",
+          "java_type": "Set",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric",
+            "java.util.Set"
+          ],
+          "model_type": "StatisticsServiceItemMetric",
+          "entity_references": [
+            "StatisticsServiceItemMetric"
+          ]
+        },
+        {
+          "name": "statistics",
+          "java_type": "Map",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.timeseries.StatisticMetric",
+            "java.math.BigDecimal",
+            "java.util.Map"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "rates",
+          "java_type": "Map",
+          "java_type_arguments": [
+            "io.spring2go.piggymetrics.statistics.domain.Currency",
+            "java.math.BigDecimal",
+            "java.util.Map"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceDataPointId",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.timeseries.DataPointId",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/timeseries/DataPointId.java",
+      "fields": [
+        {
+          "name": "account",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "date",
+          "java_type": "Date",
+          "java_type_arguments": [
+            "java.util.Date"
+          ],
+          "model_type": "Date",
+          "entity_references": []
+        }
+      ]
+    },
+    {
+      "entity": "StatisticsServiceItemMetric",
+      "java_class": "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric",
+      "path": "statistics-service/src/main/java/io/spring2go/piggymetrics/statistics/domain/timeseries/ItemMetric.java",
+      "fields": [
+        {
+          "name": "title",
+          "java_type": "String",
+          "java_type_arguments": [
+            "String"
+          ],
+          "model_type": "String",
+          "entity_references": []
+        },
+        {
+          "name": "amount",
+          "java_type": "BigDecimal",
+          "java_type_arguments": [
+            "java.math.BigDecimal"
+          ],
+          "model_type": "Real",
+          "entity_references": []
+        }
+      ]
+    }
+  ],
+  "feign_routes": [
+    {
+      "method": "io.spring2go.piggymetrics.account.client.StatisticsServiceClient#updateStatistics/2@16",
+      "target_module": "statistics-service",
+      "verb": "PUT",
+      "path": "/statistics/{accountName}",
+      "controller_targets": [
+        "io.spring2go.piggymetrics.statistics.controller.StatisticsController#saveAccountStatistics/2@29"
+      ]
+    },
+    {
+      "method": "io.spring2go.piggymetrics.account.client.UserServiceClient#createUser/2@15",
+      "target_module": "user-service-client",
+      "verb": "POST",
+      "path": "/v1/user/create",
+      "controller_targets": []
+    },
+    {
+      "method": "io.spring2go.piggymetrics.notification.client.AccountServiceClient#getAccount/1@16",
+      "target_module": "account-service",
+      "verb": "GET",
+      "path": "/accounts/{accountName}",
+      "controller_targets": [
+        "io.spring2go.piggymetrics.account.controller.AccountController#getAccountByName/1@18"
+      ]
+    },
+    {
+      "method": "io.spring2go.piggymetrics.statistics.client.ExchangeRatesClient#getRates/1@16",
+      "target_module": "rates-client",
+      "verb": "GET",
+      "path": "/latest",
+      "controller_targets": []
+    }
+  ],
+  "unresolved_project_calls": [
+    {
+      "caller": "io.spring2go.cathelper.CatRestInterceptor#intercept/3@19",
+      "receiver": "io.spring2go.cathelper.CatRestInterceptor",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.cathelper.CatRestInterceptor#intercept/3@19",
+      "receiver": "io.spring2go.cathelper.CatRestInterceptor",
+      "member": "logError",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.cathelper.CatServletFilter#init/1@17",
+      "receiver": "io.spring2go.cathelper.CatServletFilter",
+      "member": "trim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.cathelper.CatServletFilter#doFilter/3@29",
+      "receiver": "io.spring2go.cathelper.CatServletFilter",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.cathelper.CatServletFilter#doFilter/3@29",
+      "receiver": "io.spring2go.cathelper.CatServletFilter",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.account.service.AccountServiceImpl#create/1@51",
+      "receiver": "io.spring2go.piggymetrics.account.repository.AccountRepository",
+      "member": "save",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.account.service.AccountServiceImpl#saveChanges/2@82",
+      "receiver": "io.spring2go.piggymetrics.account.repository.AccountRepository",
+      "member": "save",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#shouldFilter/0@37",
+      "receiver": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter",
+      "member": "getMethod",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#shouldFilter/0@37",
+      "receiver": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#run/0@64",
+      "receiver": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter",
+      "member": "getHeader",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter#run/0@64",
+      "receiver": "io.spring2go.piggymetrics.gateway.filter.ValidateTokenFilter",
+      "member": "getBody",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.domain.Frequency#withDays/1@19",
+      "receiver": "io.spring2go.piggymetrics.notification.domain.Frequency",
+      "member": "filter",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.domain.Frequency#withDays/1@19",
+      "receiver": "io.spring2go.piggymetrics.notification.domain.Frequency",
+      "member": "findFirst",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.domain.Frequency#withDays/1@19",
+      "receiver": "io.spring2go.piggymetrics.notification.domain.Frequency",
+      "member": "orElseThrow",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.domain.Frequency#withDays/1@19",
+      "receiver": "io.spring2go.piggymetrics.notification.domain.Frequency",
+      "member": "values",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#save/2@37",
+      "receiver": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl",
+      "member": "values",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#save/2@37",
+      "receiver": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl",
+      "member": "forEach",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#save/2@37",
+      "receiver": "io.spring2go.piggymetrics.notification.repository.RecipientRepository",
+      "member": "save",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79",
+      "receiver": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79",
+      "receiver": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl",
+      "member": "setLastNotified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.notification.service.RecipientServiceImpl#markNotified/2@79",
+      "receiver": "io.spring2go.piggymetrics.notification.repository.RecipientRepository",
+      "member": "save",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric#equals/1@32",
+      "receiver": "io.spring2go.piggymetrics.statistics.domain.timeseries.ItemMetric",
+      "member": "getClass",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl",
+      "member": "logError",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "receiver": "io.spring2go.piggymetrics.statistics.domain.Currency",
+      "member": "name",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#getCurrentRates/0@38",
+      "receiver": "io.spring2go.piggymetrics.statistics.domain.Currency",
+      "member": "name",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl#convert/3@69",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.ExchangeRatesServiceImpl",
+      "member": "divide",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "atStartOfDay",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "atZone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "toInstant",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "stream",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "map",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "collect",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "stream",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "map",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "collect",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#save/2@56",
+      "receiver": "io.spring2go.piggymetrics.statistics.repository.DataPointRepository",
+      "member": "save",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "map",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "reduce",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "map",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createStatisticMetrics/3@85",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "reduce",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createItemMetric/1@108",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "divide",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl#createItemMetric/1@108",
+      "receiver": "io.spring2go.piggymetrics.statistics.service.StatisticsServiceImpl",
+      "member": "getBaseRatio",
+      "reason": "inherited/generated/unsupported overload"
+    }
+  ],
+  "model_sha256": "88bcf174ce5a8d9c719dda60f8f9f3380005c52064b48bd5b213c5bb0cec7af2",
+  "zero_entity_services": [],
+  "zero_entity_operations": [],
+  "entity_relationship_policy": "Module-qualified non-enum domain classes. Direct and generic entity-typed fields are represented as associations; scalar IDs are not inferred as foreign keys. Enums remain scalar attributes. Duplicate document DTOs across modules remain separate Java input units.",
+  "usecase_policy": "One Spring @Service class is one use-case proxy; all its public non-static methods are operations. Existing module boundary is not a clustering constraint. Module roles are actor proxies.",
+  "method_graph_policy": "Declared receiver types, this.field selectors, interface-to-implementation expansion, method name/arity; Feign app name/HTTP method/path to Controller route; Mongo/domain types, CrudRepository generic types, and monotonic entity reachability. Method calls inside lambdas are included statically; runtime scheduling and chained return type inference are incomplete. No reflection/runtime dispatch/library implementation modeling.",
+  "seconds": 0.3591999589698389
+}

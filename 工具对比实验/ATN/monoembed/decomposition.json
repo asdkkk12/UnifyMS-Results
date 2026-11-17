@@ -1,0 +1,57 @@
+{
+  "application": "ATM",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/monoembed/input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "ATM.service.AutomatedTellerMachineSystem"
+      ],
+      "service_names": [
+        "AutomatedTellerMachineSystem"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "ATM.service.ManageUserCRUDService"
+      ],
+      "service_names": [
+        "ManageUserCRUDService"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "ATM.service.ThirdPartyServices"
+      ],
+      "service_names": [
+        "ThirdPartyServices"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "ATM.service.withdrawCash",
+        "ATM.service.ManageBankCardCRUDService",
+        "ATM.domain.BankCard",
+        "ATM.domain.User"
+      ],
+      "service_names": [
+        "withdrawCash",
+        "ManageBankCardCRUDService",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

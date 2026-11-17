@@ -1,0 +1,83 @@
+{
+  "application": "Library",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/monoembed/input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "Library.service.ThirdPartServices"
+      ],
+      "service_names": [
+        "ThirdPartServices"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "Library.service.LibraryManagementSystem",
+        "Library.service.ListBookHistory",
+        "Library.service.ManageUserCRUDService",
+        "Library.domain.User",
+        "Library.domain.Student",
+        "Library.domain.Faculty",
+        "Library.domain.Loan",
+        "Library.domain.Reserve",
+        "Library.domain.RecommendBook"
+      ],
+      "service_names": [
+        "LibraryManagementSystem",
+        "ListBookHistory",
+        "ManageUserCRUDService",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "Library.service.SearchBook",
+        "Library.service.ManageBookCRUDService",
+        "Library.service.ManageSubjectCRUDService",
+        "Library.service.ManageBookCopyCRUDService",
+        "Library.domain.Book",
+        "Library.domain.Subject",
+        "Library.domain.BookCopy"
+      ],
+      "service_names": [
+        "SearchBook",
+        "ManageBookCRUDService",
+        "ManageSubjectCRUDService",
+        "ManageBookCopyCRUDService",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "Library.service.ManageLibrarianCRUDService",
+        "Library.domain.Administrator",
+        "Library.domain.Librarian"
+      ],
+      "service_names": [
+        "ManageLibrarianCRUDService",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

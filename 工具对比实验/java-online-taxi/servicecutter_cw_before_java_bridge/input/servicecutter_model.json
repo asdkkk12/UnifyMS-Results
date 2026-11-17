@@ -1,0 +1,184 @@
+{
+  "name": "JAVA_ONLINE_TAXI_AST",
+  "entities": [
+    {
+      "name": "Car",
+      "nanoentities": [
+        "id",
+        "address",
+        "vehicleNo",
+        "plateColor",
+        "seats",
+        "brand",
+        "model",
+        "vehicleType",
+        "ownerName",
+        "vehicleColor",
+        "engineId",
+        "vin",
+        "certifyDateA",
+        "fueType",
+        "engineDisplace",
+        "transAgency",
+        "transArea",
+        "transDateStart",
+        "transDateEnd",
+        "certifyDateB",
+        "fixState",
+        "nextFixDate",
+        "checkState",
+        "feePrintId",
+        "gpsBrand",
+        "gpsModel",
+        "gpsInstallDate",
+        "registerDate",
+        "commercialType",
+        "fareType",
+        "state",
+        "tid",
+        "trid",
+        "trname",
+        "gmtCreate",
+        "gmtModified"
+      ]
+    },
+    {
+      "name": "DicDistrict",
+      "nanoentities": [
+        "addressCode",
+        "addressName",
+        "parentAddressCode",
+        "level"
+      ]
+    },
+    {
+      "name": "DriverCarBindingRelationship",
+      "nanoentities": [
+        "id",
+        "driverId",
+        "carId",
+        "bindState",
+        "bindingTime",
+        "unBindingTime"
+      ]
+    },
+    {
+      "name": "DriverUser",
+      "nanoentities": [
+        "id",
+        "address",
+        "driverName",
+        "driverPhone",
+        "driverGender",
+        "driverBirthday",
+        "driverNation",
+        "driverContactAddress",
+        "licenseId",
+        "getDriverLicenseDate",
+        "driverLicenseOn",
+        "driverLicenseOff",
+        "taxiDriver",
+        "certificateNo",
+        "networkCarIssueOrganization",
+        "networkCarIssueDate",
+        "getNetworkCarProofDate",
+        "networkCarProofOn",
+        "networkCarProofOff",
+        "registerDate",
+        "commercialType",
+        "contractCompany",
+        "contractOn",
+        "contractOff",
+        "state",
+        "gmtCreate",
+        "gmtModified"
+      ]
+    },
+    {
+      "name": "DriverUserWorkStatus",
+      "nanoentities": [
+        "id",
+        "driverId",
+        "workStatus",
+        "gmtCreate",
+        "gmtModified"
+      ]
+    },
+    {
+      "name": "PassengerUser",
+      "nanoentities": [
+        "id",
+        "gmtCreate",
+        "gmtModified",
+        "passengerPhone",
+        "passengerName",
+        "passengerGender",
+        "state",
+        "profilePhoto"
+      ]
+    },
+    {
+      "name": "PriceRule",
+      "nanoentities": [
+        "cityCode",
+        "vehicleType",
+        "startFare",
+        "startMile",
+        "unitPricePerMile",
+        "unitPricePerMinute",
+        "fareVersion",
+        "fareType"
+      ]
+    },
+    {
+      "name": "OrderInfo",
+      "nanoentities": [
+        "id",
+        "passengerId",
+        "passengerPhone",
+        "driverId",
+        "driverPhone",
+        "carId",
+        "vehicleType",
+        "address",
+        "orderTime",
+        "departTime",
+        "departure",
+        "depLongitude",
+        "depLatitude",
+        "destination",
+        "destLongitude",
+        "destLatitude",
+        "encrypt",
+        "fareType",
+        "fareVersion",
+        "receiveOrderCarLongitude",
+        "receiveOrderCarLatitude",
+        "receiveOrderTime",
+        "licenseId",
+        "vehicleNo",
+        "toPickUpPassengerTime",
+        "toPickUpPassengerLongitude",
+        "toPickUpPassengerLatitude",
+        "toPickUpPassengerAddress",
+        "driverArrivedDepartureTime",
+        "pickUpPassengerTime",
+        "pickUpPassengerLongitude",
+        "pickUpPassengerLatitude",
+        "passengerGetoffTime",
+        "passengerGetoffLongitude",
+        "passengerGetoffLatitude",
+        "cancelTime",
+        "cancelOperator",
+        "cancelTypeCode",
+        "driveMile",
+        "driveTime",
+        "orderStatus",
+        "price",
+        "gmtCreate",
+        "gmtModified"
+      ]
+    }
+  ],
+  "relations": []
+}

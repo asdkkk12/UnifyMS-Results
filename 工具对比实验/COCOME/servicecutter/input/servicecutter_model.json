@@ -1,0 +1,225 @@
+{
+  "name": "COCOME",
+  "entities": [
+    {
+      "name": "Store",
+      "nanoentities": [
+        "address",
+        "associationcashdeskes",
+        "boolean",
+        "cashdesk",
+        "cashier",
+        "cashiers",
+        "id",
+        "integer",
+        "isopened",
+        "item",
+        "items",
+        "name",
+        "productcatalog",
+        "productcatalogs",
+        "sale",
+        "sales",
+        "string"
+      ]
+    },
+    {
+      "name": "ProductCatalog",
+      "nanoentities": [
+        "containeditems",
+        "id",
+        "integer",
+        "item",
+        "name",
+        "string"
+      ]
+    },
+    {
+      "name": "CashDesk",
+      "nanoentities": [
+        "belongedstore",
+        "boolean",
+        "containedsales",
+        "id",
+        "integer",
+        "isopened",
+        "name",
+        "sale",
+        "store",
+        "string"
+      ]
+    },
+    {
+      "name": "Sale",
+      "nanoentities": [
+        "amount",
+        "assoicatedpayment",
+        "belongedcashdesk",
+        "belongedstore",
+        "boolean",
+        "cashdesk",
+        "containedsalesline",
+        "iscomplete",
+        "isreadytopay",
+        "payment",
+        "real",
+        "saleslineitem",
+        "store"
+      ]
+    },
+    {
+      "name": "Cashier",
+      "nanoentities": [
+        "id",
+        "integer",
+        "name",
+        "store",
+        "string",
+        "workedstore"
+      ]
+    },
+    {
+      "name": "SalesLineItem",
+      "nanoentities": [
+        "belongeditem",
+        "belongedsale",
+        "integer",
+        "item",
+        "quantity",
+        "real",
+        "sale",
+        "subamount"
+      ]
+    },
+    {
+      "name": "Item",
+      "nanoentities": [
+        "barcode",
+        "belongedcatalog",
+        "integer",
+        "name",
+        "orderprice",
+        "price",
+        "productcatalog",
+        "real",
+        "stocknumber",
+        "string"
+      ]
+    },
+    {
+      "name": "Payment",
+      "nanoentities": [
+        "amounttendered",
+        "belongedsale",
+        "real",
+        "sale"
+      ]
+    },
+    {
+      "name": "CashPayment",
+      "nanoentities": [
+        "balance",
+        "payment",
+        "real"
+      ]
+    },
+    {
+      "name": "CardPayment",
+      "nanoentities": [
+        "cardaccountnumber",
+        "payment",
+        "string"
+      ]
+    },
+    {
+      "name": "OrderEntry",
+      "nanoentities": [
+        "integer",
+        "item",
+        "quantity",
+        "real",
+        "subamount"
+      ]
+    },
+    {
+      "name": "Supplier",
+      "nanoentities": [
+        "id",
+        "integer",
+        "name",
+        "string"
+      ]
+    },
+    {
+      "name": "OrderProduct",
+      "nanoentities": [
+        "amount",
+        "containedentries",
+        "date",
+        "id",
+        "integer",
+        "orderentry",
+        "real",
+        "supplier",
+        "time"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "origin": "CashDesk",
+      "destination": "Store",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Sale",
+      "destination": "Store",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Sale",
+      "destination": "CashDesk",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Sale",
+      "destination": "Payment",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Cashier",
+      "destination": "Store",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "SalesLineItem",
+      "destination": "Sale",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "SalesLineItem",
+      "destination": "Item",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Item",
+      "destination": "ProductCatalog",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Payment",
+      "destination": "Sale",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "OrderEntry",
+      "destination": "Item",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "OrderProduct",
+      "destination": "Supplier",
+      "type": "AGGREGATION"
+    }
+  ]
+}

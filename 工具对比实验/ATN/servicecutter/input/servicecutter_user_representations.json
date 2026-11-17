@@ -1,0 +1,55 @@
+{
+  "useCases": [
+    {
+      "name": "withdrawCash",
+      "nanoentitiesRead": [
+        "BankCard.balance"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "checkBalance",
+      "nanoentitiesRead": [
+        "BankCard.balance"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "depositFunds",
+      "nanoentitiesRead": [
+        "BankCard.balance"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "manageBankCard",
+      "nanoentitiesRead": [
+        "BankCard.balance"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "manageUser",
+      "nanoentitiesRead": [
+        "User.address"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "cardIdentification",
+      "nanoentitiesRead": [
+        "BankCard.balance"
+      ],
+      "nanoentitiesWritten": []
+    }
+  ],
+  "compatibilities": {},
+  "sharedOwnerGroups": [
+    {
+      "name": "Customer",
+      "nanoentities": [
+        "BankCard.balance"
+      ]
+    }
+  ]
+}

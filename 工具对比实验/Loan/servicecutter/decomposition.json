@@ -1,0 +1,132 @@
+{
+  "method": "ServiceCutter",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "ServiceCutter entity/nanoentity clusters are retained as the decomposition.",
+    "Use-case responsibilities are mapped to remodel services by operation name.",
+    "Operations not present in ServiceCutter use-case responsibility are assigned to the largest cluster."
+  ],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "servicecutter.domain.ApprovalLetter",
+        "servicecutter.domain.Loan",
+        "servicecutter.domain.LoanAgreement",
+        "servicecutter.domain.LoanRequest",
+        "servicecutter.service.EnterValidatedCreditReferences",
+        "servicecutter.service.EvaluateLoanRequest",
+        "servicecutter.service.GenerateLoanLetterAndAgreement",
+        "servicecutter.service.LoanProcessingSystemSystem",
+        "servicecutter.service.ManageLoanTermCRUDService",
+        "servicecutter.service.SubmitLoanRequest",
+        "servicecutter.service.ThirdPartyServices"
+      ],
+      "servicecutter_nanoentities": [
+        "LoanAgreement.content",
+        "LoanAgreement.string",
+        "ApprovalLetter.content",
+        "LoanRequest.approvalloan",
+        "LoanRequest.attachedapprovalletter",
+        "LoanRequest.attachedloanagreement",
+        "LoanRequest.attachedloanterms",
+        "LoanRequest.checkingaccount",
+        "LoanRequest.checkingaccountnumber",
+        "LoanRequest.credithistory",
+        "LoanRequest.creditreferences",
+        "LoanRequest.creditscore",
+        "LoanRequest.email",
+        "LoanRequest.income",
+        "LoanRequest.integer",
+        "LoanRequest.loan",
+        "LoanRequest.loanagreement",
+        "LoanRequest.loanamount",
+        "LoanRequest.loanpurpose",
+        "LoanRequest.loanrequesttatus",
+        "LoanRequest.loanterm",
+        "LoanRequest.name",
+        "LoanRequest.phonenumber",
+        "LoanRequest.postaladdress",
+        "LoanRequest.real",
+        "LoanRequest.requestedcahistory",
+        "LoanRequest.requestedcredithistory",
+        "LoanRequest.requestid",
+        "LoanRequest.securitynumber",
+        "LoanRequest.status",
+        "LoanRequest.string",
+        "LoanRequest.workreferences",
+        "LoanRequest.zipcode",
+        "ApprovalLetter.string",
+        "Loan.belongedloanaccount",
+        "Loan.boolean",
+        "Loan.currentoverduedate",
+        "Loan.date",
+        "Loan.enddate",
+        "Loan.integer",
+        "Loan.ispaidinfull",
+        "Loan.loanaccount",
+        "Loan.loanid",
+        "Loan.loanrequest",
+        "Loan.loanstatus",
+        "Loan.real",
+        "Loan.referedloanrequest",
+        "Loan.remainamounttopay",
+        "Loan.repaymentamount",
+        "Loan.repaymentdays",
+        "Loan.startdate",
+        "LoanRequest.approvalletter",
+        "Loan.status"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "LoanTerm.content"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [
+        "servicecutter.domain.LoanTerm"
+      ],
+      "servicecutter_nanoentities": [
+        "LoanTerm.integer",
+        "LoanTerm.itemid",
+        "LoanTerm.string"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [
+        "servicecutter.domain.LoanAccount"
+      ],
+      "servicecutter_nanoentities": [
+        "LoanAccount.balance",
+        "LoanAccount.integer",
+        "LoanAccount.loanaccountid",
+        "LoanAccount.loanaccountstatus",
+        "LoanAccount.real",
+        "LoanAccount.status"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [
+        "servicecutter.domain.CheckingAccount",
+        "servicecutter.domain.CreditHistory"
+      ],
+      "servicecutter_nanoentities": [
+        "CreditHistory.baddebits",
+        "CreditHistory.integer",
+        "CreditHistory.outstandingdebt",
+        "CreditHistory.real",
+        "CheckingAccount.balance",
+        "CheckingAccount.checkingaccountstatus",
+        "CheckingAccount.real",
+        "CheckingAccount.status"
+      ]
+    }
+  ]
+}

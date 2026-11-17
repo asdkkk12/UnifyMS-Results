@@ -1,0 +1,3267 @@
+{
+  "schemaVersion": "merm-view-v1",
+  "name": "light-reading",
+  "input": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/light-reading-guidance-loss05-isolated0-10seeds-20261110/report/visualizations/seed-113/light-reading.req",
+  "inputHash": "1984bb85b47c1580656de1708a6c965056beb9154a66cd61e6f3cebe2969f917",
+  "metadata": {
+    "inputHash": "ea351f34e84f80608396be88552199eaadf18e39a5778f1738b8adbd4cc49530",
+    "runHash": "6b53f4d3e3a1f80bb388c71bee5dfb77e1172dd233ea02b94c0962a5dbe05612",
+    "snapshotHash": "9570fd41857ba222dd2c51653e4296495d21267ee5abe7866663a06eea2a3d5e",
+    "taskKey": "c9d930c09f949e987c26aea69e05109cd6813e258abefc5cb135b32c5c095dce",
+    "configId": "C3",
+    "seed": "113",
+    "exportVersion": "merm-export-v1"
+  },
+  "services": [
+    {
+      "id": "service-0",
+      "key": "0",
+      "name": "Microservice 0",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.0",
+      "entityContext": "/0/@DomainModel/@entitycontext.0"
+    },
+    {
+      "id": "service-1",
+      "key": "1",
+      "name": "Microservice 1",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.1",
+      "entityContext": "/0/@DomainModel/@entitycontext.1"
+    },
+    {
+      "id": "service-2",
+      "key": "2",
+      "name": "Microservice 2",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.2",
+      "entityContext": "/0/@DomainModel/@entitycontext.2"
+    },
+    {
+      "id": "service-3",
+      "key": "3",
+      "name": "Microservice 3",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.3",
+      "entityContext": "/0/@DomainModel/@entitycontext.3"
+    },
+    {
+      "id": "service-4",
+      "key": "4",
+      "name": "Microservice 4",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.4",
+      "entityContext": "/0/@DomainModel/@entitycontext.4"
+    },
+    {
+      "id": "service-5",
+      "key": "5",
+      "name": "Microservice 5",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.5",
+      "entityContext": "/0/@DomainModel/@entitycontext.5"
+    },
+    {
+      "id": "service-6",
+      "key": "6",
+      "name": "Microservice 6",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.6",
+      "entityContext": "/0/@DomainModel/@entitycontext.6"
+    },
+    {
+      "id": "service-7",
+      "key": "7",
+      "name": "Microservice 7",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.7",
+      "entityContext": "/0/@DomainModel/@entitycontext.7"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudAccountUserBookshelfServiceImpl",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudAccountUserBookshelfServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudAccountUserLikeSeeServiceImpl",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudAccountUserLikeSeeServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudAccountUserServiceImpl",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudAccountUserServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudBookBookChapterServiceImpl",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudBookBookChapterServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudBookBookServiceImpl",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudBookBookServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudBookDataDictionaryServiceImpl",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudBookDataDictionaryServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudHomepageBookCenterServiceImpl",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudHomepageBookCenterServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+      "kind": "uc",
+      "name": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageIndexBooklistItemServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.2",
+      "kind": "uc",
+      "name": "ReadingCloudHomepageIndexBooklistServiceImpl",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.2",
+        "attributes": {
+          "name": "ReadingCloudHomepageIndexBooklistServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.3",
+      "kind": "uc",
+      "name": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.3",
+        "attributes": {
+          "name": "ReadingCloudHomepageIndexPageConfigServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.7/@uc.0",
+      "kind": "uc",
+      "name": "ReadingCloudHomepageIndexBannerServiceImpl",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.7/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudHomepageIndexBannerServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.7/@uc.1",
+      "kind": "uc",
+      "name": "ReadingCloudHomepageSearchServiceImpl",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageSearchServiceImpl"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0",
+      "kind": "actor",
+      "name": "ReadingCloudAccountRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.0",
+        "attributes": {
+          "name": "ReadingCloudAccountRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1",
+      "kind": "actor",
+      "name": "ReadingCloudBookRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.1",
+        "attributes": {
+          "name": "ReadingCloudBookRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2",
+      "kind": "actor",
+      "name": "ReadingCloudHomepageRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.2",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudAccountUserBookshelfServiceImplGetUserBookshelf()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudAccountUserBookshelfServiceImplSyncUserBookshelf()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ReadingCloudAccountUserBookshelfServiceImplUserBookshelfExistBook()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findDataDictionarybyID()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "entity",
+      "name": "DataDictionary",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "DataDictionary"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "dicType",
+          "type": "String"
+        },
+        {
+          "name": "dicTypeName",
+          "type": "String"
+        },
+        {
+          "name": "code",
+          "type": "Integer"
+        },
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudAccountUserLikeSeeServiceImplGetUserLikeBookList()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ReadingCloudAccountUserLikeSeeServiceImplLikeSeeClick()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ReadingCloudAccountUserLikeSeeServiceImplUserLikeThisBook()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudAccountUserServiceImplLogin()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudAccountUserServiceImplLogout()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ReadingCloudAccountUserServiceImplRegister()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ReadingCloudAccountUserServiceImplUpdate()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "ReadingCloudAccountUserServiceImplUpdatePassword()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.4"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudBookBookChapterServiceImplGetBookChapterListByBookId()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudBookBookChapterServiceImplGetChapterById()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ReadingCloudBookBookChapterServiceImplReadChapter()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findUserbyID()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.1/@operation.0"
+        },
+        {
+          "name": "findUserLikeSeebyID()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.1/@operation.1"
+        },
+        {
+          "name": "findIndexBooklistbyID()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.1/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@entity.0",
+      "kind": "entity",
+      "name": "User",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@entity.0",
+        "attributes": {
+          "name": "User"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "uuid",
+          "type": "String"
+        },
+        {
+          "name": "userPwd",
+          "type": "String"
+        },
+        {
+          "name": "loginName",
+          "type": "String"
+        },
+        {
+          "name": "nickName",
+          "type": "String"
+        },
+        {
+          "name": "phoneNumber",
+          "type": "String"
+        },
+        {
+          "name": "headImgUrl",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@entity.1",
+      "kind": "entity",
+      "name": "UserLikeSee",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@entity.1",
+        "attributes": {
+          "name": "UserLikeSee"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "userId",
+          "type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@entity.2",
+      "kind": "entity",
+      "name": "IndexBooklist",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@entity.2",
+        "attributes": {
+          "name": "IndexBooklist"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "showNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "style",
+          "type": "Integer"
+        },
+        {
+          "name": "moreType",
+          "type": "Integer"
+        },
+        {
+          "name": "moreUrl",
+          "type": "String"
+        },
+        {
+          "name": "bookIds",
+          "type": "String"
+        },
+        {
+          "name": "startDate",
+          "type": "Date"
+        },
+        {
+          "name": "endDate",
+          "type": "Date"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        },
+        {
+          "name": "showLikeCount",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudBookBookServiceImplGetBookById()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudBookBookServiceImplGetBookDetails()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findBookbyID()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "entity",
+      "name": "Book",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "Book"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "authorId",
+          "type": "Integer"
+        },
+        {
+          "name": "dicCategory",
+          "type": "Integer"
+        },
+        {
+          "name": "dicChannel",
+          "type": "Integer"
+        },
+        {
+          "name": "dicSerialStatus",
+          "type": "Integer"
+        },
+        {
+          "name": "onlineStatus",
+          "type": "String"
+        },
+        {
+          "name": "bookId",
+          "type": "String"
+        },
+        {
+          "name": "bookName",
+          "type": "String"
+        },
+        {
+          "name": "bookScore",
+          "type": "Integer"
+        },
+        {
+          "name": "keyWord",
+          "type": "String"
+        },
+        {
+          "name": "imgUrl",
+          "type": "String"
+        },
+        {
+          "name": "authorName",
+          "type": "String"
+        },
+        {
+          "name": "introduction",
+          "type": "String"
+        },
+        {
+          "name": "isbn",
+          "type": "String"
+        },
+        {
+          "name": "wordCount",
+          "type": "Integer"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudBookDataDictionaryServiceImplGetDictionarys()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findUserBookshelfbyID()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@entity.0",
+      "kind": "entity",
+      "name": "UserBookshelf",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@entity.0",
+        "attributes": {
+          "name": "UserBookshelf"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "userId",
+          "type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "type": "String"
+        },
+        {
+          "name": "lastChapterId",
+          "type": "Integer"
+        },
+        {
+          "name": "lastReadTime",
+          "type": "Integer"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudHomepageBookCenterServiceImplGetBookById()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistExchange()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistOrderBooks()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistPagingBooks()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistById()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.5"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistVO()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.6"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexBooklistServiceImplGetRandomIndexBooklistVO()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.7"
+        },
+        {
+          "name": "ReadingCloudHomepageIndexPageConfigServiceImplGetIndexPageByType()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.8"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findBookChapterbyID()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@entity.0",
+      "kind": "entity",
+      "name": "BookChapter",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@entity.0",
+        "attributes": {
+          "name": "BookChapter"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "type": "Integer"
+        },
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "content",
+          "type": "String"
+        },
+        {
+          "name": "lockStatus",
+          "type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ReadingCloudHomepageIndexBannerServiceImplGetBannerVO()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ReadingCloudHomepageSearchServiceImplGetHotSearchWordList()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ReadingCloudHomepageSearchServiceImplGetSearchResultBooks()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findIndexBannerbyID()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.1/@operation.0"
+        },
+        {
+          "name": "findIndexBannerItembyID()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.1/@operation.1"
+        },
+        {
+          "name": "findIndexBooklistItembyID()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.1/@operation.2"
+        },
+        {
+          "name": "findIndexPageConfigbyID()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.1/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@entity.0",
+      "kind": "entity",
+      "name": "BookAuthor",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@entity.0",
+        "attributes": {
+          "name": "BookAuthor"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "introduction",
+          "type": "String"
+        },
+        {
+          "name": "headImgUrl",
+          "type": "String"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@entity.1",
+      "kind": "entity",
+      "name": "IndexBanner",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@entity.1",
+        "attributes": {
+          "name": "IndexBanner"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@entity.2",
+      "kind": "entity",
+      "name": "IndexBannerItem",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@entity.2",
+        "attributes": {
+          "name": "IndexBannerItem"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "bannerId",
+          "type": "Integer"
+        },
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "imgUrl",
+          "type": "String"
+        },
+        {
+          "name": "url",
+          "type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@entity.3",
+      "kind": "entity",
+      "name": "IndexBooklistItem",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@entity.3",
+        "attributes": {
+          "name": "IndexBooklistItem"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "booklistId",
+          "type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@entity.4",
+      "kind": "entity",
+      "name": "IndexPageConfig",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@entity.4",
+        "attributes": {
+          "name": "IndexPageConfig"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "pageType",
+          "type": "Integer"
+        },
+        {
+          "name": "itemType",
+          "type": "Integer"
+        },
+        {
+          "name": "itemId",
+          "type": "Integer"
+        },
+        {
+          "name": "startDate",
+          "type": "Date"
+        },
+        {
+          "name": "endDate",
+          "type": "Date"
+        },
+        {
+          "name": "sortNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createTime",
+          "type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "type": "Date"
+        },
+        {
+          "name": "updater",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.0",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofDataDictionary",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofDataDictionary",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.18"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.1",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofUser",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.15"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.2",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofUserLikeSee",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofUserLikeSee",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.19"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.3",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofIndexBooklist",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofIndexBooklist",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.23"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.4",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofBook",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.20"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.5",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofUserBookshelf",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofUserBookshelf",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.11"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.6",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofBookChapter",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofBookChapter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.17"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.7",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofIndexBanner",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofIndexBanner",
+          "entitycontext": "/0/@DomainModel/@entitycontext.7",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.21"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.8",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofIndexBannerItem",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.8",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofIndexBannerItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.7",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.22"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofIndexBooklistItem",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.9",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofIndexBooklistItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.7",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.24"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofIndexPageConfig",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.10",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofIndexPageConfig",
+          "entitycontext": "/0/@DomainModel/@entitycontext.7",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.25"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofUserBookshelf",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.11",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUserBookshelf",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofBook",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.12",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofUserLikeSee",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.13",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUserLikeSee",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofBook",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.14",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofUser",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.15",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofBook",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.16",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofBookChapter",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.17",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBookChapter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDataDictionary",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.18",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDataDictionary",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofUserLikeSee",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.19",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUserLikeSee",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.20",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofBook",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.20",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.21",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofIndexBanner",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.21",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBanner",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.22",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofIndexBannerItem",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.22",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBannerItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.8"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.23",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofIndexBooklist",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.23",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBooklist",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.24",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofIndexBooklistItem",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.24",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBooklistItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.9"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.25",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofIndexPageConfig",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.25",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexPageConfig",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.10"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    }
+  ],
+  "edges": [
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:0",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudAccountRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:1",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudAccountRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:2",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudAccountRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:3",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudBookRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:4",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudBookRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:5",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "ReadingCloudBookRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:6",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:7",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.7/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:8",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:9",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:10",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.3",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:11",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.7/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ReadingCloudHomepageRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.1 /0/@UseCaseModel/@usecasecontext.6/@uc.2 /0/@UseCaseModel/@usecasecontext.6/@uc.3 /0/@UseCaseModel/@usecasecontext.7/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11:provideinterface:12",
+      "source": "/0/@DomainModel/@systeminterface.11",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofUserBookshelf",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.11",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUserBookshelf",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12:provideinterface:13",
+      "source": "/0/@DomainModel/@systeminterface.12",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofBook",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.12",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13:provideinterface:14",
+      "source": "/0/@DomainModel/@systeminterface.13",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofUserLikeSee",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.13",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUserLikeSee",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14:provideinterface:15",
+      "source": "/0/@DomainModel/@systeminterface.14",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofBook",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.14",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15:provideinterface:16",
+      "source": "/0/@DomainModel/@systeminterface.15",
+      "target": "/0/@DomainModel/@systeminterface.1",
+      "kind": "interface",
+      "name": "ReceiveEntityofUser",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.15",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16:provideinterface:17",
+      "source": "/0/@DomainModel/@systeminterface.16",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofBook",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.16",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17:provideinterface:18",
+      "source": "/0/@DomainModel/@systeminterface.17",
+      "target": "/0/@DomainModel/@systeminterface.6",
+      "kind": "interface",
+      "name": "ReceiveEntityofBookChapter",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.17",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBookChapter",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18:provideinterface:19",
+      "source": "/0/@DomainModel/@systeminterface.18",
+      "target": "/0/@DomainModel/@systeminterface.0",
+      "kind": "interface",
+      "name": "ReceiveEntityofDataDictionary",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.18",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDataDictionary",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19:provideinterface:20",
+      "source": "/0/@DomainModel/@systeminterface.19",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofUserLikeSee",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.19",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofUserLikeSee",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.20:provideinterface:21",
+      "source": "/0/@DomainModel/@systeminterface.20",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofBook",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.20",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofBook",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.21:provideinterface:22",
+      "source": "/0/@DomainModel/@systeminterface.21",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofIndexBanner",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.21",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBanner",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.22:provideinterface:23",
+      "source": "/0/@DomainModel/@systeminterface.22",
+      "target": "/0/@DomainModel/@systeminterface.8",
+      "kind": "interface",
+      "name": "ReceiveEntityofIndexBannerItem",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.22",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.8",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBannerItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.8"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.23:provideinterface:24",
+      "source": "/0/@DomainModel/@systeminterface.23",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofIndexBooklist",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.23",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBooklist",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.24:provideinterface:25",
+      "source": "/0/@DomainModel/@systeminterface.24",
+      "target": "/0/@DomainModel/@systeminterface.9",
+      "kind": "interface",
+      "name": "ReceiveEntityofIndexBooklistItem",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.24",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.9",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexBooklistItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.9"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.25:provideinterface:26",
+      "source": "/0/@DomainModel/@systeminterface.25",
+      "target": "/0/@DomainModel/@systeminterface.10",
+      "kind": "interface",
+      "name": "ReceiveEntityofIndexPageConfig",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.25",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.10",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofIndexPageConfig",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.10"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "uc": 12,
+    "actor": 3,
+    "userinterface": 16,
+    "entity": 12,
+    "systeminterface": 26,
+    "services": 8,
+    "interfaceEdges": 15,
+    "serviceEdges": 11
+  },
+  "diagnostics": [],
+  "layout": {
+    "usecases": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.0": [
+          274,
+          252,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.1": [
+          274,
+          340,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.2": [
+          274,
+          428,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.3": [
+          274,
+          516,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@actor.2": [
+          56,
+          255,
+          145,
+          114
+        ],
+        "/0/@UseCaseModel/@usecasecontext.7/@uc.0": [
+          1064,
+          252,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.7/@uc.1": [
+          1064,
+          340,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0": [
+          1064,
+          648,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@actor.0": [
+          846,
+          651,
+          145,
+          114
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.0": [
+          274,
+          824,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.0": [
+          1064,
+          996,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.3/@uc.0": [
+          274,
+          1172,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@actor.1": [
+          56,
+          1175,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.0": [
+          1064,
+          1344,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.5/@uc.0": [
+          274,
+          1502,
+          380,
+          66
+        ]
+      },
+      "services": {
+        "service-6": [
+          234,
+          170,
+          460,
+          462
+        ],
+        "service-7": [
+          1024,
+          170,
+          460,
+          286
+        ],
+        "service-0": [
+          1024,
+          566,
+          460,
+          238
+        ],
+        "service-1": [
+          234,
+          742,
+          460,
+          238
+        ],
+        "service-2": [
+          1024,
+          914,
+          460,
+          238
+        ],
+        "service-3": [
+          234,
+          1090,
+          460,
+          220
+        ],
+        "service-4": [
+          1024,
+          1262,
+          460,
+          220
+        ],
+        "service-5": [
+          234,
+          1420,
+          460,
+          220
+        ]
+      },
+      "instances": [
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-6",
+          "box": [
+            56,
+            255,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-7",
+          "box": [
+            846,
+            255,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-0",
+          "box": [
+            846,
+            651,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-1",
+          "box": [
+            56,
+            827,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-2",
+          "box": [
+            846,
+            999,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-3",
+          "box": [
+            56,
+            1175,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-4",
+          "box": [
+            846,
+            1347,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-5",
+          "box": [
+            56,
+            1505,
+            145,
+            96
+          ],
+          "proxy": true
+        }
+      ],
+      "edges": {
+        "/0/@UseCaseModel/@actor.0:uc:0": {
+          "points": [
+            [
+              950,
+              686
+            ],
+            [
+              1064,
+              681.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.0:uc:1": {
+          "points": [
+            [
+              160,
+              862
+            ],
+            [
+              274,
+              857.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.0:uc:2": {
+          "points": [
+            [
+              950,
+              1034
+            ],
+            [
+              1064,
+              1027.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:3": {
+          "points": [
+            [
+              160,
+              1210
+            ],
+            [
+              274,
+              1205.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:4": {
+          "points": [
+            [
+              950,
+              1382
+            ],
+            [
+              1064,
+              1375.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:5": {
+          "points": [
+            [
+              160,
+              1540
+            ],
+            [
+              274,
+              1535.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:6": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              285.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:7": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              285.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:8": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              373.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:9": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              461.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:10": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              549.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:11": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              373.0
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    },
+    "domain": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@DomainModel/@entitycontext.6/@entity.0": [
+          76,
+          286,
+          288,
+          202
+        ],
+        "/0/@DomainModel/@entitycontext.6/@userinterface.0": [
+          76,
+          546,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.6/@userinterface.1": [
+          386,
+          546,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.6": [
+          76,
+          680,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.19": [
+          386,
+          680,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.20": [
+          76,
+          754,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.21": [
+          386,
+          754,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.22": [
+          76,
+          828,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.23": [
+          386,
+          828,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.24": [
+          76,
+          902,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.25": [
+          386,
+          902,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.7/@entity.0": [
+          866,
+          286,
+          288,
+          202
+        ],
+        "/0/@DomainModel/@entitycontext.7/@entity.1": [
+          1176,
+          286,
+          288,
+          166
+        ],
+        "/0/@DomainModel/@entitycontext.7/@entity.2": [
+          866,
+          508,
+          288,
+          238
+        ],
+        "/0/@DomainModel/@entitycontext.7/@entity.3": [
+          1176,
+          508,
+          288,
+          202
+        ],
+        "/0/@DomainModel/@entitycontext.7/@entity.4": [
+          866,
+          766,
+          288,
+          256
+        ],
+        "/0/@DomainModel/@entitycontext.7/@userinterface.0": [
+          866,
+          1080,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.7/@userinterface.1": [
+          1176,
+          1080,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.7": [
+          866,
+          1214,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.8": [
+          1176,
+          1214,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.9": [
+          866,
+          1288,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.10": [
+          1176,
+          1288,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.3/@entity.0": [
+          76,
+          1227,
+          288,
+          220
+        ],
+        "/0/@DomainModel/@entitycontext.3/@entity.1": [
+          386,
+          1227,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.3/@entity.2": [
+          76,
+          1467,
+          288,
+          310
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.0": [
+          76,
+          1835,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.1": [
+          386,
+          1835,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.1": [
+          76,
+          1969,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.2": [
+          386,
+          1969,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.3": [
+          76,
+          2043,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.16": [
+          386,
+          2043,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.17": [
+          76,
+          2117,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.0": [
+          866,
+          1613,
+          288,
+          166
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.0": [
+          866,
+          1837,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.1": [
+          1176,
+          1837,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.0": [
+          866,
+          1971,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.11": [
+          1176,
+          1971,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.12": [
+          866,
+          2045,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.5/@entity.0": [
+          866,
+          2370,
+          288,
+          166
+        ],
+        "/0/@DomainModel/@entitycontext.5/@userinterface.0": [
+          866,
+          2594,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.5/@userinterface.1": [
+          1176,
+          2594,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.5": [
+          866,
+          2728,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.18": [
+          1176,
+          2728,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.0": [
+          76,
+          2442,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.1": [
+          386,
+          2442,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.13": [
+          76,
+          2576,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.14": [
+          386,
+          2576,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.4/@entity.0": [
+          76,
+          2901,
+          288,
+          400
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.0": [
+          76,
+          3359,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.1": [
+          386,
+          3359,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.4": [
+          76,
+          3493,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.0": [
+          866,
+          3053,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.1": [
+          1176,
+          3053,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.15": [
+          866,
+          3187,
+          288,
+          54
+        ]
+      },
+      "services": {
+        "service-6": [
+          52,
+          170,
+          660,
+          831
+        ],
+        "service-7": [
+          842,
+          170,
+          660,
+          1217
+        ],
+        "service-3": [
+          52,
+          1111,
+          660,
+          1105
+        ],
+        "service-0": [
+          842,
+          1497,
+          660,
+          647
+        ],
+        "service-5": [
+          842,
+          2254,
+          660,
+          573
+        ],
+        "service-1": [
+          52,
+          2326,
+          660,
+          349
+        ],
+        "service-4": [
+          52,
+          2785,
+          660,
+          807
+        ],
+        "service-2": [
+          842,
+          2937,
+          660,
+          349
+        ]
+      },
+      "instances": [],
+      "edges": {
+        "/0/@DomainModel/@systeminterface.11:provideinterface:12": {
+          "points": [
+            [
+              987.2,
+              2144
+            ],
+            [
+              987.2,
+              2162
+            ],
+            [
+              987.2,
+              2236
+            ],
+            [
+              987.2,
+              2254
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.12:provideinterface:13": {
+          "points": [
+            [
+              1099.4,
+              2144
+            ],
+            [
+              1099.4,
+              2162
+            ],
+            [
+              730,
+              2162
+            ],
+            [
+              730,
+              2767
+            ],
+            [
+              309.40000000000003,
+              2767
+            ],
+            [
+              309.40000000000003,
+              2785
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.13:provideinterface:14": {
+          "points": [
+            [
+              421.6,
+              2326
+            ],
+            [
+              421.6,
+              2308
+            ],
+            [
+              421.6,
+              2234
+            ],
+            [
+              421.6,
+              2216
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.14:provideinterface:15": {
+          "points": [
+            [
+              533.8,
+              2675
+            ],
+            [
+              533.8,
+              2693
+            ],
+            [
+              533.8,
+              2767
+            ],
+            [
+              533.8,
+              2785
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.15:provideinterface:16": {
+          "points": [
+            [
+              987.2,
+              2937
+            ],
+            [
+              987.2,
+              2919
+            ],
+            [
+              824,
+              2919
+            ],
+            [
+              824,
+              2234
+            ],
+            [
+              197.2,
+              2234
+            ],
+            [
+              197.2,
+              2216
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.16:provideinterface:17": {
+          "points": [
+            [
+              309.40000000000003,
+              2216
+            ],
+            [
+              309.40000000000003,
+              2234
+            ],
+            [
+              34,
+              2234
+            ],
+            [
+              34,
+              2767
+            ],
+            [
+              309.40000000000003,
+              2767
+            ],
+            [
+              309.40000000000003,
+              2785
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.17:provideinterface:18": {
+          "points": [
+            [
+              421.6,
+              1111
+            ],
+            [
+              421.6,
+              1093
+            ],
+            [
+              421.6,
+              1019
+            ],
+            [
+              421.6,
+              1001
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.18:provideinterface:19": {
+          "points": [
+            [
+              1323.8,
+              2254
+            ],
+            [
+              1323.8,
+              2236
+            ],
+            [
+              1323.8,
+              2162
+            ],
+            [
+              1323.8,
+              2144
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.19:provideinterface:20": {
+          "points": [
+            [
+              197.2,
+              1001
+            ],
+            [
+              197.2,
+              1019
+            ],
+            [
+              197.2,
+              1093
+            ],
+            [
+              197.2,
+              1111
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.20:provideinterface:21": {
+          "points": [
+            [
+              309.40000000000003,
+              1001
+            ],
+            [
+              309.40000000000003,
+              1019
+            ],
+            [
+              34,
+              1019
+            ],
+            [
+              34,
+              2693
+            ],
+            [
+              309.40000000000003,
+              2693
+            ],
+            [
+              309.40000000000003,
+              2767
+            ],
+            [
+              309.40000000000003,
+              2785
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.21:provideinterface:22": {
+          "points": [
+            [
+              712,
+              635.3600000000001
+            ],
+            [
+              786.0,
+              635.3600000000001
+            ],
+            [
+              786.0,
+              851.5200000000001
+            ],
+            [
+              842,
+              851.5200000000001
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.22:provideinterface:23": {
+          "points": [
+            [
+              712,
+              776.63
+            ],
+            [
+              804.0,
+              776.63
+            ],
+            [
+              804.0,
+              1058.4099999999999
+            ],
+            [
+              842,
+              1058.4099999999999
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.23:provideinterface:24": {
+          "points": [
+            [
+              309.40000000000003,
+              1001
+            ],
+            [
+              309.40000000000003,
+              1019
+            ],
+            [
+              309.40000000000003,
+              1093
+            ],
+            [
+              309.40000000000003,
+              1111
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.24:provideinterface:25": {
+          "points": [
+            [
+              712,
+              352.82
+            ],
+            [
+              750.0,
+              352.82
+            ],
+            [
+              750.0,
+              437.74
+            ],
+            [
+              842,
+              437.74
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.25:provideinterface:26": {
+          "points": [
+            [
+              712,
+              494.09000000000003
+            ],
+            [
+              768.0,
+              494.09000000000003
+            ],
+            [
+              768.0,
+              644.63
+            ],
+            [
+              842,
+              644.63
+            ]
+          ],
+          "defaultVisible": false
+        }
+      }
+    }
+  }
+}

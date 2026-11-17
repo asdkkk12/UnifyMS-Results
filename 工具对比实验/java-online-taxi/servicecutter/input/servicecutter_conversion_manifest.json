@@ -1,0 +1,13 @@
+{
+  "source": "../../input/extraction.json",
+  "adapter": "java_taxi_servicecutter.py",
+  "model": "servicecutter_model.json",
+  "user_representations": "servicecutter_user_representations.json",
+  "counts": {
+    "entities": 8,
+    "actual_fields": 138,
+    "nonempty_usecases": 18
+  },
+  "policy": "Actual Java AST fields; entity-level co-access conservatively expanded; no sentinel or inferred owner/FK. See java_mapping_manifest.json.",
+  "supersedes_generic_manifest": true
+}

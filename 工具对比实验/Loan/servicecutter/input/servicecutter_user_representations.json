@@ -1,0 +1,99 @@
+{
+  "useCases": [
+    {
+      "name": "evaluateLoanRequest",
+      "nanoentitiesRead": [
+        "LoanRequest.approvalletter",
+        "LoanTerm.content"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "manageLoanTerm",
+      "nanoentitiesRead": [
+        "LoanTerm.content"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "enterValidatedCreditReferences",
+      "nanoentitiesRead": [
+        "LoanRequest.approvalletter"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "generateLoanLetterAndAgreement",
+      "nanoentitiesRead": [
+        "ApprovalLetter.content",
+        "Loan.belongedloanaccount",
+        "LoanAgreement.content",
+        "LoanRequest.approvalletter"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "bookNewLoan",
+      "nanoentitiesRead": [
+        "Loan.belongedloanaccount",
+        "LoanAccount.balance",
+        "LoanRequest.approvalletter"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "loanPayment",
+      "nanoentitiesRead": [
+        "Loan.belongedloanaccount"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "closeOutLoan",
+      "nanoentitiesRead": [
+        "Loan.belongedloanaccount"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "generateStandardPaymentNotice",
+      "nanoentitiesRead": [
+        "Loan.belongedloanaccount"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "generateLateNotice",
+      "nanoentitiesRead": [
+        "Loan.belongedloanaccount"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "submitLoanRequest",
+      "nanoentitiesRead": [
+        "CheckingAccount.balance",
+        "CreditHistory.baddebits",
+        "LoanRequest.approvalletter"
+      ],
+      "nanoentitiesWritten": []
+    }
+  ],
+  "compatibilities": {},
+  "sharedOwnerGroups": [
+    {
+      "name": "LoanClerk",
+      "nanoentities": [
+        "Loan.belongedloanaccount",
+        "LoanAccount.balance",
+        "LoanRequest.approvalletter"
+      ]
+    },
+    {
+      "name": "Scheduler",
+      "nanoentities": [
+        "Loan.belongedloanaccount"
+      ]
+    }
+  ]
+}

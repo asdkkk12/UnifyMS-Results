@@ -1,0 +1,58 @@
+{
+  "case": "Spring",
+  "input_original": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/Spring-cloud-shop",
+  "input_sha256": "11b712b6f27c990ddb86be946ceb57f0e1dd4b4cbc2787089db4df647bacfa02",
+  "java_source_tree_hash": "f9e9aee24b25f332e2859b30e5e26e25057e9725be6381f6a00658b51c7d75e9",
+  "formal_seeds": [
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "protocol_hashes": {
+    "QualityCalculate-similarity-cache.patch": "7a96992d684033782ffeebff768c583860abd9a1662093b310bd198e81588623",
+    "compute_airms_metrics.py": "9884cba3b79daef9a7a2f2aa9b2ab5abd4b3b8692aa9f65af8217258d57a7bff",
+    "microminer_remodel_decompose.py": "feeb9af1adb7ebaa87a20373a330832fd2c096cdf68c585a14d0b2be1cbbd5d2",
+    "api_decompose.py": "2c7249234738aeb844c72b0d0fdff1b54cf1870123738f1c474b5b9dae4a5169",
+    "spring_extract.py": "c3491accf40fa1bf12444f26487017b8d44080c66383aeae6bc246e3779bd54e",
+    "spring_prepare_embeddings.py": "7bba68774359fb27d9b07647ae55d80c685da06a33b958e288ac040cf0ce0128",
+    "spring_servicecutter.py": "e4ca44372f278a25eb5e3299f70791e999048012db3d6fae207f66791f5ace34",
+    "spring_servicecutter_bridge.py": "6af215c8de392c637a684758162d662e312a4104ba5c61e3724a253dc1f314a2",
+    "spring_archive_embeddings.py": "8e1fe8167f075d98e828e1447825ed91575798938263d872526d69427df88bbc",
+    "spring_snapshot_ancillary.py": "8f69241df94a8b731f4767d0575da64441a43903506e41833eb51ab5c645c758",
+    "spring_parallel_calibration.py": "f2ad6d860984bc8cf2427ce6b6cdcd478c5a3dbabb6e7656a30538ae96635c3c",
+    "run_spring_comparison.py": "71e502ab3c0b025b597b7d5c92e3184f20cee656dbf754be1895412b8a9fb7f1",
+    "report_spring_comparison.py": "348c582ef95d0387c1e55fd7eaed32675a83ad4077dbe4efb06494267cf07702",
+    "remodel_to_microminer_input.py": "c124b12fef284cd9d821284f866b52b66857b3a40a6a5b7796ef996e9bb49a5b",
+    "remodelparse.patch": "5697c38a07c0257dcaa0cca4ba8dff328f6b8f18c7c4cba2863ed3d97d8d9169",
+    "Selectors.patch": "7691d240f57708a4deaa92e00d2495e33e5d02e59dff74ba7a6674bfb356d63a",
+    "remodel_to_servicecutter.py": "0cea3456126ca31edd03f6d93a77ca70f49db0007bc5a02eed3d3ee8e60fa27a",
+    "spring_limit_active_searches.py": "5dc8fa10a01b83ff357106b252d1429d01cd7c6dbc2c291792ff05d07d5959c1"
+  },
+  "status": "completed",
+  "embedding_source_authorization": {
+    "scope": "124 actual Java classes (66 services, 58 persistence classes)",
+    "destination": "dashscope.aliyuncs.com",
+    "explicit_user_consent": true,
+    "recorded_at": "2026-11-04T00:07:50.447554+08:00",
+    "input_sha256": "3d46f1cf9b7552c3e17523b57764a6ff006be1bcf3f532a68aa2fa914c263989"
+  },
+  "native_serializer": {
+    "library": "fastjson2 2.0.24",
+    "feature": "LargeObject",
+    "initializer_source": "unifyms/orchestration/serializer-src/SpringLargeJson.java",
+    "initializer_jar": "unifyms/orchestration/large-json.jar",
+    "jar_sha256": "efcd5d82adf635de5918c1708784b036a91155d612f4cebd2f35c3bba07b3d7f",
+    "check": "unifyms/orchestration/serializer-check.json",
+    "scope": "Process-only JAVA_TOOL_OPTIONS; no credential or environment files modified. Algorithm source fingerprint unchanged by serialization option."
+  },
+  "formal_runs_completed": 10,
+  "jev_requests": 1,
+  "strict_req_exports": 10
+}

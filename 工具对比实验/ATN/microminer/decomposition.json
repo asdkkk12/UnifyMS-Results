@@ -1,0 +1,105 @@
+{
+  "application": "ATM",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/microminer/input/atm.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "ATM.service.withdrawCash"
+      ],
+      "service_names": [
+        "withdrawCash"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "ATM.service.AutomatedTellerMachineSystem",
+        "ATM.domain.BankCard"
+      ],
+      "service_names": [
+        "AutomatedTellerMachineSystem"
+      ],
+      "membership_scores": {
+        "BankCard": {
+          "withdrawCash": 0.07144345083117604,
+          "AutomatedTellerMachineSystem": 1.0639009650422693,
+          "ManageBankCardCRUDService": 1.071443450831176,
+          "ManageUserCRUDService": 0.038188130791298666,
+          "ThirdPartyServices": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "ATM.service.ManageBankCardCRUDService",
+        "ATM.domain.BankCard"
+      ],
+      "service_names": [
+        "ManageBankCardCRUDService"
+      ],
+      "membership_scores": {
+        "BankCard": {
+          "withdrawCash": 0.07144345083117604,
+          "AutomatedTellerMachineSystem": 1.0639009650422693,
+          "ManageBankCardCRUDService": 1.071443450831176,
+          "ManageUserCRUDService": 0.038188130791298666,
+          "ThirdPartyServices": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "ATM.service.ManageUserCRUDService",
+        "ATM.domain.User"
+      ],
+      "service_names": [
+        "ManageUserCRUDService"
+      ],
+      "membership_scores": {
+        "User": {
+          "withdrawCash": 0.039131189606246314,
+          "AutomatedTellerMachineSystem": 0.034999999999999996,
+          "ManageBankCardCRUDService": 0.07826237921249263,
+          "ManageUserCRUDService": 1.0418330013267039,
+          "ThirdPartyServices": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "ATM.service.ThirdPartyServices"
+      ],
+      "service_names": [
+        "ThirdPartyServices"
+      ],
+      "membership_scores": {}
+    }
+  ],
+  "entity_memberships": {
+    "BankCard": [
+      {
+        "service": "AutomatedTellerMachineSystem",
+        "score": 1.063901
+      },
+      {
+        "service": "ManageBankCardCRUDService",
+        "score": 1.071443
+      }
+    ],
+    "User": [
+      {
+        "service": "ManageUserCRUDService",
+        "score": 1.041833
+      }
+    ]
+  }
+}

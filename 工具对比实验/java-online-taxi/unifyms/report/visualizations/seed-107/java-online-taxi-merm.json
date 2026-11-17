@@ -1,0 +1,4786 @@
+{
+  "schemaVersion": "merm-view-v1",
+  "name": "java-online-taxi",
+  "input": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/java-online-taxi-guidance-loss05-isolated0-10seeds-20261110/report/visualizations/seed-107/java-online-taxi.req",
+  "inputHash": "de78f637d88181f21905899356edbbe2f4a1be54bada36652de406d84f04c9dd",
+  "metadata": {
+    "inputHash": "970acf9f42c1daed1596f693c35ee1ccaa0fd5cf0b0f7013309add7ac177e1c3",
+    "runHash": "fb9b96d94b301c5ee7a2d4dc9c530ae0cbd325252fd791b66aed6b99fa523eb9",
+    "snapshotHash": "feaf0d07d6ccc2bb902f8fd92fccae78dee093698cd305b316e83d4f0d22b2e1",
+    "taskKey": "73c3f566a43ba1d010268b79d444d9fe627ba3587ec1940daf532beb12703331",
+    "configId": "C5",
+    "seed": "107",
+    "exportVersion": "merm-export-v1"
+  },
+  "services": [
+    {
+      "id": "service-0",
+      "key": "0",
+      "name": "Microservice 0",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.0",
+      "entityContext": "/0/@DomainModel/@entitycontext.0"
+    },
+    {
+      "id": "service-1",
+      "key": "1",
+      "name": "Microservice 1",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.1",
+      "entityContext": "/0/@DomainModel/@entitycontext.1"
+    },
+    {
+      "id": "service-2",
+      "key": "2",
+      "name": "Microservice 2",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.2",
+      "entityContext": "/0/@DomainModel/@entitycontext.2"
+    },
+    {
+      "id": "service-3",
+      "key": "3",
+      "name": "Microservice 3",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.3",
+      "entityContext": "/0/@DomainModel/@entitycontext.3"
+    },
+    {
+      "id": "service-4",
+      "key": "4",
+      "name": "Microservice 4",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.4",
+      "entityContext": "/0/@DomainModel/@entitycontext.4"
+    },
+    {
+      "id": "service-5",
+      "key": "5",
+      "name": "Microservice 5",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.5",
+      "entityContext": "/0/@DomainModel/@entitycontext.5"
+    },
+    {
+      "id": "service-6",
+      "key": "6",
+      "name": "Microservice 6",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.6",
+      "entityContext": "/0/@DomainModel/@entitycontext.6"
+    },
+    {
+      "id": "service-7",
+      "key": "7",
+      "name": "Microservice 7",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.7",
+      "entityContext": "/0/@DomainModel/@entitycontext.7"
+    },
+    {
+      "id": "service-8",
+      "key": "8",
+      "name": "Microservice 8",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.8",
+      "entityContext": "/0/@DomainModel/@entitycontext.8"
+    },
+    {
+      "id": "service-9",
+      "key": "9",
+      "name": "Microservice 9",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.9",
+      "entityContext": "/0/@DomainModel/@entitycontext.9"
+    },
+    {
+      "id": "service-10",
+      "key": "10",
+      "name": "Microservice 10",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.10",
+      "entityContext": "/0/@DomainModel/@entitycontext.10"
+    },
+    {
+      "id": "service-11",
+      "key": "11",
+      "name": "Microservice 11",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.11",
+      "entityContext": "/0/@DomainModel/@entitycontext.11"
+    },
+    {
+      "id": "service-12",
+      "key": "12",
+      "name": "Microservice 12",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.12",
+      "entityContext": "/0/@DomainModel/@entitycontext.12"
+    },
+    {
+      "id": "service-13",
+      "key": "13",
+      "name": "Microservice 13",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.13",
+      "entityContext": "/0/@DomainModel/@entitycontext.13"
+    },
+    {
+      "id": "service-14",
+      "key": "14",
+      "name": "Microservice 14",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.14",
+      "entityContext": "/0/@DomainModel/@entitycontext.14"
+    },
+    {
+      "id": "service-15",
+      "key": "15",
+      "name": "Microservice 15",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.15",
+      "entityContext": "/0/@DomainModel/@entitycontext.15"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "uc",
+      "name": "ApiBossCarService",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "ApiBossCarService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "kind": "uc",
+      "name": "ServiceDriverUserCarService",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+        "attributes": {
+          "name": "ServiceDriverUserCarService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "uc",
+      "name": "ApiBossDriverCarBindingRelationshipService",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "ApiBossDriverCarBindingRelationshipService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+      "kind": "uc",
+      "name": "ServiceDriverUserDriverCarBindingRelationshipService",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+        "attributes": {
+          "name": "ServiceDriverUserDriverCarBindingRelationshipService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "uc",
+      "name": "ApiBossDriverUserService",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ApiBossDriverUserService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.1",
+      "kind": "uc",
+      "name": "ApiDriverUserService",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.1",
+        "attributes": {
+          "name": "ApiDriverUserService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "uc",
+      "name": "ApiDriverPointService",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "ApiDriverPointService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "uc",
+      "name": "ApiDriverVerifyCodeService",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "ApiDriverVerifyCodeService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+      "kind": "uc",
+      "name": "ServiceDriverUserDriverUserService",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+        "attributes": {
+          "name": "ServiceDriverUserDriverUserService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.2",
+      "kind": "uc",
+      "name": "ServicePassengerUserUserService",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.2",
+        "attributes": {
+          "name": "ServicePassengerUserUserService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+      "kind": "uc",
+      "name": "ApiPassengerForecastPriceService",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+        "attributes": {
+          "name": "ApiPassengerForecastPriceService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+      "kind": "uc",
+      "name": "ServicePricePriceService",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+        "attributes": {
+          "name": "ServicePricePriceService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+      "kind": "uc",
+      "name": "ApiPassengerOrderService",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+        "attributes": {
+          "name": "ApiPassengerOrderService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+      "kind": "uc",
+      "name": "ServiceOrderOrderInfoService",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+        "attributes": {
+          "name": "ServiceOrderOrderInfoService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.7/@uc.0",
+      "kind": "uc",
+      "name": "ApiPassengerTokenService",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.7/@uc.0",
+        "attributes": {
+          "name": "ApiPassengerTokenService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.7/@uc.1",
+      "kind": "uc",
+      "name": "ApiPassengerUserService",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.7/@uc.1",
+        "attributes": {
+          "name": "ApiPassengerUserService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.7/@uc.2",
+      "kind": "uc",
+      "name": "ApiPassengerVerifyCodeService",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.7/@uc.2",
+        "attributes": {
+          "name": "ApiPassengerVerifyCodeService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.8/@uc.0",
+      "kind": "uc",
+      "name": "ServiceDriverUserDriverUserWorkStatusService",
+      "service": "service-8",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.8/@uc.0",
+        "attributes": {
+          "name": "ServiceDriverUserDriverUserWorkStatusService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.8/@uc.1",
+      "kind": "uc",
+      "name": "ServiceMapTrackClient",
+      "service": "service-8",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.8/@uc.1",
+        "attributes": {
+          "name": "ServiceMapTrackClient"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.9/@uc.0",
+      "kind": "uc",
+      "name": "ServiceMapMapDicDistrictClient",
+      "service": "service-9",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.9/@uc.0",
+        "attributes": {
+          "name": "ServiceMapMapDicDistrictClient"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.9/@uc.1",
+      "kind": "uc",
+      "name": "ServiceMapPointClient",
+      "service": "service-9",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.9/@uc.1",
+        "attributes": {
+          "name": "ServiceMapPointClient"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.9/@uc.2",
+      "kind": "uc",
+      "name": "ServiceMapDicDistrictService",
+      "service": "service-9",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.9/@uc.2",
+        "attributes": {
+          "name": "ServiceMapDicDistrictService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.10/@uc.0",
+      "kind": "uc",
+      "name": "ServiceMapMapDirectionClient",
+      "service": "service-10",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.10/@uc.0",
+        "attributes": {
+          "name": "ServiceMapMapDirectionClient"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.10/@uc.1",
+      "kind": "uc",
+      "name": "ServiceMapTrackService",
+      "service": "service-10",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapTrackService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.11/@uc.0",
+      "kind": "uc",
+      "name": "ServiceMapServiceClient",
+      "service": "service-11",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.11/@uc.0",
+        "attributes": {
+          "name": "ServiceMapServiceClient"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.12/@uc.0",
+      "kind": "uc",
+      "name": "ServiceMapTerminalClient",
+      "service": "service-12",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.12/@uc.0",
+        "attributes": {
+          "name": "ServiceMapTerminalClient"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.13/@uc.0",
+      "kind": "uc",
+      "name": "ServiceMapDirectionService",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.13/@uc.0",
+        "attributes": {
+          "name": "ServiceMapDirectionService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.13/@uc.1",
+      "kind": "uc",
+      "name": "ServiceMapTerminalService",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.13/@uc.1",
+        "attributes": {
+          "name": "ServiceMapTerminalService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.14/@uc.0",
+      "kind": "uc",
+      "name": "ServiceMapPointService",
+      "service": "service-14",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.14/@uc.0",
+        "attributes": {
+          "name": "ServiceMapPointService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.14/@uc.1",
+      "kind": "uc",
+      "name": "ServiceMapServiceMapService",
+      "service": "service-14",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.14/@uc.1",
+        "attributes": {
+          "name": "ServiceMapServiceMapService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.15/@uc.0",
+      "kind": "uc",
+      "name": "ServiceVerifycodeVerifyCodeService",
+      "service": "service-15",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.15/@uc.0",
+        "attributes": {
+          "name": "ServiceVerifycodeVerifyCodeService"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0",
+      "kind": "actor",
+      "name": "ApiBossRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.0",
+        "attributes": {
+          "name": "ApiBossRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1",
+      "kind": "actor",
+      "name": "ApiDriverRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.1",
+        "attributes": {
+          "name": "ApiDriverRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2",
+      "kind": "actor",
+      "name": "ApiPassengerRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.2",
+        "attributes": {
+          "name": "ApiPassengerRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3",
+      "kind": "actor",
+      "name": "ServiceDriverUserRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.3",
+        "attributes": {
+          "name": "ServiceDriverUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4",
+      "kind": "actor",
+      "name": "ServiceMapRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.4",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.5",
+      "kind": "actor",
+      "name": "ServiceOrderRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.5",
+        "attributes": {
+          "name": "ServiceOrderRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.6",
+      "kind": "actor",
+      "name": "ServicePassengerUserRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.6",
+        "attributes": {
+          "name": "ServicePassengerUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.4/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.7",
+      "kind": "actor",
+      "name": "ServicePriceRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.7",
+        "attributes": {
+          "name": "ServicePriceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.8",
+      "kind": "actor",
+      "name": "ServiceVerifycodeRole",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.8",
+        "attributes": {
+          "name": "ServiceVerifycodeRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.15/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiBossCarServiceAddCar()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceDriverUserCarServiceAddCar()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServiceDriverUserCarServiceGetCarById()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findCarbyID()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "entity",
+      "name": "Car",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "Car"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "address",
+          "type": "String"
+        },
+        {
+          "name": "vehicleNo",
+          "type": "String"
+        },
+        {
+          "name": "plateColor",
+          "type": "String"
+        },
+        {
+          "name": "seats",
+          "type": "Integer"
+        },
+        {
+          "name": "brand",
+          "type": "String"
+        },
+        {
+          "name": "model",
+          "type": "String"
+        },
+        {
+          "name": "vehicleType",
+          "type": "String"
+        },
+        {
+          "name": "ownerName",
+          "type": "String"
+        },
+        {
+          "name": "vehicleColor",
+          "type": "String"
+        },
+        {
+          "name": "engineId",
+          "type": "String"
+        },
+        {
+          "name": "vin",
+          "type": "String"
+        },
+        {
+          "name": "certifyDateA",
+          "type": "Date"
+        },
+        {
+          "name": "fueType",
+          "type": "String"
+        },
+        {
+          "name": "engineDisplace",
+          "type": "String"
+        },
+        {
+          "name": "transAgency",
+          "type": "String"
+        },
+        {
+          "name": "transArea",
+          "type": "String"
+        },
+        {
+          "name": "transDateStart",
+          "type": "Date"
+        },
+        {
+          "name": "transDateEnd",
+          "type": "Date"
+        },
+        {
+          "name": "certifyDateB",
+          "type": "Date"
+        },
+        {
+          "name": "fixState",
+          "type": "String"
+        },
+        {
+          "name": "nextFixDate",
+          "type": "Date"
+        },
+        {
+          "name": "checkState",
+          "type": "String"
+        },
+        {
+          "name": "feePrintId",
+          "type": "String"
+        },
+        {
+          "name": "gpsBrand",
+          "type": "String"
+        },
+        {
+          "name": "gpsModel",
+          "type": "String"
+        },
+        {
+          "name": "gpsInstallDate",
+          "type": "Date"
+        },
+        {
+          "name": "registerDate",
+          "type": "Date"
+        },
+        {
+          "name": "commercialType",
+          "type": "Integer"
+        },
+        {
+          "name": "fareType",
+          "type": "String"
+        },
+        {
+          "name": "state",
+          "type": "Integer"
+        },
+        {
+          "name": "tid",
+          "type": "String"
+        },
+        {
+          "name": "trid",
+          "type": "String"
+        },
+        {
+          "name": "trname",
+          "type": "String"
+        },
+        {
+          "name": "gmtCreate",
+          "type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiBossDriverCarBindingRelationshipServiceBind()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ApiBossDriverCarBindingRelationshipServiceUnbind()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServiceDriverUserDriverCarBindingRelationshipServiceBind()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ServiceDriverUserDriverCarBindingRelationshipServiceUnbind()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiBossDriverUserServiceAddDriverUser()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ApiBossDriverUserServiceUpdateDriverUser()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ApiDriverUserServiceUpdateUser()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findOrderInfobyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "entity",
+      "name": "OrderInfo",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "OrderInfo"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "passengerId",
+          "type": "Integer"
+        },
+        {
+          "name": "passengerPhone",
+          "type": "String"
+        },
+        {
+          "name": "driverId",
+          "type": "Integer"
+        },
+        {
+          "name": "driverPhone",
+          "type": "String"
+        },
+        {
+          "name": "carId",
+          "type": "Integer"
+        },
+        {
+          "name": "vehicleType",
+          "type": "String"
+        },
+        {
+          "name": "address",
+          "type": "String"
+        },
+        {
+          "name": "orderTime",
+          "type": "Date"
+        },
+        {
+          "name": "departTime",
+          "type": "Date"
+        },
+        {
+          "name": "departure",
+          "type": "String"
+        },
+        {
+          "name": "depLongitude",
+          "type": "String"
+        },
+        {
+          "name": "depLatitude",
+          "type": "String"
+        },
+        {
+          "name": "destination",
+          "type": "String"
+        },
+        {
+          "name": "destLongitude",
+          "type": "String"
+        },
+        {
+          "name": "destLatitude",
+          "type": "String"
+        },
+        {
+          "name": "encrypt",
+          "type": "Integer"
+        },
+        {
+          "name": "fareType",
+          "type": "String"
+        },
+        {
+          "name": "fareVersion",
+          "type": "Integer"
+        },
+        {
+          "name": "receiveOrderCarLongitude",
+          "type": "String"
+        },
+        {
+          "name": "receiveOrderCarLatitude",
+          "type": "String"
+        },
+        {
+          "name": "receiveOrderTime",
+          "type": "Date"
+        },
+        {
+          "name": "licenseId",
+          "type": "String"
+        },
+        {
+          "name": "vehicleNo",
+          "type": "String"
+        },
+        {
+          "name": "toPickUpPassengerTime",
+          "type": "Date"
+        },
+        {
+          "name": "toPickUpPassengerLongitude",
+          "type": "String"
+        },
+        {
+          "name": "toPickUpPassengerLatitude",
+          "type": "String"
+        },
+        {
+          "name": "toPickUpPassengerAddress",
+          "type": "String"
+        },
+        {
+          "name": "driverArrivedDepartureTime",
+          "type": "Date"
+        },
+        {
+          "name": "pickUpPassengerTime",
+          "type": "Date"
+        },
+        {
+          "name": "pickUpPassengerLongitude",
+          "type": "String"
+        },
+        {
+          "name": "pickUpPassengerLatitude",
+          "type": "String"
+        },
+        {
+          "name": "passengerGetoffTime",
+          "type": "Date"
+        },
+        {
+          "name": "passengerGetoffLongitude",
+          "type": "String"
+        },
+        {
+          "name": "passengerGetoffLatitude",
+          "type": "String"
+        },
+        {
+          "name": "cancelTime",
+          "type": "Date"
+        },
+        {
+          "name": "cancelOperator",
+          "type": "Integer"
+        },
+        {
+          "name": "cancelTypeCode",
+          "type": "Integer"
+        },
+        {
+          "name": "driveMile",
+          "type": "Integer"
+        },
+        {
+          "name": "driveTime",
+          "type": "Integer"
+        },
+        {
+          "name": "orderStatus",
+          "type": "Integer"
+        },
+        {
+          "name": "price",
+          "type": "Real"
+        },
+        {
+          "name": "gmtCreate",
+          "type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiDriverPointServiceUpload()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiDriverVerifyCodeServiceCheckAndSendVerifyCode()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ApiDriverVerifyCodeServiceVerifyCodeCheck()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceAddDriverUser()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceGetDriverUserByPhone()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceTestGetDriverUser()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceUpdateDriverUser()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.5"
+        },
+        {
+          "name": "ServicePassengerUserUserServiceGetUserByPhone()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.6"
+        },
+        {
+          "name": "ServicePassengerUserUserServiceLoginOrRegisterUser()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.7"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findDriverCarBindingRelationshipbyID()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "entity",
+      "name": "DriverCarBindingRelationship",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "DriverCarBindingRelationship"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "driverId",
+          "type": "Integer"
+        },
+        {
+          "name": "carId",
+          "type": "Integer"
+        },
+        {
+          "name": "bindState",
+          "type": "Integer"
+        },
+        {
+          "name": "bindingTime",
+          "type": "Date"
+        },
+        {
+          "name": "unBindingTime",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiPassengerForecastPriceServiceForecastPrice()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServicePricePriceServiceCalculatePrice()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServicePricePriceServiceForecastPrice()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ServicePricePriceServiceGetPrice()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findDriverUserbyID()",
+          "source": "/0/@DomainModel/@entitycontext.5/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.5/@entity.0",
+      "kind": "entity",
+      "name": "DriverUser",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.5/@entity.0",
+        "attributes": {
+          "name": "DriverUser"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "address",
+          "type": "String"
+        },
+        {
+          "name": "driverName",
+          "type": "String"
+        },
+        {
+          "name": "driverPhone",
+          "type": "String"
+        },
+        {
+          "name": "driverGender",
+          "type": "Integer"
+        },
+        {
+          "name": "driverBirthday",
+          "type": "Date"
+        },
+        {
+          "name": "driverNation",
+          "type": "String"
+        },
+        {
+          "name": "driverContactAddress",
+          "type": "String"
+        },
+        {
+          "name": "licenseId",
+          "type": "String"
+        },
+        {
+          "name": "getDriverLicenseDate",
+          "type": "Date"
+        },
+        {
+          "name": "driverLicenseOn",
+          "type": "Date"
+        },
+        {
+          "name": "driverLicenseOff",
+          "type": "Date"
+        },
+        {
+          "name": "taxiDriver",
+          "type": "Integer"
+        },
+        {
+          "name": "certificateNo",
+          "type": "String"
+        },
+        {
+          "name": "networkCarIssueOrganization",
+          "type": "String"
+        },
+        {
+          "name": "networkCarIssueDate",
+          "type": "Date"
+        },
+        {
+          "name": "getNetworkCarProofDate",
+          "type": "Date"
+        },
+        {
+          "name": "networkCarProofOn",
+          "type": "Date"
+        },
+        {
+          "name": "networkCarProofOff",
+          "type": "Date"
+        },
+        {
+          "name": "registerDate",
+          "type": "Date"
+        },
+        {
+          "name": "commercialType",
+          "type": "Integer"
+        },
+        {
+          "name": "contractCompany",
+          "type": "String"
+        },
+        {
+          "name": "contractOn",
+          "type": "Date"
+        },
+        {
+          "name": "contractOff",
+          "type": "Date"
+        },
+        {
+          "name": "state",
+          "type": "Integer"
+        },
+        {
+          "name": "gmtCreate",
+          "type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiPassengerOrderServiceAdd()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceOrderOrderInfoServiceAdd()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findDicDistrictbyID()",
+          "source": "/0/@DomainModel/@entitycontext.6/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.6/@entity.0",
+      "kind": "entity",
+      "name": "DicDistrict",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.6/@entity.0",
+        "attributes": {
+          "name": "DicDistrict"
+        }
+      },
+      "attributes": [
+        {
+          "name": "addressCode",
+          "type": "String"
+        },
+        {
+          "name": "addressName",
+          "type": "String"
+        },
+        {
+          "name": "parentAddressCode",
+          "type": "String"
+        },
+        {
+          "name": "level",
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ApiPassengerTokenServiceRefreshToken()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ApiPassengerUserServiceGetUserByAccessToken()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ApiPassengerVerifyCodeServiceVerifyCodeCheck()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ApiPassengerVerifyCodeServiceVerifyCodeGet()",
+          "source": "/0/@DomainModel/@entitycontext.7/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.7/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.7/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.8/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-8",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.8/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceDriverUserDriverUserWorkStatusServiceChangeWorkStatus()",
+          "source": "/0/@DomainModel/@entitycontext.8/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceMapTrackClientAdd()",
+          "source": "/0/@DomainModel/@entitycontext.8/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.8/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-8",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.8/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.9/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-9",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.9/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceMapDicDistrictServiceGenerateLevel()",
+          "source": "/0/@DomainModel/@entitycontext.9/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceMapDicDistrictServiceInitDicDistrict()",
+          "source": "/0/@DomainModel/@entitycontext.9/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServiceMapDicDistrictServiceInsertDicDistrict()",
+          "source": "/0/@DomainModel/@entitycontext.9/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ServiceMapMapDicDistrictClientDicDistrict()",
+          "source": "/0/@DomainModel/@entitycontext.9/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "ServiceMapPointClientUpload()",
+          "source": "/0/@DomainModel/@entitycontext.9/@userinterface.0/@operation.4"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.9/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-9",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.9/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.10/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-10",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.10/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceMapMapDirectionClientDirection()",
+          "source": "/0/@DomainModel/@entitycontext.10/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceMapTrackServiceAdd()",
+          "source": "/0/@DomainModel/@entitycontext.10/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.10/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-10",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.10/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.11/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-11",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.11/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceMapServiceClientAdd()",
+          "source": "/0/@DomainModel/@entitycontext.11/@userinterface.0/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.11/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-11",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.11/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.12/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-12",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.12/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceMapTerminalClientAdd()",
+          "source": "/0/@DomainModel/@entitycontext.12/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceMapTerminalClientAroundsearch()",
+          "source": "/0/@DomainModel/@entitycontext.12/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServiceMapTerminalClientTrsearch()",
+          "source": "/0/@DomainModel/@entitycontext.12/@userinterface.0/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.12/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-12",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.12/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.13/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.13/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceMapDirectionServiceDriving()",
+          "source": "/0/@DomainModel/@entitycontext.13/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceMapTerminalServiceAdd()",
+          "source": "/0/@DomainModel/@entitycontext.13/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "ServiceMapTerminalServiceAroundsearch()",
+          "source": "/0/@DomainModel/@entitycontext.13/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "ServiceMapTerminalServiceTrsearch()",
+          "source": "/0/@DomainModel/@entitycontext.13/@userinterface.0/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.13/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.13/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findDriverUserWorkStatusbyID()",
+          "source": "/0/@DomainModel/@entitycontext.13/@userinterface.1/@operation.0"
+        },
+        {
+          "name": "findPassengerUserbyID()",
+          "source": "/0/@DomainModel/@entitycontext.13/@userinterface.1/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.13/@entity.0",
+      "kind": "entity",
+      "name": "DriverUserWorkStatus",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.13/@entity.0",
+        "attributes": {
+          "name": "DriverUserWorkStatus"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "driverId",
+          "type": "Integer"
+        },
+        {
+          "name": "workStatus",
+          "type": "Integer"
+        },
+        {
+          "name": "gmtCreate",
+          "type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.13/@entity.1",
+      "kind": "entity",
+      "name": "PassengerUser",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.13/@entity.1",
+        "attributes": {
+          "name": "PassengerUser"
+        }
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "Integer"
+        },
+        {
+          "name": "gmtCreate",
+          "type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "type": "Date"
+        },
+        {
+          "name": "passengerPhone",
+          "type": "String"
+        },
+        {
+          "name": "passengerName",
+          "type": "String"
+        },
+        {
+          "name": "passengerGender",
+          "type": "Integer"
+        },
+        {
+          "name": "state",
+          "type": "Integer"
+        },
+        {
+          "name": "profilePhoto",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.14/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-14",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.14/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceMapPointServiceUpload()",
+          "source": "/0/@DomainModel/@entitycontext.14/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "ServiceMapServiceMapServiceAdd()",
+          "source": "/0/@DomainModel/@entitycontext.14/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.14/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-14",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.14/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.15/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-15",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.15/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "ServiceVerifycodeVerifyCodeServiceGenerateCode()",
+          "source": "/0/@DomainModel/@entitycontext.15/@userinterface.0/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.15/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-15",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.15/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findPriceRulebyID()",
+          "source": "/0/@DomainModel/@entitycontext.15/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.15/@entity.0",
+      "kind": "entity",
+      "name": "PriceRule",
+      "service": "service-15",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.15/@entity.0",
+        "attributes": {
+          "name": "PriceRule"
+        }
+      },
+      "attributes": [
+        {
+          "name": "cityCode",
+          "type": "String"
+        },
+        {
+          "name": "vehicleType",
+          "type": "String"
+        },
+        {
+          "name": "startFare",
+          "type": "Real"
+        },
+        {
+          "name": "startMile",
+          "type": "Integer"
+        },
+        {
+          "name": "unitPricePerMile",
+          "type": "Real"
+        },
+        {
+          "name": "unitPricePerMinute",
+          "type": "Real"
+        },
+        {
+          "name": "fareVersion",
+          "type": "Integer"
+        },
+        {
+          "name": "fareType",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.0",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofCar",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofCar",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.11"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.1",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofOrderInfo",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofOrderInfo",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.16"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.2",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofDriverCarBindingRelationship",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofDriverCarBindingRelationship",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.8"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.3",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofDriverUser",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofDriverUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.12"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.4",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofDicDistrict",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofDicDistrict",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.19"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.5",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofDriverUserWorkStatus",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.13",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.13 /0/@DomainModel/@systeminterface.18"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.6",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofPassengerUser",
+      "service": "service-13",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofPassengerUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.13",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.17"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.7",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofPriceRule",
+      "service": "service-15",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofPriceRule",
+          "entitycontext": "/0/@DomainModel/@entitycontext.15",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.15"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.8",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDriverCarBindingRelationship",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.8",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverCarBindingRelationship",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDriverUser",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.9",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDriverUserWorkStatus",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.10",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCar",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.11",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCar",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDriverUser",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.12",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDriverUserWorkStatus",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.13",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofPassengerUser",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.14",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPassengerUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofPriceRule",
+      "service": "service-5",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.15",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPriceRule",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofOrderInfo",
+      "service": "service-6",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.16",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofOrderInfo",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofPassengerUser",
+      "service": "service-7",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.17",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPassengerUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.7",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDriverUserWorkStatus",
+      "service": "service-8",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.18",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.8",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofDicDistrict",
+      "service": "service-9",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.19",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDicDistrict",
+          "entitycontext": "/0/@DomainModel/@entitycontext.9",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    }
+  ],
+  "edges": [
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:0",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ApiBossRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:1",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ApiBossRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:2",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "ApiBossRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:3",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "ApiDriverRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:4",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "ApiDriverRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:5",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "ApiDriverRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:6",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.5/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2",
+        "attributes": {
+          "name": "ApiPassengerRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:7",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2",
+        "attributes": {
+          "name": "ApiPassengerRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:8",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.7/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2",
+        "attributes": {
+          "name": "ApiPassengerRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:9",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.7/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2",
+        "attributes": {
+          "name": "ApiPassengerRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:10",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.7/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2",
+        "attributes": {
+          "name": "ApiPassengerRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3:uc:11",
+      "source": "/0/@UseCaseModel/@actor.3",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.3",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0",
+        "attributes": {
+          "name": "ServiceDriverUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3:uc:12",
+      "source": "/0/@UseCaseModel/@actor.3",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.3",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0",
+        "attributes": {
+          "name": "ServiceDriverUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3:uc:13",
+      "source": "/0/@UseCaseModel/@actor.3",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.3",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0",
+        "attributes": {
+          "name": "ServiceDriverUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.3:uc:14",
+      "source": "/0/@UseCaseModel/@actor.3",
+      "target": "/0/@UseCaseModel/@usecasecontext.8/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.3",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0",
+        "attributes": {
+          "name": "ServiceDriverUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:15",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.9/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:16",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.13/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:17",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.9/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:18",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.10/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:19",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.9/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:20",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.14/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:21",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.11/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:22",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.14/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:23",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.12/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:24",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.13/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:25",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.8/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.4:uc:26",
+      "source": "/0/@UseCaseModel/@actor.4",
+      "target": "/0/@UseCaseModel/@usecasecontext.10/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.4",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1",
+        "attributes": {
+          "name": "ServiceMapRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.9/@uc.2 /0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.1 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.10/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.5:uc:27",
+      "source": "/0/@UseCaseModel/@actor.5",
+      "target": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.5",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.6/@uc.1",
+        "attributes": {
+          "name": "ServiceOrderRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.6/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.6:uc:28",
+      "source": "/0/@UseCaseModel/@actor.6",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.6",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.4/@uc.2",
+        "attributes": {
+          "name": "ServicePassengerUserRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.4/@uc.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.7:uc:29",
+      "source": "/0/@UseCaseModel/@actor.7",
+      "target": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.7",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.5/@uc.1",
+        "attributes": {
+          "name": "ServicePriceRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.5/@uc.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.8:uc:30",
+      "source": "/0/@UseCaseModel/@actor.8",
+      "target": "/0/@UseCaseModel/@usecasecontext.15/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.8",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.15/@uc.0",
+        "attributes": {
+          "name": "ServiceVerifycodeRole",
+          "uc": "/0/@UseCaseModel/@usecasecontext.15/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.8:provideinterface:31",
+      "source": "/0/@DomainModel/@systeminterface.8",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofDriverCarBindingRelationship",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.8",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverCarBindingRelationship",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9:provideinterface:32",
+      "source": "/0/@DomainModel/@systeminterface.9",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofDriverUser",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.9",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10:provideinterface:33",
+      "source": "/0/@DomainModel/@systeminterface.10",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofDriverUserWorkStatus",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.10",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11:provideinterface:34",
+      "source": "/0/@DomainModel/@systeminterface.11",
+      "target": "/0/@DomainModel/@systeminterface.0",
+      "kind": "interface",
+      "name": "ReceiveEntityofCar",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.11",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCar",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12:provideinterface:35",
+      "source": "/0/@DomainModel/@systeminterface.12",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofDriverUser",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.12",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13:provideinterface:36",
+      "source": "/0/@DomainModel/@systeminterface.13",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofDriverUserWorkStatus",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.13",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14:provideinterface:37",
+      "source": "/0/@DomainModel/@systeminterface.14",
+      "target": "/0/@DomainModel/@systeminterface.6",
+      "kind": "interface",
+      "name": "ReceiveEntityofPassengerUser",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.14",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPassengerUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15:provideinterface:38",
+      "source": "/0/@DomainModel/@systeminterface.15",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofPriceRule",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.15",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPriceRule",
+          "entitycontext": "/0/@DomainModel/@entitycontext.5",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16:provideinterface:39",
+      "source": "/0/@DomainModel/@systeminterface.16",
+      "target": "/0/@DomainModel/@systeminterface.1",
+      "kind": "interface",
+      "name": "ReceiveEntityofOrderInfo",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.16",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofOrderInfo",
+          "entitycontext": "/0/@DomainModel/@entitycontext.6",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17:provideinterface:40",
+      "source": "/0/@DomainModel/@systeminterface.17",
+      "target": "/0/@DomainModel/@systeminterface.6",
+      "kind": "interface",
+      "name": "ReceiveEntityofPassengerUser",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.17",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPassengerUser",
+          "entitycontext": "/0/@DomainModel/@entitycontext.7",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18:provideinterface:41",
+      "source": "/0/@DomainModel/@systeminterface.18",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofDriverUserWorkStatus",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.18",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDriverUserWorkStatus",
+          "entitycontext": "/0/@DomainModel/@entitycontext.8",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19:provideinterface:42",
+      "source": "/0/@DomainModel/@systeminterface.19",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofDicDistrict",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.19",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofDicDistrict",
+          "entitycontext": "/0/@DomainModel/@entitycontext.9",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "uc": 31,
+    "actor": 9,
+    "userinterface": 32,
+    "entity": 8,
+    "systeminterface": 20,
+    "services": 16,
+    "interfaceEdges": 12,
+    "serviceEdges": 11
+  },
+  "diagnostics": [],
+  "layout": {
+    "usecases": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.0": [
+          274,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.1": [
+          274,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.2": [
+          274,
+          428,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.1": [
+          56,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@actor.3": [
+          56,
+          365,
+          145,
+          114
+        ],
+        "/0/@UseCaseModel/@actor.6": [
+          56,
+          493,
+          145,
+          114
+        ],
+        "/0/@UseCaseModel/@usecasecontext.7/@uc.0": [
+          1064,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.7/@uc.1": [
+          1064,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.7/@uc.2": [
+          1064,
+          428,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.2": [
+          846,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.9/@uc.0": [
+          1064,
+          736,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.9/@uc.1": [
+          1064,
+          824,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.9/@uc.2": [
+          1064,
+          912,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.4": [
+          846,
+          739,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0": [
+          274,
+          838,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.1": [
+          274,
+          926,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.0": [
+          56,
+          841,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.0": [
+          1064,
+          1220,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.1": [
+          1064,
+          1308,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.0": [
+          274,
+          1296,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.1": [
+          274,
+          1384,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.5/@uc.0": [
+          1064,
+          1678,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.5/@uc.1": [
+          1064,
+          1766,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.7": [
+          846,
+          1791,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.0": [
+          274,
+          1736,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.6/@uc.1": [
+          274,
+          1824,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.5": [
+          56,
+          1849,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.8/@uc.0": [
+          1064,
+          2118,
+          380,
+          66
+        ],
+        "/0/@UseCaseModel/@usecasecontext.8/@uc.1": [
+          1064,
+          2206,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.10/@uc.0": [
+          274,
+          2176,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.10/@uc.1": [
+          274,
+          2264,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.13/@uc.0": [
+          274,
+          2572,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.13/@uc.1": [
+          274,
+          2660,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.14/@uc.0": [
+          1064,
+          2576,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.14/@uc.1": [
+          1064,
+          2664,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.3/@uc.0": [
+          274,
+          2968,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.11/@uc.0": [
+          1064,
+          2972,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.12/@uc.0": [
+          274,
+          3298,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.15/@uc.0": [
+          1064,
+          3302,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.8": [
+          846,
+          3305,
+          145,
+          114
+        ]
+      },
+      "services": {
+        "service-4": [
+          234,
+          170,
+          460,
+          476
+        ],
+        "service-7": [
+          1024,
+          170,
+          460,
+          374
+        ],
+        "service-9": [
+          1024,
+          654,
+          460,
+          374
+        ],
+        "service-0": [
+          234,
+          756,
+          460,
+          348
+        ],
+        "service-1": [
+          1024,
+          1138,
+          460,
+          348
+        ],
+        "service-2": [
+          234,
+          1214,
+          460,
+          330
+        ],
+        "service-5": [
+          1024,
+          1596,
+          460,
+          330
+        ],
+        "service-6": [
+          234,
+          1654,
+          460,
+          330
+        ],
+        "service-8": [
+          1024,
+          2036,
+          460,
+          348
+        ],
+        "service-10": [
+          234,
+          2094,
+          460,
+          286
+        ],
+        "service-13": [
+          234,
+          2490,
+          460,
+          286
+        ],
+        "service-14": [
+          1024,
+          2494,
+          460,
+          286
+        ],
+        "service-3": [
+          234,
+          2886,
+          460,
+          220
+        ],
+        "service-11": [
+          1024,
+          2890,
+          460,
+          220
+        ],
+        "service-12": [
+          234,
+          3216,
+          460,
+          220
+        ],
+        "service-15": [
+          1024,
+          3220,
+          460,
+          238
+        ]
+      },
+      "instances": [
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-4",
+          "box": [
+            56,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.3",
+          "service": "service-4",
+          "box": [
+            56,
+            365,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.6",
+          "service": "service-4",
+          "box": [
+            56,
+            493,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-7",
+          "box": [
+            846,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-9",
+          "box": [
+            846,
+            739,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-0",
+          "box": [
+            56,
+            841,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.3",
+          "service": "service-0",
+          "box": [
+            56,
+            951,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-1",
+          "box": [
+            846,
+            1223,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.3",
+          "service": "service-1",
+          "box": [
+            846,
+            1333,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-2",
+          "box": [
+            56,
+            1299,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-2",
+          "box": [
+            56,
+            1409,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-5",
+          "box": [
+            846,
+            1681,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.7",
+          "service": "service-5",
+          "box": [
+            846,
+            1791,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-6",
+          "box": [
+            56,
+            1739,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.5",
+          "service": "service-6",
+          "box": [
+            56,
+            1849,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.3",
+          "service": "service-8",
+          "box": [
+            846,
+            2121,
+            145,
+            114
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-8",
+          "box": [
+            846,
+            2249,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-10",
+          "box": [
+            56,
+            2179,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-13",
+          "box": [
+            56,
+            2575,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-14",
+          "box": [
+            846,
+            2579,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-3",
+          "box": [
+            56,
+            2971,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-11",
+          "box": [
+            846,
+            2975,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.4",
+          "service": "service-12",
+          "box": [
+            56,
+            3301,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.8",
+          "service": "service-15",
+          "box": [
+            846,
+            3305,
+            145,
+            114
+          ],
+          "proxy": true
+        }
+      ],
+      "edges": {
+        "/0/@UseCaseModel/@actor.0:uc:0": {
+          "points": [
+            [
+              160,
+              876
+            ],
+            [
+              274,
+              869.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.0:uc:1": {
+          "points": [
+            [
+              950,
+              1258
+            ],
+            [
+              1064,
+              1253.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.0:uc:2": {
+          "points": [
+            [
+              160,
+              1334
+            ],
+            [
+              274,
+              1327.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:3": {
+          "points": [
+            [
+              160,
+              3006
+            ],
+            [
+              274,
+              2999.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:4": {
+          "points": [
+            [
+              160,
+              1444
+            ],
+            [
+              274,
+              1415.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:5": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:6": {
+          "points": [
+            [
+              950,
+              1716
+            ],
+            [
+              1064,
+              1709.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:7": {
+          "points": [
+            [
+              160,
+              1774
+            ],
+            [
+              274,
+              1767.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:8": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:9": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:10": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              459.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.3:uc:11": {
+          "points": [
+            [
+              160,
+              986
+            ],
+            [
+              274,
+              957.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.3:uc:12": {
+          "points": [
+            [
+              950,
+              1368
+            ],
+            [
+              1064,
+              1341.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.3:uc:13": {
+          "points": [
+            [
+              160,
+              400
+            ],
+            [
+              274,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.3:uc:14": {
+          "points": [
+            [
+              950,
+              2156
+            ],
+            [
+              1064,
+              2151.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:15": {
+          "points": [
+            [
+              950,
+              774
+            ],
+            [
+              1064,
+              943.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:16": {
+          "points": [
+            [
+              160,
+              2610
+            ],
+            [
+              274,
+              2603.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:17": {
+          "points": [
+            [
+              950,
+              774
+            ],
+            [
+              1064,
+              767.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:18": {
+          "points": [
+            [
+              160,
+              2214
+            ],
+            [
+              274,
+              2207.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:19": {
+          "points": [
+            [
+              950,
+              774
+            ],
+            [
+              1064,
+              855.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:20": {
+          "points": [
+            [
+              950,
+              2614
+            ],
+            [
+              1064,
+              2607.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:21": {
+          "points": [
+            [
+              950,
+              3010
+            ],
+            [
+              1064,
+              3003.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:22": {
+          "points": [
+            [
+              950,
+              2614
+            ],
+            [
+              1064,
+              2695.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:23": {
+          "points": [
+            [
+              160,
+              3336
+            ],
+            [
+              274,
+              3329.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:24": {
+          "points": [
+            [
+              160,
+              2610
+            ],
+            [
+              274,
+              2691.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:25": {
+          "points": [
+            [
+              950,
+              2284
+            ],
+            [
+              1064,
+              2237.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.4:uc:26": {
+          "points": [
+            [
+              160,
+              2214
+            ],
+            [
+              274,
+              2295.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.5:uc:27": {
+          "points": [
+            [
+              160,
+              1884
+            ],
+            [
+              274,
+              1855.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.6:uc:28": {
+          "points": [
+            [
+              160,
+              528
+            ],
+            [
+              274,
+              459.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.7:uc:29": {
+          "points": [
+            [
+              950,
+              1826
+            ],
+            [
+              1064,
+              1797.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.8:uc:30": {
+          "points": [
+            [
+              950,
+              3340
+            ],
+            [
+              1064,
+              3333.0
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    },
+    "domain": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@DomainModel/@entitycontext.4/@entity.0": [
+          76,
+          286,
+          288,
+          166
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.0": [
+          76,
+          510,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.1": [
+          386,
+          510,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.2": [
+          76,
+          644,
+          288,
+          72
+        ],
+        "/0/@DomainModel/@systeminterface.12": [
+          386,
+          644,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.13": [
+          76,
+          736,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.14": [
+          386,
+          736,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.0": [
+          866,
+          286,
+          288,
+          886
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.0": [
+          866,
+          1230,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.1": [
+          1176,
+          1230,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.1": [
+          866,
+          1364,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.9": [
+          1176,
+          1364,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.10": [
+          866,
+          1438,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.13/@entity.0": [
+          76,
+          1061,
+          288,
+          148
+        ],
+        "/0/@DomainModel/@entitycontext.13/@entity.1": [
+          386,
+          1061,
+          288,
+          202
+        ],
+        "/0/@DomainModel/@entitycontext.13/@userinterface.0": [
+          76,
+          1321,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.13/@userinterface.1": [
+          386,
+          1321,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.5": [
+          76,
+          1455,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.6": [
+          386,
+          1455,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.5/@entity.0": [
+          866,
+          1763,
+          288,
+          562
+        ],
+        "/0/@DomainModel/@entitycontext.5/@userinterface.0": [
+          866,
+          2383,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.5/@userinterface.1": [
+          1176,
+          2383,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.3": [
+          866,
+          2517,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.15": [
+          1176,
+          2517,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.6/@entity.0": [
+          76,
+          1780,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.6/@userinterface.0": [
+          76,
+          1968,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.6/@userinterface.1": [
+          386,
+          1968,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.4": [
+          76,
+          2102,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.16": [
+          386,
+          2102,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.0": [
+          76,
+          2427,
+          288,
+          706
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.0": [
+          76,
+          3191,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.1": [
+          386,
+          3191,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.0": [
+          76,
+          3325,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.15/@entity.0": [
+          866,
+          2842,
+          288,
+          202
+        ],
+        "/0/@DomainModel/@entitycontext.15/@userinterface.0": [
+          866,
+          3102,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.15/@userinterface.1": [
+          1176,
+          3102,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.7": [
+          866,
+          3236,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.0": [
+          866,
+          3561,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.1": [
+          1176,
+          3561,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.8": [
+          866,
+          3695,
+          288,
+          72
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.0": [
+          76,
+          3650,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.1": [
+          386,
+          3650,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.11": [
+          76,
+          3784,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.7/@userinterface.0": [
+          866,
+          4038,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.7/@userinterface.1": [
+          1176,
+          4038,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.17": [
+          866,
+          4172,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.8/@userinterface.0": [
+          76,
+          4109,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.8/@userinterface.1": [
+          386,
+          4109,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.18": [
+          76,
+          4243,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.9/@userinterface.0": [
+          866,
+          4497,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.9/@userinterface.1": [
+          1176,
+          4497,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.19": [
+          866,
+          4631,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.10/@userinterface.0": [
+          76,
+          4568,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.10/@userinterface.1": [
+          386,
+          4568,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.11/@userinterface.0": [
+          76,
+          4915,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.11/@userinterface.1": [
+          386,
+          4915,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.12/@userinterface.0": [
+          866,
+          4956,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.12/@userinterface.1": [
+          1176,
+          4956,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.14/@userinterface.0": [
+          76,
+          5262,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.14/@userinterface.1": [
+          386,
+          5262,
+          288,
+          76
+        ]
+      },
+      "services": {
+        "service-4": [
+          52,
+          170,
+          660,
+          665
+        ],
+        "service-2": [
+          842,
+          170,
+          660,
+          1367
+        ],
+        "service-13": [
+          52,
+          945,
+          660,
+          609
+        ],
+        "service-5": [
+          842,
+          1647,
+          660,
+          969
+        ],
+        "service-6": [
+          52,
+          1664,
+          660,
+          537
+        ],
+        "service-0": [
+          52,
+          2311,
+          660,
+          1113
+        ],
+        "service-15": [
+          842,
+          2726,
+          660,
+          609
+        ],
+        "service-1": [
+          842,
+          3445,
+          660,
+          367
+        ],
+        "service-3": [
+          52,
+          3534,
+          660,
+          349
+        ],
+        "service-7": [
+          842,
+          3922,
+          660,
+          349
+        ],
+        "service-8": [
+          52,
+          3993,
+          660,
+          349
+        ],
+        "service-9": [
+          842,
+          4381,
+          660,
+          349
+        ],
+        "service-10": [
+          52,
+          4452,
+          660,
+          237
+        ],
+        "service-11": [
+          52,
+          4799,
+          660,
+          237
+        ],
+        "service-12": [
+          842,
+          4840,
+          660,
+          237
+        ],
+        "service-14": [
+          52,
+          5146,
+          660,
+          237
+        ]
+      },
+      "instances": [],
+      "edges": {
+        "/0/@DomainModel/@systeminterface.8:provideinterface:31": {
+          "points": [
+            [
+              987.2,
+              3445
+            ],
+            [
+              987.2,
+              3427
+            ],
+            [
+              730,
+              3427
+            ],
+            [
+              730,
+              853
+            ],
+            [
+              197.2,
+              853
+            ],
+            [
+              197.2,
+              835
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.9:provideinterface:32": {
+          "points": [
+            [
+              1099.4,
+              1537
+            ],
+            [
+              1099.4,
+              1555
+            ],
+            [
+              1099.4,
+              1629
+            ],
+            [
+              1099.4,
+              1647
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.10:provideinterface:33": {
+          "points": [
+            [
+              842,
+              935.5200000000001
+            ],
+            [
+              786.0,
+              935.5200000000001
+            ],
+            [
+              786.0,
+              1286.04
+            ],
+            [
+              712,
+              1286.04
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.11:provideinterface:34": {
+          "points": [
+            [
+              533.8,
+              3534
+            ],
+            [
+              533.8,
+              3516
+            ],
+            [
+              533.8,
+              3442
+            ],
+            [
+              533.8,
+              3424
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.12:provideinterface:35": {
+          "points": [
+            [
+              197.2,
+              835
+            ],
+            [
+              197.2,
+              853
+            ],
+            [
+              197.2,
+              927
+            ],
+            [
+              824,
+              927
+            ],
+            [
+              824,
+              1629
+            ],
+            [
+              987.2,
+              1629
+            ],
+            [
+              987.2,
+              1647
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.13:provideinterface:36": {
+          "points": [
+            [
+              309.40000000000003,
+              835
+            ],
+            [
+              309.40000000000003,
+              853
+            ],
+            [
+              309.40000000000003,
+              927
+            ],
+            [
+              309.40000000000003,
+              945
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.14:provideinterface:37": {
+          "points": [
+            [
+              421.6,
+              835
+            ],
+            [
+              421.6,
+              853
+            ],
+            [
+              421.6,
+              927
+            ],
+            [
+              421.6,
+              945
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.15:provideinterface:38": {
+          "points": [
+            [
+              1211.6,
+              2616
+            ],
+            [
+              1211.6,
+              2634
+            ],
+            [
+              1211.6,
+              2708
+            ],
+            [
+              1211.6,
+              2726
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.16:provideinterface:39": {
+          "points": [
+            [
+              533.8,
+              1664
+            ],
+            [
+              533.8,
+              1646
+            ],
+            [
+              533.8,
+              1555
+            ],
+            [
+              1323.8,
+              1555
+            ],
+            [
+              1323.8,
+              1537
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.17:provideinterface:40": {
+          "points": [
+            [
+              987.2,
+              3922
+            ],
+            [
+              987.2,
+              3904
+            ],
+            [
+              824,
+              3904
+            ],
+            [
+              824,
+              1629
+            ],
+            [
+              197.2,
+              1629
+            ],
+            [
+              197.2,
+              1572
+            ],
+            [
+              197.2,
+              1554
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.18:provideinterface:41": {
+          "points": [
+            [
+              309.40000000000003,
+              3993
+            ],
+            [
+              309.40000000000003,
+              3975
+            ],
+            [
+              34,
+              3975
+            ],
+            [
+              34,
+              1572
+            ],
+            [
+              309.40000000000003,
+              1572
+            ],
+            [
+              309.40000000000003,
+              1554
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.19:provideinterface:42": {
+          "points": [
+            [
+              1211.6,
+              4381
+            ],
+            [
+              1211.6,
+              4363
+            ],
+            [
+              730,
+              4363
+            ],
+            [
+              730,
+              2293
+            ],
+            [
+              421.6,
+              2293
+            ],
+            [
+              421.6,
+              2219
+            ],
+            [
+              421.6,
+              2201
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    }
+  }
+}

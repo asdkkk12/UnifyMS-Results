@@ -1,0 +1,102 @@
+{
+  "useCases": [
+    {
+      "name": "processSale",
+      "nanoentitiesRead": [
+        "CardPayment.cardaccountnumber",
+        "CashPayment.balance",
+        "Item.barcode",
+        "Sale.amount",
+        "SalesLineItem.belongeditem"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "openCashDesk",
+      "nanoentitiesRead": [
+        "CashDesk.belongedstore"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "closeCashDesk",
+      "nanoentitiesRead": [
+        "CashDesk.belongedstore"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "orderProducts",
+      "nanoentitiesRead": [
+        "Item.barcode",
+        "OrderEntry.integer",
+        "OrderProduct.amount",
+        "Supplier.id"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "receiveOrderedProduct",
+      "nanoentitiesRead": [
+        "Item.barcode",
+        "OrderEntry.integer",
+        "OrderProduct.amount"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "showStockReports",
+      "nanoentitiesRead": [
+        "Item.barcode"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "changePrice",
+      "nanoentitiesRead": [
+        "Item.barcode"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "listSuppliers",
+      "nanoentitiesRead": [
+        "Supplier.id"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "openStore",
+      "nanoentitiesRead": [
+        "Store.address"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "closeStore",
+      "nanoentitiesRead": [
+        "Store.address"
+      ],
+      "nanoentitiesWritten": []
+    }
+  ],
+  "compatibilities": {},
+  "sharedOwnerGroups": [
+    {
+      "name": "Cashier",
+      "nanoentities": [
+        "CashDesk.belongedstore"
+      ]
+    },
+    {
+      "name": "StoreManager",
+      "nanoentities": [
+        "Item.barcode",
+        "OrderEntry.integer",
+        "OrderProduct.amount",
+        "Store.address",
+        "Supplier.id"
+      ]
+    }
+  ]
+}

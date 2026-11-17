@@ -1,0 +1,185 @@
+{
+  "application": "ATM",
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/input/atm.remodel",
+  "services": [
+    {
+      "name": "withdrawCash",
+      "operations": [
+        {
+          "name": "inputCard",
+          "args": [
+            "cardid"
+          ]
+        },
+        {
+          "name": "inputPassword",
+          "args": [
+            "password"
+          ]
+        },
+        {
+          "name": "withdrawCash",
+          "args": [
+            "quantity"
+          ]
+        },
+        {
+          "name": "printReceipt",
+          "args": []
+        },
+        {
+          "name": "ejectCard",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "AutomatedTellerMachineSystem",
+      "operations": [
+        {
+          "name": "depositFunds",
+          "args": [
+            "quantity"
+          ]
+        },
+        {
+          "name": "checkBalance",
+          "args": []
+        },
+        {
+          "name": "cardIdentification",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ManageBankCardCRUDService",
+      "operations": [
+        {
+          "name": "createBankCard",
+          "args": [
+            "cardid",
+            "cardstatus",
+            "catalog",
+            "password",
+            "balance"
+          ]
+        },
+        {
+          "name": "queryBankCard",
+          "args": [
+            "cardid"
+          ]
+        },
+        {
+          "name": "modifyBankCard",
+          "args": [
+            "cardid",
+            "cardstatus",
+            "catalog",
+            "password",
+            "balance"
+          ]
+        },
+        {
+          "name": "deleteBankCard",
+          "args": [
+            "cardid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageUserCRUDService",
+      "operations": [
+        {
+          "name": "createUser",
+          "args": [
+            "userid",
+            "name",
+            "address"
+          ]
+        },
+        {
+          "name": "queryUser",
+          "args": [
+            "userid"
+          ]
+        },
+        {
+          "name": "modifyUser",
+          "args": [
+            "userid",
+            "name",
+            "address"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "args": [
+            "userid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ThirdPartyServices",
+      "operations": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "BankCard",
+      "fields": [
+        [
+          "CardID",
+          "Integer"
+        ],
+        [
+          "CardStatus",
+          "CardStatus"
+        ],
+        [
+          "Catalog",
+          "CardCatalog"
+        ],
+        [
+          "Password",
+          "Integer"
+        ],
+        [
+          "Balance",
+          "Real"
+        ],
+        [
+          "BelongedUser",
+          "User"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "User",
+      "fields": [
+        [
+          "UserID",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "Address",
+          "String"
+        ],
+        [
+          "OwnedCard",
+          "BankCard"
+        ]
+      ],
+      "parent": null
+    }
+  ],
+  "note": "Synthetic source-like content derived from .remodel; not recovered implementation code."
+}

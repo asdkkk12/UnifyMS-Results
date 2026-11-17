@@ -1,0 +1,62 @@
+{
+  "case": "Loan",
+  "input_original": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/loan.remodel",
+  "original_sha256": "d2571e3c889b921a0a10548a2f6ba554e203059de7fc08f3efa2020fd492aed5",
+  "input_sha256": "e666fbd5bb2b797d77a1bbdcc6731e1caf0dd99ed28dc3e29c5f79877ba563fa",
+  "normalization": [
+    {
+      "from": "Servicee ManageLoanTermCRUDServic {",
+      "to": "Service ManageLoanTermCRUDService {",
+      "occurrences": 1
+    },
+    {
+      "from": "SubmitLoanRequestModule",
+      "to": "SubmitLoanRequest",
+      "occurrences": 7
+    },
+    {
+      "from": "EnterValidatedCreditReferencesModule",
+      "to": "EnterValidatedCreditReferences",
+      "occurrences": 6
+    },
+    {
+      "from": "EvaluateLoanRequestModule",
+      "to": "EvaluateLoanRequest",
+      "occurrences": 163
+    },
+    {
+      "from": "GenerateLoanLetterAndAgreementModule",
+      "to": "GenerateLoanLetterAndAgreement",
+      "occurrences": 28
+    }
+  ],
+  "formal_seeds": [
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "protocol_hashes": {
+    "compute_airms_metrics.py": "9884cba3b79daef9a7a2f2aa9b2ab5abd4b3b8692aa9f65af8217258d57a7bff",
+    "remodel_to_monoembed.py": "249e39bc87e8c9a58606c05c092aa2c61f00af70a0e9dbdcc2f8e2dead379ef5",
+    "microminer_remodel_decompose.py": "feeb9af1adb7ebaa87a20373a330832fd2c096cdf68c585a14d0b2be1cbbd5d2",
+    "api_decompose.py": "2c7249234738aeb844c72b0d0fdff1b54cf1870123738f1c474b5b9dae4a5169",
+    "run_loan_comparison.py": "c9de9abfbb0fca08dc7443c6ab28130340c6ac52e6ee0ef6847f3d1c372694b9",
+    "report_loan_comparison.py": "1d7f2eabf2621e5c159b521afd0fd643676de4ee0956e59f488bb731d19bb342",
+    "remodel_to_microminer_input.py": "c124b12fef284cd9d821284f866b52b66857b3a40a6a5b7796ef996e9bb49a5b",
+    "remodel_to_servicecutter.py": "0cea3456126ca31edd03f6d93a77ca70f49db0007bc5a02eed3d3ee8e60fa27a",
+    "servicecutter_result_to_metrics_input.py": "2ed13572f5c8a744314ae9142fe7e31b8f65dbfb1aebe7176d20b1528f6f794e",
+    "remodelparse.patch": "5697c38a07c0257dcaa0cca4ba8dff328f6b8f18c7c4cba2863ed3d97d8d9169",
+    "Selectors.patch": "7691d240f57708a4deaa92e00d2495e33e5d02e59dff74ba7a6674bfb356d63a"
+  },
+  "status": "completed",
+  "formal_runs_completed": 10,
+  "jev_requests": 1,
+  "strict_req_exports": 10
+}

@@ -1,0 +1,168 @@
+{
+  "method": "ServiceCutter",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "ServiceCutter entity/nanoentity clusters are retained as the decomposition.",
+    "Use-case responsibilities are mapped to remodel services by operation name.",
+    "Operations not present in ServiceCutter use-case responsibility are assigned to the largest cluster."
+  ],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "servicecutter.domain.CashDesk",
+        "servicecutter.domain.Cashier",
+        "servicecutter.domain.Item",
+        "servicecutter.domain.OrderEntry",
+        "servicecutter.domain.Payment",
+        "servicecutter.domain.ProductCatalog",
+        "servicecutter.domain.Sale",
+        "servicecutter.domain.SalesLineItem",
+        "servicecutter.domain.Store",
+        "servicecutter.service.CoCoMESystem",
+        "servicecutter.service.ManageCashDeskCRUDService",
+        "servicecutter.service.ManageCashierCRUDService",
+        "servicecutter.service.ManageItemCRUDService",
+        "servicecutter.service.ManageProductCatalogCRUDService",
+        "servicecutter.service.ManageStoreCRUDService",
+        "servicecutter.service.ManageSupplierCRUDService",
+        "servicecutter.service.OpenCashDeskService",
+        "servicecutter.service.OrderProducts",
+        "servicecutter.service.ProcessSale",
+        "servicecutter.service.ThirdPartyServices"
+      ],
+      "servicecutter_nanoentities": [
+        "Sale.amount",
+        "Sale.assoicatedpayment",
+        "Sale.belongedcashdesk",
+        "Sale.belongedstore",
+        "Sale.boolean",
+        "Sale.cashdesk",
+        "Sale.containedsalesline",
+        "Sale.iscomplete",
+        "Sale.isreadytopay",
+        "Sale.payment",
+        "Sale.real",
+        "Sale.saleslineitem",
+        "Sale.store",
+        "Store.address",
+        "CashDesk.belongedstore",
+        "CashDesk.boolean",
+        "CashDesk.containedsales",
+        "CashDesk.id",
+        "CashDesk.integer",
+        "CashDesk.isopened",
+        "CashDesk.name",
+        "CashDesk.sale",
+        "CashDesk.store",
+        "CashDesk.string",
+        "SalesLineItem.belongedsale",
+        "SalesLineItem.integer",
+        "SalesLineItem.item",
+        "SalesLineItem.quantity",
+        "SalesLineItem.real",
+        "SalesLineItem.sale",
+        "Store.associationcashdeskes",
+        "Store.boolean",
+        "Store.cashdesk",
+        "Store.cashier",
+        "Store.cashiers",
+        "Store.id",
+        "Store.integer",
+        "Store.isopened",
+        "Store.item",
+        "Store.items",
+        "Store.name",
+        "Store.productcatalog",
+        "Store.productcatalogs",
+        "Store.sale",
+        "Store.sales",
+        "Payment.amounttendered",
+        "Payment.belongedsale",
+        "Payment.real",
+        "Payment.sale",
+        "Store.string",
+        "Item.belongedcatalog",
+        "Item.integer",
+        "Item.name",
+        "Item.orderprice",
+        "Item.price",
+        "Item.productcatalog",
+        "Item.real",
+        "Item.stocknumber",
+        "SalesLineItem.subamount",
+        "SalesLineItem.belongeditem",
+        "Cashier.id",
+        "Cashier.integer",
+        "Cashier.name",
+        "Cashier.store",
+        "Cashier.string",
+        "Cashier.workedstore",
+        "ProductCatalog.containeditems",
+        "ProductCatalog.id",
+        "ProductCatalog.integer",
+        "ProductCatalog.item",
+        "ProductCatalog.name",
+        "ProductCatalog.string",
+        "Item.string",
+        "Item.barcode",
+        "OrderEntry.item",
+        "OrderEntry.quantity",
+        "OrderEntry.real",
+        "OrderEntry.subamount",
+        "OrderEntry.integer"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [
+        "servicecutter.domain.OrderProduct",
+        "servicecutter.domain.Supplier"
+      ],
+      "servicecutter_nanoentities": [
+        "OrderProduct.amount",
+        "Supplier.id",
+        "Supplier.integer",
+        "Supplier.name",
+        "Supplier.string",
+        "OrderProduct.containedentries",
+        "OrderProduct.date",
+        "OrderProduct.id",
+        "OrderProduct.integer",
+        "OrderProduct.orderentry",
+        "OrderProduct.real",
+        "OrderProduct.supplier",
+        "OrderProduct.time"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [],
+      "servicecutter_nanoentities": [
+        "CardPayment.cardaccountnumber",
+        "CashPayment.balance"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [
+        "servicecutter.domain.CardPayment"
+      ],
+      "servicecutter_nanoentities": [
+        "CardPayment.payment",
+        "CardPayment.string"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [
+        "servicecutter.domain.CashPayment"
+      ],
+      "servicecutter_nanoentities": [
+        "CashPayment.payment",
+        "CashPayment.real"
+      ]
+    }
+  ]
+}

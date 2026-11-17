@@ -1,0 +1,173 @@
+{
+  "source_sha256": "b3d2432b76cf0aecc30888d89b57a2c3071d5059b3e447a984cdc4f521e43a79",
+  "parsed_services": 11,
+  "parsed_entities": 13,
+  "parsed_usecases": 10,
+  "declared_operations": 43,
+  "methods": {
+    "microminer": {
+      "operations_complete_unique": true,
+      "MS_Num": 11,
+      "provided_interface_distribution": [
+        8,
+        1,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        0
+      ]
+    },
+    "monoembed": {
+      "operations_complete_unique": true,
+      "MS_Num": 5,
+      "provided_interface_distribution": [
+        20,
+        8,
+        4,
+        6,
+        5
+      ]
+    },
+    "servicecutter": {
+      "operations_complete_unique": true,
+      "MS_Num": 5,
+      "provided_interface_distribution": [
+        43,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_nanoentities_complete_unique": true,
+      "native_nanoentities": 98,
+      "requested_clusters": 5,
+      "actual_engine_clusters": 5
+    },
+    "unifyms": {
+      "runs": 10,
+      "unique_seeds": 10,
+      "jev_requests": 1,
+      "fixed_config": {
+        "crossP": 0.25,
+        "crossoverProbability": 0.5,
+        "evaluationBudget": 0,
+        "generations": 300,
+        "id": "C3",
+        "populationSize": 2000,
+        "seed": 11
+      },
+      "native_entities": [
+        "CardPayment",
+        "CashDesk",
+        "CashPayment",
+        "Cashier",
+        "Item",
+        "OrderEntry",
+        "OrderProduct",
+        "Payment",
+        "ProductCatalog",
+        "Sale",
+        "SalesLineItem",
+        "Store",
+        "Supplier"
+      ],
+      "per_run": [
+        {
+          "seed": 101,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 2.5,
+          "Instability_recomputed": 0.675,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 103,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 2.5,
+          "Instability_recomputed": 0.675,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 107,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.5,
+          "Instability_recomputed": 0.6964285714285714,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 109,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.0,
+          "Instability_recomputed": 0.625,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 113,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.25,
+          "Instability_recomputed": 0.6666666666666667,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 127,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.0,
+          "Instability_recomputed": 0.625,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 131,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.0,
+          "Instability_recomputed": 0.625,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 137,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 2.5,
+          "Instability_recomputed": 0.675,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 139,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.0,
+          "Instability_recomputed": 0.625,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        },
+        {
+          "seed": 149,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 3.0,
+          "Instability_recomputed": 0.625,
+          "effective_budget": 1802000,
+          "evaluations": 1802000,
+          "completed_generations": 300
+        }
+      ]
+    }
+  }
+}

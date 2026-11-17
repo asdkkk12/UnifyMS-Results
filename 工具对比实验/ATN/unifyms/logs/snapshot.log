@@ -1,0 +1,18 @@
+		BelongedUser : User Association
+User
+		OwnedCard : BankCard* ! Association
+BankCard
+manageBankCard manageBankCard
+manageBankCard manageUser
+manageUser manageBankCard
+manageUser manageUser
+depositFunds depositFunds
+depositFunds withdrawCash
+depositFunds checkBalance
+withdrawCash depositFunds
+withdrawCash withdrawCash
+withdrawCash checkBalance
+checkBalance depositFunds
+checkBalance withdrawCash
+checkBalance checkBalance
+/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/atm-guidance-loss05-isolated0-10seeds-20261110-rerun2/model-snapshot.json

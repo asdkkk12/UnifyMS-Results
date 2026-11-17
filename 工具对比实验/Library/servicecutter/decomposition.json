@@ -1,0 +1,171 @@
+{
+  "method": "ServiceCutter",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "ServiceCutter entity/nanoentity clusters are retained as the decomposition.",
+    "Use-case responsibilities are mapped to remodel services by operation name.",
+    "Operations not present in ServiceCutter use-case responsibility are assigned to the largest cluster."
+  ],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "servicecutter.domain.Faculty",
+        "servicecutter.domain.Loan",
+        "servicecutter.domain.RecommendBook",
+        "servicecutter.domain.Reserve",
+        "servicecutter.domain.Student",
+        "servicecutter.domain.User",
+        "servicecutter.service.LibraryManagementSystem",
+        "servicecutter.service.ListBookHistory",
+        "servicecutter.service.ManageBookCRUDService",
+        "servicecutter.service.ManageBookCopyCRUDService",
+        "servicecutter.service.ManageLibrarianCRUDService",
+        "servicecutter.service.ManageSubjectCRUDService",
+        "servicecutter.service.ManageUserCRUDService",
+        "servicecutter.service.SearchBook"
+      ],
+      "servicecutter_nanoentities": [
+        "Reserve.bookcopy",
+        "Reserve.boolean",
+        "Reserve.date",
+        "Reserve.isreserveclosed",
+        "Reserve.reservedate",
+        "Reserve.reservedcopy",
+        "Reserve.reserveduser",
+        "Reserve.user",
+        "Student.major",
+        "Faculty.facultyposition",
+        "RecommendBook.book",
+        "User.borrowstatus",
+        "Student.programme",
+        "Student.registrationstatus",
+        "Student.string",
+        "Student.studentstatus",
+        "Student.user",
+        "Faculty.facultystatus",
+        "Faculty.position",
+        "Faculty.status",
+        "Faculty.user",
+        "Loan.bookcopy",
+        "RecommendBook.date",
+        "RecommendBook.recommenddate",
+        "RecommendBook.recommenduser",
+        "RecommendBook.user",
+        "User.email",
+        "User.faculty",
+        "User.integer",
+        "User.loan",
+        "User.loanedbook",
+        "User.loanednumber",
+        "User.name",
+        "User.overduefee",
+        "User.password",
+        "User.real",
+        "User.recommendbook",
+        "User.recommendedbook",
+        "User.reserve",
+        "User.reservedbook",
+        "User.sex",
+        "User.string",
+        "User.suspensiondays",
+        "User.userid",
+        "Loan.boolean",
+        "Loan.date",
+        "Loan.duedate",
+        "Loan.integer",
+        "Loan.isreturned",
+        "Loan.librarian",
+        "Loan.loandate",
+        "Loan.loanedcopy",
+        "Loan.loaneduser",
+        "Loan.loanlibrarian",
+        "Loan.overdue10days",
+        "Loan.overdue17days",
+        "Loan.overdue31days",
+        "Loan.overdue3days",
+        "Loan.overduefee",
+        "Loan.real",
+        "Loan.renewdate",
+        "Loan.renewedtimes",
+        "Loan.returndate",
+        "Loan.returnlibrarian",
+        "Loan.user"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [
+        "servicecutter.domain.BookCopy"
+      ],
+      "servicecutter_nanoentities": [
+        "BookCopy.barcode",
+        "BookCopy.book",
+        "BookCopy.bookbelongs",
+        "BookCopy.boolean",
+        "BookCopy.copystatus",
+        "BookCopy.isreserved",
+        "BookCopy.loan",
+        "BookCopy.loanedrecord",
+        "BookCopy.location",
+        "BookCopy.reservationrecord",
+        "BookCopy.reserve",
+        "BookCopy.status",
+        "BookCopy.string"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [
+        "servicecutter.domain.Administrator",
+        "servicecutter.service.ThirdPartServices"
+      ],
+      "servicecutter_nanoentities": [
+        "Administrator.adminid",
+        "Administrator.password",
+        "Administrator.string",
+        "Administrator.username"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [
+        "servicecutter.domain.Book",
+        "servicecutter.domain.Subject"
+      ],
+      "servicecutter_nanoentities": [
+        "Book.author",
+        "Book.bookcopy",
+        "Book.callno",
+        "Book.copynum",
+        "Book.copys",
+        "Book.description",
+        "Book.edition",
+        "Book.integer",
+        "Book.isbn",
+        "Book.publisher",
+        "Book.string",
+        "Book.subject",
+        "Book.title",
+        "Subject.name",
+        "Subject.string",
+        "Subject.subject",
+        "Subject.subsubject",
+        "Subject.supersubject"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [
+        "servicecutter.domain.Librarian"
+      ],
+      "servicecutter_nanoentities": [
+        "Librarian.librarianid",
+        "Librarian.name",
+        "Librarian.password",
+        "Librarian.string"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "application": "COCOME",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/microminer/input/cocome.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "COCOME.service.CoCoMESystem",
+        "COCOME.domain.Store",
+        "COCOME.domain.CashDesk",
+        "COCOME.domain.Item",
+        "COCOME.domain.OrderEntry",
+        "COCOME.domain.Supplier",
+        "COCOME.domain.OrderProduct"
+      ],
+      "service_names": [
+        "CoCoMESystem"
+      ],
+      "membership_scores": {
+        "Store": {
+          "CoCoMESystem": 1.0763762615825974,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.07245688373094719,
+          "ManageStoreCRUDService": 1.0288675134594814,
+          "ManageProductCatalogCRUDService": 0.05400617248673217,
+          "ManageCashDeskCRUDService": 0.05400617248673217,
+          "ManageCashierCRUDService": 0.028867513459481287,
+          "ManageItemCRUDService": 0.028867513459481287,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.04409585518440983,
+          "OpenCashDeskService": 0.07637626158259733
+        },
+        "CashDesk": {
+          "CoCoMESystem": 1.0791467279516629,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.06674238124719147,
+          "ManageStoreCRUDService": 0.03988620176087328,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 1.0746202507244635,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.03046358979224712,
+          "OpenCashDeskService": 0.10552897060221726
+        },
+        "Item": {
+          "CoCoMESystem": 1.0485362671697076,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 1.030697030675746,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.06864064729836442,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 1.0366899692852671,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 1.0280224269158902,
+          "OpenCashDeskService": 0.0
+        },
+        "OrderEntry": {
+          "CoCoMESystem": 1.0,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.04183300132670378,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.049999999999999996,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 1.0763762615825974,
+          "OpenCashDeskService": 0.0
+        },
+        "Supplier": {
+          "CoCoMESystem": 1.0,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.0,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 1.0661437827766147,
+          "OrderProducts": 1.0505181485540922,
+          "OpenCashDeskService": 0.0
+        },
+        "OrderProduct": {
+          "CoCoMESystem": 1.0263822426505542,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.0,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.03731012536223182,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.03988620176087328,
+          "OrderProducts": 1.0609271795844943,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "COCOME.service.ThirdPartyServices"
+      ],
+      "service_names": [
+        "ThirdPartyServices"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "COCOME.service.ProcessSale",
+        "COCOME.domain.Sale",
+        "COCOME.domain.SalesLineItem",
+        "COCOME.domain.Item",
+        "COCOME.domain.CashPayment",
+        "COCOME.domain.CardPayment"
+      ],
+      "service_names": [
+        "ProcessSale"
+      ],
+      "membership_scores": {
+        "Sale": {
+          "CoCoMESystem": 0.06022163014102245,
+          "ThirdPartyServices": 0.03278050340535929,
+          "ProcessSale": 1.1015666750154016,
+          "ManageStoreCRUDService": 0.030348848933344195,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.05677749739576689,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.030348848933344195,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.04635863249727653,
+          "OpenCashDeskService": 0.08029550685469661
+        },
+        "SalesLineItem": {
+          "CoCoMESystem": 0.0,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 1.07,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.04183300132670378,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.031950482521134686,
+          "OpenCashDeskService": 0.0
+        },
+        "Item": {
+          "CoCoMESystem": 1.0485362671697076,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 1.030697030675746,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.06864064729836442,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 1.0366899692852671,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 1.0280224269158902,
+          "OpenCashDeskService": 0.0
+        },
+        "CashPayment": {
+          "CoCoMESystem": 0.04375,
+          "ThirdPartyServices": 0.07144345083117604,
+          "ProcessSale": 1.1106797181058932,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0618718433538229,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.0,
+          "OpenCashDeskService": 0.0875
+        },
+        "CardPayment": {
+          "CoCoMESystem": 0.0,
+          "ThirdPartyServices": 0.14288690166235207,
+          "ProcessSale": 1.1106797181058932,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.0,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "COCOME.service.ManageStoreCRUDService",
+        "COCOME.domain.Store"
+      ],
+      "service_names": [
+        "ManageStoreCRUDService"
+      ],
+      "membership_scores": {
+        "Store": {
+          "CoCoMESystem": 1.0763762615825974,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.07245688373094719,
+          "ManageStoreCRUDService": 1.0288675134594814,
+          "ManageProductCatalogCRUDService": 0.05400617248673217,
+          "ManageCashDeskCRUDService": 0.05400617248673217,
+          "ManageCashierCRUDService": 0.028867513459481287,
+          "ManageItemCRUDService": 0.028867513459481287,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.04409585518440983,
+          "OpenCashDeskService": 0.07637626158259733
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "COCOME.service.ManageProductCatalogCRUDService",
+        "COCOME.domain.ProductCatalog"
+      ],
+      "service_names": [
+        "ManageProductCatalogCRUDService"
+      ],
+      "membership_scores": {
+        "ProductCatalog": {
+          "CoCoMESystem": 0.03307189138830738,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.04183300132670378,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 1.0935414346693486,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.049999999999999996,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.038188130791298666,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "COCOME.service.ManageCashDeskCRUDService",
+        "COCOME.domain.CashDesk"
+      ],
+      "service_names": [
+        "ManageCashDeskCRUDService"
+      ],
+      "membership_scores": {
+        "CashDesk": {
+          "CoCoMESystem": 1.0791467279516629,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.06674238124719147,
+          "ManageStoreCRUDService": 0.03988620176087328,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 1.0746202507244635,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.03046358979224712,
+          "OpenCashDeskService": 0.10552897060221726
+        }
+      }
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "COCOME.service.ManageCashierCRUDService",
+        "COCOME.domain.Cashier"
+      ],
+      "service_names": [
+        "ManageCashierCRUDService"
+      ],
+      "membership_scores": {
+        "Cashier": {
+          "CoCoMESystem": 0.03572172541558802,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.0,
+          "ManageStoreCRUDService": 0.05400617248673217,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 1.0540061724867322,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 0.04124789556921527,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 7,
+      "members": [
+        "COCOME.service.ManageItemCRUDService",
+        "COCOME.domain.Item"
+      ],
+      "service_names": [
+        "ManageItemCRUDService"
+      ],
+      "membership_scores": {
+        "Item": {
+          "CoCoMESystem": 1.0485362671697076,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 1.030697030675746,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.06864064729836442,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 1.0366899692852671,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 1.0280224269158902,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 8,
+      "members": [
+        "COCOME.service.ManageSupplierCRUDService",
+        "COCOME.domain.Supplier"
+      ],
+      "service_names": [
+        "ManageSupplierCRUDService"
+      ],
+      "membership_scores": {
+        "Supplier": {
+          "CoCoMESystem": 1.0,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.0,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 1.0661437827766147,
+          "OrderProducts": 1.0505181485540922,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 9,
+      "members": [
+        "COCOME.service.OrderProducts",
+        "COCOME.domain.Item",
+        "COCOME.domain.OrderEntry",
+        "COCOME.domain.Supplier",
+        "COCOME.domain.OrderProduct"
+      ],
+      "service_names": [
+        "OrderProducts"
+      ],
+      "membership_scores": {
+        "Item": {
+          "CoCoMESystem": 1.0485362671697076,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 1.030697030675746,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.06864064729836442,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 1.0366899692852671,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 1.0280224269158902,
+          "OpenCashDeskService": 0.0
+        },
+        "OrderEntry": {
+          "CoCoMESystem": 1.0,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.04183300132670378,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.049999999999999996,
+          "ManageSupplierCRUDService": 0.0,
+          "OrderProducts": 1.0763762615825974,
+          "OpenCashDeskService": 0.0
+        },
+        "Supplier": {
+          "CoCoMESystem": 1.0,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.0,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.0,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 1.0661437827766147,
+          "OrderProducts": 1.0505181485540922,
+          "OpenCashDeskService": 0.0
+        },
+        "OrderProduct": {
+          "CoCoMESystem": 1.0263822426505542,
+          "ThirdPartyServices": 0.0,
+          "ProcessSale": 0.0,
+          "ManageStoreCRUDService": 0.0,
+          "ManageProductCatalogCRUDService": 0.03731012536223182,
+          "ManageCashDeskCRUDService": 0.0,
+          "ManageCashierCRUDService": 0.0,
+          "ManageItemCRUDService": 0.0,
+          "ManageSupplierCRUDService": 0.03988620176087328,
+          "OrderProducts": 1.0609271795844943,
+          "OpenCashDeskService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 10,
+      "members": [
+        "COCOME.service.OpenCashDeskService"
+      ],
+      "service_names": [
+        "OpenCashDeskService"
+      ],
+      "membership_scores": {}
+    }
+  ],
+  "entity_memberships": {
+    "Store": [
+      {
+        "service": "CoCoMESystem",
+        "score": 1.076376
+      },
+      {
+        "service": "ManageStoreCRUDService",
+        "score": 1.028868
+      }
+    ],
+    "CashDesk": [
+      {
+        "service": "CoCoMESystem",
+        "score": 1.079147
+      },
+      {
+        "service": "ManageCashDeskCRUDService",
+        "score": 1.07462
+      }
+    ],
+    "Item": [
+      {
+        "service": "CoCoMESystem",
+        "score": 1.048536
+      },
+      {
+        "service": "ProcessSale",
+        "score": 1.030697
+      },
+      {
+        "service": "ManageItemCRUDService",
+        "score": 1.03669
+      },
+      {
+        "service": "OrderProducts",
+        "score": 1.028022
+      }
+    ],
+    "OrderEntry": [
+      {
+        "service": "CoCoMESystem",
+        "score": 1.0
+      },
+      {
+        "service": "OrderProducts",
+        "score": 1.076376
+      }
+    ],
+    "Supplier": [
+      {
+        "service": "CoCoMESystem",
+        "score": 1.0
+      },
+      {
+        "service": "ManageSupplierCRUDService",
+        "score": 1.066144
+      },
+      {
+        "service": "OrderProducts",
+        "score": 1.050518
+      }
+    ],
+    "OrderProduct": [
+      {
+        "service": "CoCoMESystem",
+        "score": 1.026382
+      },
+      {
+        "service": "OrderProducts",
+        "score": 1.060927
+      }
+    ],
+    "Sale": [
+      {
+        "service": "ProcessSale",
+        "score": 1.101567
+      }
+    ],
+    "SalesLineItem": [
+      {
+        "service": "ProcessSale",
+        "score": 1.07
+      }
+    ],
+    "CashPayment": [
+      {
+        "service": "ProcessSale",
+        "score": 1.11068
+      }
+    ],
+    "CardPayment": [
+      {
+        "service": "ProcessSale",
+        "score": 1.11068
+      }
+    ],
+    "ProductCatalog": [
+      {
+        "service": "ManageProductCatalogCRUDService",
+        "score": 1.093541
+      }
+    ],
+    "Cashier": [
+      {
+        "service": "ManageCashierCRUDService",
+        "score": 1.054006
+      }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "groups": {
+    "full": {
+      "MS_Num": {
+        "mean": 8,
+        "sampleStd": 1.4142135623730951
+      },
+      "IFN": {
+        "mean": 2.90417,
+        "sampleStd": 0.3229423204433468
+      },
+      "CHD": {
+        "mean": 0.27048,
+        "sampleStd": 0.03456294740518137
+      },
+      "Instability": {
+        "mean": 0.4732,
+        "sampleStd": 0.06307341401538016
+      },
+      "UCM": {
+        "mean": 0.26995,
+        "sampleStd": 0.0654190126967858
+      },
+      "CMQ": {
+        "mean": 0.20945,
+        "sampleStd": 0.06320598160863504
+      },
+      "HV": {
+        "mean": 0.5365524147277758,
+        "sampleStd": 0.04265964753501574
+      },
+      "ED": {
+        "mean": 1.046700987134901,
+        "sampleStd": 0.12833053378891468
+      }
+    },
+    "without-offline": {
+      "MS_Num": {
+        "mean": 6.9,
+        "sampleStd": 1.5238839267549948
+      },
+      "IFN": {
+        "mean": 3.05036,
+        "sampleStd": 0.6832161366166152
+      },
+      "CHD": {
+        "mean": 0.2857,
+        "sampleStd": 0.02879004457562834
+      },
+      "Instability": {
+        "mean": 0.44551999999999997,
+        "sampleStd": 0.07688803981547887
+      },
+      "UCM": {
+        "mean": 0.18908,
+        "sampleStd": 0.05620669790059622
+      },
+      "CMQ": {
+        "mean": 0.18166000000000002,
+        "sampleStd": 0.09163453012435384
+      },
+      "HV": {
+        "mean": 0.4392906218854863,
+        "sampleStd": 0.026636124143661465
+      },
+      "ED": {
+        "mean": 1.2912946017113531,
+        "sampleStd": 0.10365552642212711
+      }
+    },
+    "without-probability": {
+      "MS_Num": {
+        "mean": 8.4,
+        "sampleStd": 0.9660917830792959
+      },
+      "IFN": {
+        "mean": 2.9046,
+        "sampleStd": 0.4003588584701924
+      },
+      "CHD": {
+        "mean": 0.24928,
+        "sampleStd": 0.037498171807288004
+      },
+      "Instability": {
+        "mean": 0.43505,
+        "sampleStd": 0.06318970116508967
+      },
+      "UCM": {
+        "mean": 0.29895,
+        "sampleStd": 0.047070827247646475
+      },
+      "CMQ": {
+        "mean": 0.22472999999999999,
+        "sampleStd": 0.08350107184940803
+      },
+      "HV": {
+        "mean": 0.5402110299391957,
+        "sampleStd": 0.03685187824084
+      },
+      "ED": {
+        "mean": 1.1320384203008247,
+        "sampleStd": 0.14518067269053644
+      }
+    },
+    "without-guidance": {
+      "MS_Num": {
+        "mean": 7.9,
+        "sampleStd": 1.1972189997378648
+      },
+      "IFN": {
+        "mean": 2.8945,
+        "sampleStd": 0.3381594331409701
+      },
+      "CHD": {
+        "mean": 0.24792,
+        "sampleStd": 0.03663858924989092
+      },
+      "Instability": {
+        "mean": 0.45845,
+        "sampleStd": 0.07158484088439705
+      },
+      "UCM": {
+        "mean": 0.27331,
+        "sampleStd": 0.07083289333196674
+      },
+      "CMQ": {
+        "mean": 0.19956000000000002,
+        "sampleStd": 0.060007466202131876
+      },
+      "HV": {
+        "mean": 0.529932964111992,
+        "sampleStd": 0.033236540566863745
+      },
+      "ED": {
+        "mean": 1.1521194015291887,
+        "sampleStd": 0.12030474165490761
+      }
+    }
+  },
+  "rankings": {
+    "IFN": [
+      [
+        "without-guidance"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-probability"
+      ],
+      [
+        "without-offline"
+      ]
+    ],
+    "CHD": [
+      [
+        "without-offline"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-probability"
+      ],
+      [
+        "without-guidance"
+      ]
+    ],
+    "Instability": [
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ],
+      [
+        "without-probability"
+      ]
+    ],
+    "UCM": [
+      [
+        "without-probability"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-offline"
+      ]
+    ],
+    "CMQ": [
+      [
+        "without-probability"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ]
+    ],
+    "ED": [
+      [
+        "full"
+      ],
+      [
+        "without-probability"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ]
+    ],
+    "HV": [
+      [
+        "without-probability"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ]
+    ]
+  },
+  "attachmentMeans": {
+    "MS_Num": 8.0,
+    "IFN": 2.90417,
+    "CHD": 0.27048,
+    "Instability": 0.4732,
+    "UCM": 0.26995,
+    "CMQ": 0.20945
+  },
+  "fullSource": "/Users/yuanyaowu/Desktop/输出/light-reading/unifyms",
+  "sourceSummary": "/Users/yuanyaowu/Desktop/输出/汇总Case.md.md"
+}

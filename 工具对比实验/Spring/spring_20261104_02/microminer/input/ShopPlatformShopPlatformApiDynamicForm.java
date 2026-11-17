@@ -1,0 +1,39 @@
+// Structural input generated from Spring.remodel; not recovered implementation code.
+public class ShopPlatformShopPlatformApiDynamicForm {
+    private allowhalf;
+    private arrowcontrol;
+    private berange;
+    private biztype;
+    private clearable;
+    private customclass;
+    private datatype;
+    private defaultvalue;
+    private disabled;
+    private editable;
+    private endplaceholder;
+    private filterable;
+    private format;
+    private icon;
+    private id;
+    private inline;
+    private integer;
+    private max;
+    private min;
+    private model;
+    private multiple;
+    private name;
+    private pattern;
+    private placeholder;
+    private readonly;
+    private remoteurl;
+    private rules;
+    private showalpha;
+    private showinput;
+    private showlabel;
+    private startplaceholder;
+    private step;
+    private string;
+    private timestamp;
+    private type;
+    private width;
+}

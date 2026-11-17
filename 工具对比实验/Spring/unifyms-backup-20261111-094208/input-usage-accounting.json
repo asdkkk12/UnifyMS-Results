@@ -1,0 +1,3637 @@
+{
+  "inputHash": "11b712b6f27c990ddb86be946ceb57f0e1dd4b4cbc2787089db4df647bacfa02",
+  "metricVersion": "paper-ieee-eq5-21-v2-isolated-zero",
+  "scope": "Only input/prompt tokens; cached input is already included; output tokens excluded; missing usage remains unknown.",
+  "modules": {
+    "llm": {
+      "requestCount": 354,
+      "withInputUsage": 352,
+      "knownInputTokens": 18528001,
+      "totalInputTokens": null
+    },
+    "selectionJev": {
+      "requestCount": 27,
+      "withInputUsage": 0,
+      "knownInputTokens": 0,
+      "totalInputTokens": null
+    },
+    "probabilityJev": {
+      "requestCount": 90,
+      "withInputUsage": 0,
+      "knownInputTokens": 0,
+      "totalInputTokens": null
+    },
+    "offlineJev": {
+      "requestCount": 1,
+      "withInputUsage": 0,
+      "knownInputTokens": 0,
+      "totalInputTokens": null
+    }
+  },
+  "knownInputTokens": 18528001,
+  "totalInputTokens": null,
+  "calibrationWorkerCount": 6,
+  "calibrationWorkerSumSeconds": 33.376386041,
+  "offlineJevResponseSeconds": 0.722667292,
+  "formalWorkerSumSeconds": 6198.203922916,
+  "formalWorkerMeanSeconds": 619.8203922916,
+  "cumulativeTaskSeconds": 6232.302976249,
+  "batchWallSeconds": 1907.24687,
+  "timingScope": "Cumulative task = 6 calibration workers + one offline JEV response + 10 formal workers. Formal workers already include online generation/Choice wait. Excludes build, CLI overhead, rendering, report. Wall time reported separately.",
+  "records": [
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0010.json",
+      "inputTokens": 52809
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0010.json",
+      "inputTokens": 52805
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0010.json",
+      "inputTokens": 52804
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0010.json",
+      "inputTokens": 52806
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0020.json",
+      "inputTokens": 52809
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0020.json",
+      "inputTokens": 52805
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0020.json",
+      "inputTokens": 52804
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0020.json",
+      "inputTokens": 52806
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0030.json",
+      "inputTokens": 52625
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0030.json",
+      "inputTokens": 52621
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0030.json",
+      "inputTokens": 52620
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0030.json",
+      "inputTokens": 52622
+    },
+    {
+      "module": "selectionJev",
+      "seed": 101,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0040.json",
+      "inputTokens": 52425
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0040.json",
+      "inputTokens": 52421
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0040.json",
+      "inputTokens": 52420
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0040.json",
+      "inputTokens": 52422
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0050.json",
+      "inputTokens": 52425
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0050.json",
+      "inputTokens": 52421
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0050.json",
+      "inputTokens": 52420
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0050.json",
+      "inputTokens": 52422
+    },
+    {
+      "module": "selectionJev",
+      "seed": 101,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0060.json",
+      "inputTokens": 52223
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0070.json",
+      "inputTokens": 52188
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0070.json",
+      "inputTokens": 52184
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0070.json",
+      "inputTokens": 52183
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0070.json",
+      "inputTokens": 52185
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0080.json",
+      "inputTokens": 52160
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0080.json",
+      "inputTokens": 52156
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0080.json",
+      "inputTokens": 52155
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0080.json",
+      "inputTokens": 52157
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0090.json",
+      "inputTokens": 52188
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0090.json",
+      "inputTokens": 52184
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0090.json",
+      "inputTokens": 52183
+    },
+    {
+      "module": "llm",
+      "seed": 101,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/guidance/window-0090.json",
+      "inputTokens": 52185
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 101,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/3e2b970b583b0a80eb2d2f7c011177b74ed05391a9d731b68451b3bc92dc3e77/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0010.json",
+      "inputTokens": 52386
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0010.json",
+      "inputTokens": 52382
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0010.json",
+      "inputTokens": 52381
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0010.json",
+      "inputTokens": 52383
+    },
+    {
+      "module": "selectionJev",
+      "seed": 103,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0020.json",
+      "inputTokens": 52386
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0020.json",
+      "inputTokens": 52382
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0020.json",
+      "inputTokens": 52381
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0020.json",
+      "inputTokens": 52383
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0030.json",
+      "inputTokens": 53169
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0030.json",
+      "inputTokens": 53165
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0030.json",
+      "inputTokens": 53164
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0030.json",
+      "inputTokens": 53166
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0040.json",
+      "inputTokens": 52226
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0050.json",
+      "inputTokens": 52226
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0050.json",
+      "inputTokens": 52222
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0050.json",
+      "inputTokens": 52221
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0050.json",
+      "inputTokens": 52223
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0060.json",
+      "inputTokens": 52226
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0060.json",
+      "inputTokens": 52222
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0060.json",
+      "inputTokens": 52221
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0060.json",
+      "inputTokens": 52223
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0070.json",
+      "inputTokens": 52226
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0070.json",
+      "inputTokens": 52222
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0070.json",
+      "inputTokens": 52221
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0070.json",
+      "inputTokens": 52223
+    },
+    {
+      "module": "selectionJev",
+      "seed": 103,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0080.json",
+      "inputTokens": 52226
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0080.json",
+      "inputTokens": 52222
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0080.json",
+      "inputTokens": 52221
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0080.json",
+      "inputTokens": 52223
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0090.json",
+      "inputTokens": 52159
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0090.json",
+      "inputTokens": 52155
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0090.json",
+      "inputTokens": 52154
+    },
+    {
+      "module": "llm",
+      "seed": 103,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/guidance/window-0090.json",
+      "inputTokens": 52156
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 103,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/2698efe3b5384e5cc597372d2fe9860dfaecf128b5165d2497817d50c3e68708/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0010.json",
+      "inputTokens": 52627
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0010.json",
+      "inputTokens": 52623
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0010.json",
+      "inputTokens": 52622
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0010.json",
+      "inputTokens": 52624
+    },
+    {
+      "module": "selectionJev",
+      "seed": 107,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0020.json",
+      "inputTokens": 52994
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0020.json",
+      "inputTokens": 52990
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0020.json",
+      "inputTokens": 52989
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0020.json",
+      "inputTokens": 52991
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0030.json",
+      "inputTokens": 52994
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0030.json",
+      "inputTokens": 52990
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0030.json",
+      "inputTokens": 52989
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0030.json",
+      "inputTokens": 52991
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0040.json",
+      "inputTokens": 52994
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0040.json",
+      "inputTokens": 52990
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0040.json",
+      "inputTokens": 52989
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0040.json",
+      "inputTokens": 52991
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0050.json",
+      "inputTokens": 52994
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0050.json",
+      "inputTokens": 52990
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0050.json",
+      "inputTokens": 52989
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0050.json",
+      "inputTokens": 52991
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0060.json",
+      "inputTokens": 52994
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0060.json",
+      "inputTokens": 52990
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0060.json",
+      "inputTokens": 52989
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0060.json",
+      "inputTokens": 52991
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0070.json",
+      "inputTokens": 52994
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0070.json",
+      "inputTokens": 52990
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0070.json",
+      "inputTokens": 52989
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0070.json",
+      "inputTokens": 52991
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0080.json",
+      "inputTokens": 52675
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0080.json",
+      "inputTokens": 52671
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0080.json",
+      "inputTokens": 52670
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0080.json",
+      "inputTokens": 52672
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0090.json",
+      "inputTokens": 52675
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0090.json",
+      "inputTokens": 52671
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0090.json",
+      "inputTokens": 52670
+    },
+    {
+      "module": "llm",
+      "seed": 107,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/guidance/window-0090.json",
+      "inputTokens": 52672
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 107,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/fc3cde4c0b7417f3429b3995ce1c67a0e4fa52065a896d31994ecee86d2e0550/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0010.json",
+      "inputTokens": 52683
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0010.json",
+      "inputTokens": 52679
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0010.json",
+      "inputTokens": 52678
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0010.json",
+      "inputTokens": 52680
+    },
+    {
+      "module": "selectionJev",
+      "seed": 109,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0020.json",
+      "inputTokens": 53837
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0020.json",
+      "inputTokens": 53833
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0020.json",
+      "inputTokens": 53832
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0020.json",
+      "inputTokens": 53834
+    },
+    {
+      "module": "selectionJev",
+      "seed": 109,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0030.json",
+      "inputTokens": 53837
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0030.json",
+      "inputTokens": 53833
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0030.json",
+      "inputTokens": 53832
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0030.json",
+      "inputTokens": 53834
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0040.json",
+      "inputTokens": 53837
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0040.json",
+      "inputTokens": 53833
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0040.json",
+      "inputTokens": 53832
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0040.json",
+      "inputTokens": 53834
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0050.json",
+      "inputTokens": 53837
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0050.json",
+      "inputTokens": 53833
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0050.json",
+      "inputTokens": 53832
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0050.json",
+      "inputTokens": 53834
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0060.json",
+      "inputTokens": 52459
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0060.json",
+      "inputTokens": 52455
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0060.json",
+      "inputTokens": 52454
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0060.json",
+      "inputTokens": 52456
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0070.json",
+      "inputTokens": 52459
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0070.json",
+      "inputTokens": 52455
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0070.json",
+      "inputTokens": 52454
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0070.json",
+      "inputTokens": 52456
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0080.json",
+      "inputTokens": 52459
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0080.json",
+      "inputTokens": 52455
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0080.json",
+      "inputTokens": 52454
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0080.json",
+      "inputTokens": 52456
+    },
+    {
+      "module": "selectionJev",
+      "seed": 109,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0090.json",
+      "inputTokens": 52459
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0090.json",
+      "inputTokens": 52455
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0090.json",
+      "inputTokens": 52454
+    },
+    {
+      "module": "llm",
+      "seed": 109,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/guidance/window-0090.json",
+      "inputTokens": 52456
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 109,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/d4f2e23139acf43a8b02fd89ebdb3f0dc116635229e1c9ec45168ec16b6d0070/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0010.json",
+      "inputTokens": 53828
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0010.json",
+      "inputTokens": 53824
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0010.json",
+      "inputTokens": 53823
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0010.json",
+      "inputTokens": 53825
+    },
+    {
+      "module": "selectionJev",
+      "seed": 113,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0020.json",
+      "inputTokens": 53681
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0020.json",
+      "inputTokens": 53677
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0020.json",
+      "inputTokens": 53676
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0020.json",
+      "inputTokens": 53678
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0030.json",
+      "inputTokens": 53681
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0030.json",
+      "inputTokens": 53677
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0030.json",
+      "inputTokens": 53676
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0030.json",
+      "inputTokens": 53678
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0040.json",
+      "inputTokens": 52352
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0040.json",
+      "inputTokens": 52348
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0040.json",
+      "inputTokens": 52347
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0040.json",
+      "inputTokens": 52349
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0050.json",
+      "inputTokens": 52549
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0050.json",
+      "inputTokens": 52545
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0050.json",
+      "inputTokens": 52544
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0050.json",
+      "inputTokens": 52546
+    },
+    {
+      "module": "selectionJev",
+      "seed": 113,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0060.json",
+      "inputTokens": 52549
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0060.json",
+      "inputTokens": 52545
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0060.json",
+      "inputTokens": 52544
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0060.json",
+      "inputTokens": 52546
+    },
+    {
+      "module": "selectionJev",
+      "seed": 113,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0070.json",
+      "inputTokens": 52097
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0070.json",
+      "inputTokens": 52093
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0070.json",
+      "inputTokens": 52092
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0070.json",
+      "inputTokens": 52094
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0080.json",
+      "inputTokens": 52622
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0080.json",
+      "inputTokens": 52618
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0080.json",
+      "inputTokens": 52617
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0080.json",
+      "inputTokens": 52619
+    },
+    {
+      "module": "selectionJev",
+      "seed": 113,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0090.json",
+      "inputTokens": 52429
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0090.json",
+      "inputTokens": 52425
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0090.json",
+      "inputTokens": 52424
+    },
+    {
+      "module": "llm",
+      "seed": 113,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/guidance/window-0090.json",
+      "inputTokens": 52426
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 113,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/bbb6c3bf5a3ef4d41ae8efea04e002d6e6d187c014f9b22df89a7de724a8768f/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0010.json",
+      "inputTokens": 53262
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0010.json",
+      "inputTokens": 53258
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0010.json",
+      "inputTokens": 53257
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0010.json",
+      "inputTokens": 53259
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0020.json",
+      "inputTokens": 53262
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0020.json",
+      "inputTokens": 53258
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0020.json",
+      "inputTokens": 53257
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0020.json",
+      "inputTokens": 53259
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0030.json",
+      "inputTokens": 53262
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0030.json",
+      "inputTokens": 53258
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0030.json",
+      "inputTokens": 53257
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0030.json",
+      "inputTokens": 53259
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0040.json",
+      "inputTokens": 53283
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0040.json",
+      "inputTokens": 53279
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0040.json",
+      "inputTokens": 53278
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0040.json",
+      "inputTokens": 53280
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0050.json",
+      "inputTokens": 52653
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0050.json",
+      "inputTokens": 52649
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0050.json",
+      "inputTokens": 52648
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0050.json",
+      "inputTokens": 52650
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0060.json",
+      "inputTokens": 53273
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0060.json",
+      "inputTokens": 53269
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0060.json",
+      "inputTokens": 53268
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0060.json",
+      "inputTokens": 53270
+    },
+    {
+      "module": "selectionJev",
+      "seed": 127,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0070.json",
+      "inputTokens": 52954
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0070.json",
+      "inputTokens": 52950
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0070.json",
+      "inputTokens": 52949
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0070.json",
+      "inputTokens": 52951
+    },
+    {
+      "module": "selectionJev",
+      "seed": 127,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0080.json",
+      "inputTokens": 52301
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0080.json",
+      "inputTokens": 52297
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0080.json",
+      "inputTokens": 52296
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0080.json",
+      "inputTokens": 52298
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0090.json",
+      "inputTokens": 52368
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0090.json",
+      "inputTokens": 52364
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0090.json",
+      "inputTokens": 52363
+    },
+    {
+      "module": "llm",
+      "seed": 127,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/guidance/window-0090.json",
+      "inputTokens": 52365
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 127,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/7a0c7ce18b5d6b07d997f373aff4a4cf47e91c951fe06d0a87f15f30db84ac44/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0010.json",
+      "inputTokens": 52646
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0010.json",
+      "inputTokens": 52642
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0010.json",
+      "inputTokens": 52641
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0010.json",
+      "inputTokens": 52643
+    },
+    {
+      "module": "selectionJev",
+      "seed": 131,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0020.json",
+      "inputTokens": 52493
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0020.json",
+      "inputTokens": 52489
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0020.json",
+      "inputTokens": 52488
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0020.json",
+      "inputTokens": 52490
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0030.json",
+      "inputTokens": 52493
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0030.json",
+      "inputTokens": 52489
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0030.json",
+      "inputTokens": 52488
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0030.json",
+      "inputTokens": 52490
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0040.json",
+      "inputTokens": 52493
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0040.json",
+      "inputTokens": 52489
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0040.json",
+      "inputTokens": 52488
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0040.json",
+      "inputTokens": 52490
+    },
+    {
+      "module": "selectionJev",
+      "seed": 131,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0050.json",
+      "inputTokens": 52482
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0050.json",
+      "inputTokens": 52478
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0050.json",
+      "inputTokens": 52477
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0050.json",
+      "inputTokens": 52479
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0060.json",
+      "inputTokens": 52482
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0060.json",
+      "inputTokens": 52478
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0060.json",
+      "inputTokens": 52477
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0060.json",
+      "inputTokens": 52479
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0070.json",
+      "inputTokens": 52482
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0070.json",
+      "inputTokens": 52478
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0070.json",
+      "inputTokens": 52477
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0070.json",
+      "inputTokens": 52479
+    },
+    {
+      "module": "selectionJev",
+      "seed": 131,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0080.json",
+      "inputTokens": 52482
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0080.json",
+      "inputTokens": 52478
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0080.json",
+      "inputTokens": 52477
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0080.json",
+      "inputTokens": 52479
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0090.json",
+      "inputTokens": 52482
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0090.json",
+      "inputTokens": 52478
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0090.json",
+      "inputTokens": 52477
+    },
+    {
+      "module": "llm",
+      "seed": 131,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0090.json",
+      "inputTokens": 52479
+    },
+    {
+      "module": "selectionJev",
+      "seed": 131,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/guidance/window-0090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 131,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/a72332c02c886cee8d0b153d20c83d0a77c716cad02676127932e12ca2e86db8/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0010.json",
+      "inputTokens": 52473
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0010.json",
+      "inputTokens": 52469
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0010.json",
+      "inputTokens": 52468
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0010.json",
+      "inputTokens": 52470
+    },
+    {
+      "module": "selectionJev",
+      "seed": 137,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0020.json",
+      "inputTokens": 52094
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0020.json",
+      "inputTokens": 52090
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0020.json",
+      "inputTokens": 52089
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0020.json",
+      "inputTokens": 52091
+    },
+    {
+      "module": "selectionJev",
+      "seed": 137,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0030.json",
+      "inputTokens": 52094
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0030.json",
+      "inputTokens": 52090
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0030.json",
+      "inputTokens": 52089
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0030.json",
+      "inputTokens": 52091
+    },
+    {
+      "module": "selectionJev",
+      "seed": 137,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0040.json",
+      "inputTokens": 52421
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0040.json",
+      "inputTokens": 52417
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0040.json",
+      "inputTokens": 52416
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0040.json",
+      "inputTokens": 52418
+    },
+    {
+      "module": "selectionJev",
+      "seed": 137,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0050.json",
+      "inputTokens": 52869
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0050.json",
+      "inputTokens": 52865
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0050.json",
+      "inputTokens": 52864
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0050.json",
+      "inputTokens": 52866
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0060.json",
+      "inputTokens": 52869
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0060.json",
+      "inputTokens": 52865
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0060.json",
+      "inputTokens": 52864
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0060.json",
+      "inputTokens": 52866
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0070.json",
+      "inputTokens": 52952
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0070.json",
+      "inputTokens": 52948
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0070.json",
+      "inputTokens": 52947
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0070.json",
+      "inputTokens": 52949
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0080.json",
+      "inputTokens": 52952
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0080.json",
+      "inputTokens": 52948
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0090.json",
+      "inputTokens": 52952
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0090.json",
+      "inputTokens": 52948
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0090.json",
+      "inputTokens": 52947
+    },
+    {
+      "module": "llm",
+      "seed": 137,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/guidance/window-0090.json",
+      "inputTokens": 52949
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 137,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/8a37bcfdbf573514fa52863b3d2850f3174a5351eb413b606b4b576d64ca8e9a/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0010.json",
+      "inputTokens": 53162
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0010.json",
+      "inputTokens": 53158
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0010.json",
+      "inputTokens": 53157
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0010.json",
+      "inputTokens": 53159
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0020.json",
+      "inputTokens": 52104
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0020.json",
+      "inputTokens": 52100
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0020.json",
+      "inputTokens": 52099
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0020.json",
+      "inputTokens": 52101
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0030.json",
+      "inputTokens": 52173
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0030.json",
+      "inputTokens": 52169
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0030.json",
+      "inputTokens": 52168
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0030.json",
+      "inputTokens": 52170
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0040.json",
+      "inputTokens": 52139
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0040.json",
+      "inputTokens": 52135
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0040.json",
+      "inputTokens": 52134
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0040.json",
+      "inputTokens": 52136
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0050.json",
+      "inputTokens": 52139
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0050.json",
+      "inputTokens": 52135
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0050.json",
+      "inputTokens": 52134
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0050.json",
+      "inputTokens": 52136
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0060.json",
+      "inputTokens": 52139
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0060.json",
+      "inputTokens": 52135
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0060.json",
+      "inputTokens": 52134
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0060.json",
+      "inputTokens": 52136
+    },
+    {
+      "module": "selectionJev",
+      "seed": 139,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0070.json",
+      "inputTokens": 52139
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0070.json",
+      "inputTokens": 52135
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0070.json",
+      "inputTokens": 52134
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0070.json",
+      "inputTokens": 52136
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0080.json",
+      "inputTokens": 52139
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0080.json",
+      "inputTokens": 52135
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0080.json",
+      "inputTokens": 52134
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0080.json",
+      "inputTokens": 52136
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0090.json",
+      "inputTokens": 52139
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0090.json",
+      "inputTokens": 52135
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0090.json",
+      "inputTokens": 52134
+    },
+    {
+      "module": "llm",
+      "seed": 139,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/guidance/window-0090.json",
+      "inputTokens": 52136
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 139,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/dec32e5c197df27a09c87b30bbd1e56ad9c21c672c8a0adc8e3af983054e7cd1/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0010.json",
+      "inputTokens": 52844
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 10,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0010.json",
+      "inputTokens": 52840
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 10,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0010.json",
+      "inputTokens": 52839
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 10,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0010.json",
+      "inputTokens": 52841
+    },
+    {
+      "module": "selectionJev",
+      "seed": 149,
+      "generation": 10,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0020.json",
+      "inputTokens": 52326
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 20,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0020.json",
+      "inputTokens": 52322
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 20,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0020.json",
+      "inputTokens": 52321
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 20,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0020.json",
+      "inputTokens": 52323
+    },
+    {
+      "module": "selectionJev",
+      "seed": 149,
+      "generation": 20,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 30,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0030.json",
+      "inputTokens": 52326
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 30,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0030.json",
+      "inputTokens": 52322
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 30,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0030.json",
+      "inputTokens": 52321
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 30,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0030.json",
+      "inputTokens": 52323
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0040.json",
+      "inputTokens": 52326
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 40,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0040.json",
+      "inputTokens": 52322
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 40,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0040.json",
+      "inputTokens": 52321
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 40,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0040.json",
+      "inputTokens": 52323
+    },
+    {
+      "module": "selectionJev",
+      "seed": 149,
+      "generation": 40,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 50,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0050.json",
+      "inputTokens": 52250
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 50,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0050.json",
+      "inputTokens": 52246
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 50,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0050.json",
+      "inputTokens": 52245
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 50,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0050.json",
+      "inputTokens": 52247
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 60,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0060.json",
+      "inputTokens": 52264
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 60,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0060.json",
+      "inputTokens": 52260
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 60,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0060.json",
+      "inputTokens": 52259
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 60,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0060.json",
+      "inputTokens": 52261
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 70,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0070.json",
+      "inputTokens": 52250
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 70,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0070.json",
+      "inputTokens": 52246
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 70,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0070.json",
+      "inputTokens": 52245
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 70,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0070.json",
+      "inputTokens": 52247
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 80,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0080.json",
+      "inputTokens": 52533
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 80,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0080.json",
+      "inputTokens": 52529
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 80,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0080.json",
+      "inputTokens": 52528
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 80,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0080.json",
+      "inputTokens": 52530
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0090.json",
+      "inputTokens": 52176
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 90,
+      "index": 1,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0090.json",
+      "inputTokens": 52172
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 90,
+      "index": 2,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0090.json",
+      "inputTokens": 52171
+    },
+    {
+      "module": "llm",
+      "seed": 149,
+      "generation": 90,
+      "index": 3,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0090.json",
+      "inputTokens": 52173
+    },
+    {
+      "module": "selectionJev",
+      "seed": 149,
+      "generation": 90,
+      "index": 0,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/guidance/window-0090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000010.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000020.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000030.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000040.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000050.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000060.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000070.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000080.json",
+      "inputTokens": null
+    },
+    {
+      "module": "probabilityJev",
+      "seed": 149,
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/online-jev/guidance-jev/trials/5e2a8586e476850f0a2fce6e769ada7fadf10a0472b24df9a441af38d6d54db9/audit/requests/generation-000090.json",
+      "inputTokens": null
+    },
+    {
+      "module": "offlineJev",
+      "sourceFile": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/spring-guidance-loss05-isolated0-10seeds-20261110/experiment/Spring/selection-jev.json",
+      "index": 0,
+      "inputTokens": null
+    }
+  ]
+}

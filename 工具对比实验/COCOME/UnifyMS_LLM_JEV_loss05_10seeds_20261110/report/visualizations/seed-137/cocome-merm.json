@@ -1,0 +1,3463 @@
+{
+  "schemaVersion": "merm-view-v1",
+  "name": "cocome",
+  "input": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/cocome-guidance-loss05-10seeds-20261110/report/visualizations/seed-137/cocome.req",
+  "inputHash": "b2233876ec0148c6493e72e0139fee7f9c3d35065ad9668a895620e694701ae1",
+  "metadata": {
+    "inputHash": "b0d36476c404b6692ddd7ceb82089cde7388e2804d26b2580cdf89e06e075f1c",
+    "runHash": "80cfe5c200c88c2a1b3e5f40fc2049cced455d8b2c96d105190fcfa4de39cac7",
+    "snapshotHash": "7565b5f1cbe799611251ceac9d135f432230cb331b91218f16a81300725229ac",
+    "taskKey": "51ae93bc631be16338ac21045325e5055a678399564baa6a98181b418f01ed3f",
+    "configId": "C5",
+    "seed": "137",
+    "exportVersion": "merm-export-v1"
+  },
+  "services": [
+    {
+      "id": "service-0",
+      "key": "0",
+      "name": "Microservice 0",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.0",
+      "entityContext": "/0/@DomainModel/@entitycontext.0"
+    },
+    {
+      "id": "service-1",
+      "key": "1",
+      "name": "Microservice 1",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.1",
+      "entityContext": "/0/@DomainModel/@entitycontext.1"
+    },
+    {
+      "id": "service-2",
+      "key": "2",
+      "name": "Microservice 2",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.2",
+      "entityContext": "/0/@DomainModel/@entitycontext.2"
+    },
+    {
+      "id": "service-3",
+      "key": "3",
+      "name": "Microservice 3",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.3",
+      "entityContext": "/0/@DomainModel/@entitycontext.3"
+    },
+    {
+      "id": "service-4",
+      "key": "4",
+      "name": "Microservice 4",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.4",
+      "entityContext": "/0/@DomainModel/@entitycontext.4"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "uc",
+      "name": "processSale",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "processSale"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "uc",
+      "name": "openCashDesk",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+        "attributes": {
+          "name": "openCashDesk"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+      "kind": "uc",
+      "name": "closeCashDesk",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+        "attributes": {
+          "name": "closeCashDesk"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "uc",
+      "name": "orderProducts",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+        "attributes": {
+          "name": "orderProducts"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.1",
+      "kind": "uc",
+      "name": "receiveOrderedProduct",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.1",
+        "attributes": {
+          "name": "receiveOrderedProduct"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.2/@uc.2",
+      "kind": "uc",
+      "name": "listSuppliers",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.2/@uc.2",
+        "attributes": {
+          "name": "listSuppliers"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "uc",
+      "name": "showStockReports",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "showStockReports"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.3/@uc.1",
+      "kind": "uc",
+      "name": "changePrice",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.3/@uc.1",
+        "attributes": {
+          "name": "changePrice"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "uc",
+      "name": "openStore",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+        "attributes": {
+          "name": "openStore"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+      "kind": "uc",
+      "name": "closeStore",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+        "attributes": {
+          "name": "closeStore"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0",
+      "kind": "actor",
+      "name": "Administrator",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.0",
+        "attributes": {
+          "name": "Administrator",
+          "uc": ""
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1",
+      "kind": "actor",
+      "name": "Cashier",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.1",
+        "attributes": {
+          "name": "Cashier",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2",
+      "kind": "actor",
+      "name": "StoreManager",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.2",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "endSale()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "enterItem()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "makeCardPayment()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "makeCashPayment()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "makeNewSale()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.4"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findSalesLineItembyID()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "entity",
+      "name": "SalesLineItem",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "SalesLineItem"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Quantity",
+          "type": "Integer"
+        },
+        {
+          "name": "Subamount",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "closeCashDesk()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "openCashDesk()",
+          "source": "/0/@DomainModel/@entitycontext.1/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.1/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "chooseSupplier()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "listAllOutOfStoreProducts()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "listSuppliers()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "makeNewOrder()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "orderItem()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "placeOrder()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.5"
+        },
+        {
+          "name": "receiveOrderedProduct()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.0/@operation.6"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findStorebyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.0"
+        },
+        {
+          "name": "findCashDeskbyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.1"
+        },
+        {
+          "name": "findSalebyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.2"
+        },
+        {
+          "name": "findItembyID()",
+          "source": "/0/@DomainModel/@entitycontext.2/@userinterface.1/@operation.3"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "entity",
+      "name": "Store",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "Store"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        },
+        {
+          "name": "Address",
+          "type": "String"
+        },
+        {
+          "name": "IsOpened",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.1",
+      "kind": "entity",
+      "name": "ProductCatalog",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.1",
+        "attributes": {
+          "name": "ProductCatalog"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.2",
+      "kind": "entity",
+      "name": "CashDesk",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.2",
+        "attributes": {
+          "name": "CashDesk"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        },
+        {
+          "name": "IsOpened",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "kind": "entity",
+      "name": "Sale",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.3",
+        "attributes": {
+          "name": "Sale"
+        }
+      },
+      "attributes": [
+        {
+          "name": "IsComplete",
+          "type": "Boolean"
+        },
+        {
+          "name": "Amount",
+          "type": "Real"
+        },
+        {
+          "name": "IsReadytoPay",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.4",
+      "kind": "entity",
+      "name": "Cashier",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.4",
+        "attributes": {
+          "name": "Cashier"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.5",
+      "kind": "entity",
+      "name": "Item",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.5",
+        "attributes": {
+          "name": "Item"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Barcode",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        },
+        {
+          "name": "Price",
+          "type": "Real"
+        },
+        {
+          "name": "StockNumber",
+          "type": "Integer"
+        },
+        {
+          "name": "OrderPrice",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.6",
+      "kind": "entity",
+      "name": "Supplier",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.6",
+        "attributes": {
+          "name": "Supplier"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.7",
+      "kind": "entity",
+      "name": "OrderProduct",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.2/@entity.7",
+        "attributes": {
+          "name": "OrderProduct"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "Integer"
+        },
+        {
+          "name": "Time",
+          "type": "Date"
+        },
+        {
+          "name": "Amount",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "changePrice()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "showStockReports()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findOrderEntrybyID()",
+          "source": "/0/@DomainModel/@entitycontext.3/@userinterface.1/@operation.0"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@entity.0",
+      "kind": "entity",
+      "name": "OrderEntry",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.3/@entity.0",
+        "attributes": {
+          "name": "OrderEntry"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Quantity",
+          "type": "Integer"
+        },
+        {
+          "name": "SubAmount",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "closeStore()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "openStore()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.0/@operation.1"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "findPaymentbyID()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.1/@operation.0"
+        },
+        {
+          "name": "findCashPaymentbyID()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.1/@operation.1"
+        },
+        {
+          "name": "findCardPaymentbyID()",
+          "source": "/0/@DomainModel/@entitycontext.4/@userinterface.1/@operation.2"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "entity",
+      "name": "Payment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "Payment"
+        }
+      },
+      "attributes": [
+        {
+          "name": "AmountTendered",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.1",
+      "kind": "entity",
+      "name": "CashPayment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@entity.1",
+        "attributes": {
+          "name": "CashPayment",
+          "superEntity": "/0/@DomainModel/@entitycontext.4/@entity.0"
+        }
+      },
+      "attributes": [
+        {
+          "name": "Balance",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.2",
+      "kind": "entity",
+      "name": "CardPayment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.4/@entity.2",
+        "attributes": {
+          "name": "CardPayment",
+          "superEntity": "/0/@DomainModel/@entitycontext.4/@entity.0"
+        }
+      },
+      "attributes": [
+        {
+          "name": "CardAccountNumber",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.0",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofSalesLineItem",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofSalesLineItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.14"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.1",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofStore",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofStore",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.18"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.2",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofCashDesk",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofCashDesk",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.13"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.3",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofSale",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofSale",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.19"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.4",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofItem",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.17"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.5",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofOrderEntry",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofOrderEntry",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.16"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.6",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofPayment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.15"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.7",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofCashPayment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofCashPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.11"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.8",
+      "kind": "systeminterface",
+      "name": "ProvideEntityofCardPayment",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.8",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ProvideInterface",
+          "name": "ProvideEntityofCardPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "receiveinterface": "/0/@DomainModel/@systeminterface.12"
+        }
+      },
+      "interfaceType": "ProvideInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofSale",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.9",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofSale",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofItem",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.10",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCashPayment",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.11",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCashPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCardPayment",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.12",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCardPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.8"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofCashDesk",
+      "service": "service-1",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.13",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCashDesk",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofSalesLineItem",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.14",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofSalesLineItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofPayment",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.15",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofOrderEntry",
+      "service": "service-2",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.16",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofOrderEntry",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofItem",
+      "service": "service-3",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.17",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofStore",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.18",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofStore",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19",
+      "kind": "systeminterface",
+      "name": "ReceiveEntityofSale",
+      "service": "service-4",
+      "source": {
+        "path": "/0/@DomainModel/@systeminterface.19",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofSale",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      },
+      "interfaceType": "ReceiveInterface"
+    }
+  ],
+  "edges": [
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:0",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "Cashier",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:1",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.1/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "Cashier",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:2",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "Cashier",
+          "uc": "/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:3",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.3/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:4",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:5",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:6",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.4/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:7",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:8",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.2/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.2:uc:9",
+      "source": "/0/@UseCaseModel/@actor.2",
+      "target": "/0/@UseCaseModel/@usecasecontext.3/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.2",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0",
+        "attributes": {
+          "name": "StoreManager",
+          "uc": "/0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.2/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.0:entity:10",
+      "source": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "kind": "association",
+      "name": "BelongedSale",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.3",
+        "attributes": {
+          "name": "BelongedSale",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.3",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.1:entity:11",
+      "source": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.5",
+      "kind": "association",
+      "name": "BelongedItem",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.5",
+        "attributes": {
+          "name": "BelongedItem",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.5",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.0:entity:12",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.2",
+      "kind": "association",
+      "name": "AssociationCashdeskes [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.2",
+        "attributes": {
+          "name": "AssociationCashdeskes",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.2",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.1:entity:13",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.1",
+      "kind": "association",
+      "name": "Productcatalogs [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.1",
+        "attributes": {
+          "name": "Productcatalogs",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.1",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.2:entity:14",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.5",
+      "kind": "association",
+      "name": "Items [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.2",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.5",
+        "attributes": {
+          "name": "Items",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.5",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.3:entity:15",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.4",
+      "kind": "association",
+      "name": "Cashiers [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.3",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.4",
+        "attributes": {
+          "name": "Cashiers",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.4",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.4:entity:16",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "kind": "association",
+      "name": "Sales [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.4",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.3",
+        "attributes": {
+          "name": "Sales",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.3",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.1/@reference.0:entity:17",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.1",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.5",
+      "kind": "association",
+      "name": "ContainedItems [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.1/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.5",
+        "attributes": {
+          "name": "ContainedItems",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.5",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.2/@reference.0:entity:18",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.2",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "kind": "association",
+      "name": "ContainedSales [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.2/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.3",
+        "attributes": {
+          "name": "ContainedSales",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.3",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.2/@reference.1:entity:19",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.2",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "association",
+      "name": "BelongedStore",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.2/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "BelongedStore",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.0:entity:20",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "association",
+      "name": "Belongedstore",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "Belongedstore",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.1:entity:21",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.2",
+      "kind": "association",
+      "name": "BelongedCashDesk",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.2",
+        "attributes": {
+          "name": "BelongedCashDesk",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.2",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.2:entity:22",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "target": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "association",
+      "name": "ContainedSalesLine [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.2",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "ContainedSalesLine",
+          "entity": "/0/@DomainModel/@entitycontext.0/@entity.0",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.3:entity:23",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "target": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "association",
+      "name": "AssoicatedPayment",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.3",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "AssoicatedPayment",
+          "entity": "/0/@DomainModel/@entitycontext.4/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.4/@reference.0:entity:24",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.4",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.0",
+      "kind": "association",
+      "name": "WorkedStore",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.4/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.0",
+        "attributes": {
+          "name": "WorkedStore",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.0",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.5/@reference.0:entity:25",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.5",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.1",
+      "kind": "association",
+      "name": "BelongedCatalog",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.5/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.1",
+        "attributes": {
+          "name": "BelongedCatalog",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.1",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.7/@reference.0:entity:26",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.7",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.6",
+      "kind": "association",
+      "name": "Supplier",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.7/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.6",
+        "attributes": {
+          "name": "Supplier",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.6",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.2/@entity.7/@reference.1:entity:27",
+      "source": "/0/@DomainModel/@entitycontext.2/@entity.7",
+      "target": "/0/@DomainModel/@entitycontext.3/@entity.0",
+      "kind": "association",
+      "name": "ContainedEntries [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.2/@entity.7/@reference.1",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.3/@entity.0",
+        "attributes": {
+          "name": "ContainedEntries",
+          "entity": "/0/@DomainModel/@entitycontext.3/@entity.0",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.3/@entity.0/@reference.0:entity:28",
+      "source": "/0/@DomainModel/@entitycontext.3/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.5",
+      "kind": "association",
+      "name": "Item",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.3/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.5",
+        "attributes": {
+          "name": "Item",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.5",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.0/@reference.0:entity:29",
+      "source": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.2/@entity.3",
+      "kind": "association",
+      "name": "BelongedSale",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.4/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.2/@entity.3",
+        "attributes": {
+          "name": "BelongedSale",
+          "entity": "/0/@DomainModel/@entitycontext.2/@entity.3",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.1:superEntity:30",
+      "source": "/0/@DomainModel/@entitycontext.4/@entity.1",
+      "target": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "generalization",
+      "name": "extends",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.4/@entity.1",
+        "attribute": "superEntity",
+        "value": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "CashPayment",
+          "superEntity": "/0/@DomainModel/@entitycontext.4/@entity.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.4/@entity.2:superEntity:31",
+      "source": "/0/@DomainModel/@entitycontext.4/@entity.2",
+      "target": "/0/@DomainModel/@entitycontext.4/@entity.0",
+      "kind": "generalization",
+      "name": "extends",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.4/@entity.2",
+        "attribute": "superEntity",
+        "value": "/0/@DomainModel/@entitycontext.4/@entity.0",
+        "attributes": {
+          "name": "CardPayment",
+          "superEntity": "/0/@DomainModel/@entitycontext.4/@entity.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.9:provideinterface:32",
+      "source": "/0/@DomainModel/@systeminterface.9",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofSale",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.9",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofSale",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.10:provideinterface:33",
+      "source": "/0/@DomainModel/@systeminterface.10",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofItem",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.10",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.11:provideinterface:34",
+      "source": "/0/@DomainModel/@systeminterface.11",
+      "target": "/0/@DomainModel/@systeminterface.7",
+      "kind": "interface",
+      "name": "ReceiveEntityofCashPayment",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.11",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.7",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCashPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.7"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.12:provideinterface:35",
+      "source": "/0/@DomainModel/@systeminterface.12",
+      "target": "/0/@DomainModel/@systeminterface.8",
+      "kind": "interface",
+      "name": "ReceiveEntityofCardPayment",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.12",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.8",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCardPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.0",
+          "provideinterface": "/0/@DomainModel/@systeminterface.8"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.13:provideinterface:36",
+      "source": "/0/@DomainModel/@systeminterface.13",
+      "target": "/0/@DomainModel/@systeminterface.2",
+      "kind": "interface",
+      "name": "ReceiveEntityofCashDesk",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.13",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.2",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofCashDesk",
+          "entitycontext": "/0/@DomainModel/@entitycontext.1",
+          "provideinterface": "/0/@DomainModel/@systeminterface.2"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.14:provideinterface:37",
+      "source": "/0/@DomainModel/@systeminterface.14",
+      "target": "/0/@DomainModel/@systeminterface.0",
+      "kind": "interface",
+      "name": "ReceiveEntityofSalesLineItem",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.14",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.0",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofSalesLineItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.15:provideinterface:38",
+      "source": "/0/@DomainModel/@systeminterface.15",
+      "target": "/0/@DomainModel/@systeminterface.6",
+      "kind": "interface",
+      "name": "ReceiveEntityofPayment",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.15",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.6",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofPayment",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.6"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.16:provideinterface:39",
+      "source": "/0/@DomainModel/@systeminterface.16",
+      "target": "/0/@DomainModel/@systeminterface.5",
+      "kind": "interface",
+      "name": "ReceiveEntityofOrderEntry",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.16",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.5",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofOrderEntry",
+          "entitycontext": "/0/@DomainModel/@entitycontext.2",
+          "provideinterface": "/0/@DomainModel/@systeminterface.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.17:provideinterface:40",
+      "source": "/0/@DomainModel/@systeminterface.17",
+      "target": "/0/@DomainModel/@systeminterface.4",
+      "kind": "interface",
+      "name": "ReceiveEntityofItem",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.17",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.4",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofItem",
+          "entitycontext": "/0/@DomainModel/@entitycontext.3",
+          "provideinterface": "/0/@DomainModel/@systeminterface.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.18:provideinterface:41",
+      "source": "/0/@DomainModel/@systeminterface.18",
+      "target": "/0/@DomainModel/@systeminterface.1",
+      "kind": "interface",
+      "name": "ReceiveEntityofStore",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.18",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.1",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofStore",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.1"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@systeminterface.19:provideinterface:42",
+      "source": "/0/@DomainModel/@systeminterface.19",
+      "target": "/0/@DomainModel/@systeminterface.3",
+      "kind": "interface",
+      "name": "ReceiveEntityofSale",
+      "provenance": {
+        "element": "/0/@DomainModel/@systeminterface.19",
+        "attribute": "provideinterface",
+        "value": "/0/@DomainModel/@systeminterface.3",
+        "attributes": {
+          "{http://www.w3.org/2001/XMLSchema-instance}type": "req:ReceiveInterface",
+          "name": "ReceiveEntityofSale",
+          "entitycontext": "/0/@DomainModel/@entitycontext.4",
+          "provideinterface": "/0/@DomainModel/@systeminterface.3"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "uc": 10,
+    "actor": 3,
+    "userinterface": 10,
+    "entity": 13,
+    "systeminterface": 20,
+    "services": 5,
+    "interfaceEdges": 11,
+    "serviceEdges": 8
+  },
+  "diagnostics": [],
+  "layout": {
+    "usecases": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.0": [
+          274,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.1": [
+          274,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.2/@uc.2": [
+          274,
+          428,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.2": [
+          56,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.0": [
+          1064,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.1/@uc.1": [
+          1064,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.1": [
+          846,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@usecasecontext.3/@uc.0": [
+          1064,
+          648,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.3/@uc.1": [
+          1064,
+          736,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.0": [
+          274,
+          736,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.4/@uc.1": [
+          274,
+          824,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0": [
+          1064,
+          1044,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.0": [
+          64,
+          1292,
+          220,
+          96
+        ]
+      },
+      "services": {
+        "service-2": [
+          234,
+          170,
+          460,
+          374
+        ],
+        "service-1": [
+          1024,
+          170,
+          460,
+          286
+        ],
+        "service-3": [
+          1024,
+          566,
+          460,
+          286
+        ],
+        "service-4": [
+          234,
+          654,
+          460,
+          286
+        ],
+        "service-0": [
+          1024,
+          962,
+          460,
+          220
+        ]
+      },
+      "instances": [
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-2",
+          "box": [
+            56,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-1",
+          "box": [
+            846,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-3",
+          "box": [
+            846,
+            651,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.2",
+          "service": "service-4",
+          "box": [
+            56,
+            739,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-0",
+          "box": [
+            846,
+            1047,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": null,
+          "box": [
+            64,
+            1292,
+            220,
+            96
+          ],
+          "proxy": false
+        }
+      ],
+      "edges": {
+        "/0/@UseCaseModel/@actor.1:uc:0": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:1": {
+          "points": [
+            [
+              950,
+              290
+            ],
+            [
+              1064,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:2": {
+          "points": [
+            [
+              950,
+              1082
+            ],
+            [
+              1064,
+              1075.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:3": {
+          "points": [
+            [
+              950,
+              686
+            ],
+            [
+              1064,
+              767.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:4": {
+          "points": [
+            [
+              160,
+              774
+            ],
+            [
+              274,
+              855.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:5": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              459.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:6": {
+          "points": [
+            [
+              160,
+              774
+            ],
+            [
+              274,
+              767.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:7": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:8": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.2:uc:9": {
+          "points": [
+            [
+              950,
+              686
+            ],
+            [
+              1064,
+              679.0
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    },
+    "domain": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@DomainModel/@entitycontext.2/@entity.0": [
+          76,
+          286,
+          288,
+          130
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.1": [
+          386,
+          286,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.2": [
+          76,
+          436,
+          288,
+          112
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.3": [
+          386,
+          436,
+          288,
+          112
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.4": [
+          76,
+          568,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.5": [
+          386,
+          568,
+          288,
+          148
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.6": [
+          76,
+          736,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.2/@entity.7": [
+          386,
+          736,
+          288,
+          112
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.0": [
+          76,
+          906,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.2/@userinterface.1": [
+          386,
+          906,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.1": [
+          76,
+          1040,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.2": [
+          386,
+          1040,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.3": [
+          76,
+          1114,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.4": [
+          386,
+          1114,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.14": [
+          76,
+          1188,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.15": [
+          386,
+          1188,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.16": [
+          76,
+          1262,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.4/@entity.0": [
+          866,
+          286,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@entity.1": [
+          1176,
+          286,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@entity.2": [
+          866,
+          382,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.0": [
+          866,
+          516,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.4/@userinterface.1": [
+          1176,
+          516,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.6": [
+          866,
+          650,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.7": [
+          1176,
+          650,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.8": [
+          866,
+          724,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.18": [
+          1176,
+          724,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.19": [
+          866,
+          798,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.0": [
+          866,
+          1123,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.0": [
+          866,
+          1275,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.1": [
+          1176,
+          1275,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.0": [
+          866,
+          1409,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.9": [
+          1176,
+          1409,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.10": [
+          866,
+          1483,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.11": [
+          1176,
+          1483,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.12": [
+          866,
+          1557,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.3/@entity.0": [
+          76,
+          1587,
+          288,
+          94
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.0": [
+          76,
+          1739,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.3/@userinterface.1": [
+          386,
+          1739,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.5": [
+          76,
+          1873,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@systeminterface.17": [
+          386,
+          1873,
+          288,
+          54
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.0": [
+          866,
+          1882,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.1/@userinterface.1": [
+          1176,
+          1882,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@systeminterface.13": [
+          866,
+          2016,
+          288,
+          54
+        ]
+      },
+      "services": {
+        "service-2": [
+          52,
+          170,
+          660,
+          1191
+        ],
+        "service-4": [
+          842,
+          170,
+          660,
+          727
+        ],
+        "service-0": [
+          842,
+          1007,
+          660,
+          649
+        ],
+        "service-3": [
+          52,
+          1471,
+          660,
+          501
+        ],
+        "service-1": [
+          842,
+          1766,
+          660,
+          349
+        ]
+      },
+      "instances": [],
+      "edges": {
+        "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.0:entity:10": {
+          "points": [
+            [
+              866,
+              1170.0
+            ],
+            [
+              848,
+              1170.0
+            ],
+            [
+              848,
+              1149.78
+            ],
+            [
+              842,
+              1149.78
+            ],
+            [
+              750.0,
+              1149.78
+            ],
+            [
+              750.0,
+              432.02
+            ],
+            [
+              712,
+              432.02
+            ],
+            [
+              692,
+              432.02
+            ],
+            [
+              692,
+              492.0
+            ],
+            [
+              674,
+              492.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.1:entity:11": {
+          "points": [
+            [
+              866,
+              1170.0
+            ],
+            [
+              848,
+              1170.0
+            ],
+            [
+              848,
+              1260.1100000000001
+            ],
+            [
+              842,
+              1260.1100000000001
+            ],
+            [
+              768.0,
+              1260.1100000000001
+            ],
+            [
+              768.0,
+              634.49
+            ],
+            [
+              712,
+              634.49
+            ],
+            [
+              692,
+              634.49
+            ],
+            [
+              692,
+              642.0
+            ],
+            [
+              674,
+              642.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.0:entity:12": {
+          "points": [
+            [
+              237.28000000000003,
+              416
+            ],
+            [
+              237.28000000000003,
+              434
+            ],
+            [
+              237.28000000000003,
+              418
+            ],
+            [
+              237.28000000000003,
+              436
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.1:entity:13": {
+          "points": [
+            [
+              364,
+              380.9
+            ],
+            [
+              382,
+              380.9
+            ],
+            [
+              382,
+              354.62
+            ],
+            [
+              368,
+              354.62
+            ],
+            [
+              386,
+              354.62
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.2:entity:14": {
+          "points": [
+            [
+              364,
+              314.6
+            ],
+            [
+              382,
+              314.6
+            ],
+            [
+              382,
+              600.56
+            ],
+            [
+              368,
+              600.56
+            ],
+            [
+              386,
+              600.56
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.3:entity:15": {
+          "points": [
+            [
+              188.32,
+              416
+            ],
+            [
+              188.32,
+              434
+            ],
+            [
+              58,
+              434
+            ],
+            [
+              58,
+              550
+            ],
+            [
+              188.32,
+              550
+            ],
+            [
+              188.32,
+              568
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.0/@reference.4:entity:16": {
+          "points": [
+            [
+              364,
+              358.8
+            ],
+            [
+              382,
+              358.8
+            ],
+            [
+              368,
+              358.8
+            ],
+            [
+              368,
+              498.72
+            ],
+            [
+              386,
+              498.72
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.1/@reference.0:entity:17": {
+          "points": [
+            [
+              596.24,
+              380
+            ],
+            [
+              596.24,
+              398
+            ],
+            [
+              692,
+              398
+            ],
+            [
+              692,
+              550
+            ],
+            [
+              596.24,
+              550
+            ],
+            [
+              596.24,
+              568
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.2/@reference.0:entity:18": {
+          "points": [
+            [
+              364,
+              460.64
+            ],
+            [
+              382,
+              460.64
+            ],
+            [
+              368,
+              460.64
+            ],
+            [
+              386,
+              460.64
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.2/@reference.1:entity:19": {
+          "points": [
+            [
+              188.32,
+              436
+            ],
+            [
+              188.32,
+              418
+            ],
+            [
+              188.32,
+              434
+            ],
+            [
+              188.32,
+              416
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.0:entity:20": {
+          "points": [
+            [
+              386,
+              498.72
+            ],
+            [
+              368,
+              498.72
+            ],
+            [
+              382,
+              498.72
+            ],
+            [
+              382,
+              358.8
+            ],
+            [
+              364,
+              358.8
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.1:entity:21": {
+          "points": [
+            [
+              386,
+              517.76
+            ],
+            [
+              368,
+              517.76
+            ],
+            [
+              382,
+              517.76
+            ],
+            [
+              364,
+              517.76
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.2:entity:22": {
+          "points": [
+            [
+              674,
+              492.0
+            ],
+            [
+              692,
+              492.0
+            ],
+            [
+              712,
+              492.0
+            ],
+            [
+              712,
+              432.02
+            ],
+            [
+              750.0,
+              432.02
+            ],
+            [
+              750.0,
+              1149.78
+            ],
+            [
+              842,
+              1149.78
+            ],
+            [
+              842,
+              1170.0
+            ],
+            [
+              848,
+              1170.0
+            ],
+            [
+              866,
+              1170.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.3/@reference.3:entity:23": {
+          "points": [
+            [
+              674,
+              492.0
+            ],
+            [
+              692,
+              492.0
+            ],
+            [
+              692,
+              566
+            ],
+            [
+              712,
+              566
+            ],
+            [
+              712,
+              634.49
+            ],
+            [
+              768.0,
+              634.49
+            ],
+            [
+              768.0,
+              453.53000000000003
+            ],
+            [
+              842,
+              453.53000000000003
+            ],
+            [
+              848,
+              453.53000000000003
+            ],
+            [
+              848,
+              324.0
+            ],
+            [
+              866,
+              324.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.4/@reference.0:entity:24": {
+          "points": [
+            [
+              237.28000000000003,
+              568
+            ],
+            [
+              237.28000000000003,
+              550
+            ],
+            [
+              368,
+              550
+            ],
+            [
+              368,
+              434
+            ],
+            [
+              237.28000000000003,
+              434
+            ],
+            [
+              237.28000000000003,
+              416
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.5/@reference.0:entity:25": {
+          "points": [
+            [
+              596.24,
+              568
+            ],
+            [
+              596.24,
+              550
+            ],
+            [
+              692,
+              550
+            ],
+            [
+              692,
+              434
+            ],
+            [
+              596.24,
+              434
+            ],
+            [
+              596.24,
+              398
+            ],
+            [
+              596.24,
+              380
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.7/@reference.0:entity:26": {
+          "points": [
+            [
+              386,
+              760.64
+            ],
+            [
+              368,
+              760.64
+            ],
+            [
+              368,
+              756.68
+            ],
+            [
+              382,
+              756.68
+            ],
+            [
+              364,
+              756.68
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.2/@entity.7/@reference.1:entity:27": {
+          "points": [
+            [
+              530.0,
+              848
+            ],
+            [
+              530.0,
+              866
+            ],
+            [
+              368,
+              866
+            ],
+            [
+              368,
+              1361
+            ],
+            [
+              309.40000000000003,
+              1361
+            ],
+            [
+              309.40000000000003,
+              1379
+            ],
+            [
+              309.40000000000003,
+              1453
+            ],
+            [
+              309.40000000000003,
+              1471
+            ],
+            [
+              220.0,
+              1471
+            ],
+            [
+              220.0,
+              1569
+            ],
+            [
+              220.0,
+              1587
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.3/@entity.0/@reference.0:entity:28": {
+          "points": [
+            [
+              220.0,
+              1587
+            ],
+            [
+              220.0,
+              1569
+            ],
+            [
+              421.6,
+              1569
+            ],
+            [
+              421.6,
+              1471
+            ],
+            [
+              421.6,
+              1453
+            ],
+            [
+              421.6,
+              1379
+            ],
+            [
+              421.6,
+              1361
+            ],
+            [
+              382,
+              1361
+            ],
+            [
+              382,
+              734
+            ],
+            [
+              530.0,
+              734
+            ],
+            [
+              530.0,
+              716
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.4/@entity.0/@reference.0:entity:29": {
+          "points": [
+            [
+              866,
+              324.0
+            ],
+            [
+              848,
+              324.0
+            ],
+            [
+              842,
+              324.0
+            ],
+            [
+              842,
+              700.71
+            ],
+            [
+              804.0,
+              700.71
+            ],
+            [
+              804.0,
+              1039.4299999999998
+            ],
+            [
+              712,
+              1039.4299999999998
+            ],
+            [
+              712,
+              492.0
+            ],
+            [
+              692,
+              492.0
+            ],
+            [
+              674,
+              492.0
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.4/@entity.1:superEntity:30": {
+          "points": [
+            [
+              1176,
+              302.72
+            ],
+            [
+              1158,
+              302.72
+            ],
+            [
+              1172,
+              302.72
+            ],
+            [
+              1154,
+              302.72
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.4/@entity.2:superEntity:31": {
+          "points": [
+            [
+              978.32,
+              382
+            ],
+            [
+              978.32,
+              364
+            ],
+            [
+              978.32,
+              380
+            ],
+            [
+              978.32,
+              362
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.9:provideinterface:32": {
+          "points": [
+            [
+              842,
+              1149.78
+            ],
+            [
+              750.0,
+              1149.78
+            ],
+            [
+              750.0,
+              432.02
+            ],
+            [
+              712,
+              432.02
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.10:provideinterface:33": {
+          "points": [
+            [
+              842,
+              1260.1100000000001
+            ],
+            [
+              768.0,
+              1260.1100000000001
+            ],
+            [
+              768.0,
+              634.49
+            ],
+            [
+              712,
+              634.49
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.11:provideinterface:34": {
+          "points": [
+            [
+              1099.4,
+              1007
+            ],
+            [
+              1099.4,
+              989
+            ],
+            [
+              1099.4,
+              915
+            ],
+            [
+              1099.4,
+              897
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.12:provideinterface:35": {
+          "points": [
+            [
+              1211.6,
+              1007
+            ],
+            [
+              1211.6,
+              989
+            ],
+            [
+              1211.6,
+              915
+            ],
+            [
+              1211.6,
+              897
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@systeminterface.13:provideinterface:36": {
+          "points": [
+            [
+              1211.6,
+              1766
+            ],
+            [
+              1211.6,
+              1748
+            ],
+            [
+              730,
+              1748
+            ],
+            [
+              730,
+              1379
+            ],
+            [
+              421.6,
+              1379
+            ],
+            [
+              421.6,
+              1361
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.14:provideinterface:37": {
+          "points": [
+            [
+              712,
+              1039.4299999999998
+            ],
+            [
+              804.0,
+              1039.4299999999998
+            ],
+            [
+              804.0,
+              1480.77
+            ],
+            [
+              842,
+              1480.77
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.15:provideinterface:38": {
+          "points": [
+            [
+              712,
+              432.02
+            ],
+            [
+              750.0,
+              432.02
+            ],
+            [
+              750.0,
+              329.94
+            ],
+            [
+              842,
+              329.94
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.16:provideinterface:39": {
+          "points": [
+            [
+              309.40000000000003,
+              1361
+            ],
+            [
+              309.40000000000003,
+              1379
+            ],
+            [
+              309.40000000000003,
+              1453
+            ],
+            [
+              309.40000000000003,
+              1471
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.17:provideinterface:40": {
+          "points": [
+            [
+              421.6,
+              1471
+            ],
+            [
+              421.6,
+              1453
+            ],
+            [
+              421.6,
+              1379
+            ],
+            [
+              421.6,
+              1361
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.18:provideinterface:41": {
+          "points": [
+            [
+              842,
+              700.71
+            ],
+            [
+              804.0,
+              700.71
+            ],
+            [
+              804.0,
+              1039.4299999999998
+            ],
+            [
+              712,
+              1039.4299999999998
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@DomainModel/@systeminterface.19:provideinterface:42": {
+          "points": [
+            [
+              842,
+              329.94
+            ],
+            [
+              750.0,
+              329.94
+            ],
+            [
+              750.0,
+              432.02
+            ],
+            [
+              712,
+              432.02
+            ]
+          ],
+          "defaultVisible": false
+        }
+      }
+    }
+  }
+}

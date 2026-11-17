@@ -1,0 +1,364 @@
+{
+  "application": "Loan",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/input/loan.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/servicecutter/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "The decomposition is the official ServiceCutter solver result, bridged from its entity/nanoentity clusters."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 5,
+  "provided_interface_total": 35,
+  "CHD": 0.24217687074829947,
+  "Instability": 0.5731707317073171,
+  "IFN": 7.0,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "servicecutter.domain.ApprovalLetter",
+        "servicecutter.domain.Loan",
+        "servicecutter.domain.LoanAgreement",
+        "servicecutter.domain.LoanRequest",
+        "servicecutter.service.EnterValidatedCreditReferences",
+        "servicecutter.service.EvaluateLoanRequest",
+        "servicecutter.service.GenerateLoanLetterAndAgreement",
+        "servicecutter.service.LoanProcessingSystemSystem",
+        "servicecutter.service.ManageLoanTermCRUDService",
+        "servicecutter.service.SubmitLoanRequest",
+        "servicecutter.service.ThirdPartyServices"
+      ],
+      "provided_interface": 35,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 47,
+      "required_interface": 47,
+      "instability": 0.5731707317073171,
+      "CHD": 0.24217687074829947
+    },
+    {
+      "cluster": 1,
+      "members": [],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "servicecutter.domain.LoanTerm"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "servicecutter.domain.LoanAccount"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "servicecutter.domain.CheckingAccount",
+        "servicecutter.domain.CreditHistory"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    }
+  ],
+  "UCM": 0.1278822341862056,
+  "UCM_pair_count": 45,
+  "Intra_Cohesion": 0.21109881907771186,
+  "Inter_Coupling": 0.19137010635653776,
+  "CMQ": 0.019728712721174102,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "LoanRequest": [
+        "approvalletter",
+        "approvalloan",
+        "attachedapprovalletter",
+        "attachedloanagreement",
+        "attachedloanterms",
+        "checkingaccount",
+        "checkingaccountnumber",
+        "credithistory",
+        "creditreferences",
+        "creditscore",
+        "email",
+        "income",
+        "integer",
+        "loan",
+        "loanagreement",
+        "loanamount",
+        "loanpurpose",
+        "loanrequest",
+        "loanrequesttatus",
+        "loanterm",
+        "name",
+        "phonenumber",
+        "postaladdress",
+        "real",
+        "requestedcahistory",
+        "requestedcredithistory",
+        "requestid",
+        "securitynumber",
+        "status",
+        "string",
+        "workreferences",
+        "zipcode"
+      ],
+      "Loan": [
+        "belongedloanaccount",
+        "boolean",
+        "currentoverduedate",
+        "date",
+        "enddate",
+        "integer",
+        "ispaidinfull",
+        "loan",
+        "loanaccount",
+        "loanid",
+        "loanrequest",
+        "loanstatus",
+        "real",
+        "referedloanrequest",
+        "remainamounttopay",
+        "repaymentamount",
+        "repaymentdays",
+        "startdate",
+        "status"
+      ],
+      "LoanTerm": [
+        "content",
+        "integer",
+        "itemid",
+        "loanterm",
+        "string"
+      ],
+      "CheckingAccount": [
+        "balance",
+        "checkingaccount",
+        "checkingaccountstatus",
+        "real",
+        "status"
+      ],
+      "CreditHistory": [
+        "baddebits",
+        "credithistory",
+        "integer",
+        "outstandingdebt",
+        "real"
+      ],
+      "LoanAccount": [
+        "balance",
+        "integer",
+        "loanaccount",
+        "loanaccountid",
+        "loanaccountstatus",
+        "real",
+        "status"
+      ],
+      "ApprovalLetter": [
+        "approvalletter",
+        "content",
+        "string"
+      ],
+      "LoanAgreement": [
+        "content",
+        "loanagreement",
+        "string"
+      ]
+    },
+    "effective_entity_clusters": {
+      "ApprovalLetter": 0,
+      "Loan": 0,
+      "LoanAgreement": 0,
+      "LoanRequest": 0,
+      "LoanTerm": 2,
+      "LoanAccount": 3,
+      "CheckingAccount": 4,
+      "CreditHistory": 4
+    },
+    "intra_pair_count": 7,
+    "inter_pair_count": 21,
+    "pairs": [
+      {
+        "a": "LoanRequest",
+        "b": "Loan",
+        "similarity": 0.20277677641345318
+      },
+      {
+        "a": "LoanRequest",
+        "b": "LoanTerm",
+        "similarity": 0.23717082451262844
+      },
+      {
+        "a": "LoanRequest",
+        "b": "CheckingAccount",
+        "similarity": 0.23717082451262844
+      },
+      {
+        "a": "LoanRequest",
+        "b": "CreditHistory",
+        "similarity": 0.23717082451262844
+      },
+      {
+        "a": "LoanRequest",
+        "b": "LoanAccount",
+        "similarity": 0.2004459314343183
+      },
+      {
+        "a": "LoanRequest",
+        "b": "ApprovalLetter",
+        "similarity": 0.20412414523193154
+      },
+      {
+        "a": "LoanRequest",
+        "b": "LoanAgreement",
+        "similarity": 0.20412414523193154
+      },
+      {
+        "a": "Loan",
+        "b": "LoanTerm",
+        "similarity": 0.10259783520851541
+      },
+      {
+        "a": "Loan",
+        "b": "CheckingAccount",
+        "similarity": 0.20519567041703082
+      },
+      {
+        "a": "Loan",
+        "b": "CreditHistory",
+        "similarity": 0.20519567041703082
+      },
+      {
+        "a": "Loan",
+        "b": "LoanAccount",
+        "similarity": 0.346843987809648
+      },
+      {
+        "a": "Loan",
+        "b": "ApprovalLetter",
+        "similarity": 0.0
+      },
+      {
+        "a": "Loan",
+        "b": "LoanAgreement",
+        "similarity": 0.0
+      },
+      {
+        "a": "LoanTerm",
+        "b": "CheckingAccount",
+        "similarity": 0.0
+      },
+      {
+        "a": "LoanTerm",
+        "b": "CreditHistory",
+        "similarity": 0.2
+      },
+      {
+        "a": "LoanTerm",
+        "b": "LoanAccount",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "LoanTerm",
+        "b": "ApprovalLetter",
+        "similarity": 0.5163977794943222
+      },
+      {
+        "a": "LoanTerm",
+        "b": "LoanAgreement",
+        "similarity": 0.5163977794943222
+      },
+      {
+        "a": "CheckingAccount",
+        "b": "CreditHistory",
+        "similarity": 0.2
+      },
+      {
+        "a": "CheckingAccount",
+        "b": "LoanAccount",
+        "similarity": 0.50709255283711
+      },
+      {
+        "a": "CheckingAccount",
+        "b": "ApprovalLetter",
+        "similarity": 0.0
+      },
+      {
+        "a": "CheckingAccount",
+        "b": "LoanAgreement",
+        "similarity": 0.0
+      },
+      {
+        "a": "CreditHistory",
+        "b": "LoanAccount",
+        "similarity": 0.3380617018914066
+      },
+      {
+        "a": "CreditHistory",
+        "b": "ApprovalLetter",
+        "similarity": 0.0
+      },
+      {
+        "a": "CreditHistory",
+        "b": "LoanAgreement",
+        "similarity": 0.0
+      },
+      {
+        "a": "LoanAccount",
+        "b": "ApprovalLetter",
+        "similarity": 0.0
+      },
+      {
+        "a": "LoanAccount",
+        "b": "LoanAgreement",
+        "similarity": 0.0
+      },
+      {
+        "a": "ApprovalLetter",
+        "b": "LoanAgreement",
+        "similarity": 0.6666666666666666
+      }
+    ]
+  }
+}

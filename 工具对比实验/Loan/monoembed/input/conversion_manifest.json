@@ -1,0 +1,466 @@
+{
+  "application": "Loan",
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/input/loan.remodel",
+  "services": [
+    {
+      "name": "SubmitLoanRequest",
+      "operations": [
+        {
+          "name": "enterLoanInformation",
+          "args": [
+            "requestid",
+            "name",
+            "loanamount",
+            "loanpurpose",
+            "income",
+            "phonenumber",
+            "postaladdress",
+            "zipcode",
+            "email",
+            "workreferences",
+            "creditreferences",
+            "checkingaccountnumber",
+            "securitynumber"
+          ]
+        },
+        {
+          "name": "creditRequest",
+          "args": []
+        },
+        {
+          "name": "accountStatusRequest",
+          "args": []
+        },
+        {
+          "name": "calculateScore",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ThirdPartyServices",
+      "operations": [
+        {
+          "name": "sendEmail",
+          "args": [
+            "emailaddress",
+            "title",
+            "content"
+          ]
+        },
+        {
+          "name": "print",
+          "args": [
+            "content",
+            "numbers"
+          ]
+        },
+        {
+          "name": "createLoanAccount",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "transferFunds",
+          "args": [
+            "id",
+            "amount"
+          ]
+        },
+        {
+          "name": "getCreditHistory",
+          "args": [
+            "securityid",
+            "name"
+          ]
+        },
+        {
+          "name": "getCheckingAccountStatus",
+          "args": [
+            "cid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EnterValidatedCreditReferences",
+      "operations": [
+        {
+          "name": "listSubmitedLoanRequest",
+          "args": []
+        },
+        {
+          "name": "chooseLoanRequest",
+          "args": [
+            "requestid"
+          ]
+        },
+        {
+          "name": "markRequestValid",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "EvaluateLoanRequest",
+      "operations": [
+        {
+          "name": "listTenLoanRequest",
+          "args": []
+        },
+        {
+          "name": "chooseOneForReview",
+          "args": [
+            "requestid"
+          ]
+        },
+        {
+          "name": "checkCreditHistory",
+          "args": []
+        },
+        {
+          "name": "reviewCheckingAccount",
+          "args": []
+        },
+        {
+          "name": "listAvaiableLoanTerm",
+          "args": []
+        },
+        {
+          "name": "addLoanTerm",
+          "args": [
+            "termid"
+          ]
+        },
+        {
+          "name": "approveLoanRequest",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "GenerateLoanLetterAndAgreement",
+      "operations": [
+        {
+          "name": "listApprovalRequest",
+          "args": []
+        },
+        {
+          "name": "genereateApprovalLetter",
+          "args": [
+            "id"
+          ]
+        },
+        {
+          "name": "emailToAppliant",
+          "args": []
+        },
+        {
+          "name": "generateLoanAgreement",
+          "args": []
+        },
+        {
+          "name": "printLoanAgreement",
+          "args": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LoanProcessingSystemSystem",
+      "operations": [
+        {
+          "name": "bookNewLoan",
+          "args": [
+            "requestid",
+            "loanid",
+            "accountid",
+            "startdate",
+            "enddate",
+            "repaymentdays"
+          ]
+        },
+        {
+          "name": "generateStandardPaymentNotice",
+          "args": []
+        },
+        {
+          "name": "generateLateNotice",
+          "args": []
+        },
+        {
+          "name": "listBookedLoans",
+          "args": []
+        },
+        {
+          "name": "loanPayment",
+          "args": [
+            "loanid"
+          ]
+        },
+        {
+          "name": "closeOutLoan",
+          "args": [
+            "loanid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageLoanTermCRUDService",
+      "operations": [
+        {
+          "name": "createLoanTerm",
+          "args": [
+            "itemid",
+            "content"
+          ]
+        },
+        {
+          "name": "queryLoanTerm",
+          "args": [
+            "itemid"
+          ]
+        },
+        {
+          "name": "modifyLoanTerm",
+          "args": [
+            "itemid",
+            "content"
+          ]
+        },
+        {
+          "name": "deleteLoanTerm",
+          "args": [
+            "itemid"
+          ]
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "LoanRequest",
+      "fields": [
+        [
+          "Status",
+          "LoanRequesttatus"
+        ],
+        [
+          "RequestID",
+          "Integer"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "LoanAmount",
+          "Real"
+        ],
+        [
+          "LoanPurpose",
+          "String"
+        ],
+        [
+          "Income",
+          "Real"
+        ],
+        [
+          "PhoneNumber",
+          "Integer"
+        ],
+        [
+          "PostalAddress",
+          "String"
+        ],
+        [
+          "ZipCode",
+          "Integer"
+        ],
+        [
+          "Email",
+          "String"
+        ],
+        [
+          "WorkReferences",
+          "String"
+        ],
+        [
+          "CreditReferences",
+          "String"
+        ],
+        [
+          "CheckingAccountNumber",
+          "Integer"
+        ],
+        [
+          "SecurityNumber",
+          "Integer"
+        ],
+        [
+          "CreditScore",
+          "Integer"
+        ],
+        [
+          "ApprovalLoan",
+          "Loan"
+        ],
+        [
+          "RequestedCAHistory",
+          "CheckingAccount"
+        ],
+        [
+          "RequestedCreditHistory",
+          "CreditHistory"
+        ],
+        [
+          "AttachedApprovalLetter",
+          "ApprovalLetter"
+        ],
+        [
+          "AttachedLoanAgreement",
+          "LoanAgreement"
+        ],
+        [
+          "AttachedLoanTerms",
+          "LoanTerm"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Loan",
+      "fields": [
+        [
+          "LoanID",
+          "Integer"
+        ],
+        [
+          "RemainAmountToPay",
+          "Real"
+        ],
+        [
+          "Status",
+          "LoanStatus"
+        ],
+        [
+          "IsPaidinFull",
+          "Boolean"
+        ],
+        [
+          "StartDate",
+          "Date"
+        ],
+        [
+          "EndDate",
+          "Date"
+        ],
+        [
+          "CurrentOverDueDate",
+          "Date"
+        ],
+        [
+          "RePaymentDays",
+          "Integer"
+        ],
+        [
+          "RepaymentAmount",
+          "Real"
+        ],
+        [
+          "ReferedLoanRequest",
+          "LoanRequest"
+        ],
+        [
+          "BelongedLoanAccount",
+          "LoanAccount"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "LoanTerm",
+      "fields": [
+        [
+          "ItemID",
+          "Integer"
+        ],
+        [
+          "Content",
+          "String"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "CheckingAccount",
+      "fields": [
+        [
+          "Balance",
+          "Real"
+        ],
+        [
+          "Status",
+          "CheckingAccountStatus"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "CreditHistory",
+      "fields": [
+        [
+          "OutstandingDebt",
+          "Real"
+        ],
+        [
+          "BadDebits",
+          "Integer"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "LoanAccount",
+      "fields": [
+        [
+          "LoanAccountID",
+          "Integer"
+        ],
+        [
+          "Balance",
+          "Real"
+        ],
+        [
+          "Status",
+          "LoanAccountStatus"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "ApprovalLetter",
+      "fields": [
+        [
+          "Content",
+          "String"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "LoanAgreement",
+      "fields": [
+        [
+          "Content",
+          "String"
+        ]
+      ],
+      "parent": null
+    }
+  ],
+  "note": "Synthetic source-like content derived from .remodel; not recovered implementation code."
+}

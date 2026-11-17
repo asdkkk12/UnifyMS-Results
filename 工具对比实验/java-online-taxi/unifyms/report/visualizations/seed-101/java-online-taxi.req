@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="970acf9f42c1daed1596f693c35ee1ccaa0fd5cf0b0f7013309add7ac177e1c3" runHash="68d0ef6b89668edf7bd7262c3f048c36f6619981f9f21725d1b8d0291c7f6104" snapshotHash="feaf0d07d6ccc2bb902f8fd92fccae78dee093698cd305b316e83d4f0d22b2e1" taskKey="a376252e7776db08ccf8f227112e1f2e3aa642a8e9b1e7da043b2aaad71b7279" configId="C5" seed="101" exportVersion="merm-export-v1">
+    <UseCaseModel name="java-online-taxi.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="ApiBossCarService" />
+        <uc name="ApiDriverPointService" />
+        <uc name="ServiceDriverUserCarService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="ApiBossDriverCarBindingRelationshipService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 2" serviceId="2">
+        <uc name="ApiBossDriverUserService" />
+        <uc name="ApiPassengerTokenService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 3" serviceId="3">
+        <uc name="ApiDriverUserService" />
+        <uc name="ServiceDriverUserDriverUserService" />
+        <uc name="ServiceDriverUserDriverUserWorkStatusService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 4" serviceId="4">
+        <uc name="ApiDriverVerifyCodeService" />
+        <uc name="ServiceDriverUserDriverCarBindingRelationshipService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 5" serviceId="5">
+        <uc name="ApiPassengerForecastPriceService" />
+        <uc name="ServiceMapDirectionService" />
+        <uc name="ServiceMapServiceMapService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 6" serviceId="6">
+        <uc name="ApiPassengerOrderService" />
+        <uc name="ServiceOrderOrderInfoService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 7" serviceId="7">
+        <uc name="ApiPassengerUserService" />
+        <uc name="ApiPassengerVerifyCodeService" />
+        <uc name="ServicePassengerUserUserService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 8" serviceId="8">
+        <uc name="ServiceMapMapDicDistrictClient" />
+        <uc name="ServiceMapTerminalService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 9" serviceId="9">
+        <uc name="ServiceMapMapDirectionClient" />
+        <uc name="ServiceVerifycodeVerifyCodeService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 10" serviceId="10">
+        <uc name="ServiceMapPointClient" />
+        <uc name="ServiceMapTerminalClient" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 11" serviceId="11">
+        <uc name="ServiceMapServiceClient" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 12" serviceId="12">
+        <uc name="ServiceMapTrackClient" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 13" serviceId="13">
+        <uc name="ServiceMapDicDistrictService" />
+        <uc name="ServiceMapTrackService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 14" serviceId="14">
+        <uc name="ServiceMapPointService" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 15" serviceId="15">
+        <uc name="ServicePricePriceService" />
+      </usecasecontext>
+      <actor name="ApiBossRole" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.0" />
+      <actor name="ApiDriverRole" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.0 /0/@UseCaseModel/@usecasecontext.4/@uc.0" />
+      <actor name="ApiPassengerRole" uc="/0/@UseCaseModel/@usecasecontext.5/@uc.0 /0/@UseCaseModel/@usecasecontext.6/@uc.0 /0/@UseCaseModel/@usecasecontext.2/@uc.1 /0/@UseCaseModel/@usecasecontext.7/@uc.0 /0/@UseCaseModel/@usecasecontext.7/@uc.1" />
+      <actor name="ServiceDriverUserRole" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.4/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.1 /0/@UseCaseModel/@usecasecontext.3/@uc.2" />
+      <actor name="ServiceMapRole" uc="/0/@UseCaseModel/@usecasecontext.13/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.0 /0/@UseCaseModel/@usecasecontext.9/@uc.0 /0/@UseCaseModel/@usecasecontext.10/@uc.0 /0/@UseCaseModel/@usecasecontext.14/@uc.0 /0/@UseCaseModel/@usecasecontext.11/@uc.0 /0/@UseCaseModel/@usecasecontext.5/@uc.2 /0/@UseCaseModel/@usecasecontext.10/@uc.1 /0/@UseCaseModel/@usecasecontext.8/@uc.1 /0/@UseCaseModel/@usecasecontext.12/@uc.0 /0/@UseCaseModel/@usecasecontext.13/@uc.1" />
+      <actor name="ServiceOrderRole" uc="/0/@UseCaseModel/@usecasecontext.6/@uc.1" />
+      <actor name="ServicePassengerUserRole" uc="/0/@UseCaseModel/@usecasecontext.7/@uc.2" />
+      <actor name="ServicePriceRole" uc="/0/@UseCaseModel/@usecasecontext.15/@uc.0" />
+      <actor name="ServiceVerifycodeRole" uc="/0/@UseCaseModel/@usecasecontext.9/@uc.1" />
+    </UseCaseModel>
+    <DomainModel name="java-online-taxi.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.0 /0/@DomainModel/@systeminterface.8">
+        <userinterface name="UserInterface">
+          <operation name="ApiBossCarServiceAddCar()" />
+          <operation name="ApiDriverPointServiceUpload()" />
+          <operation name="ServiceDriverUserCarServiceAddCar()" />
+          <operation name="ServiceDriverUserCarServiceGetCarById()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findDriverCarBindingRelationshipbyID()" />
+        </userinterface>
+        <entity name="DriverCarBindingRelationship">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="driverId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="carId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="bindState">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="bindingTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="unBindingTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.9">
+        <userinterface name="UserInterface">
+          <operation name="ApiBossDriverCarBindingRelationshipServiceBind()" />
+          <operation name="ApiBossDriverCarBindingRelationshipServiceUnbind()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext2" serviceId="2" systeminterface="/0/@DomainModel/@systeminterface.1 /0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.11">
+        <userinterface name="UserInterface">
+          <operation name="ApiBossDriverUserServiceAddDriverUser()" />
+          <operation name="ApiBossDriverUserServiceUpdateDriverUser()" />
+          <operation name="ApiPassengerTokenServiceRefreshToken()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findDicDistrictbyID()" />
+        </userinterface>
+        <entity name="DicDistrict">
+          <attributes name="addressCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="addressName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="parentAddressCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="level">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext3" serviceId="3" systeminterface="/0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.13">
+        <userinterface name="UserInterface">
+          <operation name="ApiDriverUserServiceUpdateUser()" />
+          <operation name="ServiceDriverUserDriverUserServiceAddDriverUser()" />
+          <operation name="ServiceDriverUserDriverUserServiceGetDriverUserByPhone()" />
+          <operation name="ServiceDriverUserDriverUserServiceTestGetDriverUser()" />
+          <operation name="ServiceDriverUserDriverUserServiceUpdateDriverUser()" />
+          <operation name="ServiceDriverUserDriverUserWorkStatusServiceChangeWorkStatus()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext4" serviceId="4" systeminterface="/0/@DomainModel/@systeminterface.14 /0/@DomainModel/@systeminterface.15">
+        <userinterface name="UserInterface">
+          <operation name="ApiDriverVerifyCodeServiceCheckAndSendVerifyCode()" />
+          <operation name="ApiDriverVerifyCodeServiceVerifyCodeCheck()" />
+          <operation name="ServiceDriverUserDriverCarBindingRelationshipServiceBind()" />
+          <operation name="ServiceDriverUserDriverCarBindingRelationshipServiceUnbind()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext5" serviceId="5" systeminterface="/0/@DomainModel/@systeminterface.2 /0/@DomainModel/@systeminterface.16">
+        <userinterface name="UserInterface">
+          <operation name="ApiPassengerForecastPriceServiceForecastPrice()" />
+          <operation name="ServiceMapDirectionServiceDriving()" />
+          <operation name="ServiceMapServiceMapServiceAdd()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findDriverUserbyID()" />
+        </userinterface>
+        <entity name="DriverUser">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="address">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="driverName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="driverPhone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="driverGender">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="driverBirthday">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="driverNation">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="driverContactAddress">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="licenseId">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="getDriverLicenseDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="driverLicenseOn">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="driverLicenseOff">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="taxiDriver">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="certificateNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="networkCarIssueOrganization">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="networkCarIssueDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="getNetworkCarProofDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="networkCarProofOn">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="networkCarProofOff">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="registerDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="commercialType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="contractCompany">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="contractOn">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="contractOff">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="gmtCreate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="gmtModified">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext6" serviceId="6" systeminterface="/0/@DomainModel/@systeminterface.17">
+        <userinterface name="UserInterface">
+          <operation name="ApiPassengerOrderServiceAdd()" />
+          <operation name="ServiceOrderOrderInfoServiceAdd()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext7" serviceId="7" systeminterface="/0/@DomainModel/@systeminterface.18">
+        <userinterface name="UserInterface">
+          <operation name="ApiPassengerUserServiceGetUserByAccessToken()" />
+          <operation name="ApiPassengerVerifyCodeServiceVerifyCodeCheck()" />
+          <operation name="ApiPassengerVerifyCodeServiceVerifyCodeGet()" />
+          <operation name="ServicePassengerUserUserServiceGetUserByPhone()" />
+          <operation name="ServicePassengerUserUserServiceLoginOrRegisterUser()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext8" serviceId="8" systeminterface="/0/@DomainModel/@systeminterface.3">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapMapDicDistrictClientDicDistrict()" />
+          <operation name="ServiceMapTerminalServiceAdd()" />
+          <operation name="ServiceMapTerminalServiceAroundsearch()" />
+          <operation name="ServiceMapTerminalServiceTrsearch()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findCarbyID()" />
+        </userinterface>
+        <entity name="Car">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="address">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="vehicleNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="plateColor">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="seats">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="brand">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="model">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="vehicleType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="ownerName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="vehicleColor">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="engineId">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="vin">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="certifyDateA">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="fueType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="engineDisplace">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="transAgency">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="transArea">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="transDateStart">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="transDateEnd">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="certifyDateB">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="fixState">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="nextFixDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="checkState">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="feePrintId">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="gpsBrand">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="gpsModel">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="gpsInstallDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="registerDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="commercialType">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="fareType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="tid">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="trid">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="trname">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="gmtCreate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="gmtModified">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext9" serviceId="9" systeminterface="/0/@DomainModel/@systeminterface.4 /0/@DomainModel/@systeminterface.5 /0/@DomainModel/@systeminterface.6">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapMapDirectionClientDirection()" />
+          <operation name="ServiceVerifycodeVerifyCodeServiceGenerateCode()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findDriverUserWorkStatusbyID()" />
+          <operation name="findPassengerUserbyID()" />
+          <operation name="findOrderInfobyID()" />
+        </userinterface>
+        <entity name="DriverUserWorkStatus">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="driverId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="workStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="gmtCreate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="gmtModified">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+        <entity name="PassengerUser">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="gmtCreate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="gmtModified">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="passengerPhone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="passengerName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="passengerGender">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="state">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="profilePhoto">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="OrderInfo">
+          <attributes name="id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="passengerId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="passengerPhone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="driverId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="driverPhone">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="carId">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="vehicleType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="address">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="orderTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="departTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="departure">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="depLongitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="depLatitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="destination">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="destLongitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="destLatitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="encrypt">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="fareType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="fareVersion">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="receiveOrderCarLongitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="receiveOrderCarLatitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="receiveOrderTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="licenseId">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="vehicleNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="toPickUpPassengerTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="toPickUpPassengerLongitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="toPickUpPassengerLatitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="toPickUpPassengerAddress">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="driverArrivedDepartureTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="pickUpPassengerTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="pickUpPassengerLongitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="pickUpPassengerLatitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="passengerGetoffTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="passengerGetoffLongitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="passengerGetoffLatitude">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="cancelTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="cancelOperator">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="cancelTypeCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="driveMile">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="driveTime">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="orderStatus">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="price">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="gmtCreate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="gmtModified">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext10" serviceId="10">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapPointClientUpload()" />
+          <operation name="ServiceMapTerminalClientAdd()" />
+          <operation name="ServiceMapTerminalClientAroundsearch()" />
+          <operation name="ServiceMapTerminalClientTrsearch()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext11" serviceId="11">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapServiceClientAdd()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext12" serviceId="12" systeminterface="/0/@DomainModel/@systeminterface.7">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapTrackClientAdd()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findPriceRulebyID()" />
+        </userinterface>
+        <entity name="PriceRule">
+          <attributes name="cityCode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="vehicleType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="startFare">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="startMile">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="unitPricePerMile">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="unitPricePerMinute">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="fareVersion">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="fareType">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext13" serviceId="13" systeminterface="/0/@DomainModel/@systeminterface.19">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapDicDistrictServiceGenerateLevel()" />
+          <operation name="ServiceMapDicDistrictServiceInitDicDistrict()" />
+          <operation name="ServiceMapDicDistrictServiceInsertDicDistrict()" />
+          <operation name="ServiceMapTrackServiceAdd()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext14" serviceId="14">
+        <userinterface name="UserInterface">
+          <operation name="ServiceMapPointServiceUpload()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext15" serviceId="15" systeminterface="/0/@DomainModel/@systeminterface.20">
+        <userinterface name="UserInterface">
+          <operation name="ServicePricePriceServiceCalculatePrice()" />
+          <operation name="ServicePricePriceServiceForecastPrice()" />
+          <operation name="ServicePricePriceServiceGetPrice()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofDriverCarBindingRelationship" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.9 /0/@DomainModel/@systeminterface.14" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofDicDistrict" entitycontext="/0/@DomainModel/@entitycontext.2" receiveinterface="/0/@DomainModel/@systeminterface.19" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofDriverUser" entitycontext="/0/@DomainModel/@entitycontext.5" receiveinterface="/0/@DomainModel/@systeminterface.10 /0/@DomainModel/@systeminterface.12 /0/@DomainModel/@systeminterface.15" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofCar" entitycontext="/0/@DomainModel/@entitycontext.8" receiveinterface="/0/@DomainModel/@systeminterface.8" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofDriverUserWorkStatus" entitycontext="/0/@DomainModel/@entitycontext.9" receiveinterface="/0/@DomainModel/@systeminterface.11 /0/@DomainModel/@systeminterface.13" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofPassengerUser" entitycontext="/0/@DomainModel/@entitycontext.9" receiveinterface="/0/@DomainModel/@systeminterface.18" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofOrderInfo" entitycontext="/0/@DomainModel/@entitycontext.9" receiveinterface="/0/@DomainModel/@systeminterface.17" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofPriceRule" entitycontext="/0/@DomainModel/@entitycontext.12" receiveinterface="/0/@DomainModel/@systeminterface.16 /0/@DomainModel/@systeminterface.20" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofCar" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverCarBindingRelationship" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverUser" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverUserWorkStatus" entitycontext="/0/@DomainModel/@entitycontext.2" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverUser" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverUserWorkStatus" entitycontext="/0/@DomainModel/@entitycontext.3" provideinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverCarBindingRelationship" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDriverUser" entitycontext="/0/@DomainModel/@entitycontext.4" provideinterface="/0/@DomainModel/@systeminterface.2" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofPriceRule" entitycontext="/0/@DomainModel/@entitycontext.5" provideinterface="/0/@DomainModel/@systeminterface.7" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofOrderInfo" entitycontext="/0/@DomainModel/@entitycontext.6" provideinterface="/0/@DomainModel/@systeminterface.6" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofPassengerUser" entitycontext="/0/@DomainModel/@entitycontext.7" provideinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofDicDistrict" entitycontext="/0/@DomainModel/@entitycontext.13" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofPriceRule" entitycontext="/0/@DomainModel/@entitycontext.15" provideinterface="/0/@DomainModel/@systeminterface.7" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

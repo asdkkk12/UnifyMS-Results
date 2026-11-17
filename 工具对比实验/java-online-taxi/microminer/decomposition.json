@@ -1,0 +1,1116 @@
+{
+  "application": "JavaOnlineTaxi",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/microminer/input/java-online-taxi.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "JavaOnlineTaxi.service.ApiBossCarService",
+        "JavaOnlineTaxi.domain.Car"
+      ],
+      "service_names": [
+        "ApiBossCarService"
+      ],
+      "membership_scores": {
+        "Car": {
+          "ApiBossCarService": 1.0250640205913801,
+          "ApiBossDriverCarBindingRelationshipService": 0.018681617943926834,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 1.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 1.0228802157661214,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.01981484809753042,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "JavaOnlineTaxi.service.ApiBossDriverCarBindingRelationshipService",
+        "JavaOnlineTaxi.domain.DriverCarBindingRelationship"
+      ],
+      "service_names": [
+        "ApiBossDriverCarBindingRelationshipService"
+      ],
+      "membership_scores": {
+        "DriverCarBindingRelationship": {
+          "ApiBossCarService": 0.04719399037242695,
+          "ApiBossDriverCarBindingRelationshipService": 1.1407052941362896,
+          "ApiBossDriverUserService": 0.03988620176087328,
+          "ApiDriverPointService": 0.04719399037242695,
+          "ApiDriverUserService": 0.04719399037242695,
+          "ApiDriverVerifyCodeService": 0.03731012536223182,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0861640436855329,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 1.1492405014489273,
+          "ServiceDriverUserDriverUserService": 0.03731012536223182,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.04308202184276645,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "JavaOnlineTaxi.service.ApiBossDriverUserService",
+        "JavaOnlineTaxi.domain.DriverUser",
+        "JavaOnlineTaxi.domain.DriverUserWorkStatus"
+      ],
+      "service_names": [
+        "ApiBossDriverUserService"
+      ],
+      "membership_scores": {
+        "DriverUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.020953951903123737,
+          "ApiBossDriverUserService": 1.0475190963311491,
+          "ApiDriverPointService": 0.02811267651158746,
+          "ApiDriverUserService": 1.0562253530231749,
+          "ApiDriverVerifyCodeService": 1.0222250222250333,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.02375954816557457,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.051326490257473656,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.04445004445006667,
+          "ServiceDriverUserDriverUserService": 1.0444500444500666,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.051326490257473656,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.02375954816557457,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        },
+        "DriverUserWorkStatus": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.03689323936863109,
+          "ApiBossDriverUserService": 1.0836660026534075,
+          "ApiDriverPointService": 0.049497474683058325,
+          "ApiDriverUserService": 0.09899494936611665,
+          "ApiDriverVerifyCodeService": 0.039131189606246314,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.04183300132670378,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.09036961141150637,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.07826237921249263,
+          "ServiceDriverUserDriverUserService": 1.0782623792124926,
+          "ServiceDriverUserDriverUserWorkStatusService": 1.1807392228230127,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.04183300132670378,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "JavaOnlineTaxi.service.ApiDriverPointService",
+        "JavaOnlineTaxi.domain.Car"
+      ],
+      "service_names": [
+        "ApiDriverPointService"
+      ],
+      "membership_scores": {
+        "Car": {
+          "ApiBossCarService": 1.0250640205913801,
+          "ApiBossDriverCarBindingRelationshipService": 0.018681617943926834,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 1.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 1.0228802157661214,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.01981484809753042,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "JavaOnlineTaxi.service.ApiDriverUserService",
+        "JavaOnlineTaxi.domain.DriverUser"
+      ],
+      "service_names": [
+        "ApiDriverUserService"
+      ],
+      "membership_scores": {
+        "DriverUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.020953951903123737,
+          "ApiBossDriverUserService": 1.0475190963311491,
+          "ApiDriverPointService": 0.02811267651158746,
+          "ApiDriverUserService": 1.0562253530231749,
+          "ApiDriverVerifyCodeService": 1.0222250222250333,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.02375954816557457,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.051326490257473656,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.04445004445006667,
+          "ServiceDriverUserDriverUserService": 1.0444500444500666,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.051326490257473656,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.02375954816557457,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "JavaOnlineTaxi.service.ApiDriverVerifyCodeService",
+        "JavaOnlineTaxi.domain.DriverUser"
+      ],
+      "service_names": [
+        "ApiDriverVerifyCodeService"
+      ],
+      "membership_scores": {
+        "DriverUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.020953951903123737,
+          "ApiBossDriverUserService": 1.0475190963311491,
+          "ApiDriverPointService": 0.02811267651158746,
+          "ApiDriverUserService": 1.0562253530231749,
+          "ApiDriverVerifyCodeService": 1.0222250222250333,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.02375954816557457,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.051326490257473656,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.04445004445006667,
+          "ServiceDriverUserDriverUserService": 1.0444500444500666,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.051326490257473656,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.02375954816557457,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "JavaOnlineTaxi.service.ApiPassengerForecastPriceService",
+        "JavaOnlineTaxi.domain.PriceRule"
+      ],
+      "service_names": [
+        "ApiPassengerForecastPriceService"
+      ],
+      "membership_scores": {
+        "PriceRule": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 1.043412157106223,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.0,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 1.043412157106223,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 7,
+      "members": [
+        "JavaOnlineTaxi.service.ApiPassengerOrderService",
+        "JavaOnlineTaxi.domain.OrderInfo"
+      ],
+      "service_names": [
+        "ApiPassengerOrderService"
+      ],
+      "membership_scores": {
+        "OrderInfo": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.022360679774997897,
+          "ApiPassengerOrderService": 1.022360679774998,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.0,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 1.05,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.022360679774997897,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 8,
+      "members": [
+        "JavaOnlineTaxi.service.ApiPassengerTokenService"
+      ],
+      "service_names": [
+        "ApiPassengerTokenService"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 9,
+      "members": [
+        "JavaOnlineTaxi.service.ApiPassengerUserService",
+        "JavaOnlineTaxi.domain.PassengerUser"
+      ],
+      "service_names": [
+        "ApiPassengerUserService"
+      ],
+      "membership_scores": {
+        "PassengerUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.038188130791298666,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.04518480570575319,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.04518480570575319,
+          "ApiPassengerOrderService": 0.04518480570575319,
+          "ApiPassengerTokenService": 0.04518480570575319,
+          "ApiPassengerUserService": 1.0763762615825974,
+          "ApiPassengerVerifyCodeService": 1.0381881307912986,
+          "ServiceDriverUserCarService": 0.04124789556921527,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.03572172541558802,
+          "ServiceDriverUserDriverUserService": 0.03572172541558802,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.04124789556921527,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 1.0763762615825974,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 10,
+      "members": [
+        "JavaOnlineTaxi.service.ApiPassengerVerifyCodeService",
+        "JavaOnlineTaxi.domain.PassengerUser"
+      ],
+      "service_names": [
+        "ApiPassengerVerifyCodeService"
+      ],
+      "membership_scores": {
+        "PassengerUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.038188130791298666,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.04518480570575319,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.04518480570575319,
+          "ApiPassengerOrderService": 0.04518480570575319,
+          "ApiPassengerTokenService": 0.04518480570575319,
+          "ApiPassengerUserService": 1.0763762615825974,
+          "ApiPassengerVerifyCodeService": 1.0381881307912986,
+          "ServiceDriverUserCarService": 0.04124789556921527,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.03572172541558802,
+          "ServiceDriverUserDriverUserService": 0.03572172541558802,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.04124789556921527,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 1.0763762615825974,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 11,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceDriverUserCarService",
+        "JavaOnlineTaxi.domain.Car"
+      ],
+      "service_names": [
+        "ServiceDriverUserCarService"
+      ],
+      "membership_scores": {
+        "Car": {
+          "ApiBossCarService": 1.0250640205913801,
+          "ApiBossDriverCarBindingRelationshipService": 0.018681617943926834,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 1.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 1.0228802157661214,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.01981484809753042,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 12,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceDriverUserDriverCarBindingRelationshipService",
+        "JavaOnlineTaxi.domain.DriverCarBindingRelationship"
+      ],
+      "service_names": [
+        "ServiceDriverUserDriverCarBindingRelationshipService"
+      ],
+      "membership_scores": {
+        "DriverCarBindingRelationship": {
+          "ApiBossCarService": 0.04719399037242695,
+          "ApiBossDriverCarBindingRelationshipService": 1.1407052941362896,
+          "ApiBossDriverUserService": 0.03988620176087328,
+          "ApiDriverPointService": 0.04719399037242695,
+          "ApiDriverUserService": 0.04719399037242695,
+          "ApiDriverVerifyCodeService": 0.03731012536223182,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0861640436855329,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 1.1492405014489273,
+          "ServiceDriverUserDriverUserService": 0.03731012536223182,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.04308202184276645,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 13,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceDriverUserDriverUserService",
+        "JavaOnlineTaxi.domain.DriverUser",
+        "JavaOnlineTaxi.domain.DriverUserWorkStatus"
+      ],
+      "service_names": [
+        "ServiceDriverUserDriverUserService"
+      ],
+      "membership_scores": {
+        "DriverUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.020953951903123737,
+          "ApiBossDriverUserService": 1.0475190963311491,
+          "ApiDriverPointService": 0.02811267651158746,
+          "ApiDriverUserService": 1.0562253530231749,
+          "ApiDriverVerifyCodeService": 1.0222250222250333,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.02375954816557457,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.051326490257473656,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.04445004445006667,
+          "ServiceDriverUserDriverUserService": 1.0444500444500666,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.051326490257473656,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.02375954816557457,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        },
+        "DriverUserWorkStatus": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.03689323936863109,
+          "ApiBossDriverUserService": 1.0836660026534075,
+          "ApiDriverPointService": 0.049497474683058325,
+          "ApiDriverUserService": 0.09899494936611665,
+          "ApiDriverVerifyCodeService": 0.039131189606246314,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.04183300132670378,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.09036961141150637,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.07826237921249263,
+          "ServiceDriverUserDriverUserService": 1.0782623792124926,
+          "ServiceDriverUserDriverUserWorkStatusService": 1.1807392228230127,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.04183300132670378,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 14,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceDriverUserDriverUserWorkStatusService",
+        "JavaOnlineTaxi.domain.DriverUserWorkStatus"
+      ],
+      "service_names": [
+        "ServiceDriverUserDriverUserWorkStatusService"
+      ],
+      "membership_scores": {
+        "DriverUserWorkStatus": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.03689323936863109,
+          "ApiBossDriverUserService": 1.0836660026534075,
+          "ApiDriverPointService": 0.049497474683058325,
+          "ApiDriverUserService": 0.09899494936611665,
+          "ApiDriverVerifyCodeService": 0.039131189606246314,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.04183300132670378,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.09036961141150637,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.07826237921249263,
+          "ServiceDriverUserDriverUserService": 1.0782623792124926,
+          "ServiceDriverUserDriverUserWorkStatusService": 1.1807392228230127,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.04183300132670378,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 15,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapMapDicDistrictClient"
+      ],
+      "service_names": [
+        "ServiceMapMapDicDistrictClient"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 16,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapMapDirectionClient"
+      ],
+      "service_names": [
+        "ServiceMapMapDirectionClient"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 17,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapPointClient"
+      ],
+      "service_names": [
+        "ServiceMapPointClient"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 18,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapServiceClient"
+      ],
+      "service_names": [
+        "ServiceMapServiceClient"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 19,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapTerminalClient"
+      ],
+      "service_names": [
+        "ServiceMapTerminalClient"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 20,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapTrackClient"
+      ],
+      "service_names": [
+        "ServiceMapTrackClient"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 21,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapDicDistrictService",
+        "JavaOnlineTaxi.domain.DicDistrict"
+      ],
+      "service_names": [
+        "ServiceMapDicDistrictService"
+      ],
+      "membership_scores": {
+        "DicDistrict": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.0,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.0,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.11067971810589328,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 1.13125,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 22,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapDirectionService"
+      ],
+      "service_names": [
+        "ServiceMapDirectionService"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 23,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapPointService"
+      ],
+      "service_names": [
+        "ServiceMapPointService"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 24,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapServiceMapService"
+      ],
+      "service_names": [
+        "ServiceMapServiceMapService"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 25,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapTerminalService"
+      ],
+      "service_names": [
+        "ServiceMapTerminalService"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 26,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapTrackService"
+      ],
+      "service_names": [
+        "ServiceMapTrackService"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 27,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceOrderOrderInfoService",
+        "JavaOnlineTaxi.domain.OrderInfo"
+      ],
+      "service_names": [
+        "ServiceOrderOrderInfoService"
+      ],
+      "membership_scores": {
+        "OrderInfo": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.022360679774997897,
+          "ApiPassengerOrderService": 1.022360679774998,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.0,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 1.05,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 0.022360679774997897,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 28,
+      "members": [
+        "JavaOnlineTaxi.service.ServicePassengerUserUserService",
+        "JavaOnlineTaxi.domain.PassengerUser"
+      ],
+      "service_names": [
+        "ServicePassengerUserUserService"
+      ],
+      "membership_scores": {
+        "PassengerUser": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.038188130791298666,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.04518480570575319,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 0.04518480570575319,
+          "ApiPassengerOrderService": 0.04518480570575319,
+          "ApiPassengerTokenService": 0.04518480570575319,
+          "ApiPassengerUserService": 1.0763762615825974,
+          "ApiPassengerVerifyCodeService": 1.0381881307912986,
+          "ServiceDriverUserCarService": 0.04124789556921527,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.03572172541558802,
+          "ServiceDriverUserDriverUserService": 0.03572172541558802,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.04124789556921527,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 1.0763762615825974,
+          "ServicePricePriceService": 0.0,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 29,
+      "members": [
+        "JavaOnlineTaxi.service.ServicePricePriceService",
+        "JavaOnlineTaxi.domain.PriceRule"
+      ],
+      "service_names": [
+        "ServicePricePriceService"
+      ],
+      "membership_scores": {
+        "PriceRule": {
+          "ApiBossCarService": 0.0,
+          "ApiBossDriverCarBindingRelationshipService": 0.0,
+          "ApiBossDriverUserService": 0.0,
+          "ApiDriverPointService": 0.0,
+          "ApiDriverUserService": 0.0,
+          "ApiDriverVerifyCodeService": 0.0,
+          "ApiPassengerForecastPriceService": 1.043412157106223,
+          "ApiPassengerOrderService": 0.0,
+          "ApiPassengerTokenService": 0.0,
+          "ApiPassengerUserService": 0.0,
+          "ApiPassengerVerifyCodeService": 0.0,
+          "ServiceDriverUserCarService": 0.0,
+          "ServiceDriverUserDriverCarBindingRelationshipService": 0.0,
+          "ServiceDriverUserDriverUserService": 0.0,
+          "ServiceDriverUserDriverUserWorkStatusService": 0.0,
+          "ServiceMapMapDicDistrictClient": 0.0,
+          "ServiceMapMapDirectionClient": 0.0,
+          "ServiceMapPointClient": 0.0,
+          "ServiceMapServiceClient": 0.0,
+          "ServiceMapTerminalClient": 0.0,
+          "ServiceMapTrackClient": 0.0,
+          "ServiceMapDicDistrictService": 0.0,
+          "ServiceMapDirectionService": 0.0,
+          "ServiceMapPointService": 0.0,
+          "ServiceMapServiceMapService": 0.0,
+          "ServiceMapTerminalService": 0.0,
+          "ServiceMapTrackService": 0.0,
+          "ServiceOrderOrderInfoService": 0.0,
+          "ServicePassengerUserUserService": 0.0,
+          "ServicePricePriceService": 1.043412157106223,
+          "ServiceVerifycodeVerifyCodeService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 30,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceVerifycodeVerifyCodeService"
+      ],
+      "service_names": [
+        "ServiceVerifycodeVerifyCodeService"
+      ],
+      "membership_scores": {}
+    }
+  ],
+  "entity_memberships": {
+    "Car": [
+      {
+        "service": "ApiBossCarService",
+        "score": 1.025064
+      },
+      {
+        "service": "ApiDriverPointService",
+        "score": 1.0
+      },
+      {
+        "service": "ServiceDriverUserCarService",
+        "score": 1.02288
+      }
+    ],
+    "DriverCarBindingRelationship": [
+      {
+        "service": "ApiBossDriverCarBindingRelationshipService",
+        "score": 1.140705
+      },
+      {
+        "service": "ServiceDriverUserDriverCarBindingRelationshipService",
+        "score": 1.149241
+      }
+    ],
+    "DriverUser": [
+      {
+        "service": "ApiBossDriverUserService",
+        "score": 1.047519
+      },
+      {
+        "service": "ApiDriverUserService",
+        "score": 1.056225
+      },
+      {
+        "service": "ApiDriverVerifyCodeService",
+        "score": 1.022225
+      },
+      {
+        "service": "ServiceDriverUserDriverUserService",
+        "score": 1.04445
+      }
+    ],
+    "DriverUserWorkStatus": [
+      {
+        "service": "ApiBossDriverUserService",
+        "score": 1.083666
+      },
+      {
+        "service": "ServiceDriverUserDriverUserService",
+        "score": 1.078262
+      },
+      {
+        "service": "ServiceDriverUserDriverUserWorkStatusService",
+        "score": 1.180739
+      }
+    ],
+    "PriceRule": [
+      {
+        "service": "ApiPassengerForecastPriceService",
+        "score": 1.043412
+      },
+      {
+        "service": "ServicePricePriceService",
+        "score": 1.043412
+      }
+    ],
+    "OrderInfo": [
+      {
+        "service": "ApiPassengerOrderService",
+        "score": 1.022361
+      },
+      {
+        "service": "ServiceOrderOrderInfoService",
+        "score": 1.05
+      }
+    ],
+    "PassengerUser": [
+      {
+        "service": "ApiPassengerUserService",
+        "score": 1.076376
+      },
+      {
+        "service": "ApiPassengerVerifyCodeService",
+        "score": 1.038188
+      },
+      {
+        "service": "ServicePassengerUserUserService",
+        "score": 1.076376
+      }
+    ],
+    "DicDistrict": [
+      {
+        "service": "ServiceMapDicDistrictService",
+        "score": 1.13125
+      }
+    ]
+  }
+}

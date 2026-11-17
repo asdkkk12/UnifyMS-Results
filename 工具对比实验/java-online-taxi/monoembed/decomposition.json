@@ -1,0 +1,142 @@
+{
+  "application": "JavaOnlineTaxi",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/monoembed/java-input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "JavaOnlineTaxi.service.ApiBossCarService",
+        "JavaOnlineTaxi.service.ApiBossDriverUserService",
+        "JavaOnlineTaxi.service.ApiDriverPointService",
+        "JavaOnlineTaxi.service.ApiDriverUserService",
+        "JavaOnlineTaxi.service.ApiPassengerOrderService",
+        "JavaOnlineTaxi.service.ServiceDriverUserDriverUserService",
+        "JavaOnlineTaxi.service.ServiceDriverUserDriverUserWorkStatusService"
+      ],
+      "service_names": [
+        "ApiBossCarService",
+        "ApiBossDriverUserService",
+        "ApiDriverPointService",
+        "ApiDriverUserService",
+        "ApiPassengerOrderService",
+        "ServiceDriverUserDriverUserService",
+        "ServiceDriverUserDriverUserWorkStatusService"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "JavaOnlineTaxi.service.ApiDriverVerifyCodeService",
+        "JavaOnlineTaxi.service.ApiPassengerTokenService",
+        "JavaOnlineTaxi.service.ApiPassengerUserService",
+        "JavaOnlineTaxi.service.ApiPassengerVerifyCodeService",
+        "JavaOnlineTaxi.service.ServicePassengerUserUserService",
+        "JavaOnlineTaxi.service.ServiceVerifycodeVerifyCodeService"
+      ],
+      "service_names": [
+        "ApiDriverVerifyCodeService",
+        "ApiPassengerTokenService",
+        "ApiPassengerUserService",
+        "ApiPassengerVerifyCodeService",
+        "ServicePassengerUserUserService",
+        "ServiceVerifycodeVerifyCodeService"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "JavaOnlineTaxi.service.ApiBossDriverCarBindingRelationshipService",
+        "JavaOnlineTaxi.service.ServiceDriverUserDriverCarBindingRelationshipService",
+        "JavaOnlineTaxi.domain.DriverCarBindingRelationship"
+      ],
+      "service_names": [
+        "ApiBossDriverCarBindingRelationshipService",
+        "ServiceDriverUserDriverCarBindingRelationshipService",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceMapMapDicDistrictClient",
+        "JavaOnlineTaxi.service.ServiceMapMapDirectionClient",
+        "JavaOnlineTaxi.service.ServiceMapPointClient",
+        "JavaOnlineTaxi.service.ServiceMapServiceClient",
+        "JavaOnlineTaxi.service.ServiceMapTerminalClient",
+        "JavaOnlineTaxi.service.ServiceMapTrackClient"
+      ],
+      "service_names": [
+        "ServiceMapMapDicDistrictClient",
+        "ServiceMapMapDirectionClient",
+        "ServiceMapPointClient",
+        "ServiceMapServiceClient",
+        "ServiceMapTerminalClient",
+        "ServiceMapTrackClient"
+      ]
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "JavaOnlineTaxi.service.ServiceDriverUserCarService",
+        "JavaOnlineTaxi.service.ServiceMapDicDistrictService",
+        "JavaOnlineTaxi.service.ServiceMapDirectionService",
+        "JavaOnlineTaxi.service.ServiceMapPointService",
+        "JavaOnlineTaxi.service.ServiceMapServiceMapService",
+        "JavaOnlineTaxi.service.ServiceMapTerminalService",
+        "JavaOnlineTaxi.service.ServiceMapTrackService",
+        "JavaOnlineTaxi.service.ServiceOrderOrderInfoService"
+      ],
+      "service_names": [
+        "ServiceDriverUserCarService",
+        "ServiceMapDicDistrictService",
+        "ServiceMapDirectionService",
+        "ServiceMapPointService",
+        "ServiceMapServiceMapService",
+        "ServiceMapTerminalService",
+        "ServiceMapTrackService",
+        "ServiceOrderOrderInfoService"
+      ]
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "JavaOnlineTaxi.service.ApiPassengerForecastPriceService",
+        "JavaOnlineTaxi.service.ServicePricePriceService",
+        "JavaOnlineTaxi.domain.PriceRule"
+      ],
+      "service_names": [
+        "ApiPassengerForecastPriceService",
+        "ServicePricePriceService",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "JavaOnlineTaxi.domain.Car",
+        "JavaOnlineTaxi.domain.DicDistrict",
+        "JavaOnlineTaxi.domain.DriverUser",
+        "JavaOnlineTaxi.domain.DriverUserWorkStatus",
+        "JavaOnlineTaxi.domain.PassengerUser",
+        "JavaOnlineTaxi.domain.OrderInfo"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

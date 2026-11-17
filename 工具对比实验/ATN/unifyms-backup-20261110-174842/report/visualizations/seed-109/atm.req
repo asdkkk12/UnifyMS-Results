@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="57de92c76df61ec66659f4d34949207f172a858f713820b1f8ddb38291900e10" runHash="691ef4ef0b2a14fb48ef158fc0569b7e57bce65938b7e95734bfb75ab3ca9f48" snapshotHash="88190284f64003962996ce0b80bbfe8728f441024077d51242a062299e5b8978" taskKey="fcc6e59314908337cd21e9e42b0553cf993b88d66d6bd8456da143d2f1e82065" configId="C0" seed="109" exportVersion="merm-export-v1">
+    <UseCaseModel name="atm.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="withdrawCash" UCRelation="include" relateduc="/0/@UseCaseModel/@usecasecontext.0/@uc.5" />
+        <uc name="checkBalance" UCRelation="include" relateduc="/0/@UseCaseModel/@usecasecontext.0/@uc.5" />
+        <uc name="depositFunds" />
+        <uc name="manageBankCard" />
+        <uc name="manageUser" />
+        <uc name="cardIdentification" />
+      </usecasecontext>
+      <actor name="BankClerk" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.3 /0/@UseCaseModel/@usecasecontext.0/@uc.4" />
+      <actor name="Customer" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0" />
+    </UseCaseModel>
+    <DomainModel name="atm.remodel">
+      <entitycontext name="EntityContext0" serviceId="0">
+        <userinterface name="UserInterface">
+          <operation name="cardIdentification()" />
+          <operation name="checkBalance()" />
+          <operation name="createBankCard()" />
+          <operation name="createUser()" />
+          <operation name="deleteBankCard()" />
+          <operation name="deleteUser()" />
+          <operation name="depositFunds()" />
+          <operation name="ejectCard()" />
+          <operation name="inputCard()" />
+          <operation name="inputPassword()" />
+          <operation name="modifyBankCard()" />
+          <operation name="modifyUser()" />
+          <operation name="printReceipt()" />
+          <operation name="queryBankCard()" />
+          <operation name="queryUser()" />
+          <operation name="withdrawCash()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+        <entity name="BankCard">
+          <attributes name="CardID">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="CardStatus">
+            <type xsi:type="req:EnumTypeCS" name="CardStatus[NORMAL|SUSPEND|CANNEL]" />
+          </attributes>
+          <attributes name="Catalog">
+            <type xsi:type="req:EnumTypeCS" name="CardCatalog[CREDIT|DESPOSIT]" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Balance">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="BelongedUser" entity="/0/@DomainModel/@entitycontext.0/@entity.1" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="User">
+          <attributes name="UserID">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Address">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <reference name="OwnedCard" entity="/0/@DomainModel/@entitycontext.0/@entity.0" type="Association" ismultiple="true" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

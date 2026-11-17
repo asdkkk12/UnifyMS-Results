@@ -1,0 +1,13 @@
+{
+  "source": "../../input/extraction.json",
+  "adapter": "spring_servicecutter.py",
+  "model": "servicecutter_model.json",
+  "user_representations": "servicecutter_user_representations.json",
+  "counts": {
+    "entities": 58,
+    "actual_fields": 645,
+    "nonempty_usecases": 48
+  },
+  "policy": "Actual Java AST fields and conservative entity-level co-access; no sentinel, inferred owner or guessed foreign key.",
+  "supersedes_generic_manifest": true
+}

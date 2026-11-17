@@ -1,0 +1,179 @@
+{
+  "services": [
+    {
+      "nanoentities": [
+        "BookChapter.updateTime",
+        "BookChapter.lockStatus",
+        "BookChapter.id",
+        "BookChapter.createTime",
+        "BookChapter.sortNumber",
+        "BookChapter.content",
+        "BookChapter.name",
+        "BookChapter.bookId"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "Book.updater",
+        "UserLikeSee.bookId",
+        "IndexBooklist.showLikeCount",
+        "IndexBannerItem.updateTime",
+        "IndexBooklist.createTime",
+        "IndexPageConfig.creater",
+        "UserBookshelf.userId",
+        "IndexBooklistItem.updateTime",
+        "IndexBanner.createTime",
+        "UserBookshelf.lastChapterId",
+        "IndexBannerItem.createTime",
+        "IndexPageConfig.startDate",
+        "IndexBooklist.name",
+        "Book.dicSerialStatus",
+        "IndexBooklistItem.createTime",
+        "UserLikeSee.createTime",
+        "IndexBooklist.startDate",
+        "IndexPageConfig.createTime",
+        "IndexPageConfig.sortNumber",
+        "Book.authorId",
+        "IndexBooklistItem.bookId",
+        "IndexPageConfig.itemId",
+        "IndexBanner.creater",
+        "IndexBannerItem.name",
+        "IndexPageConfig.id",
+        "IndexBannerItem.imgUrl",
+        "IndexBannerItem.updater",
+        "IndexBanner.updateTime",
+        "Book.id",
+        "IndexBooklist.updateTime",
+        "Book.bookName",
+        "UserBookshelf.id",
+        "IndexBooklist.id",
+        "IndexBanner.updater",
+        "Book.creater",
+        "IndexBannerItem.creater",
+        "IndexBooklistItem.creater",
+        "IndexBooklistItem.booklistId",
+        "UserLikeSee.userId",
+        "Book.bookScore",
+        "UserBookshelf.bookId",
+        "Book.wordCount",
+        "IndexBannerItem.sortNumber",
+        "IndexBooklist.moreType",
+        "Book.isbn",
+        "Book.dicChannel",
+        "UserBookshelf.createTime",
+        "Book.dicCategory",
+        "IndexPageConfig.updateTime",
+        "IndexBooklist.bookIds",
+        "IndexBannerItem.id",
+        "IndexBooklistItem.sortNumber",
+        "IndexPageConfig.pageType",
+        "Book.authorName",
+        "IndexPageConfig.endDate",
+        "Book.keyWord",
+        "Book.imgUrl",
+        "IndexPageConfig.updater",
+        "Book.onlineStatus",
+        "IndexBooklist.endDate",
+        "IndexPageConfig.itemType",
+        "IndexBooklist.moreUrl",
+        "Book.bookId",
+        "IndexBooklistItem.updater",
+        "IndexBannerItem.url",
+        "Book.createTime",
+        "IndexBooklist.style",
+        "Book.introduction",
+        "IndexBannerItem.bannerId",
+        "IndexBooklist.creater",
+        "IndexBooklist.showNumber",
+        "UserLikeSee.id",
+        "IndexBooklist.updater",
+        "IndexBooklistItem.id",
+        "Book.updateTime",
+        "IndexBanner.name",
+        "IndexBanner.id",
+        "UserBookshelf.lastReadTime"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "DataDictionary.sortNumber",
+        "DataDictionary.dicType",
+        "DataDictionary.name",
+        "DataDictionary.dicTypeName",
+        "DataDictionary.id",
+        "DataDictionary.code"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "User.nickName",
+        "User.createTime",
+        "User.loginName",
+        "User.uuid",
+        "User.userPwd",
+        "User.updateTime",
+        "User.headImgUrl",
+        "User.id",
+        "User.phoneNumber"
+      ],
+      "id": "D",
+      "name": "Service D"
+    },
+    {
+      "nanoentities": [
+        "BookAuthor.createTime",
+        "BookAuthor.headImgUrl",
+        "BookAuthor.updateTime",
+        "BookAuthor.name",
+        "BookAuthor.introduction",
+        "BookAuthor.id",
+        "BookAuthor.creater",
+        "BookAuthor.updater"
+      ],
+      "id": "E",
+      "name": "Service E"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "BookChapter.updateTime",
+        "BookChapter.lockStatus",
+        "BookChapter.id",
+        "BookChapter.createTime",
+        "BookChapter.sortNumber",
+        "BookChapter.name",
+        "BookChapter.content",
+        "BookChapter.bookId"
+      ],
+      "direction": "INCOMING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service D": [
+      "ReadingCloudAccountUserServiceImpl"
+    ],
+    "Service C": [
+      "ReadingCloudBookDataDictionaryServiceImpl"
+    ],
+    "Service B": [
+      "ReadingCloudAccountUserBookshelfServiceImpl",
+      "ReadingCloudAccountUserLikeSeeServiceImpl",
+      "ReadingCloudBookBookChapterServiceImpl",
+      "ReadingCloudBookBookServiceImpl",
+      "ReadingCloudHomepageBookCenterServiceImpl",
+      "ReadingCloudHomepageIndexBannerServiceImpl",
+      "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+      "ReadingCloudHomepageIndexBooklistServiceImpl",
+      "ReadingCloudHomepageIndexPageConfigServiceImpl"
+    ]
+  }
+}

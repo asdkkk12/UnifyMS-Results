@@ -1,0 +1,941 @@
+{
+  "name": "SPRING_AST",
+  "entities": [
+    {
+      "name": "ShopActivityShopActivityApiActivity",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityName",
+        "activityImg",
+        "activityType",
+        "state",
+        "beginTime",
+        "endTime"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiAssembleActivityGoods",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsId",
+        "activityId",
+        "ruleId"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiAssembleActivityMember",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityId",
+        "recordId",
+        "userId",
+        "phone",
+        "username",
+        "master"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiAssembleActivityRecord",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityId",
+        "status"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiAssembleActivityRule",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityId",
+        "serverStatus",
+        "purchaseLimit",
+        "assembleCount",
+        "description"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiBanner",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "title",
+        "bannerUrl",
+        "bannerClickUrl",
+        "bannerType",
+        "shareUrl",
+        "shareTitle",
+        "shareSubtitle",
+        "shareIcon",
+        "shareChannel",
+        "bannerStatus"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiDiscountCoupon",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "templateId",
+        "beginTime",
+        "endTime",
+        "phone",
+        "used"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiDiscountCouponTemplate",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "orderAmount",
+        "couponAmount",
+        "discountStrength",
+        "state",
+        "templateType",
+        "templateName",
+        "description",
+        "beginTime",
+        "endTime"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiExchangeActivityGoods",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityId",
+        "ruleId",
+        "goodsId"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiExchangeActivityMember",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityId",
+        "userId",
+        "goodsId",
+        "ruleId",
+        "phone"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiExchangeActivityRule",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "activityId",
+        "ruleName",
+        "orderAmount",
+        "state"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiIntegralLog",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "integral",
+        "description"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiInviteCode",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "templateId",
+        "code"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiInviteRewardRecord",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "inviteUserId",
+        "userId",
+        "phone",
+        "rewardType"
+      ]
+    },
+    {
+      "name": "ShopActivityShopActivityApiSecKillRule",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus"
+      ]
+    },
+    {
+      "name": "ShopCartShopCartApiGoodsCart",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "sellerId",
+        "skuId",
+        "quantity"
+      ]
+    },
+    {
+      "name": "ShopCartShopCartApiOrderCart",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "sellerId",
+        "userOrderId",
+        "sellerOrderId",
+        "skuId",
+        "quantity",
+        "skuAmount",
+        "discountAmount"
+      ]
+    },
+    {
+      "name": "ShopElasticsearchShopElasticsearchApiESGoods",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "brandId",
+        "gcsId",
+        "goodsPropertyGroupId",
+        "spuId",
+        "name",
+        "publishStatus",
+        "goodsType",
+        "state",
+        "recommend",
+        "unit",
+        "description"
+      ]
+    },
+    {
+      "name": "ShopElasticsearchShopElasticsearchApiESSellerOrder",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "ids"
+      ]
+    },
+    {
+      "name": "ShopElasticsearchShopElasticsearchApiESUserOrder",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "ids"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoods",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsClassId",
+        "publishStatus",
+        "goodsType",
+        "goodsState",
+        "recommend",
+        "beginTime",
+        "endTime",
+        "unit",
+        "description"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsApprove",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsId",
+        "skuId",
+        "publishStatus",
+        "description"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsClass",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "spuId",
+        "className",
+        "sequence"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsSku",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsId",
+        "skuName",
+        "skuCode",
+        "description",
+        "state",
+        "weight",
+        "skuAmount",
+        "discountAmount"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsSkuImage",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsId",
+        "skuId",
+        "images"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsSkuStock",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsId",
+        "skuId",
+        "stock"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsSkuTag",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "goodsId",
+        "skuId",
+        "name"
+      ]
+    },
+    {
+      "name": "ShopGoodsShopGoodsApiGoodsSpu",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "spuName",
+        "spuImage",
+        "sequence"
+      ]
+    },
+    {
+      "name": "ShopJobShopJobApiJobGroup",
+      "nanoentities": [
+        "id",
+        "groupName",
+        "sequence"
+      ]
+    },
+    {
+      "name": "ShopJobShopJobApiJobInfo",
+      "nanoentities": [
+        "id",
+        "jobGroupId",
+        "jobStatus",
+        "jobName",
+        "jobGroup",
+        "cron",
+        "description",
+        "serviceName",
+        "serviceMethod",
+        "params",
+        "updateTime",
+        "createTime",
+        "updateUser"
+      ]
+    },
+    {
+      "name": "ShopJobShopJobApiJobLog",
+      "nanoentities": [
+        "id",
+        "jobGroupId",
+        "jobId",
+        "executorServiceName",
+        "executorServiceMethod",
+        "executorParam",
+        "triggerTime",
+        "triggerCode",
+        "triggerMsg",
+        "handleTime",
+        "handleCode",
+        "handleMsg",
+        "alarmStatus"
+      ]
+    },
+    {
+      "name": "ShopManageMenu",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "parentId",
+        "sequence",
+        "menuType",
+        "name",
+        "path",
+        "component",
+        "redirect",
+        "icon",
+        "permission",
+        "router",
+        "hidden"
+      ]
+    },
+    {
+      "name": "ShopManageRole",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "roleName",
+        "master"
+      ]
+    },
+    {
+      "name": "ShopManageRoleMenu",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "roleId",
+        "permission"
+      ]
+    },
+    {
+      "name": "ShopManageSysRole",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "roleId",
+        "sysUserId"
+      ]
+    },
+    {
+      "name": "ShopManageSysUser",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "username",
+        "phone",
+        "password",
+        "state",
+        "beAdmin",
+        "avatar"
+      ]
+    },
+    {
+      "name": "ShopOrderShopOrderApiOrderEvaluate",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "content"
+      ]
+    },
+    {
+      "name": "ShopOrderShopOrderApiOrderItem",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "sellerId",
+        "userOrderId",
+        "sellerOrderId",
+        "goodsSkuId",
+        "purchaseAmount",
+        "purchaseQuantity"
+      ]
+    },
+    {
+      "name": "ShopOrderShopOrderApiOrderTrade",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "tradeType",
+        "payType",
+        "outTradeNo",
+        "tradeNo",
+        "totalAmount"
+      ]
+    },
+    {
+      "name": "ShopOrderShopOrderApiSaleAfterOrder",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus"
+      ]
+    },
+    {
+      "name": "ShopOrderShopOrderApiSellerOrder",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "sellerId",
+        "addrId",
+        "orderCode",
+        "deliveryTime",
+        "orderStatus",
+        "orderType",
+        "payType",
+        "orderAmount",
+        "discountAmount",
+        "self"
+      ]
+    },
+    {
+      "name": "ShopOrderShopOrderApiUserOrder",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "sellerId",
+        "addrId",
+        "couponId",
+        "phone",
+        "orderCode",
+        "orderStatus",
+        "orderType",
+        "payType",
+        "integral",
+        "orderAmount",
+        "payAmount",
+        "integralAmount",
+        "discountAmount",
+        "self"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiArea",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "areaCode",
+        "areaName",
+        "parentAreaCode"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiDynamicForm",
+      "nanoentities": [
+        "id",
+        "bizType",
+        "name",
+        "type",
+        "icon",
+        "model",
+        "defaultValue",
+        "width",
+        "remoteUrl",
+        "dataType",
+        "pattern",
+        "placeholder",
+        "startPlaceholder",
+        "endPlaceholder",
+        "format",
+        "customClass",
+        "rules",
+        "min",
+        "max",
+        "step",
+        "beRange",
+        "showInput",
+        "arrowControl",
+        "disabled",
+        "inline",
+        "readonly",
+        "editable",
+        "clearable",
+        "timestamp",
+        "allowHalf",
+        "showAlpha",
+        "multiple",
+        "showLabel",
+        "filterable"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiField",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "formId",
+        "type",
+        "title"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiFieldProps",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "fieldId",
+        "type",
+        "maxLength",
+        "minLength",
+        "placeholder",
+        "clearable",
+        "disabled",
+        "size",
+        "prefixIcon",
+        "suffixIcon",
+        "rows",
+        "autosize",
+        "step",
+        "datasource"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiForm",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "bizType",
+        "name",
+        "remark"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiSMSTemplate",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "templateCode",
+        "templateContent"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiSystemConfig",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "configName",
+        "configType",
+        "description",
+        "configStatus"
+      ]
+    },
+    {
+      "name": "ShopPlatformShopPlatformApiSystemConfigDetail",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "configName",
+        "configType",
+        "configValue",
+        "configKey",
+        "configStatus"
+      ]
+    },
+    {
+      "name": "ShopRiskShopRiskApiBlackList",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "phone",
+        "state"
+      ]
+    },
+    {
+      "name": "ShopRiskShopRiskApiWhitelist",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "phone",
+        "state"
+      ]
+    },
+    {
+      "name": "ShopUserShopUserApiAddress",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "mobile",
+        "username",
+        "cityName",
+        "deliveryAddress",
+        "houseNumber",
+        "label",
+        "defaultAddress",
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "name": "ShopUserShopUserApiFeedback",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "content",
+        "images"
+      ]
+    },
+    {
+      "name": "ShopUserShopUserApiNativeMessage",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "phone",
+        "content",
+        "status"
+      ]
+    },
+    {
+      "name": "ShopUserShopUserApiUser",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "phone",
+        "password"
+      ]
+    },
+    {
+      "name": "ShopUserShopUserApiUserAccount",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "integral"
+      ]
+    },
+    {
+      "name": "ShopUserShopUserApiUserInfo",
+      "nanoentities": [
+        "id",
+        "createUser",
+        "updateUser",
+        "createTime",
+        "updateTime",
+        "deleteStatus",
+        "userId",
+        "username",
+        "gender",
+        "birthday",
+        "avatar"
+      ]
+    }
+  ],
+  "relations": []
+}

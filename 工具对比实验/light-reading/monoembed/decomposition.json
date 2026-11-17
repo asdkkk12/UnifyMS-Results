@@ -1,0 +1,98 @@
+{
+  "application": "LightReading",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/light_reading_20261103_01/monoembed/java-input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/light_reading_20261103_01/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserBookshelfServiceImpl",
+        "LightReading.service.ReadingCloudAccountUserServiceImpl",
+        "LightReading.service.ReadingCloudBookBookChapterServiceImpl",
+        "LightReading.service.ReadingCloudBookBookServiceImpl",
+        "LightReading.service.ReadingCloudBookDataDictionaryServiceImpl",
+        "LightReading.service.ReadingCloudHomepageBookCenterServiceImpl"
+      ],
+      "service_names": [
+        "ReadingCloudAccountUserBookshelfServiceImpl",
+        "ReadingCloudAccountUserServiceImpl",
+        "ReadingCloudBookBookChapterServiceImpl",
+        "ReadingCloudBookBookServiceImpl",
+        "ReadingCloudBookDataDictionaryServiceImpl",
+        "ReadingCloudHomepageBookCenterServiceImpl"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBooklistServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "LightReading.service.ReadingCloudHomepageSearchServiceImpl",
+        "LightReading.domain.IndexBooklist"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "ReadingCloudHomepageIndexBooklistServiceImpl",
+        "ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "ReadingCloudHomepageSearchServiceImpl",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserLikeSeeServiceImpl",
+        "LightReading.domain.User",
+        "LightReading.domain.UserBookshelf",
+        "LightReading.domain.UserLikeSee"
+      ],
+      "service_names": [
+        "ReadingCloudAccountUserLikeSeeServiceImpl",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "LightReading.domain.Book",
+        "LightReading.domain.BookAuthor",
+        "LightReading.domain.BookChapter",
+        "LightReading.domain.DataDictionary"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "LightReading.service.ReadingCloudHomepageIndexBannerServiceImpl",
+        "LightReading.domain.IndexBanner",
+        "LightReading.domain.IndexBannerItem",
+        "LightReading.domain.IndexBooklistItem",
+        "LightReading.domain.IndexPageConfig"
+      ],
+      "service_names": [
+        "ReadingCloudHomepageIndexBannerServiceImpl",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

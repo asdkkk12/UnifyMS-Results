@@ -1,0 +1,179 @@
+{
+  "useCases": [
+    {
+      "name": "searchBook",
+      "nanoentitiesRead": [
+        "Book.author",
+        "BookCopy.barcode",
+        "Subject.name"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "listBookHistory",
+      "nanoentitiesRead": [
+        "Loan.bookcopy",
+        "RecommendBook.book",
+        "Reserve.bookcopy",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "makeReservation",
+      "nanoentitiesRead": [
+        "BookCopy.barcode",
+        "Reserve.bookcopy",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "recommendBook",
+      "nanoentitiesRead": [
+        "RecommendBook.book",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "cancelReservation",
+      "nanoentitiesRead": [
+        "Administrator.adminid"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "listRecommendBook",
+      "nanoentitiesRead": [
+        "RecommendBook.book",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "borrowBook",
+      "nanoentitiesRead": [
+        "BookCopy.barcode",
+        "Faculty.facultyposition",
+        "Loan.bookcopy",
+        "Reserve.bookcopy",
+        "Student.major",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "renewBook",
+      "nanoentitiesRead": [
+        "BookCopy.barcode",
+        "Faculty.facultyposition",
+        "Loan.bookcopy",
+        "Student.major",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "payOverDueFee",
+      "nanoentitiesRead": [
+        "Loan.bookcopy",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "returnBook",
+      "nanoentitiesRead": [
+        "BookCopy.barcode",
+        "Loan.bookcopy",
+        "Reserve.bookcopy"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "checkOverDueandComputeOverDueFee",
+      "nanoentitiesRead": [
+        "Loan.bookcopy"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "dueSoonNotification",
+      "nanoentitiesRead": [
+        "Loan.bookcopy",
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "countDownSuspensionDay",
+      "nanoentitiesRead": [
+        "User.borrowstatus"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "sendNotificationEmail",
+      "nanoentitiesRead": [
+        "Administrator.adminid"
+      ],
+      "nanoentitiesWritten": []
+    }
+  ],
+  "compatibilities": {},
+  "sharedOwnerGroups": [
+    {
+      "name": "User",
+      "nanoentities": [
+        "BookCopy.barcode",
+        "RecommendBook.book",
+        "Reserve.bookcopy",
+        "User.borrowstatus"
+      ]
+    },
+    {
+      "name": "Faculty",
+      "nanoentities": [
+        "BookCopy.barcode",
+        "RecommendBook.book",
+        "Reserve.bookcopy",
+        "User.borrowstatus"
+      ]
+    },
+    {
+      "name": "Student",
+      "nanoentities": [
+        "BookCopy.barcode",
+        "RecommendBook.book",
+        "Reserve.bookcopy",
+        "User.borrowstatus"
+      ]
+    },
+    {
+      "name": "Administrator",
+      "nanoentities": [
+        "RecommendBook.book",
+        "User.borrowstatus"
+      ]
+    },
+    {
+      "name": "Librarian",
+      "nanoentities": [
+        "BookCopy.barcode",
+        "Faculty.facultyposition",
+        "Loan.bookcopy",
+        "Reserve.bookcopy",
+        "Student.major",
+        "User.borrowstatus"
+      ]
+    },
+    {
+      "name": "Scheduler",
+      "nanoentities": [
+        "Loan.bookcopy",
+        "User.borrowstatus"
+      ]
+    }
+  ]
+}

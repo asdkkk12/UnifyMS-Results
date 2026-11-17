@@ -1,0 +1,749 @@
+{
+  "schemaVersion": "merm-view-v1",
+  "name": "atm",
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/unifyms/report/visualizations/seed-109/atm.req",
+  "inputHash": "84445d07b24f5a9fec28c0ea138e2cbaaa19b951f590b58e40e72720a8dce6d4",
+  "metadata": {
+    "inputHash": "57de92c76df61ec66659f4d34949207f172a858f713820b1f8ddb38291900e10",
+    "runHash": "691ef4ef0b2a14fb48ef158fc0569b7e57bce65938b7e95734bfb75ab3ca9f48",
+    "snapshotHash": "88190284f64003962996ce0b80bbfe8728f441024077d51242a062299e5b8978",
+    "taskKey": "fcc6e59314908337cd21e9e42b0553cf993b88d66d6bd8456da143d2f1e82065",
+    "configId": "C0",
+    "seed": "109",
+    "exportVersion": "merm-export-v1"
+  },
+  "services": [
+    {
+      "id": "service-0",
+      "key": "0",
+      "name": "Microservice 0",
+      "usecaseContext": "/0/@UseCaseModel/@usecasecontext.0",
+      "entityContext": "/0/@DomainModel/@entitycontext.0"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "uc",
+      "name": "withdrawCash",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "withdrawCash",
+          "UCRelation": "include",
+          "relateduc": "/0/@UseCaseModel/@usecasecontext.0/@uc.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "kind": "uc",
+      "name": "checkBalance",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+        "attributes": {
+          "name": "checkBalance",
+          "UCRelation": "include",
+          "relateduc": "/0/@UseCaseModel/@usecasecontext.0/@uc.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.2",
+      "kind": "uc",
+      "name": "depositFunds",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.2",
+        "attributes": {
+          "name": "depositFunds"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.3",
+      "kind": "uc",
+      "name": "manageBankCard",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.3",
+        "attributes": {
+          "name": "manageBankCard"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.4",
+      "kind": "uc",
+      "name": "manageUser",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.4",
+        "attributes": {
+          "name": "manageUser"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.5",
+      "kind": "uc",
+      "name": "cardIdentification",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@UseCaseModel/@usecasecontext.0/@uc.5",
+        "attributes": {
+          "name": "cardIdentification"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0",
+      "kind": "actor",
+      "name": "BankClerk",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.0",
+        "attributes": {
+          "name": "BankClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.3 /0/@UseCaseModel/@usecasecontext.0/@uc.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1",
+      "kind": "actor",
+      "name": "Customer",
+      "service": null,
+      "source": {
+        "path": "/0/@UseCaseModel/@actor.1",
+        "attributes": {
+          "name": "Customer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+      "kind": "userinterface",
+      "name": "UserInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.0",
+        "attributes": {
+          "name": "UserInterface"
+        }
+      },
+      "operations": [
+        {
+          "name": "cardIdentification()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.0"
+        },
+        {
+          "name": "checkBalance()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.1"
+        },
+        {
+          "name": "createBankCard()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.2"
+        },
+        {
+          "name": "createUser()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.3"
+        },
+        {
+          "name": "deleteBankCard()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.4"
+        },
+        {
+          "name": "deleteUser()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.5"
+        },
+        {
+          "name": "depositFunds()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.6"
+        },
+        {
+          "name": "ejectCard()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.7"
+        },
+        {
+          "name": "inputCard()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.8"
+        },
+        {
+          "name": "inputPassword()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.9"
+        },
+        {
+          "name": "modifyBankCard()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.10"
+        },
+        {
+          "name": "modifyUser()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.11"
+        },
+        {
+          "name": "printReceipt()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.12"
+        },
+        {
+          "name": "queryBankCard()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.13"
+        },
+        {
+          "name": "queryUser()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.14"
+        },
+        {
+          "name": "withdrawCash()",
+          "source": "/0/@DomainModel/@entitycontext.0/@userinterface.0/@operation.15"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+      "kind": "userinterface",
+      "name": "InterSystemInterface",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@userinterface.1",
+        "attributes": {
+          "name": "InterSystemInterface"
+        }
+      },
+      "operations": []
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "entity",
+      "name": "BankCard",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "BankCard"
+        }
+      },
+      "attributes": [
+        {
+          "name": "CardID",
+          "type": "Integer"
+        },
+        {
+          "name": "CardStatus",
+          "type": "CardStatus[NORMAL|SUSPEND|CANNEL]"
+        },
+        {
+          "name": "Catalog",
+          "type": "CardCatalog[CREDIT|DESPOSIT]"
+        },
+        {
+          "name": "Password",
+          "type": "Integer"
+        },
+        {
+          "name": "Balance",
+          "type": "Real"
+        }
+      ]
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.1",
+      "kind": "entity",
+      "name": "User",
+      "service": "service-0",
+      "source": {
+        "path": "/0/@DomainModel/@entitycontext.0/@entity.1",
+        "attributes": {
+          "name": "User"
+        }
+      },
+      "attributes": [
+        {
+          "name": "UserID",
+          "type": "Integer"
+        },
+        {
+          "name": "Name",
+          "type": "String"
+        },
+        {
+          "name": "Address",
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.0:relateduc:0",
+      "source": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.5",
+      "kind": "include",
+      "name": "include",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attribute": "relateduc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.5",
+        "attributes": {
+          "name": "withdrawCash",
+          "UCRelation": "include",
+          "relateduc": "/0/@UseCaseModel/@usecasecontext.0/@uc.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@usecasecontext.0/@uc.1:relateduc:1",
+      "source": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.5",
+      "kind": "include",
+      "name": "include",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+        "attribute": "relateduc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.5",
+        "attributes": {
+          "name": "checkBalance",
+          "UCRelation": "include",
+          "relateduc": "/0/@UseCaseModel/@usecasecontext.0/@uc.5"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:2",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.3",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.3 /0/@UseCaseModel/@usecasecontext.0/@uc.4",
+        "attributes": {
+          "name": "BankClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.3 /0/@UseCaseModel/@usecasecontext.0/@uc.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.0:uc:3",
+      "source": "/0/@UseCaseModel/@actor.0",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.4",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.0",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.3 /0/@UseCaseModel/@usecasecontext.0/@uc.4",
+        "attributes": {
+          "name": "BankClerk",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.3 /0/@UseCaseModel/@usecasecontext.0/@uc.4"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:4",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.1",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "Customer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:5",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.2",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "Customer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@UseCaseModel/@actor.1:uc:6",
+      "source": "/0/@UseCaseModel/@actor.1",
+      "target": "/0/@UseCaseModel/@usecasecontext.0/@uc.0",
+      "kind": "actor-usecase",
+      "name": "",
+      "provenance": {
+        "element": "/0/@UseCaseModel/@actor.1",
+        "attribute": "uc",
+        "value": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0",
+        "attributes": {
+          "name": "Customer",
+          "uc": "/0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.0:entity:7",
+      "source": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "target": "/0/@DomainModel/@entitycontext.0/@entity.1",
+      "kind": "association",
+      "name": "BelongedUser",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.0/@entity.1",
+        "attributes": {
+          "name": "BelongedUser",
+          "entity": "/0/@DomainModel/@entitycontext.0/@entity.1",
+          "type": "Association",
+          "ismultiple": "false",
+          "isReverseAssoication": "false",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    },
+    {
+      "id": "/0/@DomainModel/@entitycontext.0/@entity.1/@reference.0:entity:8",
+      "source": "/0/@DomainModel/@entitycontext.0/@entity.1",
+      "target": "/0/@DomainModel/@entitycontext.0/@entity.0",
+      "kind": "association",
+      "name": "OwnedCard [*]",
+      "provenance": {
+        "element": "/0/@DomainModel/@entitycontext.0/@entity.1/@reference.0",
+        "attribute": "entity",
+        "value": "/0/@DomainModel/@entitycontext.0/@entity.0",
+        "attributes": {
+          "name": "OwnedCard",
+          "entity": "/0/@DomainModel/@entitycontext.0/@entity.0",
+          "type": "Association",
+          "ismultiple": "true",
+          "isReverseAssoication": "true",
+          "isComposition": "false",
+          "isAggregation": "false"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "uc": 6,
+    "actor": 2,
+    "userinterface": 2,
+    "entity": 2,
+    "services": 1,
+    "interfaceEdges": 0,
+    "serviceEdges": 0
+  },
+  "diagnostics": [],
+  "layout": {
+    "usecases": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0": [
+          274,
+          252,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.1": [
+          274,
+          340,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.2": [
+          274,
+          428,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.3": [
+          274,
+          516,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.4": [
+          274,
+          604,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.5": [
+          274,
+          692,
+          380,
+          62
+        ],
+        "/0/@UseCaseModel/@actor.0": [
+          56,
+          255,
+          145,
+          96
+        ],
+        "/0/@UseCaseModel/@actor.1": [
+          56,
+          365,
+          145,
+          96
+        ]
+      },
+      "services": {
+        "service-0": [
+          234,
+          170,
+          460,
+          638
+        ]
+      },
+      "instances": [
+        {
+          "id": "/0/@UseCaseModel/@actor.0",
+          "service": "service-0",
+          "box": [
+            56,
+            255,
+            145,
+            96
+          ],
+          "proxy": true
+        },
+        {
+          "id": "/0/@UseCaseModel/@actor.1",
+          "service": "service-0",
+          "box": [
+            56,
+            365,
+            145,
+            96
+          ],
+          "proxy": true
+        }
+      ],
+      "edges": {
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.0:relateduc:0": {
+          "points": [
+            [
+              357.6,
+              314
+            ],
+            [
+              357.6,
+              332
+            ],
+            [
+              256,
+              332
+            ],
+            [
+              256,
+              674
+            ],
+            [
+              357.6,
+              674
+            ],
+            [
+              357.6,
+              692
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@usecasecontext.0/@uc.1:relateduc:1": {
+          "points": [
+            [
+              422.20000000000005,
+              402
+            ],
+            [
+              422.20000000000005,
+              420
+            ],
+            [
+              672,
+              420
+            ],
+            [
+              672,
+              674
+            ],
+            [
+              422.20000000000005,
+              674
+            ],
+            [
+              422.20000000000005,
+              692
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.0:uc:2": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              547.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.0:uc:3": {
+          "points": [
+            [
+              160,
+              290
+            ],
+            [
+              274,
+              635.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:4": {
+          "points": [
+            [
+              160,
+              400
+            ],
+            [
+              274,
+              371.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:5": {
+          "points": [
+            [
+              160,
+              400
+            ],
+            [
+              274,
+              459.0
+            ]
+          ],
+          "defaultVisible": true
+        },
+        "/0/@UseCaseModel/@actor.1:uc:6": {
+          "points": [
+            [
+              160,
+              400
+            ],
+            [
+              274,
+              283.0
+            ]
+          ],
+          "defaultVisible": true
+        }
+      }
+    },
+    "domain": {
+      "version": "readable-panels-v2",
+      "nodes": {
+        "/0/@DomainModel/@entitycontext.0/@entity.0": [
+          76,
+          286,
+          288,
+          184
+        ],
+        "/0/@DomainModel/@entitycontext.0/@entity.1": [
+          386,
+          286,
+          288,
+          112
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.0": [
+          76,
+          528,
+          288,
+          76
+        ],
+        "/0/@DomainModel/@entitycontext.0/@userinterface.1": [
+          386,
+          528,
+          288,
+          76
+        ]
+      },
+      "services": {
+        "service-0": [
+          52,
+          170,
+          660,
+          479
+        ]
+      },
+      "instances": [],
+      "edges": {
+        "/0/@DomainModel/@entitycontext.0/@entity.0/@reference.0:entity:7": {
+          "points": [
+            [
+              364,
+              326.48
+            ],
+            [
+              382,
+              326.48
+            ],
+            [
+              382,
+              310.64
+            ],
+            [
+              368,
+              310.64
+            ],
+            [
+              386,
+              310.64
+            ]
+          ],
+          "defaultVisible": false
+        },
+        "/0/@DomainModel/@entitycontext.0/@entity.1/@reference.0:entity:8": {
+          "points": [
+            [
+              386,
+              329.68
+            ],
+            [
+              368,
+              329.68
+            ],
+            [
+              368,
+              357.76
+            ],
+            [
+              382,
+              357.76
+            ],
+            [
+              364,
+              357.76
+            ]
+          ],
+          "defaultVisible": false
+        }
+      }
+    }
+  }
+}

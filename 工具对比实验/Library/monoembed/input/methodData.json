@@ -1,0 +1,290 @@
+[
+  {
+    "simpleName": "recommendBook",
+    "fullName": "Library.service.LibraryManagementSystem.recommendBook(Object userid, Object book)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void recommendBook(Object userid, Object book) {} }"
+  },
+  {
+    "simpleName": "queryBookCopy",
+    "fullName": "Library.service.LibraryManagementSystem.queryBookCopy(Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void queryBookCopy(Object barcode) {} }"
+  },
+  {
+    "simpleName": "addBookCopy",
+    "fullName": "Library.service.LibraryManagementSystem.addBookCopy(Object callNo, Object copy)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void addBookCopy(Object callNo, Object copy) {} }"
+  },
+  {
+    "simpleName": "deleteBookCopy",
+    "fullName": "Library.service.LibraryManagementSystem.deleteBookCopy(Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void deleteBookCopy(Object barcode) {} }"
+  },
+  {
+    "simpleName": "makeReservation",
+    "fullName": "Library.service.LibraryManagementSystem.makeReservation(Object uid, Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void makeReservation(Object uid, Object barcode) {} }"
+  },
+  {
+    "simpleName": "cannelReservation",
+    "fullName": "Library.service.LibraryManagementSystem.cannelReservation(Object uid, Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void cannelReservation(Object uid, Object barcode) {} }"
+  },
+  {
+    "simpleName": "borrowBook",
+    "fullName": "Library.service.LibraryManagementSystem.borrowBook(Object uid, Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void borrowBook(Object uid, Object barcode) {} }"
+  },
+  {
+    "simpleName": "renewBook",
+    "fullName": "Library.service.LibraryManagementSystem.renewBook(Object uid, Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void renewBook(Object uid, Object barcode) {} }"
+  },
+  {
+    "simpleName": "returnBook",
+    "fullName": "Library.service.LibraryManagementSystem.returnBook(Object barcode)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void returnBook(Object barcode) {} }"
+  },
+  {
+    "simpleName": "payOverDueFee",
+    "fullName": "Library.service.LibraryManagementSystem.payOverDueFee(Object uid, Object fee, Object change)",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void payOverDueFee(Object uid, Object fee, Object change) {} }"
+  },
+  {
+    "simpleName": "checkOverDueandComputeOverDueFee",
+    "fullName": "Library.service.LibraryManagementSystem.checkOverDueandComputeOverDueFee()",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void checkOverDueandComputeOverDueFee() {} }"
+  },
+  {
+    "simpleName": "dueSoonNotification",
+    "fullName": "Library.service.LibraryManagementSystem.dueSoonNotification()",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void dueSoonNotification() {} }"
+  },
+  {
+    "simpleName": "countDownSuspensionDay",
+    "fullName": "Library.service.LibraryManagementSystem.countDownSuspensionDay()",
+    "serviceName": "LibraryManagementSystem",
+    "content": "class LibraryManagementSystem { public void countDownSuspensionDay() {} }"
+  },
+  {
+    "simpleName": "sendNotificationEmail",
+    "fullName": "Library.service.ThirdPartServices.sendNotificationEmail(Object user)",
+    "serviceName": "ThirdPartServices",
+    "content": "class ThirdPartServices { public void sendNotificationEmail(Object user) {} }"
+  },
+  {
+    "simpleName": "listBorrowHistory",
+    "fullName": "Library.service.ListBookHistory.listBorrowHistory(Object userid)",
+    "serviceName": "ListBookHistory",
+    "content": "class ListBookHistory { public void listBorrowHistory(Object userid) {} }"
+  },
+  {
+    "simpleName": "listHodingBook",
+    "fullName": "Library.service.ListBookHistory.listHodingBook(Object userid)",
+    "serviceName": "ListBookHistory",
+    "content": "class ListBookHistory { public void listHodingBook(Object userid) {} }"
+  },
+  {
+    "simpleName": "listOverDueBook",
+    "fullName": "Library.service.ListBookHistory.listOverDueBook(Object userid)",
+    "serviceName": "ListBookHistory",
+    "content": "class ListBookHistory { public void listOverDueBook(Object userid) {} }"
+  },
+  {
+    "simpleName": "listReservationBook",
+    "fullName": "Library.service.ListBookHistory.listReservationBook(Object userid)",
+    "serviceName": "ListBookHistory",
+    "content": "class ListBookHistory { public void listReservationBook(Object userid) {} }"
+  },
+  {
+    "simpleName": "listRecommendBook",
+    "fullName": "Library.service.ListBookHistory.listRecommendBook(Object userid)",
+    "serviceName": "ListBookHistory",
+    "content": "class ListBookHistory { public void listRecommendBook(Object userid) {} }"
+  },
+  {
+    "simpleName": "searchBookByBarCode",
+    "fullName": "Library.service.SearchBook.searchBookByBarCode(Object barcode)",
+    "serviceName": "SearchBook",
+    "content": "class SearchBook { public void searchBookByBarCode(Object barcode) {} }"
+  },
+  {
+    "simpleName": "searchBookByTitle",
+    "fullName": "Library.service.SearchBook.searchBookByTitle(Object title)",
+    "serviceName": "SearchBook",
+    "content": "class SearchBook { public void searchBookByTitle(Object title) {} }"
+  },
+  {
+    "simpleName": "searchBookByAuthor",
+    "fullName": "Library.service.SearchBook.searchBookByAuthor(Object authorname)",
+    "serviceName": "SearchBook",
+    "content": "class SearchBook { public void searchBookByAuthor(Object authorname) {} }"
+  },
+  {
+    "simpleName": "searchBookByISBN",
+    "fullName": "Library.service.SearchBook.searchBookByISBN(Object ISBNnumber)",
+    "serviceName": "SearchBook",
+    "content": "class SearchBook { public void searchBookByISBN(Object ISBNnumber) {} }"
+  },
+  {
+    "simpleName": "searchBookBySubject",
+    "fullName": "Library.service.SearchBook.searchBookBySubject(Object subject)",
+    "serviceName": "SearchBook",
+    "content": "class SearchBook { public void searchBookBySubject(Object subject) {} }"
+  },
+  {
+    "simpleName": "createUser",
+    "fullName": "Library.service.ManageUserCRUDService.createUser(Object userid, Object name, Object sex, Object password, Object email, Object faculty, Object loanednumber, Object borrowstatus, Object suspensiondays, Object overduefee)",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void createUser(Object userid, Object name, Object sex, Object password, Object email, Object faculty, Object loanednumber, Object borrowstatus, Object suspensiondays, Object overduefee) {} }"
+  },
+  {
+    "simpleName": "queryUser",
+    "fullName": "Library.service.ManageUserCRUDService.queryUser(Object UserID)",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void queryUser(Object UserID) {} }"
+  },
+  {
+    "simpleName": "modifyUser",
+    "fullName": "Library.service.ManageUserCRUDService.modifyUser(Object userid, Object name, Object sex, Object password, Object email, Object faculty, Object loanednumber, Object borrowstatus, Object suspensiondays, Object overduefee)",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void modifyUser(Object userid, Object name, Object sex, Object password, Object email, Object faculty, Object loanednumber, Object borrowstatus, Object suspensiondays, Object overduefee) {} }"
+  },
+  {
+    "simpleName": "deleteUser",
+    "fullName": "Library.service.ManageUserCRUDService.deleteUser(Object UserID)",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void deleteUser(Object UserID) {} }"
+  },
+  {
+    "simpleName": "createStudent",
+    "fullName": "Library.service.ManageUserCRUDService.createStudent(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object programme : Programme[BACHELOR|MASTER|PHD], Object registrationStatus : StudentStatus[GRADUATED|PROGRAMMING])",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void createStudent(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object programme : Programme[BACHELOR|MASTER|PHD], Object registrationStatus : StudentStatus[GRADUATED|PROGRAMMING]) {} }"
+  },
+  {
+    "simpleName": "createFaculty",
+    "fullName": "Library.service.ManageUserCRUDService.createFaculty(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR], Object status : FacultyStatus[HASRETIRED|INPOSITION])",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void createFaculty(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR], Object status : FacultyStatus[HASRETIRED|INPOSITION]) {} }"
+  },
+  {
+    "simpleName": "modifyStudent",
+    "fullName": "Library.service.ManageUserCRUDService.modifyStudent(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object programme : Programme[BACHELOR|MASTER|PHD], Object registrationStatus : StudentStatus[GRADUATED|PROGRAMMING])",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void modifyStudent(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object programme : Programme[BACHELOR|MASTER|PHD], Object registrationStatus : StudentStatus[GRADUATED|PROGRAMMING]) {} }"
+  },
+  {
+    "simpleName": "modifyFaculty",
+    "fullName": "Library.service.ManageUserCRUDService.modifyFaculty(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR], Object status : FacultyStatus[HASRETIRED|INPOSITION])",
+    "serviceName": "ManageUserCRUDService",
+    "content": "class ManageUserCRUDService { public void modifyFaculty(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR], Object status : FacultyStatus[HASRETIRED|INPOSITION]) {} }"
+  },
+  {
+    "simpleName": "createBook",
+    "fullName": "Library.service.ManageBookCRUDService.createBook(Object callno, Object title, Object edition, Object author, Object publisher, Object description, Object isbn, Object copynum)",
+    "serviceName": "ManageBookCRUDService",
+    "content": "class ManageBookCRUDService { public void createBook(Object callno, Object title, Object edition, Object author, Object publisher, Object description, Object isbn, Object copynum) {} }"
+  },
+  {
+    "simpleName": "queryBook",
+    "fullName": "Library.service.ManageBookCRUDService.queryBook(Object CallNo)",
+    "serviceName": "ManageBookCRUDService",
+    "content": "class ManageBookCRUDService { public void queryBook(Object CallNo) {} }"
+  },
+  {
+    "simpleName": "modifyBook",
+    "fullName": "Library.service.ManageBookCRUDService.modifyBook(Object callno, Object title, Object edition, Object author, Object publisher, Object description, Object isbn, Object copynum)",
+    "serviceName": "ManageBookCRUDService",
+    "content": "class ManageBookCRUDService { public void modifyBook(Object callno, Object title, Object edition, Object author, Object publisher, Object description, Object isbn, Object copynum) {} }"
+  },
+  {
+    "simpleName": "deleteBook",
+    "fullName": "Library.service.ManageBookCRUDService.deleteBook(Object CallNo)",
+    "serviceName": "ManageBookCRUDService",
+    "content": "class ManageBookCRUDService { public void deleteBook(Object CallNo) {} }"
+  },
+  {
+    "simpleName": "createSubject",
+    "fullName": "Library.service.ManageSubjectCRUDService.createSubject(Object name)",
+    "serviceName": "ManageSubjectCRUDService",
+    "content": "class ManageSubjectCRUDService { public void createSubject(Object name) {} }"
+  },
+  {
+    "simpleName": "querySubject",
+    "fullName": "Library.service.ManageSubjectCRUDService.querySubject(Object Name)",
+    "serviceName": "ManageSubjectCRUDService",
+    "content": "class ManageSubjectCRUDService { public void querySubject(Object Name) {} }"
+  },
+  {
+    "simpleName": "modifySubject",
+    "fullName": "Library.service.ManageSubjectCRUDService.modifySubject(Object name)",
+    "serviceName": "ManageSubjectCRUDService",
+    "content": "class ManageSubjectCRUDService { public void modifySubject(Object name) {} }"
+  },
+  {
+    "simpleName": "deleteSubject",
+    "fullName": "Library.service.ManageSubjectCRUDService.deleteSubject(Object Name)",
+    "serviceName": "ManageSubjectCRUDService",
+    "content": "class ManageSubjectCRUDService { public void deleteSubject(Object Name) {} }"
+  },
+  {
+    "simpleName": "addBookCopy",
+    "fullName": "Library.service.ManageBookCopyCRUDService.addBookCopy(Object callNo:String, Object barcode : String, Object location : String)",
+    "serviceName": "ManageBookCopyCRUDService",
+    "content": "class ManageBookCopyCRUDService { public void addBookCopy(Object callNo:String, Object barcode : String, Object location : String) {} }"
+  },
+  {
+    "simpleName": "queryBookCopy",
+    "fullName": "Library.service.ManageBookCopyCRUDService.queryBookCopy(Object Barcode)",
+    "serviceName": "ManageBookCopyCRUDService",
+    "content": "class ManageBookCopyCRUDService { public void queryBookCopy(Object Barcode) {} }"
+  },
+  {
+    "simpleName": "modifyBookCopy",
+    "fullName": "Library.service.ManageBookCopyCRUDService.modifyBookCopy(Object barcode, Object status, Object location, Object isreserved)",
+    "serviceName": "ManageBookCopyCRUDService",
+    "content": "class ManageBookCopyCRUDService { public void modifyBookCopy(Object barcode, Object status, Object location, Object isreserved) {} }"
+  },
+  {
+    "simpleName": "deleteBookCopy",
+    "fullName": "Library.service.ManageBookCopyCRUDService.deleteBookCopy(Object barcode:String)",
+    "serviceName": "ManageBookCopyCRUDService",
+    "content": "class ManageBookCopyCRUDService { public void deleteBookCopy(Object barcode:String) {} }"
+  },
+  {
+    "simpleName": "createLibrarian",
+    "fullName": "Library.service.ManageLibrarianCRUDService.createLibrarian(Object librarianid, Object name, Object password)",
+    "serviceName": "ManageLibrarianCRUDService",
+    "content": "class ManageLibrarianCRUDService { public void createLibrarian(Object librarianid, Object name, Object password) {} }"
+  },
+  {
+    "simpleName": "queryLibrarian",
+    "fullName": "Library.service.ManageLibrarianCRUDService.queryLibrarian(Object LibrarianID)",
+    "serviceName": "ManageLibrarianCRUDService",
+    "content": "class ManageLibrarianCRUDService { public void queryLibrarian(Object LibrarianID) {} }"
+  },
+  {
+    "simpleName": "modifyLibrarian",
+    "fullName": "Library.service.ManageLibrarianCRUDService.modifyLibrarian(Object librarianid, Object name, Object password)",
+    "serviceName": "ManageLibrarianCRUDService",
+    "content": "class ManageLibrarianCRUDService { public void modifyLibrarian(Object librarianid, Object name, Object password) {} }"
+  },
+  {
+    "simpleName": "deleteLibrarian",
+    "fullName": "Library.service.ManageLibrarianCRUDService.deleteLibrarian(Object LibrarianID)",
+    "serviceName": "ManageLibrarianCRUDService",
+    "content": "class ManageLibrarianCRUDService { public void deleteLibrarian(Object LibrarianID) {} }"
+  }
+]

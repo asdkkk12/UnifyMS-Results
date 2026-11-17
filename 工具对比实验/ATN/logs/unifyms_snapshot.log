@@ -1,0 +1,18 @@
+		BelongedUser : User Association
+User
+		OwnedCard : BankCard* ! Association
+BankCard
+manageBankCard manageBankCard
+manageBankCard manageUser
+manageUser manageBankCard
+manageUser manageUser
+depositFunds depositFunds
+depositFunds withdrawCash
+depositFunds checkBalance
+withdrawCash depositFunds
+withdrawCash withdrawCash
+withdrawCash checkBalance
+checkBalance depositFunds
+checkBalance withdrawCash
+checkBalance checkBalance
+/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/atm_20261104_01/unifyms/model-snapshot.json

@@ -1,0 +1,680 @@
+UseCaseModel JavaOnlineTaxi {
+ UC::ApiBossCarService()
+ UC::ApiBossDriverCarBindingRelationshipService()
+ UC::ApiBossDriverUserService()
+ UC::ApiDriverPointService()
+ UC::ApiDriverUserService()
+ UC::ApiDriverVerifyCodeService()
+ UC::ApiPassengerForecastPriceService()
+ UC::ApiPassengerOrderService()
+ UC::ApiPassengerTokenService()
+ UC::ApiPassengerUserService()
+ UC::ApiPassengerVerifyCodeService()
+ UC::ServiceDriverUserCarService()
+ UC::ServiceDriverUserDriverCarBindingRelationshipService()
+ UC::ServiceDriverUserDriverUserService()
+ UC::ServiceDriverUserDriverUserWorkStatusService()
+ UC::ServiceMapMapDicDistrictClient()
+ UC::ServiceMapMapDirectionClient()
+ UC::ServiceMapPointClient()
+ UC::ServiceMapServiceClient()
+ UC::ServiceMapTerminalClient()
+ UC::ServiceMapTrackClient()
+ UC::ServiceMapDicDistrictService()
+ UC::ServiceMapDirectionService()
+ UC::ServiceMapPointService()
+ UC::ServiceMapServiceMapService()
+ UC::ServiceMapTerminalService()
+ UC::ServiceMapTrackService()
+ UC::ServiceOrderOrderInfoService()
+ UC::ServicePassengerUserUserService()
+ UC::ServicePricePriceService()
+ UC::ServiceVerifycodeVerifyCodeService()
+ Actor ApiBossRole {
+  ApiBossCarService
+  ApiBossDriverCarBindingRelationshipService
+  ApiBossDriverUserService
+ }
+ Actor ApiDriverRole {
+  ApiDriverPointService
+  ApiDriverUserService
+  ApiDriverVerifyCodeService
+ }
+ Actor ApiPassengerRole {
+  ApiPassengerForecastPriceService
+  ApiPassengerOrderService
+  ApiPassengerTokenService
+  ApiPassengerUserService
+  ApiPassengerVerifyCodeService
+ }
+ Actor ServiceDriverUserRole {
+  ServiceDriverUserCarService
+  ServiceDriverUserDriverCarBindingRelationshipService
+  ServiceDriverUserDriverUserService
+  ServiceDriverUserDriverUserWorkStatusService
+ }
+ Actor ServiceMapRole {
+  ServiceMapMapDicDistrictClient
+  ServiceMapMapDirectionClient
+  ServiceMapPointClient
+  ServiceMapServiceClient
+  ServiceMapTerminalClient
+  ServiceMapTrackClient
+  ServiceMapDicDistrictService
+  ServiceMapDirectionService
+  ServiceMapPointService
+  ServiceMapServiceMapService
+  ServiceMapTerminalService
+  ServiceMapTrackService
+ }
+ Actor ServiceOrderRole {
+  ServiceOrderOrderInfoService
+ }
+ Actor ServicePassengerUserRole {
+  ServicePassengerUserUserService
+ }
+ Actor ServicePriceRole {
+  ServicePricePriceService
+ }
+ Actor ServiceVerifycodeRole {
+  ServiceVerifycodeVerifyCodeService
+ }
+ Service ApiBossCarService {
+  [Operation]
+  ApiBossCarServiceAddCar()
+ }
+ Service ApiBossDriverCarBindingRelationshipService {
+  [Operation]
+  ApiBossDriverCarBindingRelationshipServiceBind()
+  ApiBossDriverCarBindingRelationshipServiceUnbind()
+ }
+ Service ApiBossDriverUserService {
+  [Operation]
+  ApiBossDriverUserServiceAddDriverUser()
+  ApiBossDriverUserServiceUpdateDriverUser()
+ }
+ Service ApiDriverPointService {
+  [Operation]
+  ApiDriverPointServiceUpload()
+ }
+ Service ApiDriverUserService {
+  [Operation]
+  ApiDriverUserServiceUpdateUser()
+ }
+ Service ApiDriverVerifyCodeService {
+  [Operation]
+  ApiDriverVerifyCodeServiceCheckAndSendVerifyCode()
+  ApiDriverVerifyCodeServiceVerifyCodeCheck()
+ }
+ Service ApiPassengerForecastPriceService {
+  [Operation]
+  ApiPassengerForecastPriceServiceForecastPrice()
+ }
+ Service ApiPassengerOrderService {
+  [Operation]
+  ApiPassengerOrderServiceAdd()
+ }
+ Service ApiPassengerTokenService {
+  [Operation]
+  ApiPassengerTokenServiceRefreshToken()
+ }
+ Service ApiPassengerUserService {
+  [Operation]
+  ApiPassengerUserServiceGetUserByAccessToken()
+ }
+ Service ApiPassengerVerifyCodeService {
+  [Operation]
+  ApiPassengerVerifyCodeServiceVerifyCodeGet()
+  ApiPassengerVerifyCodeServiceVerifyCodeCheck()
+ }
+ Service ServiceDriverUserCarService {
+  [Operation]
+  ServiceDriverUserCarServiceAddCar()
+  ServiceDriverUserCarServiceGetCarById()
+ }
+ Service ServiceDriverUserDriverCarBindingRelationshipService {
+  [Operation]
+  ServiceDriverUserDriverCarBindingRelationshipServiceBind()
+  ServiceDriverUserDriverCarBindingRelationshipServiceUnbind()
+ }
+ Service ServiceDriverUserDriverUserService {
+  [Operation]
+  ServiceDriverUserDriverUserServiceTestGetDriverUser()
+  ServiceDriverUserDriverUserServiceAddDriverUser()
+  ServiceDriverUserDriverUserServiceUpdateDriverUser()
+  ServiceDriverUserDriverUserServiceGetDriverUserByPhone()
+ }
+ Service ServiceDriverUserDriverUserWorkStatusService {
+  [Operation]
+  ServiceDriverUserDriverUserWorkStatusServiceChangeWorkStatus()
+ }
+ Service ServiceMapMapDicDistrictClient {
+  [Operation]
+  ServiceMapMapDicDistrictClientDicDistrict()
+ }
+ Service ServiceMapMapDirectionClient {
+  [Operation]
+  ServiceMapMapDirectionClientDirection()
+ }
+ Service ServiceMapPointClient {
+  [Operation]
+  ServiceMapPointClientUpload()
+ }
+ Service ServiceMapServiceClient {
+  [Operation]
+  ServiceMapServiceClientAdd()
+ }
+ Service ServiceMapTerminalClient {
+  [Operation]
+  ServiceMapTerminalClientAdd()
+  ServiceMapTerminalClientAroundsearch()
+  ServiceMapTerminalClientTrsearch()
+ }
+ Service ServiceMapTrackClient {
+  [Operation]
+  ServiceMapTrackClientAdd()
+ }
+ Service ServiceMapDicDistrictService {
+  [Operation]
+  ServiceMapDicDistrictServiceInitDicDistrict()
+  ServiceMapDicDistrictServiceInsertDicDistrict()
+  ServiceMapDicDistrictServiceGenerateLevel()
+ }
+ Service ServiceMapDirectionService {
+  [Operation]
+  ServiceMapDirectionServiceDriving()
+ }
+ Service ServiceMapPointService {
+  [Operation]
+  ServiceMapPointServiceUpload()
+ }
+ Service ServiceMapServiceMapService {
+  [Operation]
+  ServiceMapServiceMapServiceAdd()
+ }
+ Service ServiceMapTerminalService {
+  [Operation]
+  ServiceMapTerminalServiceAdd()
+  ServiceMapTerminalServiceAroundsearch()
+  ServiceMapTerminalServiceTrsearch()
+ }
+ Service ServiceMapTrackService {
+  [Operation]
+  ServiceMapTrackServiceAdd()
+ }
+ Service ServiceOrderOrderInfoService {
+  [Operation]
+  ServiceOrderOrderInfoServiceAdd()
+ }
+ Service ServicePassengerUserUserService {
+  [Operation]
+  ServicePassengerUserUserServiceLoginOrRegisterUser()
+  ServicePassengerUserUserServiceGetUserByPhone()
+ }
+ Service ServicePricePriceService {
+  [Operation]
+  ServicePricePriceServiceForecastPrice()
+  ServicePricePriceServiceCalculatePrice()
+  ServicePricePriceServiceGetPrice()
+ }
+ Service ServiceVerifycodeVerifyCodeService {
+  [Operation]
+  ServiceVerifycodeVerifyCodeServiceGenerateCode()
+ }
+ Entity Car {
+  id : Integer
+  address : String
+  vehicleNo : String
+  plateColor : String
+  seats : Integer
+  brand : String
+  model : String
+  vehicleType : String
+  ownerName : String
+  vehicleColor : String
+  engineId : String
+  vin : String
+  certifyDateA : Date
+  fueType : String
+  engineDisplace : String
+  transAgency : String
+  transArea : String
+  transDateStart : Date
+  transDateEnd : Date
+  certifyDateB : Date
+  fixState : String
+  nextFixDate : Date
+  checkState : String
+  feePrintId : String
+  gpsBrand : String
+  gpsModel : String
+  gpsInstallDate : Date
+  registerDate : Date
+  commercialType : Integer
+  fareType : String
+  state : Integer
+  tid : String
+  trid : String
+  trname : String
+  gmtCreate : Date
+  gmtModified : Date
+ }
+ Entity DicDistrict {
+  addressCode : String
+  addressName : String
+  parentAddressCode : String
+  level : Integer
+ }
+ Entity DriverCarBindingRelationship {
+  id : Integer
+  driverId : Integer
+  carId : Integer
+  bindState : Integer
+  bindingTime : Date
+  unBindingTime : Date
+ }
+ Entity DriverUser {
+  id : Integer
+  address : String
+  driverName : String
+  driverPhone : String
+  driverGender : Integer
+  driverBirthday : Date
+  driverNation : String
+  driverContactAddress : String
+  licenseId : String
+  getDriverLicenseDate : Date
+  driverLicenseOn : Date
+  driverLicenseOff : Date
+  taxiDriver : Integer
+  certificateNo : String
+  networkCarIssueOrganization : String
+  networkCarIssueDate : Date
+  getNetworkCarProofDate : Date
+  networkCarProofOn : Date
+  networkCarProofOff : Date
+  registerDate : Date
+  commercialType : Integer
+  contractCompany : String
+  contractOn : Date
+  contractOff : Date
+  state : Integer
+  gmtCreate : Date
+  gmtModified : Date
+ }
+ Entity DriverUserWorkStatus {
+  id : Integer
+  driverId : Integer
+  workStatus : Integer
+  gmtCreate : Date
+  gmtModified : Date
+ }
+ Entity PassengerUser {
+  id : Integer
+  gmtCreate : Date
+  gmtModified : Date
+  passengerPhone : String
+  passengerName : String
+  passengerGender : Integer
+  state : Integer
+  profilePhoto : String
+ }
+ Entity PriceRule {
+  cityCode : String
+  vehicleType : String
+  startFare : Real
+  startMile : Integer
+  unitPricePerMile : Real
+  unitPricePerMinute : Real
+  fareVersion : Integer
+  fareType : String
+ }
+ Entity OrderInfo {
+  id : Integer
+  passengerId : Integer
+  passengerPhone : String
+  driverId : Integer
+  driverPhone : String
+  carId : Integer
+  vehicleType : String
+  address : String
+  orderTime : Date
+  departTime : Date
+  departure : String
+  depLongitude : String
+  depLatitude : String
+  destination : String
+  destLongitude : String
+  destLatitude : String
+  encrypt : Integer
+  fareType : String
+  fareVersion : Integer
+  receiveOrderCarLongitude : String
+  receiveOrderCarLatitude : String
+  receiveOrderTime : Date
+  licenseId : String
+  vehicleNo : String
+  toPickUpPassengerTime : Date
+  toPickUpPassengerLongitude : String
+  toPickUpPassengerLatitude : String
+  toPickUpPassengerAddress : String
+  driverArrivedDepartureTime : Date
+  pickUpPassengerTime : Date
+  pickUpPassengerLongitude : String
+  pickUpPassengerLatitude : String
+  passengerGetoffTime : Date
+  passengerGetoffLongitude : String
+  passengerGetoffLatitude : String
+  cancelTime : Date
+  cancelOperator : Integer
+  cancelTypeCode : Integer
+  driveMile : Integer
+  driveTime : Integer
+  orderStatus : Integer
+  price : Real
+  gmtCreate : Date
+  gmtModified : Date
+ }
+ Contract ApiBossCarService::ApiBossCarServiceAddCar() : Boolean {
+  definition:
+   refCar : Car
+  postcondition:
+   ServiceDriverUserCarService::ServiceDriverUserCarServiceAddCar() and
+   result = true
+ }
+ Contract ApiBossDriverCarBindingRelationshipService::ApiBossDriverCarBindingRelationshipServiceBind() : Boolean {
+  definition:
+   refDriverCarBindingRelationship : DriverCarBindingRelationship
+  postcondition:
+   ServiceDriverUserDriverCarBindingRelationshipService::ServiceDriverUserDriverCarBindingRelationshipServiceBind() and
+   result = true
+ }
+ Contract ApiBossDriverCarBindingRelationshipService::ApiBossDriverCarBindingRelationshipServiceUnbind() : Boolean {
+  definition:
+   refDriverCarBindingRelationship : DriverCarBindingRelationship
+  postcondition:
+   ServiceDriverUserDriverCarBindingRelationshipService::ServiceDriverUserDriverCarBindingRelationshipServiceUnbind() and
+   result = true
+ }
+ Contract ApiBossDriverUserService::ApiBossDriverUserServiceAddDriverUser() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+   refDriverUserWorkStatus : DriverUserWorkStatus
+  postcondition:
+   ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceAddDriverUser() and
+   result = true
+ }
+ Contract ApiBossDriverUserService::ApiBossDriverUserServiceUpdateDriverUser() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+  postcondition:
+   ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceUpdateDriverUser() and
+   result = true
+ }
+ Contract ApiDriverPointService::ApiDriverPointServiceUpload() : Boolean {
+  definition:
+   refCar : Car
+  postcondition:
+   ServiceDriverUserCarService::ServiceDriverUserCarServiceGetCarById() and
+   ServiceMapPointService::ServiceMapPointServiceUpload() and
+   result = true
+ }
+ Contract ApiDriverUserService::ApiDriverUserServiceUpdateUser() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+  postcondition:
+   ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceUpdateDriverUser() and
+   result = true
+ }
+ Contract ApiDriverVerifyCodeService::ApiDriverVerifyCodeServiceCheckAndSendVerifyCode() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+  postcondition:
+   ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceGetDriverUserByPhone() and
+   ServiceVerifycodeVerifyCodeService::ServiceVerifycodeVerifyCodeServiceGenerateCode() and
+   result = true
+ }
+ Contract ApiDriverVerifyCodeService::ApiDriverVerifyCodeServiceVerifyCodeCheck() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ApiPassengerForecastPriceService::ApiPassengerForecastPriceServiceForecastPrice() : Boolean {
+  definition:
+   refPriceRule : PriceRule
+  postcondition:
+   ServicePricePriceService::ServicePricePriceServiceForecastPrice() and
+   result = true
+ }
+ Contract ApiPassengerOrderService::ApiPassengerOrderServiceAdd() : Boolean {
+  definition:
+   refOrderInfo : OrderInfo
+  postcondition:
+   ServiceOrderOrderInfoService::ServiceOrderOrderInfoServiceAdd() and
+   result = true
+ }
+ Contract ApiPassengerTokenService::ApiPassengerTokenServiceRefreshToken() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ApiPassengerUserService::ApiPassengerUserServiceGetUserByAccessToken() : Boolean {
+  definition:
+   refPassengerUser : PassengerUser
+  postcondition:
+   ServicePassengerUserUserService::ServicePassengerUserUserServiceGetUserByPhone() and
+   result = true
+ }
+ Contract ApiPassengerVerifyCodeService::ApiPassengerVerifyCodeServiceVerifyCodeGet() : Boolean {
+  definition:
+  postcondition:
+   ServiceVerifycodeVerifyCodeService::ServiceVerifycodeVerifyCodeServiceGenerateCode() and
+   result = true
+ }
+ Contract ApiPassengerVerifyCodeService::ApiPassengerVerifyCodeServiceVerifyCodeCheck() : Boolean {
+  definition:
+   refPassengerUser : PassengerUser
+  postcondition:
+   ServicePassengerUserUserService::ServicePassengerUserUserServiceLoginOrRegisterUser() and
+   result = true
+ }
+ Contract ServiceDriverUserCarService::ServiceDriverUserCarServiceAddCar() : Boolean {
+  definition:
+   refCar : Car
+  postcondition:
+   ServiceMapTerminalService::ServiceMapTerminalServiceAdd() and
+   ServiceMapTrackService::ServiceMapTrackServiceAdd() and
+   result = true
+ }
+ Contract ServiceDriverUserCarService::ServiceDriverUserCarServiceGetCarById() : Boolean {
+  definition:
+   refCar : Car
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverCarBindingRelationshipService::ServiceDriverUserDriverCarBindingRelationshipServiceBind() : Boolean {
+  definition:
+   refDriverCarBindingRelationship : DriverCarBindingRelationship
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverCarBindingRelationshipService::ServiceDriverUserDriverCarBindingRelationshipServiceUnbind() : Boolean {
+  definition:
+   refDriverCarBindingRelationship : DriverCarBindingRelationship
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceTestGetDriverUser() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceAddDriverUser() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+   refDriverUserWorkStatus : DriverUserWorkStatus
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceUpdateDriverUser() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverUserService::ServiceDriverUserDriverUserServiceGetDriverUserByPhone() : Boolean {
+  definition:
+   refDriverUser : DriverUser
+  postcondition:
+   result = true
+ }
+ Contract ServiceDriverUserDriverUserWorkStatusService::ServiceDriverUserDriverUserWorkStatusServiceChangeWorkStatus() : Boolean {
+  definition:
+   refDriverUserWorkStatus : DriverUserWorkStatus
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapMapDicDistrictClient::ServiceMapMapDicDistrictClientDicDistrict() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapMapDirectionClient::ServiceMapMapDirectionClientDirection() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapPointClient::ServiceMapPointClientUpload() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapServiceClient::ServiceMapServiceClientAdd() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapTerminalClient::ServiceMapTerminalClientAdd() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapTerminalClient::ServiceMapTerminalClientAroundsearch() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapTerminalClient::ServiceMapTerminalClientTrsearch() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapTrackClient::ServiceMapTrackClientAdd() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapDicDistrictService::ServiceMapDicDistrictServiceInitDicDistrict() : Boolean {
+  definition:
+   refDicDistrict : DicDistrict
+  postcondition:
+   ServiceMapMapDicDistrictClient::ServiceMapMapDicDistrictClientDicDistrict() and
+   result = true
+ }
+ Contract ServiceMapDicDistrictService::ServiceMapDicDistrictServiceInsertDicDistrict() : Boolean {
+  definition:
+   refDicDistrict : DicDistrict
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapDicDistrictService::ServiceMapDicDistrictServiceGenerateLevel() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ServiceMapDirectionService::ServiceMapDirectionServiceDriving() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapMapDirectionClient::ServiceMapMapDirectionClientDirection() and
+   result = true
+ }
+ Contract ServiceMapPointService::ServiceMapPointServiceUpload() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapPointClient::ServiceMapPointClientUpload() and
+   result = true
+ }
+ Contract ServiceMapServiceMapService::ServiceMapServiceMapServiceAdd() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapServiceClient::ServiceMapServiceClientAdd() and
+   result = true
+ }
+ Contract ServiceMapTerminalService::ServiceMapTerminalServiceAdd() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapTerminalClient::ServiceMapTerminalClientAdd() and
+   result = true
+ }
+ Contract ServiceMapTerminalService::ServiceMapTerminalServiceAroundsearch() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapTerminalClient::ServiceMapTerminalClientAroundsearch() and
+   result = true
+ }
+ Contract ServiceMapTerminalService::ServiceMapTerminalServiceTrsearch() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapTerminalClient::ServiceMapTerminalClientTrsearch() and
+   result = true
+ }
+ Contract ServiceMapTrackService::ServiceMapTrackServiceAdd() : Boolean {
+  definition:
+  postcondition:
+   ServiceMapTrackClient::ServiceMapTrackClientAdd() and
+   result = true
+ }
+ Contract ServiceOrderOrderInfoService::ServiceOrderOrderInfoServiceAdd() : Boolean {
+  definition:
+   refOrderInfo : OrderInfo
+  postcondition:
+   result = true
+ }
+ Contract ServicePassengerUserUserService::ServicePassengerUserUserServiceLoginOrRegisterUser() : Boolean {
+  definition:
+   refPassengerUser : PassengerUser
+  postcondition:
+   result = true
+ }
+ Contract ServicePassengerUserUserService::ServicePassengerUserUserServiceGetUserByPhone() : Boolean {
+  definition:
+   refPassengerUser : PassengerUser
+  postcondition:
+   result = true
+ }
+ Contract ServicePricePriceService::ServicePricePriceServiceForecastPrice() : Boolean {
+  definition:
+   refPriceRule : PriceRule
+  postcondition:
+   ServiceMapDirectionService::ServiceMapDirectionServiceDriving() and
+   result = true
+ }
+ Contract ServicePricePriceService::ServicePricePriceServiceCalculatePrice() : Boolean {
+  definition:
+   refPriceRule : PriceRule
+  postcondition:
+   result = true
+ }
+ Contract ServicePricePriceService::ServicePricePriceServiceGetPrice() : Boolean {
+  definition:
+   refPriceRule : PriceRule
+  postcondition:
+   result = true
+ }
+ Contract ServiceVerifycodeVerifyCodeService::ServiceVerifycodeVerifyCodeServiceGenerateCode() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+}

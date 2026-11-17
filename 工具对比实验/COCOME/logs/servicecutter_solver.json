@@ -1,0 +1,173 @@
+{
+  "seconds": 2.432117292,
+  "status": "success",
+  "url": "http://127.0.0.1:18081/engine/solver/6",
+  "response": {
+    "services": [
+      {
+        "nanoentities": [
+          "Sale.amount",
+          "Sale.assoicatedpayment",
+          "Sale.belongedcashdesk",
+          "Sale.belongedstore",
+          "Sale.boolean",
+          "Sale.cashdesk",
+          "Sale.containedsalesline",
+          "Sale.iscomplete",
+          "Sale.isreadytopay",
+          "Sale.payment",
+          "Sale.real",
+          "Sale.saleslineitem",
+          "Sale.store",
+          "Store.address",
+          "CashDesk.belongedstore",
+          "CashDesk.boolean",
+          "CashDesk.containedsales",
+          "CashDesk.id",
+          "CashDesk.integer",
+          "CashDesk.isopened",
+          "CashDesk.name",
+          "CashDesk.sale",
+          "CashDesk.store",
+          "CashDesk.string",
+          "SalesLineItem.belongedsale",
+          "SalesLineItem.integer",
+          "SalesLineItem.item",
+          "SalesLineItem.quantity",
+          "SalesLineItem.real",
+          "SalesLineItem.sale",
+          "Store.associationcashdeskes",
+          "Store.boolean",
+          "Store.cashdesk",
+          "Store.cashier",
+          "Store.cashiers",
+          "Store.id",
+          "Store.integer",
+          "Store.isopened",
+          "Store.item",
+          "Store.items",
+          "Store.name",
+          "Store.productcatalog",
+          "Store.productcatalogs",
+          "Store.sale",
+          "Store.sales",
+          "Payment.amounttendered",
+          "Payment.belongedsale",
+          "Payment.real",
+          "Payment.sale",
+          "Store.string",
+          "Item.belongedcatalog",
+          "Item.integer",
+          "Item.name",
+          "Item.orderprice",
+          "Item.price",
+          "Item.productcatalog",
+          "Item.real",
+          "Item.stocknumber",
+          "SalesLineItem.subamount",
+          "SalesLineItem.belongeditem",
+          "Cashier.id",
+          "Cashier.integer",
+          "Cashier.name",
+          "Cashier.store",
+          "Cashier.string",
+          "Cashier.workedstore",
+          "ProductCatalog.containeditems",
+          "ProductCatalog.id",
+          "ProductCatalog.integer",
+          "ProductCatalog.item",
+          "ProductCatalog.name",
+          "ProductCatalog.string",
+          "Item.string",
+          "Item.barcode",
+          "OrderEntry.item",
+          "OrderEntry.quantity",
+          "OrderEntry.real",
+          "OrderEntry.subamount",
+          "OrderEntry.integer"
+        ],
+        "id": "A",
+        "name": "Service A"
+      },
+      {
+        "nanoentities": [
+          "OrderProduct.amount",
+          "Supplier.id",
+          "Supplier.integer",
+          "Supplier.name",
+          "Supplier.string",
+          "OrderProduct.containedentries",
+          "OrderProduct.date",
+          "OrderProduct.id",
+          "OrderProduct.integer",
+          "OrderProduct.orderentry",
+          "OrderProduct.real",
+          "OrderProduct.supplier",
+          "OrderProduct.time"
+        ],
+        "id": "B",
+        "name": "Service B"
+      },
+      {
+        "nanoentities": [
+          "CardPayment.cardaccountnumber",
+          "CashPayment.balance"
+        ],
+        "id": "C",
+        "name": "Service C"
+      },
+      {
+        "nanoentities": [
+          "CardPayment.payment",
+          "CardPayment.string"
+        ],
+        "id": "D",
+        "name": "Service D"
+      },
+      {
+        "nanoentities": [
+          "CashPayment.payment",
+          "CashPayment.real"
+        ],
+        "id": "E",
+        "name": "Service E"
+      }
+    ],
+    "relations": [
+      {
+        "serviceA": "Service A",
+        "serviceB": "Service B",
+        "sharedEntities": [
+          "OrderProduct.amount",
+          "Supplier.id"
+        ],
+        "direction": "OUTGOING"
+      },
+      {
+        "serviceA": "Service A",
+        "serviceB": "Service C",
+        "sharedEntities": [
+          "CardPayment.cardaccountnumber",
+          "CashPayment.balance"
+        ],
+        "direction": "OUTGOING"
+      }
+    ],
+    "useCaseResponsibility": {
+      "Service B": [
+        "listSuppliers"
+      ],
+      "Service A": [
+        "processSale",
+        "openCashDesk",
+        "closeCashDesk",
+        "orderProducts",
+        "receiveOrderedProduct",
+        "showStockReports",
+        "changePrice",
+        "openStore",
+        "closeStore"
+      ]
+    }
+  }
+}

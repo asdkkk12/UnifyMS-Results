@@ -1,0 +1,18 @@
+		BelongedUser : User Association
+User
+		OwnedCard : BankCard* ! Association
+BankCard
+manageBankCard manageBankCard
+manageBankCard manageUser
+manageUser manageBankCard
+manageUser manageUser
+depositFunds depositFunds
+depositFunds withdrawCash
+depositFunds checkBalance
+withdrawCash depositFunds
+withdrawCash withdrawCash
+withdrawCash checkBalance
+checkBalance depositFunds
+checkBalance withdrawCash
+checkBalance checkBalance
+without-offline seed=149 HV=0.24125731312371923

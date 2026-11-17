@@ -1,0 +1,442 @@
+UseCaseModel LightReading {
+ UC::ReadingCloudAccountUserBookshelfServiceImpl()
+ UC::ReadingCloudAccountUserLikeSeeServiceImpl()
+ UC::ReadingCloudAccountUserServiceImpl()
+ UC::ReadingCloudBookBookChapterServiceImpl()
+ UC::ReadingCloudBookBookServiceImpl()
+ UC::ReadingCloudBookDataDictionaryServiceImpl()
+ UC::ReadingCloudHomepageBookCenterServiceImpl()
+ UC::ReadingCloudHomepageIndexBannerServiceImpl()
+ UC::ReadingCloudHomepageIndexBooklistItemServiceImpl()
+ UC::ReadingCloudHomepageIndexBooklistServiceImpl()
+ UC::ReadingCloudHomepageIndexPageConfigServiceImpl()
+ UC::ReadingCloudHomepageSearchServiceImpl()
+ Actor ReadingCloudAccountRole {
+  ReadingCloudAccountUserBookshelfServiceImpl
+  ReadingCloudAccountUserLikeSeeServiceImpl
+  ReadingCloudAccountUserServiceImpl
+ }
+ Actor ReadingCloudBookRole {
+  ReadingCloudBookBookChapterServiceImpl
+  ReadingCloudBookBookServiceImpl
+  ReadingCloudBookDataDictionaryServiceImpl
+ }
+ Actor ReadingCloudHomepageRole {
+  ReadingCloudHomepageBookCenterServiceImpl
+  ReadingCloudHomepageIndexBannerServiceImpl
+  ReadingCloudHomepageIndexBooklistItemServiceImpl
+  ReadingCloudHomepageIndexBooklistServiceImpl
+  ReadingCloudHomepageIndexPageConfigServiceImpl
+  ReadingCloudHomepageSearchServiceImpl
+ }
+ Service ReadingCloudAccountUserBookshelfServiceImpl {
+  [Operation]
+  ReadingCloudAccountUserBookshelfServiceImplSyncUserBookshelf()
+  ReadingCloudAccountUserBookshelfServiceImplGetUserBookshelf()
+  ReadingCloudAccountUserBookshelfServiceImplUserBookshelfExistBook()
+ }
+ Service ReadingCloudAccountUserLikeSeeServiceImpl {
+  [Operation]
+  ReadingCloudAccountUserLikeSeeServiceImplLikeSeeClick()
+  ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount()
+  ReadingCloudAccountUserLikeSeeServiceImplGetUserLikeBookList()
+  ReadingCloudAccountUserLikeSeeServiceImplUserLikeThisBook()
+ }
+ Service ReadingCloudAccountUserServiceImpl {
+  [Operation]
+  ReadingCloudAccountUserServiceImplRegister()
+  ReadingCloudAccountUserServiceImplLogin()
+  ReadingCloudAccountUserServiceImplLogout()
+  ReadingCloudAccountUserServiceImplUpdate()
+  ReadingCloudAccountUserServiceImplUpdatePassword()
+ }
+ Service ReadingCloudBookBookChapterServiceImpl {
+  [Operation]
+  ReadingCloudBookBookChapterServiceImplGetBookChapterListByBookId()
+  ReadingCloudBookBookChapterServiceImplGetChapterById()
+  ReadingCloudBookBookChapterServiceImplReadChapter()
+ }
+ Service ReadingCloudBookBookServiceImpl {
+  [Operation]
+  ReadingCloudBookBookServiceImplGetBookById()
+  ReadingCloudBookBookServiceImplGetBookDetails()
+ }
+ Service ReadingCloudBookDataDictionaryServiceImpl {
+  [Operation]
+  ReadingCloudBookDataDictionaryServiceImplGetDictionarys()
+ }
+ Service ReadingCloudHomepageBookCenterServiceImpl {
+  [Operation]
+  ReadingCloudHomepageBookCenterServiceImplGetBookById()
+ }
+ Service ReadingCloudHomepageIndexBannerServiceImpl {
+  [Operation]
+  ReadingCloudHomepageIndexBannerServiceImplGetBannerVO()
+ }
+ Service ReadingCloudHomepageIndexBooklistItemServiceImpl {
+  [Operation]
+  ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistPagingBooks()
+  ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistExchange()
+  ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks()
+  ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistOrderBooks()
+ }
+ Service ReadingCloudHomepageIndexBooklistServiceImpl {
+  [Operation]
+  ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistVO()
+  ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistById()
+  ReadingCloudHomepageIndexBooklistServiceImplGetRandomIndexBooklistVO()
+ }
+ Service ReadingCloudHomepageIndexPageConfigServiceImpl {
+  [Operation]
+  ReadingCloudHomepageIndexPageConfigServiceImplGetIndexPageByType()
+ }
+ Service ReadingCloudHomepageSearchServiceImpl {
+  [Operation]
+  ReadingCloudHomepageSearchServiceImplGetHotSearchWordList()
+  ReadingCloudHomepageSearchServiceImplGetSearchResultBooks()
+ }
+ Entity User {
+  id : Integer
+  uuid : String
+  userPwd : String
+  loginName : String
+  nickName : String
+  phoneNumber : String
+  headImgUrl : String
+  createTime : Date
+  updateTime : Date
+ }
+ Entity UserBookshelf {
+  id : Integer
+  userId : Integer
+  bookId : String
+  lastChapterId : Integer
+  lastReadTime : Integer
+  createTime : Date
+ }
+ Entity UserLikeSee {
+  id : Integer
+  userId : Integer
+  bookId : String
+  createTime : Date
+ }
+ Entity Book {
+  id : Integer
+  authorId : Integer
+  dicCategory : Integer
+  dicChannel : Integer
+  dicSerialStatus : Integer
+  onlineStatus : String
+  bookId : String
+  bookName : String
+  bookScore : Integer
+  keyWord : String
+  imgUrl : String
+  authorName : String
+  introduction : String
+  isbn : String
+  wordCount : Integer
+  creater : String
+  createTime : Date
+  updateTime : Date
+  updater : String
+ }
+ Entity BookAuthor {
+  id : Integer
+  name : String
+  introduction : String
+  headImgUrl : String
+  creater : String
+  createTime : Date
+  updater : String
+  updateTime : Date
+ }
+ Entity BookChapter {
+  id : Integer
+  bookId : Integer
+  name : String
+  content : String
+  lockStatus : String
+  sortNumber : Integer
+  createTime : Date
+  updateTime : Date
+ }
+ Entity DataDictionary {
+  id : Integer
+  dicType : String
+  dicTypeName : String
+  code : Integer
+  name : String
+  sortNumber : Integer
+ }
+ Entity IndexBanner {
+  id : Integer
+  name : String
+  creater : String
+  createTime : Date
+  updateTime : Date
+  updater : String
+ }
+ Entity IndexBannerItem {
+  id : Integer
+  bannerId : Integer
+  name : String
+  imgUrl : String
+  url : String
+  sortNumber : Integer
+  creater : String
+  createTime : Date
+  updateTime : Date
+  updater : String
+ }
+ Entity IndexBooklist {
+  id : Integer
+  name : String
+  showNumber : Integer
+  style : Integer
+  moreType : Integer
+  moreUrl : String
+  bookIds : String
+  startDate : Date
+  endDate : Date
+  creater : String
+  createTime : Date
+  updateTime : Date
+  updater : String
+  showLikeCount : String
+ }
+ Entity IndexBooklistItem {
+  id : Integer
+  booklistId : Integer
+  bookId : String
+  sortNumber : Integer
+  creater : String
+  createTime : Date
+  updateTime : Date
+  updater : String
+ }
+ Entity IndexPageConfig {
+  id : Integer
+  pageType : Integer
+  itemType : Integer
+  itemId : Integer
+  startDate : Date
+  endDate : Date
+  sortNumber : Integer
+  creater : String
+  createTime : Date
+  updateTime : Date
+  updater : String
+ }
+ Contract ReadingCloudAccountUserBookshelfServiceImpl::ReadingCloudAccountUserBookshelfServiceImplSyncUserBookshelf() : Boolean {
+  definition:
+   refUserBookshelf : UserBookshelf
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserBookshelfServiceImpl::ReadingCloudAccountUserBookshelfServiceImplGetUserBookshelf() : Boolean {
+  definition:
+   refBook : Book
+   refUserBookshelf : UserBookshelf
+  postcondition:
+   ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudAccountUserBookshelfServiceImpl::ReadingCloudAccountUserBookshelfServiceImplUserBookshelfExistBook() : Boolean {
+  definition:
+   refUserBookshelf : UserBookshelf
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserLikeSeeServiceImpl::ReadingCloudAccountUserLikeSeeServiceImplLikeSeeClick() : Boolean {
+  definition:
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserLikeSeeServiceImpl::ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount() : Boolean {
+  definition:
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserLikeSeeServiceImpl::ReadingCloudAccountUserLikeSeeServiceImplGetUserLikeBookList() : Boolean {
+  definition:
+   refBook : Book
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudAccountUserLikeSeeServiceImpl::ReadingCloudAccountUserLikeSeeServiceImplUserLikeThisBook() : Boolean {
+  definition:
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserServiceImpl::ReadingCloudAccountUserServiceImplRegister() : Boolean {
+  definition:
+   refUser : User
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserServiceImpl::ReadingCloudAccountUserServiceImplLogin() : Boolean {
+  definition:
+   refUser : User
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserServiceImpl::ReadingCloudAccountUserServiceImplLogout() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserServiceImpl::ReadingCloudAccountUserServiceImplUpdate() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudAccountUserServiceImpl::ReadingCloudAccountUserServiceImplUpdatePassword() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudBookBookChapterServiceImpl::ReadingCloudBookBookChapterServiceImplGetBookChapterListByBookId() : Boolean {
+  definition:
+   refBook : Book
+   refBookChapter : BookChapter
+  postcondition:
+   ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudBookBookChapterServiceImpl::ReadingCloudBookBookChapterServiceImplGetChapterById() : Boolean {
+  definition:
+   refBookChapter : BookChapter
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudBookBookChapterServiceImpl::ReadingCloudBookBookChapterServiceImplReadChapter() : Boolean {
+  definition:
+   refBook : Book
+   refBookChapter : BookChapter
+  postcondition:
+   ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookById() : Boolean {
+  definition:
+   refBook : Book
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookDetails() : Boolean {
+  definition:
+   refBook : Book
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudBookDataDictionaryServiceImpl::ReadingCloudBookDataDictionaryServiceImplGetDictionarys() : Boolean {
+  definition:
+   refDataDictionary : DataDictionary
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudHomepageBookCenterServiceImpl::ReadingCloudHomepageBookCenterServiceImplGetBookById() : Boolean {
+  definition:
+   refBook : Book
+  postcondition:
+   ReadingCloudBookBookServiceImpl::ReadingCloudBookBookServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBannerServiceImpl::ReadingCloudHomepageIndexBannerServiceImplGetBannerVO() : Boolean {
+  definition:
+   refIndexBanner : IndexBanner
+   refIndexBannerItem : IndexBannerItem
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistPagingBooks() : Boolean {
+  definition:
+   refBook : Book
+   refIndexBooklistItem : IndexBooklistItem
+  postcondition:
+   ReadingCloudHomepageBookCenterServiceImpl::ReadingCloudHomepageBookCenterServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistExchange() : Boolean {
+  definition:
+   refBook : Book
+   refIndexBooklist : IndexBooklist
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudHomepageIndexBooklistServiceImpl::ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistById() and
+   ReadingCloudHomepageIndexBooklistServiceImpl::ReadingCloudHomepageIndexBooklistServiceImplGetRandomIndexBooklistVO() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks() : Boolean {
+  definition:
+   refBook : Book
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudAccountUserLikeSeeServiceImpl::ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount() and
+   ReadingCloudHomepageBookCenterServiceImpl::ReadingCloudHomepageBookCenterServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistOrderBooks() : Boolean {
+  definition:
+   refBook : Book
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudAccountUserLikeSeeServiceImpl::ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount() and
+   ReadingCloudHomepageBookCenterServiceImpl::ReadingCloudHomepageBookCenterServiceImplGetBookById() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistServiceImpl::ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistVO() : Boolean {
+  definition:
+   refBook : Book
+   refIndexBooklist : IndexBooklist
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistOrderBooks() and
+   ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistServiceImpl::ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistById() : Boolean {
+  definition:
+   refIndexBooklist : IndexBooklist
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexBooklistServiceImpl::ReadingCloudHomepageIndexBooklistServiceImplGetRandomIndexBooklistVO() : Boolean {
+  definition:
+   refBook : Book
+   refIndexBooklist : IndexBooklist
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudHomepageIndexBooklistItemServiceImpl::ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks() and
+   result = true
+ }
+ Contract ReadingCloudHomepageIndexPageConfigServiceImpl::ReadingCloudHomepageIndexPageConfigServiceImplGetIndexPageByType() : Boolean {
+  definition:
+   refBook : Book
+   refIndexBanner : IndexBanner
+   refIndexBannerItem : IndexBannerItem
+   refIndexBooklist : IndexBooklist
+   refIndexPageConfig : IndexPageConfig
+   refUserLikeSee : UserLikeSee
+  postcondition:
+   ReadingCloudHomepageIndexBannerServiceImpl::ReadingCloudHomepageIndexBannerServiceImplGetBannerVO() and
+   ReadingCloudHomepageIndexBooklistServiceImpl::ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistVO() and
+   result = true
+ }
+ Contract ReadingCloudHomepageSearchServiceImpl::ReadingCloudHomepageSearchServiceImplGetHotSearchWordList() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ReadingCloudHomepageSearchServiceImpl::ReadingCloudHomepageSearchServiceImplGetSearchResultBooks() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+}

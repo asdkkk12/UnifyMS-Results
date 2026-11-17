@@ -1,0 +1,193 @@
+{
+  "source_sha256": "970acf9f42c1daed1596f693c35ee1ccaa0fd5cf0b0f7013309add7ac177e1c3",
+  "parsed_services": 31,
+  "parsed_entities": 8,
+  "parsed_usecases": 31,
+  "declared_operations": 49,
+  "methods": {
+    "microminer": {
+      "operations_complete_unique": true,
+      "MS_Num": 31,
+      "provided_interface_distribution": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    "monoembed": {
+      "operations_complete_unique": true,
+      "MS_Num": 7,
+      "provided_interface_distribution": [
+        11,
+        9,
+        4,
+        8,
+        13,
+        4,
+        0
+      ]
+    },
+    "servicecutter": {
+      "operations_complete_unique": true,
+      "MS_Num": 7,
+      "provided_interface_distribution": [
+        5,
+        4,
+        19,
+        4,
+        10,
+        3,
+        4
+      ],
+      "native_nanoentities_complete_unique": true,
+      "native_nanoentities": 138,
+      "requested_clusters": null,
+      "algorithm": "Chinese Whispers",
+      "actual_engine_clusters": 7
+    },
+    "unifyms": {
+      "runs": 10,
+      "unique_seeds": 10,
+      "jev_requests": 1,
+      "fixed_config": {
+        "crossP": 0.25,
+        "crossoverProbability": 0.9,
+        "evaluationBudget": 0,
+        "generations": 600,
+        "id": "C5",
+        "populationSize": 1000,
+        "seed": 11
+      },
+      "native_entities": [
+        "Car",
+        "DicDistrict",
+        "DriverCarBindingRelationship",
+        "DriverUser",
+        "DriverUserWorkStatus",
+        "OrderInfo",
+        "PassengerUser",
+        "PriceRule"
+      ],
+      "per_run": [
+        {
+          "seed": 101,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.8571428571428571,
+          "Instability_recomputed": 0.7142857142857143,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 103,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.6666666666666666,
+          "Instability_recomputed": 0.75,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 107,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 1.5,
+          "Instability_recomputed": 0.7892857142857143,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 109,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.4,
+          "Instability_recomputed": 0.8,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 113,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.0,
+          "Instability_recomputed": 1.0,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 127,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.8421052631578947,
+          "Instability_recomputed": 0.6929824561403508,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 131,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.0,
+          "Instability_recomputed": 1.0,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 137,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 1.0,
+          "Instability_recomputed": 0.75,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 139,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.5,
+          "Instability_recomputed": 0.75,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        },
+        {
+          "seed": 149,
+          "native_membership_complete_unique": true,
+          "IFN_recomputed": 0.4,
+          "Instability_recomputed": 0.8,
+          "effective_budget": 1802000,
+          "evaluations": 1801000,
+          "completed_generations": 600
+        }
+      ]
+    }
+  }
+}

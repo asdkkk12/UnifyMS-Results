@@ -1,0 +1,482 @@
+{
+  "application": "Library",
+  "method": "microminer-remodel-adapter",
+  "is_official_microminer": false,
+  "warning": "Adapted MicroMiner signals for .remodel; published implementation requires Java/KDM artifacts.",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/microminer/input/library.remodel",
+  "membership_threshold": 0.7,
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "Library.service.LibraryManagementSystem",
+        "Library.domain.User",
+        "Library.domain.Student",
+        "Library.domain.Faculty",
+        "Library.domain.BookCopy",
+        "Library.domain.Loan",
+        "Library.domain.Reserve",
+        "Library.domain.RecommendBook"
+      ],
+      "service_names": [
+        "LibraryManagementSystem"
+      ],
+      "membership_scores": {
+        "User": {
+          "LibraryManagementSystem": 1.0282038037408883,
+          "ThirdPartServices": 0.03046358979224712,
+          "ListBookHistory": 1.0497468338163092,
+          "SearchBook": 0.026382242650554315,
+          "ManageUserCRUDService": 1.0497468338163092,
+          "ManageBookCRUDService": 0.02820380374088831,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.026382242650554315,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Student": {
+          "LibraryManagementSystem": 1.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 0.0,
+          "ManageUserCRUDService": 1.0881917103688197,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Faculty": {
+          "LibraryManagementSystem": 1.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 0.0,
+          "ManageUserCRUDService": 1.095257934441568,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "BookCopy": {
+          "LibraryManagementSystem": 1.0353553390593273,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.031180478223116176,
+          "SearchBook": 1.0330718913883075,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 0.03535533905932737,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 1.0661437827766147,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Loan": {
+          "LibraryManagementSystem": 1.026457513110646,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 1.0233333333333334,
+          "SearchBook": 0.024748737341529162,
+          "ManageUserCRUDService": 0.02333333333333333,
+          "ManageBookCRUDService": 0.026457513110645904,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.049497474683058325,
+          "ManageLibrarianCRUDService": 0.026457513110645904
+        },
+        "Reserve": {
+          "LibraryManagementSystem": 1.0398862017608732,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 1.0351763235340725,
+          "SearchBook": 0.03731012536223182,
+          "ManageUserCRUDService": 0.03517632353407242,
+          "ManageBookCRUDService": 0.03988620176087328,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.07462025072446364,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "RecommendBook": {
+          "LibraryManagementSystem": 1.0540061724867322,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 1.095257934441568,
+          "SearchBook": 0.05051814855409226,
+          "ManageUserCRUDService": 0.04762896722078402,
+          "ManageBookCRUDService": 0.05400617248673217,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.05051814855409226,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "Library.service.ThirdPartServices"
+      ],
+      "service_names": [
+        "ThirdPartServices"
+      ],
+      "membership_scores": {}
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "Library.service.ListBookHistory",
+        "Library.domain.User",
+        "Library.domain.Loan",
+        "Library.domain.Reserve",
+        "Library.domain.RecommendBook"
+      ],
+      "service_names": [
+        "ListBookHistory"
+      ],
+      "membership_scores": {
+        "User": {
+          "LibraryManagementSystem": 1.0282038037408883,
+          "ThirdPartServices": 0.03046358979224712,
+          "ListBookHistory": 1.0497468338163092,
+          "SearchBook": 0.026382242650554315,
+          "ManageUserCRUDService": 1.0497468338163092,
+          "ManageBookCRUDService": 0.02820380374088831,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.026382242650554315,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Loan": {
+          "LibraryManagementSystem": 1.026457513110646,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 1.0233333333333334,
+          "SearchBook": 0.024748737341529162,
+          "ManageUserCRUDService": 0.02333333333333333,
+          "ManageBookCRUDService": 0.026457513110645904,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.049497474683058325,
+          "ManageLibrarianCRUDService": 0.026457513110645904
+        },
+        "Reserve": {
+          "LibraryManagementSystem": 1.0398862017608732,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 1.0351763235340725,
+          "SearchBook": 0.03731012536223182,
+          "ManageUserCRUDService": 0.03517632353407242,
+          "ManageBookCRUDService": 0.03988620176087328,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.07462025072446364,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "RecommendBook": {
+          "LibraryManagementSystem": 1.0540061724867322,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 1.095257934441568,
+          "SearchBook": 0.05051814855409226,
+          "ManageUserCRUDService": 0.04762896722078402,
+          "ManageBookCRUDService": 0.05400617248673217,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.05051814855409226,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "Library.service.SearchBook",
+        "Library.domain.Book",
+        "Library.domain.Subject",
+        "Library.domain.BookCopy"
+      ],
+      "service_names": [
+        "SearchBook"
+      ],
+      "membership_scores": {
+        "Book": {
+          "LibraryManagementSystem": 0.034156502553198666,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.03012320380383546,
+          "SearchBook": 1.1597524126056735,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 1.0341565025531987,
+          "ManageSubjectCRUDService": 0.034156502553198666,
+          "ManageBookCopyCRUDService": 1.0639009650422693,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Subject": {
+          "LibraryManagementSystem": 0.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 1.0553398590529466,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 1.0591607978309963,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "BookCopy": {
+          "LibraryManagementSystem": 1.0353553390593273,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.031180478223116176,
+          "SearchBook": 1.0330718913883075,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 0.03535533905932737,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 1.0661437827766147,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "Library.service.ManageUserCRUDService",
+        "Library.domain.User",
+        "Library.domain.Student",
+        "Library.domain.Faculty"
+      ],
+      "service_names": [
+        "ManageUserCRUDService"
+      ],
+      "membership_scores": {
+        "User": {
+          "LibraryManagementSystem": 1.0282038037408883,
+          "ThirdPartServices": 0.03046358979224712,
+          "ListBookHistory": 1.0497468338163092,
+          "SearchBook": 0.026382242650554315,
+          "ManageUserCRUDService": 1.0497468338163092,
+          "ManageBookCRUDService": 0.02820380374088831,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.026382242650554315,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Student": {
+          "LibraryManagementSystem": 1.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 0.0,
+          "ManageUserCRUDService": 1.0881917103688197,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "Faculty": {
+          "LibraryManagementSystem": 1.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 0.0,
+          "ManageUserCRUDService": 1.095257934441568,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "Library.service.ManageBookCRUDService",
+        "Library.domain.Book"
+      ],
+      "service_names": [
+        "ManageBookCRUDService"
+      ],
+      "membership_scores": {
+        "Book": {
+          "LibraryManagementSystem": 0.034156502553198666,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.03012320380383546,
+          "SearchBook": 1.1597524126056735,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 1.0341565025531987,
+          "ManageSubjectCRUDService": 0.034156502553198666,
+          "ManageBookCopyCRUDService": 1.0639009650422693,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "Library.service.ManageSubjectCRUDService",
+        "Library.domain.Subject"
+      ],
+      "service_names": [
+        "ManageSubjectCRUDService"
+      ],
+      "membership_scores": {
+        "Subject": {
+          "LibraryManagementSystem": 0.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 1.0553398590529466,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 1.0591607978309963,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 7,
+      "members": [
+        "Library.service.ManageBookCopyCRUDService",
+        "Library.domain.Book",
+        "Library.domain.BookCopy"
+      ],
+      "service_names": [
+        "ManageBookCopyCRUDService"
+      ],
+      "membership_scores": {
+        "Book": {
+          "LibraryManagementSystem": 0.034156502553198666,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.03012320380383546,
+          "SearchBook": 1.1597524126056735,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 1.0341565025531987,
+          "ManageSubjectCRUDService": 0.034156502553198666,
+          "ManageBookCopyCRUDService": 1.0639009650422693,
+          "ManageLibrarianCRUDService": 0.0
+        },
+        "BookCopy": {
+          "LibraryManagementSystem": 1.0353553390593273,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.031180478223116176,
+          "SearchBook": 1.0330718913883075,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 0.03535533905932737,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 1.0661437827766147,
+          "ManageLibrarianCRUDService": 0.0
+        }
+      }
+    },
+    {
+      "cluster": 8,
+      "members": [
+        "Library.service.ManageLibrarianCRUDService",
+        "Library.domain.Librarian"
+      ],
+      "service_names": [
+        "ManageLibrarianCRUDService"
+      ],
+      "membership_scores": {
+        "Librarian": {
+          "LibraryManagementSystem": 0.0,
+          "ThirdPartServices": 0.0,
+          "ListBookHistory": 0.0,
+          "SearchBook": 0.0,
+          "ManageUserCRUDService": 0.0,
+          "ManageBookCRUDService": 0.0,
+          "ManageSubjectCRUDService": 0.0,
+          "ManageBookCopyCRUDService": 0.0,
+          "ManageLibrarianCRUDService": 1.0591607978309963
+        }
+      }
+    }
+  ],
+  "entity_memberships": {
+    "User": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.028204
+      },
+      {
+        "service": "ListBookHistory",
+        "score": 1.049747
+      },
+      {
+        "service": "ManageUserCRUDService",
+        "score": 1.049747
+      }
+    ],
+    "Student": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.0
+      },
+      {
+        "service": "ManageUserCRUDService",
+        "score": 1.088192
+      }
+    ],
+    "Faculty": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.0
+      },
+      {
+        "service": "ManageUserCRUDService",
+        "score": 1.095258
+      }
+    ],
+    "BookCopy": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.035355
+      },
+      {
+        "service": "SearchBook",
+        "score": 1.033072
+      },
+      {
+        "service": "ManageBookCopyCRUDService",
+        "score": 1.066144
+      }
+    ],
+    "Loan": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.026458
+      },
+      {
+        "service": "ListBookHistory",
+        "score": 1.023333
+      }
+    ],
+    "Reserve": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.039886
+      },
+      {
+        "service": "ListBookHistory",
+        "score": 1.035176
+      }
+    ],
+    "RecommendBook": [
+      {
+        "service": "LibraryManagementSystem",
+        "score": 1.054006
+      },
+      {
+        "service": "ListBookHistory",
+        "score": 1.095258
+      }
+    ],
+    "Book": [
+      {
+        "service": "SearchBook",
+        "score": 1.159752
+      },
+      {
+        "service": "ManageBookCRUDService",
+        "score": 1.034157
+      },
+      {
+        "service": "ManageBookCopyCRUDService",
+        "score": 1.063901
+      }
+    ],
+    "Subject": [
+      {
+        "service": "SearchBook",
+        "score": 1.05534
+      },
+      {
+        "service": "ManageSubjectCRUDService",
+        "score": 1.059161
+      }
+    ],
+    "Librarian": [
+      {
+        "service": "ManageLibrarianCRUDService",
+        "score": 1.059161
+      }
+    ]
+  }
+}

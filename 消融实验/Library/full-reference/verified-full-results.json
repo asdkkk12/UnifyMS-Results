@@ -1,0 +1,165 @@
+{
+  "source": "/Users/yuanyaowu/Desktop/输出/Library/UnifyMS_LLM_JEV_loss05_isolated0_10seeds_20261110",
+  "sourceAttachment": "/Users/yuanyaowu/Desktop/输出/汇总Case.md.md",
+  "attachmentMeans": {
+    "MS_Num": 2.5,
+    "IFN": 3.68333,
+    "CHD": 0.38027,
+    "Instability": 0.50306,
+    "UCM": 0.15515,
+    "CMQ": 0.1586
+  },
+  "verifiedStatistics": {
+    "MS_Num": {
+      "mean": 2.5,
+      "sampleStd": 1.2692955176439846
+    },
+    "IFN": {
+      "mean": 3.6833299999999998,
+      "sampleStd": 1.0554140841394908
+    },
+    "CHD": {
+      "mean": 0.38027,
+      "sampleStd": 0.0491392816390309
+    },
+    "Instability": {
+      "mean": 0.50306,
+      "sampleStd": 0.020063022924995347
+    },
+    "UCM": {
+      "mean": 0.15515,
+      "sampleStd": 0.05422865683586698
+    },
+    "CMQ": {
+      "mean": 0.01586,
+      "sampleStd": 0.016150899527752487
+    },
+    "HV": {
+      "mean": 0.40713125912748016,
+      "sampleStd": 0.025286815770985568
+    }
+  },
+  "runs": [
+    {
+      "seed": 101,
+      "MS_Num": 2,
+      "IFN": 3.0,
+      "CHD": 0.4145,
+      "CMQ": 0.0209,
+      "Instability": 0.5,
+      "UCM": 0.107,
+      "HV": 0.4388121034392017
+    },
+    {
+      "seed": 103,
+      "MS_Num": 2,
+      "IFN": 3.0,
+      "CHD": 0.4145,
+      "CMQ": 0.0209,
+      "Instability": 0.5,
+      "UCM": 0.168,
+      "HV": 0.4416607815673476
+    },
+    {
+      "seed": 107,
+      "MS_Num": 2,
+      "IFN": 3.0,
+      "CHD": 0.4145,
+      "CMQ": 0.0209,
+      "Instability": 0.5,
+      "UCM": 0.107,
+      "HV": 0.42460280502504955
+    },
+    {
+      "seed": 109,
+      "MS_Num": 3,
+      "IFN": 2.3333,
+      "CHD": 0.2923,
+      "CMQ": -0.0274,
+      "Instability": 0.5556,
+      "UCM": 0.2389,
+      "HV": 0.3931877181428161
+    },
+    {
+      "seed": 113,
+      "MS_Num": 2,
+      "IFN": 3.0,
+      "CHD": 0.4145,
+      "CMQ": 0.0209,
+      "Instability": 0.5,
+      "UCM": 0.107,
+      "HV": 0.40049412703594606
+    },
+    {
+      "seed": 127,
+      "MS_Num": 6,
+      "IFN": 4.5,
+      "CHD": 0.3014,
+      "CMQ": 0.014,
+      "Instability": 0.475,
+      "UCM": 0.1931,
+      "HV": 0.37974287408804064
+    },
+    {
+      "seed": 131,
+      "MS_Num": 2,
+      "IFN": 5.0,
+      "CHD": 0.4145,
+      "CMQ": 0.031,
+      "Instability": 0.5,
+      "UCM": 0.107,
+      "HV": 0.36847357671558645
+    },
+    {
+      "seed": 137,
+      "MS_Num": 2,
+      "IFN": 5.0,
+      "CHD": 0.361,
+      "CMQ": 0.011,
+      "Instability": 0.5,
+      "UCM": 0.2258,
+      "HV": 0.3859730932147184
+    },
+    {
+      "seed": 139,
+      "MS_Num": 2,
+      "IFN": 5.0,
+      "CHD": 0.4145,
+      "CMQ": 0.0255,
+      "Instability": 0.5,
+      "UCM": 0.107,
+      "HV": 0.42320952224941044
+    },
+    {
+      "seed": 149,
+      "MS_Num": 2,
+      "IFN": 3.0,
+      "CHD": 0.361,
+      "CMQ": 0.0209,
+      "Instability": 0.5,
+      "UCM": 0.1907,
+      "HV": 0.41515598979668467
+    }
+  ],
+  "compatibility": {
+    "inputHashMatched": true,
+    "metricVersionMatched": true,
+    "isolatedServiceScore": 0,
+    "frozenCalibrationMatched": true,
+    "seedsMatched": true,
+    "initialConfig": "C3",
+    "parserSnapshotMatched": true,
+    "historicalParser": "raw-comment-reader-v1",
+    "onlineControlMatched": true,
+    "guidanceConfigurationMatched": true,
+    "historicalImplementationHash": "6a1360c96469dff8e9d349902ed63fed8b6d3f0bc68dd95c9900318399c9e983",
+    "candidatePromptVersion": "candidate-consistency-choice-v1"
+  },
+  "discrepancies": [
+    {
+      "metric": "CMQ",
+      "attachment": 0.1586,
+      "verified": 0.01586
+    }
+  ]
+}

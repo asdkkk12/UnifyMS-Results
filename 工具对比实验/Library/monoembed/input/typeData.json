@@ -1,0 +1,162 @@
+[
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "LibraryManagementSystem",
+    "fullName": "Library.service.LibraryManagementSystem",
+    "serviceName": "LibraryManagementSystem",
+    "content": "// Derived from RapidOOD .remodel\n// service LibraryManagementSystem: recommendBook, queryBookCopy, addBookCopy, deleteBookCopy, makeReservation, cannelReservation, borrowBook, renewBook, returnBook, payOverDueFee, checkOverDueandComputeOverDueFee, dueSoonNotification, countDownSuspensionDay\npublic class LibraryManagementSystem {\n    public void recommendBook(Object userid, Object book) {}\n    public void queryBookCopy(Object barcode) {}\n    public void addBookCopy(Object callNo, Object copy) {}\n    public void deleteBookCopy(Object barcode) {}\n    public void makeReservation(Object uid, Object barcode) {}\n    public void cannelReservation(Object uid, Object barcode) {}\n    public void borrowBook(Object uid, Object barcode) {}\n    public void renewBook(Object uid, Object barcode) {}\n    public void returnBook(Object barcode) {}\n    public void payOverDueFee(Object uid, Object fee, Object change) {}\n    public void checkOverDueandComputeOverDueFee() {}\n    public void dueSoonNotification() {}\n    public void countDownSuspensionDay() {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ThirdPartServices",
+    "fullName": "Library.service.ThirdPartServices",
+    "serviceName": "ThirdPartServices",
+    "content": "// Derived from RapidOOD .remodel\n// service ThirdPartServices: sendNotificationEmail\npublic class ThirdPartServices {\n    public void sendNotificationEmail(Object user) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ListBookHistory",
+    "fullName": "Library.service.ListBookHistory",
+    "serviceName": "ListBookHistory",
+    "content": "// Derived from RapidOOD .remodel\n// service ListBookHistory: listBorrowHistory, listHodingBook, listOverDueBook, listReservationBook, listRecommendBook\npublic class ListBookHistory {\n    public void listBorrowHistory(Object userid) {}\n    public void listHodingBook(Object userid) {}\n    public void listOverDueBook(Object userid) {}\n    public void listReservationBook(Object userid) {}\n    public void listRecommendBook(Object userid) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "SearchBook",
+    "fullName": "Library.service.SearchBook",
+    "serviceName": "SearchBook",
+    "content": "// Derived from RapidOOD .remodel\n// service SearchBook: searchBookByBarCode, searchBookByTitle, searchBookByAuthor, searchBookByISBN, searchBookBySubject\npublic class SearchBook {\n    public void searchBookByBarCode(Object barcode) {}\n    public void searchBookByTitle(Object title) {}\n    public void searchBookByAuthor(Object authorname) {}\n    public void searchBookByISBN(Object ISBNnumber) {}\n    public void searchBookBySubject(Object subject) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageUserCRUDService",
+    "fullName": "Library.service.ManageUserCRUDService",
+    "serviceName": "ManageUserCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageUserCRUDService: createUser, queryUser, modifyUser, deleteUser, createStudent, createFaculty, modifyStudent, modifyFaculty\npublic class ManageUserCRUDService {\n    public void createUser(Object userid, Object name, Object sex, Object password, Object email, Object faculty, Object loanednumber, Object borrowstatus, Object suspensiondays, Object overduefee) {}\n    public void queryUser(Object UserID) {}\n    public void modifyUser(Object userid, Object name, Object sex, Object password, Object email, Object faculty, Object loanednumber, Object borrowstatus, Object suspensiondays, Object overduefee) {}\n    public void deleteUser(Object UserID) {}\n    public void createStudent(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object programme : Programme[BACHELOR|MASTER|PHD], Object registrationStatus : StudentStatus[GRADUATED|PROGRAMMING]) {}\n    public void createFaculty(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR], Object status : FacultyStatus[HASRETIRED|INPOSITION]) {}\n    public void modifyStudent(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object programme : Programme[BACHELOR|MASTER|PHD], Object registrationStatus : StudentStatus[GRADUATED|PROGRAMMING]) {}\n    public void modifyFaculty(Object userID : String, Object name : String, Object sex : Sex[M|F], Object password : String, Object email : String, Object faculty : String, Object major : String, Object position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR], Object status : FacultyStatus[HASRETIRED|INPOSITION]) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageBookCRUDService",
+    "fullName": "Library.service.ManageBookCRUDService",
+    "serviceName": "ManageBookCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageBookCRUDService: createBook, queryBook, modifyBook, deleteBook\npublic class ManageBookCRUDService {\n    public void createBook(Object callno, Object title, Object edition, Object author, Object publisher, Object description, Object isbn, Object copynum) {}\n    public void queryBook(Object CallNo) {}\n    public void modifyBook(Object callno, Object title, Object edition, Object author, Object publisher, Object description, Object isbn, Object copynum) {}\n    public void deleteBook(Object CallNo) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageSubjectCRUDService",
+    "fullName": "Library.service.ManageSubjectCRUDService",
+    "serviceName": "ManageSubjectCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageSubjectCRUDService: createSubject, querySubject, modifySubject, deleteSubject\npublic class ManageSubjectCRUDService {\n    public void createSubject(Object name) {}\n    public void querySubject(Object Name) {}\n    public void modifySubject(Object name) {}\n    public void deleteSubject(Object Name) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageBookCopyCRUDService",
+    "fullName": "Library.service.ManageBookCopyCRUDService",
+    "serviceName": "ManageBookCopyCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageBookCopyCRUDService: addBookCopy, queryBookCopy, modifyBookCopy, deleteBookCopy\npublic class ManageBookCopyCRUDService {\n    public void addBookCopy(Object callNo:String, Object barcode : String, Object location : String) {}\n    public void queryBookCopy(Object Barcode) {}\n    public void modifyBookCopy(Object barcode, Object status, Object location, Object isreserved) {}\n    public void deleteBookCopy(Object barcode:String) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageLibrarianCRUDService",
+    "fullName": "Library.service.ManageLibrarianCRUDService",
+    "serviceName": "ManageLibrarianCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageLibrarianCRUDService: createLibrarian, queryLibrarian, modifyLibrarian, deleteLibrarian\npublic class ManageLibrarianCRUDService {\n    public void createLibrarian(Object librarianid, Object name, Object password) {}\n    public void queryLibrarian(Object LibrarianID) {}\n    public void modifyLibrarian(Object librarianid, Object name, Object password) {}\n    public void deleteLibrarian(Object LibrarianID) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "User",
+    "fullName": "Library.domain.User",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class User {\n    private String UserID;\n    private String Name;\n    private Sex Sex;\n    private String Password;\n    private String Email;\n    private String Faculty;\n    private Integer LoanedNumber;\n    private BorrowStatus BorrowStatus;\n    private Integer SuspensionDays;\n    private Real OverDueFee;\n    private Loan LoanedBook;\n    private Reserve ReservedBook;\n    private RecommendBook RecommendedBook;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Student",
+    "fullName": "Library.domain.Student",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Student extends User {\n    private String Major;\n    private Programme Programme;\n    private StudentStatus RegistrationStatus;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Faculty",
+    "fullName": "Library.domain.Faculty",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Faculty extends User {\n    private FacultyPosition Position;\n    private FacultyStatus Status;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Book",
+    "fullName": "Library.domain.Book",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Book {\n    private String CallNo;\n    private String Title;\n    private String Edition;\n    private String Author;\n    private String Publisher;\n    private String Description;\n    private String ISBn;\n    private Integer CopyNum;\n    private BookCopy Copys;\n    private Subject Subject;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Subject",
+    "fullName": "Library.domain.Subject",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Subject {\n    private String Name;\n    private Subject SuperSubject;\n    private Subject SubSubject;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "BookCopy",
+    "fullName": "Library.domain.BookCopy",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class BookCopy {\n    private String Barcode;\n    private CopyStatus Status;\n    private String Location;\n    private Boolean IsReserved;\n    private Book BookBelongs;\n    private Loan LoanedRecord;\n    private Reserve ReservationRecord;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Loan",
+    "fullName": "Library.domain.Loan",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Loan {\n    private Date LoanDate;\n    private Date RenewDate;\n    private Date DueDate;\n    private Date ReturnDate;\n    private Integer RenewedTimes;\n    private Boolean IsReturned;\n    private Real OverDueFee;\n    private Boolean OverDue3Days;\n    private Boolean OverDue10Days;\n    private Boolean OverDue17Days;\n    private Boolean OverDue31Days;\n    private User LoanedUser;\n    private BookCopy LoanedCopy;\n    private Librarian LoanLibrarian;\n    private Librarian ReturnLibrarian;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Reserve",
+    "fullName": "Library.domain.Reserve",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Reserve {\n    private Date ReserveDate;\n    private Boolean IsReserveClosed;\n    private BookCopy ReservedCopy;\n    private User ReservedUser;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "RecommendBook",
+    "fullName": "Library.domain.RecommendBook",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class RecommendBook extends Book {\n    private Date RecommendDate;\n    private User RecommendUser;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Administrator",
+    "fullName": "Library.domain.Administrator",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Administrator {\n    private String AdminID;\n    private String UserName;\n    private String Password;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "Librarian",
+    "fullName": "Library.domain.Librarian",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class Librarian {\n    private String LibrarianID;\n    private String Name;\n    private String Password;\n}"
+  }
+]

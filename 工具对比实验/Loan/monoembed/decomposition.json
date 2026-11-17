@@ -1,0 +1,66 @@
+{
+  "application": "Loan",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/monoembed/input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "Loan.service.SubmitLoanRequest",
+        "Loan.service.EnterValidatedCreditReferences",
+        "Loan.service.EvaluateLoanRequest",
+        "Loan.service.GenerateLoanLetterAndAgreement",
+        "Loan.domain.LoanRequest",
+        "Loan.domain.CreditHistory"
+      ],
+      "service_names": [
+        "SubmitLoanRequest",
+        "EnterValidatedCreditReferences",
+        "EvaluateLoanRequest",
+        "GenerateLoanLetterAndAgreement",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "Loan.service.ManageLoanTermCRUDService",
+        "Loan.domain.LoanTerm",
+        "Loan.domain.ApprovalLetter",
+        "Loan.domain.LoanAgreement"
+      ],
+      "service_names": [
+        "ManageLoanTermCRUDService",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "Loan.service.ThirdPartyServices",
+        "Loan.service.LoanProcessingSystemSystem",
+        "Loan.domain.Loan",
+        "Loan.domain.CheckingAccount",
+        "Loan.domain.LoanAccount"
+      ],
+      "service_names": [
+        "ThirdPartyServices",
+        "LoanProcessingSystemSystem",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

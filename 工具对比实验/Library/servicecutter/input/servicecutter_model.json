@@ -1,0 +1,165 @@
+{
+  "name": "LIBRARY",
+  "entities": [
+    {
+      "name": "User",
+      "nanoentities": [
+        "borrowstatus",
+        "email",
+        "faculty",
+        "integer",
+        "loan",
+        "loanedbook",
+        "loanednumber",
+        "name",
+        "overduefee",
+        "password",
+        "real",
+        "recommendbook",
+        "recommendedbook",
+        "reserve",
+        "reservedbook",
+        "sex",
+        "string",
+        "suspensiondays",
+        "userid"
+      ]
+    },
+    {
+      "name": "Student",
+      "nanoentities": [
+        "major",
+        "programme",
+        "registrationstatus",
+        "string",
+        "studentstatus",
+        "user"
+      ]
+    },
+    {
+      "name": "Faculty",
+      "nanoentities": [
+        "facultyposition",
+        "facultystatus",
+        "position",
+        "status",
+        "user"
+      ]
+    },
+    {
+      "name": "Book",
+      "nanoentities": [
+        "author",
+        "bookcopy",
+        "callno",
+        "copynum",
+        "copys",
+        "description",
+        "edition",
+        "integer",
+        "isbn",
+        "publisher",
+        "string",
+        "subject",
+        "title"
+      ]
+    },
+    {
+      "name": "Subject",
+      "nanoentities": [
+        "name",
+        "string",
+        "subject",
+        "subsubject",
+        "supersubject"
+      ]
+    },
+    {
+      "name": "BookCopy",
+      "nanoentities": [
+        "barcode",
+        "book",
+        "bookbelongs",
+        "boolean",
+        "copystatus",
+        "isreserved",
+        "loan",
+        "loanedrecord",
+        "location",
+        "reservationrecord",
+        "reserve",
+        "status",
+        "string"
+      ]
+    },
+    {
+      "name": "Loan",
+      "nanoentities": [
+        "bookcopy",
+        "boolean",
+        "date",
+        "duedate",
+        "integer",
+        "isreturned",
+        "librarian",
+        "loandate",
+        "loanedcopy",
+        "loaneduser",
+        "loanlibrarian",
+        "overdue10days",
+        "overdue17days",
+        "overdue31days",
+        "overdue3days",
+        "overduefee",
+        "real",
+        "renewdate",
+        "renewedtimes",
+        "returndate",
+        "returnlibrarian",
+        "user"
+      ]
+    },
+    {
+      "name": "Reserve",
+      "nanoentities": [
+        "bookcopy",
+        "boolean",
+        "date",
+        "isreserveclosed",
+        "reservedate",
+        "reservedcopy",
+        "reserveduser",
+        "user"
+      ]
+    },
+    {
+      "name": "RecommendBook",
+      "nanoentities": [
+        "book",
+        "date",
+        "recommenddate",
+        "recommenduser",
+        "user"
+      ]
+    },
+    {
+      "name": "Administrator",
+      "nanoentities": [
+        "adminid",
+        "password",
+        "string",
+        "username"
+      ]
+    },
+    {
+      "name": "Librarian",
+      "nanoentities": [
+        "librarianid",
+        "name",
+        "password",
+        "string"
+      ]
+    }
+  ],
+  "relations": []
+}

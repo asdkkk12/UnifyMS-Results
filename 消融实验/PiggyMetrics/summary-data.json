@@ -1,0 +1,257 @@
+{
+  "groups": {
+    "full": {
+      "MS_Num": {
+        "mean": 4,
+        "sampleStd": 0.0
+      },
+      "IFN": {
+        "mean": 3.575,
+        "sampleStd": 1.3019749954929585
+      },
+      "CHD": {
+        "mean": 0.3814,
+        "sampleStd": 0.006324555320336764
+      },
+      "Instability": {
+        "mean": 0.63221,
+        "sampleStd": 0.04468975646983696
+      },
+      "UCM": {
+        "mean": 0.33612000000000003,
+        "sampleStd": 0.015769224598706316
+      },
+      "CMQ": {
+        "mean": 0.19976,
+        "sampleStd": 0.07517816172267051
+      },
+      "HV": {
+        "mean": 0.9901101752170182,
+        "sampleStd": 0.03859086497800004
+      },
+      "ED": {
+        "mean": 1.241875825077628,
+        "sampleStd": 0.11538679127222587
+      }
+    },
+    "without-offline": {
+      "MS_Num": {
+        "mean": 3.7,
+        "sampleStd": 0.8232726023485646
+      },
+      "IFN": {
+        "mean": 3.97667,
+        "sampleStd": 1.5663916780294767
+      },
+      "CHD": {
+        "mean": 0.35722,
+        "sampleStd": 0.03881491122408156
+      },
+      "Instability": {
+        "mean": 0.59397,
+        "sampleStd": 0.06350121696121701
+      },
+      "UCM": {
+        "mean": 0.37845,
+        "sampleStd": 0.054936352061069525
+      },
+      "CMQ": {
+        "mean": 0.21222,
+        "sampleStd": 0.07938164915282513
+      },
+      "HV": {
+        "mean": 0.8121203147427508,
+        "sampleStd": 0.06697388012279398
+      },
+      "ED": {
+        "mean": 1.325782433977152,
+        "sampleStd": 0.25894050914754874
+      }
+    },
+    "without-probability": {
+      "MS_Num": {
+        "mean": 4.3,
+        "sampleStd": 0.48304589153964794
+      },
+      "IFN": {
+        "mean": 4.59,
+        "sampleStd": 1.1666190466471906
+      },
+      "CHD": {
+        "mean": 0.36136,
+        "sampleStd": 0.027536448572755355
+      },
+      "Instability": {
+        "mean": 0.6493,
+        "sampleStd": 0.04379708260197754
+      },
+      "UCM": {
+        "mean": 0.32902,
+        "sampleStd": 0.01648850104365665
+      },
+      "CMQ": {
+        "mean": 0.23779,
+        "sampleStd": 0.06779412380304228
+      },
+      "HV": {
+        "mean": 0.9901655787110304,
+        "sampleStd": 0.04391731917535032
+      },
+      "ED": {
+        "mean": 1.3356238828711962,
+        "sampleStd": 0.1037621750528429
+      }
+    },
+    "without-guidance": {
+      "MS_Num": {
+        "mean": 4,
+        "sampleStd": 0.4714045207910317
+      },
+      "IFN": {
+        "mean": 3.5,
+        "sampleStd": 1.4337208778404378
+      },
+      "CHD": {
+        "mean": 0.36891,
+        "sampleStd": 0.03102946449210277
+      },
+      "Instability": {
+        "mean": 0.61391,
+        "sampleStd": 0.05189186298876198
+      },
+      "UCM": {
+        "mean": 0.35629,
+        "sampleStd": 0.044825400785219474
+      },
+      "CMQ": {
+        "mean": 0.19952,
+        "sampleStd": 0.08403616681723015
+      },
+      "HV": {
+        "mean": 0.9818038665871117,
+        "sampleStd": 0.05082180989880816
+      },
+      "ED": {
+        "mean": 1.2812987743474573,
+        "sampleStd": 0.1778403514252938
+      }
+    }
+  },
+  "rankings": {
+    "IFN": [
+      [
+        "without-guidance"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-offline"
+      ],
+      [
+        "without-probability"
+      ]
+    ],
+    "CHD": [
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-probability"
+      ],
+      [
+        "without-offline"
+      ]
+    ],
+    "Instability": [
+      [
+        "without-probability"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ]
+    ],
+    "UCM": [
+      [
+        "without-offline"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-probability"
+      ]
+    ],
+    "CMQ": [
+      [
+        "without-probability"
+      ],
+      [
+        "without-offline"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ]
+    ],
+    "ED": [
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ],
+      [
+        "without-probability"
+      ]
+    ],
+    "HV": [
+      [
+        "without-probability"
+      ],
+      [
+        "full"
+      ],
+      [
+        "without-guidance"
+      ],
+      [
+        "without-offline"
+      ]
+    ]
+  },
+  "attachmentMeans": {
+    "MS_Num": 4.0,
+    "IFN": 3.575,
+    "CHD": 0.3814,
+    "Instability": 0.83221,
+    "UCM": 0.33612,
+    "CMQ": 0.19976
+  },
+  "fullSource": "/Users/yuanyaowu/Desktop/输出/PiggyMetrics/unifyms",
+  "sourceSummary": "/Users/yuanyaowu/Desktop/输出/汇总Case.md.md",
+  "discrepancies": [
+    {
+      "metric": "Instability",
+      "attachmentMean": 0.83221,
+      "verifiedRawMean": 0.63221
+    }
+  ]
+}

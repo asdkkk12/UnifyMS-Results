@@ -1,0 +1,178 @@
+{
+  "services": [
+    {
+      "nanoentities": [
+        "Reserve.bookcopy",
+        "Reserve.boolean",
+        "Reserve.date",
+        "Reserve.isreserveclosed",
+        "Reserve.reservedate",
+        "Reserve.reservedcopy",
+        "Reserve.reserveduser",
+        "Reserve.user",
+        "Student.major",
+        "Faculty.facultyposition",
+        "RecommendBook.book",
+        "User.borrowstatus",
+        "Student.programme",
+        "Student.registrationstatus",
+        "Student.string",
+        "Student.studentstatus",
+        "Student.user",
+        "Faculty.facultystatus",
+        "Faculty.position",
+        "Faculty.status",
+        "Faculty.user",
+        "Loan.bookcopy",
+        "RecommendBook.date",
+        "RecommendBook.recommenddate",
+        "RecommendBook.recommenduser",
+        "RecommendBook.user",
+        "User.email",
+        "User.faculty",
+        "User.integer",
+        "User.loan",
+        "User.loanedbook",
+        "User.loanednumber",
+        "User.name",
+        "User.overduefee",
+        "User.password",
+        "User.real",
+        "User.recommendbook",
+        "User.recommendedbook",
+        "User.reserve",
+        "User.reservedbook",
+        "User.sex",
+        "User.string",
+        "User.suspensiondays",
+        "User.userid",
+        "Loan.boolean",
+        "Loan.date",
+        "Loan.duedate",
+        "Loan.integer",
+        "Loan.isreturned",
+        "Loan.librarian",
+        "Loan.loandate",
+        "Loan.loanedcopy",
+        "Loan.loaneduser",
+        "Loan.loanlibrarian",
+        "Loan.overdue10days",
+        "Loan.overdue17days",
+        "Loan.overdue31days",
+        "Loan.overdue3days",
+        "Loan.overduefee",
+        "Loan.real",
+        "Loan.renewdate",
+        "Loan.renewedtimes",
+        "Loan.returndate",
+        "Loan.returnlibrarian",
+        "Loan.user"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "BookCopy.barcode",
+        "BookCopy.book",
+        "BookCopy.bookbelongs",
+        "BookCopy.boolean",
+        "BookCopy.copystatus",
+        "BookCopy.isreserved",
+        "BookCopy.loan",
+        "BookCopy.loanedrecord",
+        "BookCopy.location",
+        "BookCopy.reservationrecord",
+        "BookCopy.reserve",
+        "BookCopy.status",
+        "BookCopy.string"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "Administrator.adminid",
+        "Administrator.password",
+        "Administrator.string",
+        "Administrator.username"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "Book.author",
+        "Book.bookcopy",
+        "Book.callno",
+        "Book.copynum",
+        "Book.copys",
+        "Book.description",
+        "Book.edition",
+        "Book.integer",
+        "Book.isbn",
+        "Book.publisher",
+        "Book.string",
+        "Book.subject",
+        "Book.title",
+        "Subject.name",
+        "Subject.string",
+        "Subject.subject",
+        "Subject.subsubject",
+        "Subject.supersubject"
+      ],
+      "id": "D",
+      "name": "Service D"
+    },
+    {
+      "nanoentities": [
+        "Librarian.librarianid",
+        "Librarian.name",
+        "Librarian.password",
+        "Librarian.string"
+      ],
+      "id": "E",
+      "name": "Service E"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "BookCopy.barcode"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "Service B",
+      "serviceB": "Service D",
+      "sharedEntities": [
+        "BookCopy.barcode"
+      ],
+      "direction": "INCOMING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service D": [
+      "searchBook"
+    ],
+    "Service C": [
+      "cancelReservation",
+      "sendNotificationEmail"
+    ],
+    "Service A": [
+      "listBookHistory",
+      "makeReservation",
+      "recommendBook",
+      "listRecommendBook",
+      "borrowBook",
+      "renewBook",
+      "payOverDueFee",
+      "returnBook",
+      "checkOverDueandComputeOverDueFee",
+      "dueSoonNotification",
+      "countDownSuspensionDay"
+    ]
+  }
+}

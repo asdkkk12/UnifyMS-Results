@@ -1,0 +1,2461 @@
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+Exception in thread "main" java.lang.IllegalArgumentException: Search operator/calibration trace mismatch C0
+	at tuning.LegacyAblationCli.require(LegacyAblationCli.java:16)
+	at tuning.LegacyAblationCli.verify(LegacyAblationCli.java:60)
+	at tuning.LegacyAblationCli.main(LegacyAblationCli.java:103)
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+Exception in thread "main" java.lang.IllegalArgumentException: Search operator/calibration trace mismatch C0; see compatibility-failure.json and C0-replay.json
+	at tuning.LegacyAblationCli.require(LegacyAblationCli.java:16)
+	at tuning.LegacyAblationCli.verify(LegacyAblationCli.java:62)
+	at tuning.LegacyAblationCli.main(LegacyAblationCli.java:105)
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+{"status":"success","protocolVersion":"cocome-legacy-three-ablation-v1","metricVersion":"paper-ieee-eq5-21-v1","historicalImplementationHash":"c62a14ca3636ecf698fe35cdab6ceaf121ca2bb334e2994c5ce789862f58ac8b","compatibilityImplementationHash":"f35420199f104d87bcf6a8aea464bf4626df0cbcde2da2295fa19750cd93c3cc","calibrations":[{"configuration":"C0","populationRows":200,"hv":0.39808751607306087,"searchMatched":true,"searchMillis":1118.116042},{"configuration":"C1","populationRows":150,"hv":0.3415797029783449,"searchMatched":true,"searchMillis":675.556833},{"configuration":"C2","populationRows":100,"hv":0.38619098746656366,"searchMatched":true,"searchMillis":455.46525},{"configuration":"C3","populationRows":200,"hv":0.4164553194593981,"searchMatched":true,"searchMillis":516.758625},{"configuration":"C4","populationRows":200,"hv":0.31532091353947095,"searchMatched":true,"searchMillis":583.568375},{"configuration":"C5","populationRows":100,"hv":0.4176988645492387,"searchMatched":true,"searchMillis":461.967167}],"recomputedPopulationRows":950,"matchedGenerationTasks":708,"matchedChoiceRequests":67,"matchedProbabilityRequests":190,"validationMillis":5027.059166}
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+{"status":"success","protocolVersion":"cocome-legacy-three-ablation-v1","metricVersion":"paper-ieee-eq5-21-v1","historicalImplementationHash":"c62a14ca3636ecf698fe35cdab6ceaf121ca2bb334e2994c5ce789862f58ac8b","compatibilityImplementationHash":"4e6b42c321edcb3b6df7f3c92330117992a04460e3f7ea168fc6efb18b8bd188","calibrations":[{"configuration":"C0","populationRows":200,"hv":0.39808751607306087,"searchMatched":true,"searchMillis":923.520334},{"configuration":"C1","populationRows":150,"hv":0.3415797029783449,"searchMatched":true,"searchMillis":584.422791},{"configuration":"C2","populationRows":100,"hv":0.38619098746656366,"searchMatched":true,"searchMillis":437.843708},{"configuration":"C3","populationRows":200,"hv":0.4164553194593981,"searchMatched":true,"searchMillis":496.219416},{"configuration":"C4","populationRows":200,"hv":0.31532091353947095,"searchMatched":true,"searchMillis":604.90875},{"configuration":"C5","populationRows":100,"hv":0.4176988645492387,"searchMatched":true,"searchMillis":464.650833}],"recomputedPopulationRows":950,"matchedGenerationTasks":708,"matchedChoiceRequests":67,"matchedProbabilityRequests":190,"validationMillis":4707.34825}
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+{"status":"success","protocolVersion":"cocome-legacy-three-ablation-v1","metricVersion":"paper-ieee-eq5-21-v1","historicalImplementationHash":"c62a14ca3636ecf698fe35cdab6ceaf121ca2bb334e2994c5ce789862f58ac8b","compatibilityImplementationHash":"4e6b42c321edcb3b6df7f3c92330117992a04460e3f7ea168fc6efb18b8bd188","calibrations":[{"configuration":"C0","populationRows":200,"hv":0.39808751607306087,"searchMatched":true,"searchMillis":1214.51725},{"configuration":"C1","populationRows":150,"hv":0.3415797029783449,"searchMatched":true,"searchMillis":619.570583},{"configuration":"C2","populationRows":100,"hv":0.38619098746656366,"searchMatched":true,"searchMillis":442.906208},{"configuration":"C3","populationRows":200,"hv":0.4164553194593981,"searchMatched":true,"searchMillis":492.469708},{"configuration":"C4","populationRows":200,"hv":0.31532091353947095,"searchMatched":true,"searchMillis":579.106125},{"configuration":"C5","populationRows":100,"hv":0.4176988645492387,"searchMatched":true,"searchMillis":473.732708}],"recomputedPopulationRows":950,"matchedGenerationTasks":708,"matchedChoiceRequests":67,"matchedProbabilityRequests":190,"validationMillis":4960.961959}

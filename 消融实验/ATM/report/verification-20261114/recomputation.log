@@ -1,0 +1,18 @@
+		BelongedUser : User Association
+User
+		OwnedCard : BankCard* ! Association
+BankCard
+manageBankCard manageBankCard
+manageBankCard manageUser
+manageUser manageBankCard
+manageUser manageUser
+depositFunds depositFunds
+depositFunds withdrawCash
+depositFunds checkBalance
+withdrawCash depositFunds
+withdrawCash withdrawCash
+withdrawCash checkBalance
+checkBalance depositFunds
+checkBalance withdrawCash
+checkBalance checkBalance
+checked=6245 enumerated=2386 frontPoints=6 HV=0.24125731312371923

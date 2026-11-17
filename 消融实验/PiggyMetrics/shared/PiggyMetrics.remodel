@@ -1,0 +1,243 @@
+UseCaseModel PiggyMetrics {
+ UC::AccountServiceAccountServiceImpl()
+ UC::NotificationServiceEmailServiceImpl()
+ UC::NotificationServiceNotificationServiceImpl()
+ UC::NotificationServiceRecipientServiceImpl()
+ UC::StatisticsServiceExchangeRatesServiceImpl()
+ UC::StatisticsServiceStatisticsServiceImpl()
+ Actor AccountServiceRole {
+  AccountServiceAccountServiceImpl
+ }
+ Actor NotificationServiceRole {
+  NotificationServiceEmailServiceImpl
+  NotificationServiceNotificationServiceImpl
+  NotificationServiceRecipientServiceImpl
+ }
+ Actor StatisticsServiceRole {
+  StatisticsServiceExchangeRatesServiceImpl
+  StatisticsServiceStatisticsServiceImpl
+ }
+ Service AccountServiceAccountServiceImpl {
+  [Operation]
+  AccountServiceAccountServiceImplFindByName()
+  AccountServiceAccountServiceImplCreate()
+  AccountServiceAccountServiceImplSaveChanges()
+ }
+ Service NotificationServiceEmailServiceImpl {
+  [Operation]
+  NotificationServiceEmailServiceImplSend()
+ }
+ Service NotificationServiceNotificationServiceImpl {
+  [Operation]
+  NotificationServiceNotificationServiceImplSendBackupNotifications()
+  NotificationServiceNotificationServiceImplSendRemindNotifications()
+ }
+ Service NotificationServiceRecipientServiceImpl {
+  [Operation]
+  NotificationServiceRecipientServiceImplFindByAccountName()
+  NotificationServiceRecipientServiceImplSave()
+  NotificationServiceRecipientServiceImplFindReadyToNotify()
+  NotificationServiceRecipientServiceImplMarkNotified()
+ }
+ Service StatisticsServiceExchangeRatesServiceImpl {
+  [Operation]
+  StatisticsServiceExchangeRatesServiceImplGetCurrentRates()
+  StatisticsServiceExchangeRatesServiceImplConvert()
+ }
+ Service StatisticsServiceStatisticsServiceImpl {
+  [Operation]
+  StatisticsServiceStatisticsServiceImplFindByAccountName()
+  StatisticsServiceStatisticsServiceImplSave()
+ }
+ Entity AccountServiceAccount {
+  name : String
+  lastSeen : Date
+  incomes : AccountServiceItem Association
+  expenses : AccountServiceItem Association
+  saving : AccountServiceSaving Association
+  note : String
+ }
+ Entity AccountServiceItem {
+  title : String
+  amount : Real
+  currency : String
+  period : String
+  icon : String
+ }
+ Entity AccountServiceSaving {
+  amount : Real
+  currency : String
+  interest : Real
+  deposit : String
+  capitalization : String
+ }
+ Entity AccountServiceUser {
+  username : String
+  password : String
+ }
+ Entity NotificationServiceNotificationSettings {
+  active : String
+  frequency : String
+  lastNotified : Date
+ }
+ Entity NotificationServiceRecipient {
+  accountName : String
+  email : String
+  scheduledNotifications : NotificationServiceNotificationSettings Association
+ }
+ Entity StatisticsServiceAccount {
+  incomes : StatisticsServiceItem Association
+  expenses : StatisticsServiceItem Association
+  saving : StatisticsServiceSaving Association
+ }
+ Entity StatisticsServiceExchangeRatesContainer {
+  date : Date
+  base : String
+  rates : String
+ }
+ Entity StatisticsServiceItem {
+  title : String
+  amount : Real
+  currency : String
+  period : String
+ }
+ Entity StatisticsServiceSaving {
+  amount : Real
+  currency : String
+  interest : Real
+  deposit : String
+  capitalization : String
+ }
+ Entity StatisticsServiceDataPoint {
+  id : StatisticsServiceDataPointId Association
+  incomes : StatisticsServiceItemMetric Association
+  expenses : StatisticsServiceItemMetric Association
+  statistics : String
+  rates : String
+ }
+ Entity StatisticsServiceDataPointId {
+  account : String
+  date : Date
+ }
+ Entity StatisticsServiceItemMetric {
+  title : String
+  amount : Real
+ }
+ Contract AccountServiceAccountServiceImpl::AccountServiceAccountServiceImplFindByName() : Boolean {
+  definition:
+   refAccountServiceAccount : AccountServiceAccount
+  postcondition:
+   result = true
+ }
+ Contract AccountServiceAccountServiceImpl::AccountServiceAccountServiceImplCreate() : Boolean {
+  definition:
+   refAccountServiceAccount : AccountServiceAccount
+   refAccountServiceSaving : AccountServiceSaving
+   refAccountServiceUser : AccountServiceUser
+  postcondition:
+   result = true
+ }
+ Contract AccountServiceAccountServiceImpl::AccountServiceAccountServiceImplSaveChanges() : Boolean {
+  definition:
+   refAccountServiceAccount : AccountServiceAccount
+   refAccountServiceItem : AccountServiceItem
+   refAccountServiceSaving : AccountServiceSaving
+   refStatisticsServiceAccount : StatisticsServiceAccount
+   refStatisticsServiceDataPoint : StatisticsServiceDataPoint
+   refStatisticsServiceDataPointId : StatisticsServiceDataPointId
+   refStatisticsServiceExchangeRatesContainer : StatisticsServiceExchangeRatesContainer
+   refStatisticsServiceItem : StatisticsServiceItem
+   refStatisticsServiceItemMetric : StatisticsServiceItemMetric
+   refStatisticsServiceSaving : StatisticsServiceSaving
+  postcondition:
+   StatisticsServiceStatisticsServiceImpl::StatisticsServiceStatisticsServiceImplSave() and
+   result = true
+ }
+ Contract NotificationServiceEmailServiceImpl::NotificationServiceEmailServiceImplSend() : Boolean {
+  definition:
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   result = true
+ }
+ Contract NotificationServiceNotificationServiceImpl::NotificationServiceNotificationServiceImplSendBackupNotifications() : Boolean {
+  definition:
+   refAccountServiceAccount : AccountServiceAccount
+   refNotificationServiceNotificationSettings : NotificationServiceNotificationSettings
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   AccountServiceAccountServiceImpl::AccountServiceAccountServiceImplFindByName() and
+   NotificationServiceEmailServiceImpl::NotificationServiceEmailServiceImplSend() and
+   NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplFindReadyToNotify() and
+   NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplMarkNotified() and
+   result = true
+ }
+ Contract NotificationServiceNotificationServiceImpl::NotificationServiceNotificationServiceImplSendRemindNotifications() : Boolean {
+  definition:
+   refNotificationServiceNotificationSettings : NotificationServiceNotificationSettings
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   NotificationServiceEmailServiceImpl::NotificationServiceEmailServiceImplSend() and
+   NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplFindReadyToNotify() and
+   NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplMarkNotified() and
+   result = true
+ }
+ Contract NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplFindByAccountName() : Boolean {
+  definition:
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   result = true
+ }
+ Contract NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplSave() : Boolean {
+  definition:
+   refNotificationServiceNotificationSettings : NotificationServiceNotificationSettings
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   result = true
+ }
+ Contract NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplFindReadyToNotify() : Boolean {
+  definition:
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   result = true
+ }
+ Contract NotificationServiceRecipientServiceImpl::NotificationServiceRecipientServiceImplMarkNotified() : Boolean {
+  definition:
+   refNotificationServiceNotificationSettings : NotificationServiceNotificationSettings
+   refNotificationServiceRecipient : NotificationServiceRecipient
+  postcondition:
+   result = true
+ }
+ Contract StatisticsServiceExchangeRatesServiceImpl::StatisticsServiceExchangeRatesServiceImplGetCurrentRates() : Boolean {
+  definition:
+   refStatisticsServiceExchangeRatesContainer : StatisticsServiceExchangeRatesContainer
+  postcondition:
+   result = true
+ }
+ Contract StatisticsServiceExchangeRatesServiceImpl::StatisticsServiceExchangeRatesServiceImplConvert() : Boolean {
+  definition:
+   refStatisticsServiceExchangeRatesContainer : StatisticsServiceExchangeRatesContainer
+  postcondition:
+   result = true
+ }
+ Contract StatisticsServiceStatisticsServiceImpl::StatisticsServiceStatisticsServiceImplFindByAccountName() : Boolean {
+  definition:
+   refStatisticsServiceDataPoint : StatisticsServiceDataPoint
+   refStatisticsServiceDataPointId : StatisticsServiceDataPointId
+  postcondition:
+   result = true
+ }
+ Contract StatisticsServiceStatisticsServiceImpl::StatisticsServiceStatisticsServiceImplSave() : Boolean {
+  definition:
+   refStatisticsServiceAccount : StatisticsServiceAccount
+   refStatisticsServiceDataPoint : StatisticsServiceDataPoint
+   refStatisticsServiceDataPointId : StatisticsServiceDataPointId
+   refStatisticsServiceExchangeRatesContainer : StatisticsServiceExchangeRatesContainer
+   refStatisticsServiceItem : StatisticsServiceItem
+   refStatisticsServiceItemMetric : StatisticsServiceItemMetric
+   refStatisticsServiceSaving : StatisticsServiceSaving
+  postcondition:
+   StatisticsServiceExchangeRatesServiceImpl::StatisticsServiceExchangeRatesServiceImplConvert() and
+   StatisticsServiceExchangeRatesServiceImpl::StatisticsServiceExchangeRatesServiceImplGetCurrentRates() and
+   result = true
+ }
+}

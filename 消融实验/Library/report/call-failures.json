@@ -1,0 +1,25 @@
+[
+  {
+    "arm": "without-offline",
+    "module": "probability-JEV",
+    "error": "SocketTimeoutException: Read timed out",
+    "providerDetail": null,
+    "count": 2
+  },
+  {
+    "arm": "without-offline",
+    "module": "probability-JEV",
+    "error": "TimeoutException: null",
+    "providerDetail": null,
+    "count": 1
+  },
+  {
+    "arm": "without-probability",
+    "module": "candidate-JEV",
+    "error": "IOException: HTTP 400",
+    "providerDetail": {
+      "error_type": "max_tokens_exceeded"
+    },
+    "count": 1
+  }
+]

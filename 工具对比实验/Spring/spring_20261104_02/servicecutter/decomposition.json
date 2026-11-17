@@ -1,0 +1,1104 @@
+{
+  "method": "ServiceCutter official Chinese Whispers + Java AST bridge",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/spring_20261104_02/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "Native use-case responsibilities map directly to Java @Service proxy IDs, then to that class public methods.",
+    "A class remains one input unit, matching MicroMiner/MonoEmbed class granularity.",
+    "Use-case proxies lacking native responsibility fall back to the largest nanoentity cluster; their list is explicit.",
+    "Entity ownership uses the majority of its actual fields; no native field partition is changed."
+  ],
+  "fallback_cluster": 32,
+  "fallback_services": [
+    "ShopAuthShopAuthServerApiUserServiceImpl",
+    "ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl",
+    "ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl",
+    "ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl",
+    "ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl",
+    "ShopManageCommonEnumService",
+    "ShopManageGeneratorService",
+    "ShopManageDashboardServiceImpl",
+    "ShopOrderShopOrderApiSellerOrderServiceImpl",
+    "ShopOssAliyunServiceImpl",
+    "ShopOssQiniuServiceImpl",
+    "ShopSellerShopSellerApiSellerLoginServiceImpl",
+    "ShopSellerShopSellerApiSellerSubscribeServiceImpl",
+    "ShopUserShopUserApiInitService",
+    "ShopUserShopUserApiReceiverService",
+    "ShopUserShopUserApiAreaServiceImpl",
+    "ShopUserShopUserApiGoodsCartServiceImpl",
+    "ShopUserShopUserApiSignServiceImpl"
+  ],
+  "clusters": [
+    {
+      "name": "Service a",
+      "members": [
+        "Spring.service.ShopUserShopUserApiNativeMessageServiceImpl",
+        "Spring.domain.ShopUserShopUserApiNativeMessage"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopUserShopUserApiNativeMessage.status",
+        "ShopUserShopUserApiNativeMessage.userId",
+        "ShopUserShopUserApiNativeMessage.content",
+        "ShopUserShopUserApiNativeMessage.updateTime",
+        "ShopUserShopUserApiNativeMessage.deleteStatus",
+        "ShopUserShopUserApiNativeMessage.createUser",
+        "ShopUserShopUserApiNativeMessage.createTime",
+        "ShopUserShopUserApiNativeMessage.id",
+        "ShopUserShopUserApiNativeMessage.updateUser",
+        "ShopUserShopUserApiNativeMessage.phone"
+      ]
+    },
+    {
+      "name": "Service b",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiInviteRewardRecord"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiInviteRewardRecord.inviteUserId",
+        "ShopActivityShopActivityApiInviteRewardRecord.userId",
+        "ShopActivityShopActivityApiInviteRewardRecord.deleteStatus",
+        "ShopActivityShopActivityApiInviteRewardRecord.id",
+        "ShopActivityShopActivityApiInviteRewardRecord.updateUser",
+        "ShopActivityShopActivityApiInviteRewardRecord.updateTime",
+        "ShopActivityShopActivityApiInviteRewardRecord.rewardType",
+        "ShopActivityShopActivityApiInviteRewardRecord.phone",
+        "ShopActivityShopActivityApiInviteRewardRecord.createUser",
+        "ShopActivityShopActivityApiInviteRewardRecord.createTime"
+      ]
+    },
+    {
+      "name": "Service c",
+      "members": [
+        "Spring.service.ShopRiskShopRiskApiWhiteListServiceImpl",
+        "Spring.domain.ShopRiskShopRiskApiWhitelist"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopRiskShopRiskApiWhitelist.createTime",
+        "ShopRiskShopRiskApiWhitelist.phone",
+        "ShopRiskShopRiskApiWhitelist.id",
+        "ShopRiskShopRiskApiWhitelist.deleteStatus",
+        "ShopRiskShopRiskApiWhitelist.updateUser",
+        "ShopRiskShopRiskApiWhitelist.updateTime",
+        "ShopRiskShopRiskApiWhitelist.state",
+        "ShopRiskShopRiskApiWhitelist.createUser"
+      ]
+    },
+    {
+      "name": "Service d",
+      "members": [
+        "Spring.service.ShopManageDynamicFormServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiFieldServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiFormServiceImpl",
+        "Spring.domain.ShopPlatformShopPlatformApiField",
+        "Spring.domain.ShopPlatformShopPlatformApiFieldProps",
+        "Spring.domain.ShopPlatformShopPlatformApiForm"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopPlatformShopPlatformApiField.deleteStatus",
+        "ShopPlatformShopPlatformApiField.type",
+        "ShopPlatformShopPlatformApiFieldProps.createUser",
+        "ShopPlatformShopPlatformApiFieldProps.createTime",
+        "ShopPlatformShopPlatformApiField.formId",
+        "ShopPlatformShopPlatformApiForm.deleteStatus",
+        "ShopPlatformShopPlatformApiFieldProps.minLength",
+        "ShopPlatformShopPlatformApiField.title",
+        "ShopPlatformShopPlatformApiFieldProps.suffixIcon",
+        "ShopPlatformShopPlatformApiForm.createTime",
+        "ShopPlatformShopPlatformApiForm.createUser",
+        "ShopPlatformShopPlatformApiForm.updateUser",
+        "ShopPlatformShopPlatformApiFieldProps.prefixIcon",
+        "ShopPlatformShopPlatformApiFieldProps.fieldId",
+        "ShopPlatformShopPlatformApiFieldProps.placeholder",
+        "ShopPlatformShopPlatformApiForm.updateTime",
+        "ShopPlatformShopPlatformApiFieldProps.datasource",
+        "ShopPlatformShopPlatformApiFieldProps.disabled",
+        "ShopPlatformShopPlatformApiFieldProps.deleteStatus",
+        "ShopPlatformShopPlatformApiField.id",
+        "ShopPlatformShopPlatformApiForm.remark",
+        "ShopPlatformShopPlatformApiFieldProps.type",
+        "ShopPlatformShopPlatformApiField.createUser",
+        "ShopPlatformShopPlatformApiFieldProps.maxLength",
+        "ShopPlatformShopPlatformApiField.createTime",
+        "ShopPlatformShopPlatformApiFieldProps.size",
+        "ShopPlatformShopPlatformApiFieldProps.rows",
+        "ShopPlatformShopPlatformApiForm.bizType",
+        "ShopPlatformShopPlatformApiFieldProps.updateUser",
+        "ShopPlatformShopPlatformApiFieldProps.updateTime",
+        "ShopPlatformShopPlatformApiForm.name",
+        "ShopPlatformShopPlatformApiField.updateUser",
+        "ShopPlatformShopPlatformApiField.updateTime",
+        "ShopPlatformShopPlatformApiFieldProps.autosize",
+        "ShopPlatformShopPlatformApiFieldProps.id",
+        "ShopPlatformShopPlatformApiFieldProps.step",
+        "ShopPlatformShopPlatformApiForm.id",
+        "ShopPlatformShopPlatformApiFieldProps.clearable"
+      ]
+    },
+    {
+      "name": "Service e",
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiBannerServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiBanner"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiBanner.shareSubtitle",
+        "ShopActivityShopActivityApiBanner.updateUser",
+        "ShopActivityShopActivityApiBanner.bannerUrl",
+        "ShopActivityShopActivityApiBanner.shareChannel",
+        "ShopActivityShopActivityApiBanner.deleteStatus",
+        "ShopActivityShopActivityApiBanner.updateTime",
+        "ShopActivityShopActivityApiBanner.id",
+        "ShopActivityShopActivityApiBanner.shareIcon",
+        "ShopActivityShopActivityApiBanner.shareTitle",
+        "ShopActivityShopActivityApiBanner.bannerType",
+        "ShopActivityShopActivityApiBanner.bannerClickUrl",
+        "ShopActivityShopActivityApiBanner.bannerStatus",
+        "ShopActivityShopActivityApiBanner.title",
+        "ShopActivityShopActivityApiBanner.createTime",
+        "ShopActivityShopActivityApiBanner.createUser",
+        "ShopActivityShopActivityApiBanner.shareUrl"
+      ]
+    },
+    {
+      "name": "Service f",
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiAssembleServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityMember"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiAssembleActivityMember.updateUser",
+        "ShopActivityShopActivityApiAssembleActivityMember.username",
+        "ShopActivityShopActivityApiAssembleActivityMember.phone",
+        "ShopActivityShopActivityApiAssembleActivityMember.recordId",
+        "ShopActivityShopActivityApiAssembleActivityMember.id",
+        "ShopActivityShopActivityApiAssembleActivityMember.deleteStatus",
+        "ShopActivityShopActivityApiAssembleActivityMember.master",
+        "ShopActivityShopActivityApiAssembleActivityMember.userId",
+        "ShopActivityShopActivityApiAssembleActivityMember.createTime",
+        "ShopActivityShopActivityApiAssembleActivityMember.activityId",
+        "ShopActivityShopActivityApiAssembleActivityMember.createUser",
+        "ShopActivityShopActivityApiAssembleActivityMember.updateTime"
+      ]
+    },
+    {
+      "name": "Service g",
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiAppDiscountCouponServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiCouponTemplateServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiDiscountCouponServiceImpl",
+        "Spring.service.ShopSettlementShopSettlementApiSettlementOrderServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiDiscountCoupon",
+        "Spring.domain.ShopActivityShopActivityApiDiscountCouponTemplate"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiDiscountCouponTemplate.templateName",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.couponAmount",
+        "ShopActivityShopActivityApiDiscountCoupon.deleteStatus",
+        "ShopActivityShopActivityApiDiscountCoupon.createUser",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.deleteStatus",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.beginTime",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.createUser",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.createTime",
+        "ShopActivityShopActivityApiDiscountCoupon.used",
+        "ShopActivityShopActivityApiDiscountCoupon.id",
+        "ShopActivityShopActivityApiDiscountCoupon.userId",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.updateUser",
+        "ShopActivityShopActivityApiDiscountCoupon.templateId",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.updateTime",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.orderAmount",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.discountStrength",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.endTime",
+        "ShopActivityShopActivityApiDiscountCoupon.phone",
+        "ShopActivityShopActivityApiDiscountCoupon.updateUser",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.description",
+        "ShopActivityShopActivityApiDiscountCoupon.updateTime",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.templateType",
+        "ShopActivityShopActivityApiDiscountCoupon.beginTime",
+        "ShopActivityShopActivityApiDiscountCoupon.createTime",
+        "ShopActivityShopActivityApiDiscountCoupon.endTime",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.state",
+        "ShopActivityShopActivityApiDiscountCouponTemplate.id"
+      ]
+    },
+    {
+      "name": "Service h",
+      "members": [
+        "Spring.service.ShopManageMenuServiceImpl",
+        "Spring.service.ShopManagePermissionServiceImpl",
+        "Spring.service.ShopManageRoleServiceImpl",
+        "Spring.service.ShopManageSysUserClientService",
+        "Spring.service.ShopManageSysUserServiceImpl",
+        "Spring.domain.ShopManageMenu",
+        "Spring.domain.ShopManageRole",
+        "Spring.domain.ShopManageRoleMenu",
+        "Spring.domain.ShopManageSysRole",
+        "Spring.domain.ShopManageSysUser"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopManageRole.id",
+        "ShopManageSysRole.id",
+        "ShopManageMenu.name",
+        "ShopManageMenu.createTime",
+        "ShopManageMenu.createUser",
+        "ShopManageMenu.hidden",
+        "ShopManageMenu.icon",
+        "ShopManageMenu.permission",
+        "ShopManageRoleMenu.permission",
+        "ShopManageMenu.path",
+        "ShopManageRoleMenu.createTime",
+        "ShopManageSysUser.id",
+        "ShopManageRoleMenu.createUser",
+        "ShopManageSysRole.deleteStatus",
+        "ShopManageRoleMenu.id",
+        "ShopManageSysRole.sysUserId",
+        "ShopManageMenu.menuType",
+        "ShopManageRoleMenu.updateTime",
+        "ShopManageRoleMenu.roleId",
+        "ShopManageRoleMenu.updateUser",
+        "ShopManageMenu.component",
+        "ShopManageMenu.deleteStatus",
+        "ShopManageMenu.sequence",
+        "ShopManageSysUser.username",
+        "ShopManageRole.createTime",
+        "ShopManageSysUser.phone",
+        "ShopManageMenu.redirect",
+        "ShopManageSysUser.updateTime",
+        "ShopManageMenu.router",
+        "ShopManageSysUser.avatar",
+        "ShopManageRole.createUser",
+        "ShopManageRole.roleName",
+        "ShopManageSysUser.beAdmin",
+        "ShopManageSysUser.state",
+        "ShopManageRole.updateTime",
+        "ShopManageSysUser.updateUser",
+        "ShopManageSysRole.roleId",
+        "ShopManageRole.updateUser",
+        "ShopManageMenu.id",
+        "ShopManageRoleMenu.deleteStatus",
+        "ShopManageSysUser.createUser",
+        "ShopManageSysRole.updateTime",
+        "ShopManageSysUser.password",
+        "ShopManageSysRole.updateUser",
+        "ShopManageSysUser.createTime",
+        "ShopManageSysRole.createTime",
+        "ShopManageSysUser.deleteStatus",
+        "ShopManageRole.deleteStatus",
+        "ShopManageSysRole.createUser",
+        "ShopManageMenu.parentId",
+        "ShopManageMenu.updateUser",
+        "ShopManageRole.master",
+        "ShopManageMenu.updateTime"
+      ]
+    },
+    {
+      "name": "Service i",
+      "members": [
+        "Spring.service.ShopCartShopCartApiOrderCartServiceImpl",
+        "Spring.domain.ShopCartShopCartApiOrderCart"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopCartShopCartApiOrderCart.sellerOrderId",
+        "ShopCartShopCartApiOrderCart.id",
+        "ShopCartShopCartApiOrderCart.createUser",
+        "ShopCartShopCartApiOrderCart.sellerId",
+        "ShopCartShopCartApiOrderCart.createTime",
+        "ShopCartShopCartApiOrderCart.discountAmount",
+        "ShopCartShopCartApiOrderCart.deleteStatus",
+        "ShopCartShopCartApiOrderCart.quantity",
+        "ShopCartShopCartApiOrderCart.skuId",
+        "ShopCartShopCartApiOrderCart.userId",
+        "ShopCartShopCartApiOrderCart.updateUser",
+        "ShopCartShopCartApiOrderCart.skuAmount",
+        "ShopCartShopCartApiOrderCart.updateTime",
+        "ShopCartShopCartApiOrderCart.userOrderId"
+      ]
+    },
+    {
+      "name": "Service j",
+      "members": [
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsApprove"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopGoodsShopGoodsApiGoodsApprove.goodsId",
+        "ShopGoodsShopGoodsApiGoodsApprove.id",
+        "ShopGoodsShopGoodsApiGoodsApprove.updateUser",
+        "ShopGoodsShopGoodsApiGoodsApprove.skuId",
+        "ShopGoodsShopGoodsApiGoodsApprove.updateTime",
+        "ShopGoodsShopGoodsApiGoodsApprove.deleteStatus",
+        "ShopGoodsShopGoodsApiGoodsApprove.publishStatus",
+        "ShopGoodsShopGoodsApiGoodsApprove.createUser",
+        "ShopGoodsShopGoodsApiGoodsApprove.createTime",
+        "ShopGoodsShopGoodsApiGoodsApprove.description"
+      ]
+    },
+    {
+      "name": "Service k",
+      "members": [
+        "Spring.domain.ShopPlatformShopPlatformApiArea"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopPlatformShopPlatformApiArea.parentAreaCode",
+        "ShopPlatformShopPlatformApiArea.updateTime",
+        "ShopPlatformShopPlatformApiArea.updateUser",
+        "ShopPlatformShopPlatformApiArea.id",
+        "ShopPlatformShopPlatformApiArea.areaCode",
+        "ShopPlatformShopPlatformApiArea.deleteStatus",
+        "ShopPlatformShopPlatformApiArea.areaName",
+        "ShopPlatformShopPlatformApiArea.createTime",
+        "ShopPlatformShopPlatformApiArea.createUser"
+      ]
+    },
+    {
+      "name": "Service A",
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiActivityServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiAssembleServiceRuleImpl",
+        "Spring.service.ShopActivityShopActivityApiExchangeActivityRuleServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiExchangeServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiActivity",
+        "Spring.domain.ShopActivityShopActivityApiExchangeActivityRule"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiActivity.beginTime",
+        "ShopActivityShopActivityApiExchangeActivityRule.createTime",
+        "ShopActivityShopActivityApiExchangeActivityRule.activityId",
+        "ShopActivityShopActivityApiActivity.createTime",
+        "ShopActivityShopActivityApiActivity.id",
+        "ShopActivityShopActivityApiExchangeActivityRule.ruleName",
+        "ShopActivityShopActivityApiActivity.createUser",
+        "ShopActivityShopActivityApiExchangeActivityRule.createUser",
+        "ShopActivityShopActivityApiExchangeActivityRule.state",
+        "ShopActivityShopActivityApiActivity.deleteStatus",
+        "ShopActivityShopActivityApiActivity.activityImg",
+        "ShopActivityShopActivityApiExchangeActivityRule.id",
+        "ShopActivityShopActivityApiActivity.activityName",
+        "ShopActivityShopActivityApiExchangeActivityRule.deleteStatus",
+        "ShopActivityShopActivityApiActivity.updateUser",
+        "ShopActivityShopActivityApiExchangeActivityRule.orderAmount",
+        "ShopActivityShopActivityApiActivity.state",
+        "ShopActivityShopActivityApiActivity.activityType",
+        "ShopActivityShopActivityApiExchangeActivityRule.updateUser",
+        "ShopActivityShopActivityApiActivity.updateTime",
+        "ShopActivityShopActivityApiExchangeActivityRule.updateTime",
+        "ShopActivityShopActivityApiActivity.endTime"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [
+        "Spring.service.ShopUserShopUserApiFeedbackServiceImpl",
+        "Spring.domain.ShopUserShopUserApiFeedback"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopUserShopUserApiFeedback.images",
+        "ShopUserShopUserApiFeedback.deleteStatus",
+        "ShopUserShopUserApiFeedback.content",
+        "ShopUserShopUserApiFeedback.updateTime",
+        "ShopUserShopUserApiFeedback.updateUser",
+        "ShopUserShopUserApiFeedback.id",
+        "ShopUserShopUserApiFeedback.createTime",
+        "ShopUserShopUserApiFeedback.createUser",
+        "ShopUserShopUserApiFeedback.userId"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [
+        "Spring.service.ShopPlatformShopPlatformApiSMSServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiSMSTemplateServiceImpl",
+        "Spring.service.ShopUserShopUserApiSMSCodeServiceImpl",
+        "Spring.domain.ShopPlatformShopPlatformApiSMSTemplate"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopPlatformShopPlatformApiSMSTemplate.templateContent",
+        "ShopPlatformShopPlatformApiSMSTemplate.updateUser",
+        "ShopPlatformShopPlatformApiSMSTemplate.templateCode",
+        "ShopPlatformShopPlatformApiSMSTemplate.updateTime",
+        "ShopPlatformShopPlatformApiSMSTemplate.deleteStatus",
+        "ShopPlatformShopPlatformApiSMSTemplate.id",
+        "ShopPlatformShopPlatformApiSMSTemplate.createUser",
+        "ShopPlatformShopPlatformApiSMSTemplate.createTime"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [
+        "Spring.service.ShopOrderShopOrderApiOrderTradeServiceImpl",
+        "Spring.domain.ShopOrderShopOrderApiOrderTrade"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopOrderShopOrderApiOrderTrade.userId",
+        "ShopOrderShopOrderApiOrderTrade.deleteStatus",
+        "ShopOrderShopOrderApiOrderTrade.totalAmount",
+        "ShopOrderShopOrderApiOrderTrade.outTradeNo",
+        "ShopOrderShopOrderApiOrderTrade.id",
+        "ShopOrderShopOrderApiOrderTrade.payType",
+        "ShopOrderShopOrderApiOrderTrade.tradeNo",
+        "ShopOrderShopOrderApiOrderTrade.updateUser",
+        "ShopOrderShopOrderApiOrderTrade.createUser",
+        "ShopOrderShopOrderApiOrderTrade.tradeType",
+        "ShopOrderShopOrderApiOrderTrade.updateTime",
+        "ShopOrderShopOrderApiOrderTrade.createTime"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [
+        "Spring.domain.ShopJobShopJobApiJobLog"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopJobShopJobApiJobLog.executorServiceName",
+        "ShopJobShopJobApiJobLog.id",
+        "ShopJobShopJobApiJobLog.jobGroupId",
+        "ShopJobShopJobApiJobLog.triggerTime",
+        "ShopJobShopJobApiJobLog.jobId",
+        "ShopJobShopJobApiJobLog.alarmStatus",
+        "ShopJobShopJobApiJobLog.executorParam",
+        "ShopJobShopJobApiJobLog.triggerMsg",
+        "ShopJobShopJobApiJobLog.handleCode",
+        "ShopJobShopJobApiJobLog.triggerCode",
+        "ShopJobShopJobApiJobLog.executorServiceMethod",
+        "ShopJobShopJobApiJobLog.handleTime",
+        "ShopJobShopJobApiJobLog.handleMsg"
+      ]
+    },
+    {
+      "name": "Service F",
+      "members": [
+        "Spring.service.ShopUserShopUserApiUserServiceImpl",
+        "Spring.domain.ShopUserShopUserApiUser",
+        "Spring.domain.ShopUserShopUserApiUserInfo"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopUserShopUserApiUser.createTime",
+        "ShopUserShopUserApiUserInfo.updateTime",
+        "ShopUserShopUserApiUser.deleteStatus",
+        "ShopUserShopUserApiUser.createUser",
+        "ShopUserShopUserApiUserInfo.username",
+        "ShopUserShopUserApiUser.updateUser",
+        "ShopUserShopUserApiUserInfo.updateUser",
+        "ShopUserShopUserApiUserInfo.deleteStatus",
+        "ShopUserShopUserApiUserInfo.gender",
+        "ShopUserShopUserApiUser.id",
+        "ShopUserShopUserApiUserInfo.createTime",
+        "ShopUserShopUserApiUserInfo.birthday",
+        "ShopUserShopUserApiUser.password",
+        "ShopUserShopUserApiUser.phone",
+        "ShopUserShopUserApiUser.updateTime",
+        "ShopUserShopUserApiUserInfo.id",
+        "ShopUserShopUserApiUserInfo.avatar",
+        "ShopUserShopUserApiUserInfo.userId",
+        "ShopUserShopUserApiUserInfo.createUser"
+      ]
+    },
+    {
+      "name": "Service G",
+      "members": [
+        "Spring.service.ShopUserShopUserApiAddressServiceImpl",
+        "Spring.domain.ShopUserShopUserApiAddress"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopUserShopUserApiAddress.updateUser",
+        "ShopUserShopUserApiAddress.cityName",
+        "ShopUserShopUserApiAddress.label",
+        "ShopUserShopUserApiAddress.latitude",
+        "ShopUserShopUserApiAddress.deliveryAddress",
+        "ShopUserShopUserApiAddress.updateTime",
+        "ShopUserShopUserApiAddress.defaultAddress",
+        "ShopUserShopUserApiAddress.id",
+        "ShopUserShopUserApiAddress.longitude",
+        "ShopUserShopUserApiAddress.mobile",
+        "ShopUserShopUserApiAddress.houseNumber",
+        "ShopUserShopUserApiAddress.deleteStatus",
+        "ShopUserShopUserApiAddress.username",
+        "ShopUserShopUserApiAddress.userId",
+        "ShopUserShopUserApiAddress.createUser",
+        "ShopUserShopUserApiAddress.createTime"
+      ]
+    },
+    {
+      "name": "Service H",
+      "members": [
+        "Spring.domain.ShopOrderShopOrderApiSaleAfterOrder"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopOrderShopOrderApiSaleAfterOrder.updateUser",
+        "ShopOrderShopOrderApiSaleAfterOrder.deleteStatus",
+        "ShopOrderShopOrderApiSaleAfterOrder.createTime",
+        "ShopOrderShopOrderApiSaleAfterOrder.updateTime",
+        "ShopOrderShopOrderApiSaleAfterOrder.createUser",
+        "ShopOrderShopOrderApiSaleAfterOrder.id"
+      ]
+    },
+    {
+      "name": "Service I",
+      "members": [
+        "Spring.service.ShopPlatformShopPlatformApiDynamicFormServiceImpl",
+        "Spring.domain.ShopPlatformShopPlatformApiDynamicForm"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopPlatformShopPlatformApiDynamicForm.format",
+        "ShopPlatformShopPlatformApiDynamicForm.placeholder",
+        "ShopPlatformShopPlatformApiDynamicForm.max",
+        "ShopPlatformShopPlatformApiDynamicForm.clearable",
+        "ShopPlatformShopPlatformApiDynamicForm.type",
+        "ShopPlatformShopPlatformApiDynamicForm.showInput",
+        "ShopPlatformShopPlatformApiDynamicForm.beRange",
+        "ShopPlatformShopPlatformApiDynamicForm.model",
+        "ShopPlatformShopPlatformApiDynamicForm.filterable",
+        "ShopPlatformShopPlatformApiDynamicForm.timestamp",
+        "ShopPlatformShopPlatformApiDynamicForm.pattern",
+        "ShopPlatformShopPlatformApiDynamicForm.step",
+        "ShopPlatformShopPlatformApiDynamicForm.remoteUrl",
+        "ShopPlatformShopPlatformApiDynamicForm.min",
+        "ShopPlatformShopPlatformApiDynamicForm.name",
+        "ShopPlatformShopPlatformApiDynamicForm.id",
+        "ShopPlatformShopPlatformApiDynamicForm.rules",
+        "ShopPlatformShopPlatformApiDynamicForm.startPlaceholder",
+        "ShopPlatformShopPlatformApiDynamicForm.showLabel",
+        "ShopPlatformShopPlatformApiDynamicForm.multiple",
+        "ShopPlatformShopPlatformApiDynamicForm.bizType",
+        "ShopPlatformShopPlatformApiDynamicForm.dataType",
+        "ShopPlatformShopPlatformApiDynamicForm.editable",
+        "ShopPlatformShopPlatformApiDynamicForm.defaultValue",
+        "ShopPlatformShopPlatformApiDynamicForm.icon",
+        "ShopPlatformShopPlatformApiDynamicForm.disabled",
+        "ShopPlatformShopPlatformApiDynamicForm.allowHalf",
+        "ShopPlatformShopPlatformApiDynamicForm.showAlpha",
+        "ShopPlatformShopPlatformApiDynamicForm.customClass",
+        "ShopPlatformShopPlatformApiDynamicForm.endPlaceholder",
+        "ShopPlatformShopPlatformApiDynamicForm.readonly",
+        "ShopPlatformShopPlatformApiDynamicForm.inline",
+        "ShopPlatformShopPlatformApiDynamicForm.arrowControl",
+        "ShopPlatformShopPlatformApiDynamicForm.width"
+      ]
+    },
+    {
+      "name": "Service J",
+      "members": [
+        "Spring.domain.ShopOrderShopOrderApiSellerOrder"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopOrderShopOrderApiSellerOrder.updateUser",
+        "ShopOrderShopOrderApiSellerOrder.addrId",
+        "ShopOrderShopOrderApiSellerOrder.deliveryTime",
+        "ShopOrderShopOrderApiSellerOrder.updateTime",
+        "ShopOrderShopOrderApiSellerOrder.sellerId",
+        "ShopOrderShopOrderApiSellerOrder.orderAmount",
+        "ShopOrderShopOrderApiSellerOrder.userId",
+        "ShopOrderShopOrderApiSellerOrder.orderType",
+        "ShopOrderShopOrderApiSellerOrder.self",
+        "ShopOrderShopOrderApiSellerOrder.deleteStatus",
+        "ShopOrderShopOrderApiSellerOrder.payType",
+        "ShopOrderShopOrderApiSellerOrder.createUser",
+        "ShopOrderShopOrderApiSellerOrder.createTime",
+        "ShopOrderShopOrderApiSellerOrder.discountAmount",
+        "ShopOrderShopOrderApiSellerOrder.orderStatus",
+        "ShopOrderShopOrderApiSellerOrder.orderCode",
+        "ShopOrderShopOrderApiSellerOrder.id"
+      ]
+    },
+    {
+      "name": "Service K",
+      "members": [
+        "Spring.service.ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl",
+        "Spring.domain.ShopElasticsearchShopElasticsearchApiESUserOrder"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.ids",
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.updateUser",
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.deleteStatus",
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.updateTime",
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.createUser",
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.id",
+        "ShopElasticsearchShopElasticsearchApiESUserOrder.createTime"
+      ]
+    },
+    {
+      "name": "Service L",
+      "members": [
+        "Spring.service.ShopUserShopUserApiUserAccountServiceImpl",
+        "Spring.domain.ShopUserShopUserApiUserAccount"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopUserShopUserApiUserAccount.updateTime",
+        "ShopUserShopUserApiUserAccount.createUser",
+        "ShopUserShopUserApiUserAccount.deleteStatus",
+        "ShopUserShopUserApiUserAccount.id",
+        "ShopUserShopUserApiUserAccount.updateUser",
+        "ShopUserShopUserApiUserAccount.createTime",
+        "ShopUserShopUserApiUserAccount.userId",
+        "ShopUserShopUserApiUserAccount.integral"
+      ]
+    },
+    {
+      "name": "Service M",
+      "members": [
+        "Spring.domain.ShopOrderShopOrderApiOrderItem"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopOrderShopOrderApiOrderItem.updateTime",
+        "ShopOrderShopOrderApiOrderItem.goodsSkuId",
+        "ShopOrderShopOrderApiOrderItem.deleteStatus",
+        "ShopOrderShopOrderApiOrderItem.updateUser",
+        "ShopOrderShopOrderApiOrderItem.purchaseQuantity",
+        "ShopOrderShopOrderApiOrderItem.userId",
+        "ShopOrderShopOrderApiOrderItem.createTime",
+        "ShopOrderShopOrderApiOrderItem.createUser",
+        "ShopOrderShopOrderApiOrderItem.sellerId",
+        "ShopOrderShopOrderApiOrderItem.sellerOrderId",
+        "ShopOrderShopOrderApiOrderItem.userOrderId",
+        "ShopOrderShopOrderApiOrderItem.id",
+        "ShopOrderShopOrderApiOrderItem.purchaseAmount"
+      ]
+    },
+    {
+      "name": "Service N",
+      "members": [
+        "Spring.service.ShopJobShopJobApiJobServiceImpl",
+        "Spring.domain.ShopJobShopJobApiJobGroup",
+        "Spring.domain.ShopJobShopJobApiJobInfo"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopJobShopJobApiJobInfo.createTime",
+        "ShopJobShopJobApiJobInfo.id",
+        "ShopJobShopJobApiJobInfo.cron",
+        "ShopJobShopJobApiJobInfo.params",
+        "ShopJobShopJobApiJobGroup.groupName",
+        "ShopJobShopJobApiJobGroup.id",
+        "ShopJobShopJobApiJobInfo.description",
+        "ShopJobShopJobApiJobInfo.jobName",
+        "ShopJobShopJobApiJobInfo.serviceName",
+        "ShopJobShopJobApiJobInfo.jobGroupId",
+        "ShopJobShopJobApiJobInfo.serviceMethod",
+        "ShopJobShopJobApiJobInfo.updateTime",
+        "ShopJobShopJobApiJobInfo.updateUser",
+        "ShopJobShopJobApiJobInfo.jobStatus",
+        "ShopJobShopJobApiJobGroup.sequence",
+        "ShopJobShopJobApiJobInfo.jobGroup"
+      ]
+    },
+    {
+      "name": "Service O",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityRule"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiAssembleActivityRule.id",
+        "ShopActivityShopActivityApiAssembleActivityRule.serverStatus",
+        "ShopActivityShopActivityApiAssembleActivityRule.description",
+        "ShopActivityShopActivityApiAssembleActivityRule.activityId",
+        "ShopActivityShopActivityApiAssembleActivityRule.updateUser",
+        "ShopActivityShopActivityApiAssembleActivityRule.deleteStatus",
+        "ShopActivityShopActivityApiAssembleActivityRule.updateTime",
+        "ShopActivityShopActivityApiAssembleActivityRule.createUser",
+        "ShopActivityShopActivityApiAssembleActivityRule.purchaseLimit",
+        "ShopActivityShopActivityApiAssembleActivityRule.createTime",
+        "ShopActivityShopActivityApiAssembleActivityRule.assembleCount"
+      ]
+    },
+    {
+      "name": "Service P",
+      "members": [
+        "Spring.service.ShopRiskShopRiskApiBlackListServiceImpl",
+        "Spring.domain.ShopRiskShopRiskApiBlackList"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopRiskShopRiskApiBlackList.createTime",
+        "ShopRiskShopRiskApiBlackList.id",
+        "ShopRiskShopRiskApiBlackList.createUser",
+        "ShopRiskShopRiskApiBlackList.state",
+        "ShopRiskShopRiskApiBlackList.deleteStatus",
+        "ShopRiskShopRiskApiBlackList.phone",
+        "ShopRiskShopRiskApiBlackList.updateTime",
+        "ShopRiskShopRiskApiBlackList.updateUser"
+      ]
+    },
+    {
+      "name": "Service Q",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiExchangeActivityGoods"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiExchangeActivityGoods.updateUser",
+        "ShopActivityShopActivityApiExchangeActivityGoods.createTime",
+        "ShopActivityShopActivityApiExchangeActivityGoods.deleteStatus",
+        "ShopActivityShopActivityApiExchangeActivityGoods.createUser",
+        "ShopActivityShopActivityApiExchangeActivityGoods.goodsId",
+        "ShopActivityShopActivityApiExchangeActivityGoods.updateTime",
+        "ShopActivityShopActivityApiExchangeActivityGoods.id",
+        "ShopActivityShopActivityApiExchangeActivityGoods.ruleId",
+        "ShopActivityShopActivityApiExchangeActivityGoods.activityId"
+      ]
+    },
+    {
+      "name": "Service R",
+      "members": [
+        "Spring.service.ShopCartShopCartApiCartServiceImpl",
+        "Spring.domain.ShopCartShopCartApiGoodsCart"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopCartShopCartApiGoodsCart.updateUser",
+        "ShopCartShopCartApiGoodsCart.deleteStatus",
+        "ShopCartShopCartApiGoodsCart.userId",
+        "ShopCartShopCartApiGoodsCart.skuId",
+        "ShopCartShopCartApiGoodsCart.createTime",
+        "ShopCartShopCartApiGoodsCart.updateTime",
+        "ShopCartShopCartApiGoodsCart.createUser",
+        "ShopCartShopCartApiGoodsCart.id",
+        "ShopCartShopCartApiGoodsCart.quantity",
+        "ShopCartShopCartApiGoodsCart.sellerId"
+      ]
+    },
+    {
+      "name": "Service S",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiSecKillRule"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiSecKillRule.updateTime",
+        "ShopActivityShopActivityApiSecKillRule.createUser",
+        "ShopActivityShopActivityApiSecKillRule.deleteStatus",
+        "ShopActivityShopActivityApiSecKillRule.createTime",
+        "ShopActivityShopActivityApiSecKillRule.updateUser",
+        "ShopActivityShopActivityApiSecKillRule.id"
+      ]
+    },
+    {
+      "name": "Service T",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityGoods"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiAssembleActivityGoods.ruleId",
+        "ShopActivityShopActivityApiAssembleActivityGoods.createTime",
+        "ShopActivityShopActivityApiAssembleActivityGoods.activityId",
+        "ShopActivityShopActivityApiAssembleActivityGoods.deleteStatus",
+        "ShopActivityShopActivityApiAssembleActivityGoods.createUser",
+        "ShopActivityShopActivityApiAssembleActivityGoods.updateTime",
+        "ShopActivityShopActivityApiAssembleActivityGoods.updateUser",
+        "ShopActivityShopActivityApiAssembleActivityGoods.id",
+        "ShopActivityShopActivityApiAssembleActivityGoods.goodsId"
+      ]
+    },
+    {
+      "name": "Service U",
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiExchangeActivityMember"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiExchangeActivityMember.createUser",
+        "ShopActivityShopActivityApiExchangeActivityMember.updateTime",
+        "ShopActivityShopActivityApiExchangeActivityMember.createTime",
+        "ShopActivityShopActivityApiExchangeActivityMember.id",
+        "ShopActivityShopActivityApiExchangeActivityMember.deleteStatus",
+        "ShopActivityShopActivityApiExchangeActivityMember.activityId",
+        "ShopActivityShopActivityApiExchangeActivityMember.goodsId",
+        "ShopActivityShopActivityApiExchangeActivityMember.phone",
+        "ShopActivityShopActivityApiExchangeActivityMember.ruleId",
+        "ShopActivityShopActivityApiExchangeActivityMember.userId",
+        "ShopActivityShopActivityApiExchangeActivityMember.updateUser"
+      ]
+    },
+    {
+      "name": "Service V",
+      "members": [
+        "Spring.service.ShopAuthShopAuthServerApiUserServiceImpl",
+        "Spring.service.ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiAppClassificationServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsApproveServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsClassServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSpuServiceImpl",
+        "Spring.service.ShopManageCommonEnumService",
+        "Spring.service.ShopManageDashboardServiceImpl",
+        "Spring.service.ShopManageGeneratorService",
+        "Spring.service.ShopOrderShopOrderApiSellerOrderServiceImpl",
+        "Spring.service.ShopOssAliyunServiceImpl",
+        "Spring.service.ShopOssQiniuServiceImpl",
+        "Spring.service.ShopSellerShopSellerApiSellerLoginServiceImpl",
+        "Spring.service.ShopSellerShopSellerApiSellerSubscribeServiceImpl",
+        "Spring.service.ShopUserShopUserApiAreaServiceImpl",
+        "Spring.service.ShopUserShopUserApiGoodsCartServiceImpl",
+        "Spring.service.ShopUserShopUserApiInitService",
+        "Spring.service.ShopUserShopUserApiReceiverService",
+        "Spring.service.ShopUserShopUserApiSignServiceImpl",
+        "Spring.domain.ShopGoodsShopGoodsApiGoods",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsClass",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSku",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSkuImage",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSkuStock",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSpu"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopGoodsShopGoodsApiGoodsClass.createUser",
+        "ShopGoodsShopGoodsApiGoodsClass.createTime",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.skuId",
+        "ShopGoodsShopGoodsApiGoods.updateUser",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.id",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.updateTime",
+        "ShopGoodsShopGoodsApiGoodsSpu.spuName",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.updateUser",
+        "ShopGoodsShopGoodsApiGoods.updateTime",
+        "ShopGoodsShopGoodsApiGoods.endTime",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.goodsId",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.updateTime",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.deleteStatus",
+        "ShopGoodsShopGoodsApiGoodsSpu.createTime",
+        "ShopGoodsShopGoodsApiGoodsSpu.createUser",
+        "ShopGoodsShopGoodsApiGoods.recommend",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.createTime",
+        "ShopGoodsShopGoodsApiGoodsSku.state",
+        "ShopGoodsShopGoodsApiGoodsClass.id",
+        "ShopGoodsShopGoodsApiGoodsSku.skuCode",
+        "ShopGoodsShopGoodsApiGoodsSpu.sequence",
+        "ShopGoodsShopGoodsApiGoods.description",
+        "ShopGoodsShopGoodsApiGoodsSku.createUser",
+        "ShopGoodsShopGoodsApiGoodsSku.weight",
+        "ShopGoodsShopGoodsApiGoodsSku.createTime",
+        "ShopGoodsShopGoodsApiGoodsSpu.id",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.deleteStatus",
+        "ShopGoodsShopGoodsApiGoodsClass.spuId",
+        "ShopGoodsShopGoodsApiGoods.unit",
+        "ShopGoodsShopGoodsApiGoods.createUser",
+        "ShopGoodsShopGoodsApiGoodsClass.deleteStatus",
+        "ShopGoodsShopGoodsApiGoods.createTime",
+        "ShopGoodsShopGoodsApiGoods.goodsType",
+        "ShopGoodsShopGoodsApiGoodsSku.skuName",
+        "ShopGoodsShopGoodsApiGoodsSku.discountAmount",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.images",
+        "ShopGoodsShopGoodsApiGoods.publishStatus",
+        "ShopGoodsShopGoodsApiGoods.beginTime",
+        "ShopGoodsShopGoodsApiGoodsSku.skuAmount",
+        "ShopGoodsShopGoodsApiGoodsSpu.spuImage",
+        "ShopGoodsShopGoodsApiGoods.deleteStatus",
+        "ShopGoodsShopGoodsApiGoods.goodsState",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.goodsId",
+        "ShopGoodsShopGoodsApiGoodsSku.updateUser",
+        "ShopGoodsShopGoodsApiGoodsSku.updateTime",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.createUser",
+        "ShopGoodsShopGoodsApiGoodsSpu.updateTime",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.id",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.stock",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.skuId",
+        "ShopGoodsShopGoodsApiGoodsSku.id",
+        "ShopGoodsShopGoodsApiGoodsSpu.updateUser",
+        "ShopGoodsShopGoodsApiGoodsSku.deleteStatus",
+        "ShopGoodsShopGoodsApiGoods.goodsClassId",
+        "ShopGoodsShopGoodsApiGoodsSkuStock.updateUser",
+        "ShopGoodsShopGoodsApiGoodsClass.className",
+        "ShopGoodsShopGoodsApiGoodsClass.sequence",
+        "ShopGoodsShopGoodsApiGoodsClass.updateTime",
+        "ShopGoodsShopGoodsApiGoods.id",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.createTime",
+        "ShopGoodsShopGoodsApiGoodsSkuImage.createUser",
+        "ShopGoodsShopGoodsApiGoodsSku.description",
+        "ShopGoodsShopGoodsApiGoodsClass.updateUser",
+        "ShopGoodsShopGoodsApiGoodsSpu.deleteStatus",
+        "ShopGoodsShopGoodsApiGoodsSku.goodsId"
+      ]
+    },
+    {
+      "name": "Service W",
+      "members": [
+        "Spring.service.ShopManageSystemConfigServiceImpl",
+        "Spring.domain.ShopPlatformShopPlatformApiSystemConfig"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopPlatformShopPlatformApiSystemConfig.configStatus",
+        "ShopPlatformShopPlatformApiSystemConfig.description",
+        "ShopPlatformShopPlatformApiSystemConfig.configName",
+        "ShopPlatformShopPlatformApiSystemConfig.deleteStatus",
+        "ShopPlatformShopPlatformApiSystemConfig.createTime",
+        "ShopPlatformShopPlatformApiSystemConfig.createUser",
+        "ShopPlatformShopPlatformApiSystemConfig.configType",
+        "ShopPlatformShopPlatformApiSystemConfig.updateTime",
+        "ShopPlatformShopPlatformApiSystemConfig.id",
+        "ShopPlatformShopPlatformApiSystemConfig.updateUser"
+      ]
+    },
+    {
+      "name": "Service X",
+      "members": [
+        "Spring.service.ShopOrderShopOrderApiAppUserOrderServiceImpl",
+        "Spring.service.ShopOrderShopOrderApiUserOrderServiceImpl",
+        "Spring.domain.ShopOrderShopOrderApiUserOrder"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopOrderShopOrderApiUserOrder.phone",
+        "ShopOrderShopOrderApiUserOrder.integral",
+        "ShopOrderShopOrderApiUserOrder.sellerId",
+        "ShopOrderShopOrderApiUserOrder.couponId",
+        "ShopOrderShopOrderApiUserOrder.orderCode",
+        "ShopOrderShopOrderApiUserOrder.deleteStatus",
+        "ShopOrderShopOrderApiUserOrder.updateTime",
+        "ShopOrderShopOrderApiUserOrder.updateUser",
+        "ShopOrderShopOrderApiUserOrder.integralAmount",
+        "ShopOrderShopOrderApiUserOrder.addrId",
+        "ShopOrderShopOrderApiUserOrder.userId",
+        "ShopOrderShopOrderApiUserOrder.id",
+        "ShopOrderShopOrderApiUserOrder.orderStatus",
+        "ShopOrderShopOrderApiUserOrder.self",
+        "ShopOrderShopOrderApiUserOrder.orderType",
+        "ShopOrderShopOrderApiUserOrder.orderAmount",
+        "ShopOrderShopOrderApiUserOrder.createTime",
+        "ShopOrderShopOrderApiUserOrder.payAmount",
+        "ShopOrderShopOrderApiUserOrder.createUser",
+        "ShopOrderShopOrderApiUserOrder.discountAmount",
+        "ShopOrderShopOrderApiUserOrder.payType"
+      ]
+    },
+    {
+      "name": "Service Y",
+      "members": [
+        "Spring.service.ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiSystemConfigServiceImpl",
+        "Spring.domain.ShopPlatformShopPlatformApiSystemConfigDetail"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopPlatformShopPlatformApiSystemConfigDetail.configStatus",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.id",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.deleteStatus",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.configName",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.configValue",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.configType",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.createTime",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.createUser",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.updateTime",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.configKey",
+        "ShopPlatformShopPlatformApiSystemConfigDetail.updateUser"
+      ]
+    },
+    {
+      "name": "Service Z",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiInviteCode"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiInviteCode.userId",
+        "ShopActivityShopActivityApiInviteCode.updateUser",
+        "ShopActivityShopActivityApiInviteCode.deleteStatus",
+        "ShopActivityShopActivityApiInviteCode.createTime",
+        "ShopActivityShopActivityApiInviteCode.createUser",
+        "ShopActivityShopActivityApiInviteCode.templateId",
+        "ShopActivityShopActivityApiInviteCode.updateTime",
+        "ShopActivityShopActivityApiInviteCode.code",
+        "ShopActivityShopActivityApiInviteCode.id"
+      ]
+    },
+    {
+      "name": "Service [",
+      "members": [
+        "Spring.service.ShopElasticsearchShopElasticsearchApiGoodsServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl",
+        "Spring.domain.ShopElasticsearchShopElasticsearchApiESGoods"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopElasticsearchShopElasticsearchApiESGoods.spuId",
+        "ShopElasticsearchShopElasticsearchApiESGoods.createTime",
+        "ShopElasticsearchShopElasticsearchApiESGoods.state",
+        "ShopElasticsearchShopElasticsearchApiESGoods.unit",
+        "ShopElasticsearchShopElasticsearchApiESGoods.id",
+        "ShopElasticsearchShopElasticsearchApiESGoods.goodsType",
+        "ShopElasticsearchShopElasticsearchApiESGoods.createUser",
+        "ShopElasticsearchShopElasticsearchApiESGoods.publishStatus",
+        "ShopElasticsearchShopElasticsearchApiESGoods.recommend",
+        "ShopElasticsearchShopElasticsearchApiESGoods.description",
+        "ShopElasticsearchShopElasticsearchApiESGoods.deleteStatus",
+        "ShopElasticsearchShopElasticsearchApiESGoods.gcsId",
+        "ShopElasticsearchShopElasticsearchApiESGoods.name",
+        "ShopElasticsearchShopElasticsearchApiESGoods.updateUser",
+        "ShopElasticsearchShopElasticsearchApiESGoods.goodsPropertyGroupId",
+        "ShopElasticsearchShopElasticsearchApiESGoods.brandId",
+        "ShopElasticsearchShopElasticsearchApiESGoods.updateTime"
+      ]
+    },
+    {
+      "name": "Service \\",
+      "members": [
+        "Spring.domain.ShopElasticsearchShopElasticsearchApiESSellerOrder"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.updateTime",
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.ids",
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.id",
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.deleteStatus",
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.updateUser",
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.createUser",
+        "ShopElasticsearchShopElasticsearchApiESSellerOrder.createTime"
+      ]
+    },
+    {
+      "name": "Service ]",
+      "members": [
+        "Spring.domain.ShopOrderShopOrderApiOrderEvaluate"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopOrderShopOrderApiOrderEvaluate.updateUser",
+        "ShopOrderShopOrderApiOrderEvaluate.updateTime",
+        "ShopOrderShopOrderApiOrderEvaluate.userId",
+        "ShopOrderShopOrderApiOrderEvaluate.id",
+        "ShopOrderShopOrderApiOrderEvaluate.deleteStatus",
+        "ShopOrderShopOrderApiOrderEvaluate.content",
+        "ShopOrderShopOrderApiOrderEvaluate.createUser",
+        "ShopOrderShopOrderApiOrderEvaluate.createTime"
+      ]
+    },
+    {
+      "name": "Service ^",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityRecord"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiAssembleActivityRecord.id",
+        "ShopActivityShopActivityApiAssembleActivityRecord.createUser",
+        "ShopActivityShopActivityApiAssembleActivityRecord.status",
+        "ShopActivityShopActivityApiAssembleActivityRecord.updateUser",
+        "ShopActivityShopActivityApiAssembleActivityRecord.updateTime",
+        "ShopActivityShopActivityApiAssembleActivityRecord.createTime",
+        "ShopActivityShopActivityApiAssembleActivityRecord.deleteStatus",
+        "ShopActivityShopActivityApiAssembleActivityRecord.activityId"
+      ]
+    },
+    {
+      "name": "Service _",
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiIntegralLog"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopActivityShopActivityApiIntegralLog.integral",
+        "ShopActivityShopActivityApiIntegralLog.deleteStatus",
+        "ShopActivityShopActivityApiIntegralLog.description",
+        "ShopActivityShopActivityApiIntegralLog.id",
+        "ShopActivityShopActivityApiIntegralLog.updateUser",
+        "ShopActivityShopActivityApiIntegralLog.createUser",
+        "ShopActivityShopActivityApiIntegralLog.updateTime",
+        "ShopActivityShopActivityApiIntegralLog.userId",
+        "ShopActivityShopActivityApiIntegralLog.createTime"
+      ]
+    },
+    {
+      "name": "Service `",
+      "members": [
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSkuTag"
+      ],
+      "servicecutter_nanoentities": [
+        "ShopGoodsShopGoodsApiGoodsSkuTag.goodsId",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.deleteStatus",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.skuId",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.createTime",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.createUser",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.id",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.name",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.updateTime",
+        "ShopGoodsShopGoodsApiGoodsSkuTag.updateUser"
+      ]
+    }
+  ]
+}

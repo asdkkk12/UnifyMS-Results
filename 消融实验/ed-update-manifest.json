@@ -1,0 +1,137 @@
+{
+  "sourceMarkdown": "/Users/yuanyaowu/Desktop/消融实验/汇总Case.md",
+  "sourceSha256": "e6f60bfa218d7b0c9e3eeee377889b996f2a3d4aebf2f27a1faf925302621c10",
+  "outputSha256": "09e7884a9f2536e2a993c0dffc5e54725234dce9938d523f372953b195058c5c",
+  "cases": [
+    "CoCoME",
+    "Library"
+  ],
+  "totalRuns": 80,
+  "allMeansAndSampleStdFromPerRunDistances": true,
+  "statistics": {
+    "CoCoME": {
+      "full": {
+        "method": "Full：完整方法",
+        "n": 10,
+        "mean": 1.3574043532647766,
+        "sampleStd": 0.1117472679619562,
+        "min": 1.1374477728371737,
+        "max": 1.4940407518137018,
+        "metricMeans": {
+          "IFN": 4.09357,
+          "CHD": 0.3121,
+          "Instability": 0.41683000000000003,
+          "UCM": 0.35241,
+          "CMQ": 0.28098
+        }
+      },
+      "without-offline": {
+        "method": "−O：无离线选参",
+        "n": 10,
+        "mean": 1.4846449572588456,
+        "sampleStd": 0.08923855264286845,
+        "min": 1.3756035590736655,
+        "max": 1.6602217199991216,
+        "metricMeans": {
+          "IFN": 5.04166,
+          "CHD": 0.26555,
+          "Instability": 0.43532,
+          "UCM": 0.32982,
+          "CMQ": 0.24648
+        }
+      },
+      "without-probability": {
+        "method": "−P：无动态概率",
+        "n": 10,
+        "mean": 1.390796207862979,
+        "sampleStd": 0.05738806120637799,
+        "min": 1.2853081778773805,
+        "max": 1.4322131298635408,
+        "metricMeans": {
+          "IFN": 3.22,
+          "CHD": 0.30121,
+          "Instability": 0.45646,
+          "UCM": 0.32596,
+          "CMQ": 0.18646000000000001
+        }
+      },
+      "without-guidance": {
+        "method": "−G：无候选引导",
+        "n": 10,
+        "mean": 1.3822526301253961,
+        "sampleStd": 0.07617174565861701,
+        "min": 1.229713886082223,
+        "max": 1.4464344712473935,
+        "metricMeans": {
+          "IFN": 3.835,
+          "CHD": 0.3102,
+          "Instability": 0.45242,
+          "UCM": 0.3178,
+          "CMQ": 0.20739
+        }
+      }
+    },
+    "Library": {
+      "full": {
+        "method": "Full：完整方法",
+        "n": 10,
+        "mean": 1.052590507731513,
+        "sampleStd": 0.1678975560204138,
+        "min": 0.809115098138155,
+        "max": 1.300299155563308,
+        "metricMeans": {
+          "IFN": 3.6833299999999998,
+          "CHD": 0.38027,
+          "Instability": 0.50306,
+          "UCM": 0.15515,
+          "CMQ": 0.01586
+        }
+      },
+      "without-offline": {
+        "method": "−O：无离线选参",
+        "n": 10,
+        "mean": 1.1864127859840687,
+        "sampleStd": 0.246254095632682,
+        "min": 0.809115098138155,
+        "max": 1.4831328691671344,
+        "metricMeans": {
+          "IFN": 4.31834,
+          "CHD": 0.34626999999999997,
+          "Instability": 0.48676,
+          "UCM": 0.18766,
+          "CMQ": 0.013049999999999999
+        }
+      },
+      "without-probability": {
+        "method": "−P：无动态概率",
+        "n": 10,
+        "mean": 1.0101106209001487,
+        "sampleStd": 0.16816925876708347,
+        "min": 0.809115098138155,
+        "max": 1.3167334155465737,
+        "metricMeans": {
+          "IFN": 3.2,
+          "CHD": 0.36687,
+          "Instability": 0.52,
+          "UCM": 0.14838,
+          "CMQ": 0.016
+        }
+      },
+      "without-guidance": {
+        "method": "−G：无候选引导",
+        "n": 10,
+        "mean": 1.1914890275677905,
+        "sampleStd": 0.15348880300167464,
+        "min": 0.9619289858409069,
+        "max": 1.476540266532136,
+        "metricMeans": {
+          "IFN": 4.33333,
+          "CHD": 0.36869999999999997,
+          "Instability": 0.48806,
+          "UCM": 0.15576,
+          "CMQ": 0.021079999999999998
+        }
+      }
+    }
+  }
+}

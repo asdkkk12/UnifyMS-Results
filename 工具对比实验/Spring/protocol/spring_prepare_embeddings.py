@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import argparse,json,shutil
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument('--extracted',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
+shutil.copy2(a.extracted/'java-embedding/typeData.json',a.output/'typeData.json');records=json.loads((a.output/'typeData.json').read_text());manifest={'source':'Java AST-selected actual source files','records':len(records),'record_sources':[{'fullName':r['fullName'],'java_class':r['java_class'],'path':r['source_path'],'literal_assignments_redacted':r['literal_assignments_redacted']} for r in records],'note':'Actual Java source for selected Spring @Service implementation classes and module-qualified mapper/annotation-selected persistent classes; generated Remodel stubs are not sent.'};(a.output/'conversion_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');print('actual Java records',len(records))

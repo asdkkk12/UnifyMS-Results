@@ -1,0 +1,20 @@
+{
+  "source": "input/extraction.json",
+  "nonempty_usecases": 18,
+  "omitted_stateless_usecases": [
+    "ApiPassengerTokenService",
+    "ServiceMapMapDicDistrictClient",
+    "ServiceMapMapDirectionClient",
+    "ServiceMapPointClient",
+    "ServiceMapServiceClient",
+    "ServiceMapTerminalClient",
+    "ServiceMapTrackClient",
+    "ServiceMapDirectionService",
+    "ServiceMapPointService",
+    "ServiceMapServiceMapService",
+    "ServiceMapTerminalService",
+    "ServiceMapTrackService",
+    "ServiceVerifycodeVerifyCodeService"
+  ],
+  "policy": "AST class-to-entity reachability; entity-level access expanded conservatively to all its fields. No fabricated sentinel entity, guessed foreign keys or ownership constraints."
+}

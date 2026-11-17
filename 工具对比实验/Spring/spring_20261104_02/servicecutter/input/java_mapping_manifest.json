@@ -1,0 +1,28 @@
+{
+  "source": "input/extraction.json",
+  "native_algorithm": "Chinese Whispers",
+  "cwNodeWeighting": 0,
+  "actual_java_fields": 645,
+  "nonempty_usecases": 48,
+  "omitted_stateless_usecases": [
+    "ShopAuthShopAuthServerApiUserServiceImpl",
+    "ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl",
+    "ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl",
+    "ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl",
+    "ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl",
+    "ShopManageCommonEnumService",
+    "ShopManageGeneratorService",
+    "ShopManageDashboardServiceImpl",
+    "ShopOrderShopOrderApiSellerOrderServiceImpl",
+    "ShopOssAliyunServiceImpl",
+    "ShopOssQiniuServiceImpl",
+    "ShopSellerShopSellerApiSellerLoginServiceImpl",
+    "ShopSellerShopSellerApiSellerSubscribeServiceImpl",
+    "ShopUserShopUserApiInitService",
+    "ShopUserShopUserApiReceiverService",
+    "ShopUserShopUserApiAreaServiceImpl",
+    "ShopUserShopUserApiGoodsCartServiceImpl",
+    "ShopUserShopUserApiSignServiceImpl"
+  ],
+  "policy": "Actual Java field names only; entity-level AST reachability expanded to all fields as conservative co-access. No invented type-token attributes, sentinel references, guessed foreign keys or owner groups. Chinese Whispers selected for non-K disconnected graph handling; one native run, no quality-based selection. Native Chinese Whispers is fixed before this case; no clustering-quality-based algorithm selection."
+}

@@ -1,0 +1,13 @@
+{
+  "source": "../../input/extraction.json",
+  "adapter": "piggy_metrics_servicecutter.py",
+  "model": "servicecutter_model.json",
+  "user_representations": "servicecutter_user_representations.json",
+  "counts": {
+    "entities": 13,
+    "actual_fields": 48,
+    "nonempty_usecases": 6
+  },
+  "policy": "Actual Java AST fields and conservative entity-level co-access; no sentinel, inferred owner or guessed foreign key.",
+  "supersedes_generic_manifest": true
+}

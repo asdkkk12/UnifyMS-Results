@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="b0d36476c404b6692ddd7ceb82089cde7388e2804d26b2580cdf89e06e075f1c" runHash="57c0716f6264eb065e8f2ed015631efc546a703ffe077acfe737235752989242" snapshotHash="7565b5f1cbe799611251ceac9d135f432230cb331b91218f16a81300725229ac" taskKey="02cd4ac69e9db9a9c9da01dd8452b1fb3e2f4d243a8a215d4bce4136947139b5" configId="C5" seed="109" exportVersion="merm-export-v1">
+    <UseCaseModel name="cocome.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="processSale" />
+        <uc name="orderProducts" />
+        <uc name="receiveOrderedProduct" />
+        <uc name="showStockReports" />
+        <uc name="changePrice" />
+        <uc name="listSuppliers" />
+        <uc name="openStore" />
+        <uc name="closeStore" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="openCashDesk" />
+        <uc name="closeCashDesk" />
+      </usecasecontext>
+      <actor name="Administrator" uc="" />
+      <actor name="Cashier" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.0/@uc.0" />
+      <actor name="StoreManager" uc="/0/@UseCaseModel/@usecasecontext.0/@uc.4 /0/@UseCaseModel/@usecasecontext.0/@uc.7 /0/@UseCaseModel/@usecasecontext.0/@uc.5 /0/@UseCaseModel/@usecasecontext.0/@uc.6 /0/@UseCaseModel/@usecasecontext.0/@uc.1 /0/@UseCaseModel/@usecasecontext.0/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.3" />
+    </UseCaseModel>
+    <DomainModel name="cocome.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.0">
+        <userinterface name="UserInterface">
+          <operation name="changePrice()" />
+          <operation name="chooseSupplier()" />
+          <operation name="closeStore()" />
+          <operation name="endSale()" />
+          <operation name="enterItem()" />
+          <operation name="listAllOutOfStoreProducts()" />
+          <operation name="listSuppliers()" />
+          <operation name="makeCardPayment()" />
+          <operation name="makeCashPayment()" />
+          <operation name="makeNewOrder()" />
+          <operation name="makeNewSale()" />
+          <operation name="openStore()" />
+          <operation name="orderItem()" />
+          <operation name="placeOrder()" />
+          <operation name="receiveOrderedProduct()" />
+          <operation name="showStockReports()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findCashDeskbyID()" />
+        </userinterface>
+        <entity name="Store">
+          <attributes name="Id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Address">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="IsOpened">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="AssociationCashdeskes" entity="/0/@DomainModel/@entitycontext.0/@entity.2" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="Productcatalogs" entity="/0/@DomainModel/@entitycontext.0/@entity.1" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="Items" entity="/0/@DomainModel/@entitycontext.0/@entity.6" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="Cashiers" entity="/0/@DomainModel/@entitycontext.0/@entity.4" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="Sales" entity="/0/@DomainModel/@entitycontext.0/@entity.3" type="Association" ismultiple="true" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="ProductCatalog">
+          <attributes name="Id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <reference name="ContainedItems" entity="/0/@DomainModel/@entitycontext.0/@entity.6" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="CashDesk">
+          <attributes name="Id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="IsOpened">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="ContainedSales" entity="/0/@DomainModel/@entitycontext.0/@entity.3" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="BelongedStore" entity="/0/@DomainModel/@entitycontext.0/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Sale">
+          <attributes name="IsComplete">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="Amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="IsReadytoPay">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="Belongedstore" entity="/0/@DomainModel/@entitycontext.0/@entity.0" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="BelongedCashDesk" entity="/0/@DomainModel/@entitycontext.0/@entity.2" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="ContainedSalesLine" entity="/0/@DomainModel/@entitycontext.0/@entity.5" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="AssoicatedPayment" entity="/0/@DomainModel/@entitycontext.0/@entity.7" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Cashier">
+          <attributes name="Id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <reference name="WorkedStore" entity="/0/@DomainModel/@entitycontext.0/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="SalesLineItem">
+          <attributes name="Quantity">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Subamount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="BelongedSale" entity="/0/@DomainModel/@entitycontext.0/@entity.3" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="BelongedItem" entity="/0/@DomainModel/@entitycontext.0/@entity.6" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Item">
+          <attributes name="Barcode">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Price">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="StockNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="OrderPrice">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="BelongedCatalog" entity="/0/@DomainModel/@entitycontext.0/@entity.1" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Payment">
+          <attributes name="AmountTendered">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="BelongedSale" entity="/0/@DomainModel/@entitycontext.0/@entity.3" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="CashPayment" superEntity="/0/@DomainModel/@entitycontext.0/@entity.7">
+          <attributes name="Balance">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+        </entity>
+        <entity name="CardPayment" superEntity="/0/@DomainModel/@entitycontext.0/@entity.7">
+          <attributes name="CardAccountNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="OrderEntry">
+          <attributes name="Quantity">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="SubAmount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="Item" entity="/0/@DomainModel/@entitycontext.0/@entity.6" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Supplier">
+          <attributes name="Id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="OrderProduct">
+          <attributes name="Id">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="Time">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="Amount">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="Supplier" entity="/0/@DomainModel/@entitycontext.0/@entity.11" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ContainedEntries" entity="/0/@DomainModel/@entitycontext.0/@entity.10" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.1">
+        <userinterface name="UserInterface">
+          <operation name="closeCashDesk()" />
+          <operation name="openCashDesk()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofCashDesk" entitycontext="/0/@DomainModel/@entitycontext.0" receiveinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofCashDesk" entitycontext="/0/@DomainModel/@entitycontext.1" provideinterface="/0/@DomainModel/@systeminterface.0" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

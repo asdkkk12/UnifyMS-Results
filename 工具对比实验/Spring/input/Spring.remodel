@@ -1,0 +1,3684 @@
+UseCaseModel Spring {
+ UC::ShopActivityShopActivityApiActivityServiceImpl()
+ UC::ShopActivityShopActivityApiAppDiscountCouponServiceImpl()
+ UC::ShopActivityShopActivityApiAssembleServiceImpl()
+ UC::ShopActivityShopActivityApiAssembleServiceRuleImpl()
+ UC::ShopActivityShopActivityApiBannerServiceImpl()
+ UC::ShopActivityShopActivityApiCouponTemplateServiceImpl()
+ UC::ShopActivityShopActivityApiDiscountCouponServiceImpl()
+ UC::ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl()
+ UC::ShopActivityShopActivityApiExchangeActivityRuleServiceImpl()
+ UC::ShopActivityShopActivityApiExchangeServiceImpl()
+ UC::ShopAuthShopAuthServerApiUserServiceImpl()
+ UC::ShopCartShopCartApiCartServiceImpl()
+ UC::ShopCartShopCartApiOrderCartServiceImpl()
+ UC::ShopElasticsearchShopElasticsearchApiGoodsServiceImpl()
+ UC::ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl()
+ UC::ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl()
+ UC::ShopGoodsShopGoodsApiAppClassificationServiceImpl()
+ UC::ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsApproveServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsClassServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsSkuServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl()
+ UC::ShopGoodsShopGoodsApiGoodsSpuServiceImpl()
+ UC::ShopJobShopJobApiJobServiceImpl()
+ UC::ShopManageCommonEnumService()
+ UC::ShopManageGeneratorService()
+ UC::ShopManageDashboardServiceImpl()
+ UC::ShopManageDynamicFormServiceImpl()
+ UC::ShopManageMenuServiceImpl()
+ UC::ShopManagePermissionServiceImpl()
+ UC::ShopManageRoleServiceImpl()
+ UC::ShopManageSysUserClientService()
+ UC::ShopManageSysUserServiceImpl()
+ UC::ShopManageSystemConfigServiceImpl()
+ UC::ShopOrderShopOrderApiAppUserOrderServiceImpl()
+ UC::ShopOrderShopOrderApiOrderTradeServiceImpl()
+ UC::ShopOrderShopOrderApiSellerOrderServiceImpl()
+ UC::ShopOrderShopOrderApiUserOrderServiceImpl()
+ UC::ShopOssAliyunServiceImpl()
+ UC::ShopOssQiniuServiceImpl()
+ UC::ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl()
+ UC::ShopPlatformShopPlatformApiDynamicFormServiceImpl()
+ UC::ShopPlatformShopPlatformApiFieldServiceImpl()
+ UC::ShopPlatformShopPlatformApiFormServiceImpl()
+ UC::ShopPlatformShopPlatformApiSMSServiceImpl()
+ UC::ShopPlatformShopPlatformApiSMSTemplateServiceImpl()
+ UC::ShopPlatformShopPlatformApiSystemConfigServiceImpl()
+ UC::ShopRiskShopRiskApiBlackListServiceImpl()
+ UC::ShopRiskShopRiskApiWhiteListServiceImpl()
+ UC::ShopSellerShopSellerApiSellerLoginServiceImpl()
+ UC::ShopSellerShopSellerApiSellerSubscribeServiceImpl()
+ UC::ShopSettlementShopSettlementApiSettlementOrderServiceImpl()
+ UC::ShopUserShopUserApiInitService()
+ UC::ShopUserShopUserApiReceiverService()
+ UC::ShopUserShopUserApiAddressServiceImpl()
+ UC::ShopUserShopUserApiAreaServiceImpl()
+ UC::ShopUserShopUserApiFeedbackServiceImpl()
+ UC::ShopUserShopUserApiGoodsCartServiceImpl()
+ UC::ShopUserShopUserApiNativeMessageServiceImpl()
+ UC::ShopUserShopUserApiSMSCodeServiceImpl()
+ UC::ShopUserShopUserApiSignServiceImpl()
+ UC::ShopUserShopUserApiUserAccountServiceImpl()
+ UC::ShopUserShopUserApiUserServiceImpl()
+ Actor ShopActivityRole {
+  ShopActivityShopActivityApiActivityServiceImpl
+  ShopActivityShopActivityApiAppDiscountCouponServiceImpl
+  ShopActivityShopActivityApiAssembleServiceImpl
+  ShopActivityShopActivityApiAssembleServiceRuleImpl
+  ShopActivityShopActivityApiBannerServiceImpl
+  ShopActivityShopActivityApiCouponTemplateServiceImpl
+  ShopActivityShopActivityApiDiscountCouponServiceImpl
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImpl
+  ShopActivityShopActivityApiExchangeServiceImpl
+ }
+ Actor ShopAuthRole {
+  ShopAuthShopAuthServerApiUserServiceImpl
+ }
+ Actor ShopCartRole {
+  ShopCartShopCartApiCartServiceImpl
+  ShopCartShopCartApiOrderCartServiceImpl
+ }
+ Actor ShopElasticsearchRole {
+  ShopElasticsearchShopElasticsearchApiGoodsServiceImpl
+  ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl
+  ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl
+ }
+ Actor ShopGoodsRole {
+  ShopGoodsShopGoodsApiAppClassificationServiceImpl
+  ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl
+  ShopGoodsShopGoodsApiGoodsApproveServiceImpl
+  ShopGoodsShopGoodsApiGoodsClassServiceImpl
+  ShopGoodsShopGoodsApiGoodsServiceImpl
+  ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl
+  ShopGoodsShopGoodsApiGoodsSkuServiceImpl
+  ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl
+  ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl
+  ShopGoodsShopGoodsApiGoodsSpuServiceImpl
+ }
+ Actor ShopJobRole {
+  ShopJobShopJobApiJobServiceImpl
+ }
+ Actor ShopManageRole {
+  ShopManageCommonEnumService
+  ShopManageGeneratorService
+  ShopManageDashboardServiceImpl
+  ShopManageDynamicFormServiceImpl
+  ShopManageMenuServiceImpl
+  ShopManagePermissionServiceImpl
+  ShopManageRoleServiceImpl
+  ShopManageSysUserClientService
+  ShopManageSysUserServiceImpl
+  ShopManageSystemConfigServiceImpl
+ }
+ Actor ShopOrderRole {
+  ShopOrderShopOrderApiAppUserOrderServiceImpl
+  ShopOrderShopOrderApiOrderTradeServiceImpl
+  ShopOrderShopOrderApiSellerOrderServiceImpl
+  ShopOrderShopOrderApiUserOrderServiceImpl
+ }
+ Actor ShopOssRole {
+  ShopOssAliyunServiceImpl
+  ShopOssQiniuServiceImpl
+ }
+ Actor ShopPlatformRole {
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl
+  ShopPlatformShopPlatformApiDynamicFormServiceImpl
+  ShopPlatformShopPlatformApiFieldServiceImpl
+  ShopPlatformShopPlatformApiFormServiceImpl
+  ShopPlatformShopPlatformApiSMSServiceImpl
+  ShopPlatformShopPlatformApiSMSTemplateServiceImpl
+  ShopPlatformShopPlatformApiSystemConfigServiceImpl
+ }
+ Actor ShopRiskRole {
+  ShopRiskShopRiskApiBlackListServiceImpl
+  ShopRiskShopRiskApiWhiteListServiceImpl
+ }
+ Actor ShopSellerRole {
+  ShopSellerShopSellerApiSellerLoginServiceImpl
+  ShopSellerShopSellerApiSellerSubscribeServiceImpl
+ }
+ Actor ShopSettlementRole {
+  ShopSettlementShopSettlementApiSettlementOrderServiceImpl
+ }
+ Actor ShopUserRole {
+  ShopUserShopUserApiInitService
+  ShopUserShopUserApiReceiverService
+  ShopUserShopUserApiAddressServiceImpl
+  ShopUserShopUserApiAreaServiceImpl
+  ShopUserShopUserApiFeedbackServiceImpl
+  ShopUserShopUserApiGoodsCartServiceImpl
+  ShopUserShopUserApiNativeMessageServiceImpl
+  ShopUserShopUserApiSMSCodeServiceImpl
+  ShopUserShopUserApiSignServiceImpl
+  ShopUserShopUserApiUserAccountServiceImpl
+  ShopUserShopUserApiUserServiceImpl
+ }
+ Service ShopActivityShopActivityApiActivityServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiActivityServiceImplToPage()
+  ShopActivityShopActivityApiActivityServiceImplGetBaseMapper()
+  ShopActivityShopActivityApiActivityServiceImplGetById()
+  ShopActivityShopActivityApiActivityServiceImplGetOne()
+  ShopActivityShopActivityApiActivityServiceImplCount()
+  ShopActivityShopActivityApiActivityServiceImplList()
+  ShopActivityShopActivityApiActivityServiceImplPage()
+  ShopActivityShopActivityApiActivityServiceImplNonExists()
+  ShopActivityShopActivityApiActivityServiceImplQueryInfo()
+  ShopActivityShopActivityApiActivityServiceImplCreate()
+  ShopActivityShopActivityApiActivityServiceImplModify()
+  ShopActivityShopActivityApiActivityServiceImplQueryList()
+  ShopActivityShopActivityApiActivityServiceImplQueryPage()
+ }
+ Service ShopActivityShopActivityApiAppDiscountCouponServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiAppDiscountCouponServiceImplQueryCoupons()
+ }
+ Service ShopActivityShopActivityApiAssembleServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiAssembleServiceImplMembers()
+ }
+ Service ShopActivityShopActivityApiAssembleServiceRuleImpl {
+  [Operation]
+  ShopActivityShopActivityApiAssembleServiceRuleImplToPage()
+  ShopActivityShopActivityApiAssembleServiceRuleImplGetBaseMapper()
+  ShopActivityShopActivityApiAssembleServiceRuleImplGetById()
+  ShopActivityShopActivityApiAssembleServiceRuleImplGetOne()
+  ShopActivityShopActivityApiAssembleServiceRuleImplCount()
+  ShopActivityShopActivityApiAssembleServiceRuleImplList()
+  ShopActivityShopActivityApiAssembleServiceRuleImplPage()
+  ShopActivityShopActivityApiAssembleServiceRuleImplInfo()
+  ShopActivityShopActivityApiAssembleServiceRuleImplRule()
+ }
+ Service ShopActivityShopActivityApiBannerServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiBannerServiceImplToPage()
+  ShopActivityShopActivityApiBannerServiceImplGetBaseMapper()
+  ShopActivityShopActivityApiBannerServiceImplGetById()
+  ShopActivityShopActivityApiBannerServiceImplGetOne()
+  ShopActivityShopActivityApiBannerServiceImplCount()
+  ShopActivityShopActivityApiBannerServiceImplList()
+  ShopActivityShopActivityApiBannerServiceImplPage()
+  ShopActivityShopActivityApiBannerServiceImplQueryPage()
+  ShopActivityShopActivityApiBannerServiceImplQueryList()
+  ShopActivityShopActivityApiBannerServiceImplCreate()
+  ShopActivityShopActivityApiBannerServiceImplModify()
+  ShopActivityShopActivityApiBannerServiceImplBanners()
+  ShopActivityShopActivityApiBannerServiceImplChannel()
+ }
+ Service ShopActivityShopActivityApiCouponTemplateServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiCouponTemplateServiceImplToPage()
+  ShopActivityShopActivityApiCouponTemplateServiceImplGetBaseMapper()
+  ShopActivityShopActivityApiCouponTemplateServiceImplGetById()
+  ShopActivityShopActivityApiCouponTemplateServiceImplGetOne()
+  ShopActivityShopActivityApiCouponTemplateServiceImplCount()
+  ShopActivityShopActivityApiCouponTemplateServiceImplList()
+  ShopActivityShopActivityApiCouponTemplateServiceImplPage()
+  ShopActivityShopActivityApiCouponTemplateServiceImplQueryPage()
+  ShopActivityShopActivityApiCouponTemplateServiceImplCreate()
+  ShopActivityShopActivityApiCouponTemplateServiceImplModify()
+  ShopActivityShopActivityApiCouponTemplateServiceImplInfo()
+ }
+ Service ShopActivityShopActivityApiDiscountCouponServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiDiscountCouponServiceImplToPage()
+  ShopActivityShopActivityApiDiscountCouponServiceImplGetBaseMapper()
+  ShopActivityShopActivityApiDiscountCouponServiceImplGetById()
+  ShopActivityShopActivityApiDiscountCouponServiceImplGetOne()
+  ShopActivityShopActivityApiDiscountCouponServiceImplCount()
+  ShopActivityShopActivityApiDiscountCouponServiceImplList()
+  ShopActivityShopActivityApiDiscountCouponServiceImplListOverloadB()
+  ShopActivityShopActivityApiDiscountCouponServiceImplPage()
+  ShopActivityShopActivityApiDiscountCouponServiceImplQueryPage()
+  ShopActivityShopActivityApiDiscountCouponServiceImplInfo()
+  ShopActivityShopActivityApiDiscountCouponServiceImplPublish()
+ }
+ Service ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplToPage()
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetBaseMapper()
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetById()
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetOne()
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplCount()
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplList()
+  ShopActivityShopActivityApiExchangeActivityHistoryServiceImplPage()
+ }
+ Service ShopActivityShopActivityApiExchangeActivityRuleServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplToPage()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetBaseMapper()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetById()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetOne()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplCount()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplList()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplPage()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplQueryList()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplCreate()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplModify()
+  ShopActivityShopActivityApiExchangeActivityRuleServiceImplDelete()
+ }
+ Service ShopActivityShopActivityApiExchangeServiceImpl {
+  [Operation]
+  ShopActivityShopActivityApiExchangeServiceImplRecord()
+ }
+ Service ShopAuthShopAuthServerApiUserServiceImpl {
+  [Operation]
+  ShopAuthShopAuthServerApiUserServiceImplLoadUserByUsername()
+  ShopAuthShopAuthServerApiUserServiceImplLoadUserBySMS()
+ }
+ Service ShopCartShopCartApiCartServiceImpl {
+  [Operation]
+  ShopCartShopCartApiCartServiceImplPage()
+  ShopCartShopCartApiCartServiceImplList()
+  ShopCartShopCartApiCartServiceImplCreate()
+  ShopCartShopCartApiCartServiceImplDelete()
+  ShopCartShopCartApiCartServiceImplDeleteBatch()
+ }
+ Service ShopCartShopCartApiOrderCartServiceImpl {
+  [Operation]
+  ShopCartShopCartApiOrderCartServiceImplOrders()
+ }
+ Service ShopElasticsearchShopElasticsearchApiGoodsServiceImpl {
+  [Operation]
+  ShopElasticsearchShopElasticsearchApiGoodsServiceImplQueryPage()
+ }
+ Service ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl {
+  [Operation]
+  ShopElasticsearchShopElasticsearchApiSellerOrderServiceImplQueryPage()
+ }
+ Service ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl {
+  [Operation]
+  ShopElasticsearchShopElasticsearchApiUserOrderServiceImplQueryPage()
+ }
+ Service ShopGoodsShopGoodsApiAppClassificationServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiAppClassificationServiceImplSpus()
+  ShopGoodsShopGoodsApiAppClassificationServiceImplClassification()
+ }
+ Service ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiAppGoodsSkuServiceImplQuerySku()
+ }
+ Service ShopGoodsShopGoodsApiGoodsApproveServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiGoodsApproveServiceImplCreate()
+  ShopGoodsShopGoodsApiGoodsApproveServiceImplDetail()
+ }
+ Service ShopGoodsShopGoodsApiGoodsClassServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiGoodsClassServiceImplToPage()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplGetBaseMapper()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplGetById()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplGetOne()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplCount()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplList()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplPage()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplCreate()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplModify()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplDelete()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplQueryPage()
+  ShopGoodsShopGoodsApiGoodsClassServiceImplQueryBySpuId()
+ }
+ Service ShopGoodsShopGoodsApiGoodsServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiGoodsServiceImplToPage()
+  ShopGoodsShopGoodsApiGoodsServiceImplGetBaseMapper()
+  ShopGoodsShopGoodsApiGoodsServiceImplGetById()
+  ShopGoodsShopGoodsApiGoodsServiceImplGetOne()
+  ShopGoodsShopGoodsApiGoodsServiceImplCount()
+  ShopGoodsShopGoodsApiGoodsServiceImplList()
+  ShopGoodsShopGoodsApiGoodsServiceImplPage()
+  ShopGoodsShopGoodsApiGoodsServiceImplQueryPage()
+  ShopGoodsShopGoodsApiGoodsServiceImplCreate()
+  ShopGoodsShopGoodsApiGoodsServiceImplModify()
+  ShopGoodsShopGoodsApiGoodsServiceImplState()
+  ShopGoodsShopGoodsApiGoodsServiceImplDetail()
+  ShopGoodsShopGoodsApiGoodsServiceImplDelete()
+ }
+ Service ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl {
+  [Operation]
+ }
+ Service ShopGoodsShopGoodsApiGoodsSkuServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplToPage()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplGetBaseMapper()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplGetById()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplGetOne()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplCount()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplList()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplPage()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplQueryList()
+  ShopGoodsShopGoodsApiGoodsSkuServiceImplQuerySku()
+ }
+ Service ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl {
+  [Operation]
+ }
+ Service ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl {
+  [Operation]
+ }
+ Service ShopGoodsShopGoodsApiGoodsSpuServiceImpl {
+  [Operation]
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplToPage()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplGetBaseMapper()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplGetById()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplGetOne()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplCount()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplList()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplPage()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplCreate()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplModify()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplDelete()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplQueryPage()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplQueryList()
+  ShopGoodsShopGoodsApiGoodsSpuServiceImplSpuTree()
+ }
+ Service ShopJobShopJobApiJobServiceImpl {
+  [Operation]
+  ShopJobShopJobApiJobServiceImplQueryPage()
+  ShopJobShopJobApiJobServiceImplQueryList()
+  ShopJobShopJobApiJobServiceImplQueryGroupList()
+  ShopJobShopJobApiJobServiceImplCreate()
+  ShopJobShopJobApiJobServiceImplCreateOverloadB()
+  ShopJobShopJobApiJobServiceImplModify()
+  ShopJobShopJobApiJobServiceImplInfo()
+  ShopJobShopJobApiJobServiceImplDoJob()
+ }
+ Service ShopManageCommonEnumService {
+  [Operation]
+  ShopManageCommonEnumServiceGetCommonEnumInfo()
+ }
+ Service ShopManageGeneratorService {
+  [Operation]
+  ShopManageGeneratorServiceTables()
+  ShopManageGeneratorServiceTablesOverloadB()
+  ShopManageGeneratorServiceGenerator()
+ }
+ Service ShopManageDashboardServiceImpl {
+  [Operation]
+ }
+ Service ShopManageDynamicFormServiceImpl {
+  [Operation]
+  ShopManageDynamicFormServiceImplCreate()
+  ShopManageDynamicFormServiceImplModify()
+  ShopManageDynamicFormServiceImplGet()
+ }
+ Service ShopManageMenuServiceImpl {
+  [Operation]
+  ShopManageMenuServiceImplToPage()
+  ShopManageMenuServiceImplGetBaseMapper()
+  ShopManageMenuServiceImplGetById()
+  ShopManageMenuServiceImplGetOne()
+  ShopManageMenuServiceImplCount()
+  ShopManageMenuServiceImplList()
+  ShopManageMenuServiceImplPage()
+  ShopManageMenuServiceImplCreate()
+  ShopManageMenuServiceImplModify()
+  ShopManageMenuServiceImplQueryList()
+  ShopManageMenuServiceImplDelete()
+ }
+ Service ShopManagePermissionServiceImpl {
+  [Operation]
+  ShopManagePermissionServiceImplGrant()
+  ShopManagePermissionServiceImplPermission()
+ }
+ Service ShopManageRoleServiceImpl {
+  [Operation]
+  ShopManageRoleServiceImplToPage()
+  ShopManageRoleServiceImplGetBaseMapper()
+  ShopManageRoleServiceImplGetById()
+  ShopManageRoleServiceImplGetOne()
+  ShopManageRoleServiceImplCount()
+  ShopManageRoleServiceImplList()
+  ShopManageRoleServiceImplPage()
+  ShopManageRoleServiceImplQueryPage()
+  ShopManageRoleServiceImplQueryList()
+  ShopManageRoleServiceImplCreate()
+  ShopManageRoleServiceImplModify()
+  ShopManageRoleServiceImplDelete()
+  ShopManageRoleServiceImplQueryRolePermission()
+ }
+ Service ShopManageSysUserClientService {
+  [Operation]
+  ShopManageSysUserClientServiceQuerySysUserByUsername()
+  ShopManageSysUserClientServiceGetRolesBySysUserId()
+ }
+ Service ShopManageSysUserServiceImpl {
+  [Operation]
+  ShopManageSysUserServiceImplQueryPage()
+  ShopManageSysUserServiceImplQueryList()
+  ShopManageSysUserServiceImplQueryDownload()
+  ShopManageSysUserServiceImplCreate()
+  ShopManageSysUserServiceImplModify()
+  ShopManageSysUserServiceImplAdminInfo()
+ }
+ Service ShopManageSystemConfigServiceImpl {
+  [Operation]
+  ShopManageSystemConfigServiceImplQueryPage()
+  ShopManageSystemConfigServiceImplQueryList()
+  ShopManageSystemConfigServiceImplCreate()
+  ShopManageSystemConfigServiceImplModify()
+  ShopManageSystemConfigServiceImplDelete()
+ }
+ Service ShopOrderShopOrderApiAppUserOrderServiceImpl {
+  [Operation]
+  ShopOrderShopOrderApiAppUserOrderServiceImplQuantity()
+  ShopOrderShopOrderApiAppUserOrderServiceImplOrders()
+  ShopOrderShopOrderApiAppUserOrderServiceImplDetail()
+  ShopOrderShopOrderApiAppUserOrderServiceImplEvaluate()
+  ShopOrderShopOrderApiAppUserOrderServiceImplCancel()
+  ShopOrderShopOrderApiAppUserOrderServiceImplRefund()
+  ShopOrderShopOrderApiAppUserOrderServiceImplConfirm()
+  ShopOrderShopOrderApiAppUserOrderServiceImplSubmit()
+ }
+ Service ShopOrderShopOrderApiOrderTradeServiceImpl {
+  [Operation]
+  ShopOrderShopOrderApiOrderTradeServiceImplCreate()
+ }
+ Service ShopOrderShopOrderApiSellerOrderServiceImpl {
+  [Operation]
+  ShopOrderShopOrderApiSellerOrderServiceImplCreate()
+ }
+ Service ShopOrderShopOrderApiUserOrderServiceImpl {
+  [Operation]
+  ShopOrderShopOrderApiUserOrderServiceImplToPage()
+  ShopOrderShopOrderApiUserOrderServiceImplGetBaseMapper()
+  ShopOrderShopOrderApiUserOrderServiceImplGetById()
+  ShopOrderShopOrderApiUserOrderServiceImplGetOne()
+  ShopOrderShopOrderApiUserOrderServiceImplCount()
+  ShopOrderShopOrderApiUserOrderServiceImplList()
+  ShopOrderShopOrderApiUserOrderServiceImplPage()
+  ShopOrderShopOrderApiUserOrderServiceImplQueryPage()
+  ShopOrderShopOrderApiUserOrderServiceImplDetail()
+ }
+ Service ShopOssAliyunServiceImpl {
+  [Operation]
+  ShopOssAliyunServiceImplSupport()
+  ShopOssAliyunServiceImplUploadStream()
+  ShopOssAliyunServiceImplUploadFile()
+  ShopOssAliyunServiceImplUploadToByte()
+  ShopOssAliyunServiceImplDownload()
+ }
+ Service ShopOssQiniuServiceImpl {
+  [Operation]
+  ShopOssQiniuServiceImplSupport()
+  ShopOssQiniuServiceImplUploadStream()
+  ShopOssQiniuServiceImplUploadFile()
+  ShopOssQiniuServiceImplUploadToByte()
+  ShopOssQiniuServiceImplDownload()
+ }
+ Service ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplToPage()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetBaseMapper()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetById()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetOne()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplCount()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplList()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplPage()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplQueryList()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplCreate()
+  ShopPlatformShopPlatformApiSystemConfigDetailServiceImplModify()
+ }
+ Service ShopPlatformShopPlatformApiDynamicFormServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiDynamicFormServiceImplToPage()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplGetBaseMapper()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplGetById()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplGetOne()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplCount()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplList()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplPage()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplGet()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplCreate()
+  ShopPlatformShopPlatformApiDynamicFormServiceImplModify()
+ }
+ Service ShopPlatformShopPlatformApiFieldServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiFieldServiceImplToPage()
+  ShopPlatformShopPlatformApiFieldServiceImplGetBaseMapper()
+  ShopPlatformShopPlatformApiFieldServiceImplGetById()
+  ShopPlatformShopPlatformApiFieldServiceImplGetOne()
+  ShopPlatformShopPlatformApiFieldServiceImplCount()
+  ShopPlatformShopPlatformApiFieldServiceImplList()
+  ShopPlatformShopPlatformApiFieldServiceImplPage()
+ }
+ Service ShopPlatformShopPlatformApiFormServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiFormServiceImplToPage()
+  ShopPlatformShopPlatformApiFormServiceImplGetBaseMapper()
+  ShopPlatformShopPlatformApiFormServiceImplGetById()
+  ShopPlatformShopPlatformApiFormServiceImplGetOne()
+  ShopPlatformShopPlatformApiFormServiceImplCount()
+  ShopPlatformShopPlatformApiFormServiceImplList()
+  ShopPlatformShopPlatformApiFormServiceImplPage()
+  ShopPlatformShopPlatformApiFormServiceImplCreate()
+  ShopPlatformShopPlatformApiFormServiceImplModify()
+  ShopPlatformShopPlatformApiFormServiceImplQueryPage()
+  ShopPlatformShopPlatformApiFormServiceImplQueryList()
+  ShopPlatformShopPlatformApiFormServiceImplGet()
+ }
+ Service ShopPlatformShopPlatformApiSMSServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiSMSServiceImplSendSms()
+ }
+ Service ShopPlatformShopPlatformApiSMSTemplateServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplToPage()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplGetBaseMapper()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplGetById()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplGetOne()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplCount()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplList()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplPage()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplCreate()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplModify()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplQueryPage()
+  ShopPlatformShopPlatformApiSMSTemplateServiceImplSms()
+ }
+ Service ShopPlatformShopPlatformApiSystemConfigServiceImpl {
+  [Operation]
+  ShopPlatformShopPlatformApiSystemConfigServiceImplToPage()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplGetBaseMapper()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplGetById()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplGetOne()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplCount()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplList()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplPage()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplQueryList()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplQueryPage()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplCreate()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplModify()
+  ShopPlatformShopPlatformApiSystemConfigServiceImplExecuteTask()
+ }
+ Service ShopRiskShopRiskApiBlackListServiceImpl {
+  [Operation]
+  ShopRiskShopRiskApiBlackListServiceImplToPage()
+  ShopRiskShopRiskApiBlackListServiceImplGetBaseMapper()
+  ShopRiskShopRiskApiBlackListServiceImplGetById()
+  ShopRiskShopRiskApiBlackListServiceImplGetOne()
+  ShopRiskShopRiskApiBlackListServiceImplCount()
+  ShopRiskShopRiskApiBlackListServiceImplList()
+  ShopRiskShopRiskApiBlackListServiceImplPage()
+  ShopRiskShopRiskApiBlackListServiceImplQueryPage()
+  ShopRiskShopRiskApiBlackListServiceImplQueryList()
+  ShopRiskShopRiskApiBlackListServiceImplCreate()
+  ShopRiskShopRiskApiBlackListServiceImplModify()
+  ShopRiskShopRiskApiBlackListServiceImplDelete()
+ }
+ Service ShopRiskShopRiskApiWhiteListServiceImpl {
+  [Operation]
+  ShopRiskShopRiskApiWhiteListServiceImplToPage()
+  ShopRiskShopRiskApiWhiteListServiceImplGetBaseMapper()
+  ShopRiskShopRiskApiWhiteListServiceImplGetById()
+  ShopRiskShopRiskApiWhiteListServiceImplGetOne()
+  ShopRiskShopRiskApiWhiteListServiceImplCount()
+  ShopRiskShopRiskApiWhiteListServiceImplList()
+  ShopRiskShopRiskApiWhiteListServiceImplPage()
+  ShopRiskShopRiskApiWhiteListServiceImplQueryPage()
+  ShopRiskShopRiskApiWhiteListServiceImplQueryList()
+  ShopRiskShopRiskApiWhiteListServiceImplCreate()
+  ShopRiskShopRiskApiWhiteListServiceImplModify()
+  ShopRiskShopRiskApiWhiteListServiceImplDelete()
+ }
+ Service ShopSellerShopSellerApiSellerLoginServiceImpl {
+  [Operation]
+ }
+ Service ShopSellerShopSellerApiSellerSubscribeServiceImpl {
+  [Operation]
+ }
+ Service ShopSettlementShopSettlementApiSettlementOrderServiceImpl {
+  [Operation]
+  ShopSettlementShopSettlementApiSettlementOrderServiceImplCheck()
+  ShopSettlementShopSettlementApiSettlementOrderServiceImplCreateOrder()
+  ShopSettlementShopSettlementApiSettlementOrderServiceImplSubmit()
+ }
+ Service ShopUserShopUserApiInitService {
+  [Operation]
+  ShopUserShopUserApiInitServiceInit()
+ }
+ Service ShopUserShopUserApiReceiverService {
+  [Operation]
+  ShopUserShopUserApiReceiverServiceOnMessage()
+ }
+ Service ShopUserShopUserApiAddressServiceImpl {
+  [Operation]
+  ShopUserShopUserApiAddressServiceImplToPage()
+  ShopUserShopUserApiAddressServiceImplGetBaseMapper()
+  ShopUserShopUserApiAddressServiceImplGetById()
+  ShopUserShopUserApiAddressServiceImplGetOne()
+  ShopUserShopUserApiAddressServiceImplCount()
+  ShopUserShopUserApiAddressServiceImplList()
+  ShopUserShopUserApiAddressServiceImplPage()
+  ShopUserShopUserApiAddressServiceImplQueryPage()
+  ShopUserShopUserApiAddressServiceImplCreate()
+  ShopUserShopUserApiAddressServiceImplModify()
+  ShopUserShopUserApiAddressServiceImplQueryByPrimaryKey()
+  ShopUserShopUserApiAddressServiceImplAddress()
+ }
+ Service ShopUserShopUserApiAreaServiceImpl {
+  [Operation]
+ }
+ Service ShopUserShopUserApiFeedbackServiceImpl {
+  [Operation]
+  ShopUserShopUserApiFeedbackServiceImplToPage()
+  ShopUserShopUserApiFeedbackServiceImplGetBaseMapper()
+  ShopUserShopUserApiFeedbackServiceImplGetById()
+  ShopUserShopUserApiFeedbackServiceImplGetOne()
+  ShopUserShopUserApiFeedbackServiceImplCount()
+  ShopUserShopUserApiFeedbackServiceImplList()
+  ShopUserShopUserApiFeedbackServiceImplPage()
+  ShopUserShopUserApiFeedbackServiceImplCreate()
+ }
+ Service ShopUserShopUserApiGoodsCartServiceImpl {
+  [Operation]
+  ShopUserShopUserApiGoodsCartServiceImplGoodsCarts()
+  ShopUserShopUserApiGoodsCartServiceImplModifyGoodsCart()
+ }
+ Service ShopUserShopUserApiNativeMessageServiceImpl {
+  [Operation]
+  ShopUserShopUserApiNativeMessageServiceImplToPage()
+  ShopUserShopUserApiNativeMessageServiceImplGetBaseMapper()
+  ShopUserShopUserApiNativeMessageServiceImplGetById()
+  ShopUserShopUserApiNativeMessageServiceImplGetOne()
+  ShopUserShopUserApiNativeMessageServiceImplCount()
+  ShopUserShopUserApiNativeMessageServiceImplCountOverloadB()
+  ShopUserShopUserApiNativeMessageServiceImplList()
+  ShopUserShopUserApiNativeMessageServiceImplPage()
+  ShopUserShopUserApiNativeMessageServiceImplQueryPage()
+  ShopUserShopUserApiNativeMessageServiceImplQueryAppPage()
+  ShopUserShopUserApiNativeMessageServiceImplInfo()
+  ShopUserShopUserApiNativeMessageServiceImplDelete()
+  ShopUserShopUserApiNativeMessageServiceImplModify()
+ }
+ Service ShopUserShopUserApiSMSCodeServiceImpl {
+  [Operation]
+  ShopUserShopUserApiSMSCodeServiceImplSend()
+ }
+ Service ShopUserShopUserApiSignServiceImpl {
+  [Operation]
+  ShopUserShopUserApiSignServiceImplSign()
+  ShopUserShopUserApiSignServiceImplGetSignDays()
+ }
+ Service ShopUserShopUserApiUserAccountServiceImpl {
+  [Operation]
+  ShopUserShopUserApiUserAccountServiceImplAccount()
+ }
+ Service ShopUserShopUserApiUserServiceImpl {
+  [Operation]
+  ShopUserShopUserApiUserServiceImplProfile()
+  ShopUserShopUserApiUserServiceImplProfileInfo()
+  ShopUserShopUserApiUserServiceImplBatchProfile()
+  ShopUserShopUserApiUserServiceImplLogin()
+ }
+ Entity ShopActivityShopActivityApiActivity {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityName : String
+  activityImg : String
+  activityType : Integer
+  state : String
+  beginTime : Date
+  endTime : Date
+ }
+ Entity ShopActivityShopActivityApiAssembleActivityGoods {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsId : Integer
+  activityId : Integer
+  ruleId : Integer
+ }
+ Entity ShopActivityShopActivityApiAssembleActivityMember {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityId : Integer
+  recordId : Integer
+  userId : Integer
+  phone : String
+  username : String
+  master : String
+ }
+ Entity ShopActivityShopActivityApiAssembleActivityRecord {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityId : Integer
+  status : Integer
+ }
+ Entity ShopActivityShopActivityApiAssembleActivityRule {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityId : Integer
+  serverStatus : String
+  purchaseLimit : Integer
+  assembleCount : Integer
+  description : String
+ }
+ Entity ShopActivityShopActivityApiBanner {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  title : String
+  bannerUrl : String
+  bannerClickUrl : String
+  bannerType : String
+  shareUrl : String
+  shareTitle : String
+  shareSubtitle : String
+  shareIcon : String
+  shareChannel : String
+  bannerStatus : String
+ }
+ Entity ShopActivityShopActivityApiDiscountCoupon {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  templateId : Integer
+  beginTime : Date
+  endTime : Date
+  phone : String
+  used : String
+ }
+ Entity ShopActivityShopActivityApiDiscountCouponTemplate {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  orderAmount : Real
+  couponAmount : Real
+  discountStrength : Real
+  state : String
+  templateType : Integer
+  templateName : String
+  description : String
+  beginTime : Date
+  endTime : Date
+ }
+ Entity ShopActivityShopActivityApiExchangeActivityGoods {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityId : Integer
+  ruleId : Integer
+  goodsId : Integer
+ }
+ Entity ShopActivityShopActivityApiExchangeActivityMember {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityId : Integer
+  userId : Integer
+  goodsId : Integer
+  ruleId : Integer
+  phone : String
+ }
+ Entity ShopActivityShopActivityApiExchangeActivityRule {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  activityId : Integer
+  ruleName : String
+  orderAmount : Real
+  state : String
+ }
+ Entity ShopActivityShopActivityApiIntegralLog {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  integral : Integer
+  description : String
+ }
+ Entity ShopActivityShopActivityApiInviteCode {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  templateId : Integer
+  code : String
+ }
+ Entity ShopActivityShopActivityApiInviteRewardRecord {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  inviteUserId : Integer
+  userId : Integer
+  phone : String
+  rewardType : Integer
+ }
+ Entity ShopActivityShopActivityApiSecKillRule {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+ }
+ Entity ShopCartShopCartApiGoodsCart {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  sellerId : Integer
+  skuId : Integer
+  quantity : Integer
+ }
+ Entity ShopCartShopCartApiOrderCart {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  sellerId : Integer
+  userOrderId : Integer
+  sellerOrderId : Integer
+  skuId : Integer
+  quantity : Integer
+  skuAmount : Real
+  discountAmount : Real
+ }
+ Entity ShopElasticsearchShopElasticsearchApiESGoods {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  brandId : Integer
+  gcsId : Integer
+  goodsPropertyGroupId : Integer
+  spuId : Integer
+  name : String
+  publishStatus : Integer
+  goodsType : Integer
+  state : String
+  recommend : String
+  unit : String
+  description : String
+ }
+ Entity ShopElasticsearchShopElasticsearchApiESSellerOrder {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  ids : Integer
+ }
+ Entity ShopElasticsearchShopElasticsearchApiESUserOrder {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  ids : Integer
+ }
+ Entity ShopGoodsShopGoodsApiGoods {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsClassId : Integer
+  publishStatus : Integer
+  goodsType : Integer
+  goodsState : String
+  recommend : String
+  beginTime : Date
+  endTime : Date
+  unit : String
+  description : String
+ }
+ Entity ShopGoodsShopGoodsApiGoodsApprove {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsId : Integer
+  skuId : Integer
+  publishStatus : Integer
+  description : String
+ }
+ Entity ShopGoodsShopGoodsApiGoodsClass {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  spuId : Integer
+  className : String
+  sequence : Integer
+ }
+ Entity ShopGoodsShopGoodsApiGoodsSku {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsId : Integer
+  skuName : String
+  skuCode : String
+  description : String
+  state : String
+  weight : Real
+  skuAmount : Real
+  discountAmount : Real
+ }
+ Entity ShopGoodsShopGoodsApiGoodsSkuImage {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsId : Integer
+  skuId : Integer
+  images : String
+ }
+ Entity ShopGoodsShopGoodsApiGoodsSkuStock {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsId : Integer
+  skuId : Integer
+  stock : Integer
+ }
+ Entity ShopGoodsShopGoodsApiGoodsSkuTag {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  goodsId : Integer
+  skuId : Integer
+  name : String
+ }
+ Entity ShopGoodsShopGoodsApiGoodsSpu {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  spuName : String
+  spuImage : String
+  sequence : Integer
+ }
+ Entity ShopJobShopJobApiJobGroup {
+  id : Integer
+  groupName : String
+  sequence : Integer
+ }
+ Entity ShopJobShopJobApiJobInfo {
+  id : Integer
+  jobGroupId : Integer
+  jobStatus : Integer
+  jobName : String
+  jobGroup : String
+  cron : String
+  description : String
+  serviceName : String
+  serviceMethod : String
+  params : String
+  updateTime : Date
+  createTime : Date
+  updateUser : String
+ }
+ Entity ShopJobShopJobApiJobLog {
+  id : Integer
+  jobGroupId : Integer
+  jobId : Integer
+  executorServiceName : String
+  executorServiceMethod : String
+  executorParam : String
+  triggerTime : Date
+  triggerCode : Integer
+  triggerMsg : String
+  handleTime : Date
+  handleCode : Integer
+  handleMsg : String
+  alarmStatus : Integer
+ }
+ Entity ShopManageMenu {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  parentId : Integer
+  sequence : Integer
+  menuType : Integer
+  name : String
+  path : String
+  component : String
+  redirect : String
+  icon : String
+  permission : String
+  router : String
+  hidden : String
+ }
+ Entity ShopManageRole {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  roleName : String
+  master : String
+ }
+ Entity ShopManageRoleMenu {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  roleId : Integer
+  permission : String
+ }
+ Entity ShopManageSysRole {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  roleId : Integer
+  sysUserId : Integer
+ }
+ Entity ShopManageSysUser {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  username : String
+  phone : String
+  password : String
+  state : String
+  beAdmin : String
+  avatar : String
+ }
+ Entity ShopOrderShopOrderApiOrderEvaluate {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  content : String
+ }
+ Entity ShopOrderShopOrderApiOrderItem {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  sellerId : Integer
+  userOrderId : Integer
+  sellerOrderId : Integer
+  goodsSkuId : Integer
+  purchaseAmount : Real
+  purchaseQuantity : Integer
+ }
+ Entity ShopOrderShopOrderApiOrderTrade {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  tradeType : Integer
+  payType : Integer
+  outTradeNo : String
+  tradeNo : String
+  totalAmount : Real
+ }
+ Entity ShopOrderShopOrderApiSaleAfterOrder {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+ }
+ Entity ShopOrderShopOrderApiSellerOrder {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  sellerId : Integer
+  addrId : Integer
+  orderCode : String
+  deliveryTime : String
+  orderStatus : Integer
+  orderType : Integer
+  payType : Integer
+  orderAmount : Real
+  discountAmount : Real
+  self : String
+ }
+ Entity ShopOrderShopOrderApiUserOrder {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  sellerId : Integer
+  addrId : Integer
+  couponId : Integer
+  phone : String
+  orderCode : String
+  orderStatus : String
+  orderType : Integer
+  payType : Integer
+  integral : Integer
+  orderAmount : Real
+  payAmount : Real
+  integralAmount : Real
+  discountAmount : Real
+  self : String
+ }
+ Entity ShopPlatformShopPlatformApiArea {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  areaCode : String
+  areaName : String
+  parentAreaCode : String
+ }
+ Entity ShopPlatformShopPlatformApiDynamicForm {
+  id : Integer
+  bizType : String
+  name : String
+  type : String
+  icon : String
+  model : String
+  defaultValue : String
+  width : String
+  remoteUrl : String
+  dataType : String
+  pattern : String
+  placeholder : String
+  startPlaceholder : String
+  endPlaceholder : String
+  format : String
+  customClass : String
+  rules : String
+  min : Integer
+  max : Integer
+  step : Integer
+  beRange : String
+  showInput : String
+  arrowControl : String
+  disabled : String
+  inline : String
+  readonly : String
+  editable : String
+  clearable : String
+  timestamp : String
+  allowHalf : String
+  showAlpha : String
+  multiple : String
+  showLabel : String
+  filterable : String
+ }
+ Entity ShopPlatformShopPlatformApiField {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  formId : Integer
+  type : String
+  title : String
+ }
+ Entity ShopPlatformShopPlatformApiFieldProps {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  fieldId : Integer
+  type : String
+  maxLength : Integer
+  minLength : Integer
+  placeholder : String
+  clearable : String
+  disabled : String
+  size : String
+  prefixIcon : String
+  suffixIcon : String
+  rows : Integer
+  autosize : String
+  step : Integer
+  datasource : String
+ }
+ Entity ShopPlatformShopPlatformApiForm {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  bizType : String
+  name : String
+  remark : String
+ }
+ Entity ShopPlatformShopPlatformApiSMSTemplate {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  templateCode : String
+  templateContent : String
+ }
+ Entity ShopPlatformShopPlatformApiSystemConfig {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  configName : String
+  configType : String
+  description : String
+  configStatus : String
+ }
+ Entity ShopPlatformShopPlatformApiSystemConfigDetail {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  configName : String
+  configType : String
+  configValue : String
+  configKey : String
+  configStatus : String
+ }
+ Entity ShopRiskShopRiskApiBlackList {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  phone : String
+  state : String
+ }
+ Entity ShopRiskShopRiskApiWhitelist {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  phone : String
+  state : String
+ }
+ Entity ShopUserShopUserApiAddress {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  mobile : String
+  username : String
+  cityName : String
+  deliveryAddress : String
+  houseNumber : String
+  label : String
+  defaultAddress : String
+  latitude : String
+  longitude : String
+ }
+ Entity ShopUserShopUserApiFeedback {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  content : String
+  images : String
+ }
+ Entity ShopUserShopUserApiNativeMessage {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  phone : String
+  content : String
+  status : Integer
+ }
+ Entity ShopUserShopUserApiUser {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  phone : String
+  password : String
+ }
+ Entity ShopUserShopUserApiUserAccount {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  integral : Integer
+ }
+ Entity ShopUserShopUserApiUserInfo {
+  id : Integer
+  createUser : String
+  updateUser : String
+  createTime : Date
+  updateTime : Date
+  deleteStatus : String
+  userId : Integer
+  username : String
+  gender : String
+  birthday : Date
+  avatar : String
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplNonExists() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplQueryInfo() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplCreate() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplModify() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplQueryList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplQueryPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplQueryPage() and
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAppDiscountCouponServiceImpl::ShopActivityShopActivityApiAppDiscountCouponServiceImplQueryCoupons() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceImpl::ShopActivityShopActivityApiAssembleServiceImplMembers() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiAssembleActivityMember : ShopActivityShopActivityApiAssembleActivityMember
+  postcondition:
+   ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplNonExists() and
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplInfo() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiAssembleServiceRuleImpl::ShopActivityShopActivityApiAssembleServiceRuleImplRule() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiAssembleActivityRule : ShopActivityShopActivityApiAssembleActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplQueryPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplQueryList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplCreate() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplModify() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplBanners() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplChannel() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplQueryList() and
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplQueryPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplCreate() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplModify() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiCouponTemplateServiceImpl::ShopActivityShopActivityApiCouponTemplateServiceImplInfo() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplListOverloadB() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplQueryPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplInfo() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplPublish() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl::ShopActivityShopActivityApiExchangeActivityHistoryServiceImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplToPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetById() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplGetOne() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplCount() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplQueryList() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplCreate() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplModify() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeActivityRuleServiceImpl::ShopActivityShopActivityApiExchangeActivityRuleServiceImplDelete() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   result = true
+ }
+ Contract ShopActivityShopActivityApiExchangeServiceImpl::ShopActivityShopActivityApiExchangeServiceImplRecord() : Boolean {
+  definition:
+   refShopActivityShopActivityApiActivity : ShopActivityShopActivityApiActivity
+   refShopActivityShopActivityApiExchangeActivityMember : ShopActivityShopActivityApiExchangeActivityMember
+   refShopActivityShopActivityApiExchangeActivityRule : ShopActivityShopActivityApiExchangeActivityRule
+  postcondition:
+   ShopActivityShopActivityApiActivityServiceImpl::ShopActivityShopActivityApiActivityServiceImplNonExists() and
+   result = true
+ }
+ Contract ShopAuthShopAuthServerApiUserServiceImpl::ShopAuthShopAuthServerApiUserServiceImplLoadUserByUsername() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopAuthShopAuthServerApiUserServiceImpl::ShopAuthShopAuthServerApiUserServiceImplLoadUserBySMS() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopCartShopCartApiCartServiceImpl::ShopCartShopCartApiCartServiceImplPage() : Boolean {
+  definition:
+   refShopCartShopCartApiGoodsCart : ShopCartShopCartApiGoodsCart
+  postcondition:
+   result = true
+ }
+ Contract ShopCartShopCartApiCartServiceImpl::ShopCartShopCartApiCartServiceImplList() : Boolean {
+  definition:
+   refShopCartShopCartApiGoodsCart : ShopCartShopCartApiGoodsCart
+  postcondition:
+   result = true
+ }
+ Contract ShopCartShopCartApiCartServiceImpl::ShopCartShopCartApiCartServiceImplCreate() : Boolean {
+  definition:
+   refShopCartShopCartApiGoodsCart : ShopCartShopCartApiGoodsCart
+  postcondition:
+   result = true
+ }
+ Contract ShopCartShopCartApiCartServiceImpl::ShopCartShopCartApiCartServiceImplDelete() : Boolean {
+  definition:
+   refShopCartShopCartApiGoodsCart : ShopCartShopCartApiGoodsCart
+  postcondition:
+   result = true
+ }
+ Contract ShopCartShopCartApiCartServiceImpl::ShopCartShopCartApiCartServiceImplDeleteBatch() : Boolean {
+  definition:
+   refShopCartShopCartApiGoodsCart : ShopCartShopCartApiGoodsCart
+  postcondition:
+   result = true
+ }
+ Contract ShopCartShopCartApiOrderCartServiceImpl::ShopCartShopCartApiOrderCartServiceImplOrders() : Boolean {
+  definition:
+   refShopCartShopCartApiOrderCart : ShopCartShopCartApiOrderCart
+  postcondition:
+   result = true
+ }
+ Contract ShopElasticsearchShopElasticsearchApiGoodsServiceImpl::ShopElasticsearchShopElasticsearchApiGoodsServiceImplQueryPage() : Boolean {
+  definition:
+   refShopElasticsearchShopElasticsearchApiESGoods : ShopElasticsearchShopElasticsearchApiESGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl::ShopElasticsearchShopElasticsearchApiSellerOrderServiceImplQueryPage() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl::ShopElasticsearchShopElasticsearchApiUserOrderServiceImplQueryPage() : Boolean {
+  definition:
+   refShopElasticsearchShopElasticsearchApiESUserOrder : ShopElasticsearchShopElasticsearchApiESUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiAppClassificationServiceImpl::ShopGoodsShopGoodsApiAppClassificationServiceImplSpus() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiAppClassificationServiceImpl::ShopGoodsShopGoodsApiAppClassificationServiceImplClassification() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl::ShopGoodsShopGoodsApiAppGoodsSkuServiceImplQuerySku() : Boolean {
+  definition:
+   refShopElasticsearchShopElasticsearchApiESGoods : ShopElasticsearchShopElasticsearchApiESGoods
+  postcondition:
+   ShopElasticsearchShopElasticsearchApiGoodsServiceImpl::ShopElasticsearchShopElasticsearchApiGoodsServiceImplQueryPage() and
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsApproveServiceImpl::ShopGoodsShopGoodsApiGoodsApproveServiceImplCreate() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsApprove : ShopGoodsShopGoodsApiGoodsApprove
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsApproveServiceImpl::ShopGoodsShopGoodsApiGoodsApproveServiceImplDetail() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsApprove : ShopGoodsShopGoodsApiGoodsApprove
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplToPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplGetById() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplGetOne() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplCount() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplList() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplCreate() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplModify() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplDelete() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplQueryPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsClassServiceImpl::ShopGoodsShopGoodsApiGoodsClassServiceImplQueryBySpuId() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplToPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplGetById() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplGetOne() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplCount() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplList() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplQueryPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplCreate() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplModify() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplState() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplDetail() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsServiceImpl::ShopGoodsShopGoodsApiGoodsServiceImplDelete() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplToPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplGetById() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplGetOne() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplCount() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplList() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplQueryList() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSkuServiceImpl::ShopGoodsShopGoodsApiGoodsSkuServiceImplQuerySku() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoods : ShopGoodsShopGoodsApiGoods
+   refShopGoodsShopGoodsApiGoodsSku : ShopGoodsShopGoodsApiGoodsSku
+   refShopGoodsShopGoodsApiGoodsSkuImage : ShopGoodsShopGoodsApiGoodsSkuImage
+   refShopGoodsShopGoodsApiGoodsSkuStock : ShopGoodsShopGoodsApiGoodsSkuStock
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplToPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplGetById() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplGetOne() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplCount() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplList() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplPage() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplCreate() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplModify() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplDelete() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplQueryPage() : Boolean {
+  definition:
+   refShopActivityShopActivityApiBanner : ShopActivityShopActivityApiBanner
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   ShopActivityShopActivityApiBannerServiceImpl::ShopActivityShopActivityApiBannerServiceImplQueryList() and
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplQueryList() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopGoodsShopGoodsApiGoodsSpuServiceImpl::ShopGoodsShopGoodsApiGoodsSpuServiceImplSpuTree() : Boolean {
+  definition:
+   refShopGoodsShopGoodsApiGoodsClass : ShopGoodsShopGoodsApiGoodsClass
+   refShopGoodsShopGoodsApiGoodsSpu : ShopGoodsShopGoodsApiGoodsSpu
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplQueryPage() : Boolean {
+  definition:
+   refShopJobShopJobApiJobInfo : ShopJobShopJobApiJobInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplQueryList() : Boolean {
+  definition:
+   refShopJobShopJobApiJobInfo : ShopJobShopJobApiJobInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplQueryGroupList() : Boolean {
+  definition:
+   refShopJobShopJobApiJobGroup : ShopJobShopJobApiJobGroup
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplCreate() : Boolean {
+  definition:
+   refShopJobShopJobApiJobGroup : ShopJobShopJobApiJobGroup
+   refShopJobShopJobApiJobInfo : ShopJobShopJobApiJobInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplCreateOverloadB() : Boolean {
+  definition:
+   refShopJobShopJobApiJobGroup : ShopJobShopJobApiJobGroup
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplModify() : Boolean {
+  definition:
+   refShopJobShopJobApiJobInfo : ShopJobShopJobApiJobInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplInfo() : Boolean {
+  definition:
+   refShopJobShopJobApiJobInfo : ShopJobShopJobApiJobInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopJobShopJobApiJobServiceImpl::ShopJobShopJobApiJobServiceImplDoJob() : Boolean {
+  definition:
+   refShopJobShopJobApiJobInfo : ShopJobShopJobApiJobInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopManageCommonEnumService::ShopManageCommonEnumServiceGetCommonEnumInfo() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageGeneratorService::ShopManageGeneratorServiceTables() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageGeneratorService::ShopManageGeneratorServiceTablesOverloadB() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageGeneratorService::ShopManageGeneratorServiceGenerator() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageDynamicFormServiceImpl::ShopManageDynamicFormServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplCreate() and
+   ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplQueryList() and
+   result = true
+ }
+ Contract ShopManageDynamicFormServiceImpl::ShopManageDynamicFormServiceImplModify() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageDynamicFormServiceImpl::ShopManageDynamicFormServiceImplGet() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+   refShopPlatformShopPlatformApiFieldProps : ShopPlatformShopPlatformApiFieldProps
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplGet() and
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplToPage() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplGetById() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplGetOne() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplCount() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplList() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplPage() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplCreate() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplModify() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplQueryList() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageMenuServiceImpl::ShopManageMenuServiceImplDelete() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManagePermissionServiceImpl::ShopManagePermissionServiceImplGrant() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+   refShopManageRoleMenu : ShopManageRoleMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManagePermissionServiceImpl::ShopManagePermissionServiceImplPermission() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplToPage() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplGetById() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplGetOne() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplCount() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplList() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplPage() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplQueryPage() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplQueryList() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplCreate() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplModify() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplDelete() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageRoleServiceImpl::ShopManageRoleServiceImplQueryRolePermission() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+   refShopManageRoleMenu : ShopManageRoleMenu
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserClientService::ShopManageSysUserClientServiceQuerySysUserByUsername() : Boolean {
+  definition:
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserClientService::ShopManageSysUserClientServiceGetRolesBySysUserId() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+   refShopManageRoleMenu : ShopManageRoleMenu
+   refShopManageSysRole : ShopManageSysRole
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserServiceImpl::ShopManageSysUserServiceImplQueryPage() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+   refShopManageRole : ShopManageRole
+   refShopManageSysRole : ShopManageSysRole
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserServiceImpl::ShopManageSysUserServiceImplQueryList() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+   refShopManageRole : ShopManageRole
+   refShopManageSysRole : ShopManageSysRole
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserServiceImpl::ShopManageSysUserServiceImplQueryDownload() : Boolean {
+  definition:
+   refShopManageRole : ShopManageRole
+   refShopManageSysRole : ShopManageSysRole
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserServiceImpl::ShopManageSysUserServiceImplCreate() : Boolean {
+  definition:
+   refShopManageSysRole : ShopManageSysRole
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserServiceImpl::ShopManageSysUserServiceImplModify() : Boolean {
+  definition:
+   refShopManageSysRole : ShopManageSysRole
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSysUserServiceImpl::ShopManageSysUserServiceImplAdminInfo() : Boolean {
+  definition:
+   refShopManageMenu : ShopManageMenu
+   refShopManageRole : ShopManageRole
+   refShopManageRoleMenu : ShopManageRoleMenu
+   refShopManageSysRole : ShopManageSysRole
+   refShopManageSysUser : ShopManageSysUser
+  postcondition:
+   result = true
+ }
+ Contract ShopManageSystemConfigServiceImpl::ShopManageSystemConfigServiceImplQueryPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplQueryPage() and
+   result = true
+ }
+ Contract ShopManageSystemConfigServiceImpl::ShopManageSystemConfigServiceImplQueryList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplQueryList() and
+   result = true
+ }
+ Contract ShopManageSystemConfigServiceImpl::ShopManageSystemConfigServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplCreate() and
+   result = true
+ }
+ Contract ShopManageSystemConfigServiceImpl::ShopManageSystemConfigServiceImplModify() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplModify() and
+   result = true
+ }
+ Contract ShopManageSystemConfigServiceImpl::ShopManageSystemConfigServiceImplDelete() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplModify() and
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplQuantity() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplOrders() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplDetail() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplEvaluate() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplCancel() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplRefund() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplConfirm() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiAppUserOrderServiceImpl::ShopOrderShopOrderApiAppUserOrderServiceImplSubmit() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiOrderTradeServiceImpl::ShopOrderShopOrderApiOrderTradeServiceImplCreate() : Boolean {
+  definition:
+   refShopOrderShopOrderApiOrderTrade : ShopOrderShopOrderApiOrderTrade
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiSellerOrderServiceImpl::ShopOrderShopOrderApiSellerOrderServiceImplCreate() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplToPage() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplGetById() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplGetOne() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplCount() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplList() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplPage() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplQueryPage() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOrderShopOrderApiUserOrderServiceImpl::ShopOrderShopOrderApiUserOrderServiceImplDetail() : Boolean {
+  definition:
+   refShopOrderShopOrderApiUserOrder : ShopOrderShopOrderApiUserOrder
+  postcondition:
+   result = true
+ }
+ Contract ShopOssAliyunServiceImpl::ShopOssAliyunServiceImplSupport() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssAliyunServiceImpl::ShopOssAliyunServiceImplUploadStream() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssAliyunServiceImpl::ShopOssAliyunServiceImplUploadFile() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssAliyunServiceImpl::ShopOssAliyunServiceImplUploadToByte() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssAliyunServiceImpl::ShopOssAliyunServiceImplDownload() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssQiniuServiceImpl::ShopOssQiniuServiceImplSupport() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssQiniuServiceImpl::ShopOssQiniuServiceImplUploadStream() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssQiniuServiceImpl::ShopOssQiniuServiceImplUploadFile() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssQiniuServiceImpl::ShopOssQiniuServiceImplUploadToByte() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopOssQiniuServiceImpl::ShopOssQiniuServiceImplDownload() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplToPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetById() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplGetOne() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplCount() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplQueryList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl::ShopPlatformShopPlatformApiSystemConfigDetailServiceImplModify() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplToPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplGetById() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplGetOne() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplCount() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplGet() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiDynamicFormServiceImpl::ShopPlatformShopPlatformApiDynamicFormServiceImplModify() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiDynamicForm : ShopPlatformShopPlatformApiDynamicForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplToPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplGetById() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplGetOne() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplCount() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFieldServiceImpl::ShopPlatformShopPlatformApiFieldServiceImplPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplToPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplGetById() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplGetOne() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplCount() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplModify() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplQueryPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplQueryList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiFormServiceImpl::ShopPlatformShopPlatformApiFormServiceImplGet() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiField : ShopPlatformShopPlatformApiField
+   refShopPlatformShopPlatformApiFieldProps : ShopPlatformShopPlatformApiFieldProps
+   refShopPlatformShopPlatformApiForm : ShopPlatformShopPlatformApiForm
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSServiceImpl::ShopPlatformShopPlatformApiSMSServiceImplSendSms() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplSms() and
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplToPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplGetById() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplGetOne() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplCount() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplModify() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplQueryPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSMSTemplateServiceImpl::ShopPlatformShopPlatformApiSMSTemplateServiceImplSms() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplToPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplGetById() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplGetOne() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplCount() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplQueryList() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplQueryPage() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplCreate() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplModify() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+  postcondition:
+   result = true
+ }
+ Contract ShopPlatformShopPlatformApiSystemConfigServiceImpl::ShopPlatformShopPlatformApiSystemConfigServiceImplExecuteTask() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSystemConfig : ShopPlatformShopPlatformApiSystemConfig
+   refShopPlatformShopPlatformApiSystemConfigDetail : ShopPlatformShopPlatformApiSystemConfigDetail
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplToPage() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplGetById() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplGetOne() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplCount() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplList() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplPage() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplQueryPage() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplQueryList() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplCreate() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplModify() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiBlackListServiceImpl::ShopRiskShopRiskApiBlackListServiceImplDelete() : Boolean {
+  definition:
+   refShopRiskShopRiskApiBlackList : ShopRiskShopRiskApiBlackList
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplToPage() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplGetById() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplGetOne() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplCount() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplList() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplPage() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplQueryPage() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplQueryList() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplCreate() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplModify() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopRiskShopRiskApiWhiteListServiceImpl::ShopRiskShopRiskApiWhiteListServiceImplDelete() : Boolean {
+  definition:
+   refShopRiskShopRiskApiWhitelist : ShopRiskShopRiskApiWhitelist
+  postcondition:
+   result = true
+ }
+ Contract ShopSettlementShopSettlementApiSettlementOrderServiceImpl::ShopSettlementShopSettlementApiSettlementOrderServiceImplCheck() : Boolean {
+  definition:
+   refShopActivityShopActivityApiDiscountCoupon : ShopActivityShopActivityApiDiscountCoupon
+   refShopActivityShopActivityApiDiscountCouponTemplate : ShopActivityShopActivityApiDiscountCouponTemplate
+   refShopCartShopCartApiGoodsCart : ShopCartShopCartApiGoodsCart
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplList() and
+   ShopActivityShopActivityApiDiscountCouponServiceImpl::ShopActivityShopActivityApiDiscountCouponServiceImplListOverloadB() and
+   ShopCartShopCartApiCartServiceImpl::ShopCartShopCartApiCartServiceImplList() and
+   ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplAddress() and
+   result = true
+ }
+ Contract ShopSettlementShopSettlementApiSettlementOrderServiceImpl::ShopSettlementShopSettlementApiSettlementOrderServiceImplCreateOrder() : Boolean {
+  definition:
+   refShopCartShopCartApiOrderCart : ShopCartShopCartApiOrderCart
+  postcondition:
+   ShopCartShopCartApiOrderCartServiceImpl::ShopCartShopCartApiOrderCartServiceImplOrders() and
+   result = true
+ }
+ Contract ShopSettlementShopSettlementApiSettlementOrderServiceImpl::ShopSettlementShopSettlementApiSettlementOrderServiceImplSubmit() : Boolean {
+  definition:
+   refShopOrderShopOrderApiOrderTrade : ShopOrderShopOrderApiOrderTrade
+  postcondition:
+   ShopOrderShopOrderApiOrderTradeServiceImpl::ShopOrderShopOrderApiOrderTradeServiceImplCreate() and
+   result = true
+ }
+ Contract ShopUserShopUserApiInitService::ShopUserShopUserApiInitServiceInit() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiReceiverService::ShopUserShopUserApiReceiverServiceOnMessage() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplToPage() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplGetById() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplGetOne() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplCount() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplList() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplPage() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplQueryPage() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplCreate() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplModify() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplQueryByPrimaryKey() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiAddressServiceImpl::ShopUserShopUserApiAddressServiceImplAddress() : Boolean {
+  definition:
+   refShopUserShopUserApiAddress : ShopUserShopUserApiAddress
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplToPage() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplGetById() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplGetOne() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplCount() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplList() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplPage() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiFeedbackServiceImpl::ShopUserShopUserApiFeedbackServiceImplCreate() : Boolean {
+  definition:
+   refShopUserShopUserApiFeedback : ShopUserShopUserApiFeedback
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiGoodsCartServiceImpl::ShopUserShopUserApiGoodsCartServiceImplGoodsCarts() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiGoodsCartServiceImpl::ShopUserShopUserApiGoodsCartServiceImplModifyGoodsCart() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplToPage() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplGetBaseMapper() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplGetById() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplGetOne() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplCount() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplCountOverloadB() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplList() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplPage() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplQueryPage() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplQueryAppPage() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplInfo() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplDelete() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiNativeMessageServiceImpl::ShopUserShopUserApiNativeMessageServiceImplModify() : Boolean {
+  definition:
+   refShopUserShopUserApiNativeMessage : ShopUserShopUserApiNativeMessage
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiSMSCodeServiceImpl::ShopUserShopUserApiSMSCodeServiceImplSend() : Boolean {
+  definition:
+   refShopPlatformShopPlatformApiSMSTemplate : ShopPlatformShopPlatformApiSMSTemplate
+  postcondition:
+   ShopPlatformShopPlatformApiSMSServiceImpl::ShopPlatformShopPlatformApiSMSServiceImplSendSms() and
+   result = true
+ }
+ Contract ShopUserShopUserApiSignServiceImpl::ShopUserShopUserApiSignServiceImplSign() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiSignServiceImpl::ShopUserShopUserApiSignServiceImplGetSignDays() : Boolean {
+  definition:
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiUserAccountServiceImpl::ShopUserShopUserApiUserAccountServiceImplAccount() : Boolean {
+  definition:
+   refShopUserShopUserApiUserAccount : ShopUserShopUserApiUserAccount
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiUserServiceImpl::ShopUserShopUserApiUserServiceImplProfile() : Boolean {
+  definition:
+   refShopUserShopUserApiUser : ShopUserShopUserApiUser
+   refShopUserShopUserApiUserInfo : ShopUserShopUserApiUserInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiUserServiceImpl::ShopUserShopUserApiUserServiceImplProfileInfo() : Boolean {
+  definition:
+   refShopUserShopUserApiUser : ShopUserShopUserApiUser
+   refShopUserShopUserApiUserInfo : ShopUserShopUserApiUserInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiUserServiceImpl::ShopUserShopUserApiUserServiceImplBatchProfile() : Boolean {
+  definition:
+   refShopUserShopUserApiUser : ShopUserShopUserApiUser
+   refShopUserShopUserApiUserInfo : ShopUserShopUserApiUserInfo
+  postcondition:
+   result = true
+ }
+ Contract ShopUserShopUserApiUserServiceImpl::ShopUserShopUserApiUserServiceImplLogin() : Boolean {
+  definition:
+   refShopUserShopUserApiUser : ShopUserShopUserApiUser
+   refShopUserShopUserApiUserInfo : ShopUserShopUserApiUserInfo
+  postcondition:
+   result = true
+ }
+}

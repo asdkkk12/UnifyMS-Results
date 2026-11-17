@@ -1,0 +1,155 @@
+{
+  "name": "PIGGY_METRICS_AST",
+  "entities": [
+    {
+      "name": "AccountServiceAccount",
+      "nanoentities": [
+        "name",
+        "lastSeen",
+        "incomes",
+        "expenses",
+        "saving",
+        "note"
+      ]
+    },
+    {
+      "name": "AccountServiceItem",
+      "nanoentities": [
+        "title",
+        "amount",
+        "currency",
+        "period",
+        "icon"
+      ]
+    },
+    {
+      "name": "AccountServiceSaving",
+      "nanoentities": [
+        "amount",
+        "currency",
+        "interest",
+        "deposit",
+        "capitalization"
+      ]
+    },
+    {
+      "name": "AccountServiceUser",
+      "nanoentities": [
+        "username",
+        "password"
+      ]
+    },
+    {
+      "name": "NotificationServiceNotificationSettings",
+      "nanoentities": [
+        "active",
+        "frequency",
+        "lastNotified"
+      ]
+    },
+    {
+      "name": "NotificationServiceRecipient",
+      "nanoentities": [
+        "accountName",
+        "email",
+        "scheduledNotifications"
+      ]
+    },
+    {
+      "name": "StatisticsServiceAccount",
+      "nanoentities": [
+        "incomes",
+        "expenses",
+        "saving"
+      ]
+    },
+    {
+      "name": "StatisticsServiceExchangeRatesContainer",
+      "nanoentities": [
+        "date",
+        "base",
+        "rates"
+      ]
+    },
+    {
+      "name": "StatisticsServiceItem",
+      "nanoentities": [
+        "title",
+        "amount",
+        "currency",
+        "period"
+      ]
+    },
+    {
+      "name": "StatisticsServiceSaving",
+      "nanoentities": [
+        "amount",
+        "currency",
+        "interest",
+        "deposit",
+        "capitalization"
+      ]
+    },
+    {
+      "name": "StatisticsServiceDataPoint",
+      "nanoentities": [
+        "id",
+        "incomes",
+        "expenses",
+        "statistics",
+        "rates"
+      ]
+    },
+    {
+      "name": "StatisticsServiceDataPointId",
+      "nanoentities": [
+        "account",
+        "date"
+      ]
+    },
+    {
+      "name": "StatisticsServiceItemMetric",
+      "nanoentities": [
+        "title",
+        "amount"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "origin": "AccountServiceAccount",
+      "destination": "AccountServiceItem",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "AccountServiceAccount",
+      "destination": "AccountServiceSaving",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "NotificationServiceRecipient",
+      "destination": "NotificationServiceNotificationSettings",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "StatisticsServiceAccount",
+      "destination": "StatisticsServiceItem",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "StatisticsServiceAccount",
+      "destination": "StatisticsServiceSaving",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "StatisticsServiceDataPoint",
+      "destination": "StatisticsServiceDataPointId",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "StatisticsServiceDataPoint",
+      "destination": "StatisticsServiceItemMetric",
+      "type": "AGGREGATION"
+    }
+  ]
+}

@@ -1,0 +1,1307 @@
+{
+  "case": "java-online-taxi",
+  "metric": "ED",
+  "better": "lower",
+  "normalization": "shared min-max across all 40 per-run representatives in this case",
+  "metricOrder": [
+    "IFN",
+    "CHD",
+    "Instability",
+    "UCM",
+    "CMQ"
+  ],
+  "ideal": [
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "weights": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "zeroSpanPolicy": "zero distance contribution",
+  "metricVersion": "paper-ieee-eq5-21-v2-isolated-zero",
+  "inputHash": "970acf9f42c1daed1596f693c35ee1ccaa0fd5cf0b0f7013309add7ac177e1c3",
+  "sampleCount": 40,
+  "seeds": [
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "bounds": {
+    "IFN": {
+      "min": 0.8462,
+      "max": 2.625
+    },
+    "CHD": {
+      "min": 0.1332,
+      "max": 0.3962
+    },
+    "Instability": {
+      "min": 0.2436,
+      "max": 0.5
+    },
+    "UCM": {
+      "min": 0.0277,
+      "max": 0.2402
+    },
+    "CMQ": {
+      "min": 0.0616,
+      "max": 0.2472
+    }
+  },
+  "groups": {
+    "full": {
+      "method": "Full：完整方法",
+      "n": 10,
+      "mean": 1.1871064569364944,
+      "sampleStd": 0.1516931617873298
+    },
+    "without-offline": {
+      "method": "−O：无离线选参",
+      "n": 10,
+      "mean": 1.3885631759210755,
+      "sampleStd": 0.12741912258553945
+    },
+    "without-probability": {
+      "method": "−P：无动态概率",
+      "n": 10,
+      "mean": 1.1592893626896883,
+      "sampleStd": 0.12464438420625092
+    },
+    "without-guidance": {
+      "method": "−G：无候选引导",
+      "n": 10,
+      "mean": 1.2621624258464832,
+      "sampleStd": 0.1697815821988956
+    }
+  },
+  "runs": [
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 101,
+      "metrics": {
+        "IFN": 1.3125,
+        "CHD": 0.2331,
+        "Instability": 0.2708,
+        "UCM": 0.2402,
+        "CMQ": 0.1073
+      },
+      "normalized": {
+        "IFN": 0.26214301776478527,
+        "CHD": 0.3798479087452471,
+        "Instability": 0.10608424336973471,
+        "UCM": 1.0,
+        "CMQ": 0.2462284482758621
+      },
+      "squaredContributions": {
+        "IFN": 0.06871896176282853,
+        "CHD": 0.38458861628764335,
+        "Instability": 0.7990853799518598,
+        "UCM": 0.0,
+        "CMQ": 0.5681715521886147
+      },
+      "ED": 1.3492829614987905,
+      "source": "java-online-taxi/full-reference/run-full-101.json",
+      "sourceSha256": "68d0ef6b89668edf7bd7262c3f048c36f6619981f9f21725d1b8d0291c7f6104"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 103,
+      "metrics": {
+        "IFN": 1.1765,
+        "CHD": 0.2027,
+        "Instability": 0.2745,
+        "UCM": 0.1926,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.18568697998650785,
+        "CHD": 0.2642585551330798,
+        "Instability": 0.12051482059282377,
+        "UCM": 0.776,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.034479654536509766,
+        "CHD": 0.5413154736948633,
+        "Instability": 0.7734941807968729,
+        "UCM": 0.05017599999999999,
+        "CMQ": 0.0
+      },
+      "ED": 1.1829899868672795,
+      "source": "java-online-taxi/full-reference/run-full-103.json",
+      "sourceSha256": "e4e6b278601644f1a5bf643774555882adf39251db6703c96b4175588c52c83d"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 107,
+      "metrics": {
+        "IFN": 1.25,
+        "CHD": 0.2248,
+        "Instability": 0.2865,
+        "UCM": 0.233,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.22700697099167982,
+        "CHD": 0.34828897338403036,
+        "Instability": 0.1673166926677066,
+        "UCM": 0.9661176470588236,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.051532164878817364,
+        "CHD": 0.424727262212841,
+        "Instability": 0.6933614903098467,
+        "UCM": 0.0011480138408304426,
+        "CMQ": 0.0
+      },
+      "ED": 1.0820207628517742,
+      "source": "java-online-taxi/full-reference/run-full-107.json",
+      "sourceSha256": "fb9b96d94b301c5ee7a2d4dc9c530ae0cbd325252fd791b66aed6b99fa523eb9"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 109,
+      "metrics": {
+        "IFN": 1.4286,
+        "CHD": 0.2377,
+        "Instability": 0.2857,
+        "UCM": 0.106,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.32741173825050607,
+        "CHD": 0.397338403041825,
+        "Instability": 0.16419656786271453,
+        "UCM": 0.3684705882352941,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.1071984463442179,
+        "CHD": 0.36320100044817777,
+        "Instability": 0.698567377172466,
+        "UCM": 0.39882939792387545,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.325286481793251,
+      "source": "java-online-taxi/full-reference/run-full-109.json",
+      "sourceSha256": "ac3925dcb8b4838dd3870ecc2487cabefdf08ec2e5687eb775ff07d972460e8b"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 113,
+      "metrics": {
+        "IFN": 1.2857,
+        "CHD": 0.2263,
+        "Instability": 0.2857,
+        "UCM": 0.2044,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.2470766809084777,
+        "CHD": 0.3539923954372623,
+        "Instability": 0.16419656786271453,
+        "UCM": 0.8315294117647059,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.06104688624874971,
+        "CHD": 0.4173258251528864,
+        "Instability": 0.698567377172466,
+        "UCM": 0.028382339100346033,
+        "CMQ": 0.0
+      },
+      "ED": 1.0978717719635787,
+      "source": "java-online-taxi/full-reference/run-full-113.json",
+      "sourceSha256": "c2d946722f165f4bb2d3cffbbbb9370fb44c96838203800f27928fa074682ffc"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 127,
+      "metrics": {
+        "IFN": 1.2941,
+        "CHD": 0.1713,
+        "Instability": 0.2941,
+        "UCM": 0.184,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.25179896559478304,
+        "CHD": 0.14486692015209124,
+        "Instability": 0.19695787831513248,
+        "UCM": 0.7355294117647059,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.06340271907460274,
+        "CHD": 0.7312525842501699,
+        "Instability": 0.6448766492001337,
+        "UCM": 0.0699446920415225,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.3030981089317968,
+      "source": "java-online-taxi/full-reference/run-full-127.json",
+      "sourceSha256": "2c0ec6fd35aaa16a562ed56ff0c0ef49dc8a8090fe0d56d9953481ac19f681d8"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 131,
+      "metrics": {
+        "IFN": 1.4,
+        "CHD": 0.2021,
+        "Instability": 0.4,
+        "UCM": 0.2344,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.3113334832471329,
+        "CHD": 0.261977186311787,
+        "Instability": 0.6099843993759752,
+        "UCM": 0.9727058823529412,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.09692853779079277,
+        "CHD": 0.5446776735242668,
+        "Instability": 0.15211216873011885,
+        "UCM": 0.0007449688581314867,
+        "CMQ": 0.0
+      },
+      "ED": 0.8913267352117908,
+      "source": "java-online-taxi/full-reference/run-full-131.json",
+      "sourceSha256": "a514e1d97d672365c4425c701ec195509840e1c93921d4492c7397cd40120e0e"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 137,
+      "metrics": {
+        "IFN": 1.2143,
+        "CHD": 0.2387,
+        "Instability": 0.3214,
+        "UCM": 0.1943,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.20693726107488195,
+        "CHD": 0.4011406844106463,
+        "Instability": 0.3034321372854915,
+        "UCM": 0.784,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.04282303002117385,
+        "CHD": 0.3586324798681491,
+        "Instability": 0.4852067873666583,
+        "UCM": 0.04665599999999999,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.059200799750065,
+      "source": "java-online-taxi/full-reference/run-full-137.json",
+      "sourceSha256": "ad7f6b1662c175e648ab0d56520ece9c46d1282ded751adb37c38805013372cd"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 139,
+      "metrics": {
+        "IFN": 1.1579,
+        "CHD": 0.1744,
+        "Instability": 0.2632,
+        "UCM": 0.2333,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.17523049246683156,
+        "CHD": 0.1566539923954372,
+        "Instability": 0.07644305772230882,
+        "UCM": 0.967529411764706,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.030705725490168312,
+        "CHD": 0.7112324885425553,
+        "Instability": 0.8529574256293185,
+        "UCM": 0.001054339100346015,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.3358660171205734,
+      "source": "java-online-taxi/full-reference/run-full-139.json",
+      "sourceSha256": "1af75021b2cfddded0450fbcab0107189635c3c9f94ace2e09cd425263f219a5"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 149,
+      "metrics": {
+        "IFN": 1.6364,
+        "CHD": 0.267,
+        "Instability": 0.3485,
+        "UCM": 0.0882,
+        "CMQ": 0.1547
+      },
+      "normalized": {
+        "IFN": 0.4442320665617271,
+        "CHD": 0.508745247148289,
+        "Instability": 0.4091263650546021,
+        "UCM": 0.2847058823529412,
+        "CMQ": 0.5016163793103449
+      },
+      "squaredContributions": {
+        "IFN": 0.19734212896170272,
+        "CHD": 0.2413312321993957,
+        "Instability": 0.34913165247358735,
+        "UCM": 0.5116456747404845,
+        "CMQ": 0.24838623337173005
+      },
+      "ED": 1.2441209433760452,
+      "source": "java-online-taxi/full-reference/run-full-149.json",
+      "sourceSha256": "007d9aaf91d7443a347e219be4d9f73fd7533bfa07ff8a3831b0c3b8477a60f4"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 101,
+      "metrics": {
+        "IFN": 1.6364,
+        "CHD": 0.2306,
+        "Instability": 0.2727,
+        "UCM": 0.1241,
+        "CMQ": 0.1084
+      },
+      "normalized": {
+        "IFN": 0.4442320665617271,
+        "CHD": 0.37034220532319384,
+        "Instability": 0.11349453978159123,
+        "UCM": 0.4536470588235294,
+        "CMQ": 0.2521551724137931
+      },
+      "squaredContributions": {
+        "IFN": 0.19734212896170272,
+        "CHD": 0.396468938397259,
+        "Instability": 0.7858919309970528,
+        "UCM": 0.29850153633217996,
+        "CMQ": 0.5592718861474435
+      },
+      "ED": 1.4958196484989887,
+      "source": "java-online-taxi/arms/without-offline/seed-101/run.json",
+      "sourceSha256": "ce1cb2cbe26d650513facb73c55c197a038f3672bfeedf230e23fe5d2a2e936a"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 103,
+      "metrics": {
+        "IFN": 1.3571,
+        "CHD": 0.2427,
+        "Instability": 0.3214,
+        "UCM": 0.1276,
+        "CMQ": 0.0982
+      },
+      "normalized": {
+        "IFN": 0.2872161007420733,
+        "CHD": 0.4163498098859315,
+        "Instability": 0.3034321372854915,
+        "UCM": 0.4701176470588235,
+        "CMQ": 0.19719827586206895
+      },
+      "squaredContributions": {
+        "IFN": 0.08249308852548082,
+        "CHD": 0.3406475444201883,
+        "Instability": 0.4852067873666583,
+        "UCM": 0.2807753079584775,
+        "CMQ": 0.6444906082788348
+      },
+      "ED": 1.3541097948651135,
+      "source": "java-online-taxi/arms/without-offline/seed-103/run.json",
+      "sourceSha256": "54c5c4784c2bdffa6892d1a9c6c9b613ab6f9fe334a79af3d0e5fc04afb0314b"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 107,
+      "metrics": {
+        "IFN": 1.5,
+        "CHD": 0.1332,
+        "Instability": 0.2917,
+        "UCM": 0.1128,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.36755115808410166,
+        "CHD": 0.0,
+        "Instability": 0.18759750390015606,
+        "UCM": 0.4004705882352941,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.1350938538089643,
+        "CHD": 1.0,
+        "Instability": 0.659997815669257,
+        "UCM": 0.3594355155709342,
+        "CMQ": 0.0
+      },
+      "ED": 1.467830775344745,
+      "source": "java-online-taxi/arms/without-offline/seed-107/run.json",
+      "sourceSha256": "8a49bdb99b69aa59cf9f11e7e659ad7c5c81b47e8b9a8c7d2079672295df7cf8"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 109,
+      "metrics": {
+        "IFN": 1.5,
+        "CHD": 0.2471,
+        "Instability": 0.3571,
+        "UCM": 0.1136,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.36755115808410166,
+        "CHD": 0.43307984790874515,
+        "Instability": 0.44266770670826827,
+        "UCM": 0.4042352941176471,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.1350938538089643,
+        "CHD": 0.32139845884717144,
+        "Instability": 0.3106192851458209,
+        "UCM": 0.3549355847750865,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.1448297775268772,
+      "source": "java-online-taxi/arms/without-offline/seed-109/run.json",
+      "sourceSha256": "dc638773108e22b297a1f69f4e2066aa224f28e7f03ea97fc68281597d8c112b"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 113,
+      "metrics": {
+        "IFN": 2.1,
+        "CHD": 0.2,
+        "Instability": 0.4333,
+        "UCM": 0.0508,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.7048572071059142,
+        "CHD": 0.2539923954372623,
+        "Instability": 0.7398595943837755,
+        "UCM": 0.10870588235294118,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.49682368240914954,
+        "CHD": 0.5565273460654341,
+        "Instability": 0.06767303063417382,
+        "UCM": 0.7944052041522491,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.4505231126032438,
+      "source": "java-online-taxi/arms/without-offline/seed-113/run.json",
+      "sourceSha256": "e8009365d439fbb05f2c6d03f63b3aa0181cff55584124ebb5695d220e143a90"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 127,
+      "metrics": {
+        "IFN": 1.5385,
+        "CHD": 0.2228,
+        "Instability": 0.2436,
+        "UCM": 0.1055,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.38919496289633465,
+        "CHD": 0.34068441064638777,
+        "Instability": 0.0,
+        "UCM": 0.3661176470588235,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.1514727191438793,
+        "CHD": 0.434697046364701,
+        "Instability": 1.0,
+        "UCM": 0.4018068373702423,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.4753184875863308,
+      "source": "java-online-taxi/arms/without-offline/seed-127/run.json",
+      "sourceSha256": "b747aedc2d94d437c13fd4c9297f9f38fffab72faf60bdcdb0da3e9e607d3ccf"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 131,
+      "metrics": {
+        "IFN": 1.5833,
+        "CHD": 0.1669,
+        "Instability": 0.4167,
+        "UCM": 0.0973,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.4143804812232966,
+        "CHD": 0.12813688212927749,
+        "Instability": 0.6751170046801873,
+        "UCM": 0.32752941176470585,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.1717111832188509,
+        "CHD": 0.7601452963032574,
+        "Instability": 0.10554896064797344,
+        "UCM": 0.45221669204152254,
+        "CMQ": 0.0
+      },
+      "ED": 1.2205007710819376,
+      "source": "java-online-taxi/arms/without-offline/seed-131/run.json",
+      "sourceSha256": "582ecff32bcc7cf52a1155a59cc04c53877a67c367100a2077277b19e3787deb"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 137,
+      "metrics": {
+        "IFN": 1.4286,
+        "CHD": 0.189,
+        "Instability": 0.3214,
+        "UCM": 0.1209,
+        "CMQ": 0.1625
+      },
+      "normalized": {
+        "IFN": 0.32741173825050607,
+        "CHD": 0.21216730038022807,
+        "Instability": 0.3034321372854915,
+        "UCM": 0.4385882352941176,
+        "CMQ": 0.5436422413793104
+      },
+      "squaredContributions": {
+        "IFN": 0.1071984463442179,
+        "CHD": 0.6206803625901779,
+        "Instability": 0.4852067873666583,
+        "UCM": 0.31518316955017306,
+        "CMQ": 0.2082624038532996
+      },
+      "ED": 1.3177750831247823,
+      "source": "java-online-taxi/arms/without-offline/seed-137/run.json",
+      "sourceSha256": "9a1e784f437696cb16c37979b49335d6b0af8c7740f82555c9c04975ade3b513"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 139,
+      "metrics": {
+        "IFN": 1.8333,
+        "CHD": 0.212,
+        "Instability": 0.3333,
+        "UCM": 0.0739,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.5549246683157185,
+        "CHD": 0.2996197718631178,
+        "Instability": 0.34984399375975034,
+        "UCM": 0.2174117647058823,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.3079413875053102,
+        "CHD": 0.4905324639650713,
+        "Instability": 0.42270283245027146,
+        "UCM": 0.6124443460207614,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.4220439750150522,
+      "source": "java-online-taxi/arms/without-offline/seed-139/run.json",
+      "sourceSha256": "ef2c649f929e592ac12ecd1ecd1065016dc29267b5b50bc6121f9d2b6a194209"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-offline",
+      "method": "−O：无离线选参",
+      "seed": 149,
+      "metrics": {
+        "IFN": 2.3333,
+        "CHD": 0.1878,
+        "Instability": 0.4519,
+        "UCM": 0.0277,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.8360130425005622,
+        "CHD": 0.2076045627376425,
+        "Instability": 0.8124024960998442,
+        "UCM": 0.0,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.6989178072310468,
+        "CHD": 0.6278905289942027,
+        "Instability": 0.035192823469568986,
+        "UCM": 1.0,
+        "CMQ": 0.0
+      },
+      "ED": 1.5368803335636834,
+      "source": "java-online-taxi/arms/without-offline/seed-149/run.json",
+      "sourceSha256": "92bace16aaf1e4528058720a43f29120c54d0f92987b6f97249c1ed544d75d71"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 101,
+      "metrics": {
+        "IFN": 1.0,
+        "CHD": 0.2009,
+        "Instability": 0.2667,
+        "UCM": 0.1935,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.08646278389925796,
+        "CHD": 0.25741444866920143,
+        "Instability": 0.09009360374414971,
+        "UCM": 0.7802352941176471,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.007475812999609781,
+        "CHD": 0.5514333010452661,
+        "Instability": 0.8279296499473083,
+        "UCM": 0.048296525951557055,
+        "CMQ": 0.0
+      },
+      "ED": 1.1979713226716828,
+      "source": "java-online-taxi/arms/without-probability/seed-101/run.json",
+      "sourceSha256": "d9f01ddc059d5bad776647299678b4d994071171868b7a00058dc212cf19f7f8"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 103,
+      "metrics": {
+        "IFN": 1.1765,
+        "CHD": 0.2027,
+        "Instability": 0.2745,
+        "UCM": 0.1926,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.18568697998650785,
+        "CHD": 0.2642585551330798,
+        "Instability": 0.12051482059282377,
+        "UCM": 0.776,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.034479654536509766,
+        "CHD": 0.5413154736948633,
+        "Instability": 0.7734941807968729,
+        "UCM": 0.05017599999999999,
+        "CMQ": 0.0
+      },
+      "ED": 1.1829899868672795,
+      "source": "java-online-taxi/arms/without-probability/seed-103/run.json",
+      "sourceSha256": "0345b63075e28bbc7695209febdcb8d982b58d16f21c79df0ab02774b98ccbd5"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 107,
+      "metrics": {
+        "IFN": 1.3846,
+        "CHD": 0.2551,
+        "Instability": 0.3462,
+        "UCM": 0.1736,
+        "CMQ": 0.1296
+      },
+      "normalized": {
+        "IFN": 0.3026759613222398,
+        "CHD": 0.4634980988593155,
+        "Instability": 0.40015600624024966,
+        "UCM": 0.6865882352941177,
+        "CMQ": 0.36637931034482757
+      },
+      "squaredContributions": {
+        "IFN": 0.09161273756234199,
+        "CHD": 0.2878342899275688,
+        "Instability": 0.35981281684964744,
+        "UCM": 0.09822693425605532,
+        "CMQ": 0.40147517835909624
+      },
+      "ED": 1.11308667989277,
+      "source": "java-online-taxi/arms/without-probability/seed-107/run.json",
+      "sourceSha256": "1fd8b8421b78499d6a6a5fdc69b710b0531932943b68bbe2572d9ec6a8237f1e"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 109,
+      "metrics": {
+        "IFN": 1.3846,
+        "CHD": 0.2597,
+        "Instability": 0.3718,
+        "UCM": 0.2079,
+        "CMQ": 0.1072
+      },
+      "normalized": {
+        "IFN": 0.3026759613222398,
+        "CHD": 0.48098859315589343,
+        "Instability": 0.5000000000000001,
+        "UCM": 0.848,
+        "CMQ": 0.2456896551724138
+      },
+      "squaredContributions": {
+        "IFN": 0.09161273756234199,
+        "CHD": 0.26937284043429865,
+        "Instability": 0.2499999999999999,
+        "UCM": 0.023104000000000006,
+        "CMQ": 0.568984096313912
+      },
+      "ED": 1.0968471517538587,
+      "source": "java-online-taxi/arms/without-probability/seed-109/run.json",
+      "sourceSha256": "c7634d84156948c9436e6c4b194c9d623dbb988331bda0ac1bb8ffa861eb429c"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 113,
+      "metrics": {
+        "IFN": 1.2857,
+        "CHD": 0.2263,
+        "Instability": 0.2857,
+        "UCM": 0.2044,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.2470766809084777,
+        "CHD": 0.3539923954372623,
+        "Instability": 0.16419656786271453,
+        "UCM": 0.8315294117647059,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.06104688624874971,
+        "CHD": 0.4173258251528864,
+        "Instability": 0.698567377172466,
+        "UCM": 0.028382339100346033,
+        "CMQ": 0.0
+      },
+      "ED": 1.0978717719635787,
+      "source": "java-online-taxi/arms/without-probability/seed-113/run.json",
+      "sourceSha256": "49d7b7bf03e7fb160f213324712ca0e5b1bd6025066768aaaaa0e086ed177249"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 127,
+      "metrics": {
+        "IFN": 1.0,
+        "CHD": 0.3962,
+        "Instability": 0.5,
+        "UCM": 0.0462,
+        "CMQ": 0.0616
+      },
+      "normalized": {
+        "IFN": 0.08646278389925796,
+        "CHD": 1.0,
+        "Instability": 1.0,
+        "UCM": 0.08705882352941176,
+        "CMQ": 0.0
+      },
+      "squaredContributions": {
+        "IFN": 0.007475812999609781,
+        "CHD": 0.0,
+        "Instability": 0.0,
+        "UCM": 0.8334615916955017,
+        "CMQ": 1.0
+      },
+      "ED": 1.356811484582553,
+      "source": "java-online-taxi/arms/without-probability/seed-127/run.json",
+      "sourceSha256": "5f692c66d62d60912fb19f0ea34f9bbed90ada58f1f8ec50ad62b1c25bb26b73"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 131,
+      "metrics": {
+        "IFN": 1.4286,
+        "CHD": 0.1541,
+        "Instability": 0.3214,
+        "UCM": 0.1932,
+        "CMQ": 0.1469
+      },
+      "normalized": {
+        "IFN": 0.32741173825050607,
+        "CHD": 0.07946768060836491,
+        "Instability": 0.3034321372854915,
+        "UCM": 0.7788235294117648,
+        "CMQ": 0.45959051724137934
+      },
+      "squaredContributions": {
+        "IFN": 0.1071984463442179,
+        "CHD": 0.8473797510445432,
+        "Instability": 0.4852067873666583,
+        "UCM": 0.04891903114186847,
+        "CMQ": 0.29204240905543993
+      },
+      "ED": 1.3344461116705792,
+      "source": "java-online-taxi/arms/without-probability/seed-131/run.json",
+      "sourceSha256": "59c4dfef55372e16417b094ed0e0671c10faa19824d15da507e62753861c30d8"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 137,
+      "metrics": {
+        "IFN": 0.8462,
+        "CHD": 0.2287,
+        "Instability": 0.3462,
+        "UCM": 0.1769,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.0,
+        "CHD": 0.36311787072243334,
+        "Instability": 0.40015600624024966,
+        "UCM": 0.7021176470588235,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.0,
+        "CHD": 0.4056188465931271,
+        "Instability": 0.35981281684964744,
+        "UCM": 0.08873389619377163,
+        "CMQ": 0.0
+      },
+      "ED": 0.9242107766286575,
+      "source": "java-online-taxi/arms/without-probability/seed-137/run.json",
+      "sourceSha256": "7886d1c19c905831c3c75538114aa1982d4dd187b1948634124037e2e7078d69"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 139,
+      "metrics": {
+        "IFN": 1.6154,
+        "CHD": 0.1718,
+        "Instability": 0.4103,
+        "UCM": 0.1472,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.4324263548459636,
+        "CHD": 0.14676806083650187,
+        "Instability": 0.6501560062402496,
+        "UCM": 0.5623529411764706,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.18699255236536722,
+        "CHD": 0.7280047420087035,
+        "Instability": 0.12239081996977227,
+        "UCM": 0.1915349480968858,
+        "CMQ": 0.0
+      },
+      "ED": 1.1085680233710193,
+      "source": "java-online-taxi/arms/without-probability/seed-139/run.json",
+      "sourceSha256": "c88c3fe43f669cfe471d333b2c32b8046caa9fe3693421304f5fd94ec399b480"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-probability",
+      "method": "−P：无动态概率",
+      "seed": 149,
+      "metrics": {
+        "IFN": 0.9231,
+        "CHD": 0.2536,
+        "Instability": 0.2436,
+        "UCM": 0.1741,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.04323139194962901,
+        "CHD": 0.45779467680608354,
+        "Instability": 0.0,
+        "UCM": 0.6889411764705883,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.001868953249902448,
+        "CHD": 0.2939866124998194,
+        "Instability": 1.0,
+        "UCM": 0.0967575916955017,
+        "CMQ": 0.0
+      },
+      "ED": 1.1800903174949042,
+      "source": "java-online-taxi/arms/without-probability/seed-149/run.json",
+      "sourceSha256": "44818a1db1495aa073695c3eb7e7531a907d9b80ec466acd6eab2ba70d9452b3"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 101,
+      "metrics": {
+        "IFN": 1.25,
+        "CHD": 0.2255,
+        "Instability": 0.3229,
+        "UCM": 0.2179,
+        "CMQ": 0.0699
+      },
+      "normalized": {
+        "IFN": 0.22700697099167982,
+        "CHD": 0.3509505703422053,
+        "Instability": 0.30928237129485187,
+        "UCM": 0.8950588235294118,
+        "CMQ": 0.044719827586206906
+      },
+      "squaredContributions": {
+        "IFN": 0.051532164878817364,
+        "CHD": 0.42126516213910853,
+        "Instability": 0.477090842604063,
+        "UCM": 0.011012650519031135,
+        "CMQ": 0.9125602078069264
+      },
+      "ED": 1.3687443252660252,
+      "source": "java-online-taxi/arms/without-guidance/seed-101/run.json",
+      "sourceSha256": "8c10ea66abe080a6a03447839a48a79957c1afb440b8676ffa9b40448cd94339"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 103,
+      "metrics": {
+        "IFN": 1.5714,
+        "CHD": 0.1659,
+        "Instability": 0.381,
+        "UCM": 0.1042,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.4076905779176973,
+        "CHD": 0.12433460076045619,
+        "Instability": 0.5358814352574104,
+        "UCM": 0.36,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.16621160732286602,
+        "CHD": 0.7667898914253496,
+        "Instability": 0.21540604213872133,
+        "UCM": 0.4096,
+        "CMQ": 0.0
+      },
+      "ED": 1.248201722834469,
+      "source": "java-online-taxi/arms/without-guidance/seed-103/run.json",
+      "sourceSha256": "f6840358c966aaa1dbf2661567df05139b4dca5b7fd10d3d5a45846b6fc57a1e"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 107,
+      "metrics": {
+        "IFN": 1.5,
+        "CHD": 0.1512,
+        "Instability": 0.3393,
+        "UCM": 0.1979,
+        "CMQ": 0.1547
+      },
+      "normalized": {
+        "IFN": 0.36755115808410166,
+        "CHD": 0.06844106463878322,
+        "Instability": 0.37324492979719187,
+        "UCM": 0.8009411764705882,
+        "CMQ": 0.5016163793103449
+      },
+      "squaredContributions": {
+        "IFN": 0.1350938538089643,
+        "CHD": 0.8678020500513237,
+        "Instability": 0.392821918024927,
+        "UCM": 0.03962441522491353,
+        "CMQ": 0.24838623337173005
+      },
+      "ED": 1.2975856312713465,
+      "source": "java-online-taxi/arms/without-guidance/seed-107/run.json",
+      "sourceSha256": "00bb45054cf605090a7e054006aeb7caf20881b212bb0dcfef9bfc0582db093f"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 109,
+      "metrics": {
+        "IFN": 2.0,
+        "CHD": 0.2505,
+        "Instability": 0.303,
+        "UCM": 0.0769,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.6486395322689453,
+        "CHD": 0.4460076045627376,
+        "Instability": 0.2316692667706708,
+        "UCM": 0.23152941176470587,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.4207332428220762,
+        "CHD": 0.3069075742023161,
+        "Instability": 0.5903321156247187,
+        "UCM": 0.5905470449826989,
+        "CMQ": 0.0
+      },
+      "ED": 1.3814919390397504,
+      "source": "java-online-taxi/arms/without-guidance/seed-109/run.json",
+      "sourceSha256": "d3e47d8a9569ceb0c3c1b427ad189a9944f561e9850c5c647ef4489c2652f51a"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 113,
+      "metrics": {
+        "IFN": 1.2857,
+        "CHD": 0.2263,
+        "Instability": 0.2857,
+        "UCM": 0.2044,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.2470766809084777,
+        "CHD": 0.3539923954372623,
+        "Instability": 0.16419656786271453,
+        "UCM": 0.8315294117647059,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.06104688624874971,
+        "CHD": 0.4173258251528864,
+        "Instability": 0.698567377172466,
+        "UCM": 0.028382339100346033,
+        "CMQ": 0.0
+      },
+      "ED": 1.0978717719635787,
+      "source": "java-online-taxi/arms/without-guidance/seed-113/run.json",
+      "sourceSha256": "a5a5d6b69a6784fd1b24ee3d991b4fc322c8459d5abaa2759fabc26822e45f86"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 127,
+      "metrics": {
+        "IFN": 1.2222,
+        "CHD": 0.1743,
+        "Instability": 0.2639,
+        "UCM": 0.2045,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.21137845738700248,
+        "CHD": 0.1562737642585551,
+        "Instability": 0.07917316692667713,
+        "UCM": 0.832,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.04468085224730882,
+        "CHD": 0.7118739608784282,
+        "Instability": 0.8479220565078454,
+        "UCM": 0.028224000000000013,
+        "CMQ": 0.0
+      },
+      "ED": 1.2777718378621368,
+      "source": "java-online-taxi/arms/without-guidance/seed-127/run.json",
+      "sourceSha256": "b6d278896bc804df5f9d74dcdefd2f2bd3279d990eb19ce508f8633f645e9454"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 131,
+      "metrics": {
+        "IFN": 1.5333,
+        "CHD": 0.1583,
+        "Instability": 0.2889,
+        "UCM": 0.1651,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.3862716438048123,
+        "CHD": 0.09543726235741438,
+        "Instability": 0.17667706708268324,
+        "UCM": 0.6465882352941177,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.1492057828076718,
+        "CHD": 0.8182337463314493,
+        "Instability": 0.6778606518675724,
+        "UCM": 0.12489987543252593,
+        "CMQ": 0.0
+      },
+      "ED": 1.3304886532545925,
+      "source": "java-online-taxi/arms/without-guidance/seed-131/run.json",
+      "sourceSha256": "0cc04929af424f41af1f1227cf8f2ff23a4ae14195ecf9bd922c1820fbea5275"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 137,
+      "metrics": {
+        "IFN": 1.75,
+        "CHD": 0.3094,
+        "Instability": 0.3472,
+        "UCM": 0.1267,
+        "CMQ": 0.2472
+      },
+      "normalized": {
+        "IFN": 0.5080953451765235,
+        "CHD": 0.6699619771863118,
+        "Instability": 0.40405616224648994,
+        "UCM": 0.4658823529411765,
+        "CMQ": 1.0
+      },
+      "squaredContributions": {
+        "IFN": 0.2581608797900506,
+        "CHD": 0.10892509650276858,
+        "Instability": 0.35514905775638184,
+        "UCM": 0.2852816608996539,
+        "CMQ": 0.0
+      },
+      "ED": 1.0037513113061696,
+      "source": "java-online-taxi/arms/without-guidance/seed-137/run.json",
+      "sourceSha256": "5e4bd6d916506c0a02e66926caf7b151c73243a675a8de82a59102e50265c345"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 139,
+      "metrics": {
+        "IFN": 2.625,
+        "CHD": 0.2593,
+        "Instability": 0.4917,
+        "UCM": 0.0298,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 1.0,
+        "CHD": 0.47946768060836487,
+        "Instability": 0.9676287051482061,
+        "UCM": 0.009882352941176476,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 1.0,
+        "CHD": 0.2709538955312352,
+        "Instability": 0.0010479007303817788,
+        "UCM": 0.9803329550173011,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.56234528456872,
+      "source": "java-online-taxi/arms/without-guidance/seed-139/run.json",
+      "sourceSha256": "199764e7aadd6e722fb3c32f80cf4f3fb7b1a5424e82876a22a7f29a0673873b"
+    },
+    {
+      "case": "java-online-taxi",
+      "arm": "without-guidance",
+      "method": "−G：无候选引导",
+      "seed": 149,
+      "metrics": {
+        "IFN": 1.5,
+        "CHD": 0.2471,
+        "Instability": 0.3452,
+        "UCM": 0.173,
+        "CMQ": 0.1666
+      },
+      "normalized": {
+        "IFN": 0.36755115808410166,
+        "CHD": 0.43307984790874515,
+        "Instability": 0.3962558502340094,
+        "UCM": 0.6837647058823529,
+        "CMQ": 0.5657327586206897
+      },
+      "squaredContributions": {
+        "IFN": 0.1350938538089643,
+        "CHD": 0.32139845884717144,
+        "Instability": 0.36450699837665884,
+        "UCM": 0.10000476124567474,
+        "CMQ": 0.18858803693519613
+      },
+      "ED": 1.0533717810980439,
+      "source": "java-online-taxi/arms/without-guidance/seed-149/run.json",
+      "sourceSha256": "98fa85d93f29ee211405f071327bbf1c019b86651ca4ff5af5b5ed78ba4a96eb"
+    }
+  ],
+  "ranking": [
+    [
+      "without-probability"
+    ],
+    [
+      "full"
+    ],
+    [
+      "without-guidance"
+    ],
+    [
+      "without-offline"
+    ]
+  ]
+}

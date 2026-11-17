@@ -1,0 +1,18 @@
+{
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/input/java-online-taxi.remodel",
+  "model": "servicecutter_model.json",
+  "user_representations": "servicecutter_user_representations.json",
+  "assumptions": [
+    "remodel associations are emitted as ServiceCutter AGGREGATION relations",
+    "use-case entity references are emitted against the first available attribute of each Entity",
+    "actor groups are represented as sharedOwnerGroups",
+    "include/extend relations are not represented by this adapter",
+    "use cases with no inferable entity use the first entity as a deterministic ServiceCutter sentinel"
+  ],
+  "counts": {
+    "entities": 8,
+    "relations": 0,
+    "use_cases": 31,
+    "shared_owner_groups": 0
+  }
+}

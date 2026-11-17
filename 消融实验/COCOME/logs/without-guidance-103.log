@@ -1,0 +1,99 @@
+		AssociationCashdeskes : CashDesk* Association
+CashDesk
+		Productcatalogs : ProductCatalog* Association
+ProductCatalog
+		Items : Item* Association
+Item
+		Cashiers : Cashier* Association
+Cashier
+		Sales : Sale* ! Association
+Sale
+		ContainedItems : Item* Association
+Item
+		ContainedSales : Sale* Association
+Sale
+		BelongedStore : Store ! Association
+Store
+		Belongedstore : Store Association
+Store
+		BelongedCashDesk : CashDesk ! Association
+CashDesk
+		ContainedSalesLine : SalesLineItem* Association
+SalesLineItem
+		AssoicatedPayment : Payment Association
+Payment
+		WorkedStore : Store ! Association
+Store
+		BelongedSale : Sale ! Association
+Sale
+		BelongedItem : Item Association
+Item
+		BelongedCatalog : ProductCatalog ! Association
+ProductCatalog
+		BelongedSale : Sale ! Association
+Sale
+		Item : Item Association
+Item
+		Supplier : Supplier Association
+Supplier
+		ContainedEntries : OrderEntry* Association
+OrderEntry
+closeCashDesk closeCashDesk
+closeCashDesk processSale
+closeCashDesk openCashDesk
+processSale closeCashDesk
+processSale processSale
+processSale openCashDesk
+openCashDesk closeCashDesk
+openCashDesk processSale
+openCashDesk openCashDesk
+listSuppliers listSuppliers
+listSuppliers openStore
+listSuppliers changePrice
+listSuppliers orderProducts
+listSuppliers receiveOrderedProduct
+listSuppliers showStockReports
+listSuppliers closeStore
+openStore listSuppliers
+openStore openStore
+openStore changePrice
+openStore orderProducts
+openStore receiveOrderedProduct
+openStore showStockReports
+openStore closeStore
+changePrice listSuppliers
+changePrice openStore
+changePrice changePrice
+changePrice orderProducts
+changePrice receiveOrderedProduct
+changePrice showStockReports
+changePrice closeStore
+orderProducts listSuppliers
+orderProducts openStore
+orderProducts changePrice
+orderProducts orderProducts
+orderProducts receiveOrderedProduct
+orderProducts showStockReports
+orderProducts closeStore
+receiveOrderedProduct listSuppliers
+receiveOrderedProduct openStore
+receiveOrderedProduct changePrice
+receiveOrderedProduct orderProducts
+receiveOrderedProduct receiveOrderedProduct
+receiveOrderedProduct showStockReports
+receiveOrderedProduct closeStore
+showStockReports listSuppliers
+showStockReports openStore
+showStockReports changePrice
+showStockReports orderProducts
+showStockReports receiveOrderedProduct
+showStockReports showStockReports
+showStockReports closeStore
+closeStore listSuppliers
+closeStore openStore
+closeStore changePrice
+closeStore orderProducts
+closeStore receiveOrderedProduct
+closeStore showStockReports
+closeStore closeStore
+without-guidance seed=103 HV=0.41691697739239125

@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:req="http://www.example.org/req" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <req:RequirementModel inputHash="2f46f25515e81daff152fa32ce0f572c6f27f726243e970040236e3d20034b79" runHash="ab63928344772b2d308aeeb479d9d9a90dec0442b89537efc6fd6c10ad2b5d85" snapshotHash="56232c31136c06c815736bbfdf7c3cc1387719cf16465cfed22ac51d7bb25983" taskKey="17dce60ce9b5b395750048b7841881b5e7525e4d0cd5bb3d71ae49d55ffa298c" configId="C3" seed="113" exportVersion="merm-export-v1">
+    <UseCaseModel name="library.remodel">
+      <usecasecontext name="Microservice 0" serviceId="0">
+        <uc name="searchBook" />
+      </usecasecontext>
+      <usecasecontext name="Microservice 1" serviceId="1">
+        <uc name="listBookHistory" />
+        <uc name="makeReservation" />
+        <uc name="recommendBook" />
+        <uc name="cancelReservation" />
+        <uc name="listRecommendBook" />
+        <uc name="borrowBook" />
+        <uc name="renewBook" />
+        <uc name="payOverDueFee" />
+        <uc name="returnBook" />
+        <uc name="checkOverDueandComputeOverDueFee" />
+        <uc name="dueSoonNotification" />
+        <uc name="countDownSuspensionDay" />
+        <uc name="sendNotificationEmail" />
+      </usecasecontext>
+      <actor name="Administrator" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.4" />
+      <actor name="Faculty" uc="" superActor="/0/@UseCaseModel/@actor.6" />
+      <actor name="Librarian" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.5 /0/@UseCaseModel/@usecasecontext.1/@uc.7 /0/@UseCaseModel/@usecasecontext.1/@uc.6 /0/@UseCaseModel/@usecasecontext.1/@uc.8" />
+      <actor name="Scheduler" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.9 /0/@UseCaseModel/@usecasecontext.1/@uc.11 /0/@UseCaseModel/@usecasecontext.1/@uc.10" />
+      <actor name="Student" uc="" superActor="/0/@UseCaseModel/@actor.6" />
+      <actor name="ThirdPartSystem" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.12" />
+      <actor name="User" uc="/0/@UseCaseModel/@usecasecontext.1/@uc.3 /0/@UseCaseModel/@usecasecontext.1/@uc.0 /0/@UseCaseModel/@usecasecontext.1/@uc.1 /0/@UseCaseModel/@usecasecontext.1/@uc.2 /0/@UseCaseModel/@usecasecontext.0/@uc.0" />
+    </UseCaseModel>
+    <DomainModel name="library.remodel">
+      <entitycontext name="EntityContext0" serviceId="0" systeminterface="/0/@DomainModel/@systeminterface.3 /0/@DomainModel/@systeminterface.4 /0/@DomainModel/@systeminterface.5">
+        <userinterface name="UserInterface">
+          <operation name="searchBookByAuthor()" />
+          <operation name="searchBookByBarCode()" />
+          <operation name="searchBookByISBN()" />
+          <operation name="searchBookBySubject()" />
+          <operation name="searchBookByTitle()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface" />
+      </entitycontext>
+      <entitycontext name="EntityContext1" serviceId="1" systeminterface="/0/@DomainModel/@systeminterface.0 /0/@DomainModel/@systeminterface.1 /0/@DomainModel/@systeminterface.2">
+        <userinterface name="UserInterface">
+          <operation name="borrowBook()" />
+          <operation name="checkOverDueandComputeOverDueFee()" />
+          <operation name="countDownSuspensionDay()" />
+          <operation name="dueSoonNotification()" />
+          <operation name="listBorrowHistory()" />
+          <operation name="listHodingBook()" />
+          <operation name="listOverDueBook()" />
+          <operation name="listRecommendBook()" />
+          <operation name="listReservationBook()" />
+          <operation name="makeReservation()" />
+          <operation name="payOverDueFee()" />
+          <operation name="recommendBook()" />
+          <operation name="renewBook()" />
+          <operation name="returnBook()" />
+          <operation name="sendNotificationEmail()" />
+        </userinterface>
+        <userinterface name="InterSystemInterface">
+          <operation name="findBookbyID()" />
+          <operation name="findSubjectbyID()" />
+          <operation name="findBookCopybyID()" />
+        </userinterface>
+        <entity name="User">
+          <attributes name="UserID">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Sex">
+            <type xsi:type="req:EnumTypeCS" name="Sex[M|F]" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Email">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Faculty">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="LoanedNumber">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="BorrowStatus">
+            <type xsi:type="req:EnumTypeCS" name="BorrowStatus[NORMAL|SUSPEND]" />
+          </attributes>
+          <attributes name="SuspensionDays">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="OverDueFee">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <reference name="LoanedBook" entity="/0/@DomainModel/@entitycontext.1/@entity.6" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ReservedBook" entity="/0/@DomainModel/@entitycontext.1/@entity.7" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="RecommendedBook" entity="/0/@DomainModel/@entitycontext.1/@entity.8" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Student" superEntity="/0/@DomainModel/@entitycontext.1/@entity.0">
+          <attributes name="Major">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Programme">
+            <type xsi:type="req:EnumTypeCS" name="Programme[BACHELOR|MASTER|PHD]" />
+          </attributes>
+          <attributes name="RegistrationStatus">
+            <type xsi:type="req:EnumTypeCS" name="StudentStatus[GRADUATED|PROGRAMMING]" />
+          </attributes>
+        </entity>
+        <entity name="Faculty" superEntity="/0/@DomainModel/@entitycontext.1/@entity.0">
+          <attributes name="Position">
+            <type xsi:type="req:EnumTypeCS" name="FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR]" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="FacultyStatus[HASRETIRED|INPOSITION]" />
+          </attributes>
+        </entity>
+        <entity name="Book">
+          <attributes name="CallNo">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Title">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Edition">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Author">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Publisher">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Description">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="ISBn">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="CopyNum">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <reference name="Copys" entity="/0/@DomainModel/@entitycontext.1/@entity.5" type="Association" ismultiple="true" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="Subject" entity="/0/@DomainModel/@entitycontext.1/@entity.4" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Subject">
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <reference name="SuperSubject" entity="/0/@DomainModel/@entitycontext.1/@entity.4" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="SubSubject" entity="/0/@DomainModel/@entitycontext.1/@entity.4" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="BookCopy">
+          <attributes name="Barcode">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Status">
+            <type xsi:type="req:EnumTypeCS" name="CopyStatus[AVAILABLE|INPROCESSING|LIBUSEONLY|ONHOLDSHELF|LOANED]" />
+          </attributes>
+          <attributes name="Location">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="IsReserved">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="BookBelongs" entity="/0/@DomainModel/@entitycontext.1/@entity.3" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="LoanedRecord" entity="/0/@DomainModel/@entitycontext.1/@entity.6" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ReservationRecord" entity="/0/@DomainModel/@entitycontext.1/@entity.7" type="Association" ismultiple="true" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Loan">
+          <attributes name="LoanDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="RenewDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="DueDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="ReturnDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="RenewedTimes">
+            <type xsi:type="req:PrimitiveTypeCS" name="Integer" />
+          </attributes>
+          <attributes name="IsReturned">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDueFee">
+            <type xsi:type="req:PrimitiveTypeCS" name="Real" />
+          </attributes>
+          <attributes name="OverDue3Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDue10Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDue17Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <attributes name="OverDue31Days">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="LoanedUser" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="LoanedCopy" entity="/0/@DomainModel/@entitycontext.1/@entity.5" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="LoanLibrarian" entity="/0/@DomainModel/@entitycontext.1/@entity.10" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+          <reference name="ReturnLibrarian" entity="/0/@DomainModel/@entitycontext.1/@entity.10" type="Association" ismultiple="false" isReverseAssoication="false" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Reserve">
+          <attributes name="ReserveDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <attributes name="IsReserveClosed">
+            <type xsi:type="req:PrimitiveTypeCS" name="Boolean" />
+          </attributes>
+          <reference name="ReservedCopy" entity="/0/@DomainModel/@entitycontext.1/@entity.5" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+          <reference name="ReservedUser" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="RecommendBook" superEntity="/0/@DomainModel/@entitycontext.1/@entity.3">
+          <attributes name="RecommendDate">
+            <type xsi:type="req:PrimitiveTypeCS" name="Date" />
+          </attributes>
+          <reference name="RecommendUser" entity="/0/@DomainModel/@entitycontext.1/@entity.0" type="Association" ismultiple="false" isReverseAssoication="true" isComposition="false" isAggregation="false" />
+        </entity>
+        <entity name="Administrator">
+          <attributes name="AdminID">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="UserName">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+        <entity name="Librarian">
+          <attributes name="LibrarianID">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Name">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+          <attributes name="Password">
+            <type xsi:type="req:PrimitiveTypeCS" name="String" />
+          </attributes>
+        </entity>
+      </entitycontext>
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofBook" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.3" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofSubject" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.4" />
+      <systeminterface xsi:type="req:ProvideInterface" name="ProvideEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.1" receiveinterface="/0/@DomainModel/@systeminterface.5" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBook" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.0" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofSubject" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.1" />
+      <systeminterface xsi:type="req:ReceiveInterface" name="ReceiveEntityofBookCopy" entitycontext="/0/@DomainModel/@entitycontext.0" provideinterface="/0/@DomainModel/@systeminterface.2" />
+    </DomainModel>
+  </req:RequirementModel>
+</xmi:XMI>

@@ -1,0 +1,37 @@
+[
+  {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "payload": {
+      "model": "qwen3.7-text-embedding-flash",
+      "input": [
+        "// Derived from RapidOOD .remodel\n// service SubmitLoanRequest: enterLoanInformation, creditRequest, accountStatusRequest, calculateScore\npublic class SubmitLoanRequest {\n    public void enterLoanInformation(Object requestid, Object name, Object loanamount, Object loanpurpose, Object income, Object phonenumber, Object postaladdress, Object zipcode, Object email, Object workreferences, Object creditreferences, Object checkingaccountnumber, Object securitynumber) {}\n    public void creditRequest() {}\n    public void accountStatusRequest() {}\n    public void calculateScore() {}\n}",
+        "// Derived from RapidOOD .remodel\n// service ThirdPartyServices: sendEmail, print, createLoanAccount, transferFunds, getCreditHistory, getCheckingAccountStatus\npublic class ThirdPartyServices {\n    public void sendEmail(Object emailaddress, Object title, Object content) {}\n    public void print(Object content, Object numbers) {}\n    public void createLoanAccount(Object id) {}\n    public void transferFunds(Object id, Object amount) {}\n    public void getCreditHistory(Object securityid, Object name) {}\n    public void getCheckingAccountStatus(Object cid) {}\n}",
+        "// Derived from RapidOOD .remodel\n// service EnterValidatedCreditReferences: listSubmitedLoanRequest, chooseLoanRequest, markRequestValid\npublic class EnterValidatedCreditReferences {\n    public void listSubmitedLoanRequest() {}\n    public void chooseLoanRequest(Object requestid) {}\n    public void markRequestValid() {}\n}",
+        "// Derived from RapidOOD .remodel\n// service EvaluateLoanRequest: listTenLoanRequest, chooseOneForReview, checkCreditHistory, reviewCheckingAccount, listAvaiableLoanTerm, addLoanTerm, approveLoanRequest\npublic class EvaluateLoanRequest {\n    public void listTenLoanRequest() {}\n    public void chooseOneForReview(Object requestid) {}\n    public void checkCreditHistory() {}\n    public void reviewCheckingAccount() {}\n    public void listAvaiableLoanTerm() {}\n    public void addLoanTerm(Object termid) {}\n    public void approveLoanRequest() {}\n}",
+        "// Derived from RapidOOD .remodel\n// service GenerateLoanLetterAndAgreement: listApprovalRequest, genereateApprovalLetter, emailToAppliant, generateLoanAgreement, printLoanAgreement\npublic class GenerateLoanLetterAndAgreement {\n    public void listApprovalRequest() {}\n    public void genereateApprovalLetter(Object id) {}\n    public void emailToAppliant() {}\n    public void generateLoanAgreement() {}\n    public void printLoanAgreement(Object number) {}\n}",
+        "// Derived from RapidOOD .remodel\n// service LoanProcessingSystemSystem: bookNewLoan, generateStandardPaymentNotice, generateLateNotice, listBookedLoans, loanPayment, closeOutLoan\npublic class LoanProcessingSystemSystem {\n    public void bookNewLoan(Object requestid, Object loanid, Object accountid, Object startdate, Object enddate, Object repaymentdays) {}\n    public void generateStandardPaymentNotice() {}\n    public void generateLateNotice() {}\n    public void listBookedLoans() {}\n    public void loanPayment(Object loanid) {}\n    public void closeOutLoan(Object loanid) {}\n}",
+        "// Derived from RapidOOD .remodel\n// service ManageLoanTermCRUDService: createLoanTerm, queryLoanTerm, modifyLoanTerm, deleteLoanTerm\npublic class ManageLoanTermCRUDService {\n    public void createLoanTerm(Object itemid, Object content) {}\n    public void queryLoanTerm(Object itemid) {}\n    public void modifyLoanTerm(Object itemid, Object content) {}\n    public void deleteLoanTerm(Object itemid) {}\n}",
+        "// Derived from RapidOOD .remodel\npublic class LoanRequest {\n    private LoanRequesttatus Status;\n    private Integer RequestID;\n    private String Name;\n    private Real LoanAmount;\n    private String LoanPurpose;\n    private Real Income;\n    private Integer PhoneNumber;\n    private String PostalAddress;\n    private Integer ZipCode;\n    private String Email;\n    private String WorkReferences;\n    private String CreditReferences;\n    private Integer CheckingAccountNumber;\n    private Integer SecurityNumber;\n    private Integer CreditScore;\n    private Loan ApprovalLoan;\n    private CheckingAccount RequestedCAHistory;\n    private CreditHistory RequestedCreditHistory;\n    private ApprovalLetter AttachedApprovalLetter;\n    private LoanAgreement AttachedLoanAgreement;\n    private LoanTerm AttachedLoanTerms;\n}",
+        "// Derived from RapidOOD .remodel\npublic class Loan {\n    private Integer LoanID;\n    private Real RemainAmountToPay;\n    private LoanStatus Status;\n    private Boolean IsPaidinFull;\n    private Date StartDate;\n    private Date EndDate;\n    private Date CurrentOverDueDate;\n    private Integer RePaymentDays;\n    private Real RepaymentAmount;\n    private LoanRequest ReferedLoanRequest;\n    private LoanAccount BelongedLoanAccount;\n}",
+        "// Derived from RapidOOD .remodel\npublic class LoanTerm {\n    private Integer ItemID;\n    private String Content;\n}"
+      ],
+      "dimensions": 1024,
+      "encoding_format": "float"
+    }
+  },
+  {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "payload": {
+      "model": "qwen3.7-text-embedding-flash",
+      "input": [
+        "// Derived from RapidOOD .remodel\npublic class CheckingAccount {\n    private Real Balance;\n    private CheckingAccountStatus Status;\n}",
+        "// Derived from RapidOOD .remodel\npublic class CreditHistory {\n    private Real OutstandingDebt;\n    private Integer BadDebits;\n}",
+        "// Derived from RapidOOD .remodel\npublic class LoanAccount {\n    private Integer LoanAccountID;\n    private Real Balance;\n    private LoanAccountStatus Status;\n}",
+        "// Derived from RapidOOD .remodel\npublic class ApprovalLetter {\n    private String Content;\n}",
+        "// Derived from RapidOOD .remodel\npublic class LoanAgreement {\n    private String Content;\n}"
+      ],
+      "dimensions": 1024,
+      "encoding_format": "float"
+    }
+  }
+]

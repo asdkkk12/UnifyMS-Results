@@ -1,0 +1,33 @@
+{
+  "profile": "formal",
+  "selector": "jev",
+  "metricVersion": "legacy-ifn-average-v1",
+  "outputDirectory": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/unifyms/experiment",
+  "calibrationSeeds": [
+    11
+  ],
+  "validationSeeds": [
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "evaluationBudget": 0,
+  "systems": [
+    {
+      "id": "Loan",
+      "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/input/loan.remodel"
+    }
+  ],
+  "jev": {
+    "endpoint": "https://api.jevgo.cn/v1/systemone",
+    "model": "jev-1.14.0",
+    "timeoutMillis": 60000
+  }
+}

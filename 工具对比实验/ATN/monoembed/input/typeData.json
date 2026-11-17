@@ -1,0 +1,58 @@
+[
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "withdrawCash",
+    "fullName": "ATM.service.withdrawCash",
+    "serviceName": "withdrawCash",
+    "content": "// Derived from RapidOOD .remodel\n// service withdrawCash: inputCard, inputPassword, withdrawCash, printReceipt, ejectCard\npublic class withdrawCash {\n    public void inputCard(Object cardid) {}\n    public void inputPassword(Object password) {}\n    public void withdrawCash(Object quantity) {}\n    public void printReceipt() {}\n    public void ejectCard() {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "AutomatedTellerMachineSystem",
+    "fullName": "ATM.service.AutomatedTellerMachineSystem",
+    "serviceName": "AutomatedTellerMachineSystem",
+    "content": "// Derived from RapidOOD .remodel\n// service AutomatedTellerMachineSystem: depositFunds, checkBalance, cardIdentification\npublic class AutomatedTellerMachineSystem {\n    public void depositFunds(Object quantity) {}\n    public void checkBalance() {}\n    public void cardIdentification() {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageBankCardCRUDService",
+    "fullName": "ATM.service.ManageBankCardCRUDService",
+    "serviceName": "ManageBankCardCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageBankCardCRUDService: createBankCard, queryBankCard, modifyBankCard, deleteBankCard\npublic class ManageBankCardCRUDService {\n    public void createBankCard(Object cardid, Object cardstatus, Object catalog, Object password, Object balance) {}\n    public void queryBankCard(Object cardid) {}\n    public void modifyBankCard(Object cardid, Object cardstatus, Object catalog, Object password, Object balance) {}\n    public void deleteBankCard(Object cardid) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ManageUserCRUDService",
+    "fullName": "ATM.service.ManageUserCRUDService",
+    "serviceName": "ManageUserCRUDService",
+    "content": "// Derived from RapidOOD .remodel\n// service ManageUserCRUDService: createUser, queryUser, modifyUser, deleteUser\npublic class ManageUserCRUDService {\n    public void createUser(Object userid, Object name, Object address) {}\n    public void queryUser(Object userid) {}\n    public void modifyUser(Object userid, Object name, Object address) {}\n    public void deleteUser(Object userid) {}\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "ThirdPartyServices",
+    "fullName": "ATM.service.ThirdPartyServices",
+    "serviceName": "ThirdPartyServices",
+    "content": "// Derived from RapidOOD .remodel\n// service ThirdPartyServices: \npublic class ThirdPartyServices {\n\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "BankCard",
+    "fullName": "ATM.domain.BankCard",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class BankCard {\n    private Integer CardID;\n    private CardStatus CardStatus;\n    private CardCatalog Catalog;\n    private Integer Password;\n    private Real Balance;\n    private User BelongedUser;\n}"
+  },
+  {
+    "isInterface": false,
+    "isAnnotation": false,
+    "simpleName": "User",
+    "fullName": "ATM.domain.User",
+    "serviceName": "domain-model",
+    "content": "// Derived from RapidOOD .remodel\npublic class User {\n    private Integer UserID;\n    private String Name;\n    private String Address;\n    private BankCard OwnedCard;\n}"
+  }
+]

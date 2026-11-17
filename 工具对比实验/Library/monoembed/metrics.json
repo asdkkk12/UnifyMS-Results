@@ -1,0 +1,538 @@
+{
+  "application": "Library",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/input/library.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/monoembed/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "Bailian API encoder + StandardScaler + Affinity Propagation; not the paper weights."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 4,
+  "provided_interface_total": 48,
+  "CHD": 0.41784686899472634,
+  "Instability": 0.5009570438426821,
+  "IFN": 12.0,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "Library.service.ThirdPartServices"
+      ],
+      "provided_interface": 1,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": 0.0,
+      "CHD": 0.0
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "Library.service.LibraryManagementSystem",
+        "Library.service.ListBookHistory",
+        "Library.service.ManageUserCRUDService",
+        "Library.domain.User",
+        "Library.domain.Student",
+        "Library.domain.Faculty",
+        "Library.domain.Loan",
+        "Library.domain.Reserve",
+        "Library.domain.RecommendBook"
+      ],
+      "provided_interface": 26,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 70,
+      "required_interface": 70,
+      "instability": 0.7291666666666667,
+      "CHD": 0.2861510284587209
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "Library.service.SearchBook",
+        "Library.service.ManageBookCRUDService",
+        "Library.service.ManageSubjectCRUDService",
+        "Library.service.ManageBookCopyCRUDService",
+        "Library.domain.Book",
+        "Library.domain.Subject",
+        "Library.domain.BookCopy"
+      ],
+      "provided_interface": 17,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 30,
+      "required_interface": 30,
+      "instability": 0.6382978723404256,
+      "CHD": 0.38523644752018454
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "Library.service.ManageLibrarianCRUDService",
+        "Library.domain.Administrator",
+        "Library.domain.Librarian"
+      ],
+      "provided_interface": 4,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 7,
+      "required_interface": 7,
+      "instability": 0.6363636363636364,
+      "CHD": 1.0
+    }
+  ],
+  "UCM": 0.1583171365993568,
+  "UCM_pair_count": 91,
+  "Intra_Cohesion": 0.18478673439898252,
+  "Inter_Coupling": 0.10671073341195844,
+  "CMQ": 0.07807600098702408,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "User": [
+        "borrowstatus",
+        "email",
+        "faculty",
+        "integer",
+        "loan",
+        "loanedbook",
+        "loanednumber",
+        "name",
+        "overduefee",
+        "password",
+        "real",
+        "recommendbook",
+        "recommendedbook",
+        "reserve",
+        "reservedbook",
+        "sex",
+        "string",
+        "suspensiondays",
+        "user",
+        "userid"
+      ],
+      "Student": [
+        "major",
+        "programme",
+        "registrationstatus",
+        "string",
+        "student",
+        "studentstatus",
+        "user"
+      ],
+      "Faculty": [
+        "faculty",
+        "facultyposition",
+        "facultystatus",
+        "position",
+        "status",
+        "user"
+      ],
+      "Book": [
+        "author",
+        "book",
+        "bookcopy",
+        "callno",
+        "copynum",
+        "copys",
+        "description",
+        "edition",
+        "integer",
+        "isbn",
+        "publisher",
+        "string",
+        "subject",
+        "title"
+      ],
+      "Subject": [
+        "name",
+        "string",
+        "subject",
+        "subsubject",
+        "supersubject"
+      ],
+      "BookCopy": [
+        "barcode",
+        "book",
+        "bookbelongs",
+        "bookcopy",
+        "boolean",
+        "copystatus",
+        "isreserved",
+        "loan",
+        "loanedrecord",
+        "location",
+        "reservationrecord",
+        "reserve",
+        "status",
+        "string"
+      ],
+      "Loan": [
+        "bookcopy",
+        "boolean",
+        "date",
+        "duedate",
+        "integer",
+        "isreturned",
+        "librarian",
+        "loan",
+        "loandate",
+        "loanedcopy",
+        "loaneduser",
+        "loanlibrarian",
+        "overdue10days",
+        "overdue17days",
+        "overdue31days",
+        "overdue3days",
+        "overduefee",
+        "real",
+        "renewdate",
+        "renewedtimes",
+        "returndate",
+        "returnlibrarian",
+        "user"
+      ],
+      "Reserve": [
+        "bookcopy",
+        "boolean",
+        "date",
+        "isreserveclosed",
+        "reserve",
+        "reservedate",
+        "reservedcopy",
+        "reserveduser",
+        "user"
+      ],
+      "RecommendBook": [
+        "book",
+        "date",
+        "recommendbook",
+        "recommenddate",
+        "recommenduser",
+        "user"
+      ],
+      "Administrator": [
+        "adminid",
+        "administrator",
+        "password",
+        "string",
+        "username"
+      ],
+      "Librarian": [
+        "librarian",
+        "librarianid",
+        "name",
+        "password",
+        "string"
+      ]
+    },
+    "effective_entity_clusters": {
+      "User": 1,
+      "Student": 1,
+      "Faculty": 1,
+      "Loan": 1,
+      "Reserve": 1,
+      "RecommendBook": 1,
+      "Book": 2,
+      "Subject": 2,
+      "BookCopy": 2,
+      "Administrator": 3,
+      "Librarian": 3
+    },
+    "intra_pair_count": 19,
+    "inter_pair_count": 36,
+    "pairs": [
+      {
+        "a": "User",
+        "b": "Student",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "User",
+        "b": "Faculty",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "User",
+        "b": "Book",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "User",
+        "b": "Subject",
+        "similarity": 0.2
+      },
+      {
+        "a": "User",
+        "b": "BookCopy",
+        "similarity": 0.17928429140015903
+      },
+      {
+        "a": "User",
+        "b": "Loan",
+        "similarity": 0.23312620206007845
+      },
+      {
+        "a": "User",
+        "b": "Reserve",
+        "similarity": 0.14907119849998599
+      },
+      {
+        "a": "User",
+        "b": "RecommendBook",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "User",
+        "b": "Administrator",
+        "similarity": 0.2
+      },
+      {
+        "a": "User",
+        "b": "Librarian",
+        "similarity": 0.3
+      },
+      {
+        "a": "Student",
+        "b": "Faculty",
+        "similarity": 0.1543033499620919
+      },
+      {
+        "a": "Student",
+        "b": "Book",
+        "similarity": 0.10101525445522107
+      },
+      {
+        "a": "Student",
+        "b": "Subject",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "Student",
+        "b": "BookCopy",
+        "similarity": 0.10101525445522107
+      },
+      {
+        "a": "Student",
+        "b": "Loan",
+        "similarity": 0.07881104062391006
+      },
+      {
+        "a": "Student",
+        "b": "Reserve",
+        "similarity": 0.1259881576697424
+      },
+      {
+        "a": "Student",
+        "b": "RecommendBook",
+        "similarity": 0.1543033499620919
+      },
+      {
+        "a": "Student",
+        "b": "Administrator",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "Student",
+        "b": "Librarian",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "Faculty",
+        "b": "Book",
+        "similarity": 0.0
+      },
+      {
+        "a": "Faculty",
+        "b": "Subject",
+        "similarity": 0.0
+      },
+      {
+        "a": "Faculty",
+        "b": "BookCopy",
+        "similarity": 0.1091089451179962
+      },
+      {
+        "a": "Faculty",
+        "b": "Loan",
+        "similarity": 0.08512565307587486
+      },
+      {
+        "a": "Faculty",
+        "b": "Reserve",
+        "similarity": 0.13608276348795434
+      },
+      {
+        "a": "Faculty",
+        "b": "RecommendBook",
+        "similarity": 0.16666666666666666
+      },
+      {
+        "a": "Faculty",
+        "b": "Administrator",
+        "similarity": 0.0
+      },
+      {
+        "a": "Faculty",
+        "b": "Librarian",
+        "similarity": 0.0
+      },
+      {
+        "a": "Book",
+        "b": "Subject",
+        "similarity": 0.23904572186687872
+      },
+      {
+        "a": "Book",
+        "b": "BookCopy",
+        "similarity": 0.21428571428571427
+      },
+      {
+        "a": "Book",
+        "b": "Loan",
+        "similarity": 0.11145564251507056
+      },
+      {
+        "a": "Book",
+        "b": "Reserve",
+        "similarity": 0.0890870806374748
+      },
+      {
+        "a": "Book",
+        "b": "RecommendBook",
+        "similarity": 0.1091089451179962
+      },
+      {
+        "a": "Book",
+        "b": "Administrator",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "Book",
+        "b": "Librarian",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "Subject",
+        "b": "BookCopy",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "Subject",
+        "b": "Loan",
+        "similarity": 0.0
+      },
+      {
+        "a": "Subject",
+        "b": "Reserve",
+        "similarity": 0.0
+      },
+      {
+        "a": "Subject",
+        "b": "RecommendBook",
+        "similarity": 0.0
+      },
+      {
+        "a": "Subject",
+        "b": "Administrator",
+        "similarity": 0.2
+      },
+      {
+        "a": "Subject",
+        "b": "Librarian",
+        "similarity": 0.4
+      },
+      {
+        "a": "BookCopy",
+        "b": "Loan",
+        "similarity": 0.16718346377260584
+      },
+      {
+        "a": "BookCopy",
+        "b": "Reserve",
+        "similarity": 0.2672612419124244
+      },
+      {
+        "a": "BookCopy",
+        "b": "RecommendBook",
+        "similarity": 0.1091089451179962
+      },
+      {
+        "a": "BookCopy",
+        "b": "Administrator",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "BookCopy",
+        "b": "Librarian",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "Loan",
+        "b": "Reserve",
+        "similarity": 0.27801921874276636
+      },
+      {
+        "a": "Loan",
+        "b": "RecommendBook",
+        "similarity": 0.17025130615174972
+      },
+      {
+        "a": "Loan",
+        "b": "Administrator",
+        "similarity": 0.0
+      },
+      {
+        "a": "Loan",
+        "b": "Librarian",
+        "similarity": 0.09325048082403138
+      },
+      {
+        "a": "Reserve",
+        "b": "RecommendBook",
+        "similarity": 0.2721655269759087
+      },
+      {
+        "a": "Reserve",
+        "b": "Administrator",
+        "similarity": 0.0
+      },
+      {
+        "a": "Reserve",
+        "b": "Librarian",
+        "similarity": 0.0
+      },
+      {
+        "a": "RecommendBook",
+        "b": "Administrator",
+        "similarity": 0.0
+      },
+      {
+        "a": "RecommendBook",
+        "b": "Librarian",
+        "similarity": 0.0
+      },
+      {
+        "a": "Administrator",
+        "b": "Librarian",
+        "similarity": 0.4
+      }
+    ]
+  }
+}

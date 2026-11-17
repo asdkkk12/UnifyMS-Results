@@ -1,0 +1,141 @@
+{
+  "seconds": 0.08916991599999999,
+  "status": "success",
+  "url": "http://127.0.0.1:18081/engine/solver/15",
+  "response": {
+    "services": [
+      {
+        "nanoentities": [
+          "User.address"
+        ],
+        "id": "A",
+        "name": "Service A"
+      },
+      {
+        "nanoentities": [
+          "User.bankcard"
+        ],
+        "id": "B",
+        "name": "Service B"
+      },
+      {
+        "nanoentities": [
+          "User.integer"
+        ],
+        "id": "C",
+        "name": "Service C"
+      },
+      {
+        "nanoentities": [
+          "User.name"
+        ],
+        "id": "D",
+        "name": "Service D"
+      },
+      {
+        "nanoentities": [
+          "User.ownedcard"
+        ],
+        "id": "E",
+        "name": "Service E"
+      },
+      {
+        "nanoentities": [
+          "User.string"
+        ],
+        "id": "F",
+        "name": "Service F"
+      },
+      {
+        "nanoentities": [
+          "User.userid"
+        ],
+        "id": "G",
+        "name": "Service G"
+      },
+      {
+        "nanoentities": [
+          "BankCard.balance"
+        ],
+        "id": "H",
+        "name": "Service H"
+      },
+      {
+        "nanoentities": [
+          "BankCard.belongeduser"
+        ],
+        "id": "I",
+        "name": "Service I"
+      },
+      {
+        "nanoentities": [
+          "BankCard.cardcatalog"
+        ],
+        "id": "J",
+        "name": "Service J"
+      },
+      {
+        "nanoentities": [
+          "BankCard.cardid"
+        ],
+        "id": "K",
+        "name": "Service K"
+      },
+      {
+        "nanoentities": [
+          "BankCard.cardstatus"
+        ],
+        "id": "L",
+        "name": "Service L"
+      },
+      {
+        "nanoentities": [
+          "BankCard.catalog"
+        ],
+        "id": "M",
+        "name": "Service M"
+      },
+      {
+        "nanoentities": [
+          "BankCard.integer"
+        ],
+        "id": "N",
+        "name": "Service N"
+      },
+      {
+        "nanoentities": [
+          "BankCard.password"
+        ],
+        "id": "O",
+        "name": "Service O"
+      },
+      {
+        "nanoentities": [
+          "BankCard.real"
+        ],
+        "id": "P",
+        "name": "Service P"
+      },
+      {
+        "nanoentities": [
+          "BankCard.user"
+        ],
+        "id": "Q",
+        "name": "Service Q"
+      }
+    ],
+    "relations": [],
+    "useCaseResponsibility": {
+      "Service H": [
+        "withdrawCash",
+        "checkBalance",
+        "depositFunds",
+        "manageBankCard",
+        "cardIdentification"
+      ],
+      "Service A": [
+        "manageUser"
+      ]
+    }
+  }
+}

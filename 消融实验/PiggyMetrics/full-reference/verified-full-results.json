@@ -1,0 +1,354 @@
+{
+  "source": "/Users/yuanyaowu/Desktop/输出/PiggyMetrics/unifyms",
+  "sourceAttachment": "/Users/yuanyaowu/Desktop/输出/汇总Case.md.md",
+  "attachmentMeans": {
+    "MS_Num": 4.0,
+    "IFN": 3.575,
+    "CHD": 0.3814,
+    "Instability": 0.83221,
+    "UCM": 0.33612,
+    "CMQ": 0.19976
+  },
+  "verifiedStatistics": {
+    "MS_Num": {
+      "mean": 4,
+      "sampleStd": 0.0
+    },
+    "IFN": {
+      "mean": 3.575,
+      "sampleStd": 1.3019749954929585
+    },
+    "CHD": {
+      "mean": 0.3814,
+      "sampleStd": 0.006324555320336764
+    },
+    "Instability": {
+      "mean": 0.63221,
+      "sampleStd": 0.04468975646983696
+    },
+    "UCM": {
+      "mean": 0.33612000000000003,
+      "sampleStd": 0.015769224598706316
+    },
+    "CMQ": {
+      "mean": 0.19976,
+      "sampleStd": 0.07517816172267051
+    },
+    "HV": {
+      "mean": 0.9901101752170182,
+      "sampleStd": 0.03859086497800004
+    },
+    "ED": {
+      "mean": 1.241875825077628,
+      "sampleStd": 0.11538679127222587
+    }
+  },
+  "runs": [
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 101,
+      "MS_Num": 4,
+      "IFN": 3.0,
+      "CHD": 0.3844,
+      "CMQ": 0.1774,
+      "Instability": 0.5625,
+      "UCM": 0.3436,
+      "HV": 1.0243903296386279,
+      "source": "PiggyMetrics/full-reference/run-full-101.json",
+      "sourceSha256": "b61323761272d4f8108f15ac767c7872141c719b77c091d7e0778d1c8ee7ac6f",
+      "normalized": {
+        "IFN": 0.25,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.356899073622623,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.2778027915353445
+      },
+      "squaredContributions": {
+        "IFN": 0.0625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.41357880150744053,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.5215688079141411
+      },
+      "ED": 1.2560182145001466
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 103,
+      "MS_Num": 4,
+      "IFN": 3.0,
+      "CHD": 0.3844,
+      "CMQ": 0.1774,
+      "Instability": 0.5625,
+      "UCM": 0.3436,
+      "HV": 0.9627135395962384,
+      "source": "PiggyMetrics/full-reference/run-full-103.json",
+      "sourceSha256": "7759da6ff7c97f84694c25d8383640e12405d8be0e859514e9612b869577fbd9",
+      "normalized": {
+        "IFN": 0.25,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.356899073622623,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.2778027915353445
+      },
+      "squaredContributions": {
+        "IFN": 0.0625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.41357880150744053,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.5215688079141411
+      },
+      "ED": 1.2560182145001466
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 107,
+      "MS_Num": 4,
+      "IFN": 5.5,
+      "CHD": 0.3844,
+      "CMQ": 0.3159,
+      "Instability": 0.684,
+      "UCM": 0.3436,
+      "HV": 0.9958039938283203,
+      "source": "PiggyMetrics/full-reference/run-full-107.json",
+      "sourceSha256": "21dc37f17d9559080e44279d329db39d09bd4f36f960b00376f8c8175f6a10c2",
+      "normalized": {
+        "IFN": 0.875,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.9492930277913215,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.9013957676722198
+      },
+      "squaredContributions": {
+        "IFN": 0.765625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.0025711970305716918,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.009722794632950844
+      },
+      "ED": 1.1652695556814643
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 109,
+      "MS_Num": 4,
+      "IFN": 5.75,
+      "CHD": 0.3844,
+      "CMQ": 0.3159,
+      "Instability": 0.6007,
+      "UCM": 0.3436,
+      "HV": 0.9932672115486965,
+      "source": "PiggyMetrics/full-reference/run-full-109.json",
+      "sourceSha256": "b24c43cf59d499ce52d65531d70f6211d9744f7214b38dde29d2112a318f727a",
+      "normalized": {
+        "IFN": 0.9375,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.5431496830814236,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.9013957676722198
+      },
+      "squaredContributions": {
+        "IFN": 0.87890625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.20871221206860366,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.009722794632950844
+      },
+      "ED": 1.295096676868607
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 113,
+      "MS_Num": 4,
+      "IFN": 2.5,
+      "CHD": 0.3694,
+      "CMQ": 0.1299,
+      "Instability": 0.6458,
+      "UCM": 0.3062,
+      "HV": 1.0098960829704917,
+      "source": "PiggyMetrics/full-reference/run-full-113.json",
+      "sourceSha256": "35241301dd52ea80257534e9808dafd388e3f0aac18e342b76b26ccf7cc3dd69",
+      "normalized": {
+        "IFN": 0.125,
+        "CHD": 0.7187196896217267,
+        "Instability": 0.7630424183325208,
+        "UCM": 0.0,
+        "CMQ": 0.06393516434038717
+      },
+      "squaredContributions": {
+        "IFN": 0.015625,
+        "CHD": 0.07911861300649775,
+        "Instability": 0.05614889550970005,
+        "UCM": 1.0,
+        "CMQ": 0.876217376558458
+      },
+      "ED": 1.4237660921214044
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 127,
+      "MS_Num": 4,
+      "IFN": 2.5,
+      "CHD": 0.3694,
+      "CMQ": 0.1299,
+      "Instability": 0.6458,
+      "UCM": 0.3062,
+      "HV": 0.908515237009471,
+      "source": "PiggyMetrics/full-reference/run-full-127.json",
+      "sourceSha256": "c967619aed3af1db2f9dc710209d1f8b0223fd651affe49a3e4429eb4d9ac003",
+      "normalized": {
+        "IFN": 0.125,
+        "CHD": 0.7187196896217267,
+        "Instability": 0.7630424183325208,
+        "UCM": 0.0,
+        "CMQ": 0.06393516434038717
+      },
+      "squaredContributions": {
+        "IFN": 0.015625,
+        "CHD": 0.07911861300649775,
+        "Instability": 0.05614889550970005,
+        "UCM": 1.0,
+        "CMQ": 0.876217376558458
+      },
+      "ED": 1.4237660921214044
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 131,
+      "MS_Num": 4,
+      "IFN": 3.0,
+      "CHD": 0.3844,
+      "CMQ": 0.1638,
+      "Instability": 0.6625,
+      "UCM": 0.3436,
+      "HV": 1.0243333721045222,
+      "source": "PiggyMetrics/full-reference/run-full-131.json",
+      "sourceSha256": "f235a1bdf15d1f213e24f1da57ef517bb20912cff8ed0c0d798b55b469b096ac",
+      "normalized": {
+        "IFN": 0.25,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.8444661140906873,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.2165691130121567
+      },
+      "squaredContributions": {
+        "IFN": 0.0625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.024190789666051104,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.6137639546865589
+      },
+      "ED": 1.1315427036074088
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 137,
+      "MS_Num": 4,
+      "IFN": 3.0,
+      "CHD": 0.3844,
+      "CMQ": 0.1774,
+      "Instability": 0.625,
+      "UCM": 0.3436,
+      "HV": 1.023758366538826,
+      "source": "PiggyMetrics/full-reference/run-full-137.json",
+      "sourceSha256": "c2d6622300fd57a0e0c9da23f638b188e41fa1af7c4dfb23f2277fc7799e7746",
+      "normalized": {
+        "IFN": 0.25,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.6616284739151632,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.2778027915353445
+      },
+      "squaredContributions": {
+        "IFN": 0.0625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.11449528966498138,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.5215688079141411
+      },
+      "ED": 1.1307069661559872
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 139,
+      "MS_Num": 4,
+      "IFN": 5.0,
+      "CHD": 0.3844,
+      "CMQ": 0.2801,
+      "Instability": 0.6875,
+      "UCM": 0.3436,
+      "HV": 1.0095845755194512,
+      "source": "PiggyMetrics/full-reference/run-full-139.json",
+      "sourceSha256": "7b8880747540122d0150159136af7b6cef216350913efb8f5f4599c522a6f4ff",
+      "normalized": {
+        "IFN": 0.75,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.9663578742077035,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.740207113912652
+      },
+      "squaredContributions": {
+        "IFN": 0.5625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.0011317926278247034,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.06749234366159375
+      },
+      "ED": 1.1004809321492004
+    },
+    {
+      "arm": "full",
+      "method": "Full：完整方法",
+      "seed": 149,
+      "MS_Num": 4,
+      "IFN": 2.5,
+      "CHD": 0.3844,
+      "CMQ": 0.1299,
+      "Instability": 0.6458,
+      "UCM": 0.3436,
+      "HV": 0.9488390434155364,
+      "source": "PiggyMetrics/full-reference/run-full-149.json",
+      "sourceSha256": "41b255465040990906b7ec92412722914974f4f8e330d5ad057ad6d2acc49104",
+      "normalized": {
+        "IFN": 0.125,
+        "CHD": 0.8642095053346269,
+        "Instability": 0.7630424183325208,
+        "UCM": 0.2506702412868632,
+        "CMQ": 0.06393516434038717
+      },
+      "squaredContributions": {
+        "IFN": 0.015625,
+        "CHD": 0.01843905844146671,
+        "Instability": 0.05614889550970005,
+        "UCM": 0.5614950872930878,
+        "CMQ": 0.876217376558458
+      },
+      "ED": 1.2360928030705107
+    }
+  ],
+  "compatibility": {
+    "input": true,
+    "metricVersion": true,
+    "calibration": true,
+    "normalization": true,
+    "parserSnapshot": true,
+    "seeds": true,
+    "initialConfig": "C5"
+  },
+  "discrepancies": [
+    {
+      "metric": "Instability",
+      "attachmentMean": 0.83221,
+      "verifiedRawMean": 0.63221
+    }
+  ]
+}

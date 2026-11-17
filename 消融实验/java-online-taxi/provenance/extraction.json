@@ -1,0 +1,3631 @@
+{
+  "parser": "javalang 0.13.0",
+  "parsed_classes": 126,
+  "services": {
+    "com.jayden.apiboss.service.CarService": "ApiBossCarService",
+    "com.jayden.apiboss.service.DriverCarBindingRelationshipService": "ApiBossDriverCarBindingRelationshipService",
+    "com.jayden.apiboss.service.DriverUserService": "ApiBossDriverUserService",
+    "com.jayden.apidriver.service.PointService": "ApiDriverPointService",
+    "com.jayden.apidriver.service.UserService": "ApiDriverUserService",
+    "com.jayden.apidriver.service.VerifyCodeService": "ApiDriverVerifyCodeService",
+    "com.jayden.apipassenger.service.ForecastPriceService": "ApiPassengerForecastPriceService",
+    "com.jayden.apipassenger.service.OrderService": "ApiPassengerOrderService",
+    "com.jayden.apipassenger.service.TokenService": "ApiPassengerTokenService",
+    "com.jayden.apipassenger.service.UserService": "ApiPassengerUserService",
+    "com.jayden.apipassenger.service.VerifyCodeService": "ApiPassengerVerifyCodeService",
+    "com.jayden.servicedriveruser.service.CarService": "ServiceDriverUserCarService",
+    "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService": "ServiceDriverUserDriverCarBindingRelationshipService",
+    "com.jayden.servicedriveruser.service.DriverUserService": "ServiceDriverUserDriverUserService",
+    "com.jayden.servicedriveruser.service.DriverUserWorkStatusService": "ServiceDriverUserDriverUserWorkStatusService",
+    "com.jayden.servicemap.remote.MapDicDistrictClient": "ServiceMapMapDicDistrictClient",
+    "com.jayden.servicemap.remote.MapDirectionClient": "ServiceMapMapDirectionClient",
+    "com.jayden.servicemap.remote.PointClient": "ServiceMapPointClient",
+    "com.jayden.servicemap.remote.ServiceClient": "ServiceMapServiceClient",
+    "com.jayden.servicemap.remote.TerminalClient": "ServiceMapTerminalClient",
+    "com.jayden.servicemap.remote.TrackClient": "ServiceMapTrackClient",
+    "com.jayden.servicemap.service.DicDistrictService": "ServiceMapDicDistrictService",
+    "com.jayden.servicemap.service.DirectionService": "ServiceMapDirectionService",
+    "com.jayden.servicemap.service.PointService": "ServiceMapPointService",
+    "com.jayden.servicemap.service.ServiceMapService": "ServiceMapServiceMapService",
+    "com.jayden.servicemap.service.TerminalService": "ServiceMapTerminalService",
+    "com.jayden.servicemap.service.TrackService": "ServiceMapTrackService",
+    "com.jayden.serviceorder.service.OrderInfoService": "ServiceOrderOrderInfoService",
+    "com.jayden.servicepassengeruser.service.UserService": "ServicePassengerUserUserService",
+    "com.jayden.serviceprice.service.PriceService": "ServicePricePriceService",
+    "com.jayden.serviceverifycode.service.VerifyCodeService": "ServiceVerifycodeVerifyCodeService"
+  },
+  "operations": [
+    {
+      "id": "ApiBossCarServiceAddCar",
+      "service": "ApiBossCarService",
+      "java_method": "com.jayden.apiboss.service.CarService#addCar/1@17",
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/CarService.java",
+      "line": 17,
+      "direct_entities": [
+        "Car"
+      ],
+      "entities": [
+        "Car"
+      ],
+      "calls": [
+        "com.jayden.apiboss.remote.ServiceDriverUserClient#addCar/1@21",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserCarService",
+          "operation": "ServiceDriverUserCarServiceAddCar",
+          "java_method": "com.jayden.servicedriveruser.service.CarService#addCar/1@26"
+        }
+      ]
+    },
+    {
+      "id": "ApiBossDriverCarBindingRelationshipServiceBind",
+      "service": "ApiBossDriverCarBindingRelationshipService",
+      "java_method": "com.jayden.apiboss.service.DriverCarBindingRelationshipService#bind/1@23",
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/DriverCarBindingRelationshipService.java",
+      "line": 23,
+      "direct_entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "calls": [
+        "com.jayden.apiboss.remote.ServiceDriverUserClient#bind/1@24"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserDriverCarBindingRelationshipService",
+          "operation": "ServiceDriverUserDriverCarBindingRelationshipServiceBind",
+          "java_method": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31"
+        }
+      ]
+    },
+    {
+      "id": "ApiBossDriverCarBindingRelationshipServiceUnbind",
+      "service": "ApiBossDriverCarBindingRelationshipService",
+      "java_method": "com.jayden.apiboss.service.DriverCarBindingRelationshipService#unbind/1@27",
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/DriverCarBindingRelationshipService.java",
+      "line": 27,
+      "direct_entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "calls": [
+        "com.jayden.apiboss.remote.ServiceDriverUserClient#unbind/1@27"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserDriverCarBindingRelationshipService",
+          "operation": "ServiceDriverUserDriverCarBindingRelationshipServiceUnbind",
+          "java_method": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67"
+        }
+      ]
+    },
+    {
+      "id": "ApiBossDriverUserServiceAddDriverUser",
+      "service": "ApiBossDriverUserService",
+      "java_method": "com.jayden.apiboss.service.DriverUserService#addDriverUser/1@15",
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/DriverUserService.java",
+      "line": 15,
+      "direct_entities": [
+        "DriverUser"
+      ],
+      "entities": [
+        "DriverUser",
+        "DriverUserWorkStatus"
+      ],
+      "calls": [
+        "com.jayden.apiboss.remote.ServiceDriverUserClient#addDriverUser/1@14"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserDriverUserService",
+          "operation": "ServiceDriverUserDriverUserServiceAddDriverUser",
+          "java_method": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32"
+        }
+      ]
+    },
+    {
+      "id": "ApiBossDriverUserServiceUpdateDriverUser",
+      "service": "ApiBossDriverUserService",
+      "java_method": "com.jayden.apiboss.service.DriverUserService#updateDriverUser/1@21",
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/DriverUserService.java",
+      "line": 21,
+      "direct_entities": [
+        "DriverUser"
+      ],
+      "entities": [
+        "DriverUser"
+      ],
+      "calls": [
+        "com.jayden.apiboss.remote.ServiceDriverUserClient#updateDriverUser/1@17"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserDriverUserService",
+          "operation": "ServiceDriverUserDriverUserServiceUpdateDriverUser",
+          "java_method": "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48"
+        }
+      ]
+    },
+    {
+      "id": "ApiDriverPointServiceUpload",
+      "service": "ApiDriverPointService",
+      "java_method": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/PointService.java",
+      "line": 22,
+      "direct_entities": [
+        "Car"
+      ],
+      "entities": [
+        "Car"
+      ],
+      "calls": [
+        "com.jayden.apidriver.remote.ServiceDriverUserClient#getCarById/1@21",
+        "com.jayden.apidriver.remote.ServiceMapClient#upload/1@15"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserCarService",
+          "operation": "ServiceDriverUserCarServiceGetCarById",
+          "java_method": "com.jayden.servicedriveruser.service.CarService#getCarById/1@50"
+        },
+        {
+          "service": "ServiceMapPointService",
+          "operation": "ServiceMapPointServiceUpload",
+          "java_method": "com.jayden.servicemap.service.PointService#upload/1@15"
+        }
+      ]
+    },
+    {
+      "id": "ApiDriverUserServiceUpdateUser",
+      "service": "ApiDriverUserService",
+      "java_method": "com.jayden.apidriver.service.UserService#updateUser/1@15",
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/UserService.java",
+      "line": 15,
+      "direct_entities": [
+        "DriverUser"
+      ],
+      "entities": [
+        "DriverUser"
+      ],
+      "calls": [
+        "com.jayden.apidriver.remote.ServiceDriverUserClient#updateUser/1@14"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserDriverUserService",
+          "operation": "ServiceDriverUserDriverUserServiceUpdateDriverUser",
+          "java_method": "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48"
+        }
+      ]
+    },
+    {
+      "id": "ApiDriverVerifyCodeServiceCheckAndSendVerifyCode",
+      "service": "ApiDriverVerifyCodeService",
+      "java_method": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/VerifyCodeService.java",
+      "line": 34,
+      "direct_entities": [],
+      "entities": [
+        "DriverUser"
+      ],
+      "calls": [
+        "com.jayden.apidriver.remote.ServiceDriverUserClient#checkDriver/1@18",
+        "com.jayden.apidriver.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13",
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/0@21",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceDriverUserDriverUserService",
+          "operation": "ServiceDriverUserDriverUserServiceGetDriverUserByPhone",
+          "java_method": "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56"
+        },
+        {
+          "service": "ServiceVerifycodeVerifyCodeService",
+          "operation": "ServiceVerifycodeVerifyCodeServiceGenerateCode",
+          "java_method": "com.jayden.serviceverifycode.service.VerifyCodeService#generateCode/1@10"
+        }
+      ]
+    },
+    {
+      "id": "ApiDriverVerifyCodeServiceVerifyCodeCheck",
+      "service": "ApiDriverVerifyCodeService",
+      "java_method": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/VerifyCodeService.java",
+      "line": 59,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ApiPassengerForecastPriceServiceForecastPrice",
+      "service": "ApiPassengerForecastPriceService",
+      "java_method": "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26",
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/ForecastPriceService.java",
+      "line": 26,
+      "direct_entities": [],
+      "entities": [
+        "PriceRule"
+      ],
+      "calls": [
+        "com.jayden.apipassenger.remote.ServicePriceClient#forecast/1@15",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServicePricePriceService",
+          "operation": "ServicePricePriceServiceForecastPrice",
+          "java_method": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42"
+        }
+      ]
+    },
+    {
+      "id": "ApiPassengerOrderServiceAdd",
+      "service": "ApiPassengerOrderService",
+      "java_method": "com.jayden.apipassenger.service.OrderService#add/1@15",
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/OrderService.java",
+      "line": 15,
+      "direct_entities": [],
+      "entities": [
+        "OrderInfo"
+      ],
+      "calls": [
+        "com.jayden.apipassenger.remote.ServiceOrderClient#add/1@13"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceOrderOrderInfoService",
+          "operation": "ServiceOrderOrderInfoServiceAdd",
+          "java_method": "com.jayden.serviceorder.service.OrderInfoService#add/1@26"
+        }
+      ]
+    },
+    {
+      "id": "ApiPassengerTokenServiceRefreshToken",
+      "service": "ApiPassengerTokenService",
+      "java_method": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/TokenService.java",
+      "line": 23,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62",
+        "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ApiPassengerUserServiceGetUserByAccessToken",
+      "service": "ApiPassengerUserService",
+      "java_method": "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20",
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/UserService.java",
+      "line": 20,
+      "direct_entities": [
+        "PassengerUser"
+      ],
+      "entities": [
+        "PassengerUser"
+      ],
+      "calls": [
+        "com.jayden.apipassenger.remote.ServicePassengerUserClient#getUserByPhone/1@16",
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.internalcommon.util.JwtUtils#checkToken/1@62"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServicePassengerUserUserService",
+          "operation": "ServicePassengerUserUserServiceGetUserByPhone",
+          "java_method": "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48"
+        }
+      ]
+    },
+    {
+      "id": "ApiPassengerVerifyCodeServiceVerifyCodeGet",
+      "service": "ApiPassengerVerifyCodeService",
+      "java_method": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30",
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/VerifyCodeService.java",
+      "line": 30,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.apipassenger.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceVerifycodeVerifyCodeService",
+          "operation": "ServiceVerifycodeVerifyCodeServiceGenerateCode",
+          "java_method": "com.jayden.serviceverifycode.service.VerifyCodeService#generateCode/1@10"
+        }
+      ]
+    },
+    {
+      "id": "ApiPassengerVerifyCodeServiceVerifyCodeCheck",
+      "service": "ApiPassengerVerifyCodeService",
+      "java_method": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/VerifyCodeService.java",
+      "line": 54,
+      "direct_entities": [],
+      "entities": [
+        "PassengerUser"
+      ],
+      "calls": [
+        "com.jayden.apipassenger.remote.ServicePassengerUserClient#loginOrRegisterUser/1@13",
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorKeyByPhone/2@19",
+        "com.jayden.internalcommon.util.RedisPrefixUtils#generatorTokenKey/3@29"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServicePassengerUserUserService",
+          "operation": "ServicePassengerUserUserServiceLoginOrRegisterUser",
+          "java_method": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21"
+        }
+      ]
+    },
+    {
+      "id": "ServiceDriverUserCarServiceAddCar",
+      "service": "ServiceDriverUserCarService",
+      "java_method": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/CarService.java",
+      "line": 26,
+      "direct_entities": [
+        "Car"
+      ],
+      "entities": [
+        "Car"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.servicedriveruser.remote.ServiceMapClient#addTerminal/2@15",
+        "com.jayden.servicedriveruser.remote.ServiceMapClient#addTrack/1@18"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapTerminalService",
+          "operation": "ServiceMapTerminalServiceAdd",
+          "java_method": "com.jayden.servicemap.service.TerminalService#add/2@18"
+        },
+        {
+          "service": "ServiceMapTrackService",
+          "operation": "ServiceMapTrackServiceAdd",
+          "java_method": "com.jayden.servicemap.service.TrackService#add/1@14"
+        }
+      ]
+    },
+    {
+      "id": "ServiceDriverUserCarServiceGetCarById",
+      "service": "ServiceDriverUserCarService",
+      "java_method": "com.jayden.servicedriveruser.service.CarService#getCarById/1@50",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/CarService.java",
+      "line": 50,
+      "direct_entities": [
+        "Car"
+      ],
+      "entities": [
+        "Car"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverCarBindingRelationshipServiceBind",
+      "service": "ServiceDriverUserDriverCarBindingRelationshipService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverCarBindingRelationshipService.java",
+      "line": 31,
+      "direct_entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverCarBindingRelationshipServiceUnbind",
+      "service": "ServiceDriverUserDriverCarBindingRelationshipService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverCarBindingRelationshipService.java",
+      "line": 67,
+      "direct_entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "entities": [
+        "DriverCarBindingRelationship"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverUserServiceTestGetDriverUser",
+      "service": "ServiceDriverUserDriverUserService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverUserService#testGetDriverUser/0@27",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserService.java",
+      "line": 27,
+      "direct_entities": [
+        "DriverUser"
+      ],
+      "entities": [
+        "DriverUser"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverUserServiceAddDriverUser",
+      "service": "ServiceDriverUserDriverUserService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserService.java",
+      "line": 32,
+      "direct_entities": [
+        "DriverUser",
+        "DriverUserWorkStatus"
+      ],
+      "entities": [
+        "DriverUser",
+        "DriverUserWorkStatus"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverUserServiceUpdateDriverUser",
+      "service": "ServiceDriverUserDriverUserService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserService.java",
+      "line": 48,
+      "direct_entities": [
+        "DriverUser"
+      ],
+      "entities": [
+        "DriverUser"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverUserServiceGetDriverUserByPhone",
+      "service": "ServiceDriverUserDriverUserService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserService.java",
+      "line": 56,
+      "direct_entities": [
+        "DriverUser"
+      ],
+      "entities": [
+        "DriverUser"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceDriverUserDriverUserWorkStatusServiceChangeWorkStatus",
+      "service": "ServiceDriverUserDriverUserWorkStatusService",
+      "java_method": "com.jayden.servicedriveruser.service.DriverUserWorkStatusService#changeWorkStatus/2@27",
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserWorkStatusService.java",
+      "line": 27,
+      "direct_entities": [
+        "DriverUserWorkStatus"
+      ],
+      "entities": [
+        "DriverUserWorkStatus"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapMapDicDistrictClientDicDistrict",
+      "service": "ServiceMapMapDicDistrictClient",
+      "java_method": "com.jayden.servicemap.remote.MapDicDistrictClient#dicDistrict/1@20",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/MapDicDistrictClient.java",
+      "line": 20,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapMapDirectionClientDirection",
+      "service": "ServiceMapMapDirectionClient",
+      "java_method": "com.jayden.servicemap.remote.MapDirectionClient#direction/4@24",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/MapDirectionClient.java",
+      "line": 24,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.MapDirectionClient#parseDirectionEntity/1@50"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapPointClientUpload",
+      "service": "ServiceMapPointClient",
+      "java_method": "com.jayden.servicemap.remote.PointClient#upload/1@28",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/PointClient.java",
+      "line": 28,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapServiceClientAdd",
+      "service": "ServiceMapServiceClient",
+      "java_method": "com.jayden.servicemap.remote.ServiceClient#add/1@21",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/ServiceClient.java",
+      "line": 21,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapTerminalClientAdd",
+      "service": "ServiceMapTerminalClient",
+      "java_method": "com.jayden.servicemap.remote.TerminalClient#add/2@31",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/TerminalClient.java",
+      "line": 31,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapTerminalClientAroundsearch",
+      "service": "ServiceMapTerminalClient",
+      "java_method": "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/TerminalClient.java",
+      "line": 64,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapTerminalClientTrsearch",
+      "service": "ServiceMapTerminalClient",
+      "java_method": "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/TerminalClient.java",
+      "line": 112,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapTrackClientAdd",
+      "service": "ServiceMapTrackClient",
+      "java_method": "com.jayden.servicemap.remote.TrackClient#add/1@25",
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/TrackClient.java",
+      "line": 25,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapDicDistrictServiceInitDicDistrict",
+      "service": "ServiceMapDicDistrictService",
+      "java_method": "com.jayden.servicemap.service.DicDistrictService#initDicDistrict/1@24",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/DicDistrictService.java",
+      "line": 24,
+      "direct_entities": [],
+      "entities": [
+        "DicDistrict"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.servicemap.remote.MapDicDistrictClient#dicDistrict/1@20",
+        "com.jayden.servicemap.service.DicDistrictService#insertDicDistrictFromJSON/2@42"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapMapDicDistrictClient",
+          "operation": "ServiceMapMapDicDistrictClientDicDistrict",
+          "java_method": "com.jayden.servicemap.remote.MapDicDistrictClient#dicDistrict/1@20"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapDicDistrictServiceInsertDicDistrict",
+      "service": "ServiceMapDicDistrictService",
+      "java_method": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/DicDistrictService.java",
+      "line": 61,
+      "direct_entities": [
+        "DicDistrict"
+      ],
+      "entities": [
+        "DicDistrict"
+      ],
+      "calls": [
+        "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapDicDistrictServiceGenerateLevel",
+      "service": "ServiceMapDicDistrictService",
+      "java_method": "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/DicDistrictService.java",
+      "line": 75,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceMapDirectionServiceDriving",
+      "service": "ServiceMapDirectionService",
+      "java_method": "com.jayden.servicemap.service.DirectionService#driving/4@23",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/DirectionService.java",
+      "line": 23,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.servicemap.remote.MapDirectionClient#direction/4@24"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapMapDirectionClient",
+          "operation": "ServiceMapMapDirectionClientDirection",
+          "java_method": "com.jayden.servicemap.remote.MapDirectionClient#direction/4@24"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapPointServiceUpload",
+      "service": "ServiceMapPointService",
+      "java_method": "com.jayden.servicemap.service.PointService#upload/1@15",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/PointService.java",
+      "line": 15,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.PointClient#upload/1@28"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapPointClient",
+          "operation": "ServiceMapPointClientUpload",
+          "java_method": "com.jayden.servicemap.remote.PointClient#upload/1@28"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapServiceMapServiceAdd",
+      "service": "ServiceMapServiceMapService",
+      "java_method": "com.jayden.servicemap.service.ServiceMapService#add/1@19",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/ServiceMapService.java",
+      "line": 19,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.ServiceClient#add/1@21"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapServiceClient",
+          "operation": "ServiceMapServiceClientAdd",
+          "java_method": "com.jayden.servicemap.remote.ServiceClient#add/1@21"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapTerminalServiceAdd",
+      "service": "ServiceMapTerminalService",
+      "java_method": "com.jayden.servicemap.service.TerminalService#add/2@18",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/TerminalService.java",
+      "line": 18,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.TerminalClient#add/2@31"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapTerminalClient",
+          "operation": "ServiceMapTerminalClientAdd",
+          "java_method": "com.jayden.servicemap.remote.TerminalClient#add/2@31"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapTerminalServiceAroundsearch",
+      "service": "ServiceMapTerminalService",
+      "java_method": "com.jayden.servicemap.service.TerminalService#aroundsearch/2@22",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/TerminalService.java",
+      "line": 22,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapTerminalClient",
+          "operation": "ServiceMapTerminalClientAroundsearch",
+          "java_method": "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapTerminalServiceTrsearch",
+      "service": "ServiceMapTerminalService",
+      "java_method": "com.jayden.servicemap.service.TerminalService#trsearch/3@27",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/TerminalService.java",
+      "line": 27,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapTerminalClient",
+          "operation": "ServiceMapTerminalClientTrsearch",
+          "java_method": "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112"
+        }
+      ]
+    },
+    {
+      "id": "ServiceMapTrackServiceAdd",
+      "service": "ServiceMapTrackService",
+      "java_method": "com.jayden.servicemap.service.TrackService#add/1@14",
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/TrackService.java",
+      "line": 14,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.servicemap.remote.TrackClient#add/1@25"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapTrackClient",
+          "operation": "ServiceMapTrackClientAdd",
+          "java_method": "com.jayden.servicemap.remote.TrackClient#add/1@25"
+        }
+      ]
+    },
+    {
+      "id": "ServiceOrderOrderInfoServiceAdd",
+      "service": "ServiceOrderOrderInfoService",
+      "java_method": "com.jayden.serviceorder.service.OrderInfoService#add/1@26",
+      "path": "service-order/src/main/java/com/jayden/serviceorder/service/OrderInfoService.java",
+      "line": 26,
+      "direct_entities": [
+        "OrderInfo"
+      ],
+      "entities": [
+        "OrderInfo"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServicePassengerUserUserServiceLoginOrRegisterUser",
+      "service": "ServicePassengerUserUserService",
+      "java_method": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "path": "service-passenger-user/src/main/java/com/jayden/servicepassengeruser/service/UserService.java",
+      "line": 21,
+      "direct_entities": [
+        "PassengerUser"
+      ],
+      "entities": [
+        "PassengerUser"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/0@21"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServicePassengerUserUserServiceGetUserByPhone",
+      "service": "ServicePassengerUserUserService",
+      "java_method": "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48",
+      "path": "service-passenger-user/src/main/java/com/jayden/servicepassengeruser/service/UserService.java",
+      "line": 48,
+      "direct_entities": [
+        "PassengerUser"
+      ],
+      "entities": [
+        "PassengerUser"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServicePricePriceServiceForecastPrice",
+      "service": "ServicePricePriceService",
+      "java_method": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "path": "service-price/src/main/java/com/jayden/serviceprice/service/PriceService.java",
+      "line": 42,
+      "direct_entities": [
+        "PriceRule"
+      ],
+      "entities": [
+        "PriceRule"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.serviceprice.remote.ServiceMapClient#direction/1@16",
+        "com.jayden.serviceprice.service.PriceService#getPrice/3@121"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ServiceMapDirectionService",
+          "operation": "ServiceMapDirectionServiceDriving",
+          "java_method": "com.jayden.servicemap.service.DirectionService#driving/4@23"
+        }
+      ]
+    },
+    {
+      "id": "ServicePricePriceServiceCalculatePrice",
+      "service": "ServicePricePriceService",
+      "java_method": "com.jayden.serviceprice.service.PriceService#calculatePrice/4@93",
+      "path": "service-price/src/main/java/com/jayden/serviceprice/service/PriceService.java",
+      "line": 93,
+      "direct_entities": [
+        "PriceRule"
+      ],
+      "entities": [
+        "PriceRule"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+        "com.jayden.serviceprice.service.PriceService#getPrice/3@121"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServicePricePriceServiceGetPrice",
+      "service": "ServicePricePriceService",
+      "java_method": "com.jayden.serviceprice.service.PriceService#getPrice/3@121",
+      "path": "service-price/src/main/java/com/jayden/serviceprice/service/PriceService.java",
+      "line": 121,
+      "direct_entities": [
+        "PriceRule"
+      ],
+      "entities": [
+        "PriceRule"
+      ],
+      "calls": [
+        "com.jayden.internalcommon.util.BigDecimalUtils#add/2@13",
+        "com.jayden.internalcommon.util.BigDecimalUtils#divide/2@50",
+        "com.jayden.internalcommon.util.BigDecimalUtils#multiply/2@38",
+        "com.jayden.internalcommon.util.BigDecimalUtils#substract/2@26"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ServiceVerifycodeVerifyCodeServiceGenerateCode",
+      "service": "ServiceVerifycodeVerifyCodeService",
+      "java_method": "com.jayden.serviceverifycode.service.VerifyCodeService#generateCode/1@10",
+      "path": "service-verifycode/src/main/java/com/jayden/serviceverifycode/service/VerifyCodeService.java",
+      "line": 10,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "com.jayden.internalcommon.dto.ResponseResult#success/1@31"
+      ],
+      "resolved_service_calls": []
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Car",
+      "java_class": "com.jayden.internalcommon.dto.Car",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/Car.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "address",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "vehicleNo",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "plateColor",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "seats",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "brand",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "model",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "vehicleType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "ownerName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "vehicleColor",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "engineId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "vin",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "certifyDateA",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "fueType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "engineDisplace",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "transAgency",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "transArea",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "transDateStart",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "transDateEnd",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "certifyDateB",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "fixState",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "nextFixDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "checkState",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "feePrintId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "gpsBrand",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "gpsModel",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "gpsInstallDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "registerDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "commercialType",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "fareType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "state",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "tid",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "trid",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "trname",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "gmtCreate",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "DicDistrict",
+      "java_class": "com.jayden.internalcommon.dto.DicDistrict",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DicDistrict.java",
+      "fields": [
+        {
+          "name": "addressCode",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "addressName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "parentAddressCode",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "level",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        }
+      ]
+    },
+    {
+      "entity": "DriverCarBindingRelationship",
+      "java_class": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DriverCarBindingRelationship.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "driverId",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "carId",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bindState",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bindingTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "unBindingTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "DriverUser",
+      "java_class": "com.jayden.internalcommon.dto.DriverUser",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DriverUser.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "address",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "driverName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "driverPhone",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "driverGender",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "driverBirthday",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "driverNation",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "driverContactAddress",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "licenseId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "getDriverLicenseDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "driverLicenseOn",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "driverLicenseOff",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "taxiDriver",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "certificateNo",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "networkCarIssueOrganization",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "networkCarIssueDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "getNetworkCarProofDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "networkCarProofOn",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "networkCarProofOff",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "registerDate",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "commercialType",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "contractCompany",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "contractOn",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "contractOff",
+          "java_type": "LocalDate",
+          "model_type": "Date"
+        },
+        {
+          "name": "state",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "gmtCreate",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "DriverUserWorkStatus",
+      "java_class": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DriverUserWorkStatus.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "driverId",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "workStatus",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "gmtCreate",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "PassengerUser",
+      "java_class": "com.jayden.internalcommon.dto.PassengerUser",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/PassengerUser.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "gmtCreate",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "passengerPhone",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "passengerName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "passengerGender",
+          "java_type": "byte",
+          "model_type": "Integer"
+        },
+        {
+          "name": "state",
+          "java_type": "byte",
+          "model_type": "Integer"
+        },
+        {
+          "name": "profilePhoto",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "PriceRule",
+      "java_class": "com.jayden.internalcommon.dto.PriceRule",
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/PriceRule.java",
+      "fields": [
+        {
+          "name": "cityCode",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "vehicleType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "startFare",
+          "java_type": "Double",
+          "model_type": "Real"
+        },
+        {
+          "name": "startMile",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "unitPricePerMile",
+          "java_type": "Double",
+          "model_type": "Real"
+        },
+        {
+          "name": "unitPricePerMinute",
+          "java_type": "Double",
+          "model_type": "Real"
+        },
+        {
+          "name": "fareVersion",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "fareType",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "OrderInfo",
+      "java_class": "com.jayden.serviceorder.entity.OrderInfo",
+      "path": "service-order/src/main/java/com/jayden/serviceorder/entity/OrderInfo.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "passengerId",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "passengerPhone",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "driverId",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "driverPhone",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "carId",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "vehicleType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "address",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "orderTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "departTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "departure",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "depLongitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "depLatitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "destination",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "destLongitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "destLatitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "encrypt",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "fareType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "fareVersion",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "receiveOrderCarLongitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "receiveOrderCarLatitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "receiveOrderTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "licenseId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "vehicleNo",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "toPickUpPassengerTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "toPickUpPassengerLongitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "toPickUpPassengerLatitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "toPickUpPassengerAddress",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "driverArrivedDepartureTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "pickUpPassengerTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "pickUpPassengerLongitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "pickUpPassengerLatitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "passengerGetoffTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "passengerGetoffLongitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "passengerGetoffLatitude",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "cancelTime",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "cancelOperator",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "cancelTypeCode",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "driveMile",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "driveTime",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "orderStatus",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "price",
+          "java_type": "Double",
+          "model_type": "Real"
+        },
+        {
+          "name": "gmtCreate",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        },
+        {
+          "name": "gmtModified",
+          "java_type": "LocalDateTime",
+          "model_type": "Date"
+        }
+      ]
+    }
+  ],
+  "feign_routes": [
+    {
+      "method": "com.jayden.apiboss.remote.ServiceDriverUserClient#addDriverUser/1@14",
+      "target_module": "service-driver-user",
+      "verb": "POST",
+      "path": "/user",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.UserController#addUser/1@24"
+      ]
+    },
+    {
+      "method": "com.jayden.apiboss.remote.ServiceDriverUserClient#updateDriverUser/1@17",
+      "target_module": "service-driver-user",
+      "verb": "PUT",
+      "path": "/user",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.UserController#updateUser/1@35"
+      ]
+    },
+    {
+      "method": "com.jayden.apiboss.remote.ServiceDriverUserClient#addCar/1@21",
+      "target_module": "service-driver-user",
+      "verb": "POST",
+      "path": "/car",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.CarController#addCar/1@27"
+      ]
+    },
+    {
+      "method": "com.jayden.apiboss.remote.ServiceDriverUserClient#bind/1@24",
+      "target_module": "service-driver-user",
+      "verb": "POST",
+      "path": "/driver-car-binding-relationship/bind",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.DriverCarBindingRelationshipController#bind/1@29"
+      ]
+    },
+    {
+      "method": "com.jayden.apiboss.remote.ServiceDriverUserClient#unbind/1@27",
+      "target_module": "service-driver-user",
+      "verb": "POST",
+      "path": "/driver-car-binding-relationship/unbind",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.DriverCarBindingRelationshipController#unbind/1@35"
+      ]
+    },
+    {
+      "method": "com.jayden.apidriver.remote.ServiceDriverUserClient#updateUser/1@14",
+      "target_module": "service-driver-user",
+      "verb": "PUT",
+      "path": "/user",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.UserController#updateUser/1@35"
+      ]
+    },
+    {
+      "method": "com.jayden.apidriver.remote.ServiceDriverUserClient#checkDriver/1@18",
+      "target_module": "service-driver-user",
+      "verb": "GET",
+      "path": "/check-driver/{driverPhone}",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.UserController#getUser/1@45"
+      ]
+    },
+    {
+      "method": "com.jayden.apidriver.remote.ServiceDriverUserClient#getCarById/1@21",
+      "target_module": "service-driver-user",
+      "verb": "GET",
+      "path": "/car",
+      "controller_targets": [
+        "com.jayden.servicedriveruser.controller.CarController#getCarById/1@33"
+      ]
+    },
+    {
+      "method": "com.jayden.apidriver.remote.ServiceMapClient#upload/1@15",
+      "target_module": "service-map",
+      "verb": "POST",
+      "path": "/point/upload",
+      "controller_targets": [
+        "com.jayden.servicemap.controller.PointController#upload/1@20"
+      ]
+    },
+    {
+      "method": "com.jayden.apidriver.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13",
+      "target_module": "service-verifycode",
+      "verb": "GET",
+      "path": "/number-code/{size}",
+      "controller_targets": [
+        "com.jayden.serviceverifycode.controller.VerifyCodeController#verifyCodeGet/1@17"
+      ]
+    },
+    {
+      "method": "com.jayden.apipassenger.remote.ServiceOrderClient#add/1@13",
+      "target_module": "service-order",
+      "verb": "POST",
+      "path": "/order/add",
+      "controller_targets": [
+        "com.jayden.serviceorder.controller.OrderInfoController#add/1@17"
+      ]
+    },
+    {
+      "method": "com.jayden.apipassenger.remote.ServicePassengerUserClient#loginOrRegisterUser/1@13",
+      "target_module": "service-passenger-user",
+      "verb": "POST",
+      "path": "/user",
+      "controller_targets": [
+        "com.jayden.servicepassengeruser.controller.UserController#loginOrRegisterUser/1@16"
+      ]
+    },
+    {
+      "method": "com.jayden.apipassenger.remote.ServicePassengerUserClient#getUserByPhone/1@16",
+      "target_module": "service-passenger-user",
+      "verb": "GET",
+      "path": "/user/{phone}",
+      "controller_targets": [
+        "com.jayden.servicepassengeruser.controller.UserController#getUser/1@22"
+      ]
+    },
+    {
+      "method": "com.jayden.apipassenger.remote.ServicePriceClient#forecast/1@15",
+      "target_module": "service-price",
+      "verb": "POST",
+      "path": "/forecast-price",
+      "controller_targets": [
+        "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26"
+      ]
+    },
+    {
+      "method": "com.jayden.apipassenger.remote.ServiceVerifyCodeClient#verifyCodeGet/1@13",
+      "target_module": "service-verifycode",
+      "verb": "GET",
+      "path": "/number-code/{size}",
+      "controller_targets": [
+        "com.jayden.serviceverifycode.controller.VerifyCodeController#verifyCodeGet/1@17"
+      ]
+    },
+    {
+      "method": "com.jayden.servicedriveruser.remote.ServiceMapClient#addTerminal/2@15",
+      "target_module": "service-map",
+      "verb": "POST",
+      "path": "/terminal/add",
+      "controller_targets": [
+        "com.jayden.servicemap.controller.TerminalController#add/2@29"
+      ]
+    },
+    {
+      "method": "com.jayden.servicedriveruser.remote.ServiceMapClient#addTrack/1@18",
+      "target_module": "service-map",
+      "verb": "POST",
+      "path": "/track/add",
+      "controller_targets": [
+        "com.jayden.servicemap.controller.TrackController#add/1@19"
+      ]
+    },
+    {
+      "method": "com.jayden.serviceprice.remote.ServiceMapClient#direction/1@16",
+      "target_module": "service-map",
+      "verb": "GET",
+      "path": "/direction/driving",
+      "controller_targets": [
+        "com.jayden.servicemap.controller.DirectionController#driving/1@21"
+      ]
+    }
+  ],
+  "unresolved_project_calls": [
+    {
+      "caller": "com.jayden.apiboss.controller.CarController#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apiboss.service.CarService#addCar/1@17",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setGmtCreate",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apiboss.service.CarService#addCar/1@17",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setGmtModified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.controller.VerifyCodeController#verifyCode/1@17",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getDriverPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.controller.VerifyCodeController#verifyCodeCheck/1@24",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getDriverPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.controller.VerifyCodeController#verifyCodeCheck/1@24",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getVerifyCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apidriver.interceptor.InterceptorConfig",
+      "member": "addPathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apidriver.interceptor.InterceptorConfig",
+      "member": "excludePathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apidriver.interceptor.InterceptorConfig",
+      "member": "excludePathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apidriver.interceptor.InterceptorConfig",
+      "member": "excludePathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getIdentity",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.apidriver.interceptor.JwtInterceptor",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.apidriver.interceptor.JwtInterceptor",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.request.ApiDriverPointRequest",
+      "member": "getCarId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "getTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "getTrid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.request.PointRequest",
+      "member": "setTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.request.PointRequest",
+      "member": "setTrid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.request.PointRequest",
+      "member": "setPoints",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.PointService#upload/1@22",
+      "receiver": "com.jayden.internalcommon.request.ApiDriverPointRequest",
+      "member": "getPoints",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.internalcommon.response.DriverUserExistsResponse",
+      "member": "getIfExists",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.internalcommon.response.NumberCodeResponse",
+      "member": "getNumberCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#checkAndSendVerifyCode/1@34",
+      "receiver": "com.jayden.apidriver.service.VerifyCodeService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.apidriver.service.VerifyCodeService",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.apidriver.service.VerifyCodeService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.apidriver.service.VerifyCodeService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.apidriver.service.VerifyCodeService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "setAccessToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apidriver.service.VerifyCodeService#verifyCodeCheck/2@59",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "setRefreshToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.ForecastPriceController#forecastPrice/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDepLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.ForecastPriceController#forecastPrice/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDepLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.ForecastPriceController#forecastPrice/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDestLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.ForecastPriceController#forecastPrice/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDestLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.TokenController#refreshToken/1@19",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "getRefreshToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.VerifyCodeController#verifyCodeGet/1@18",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getPassengerPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.VerifyCodeController#verifyCodeCheck/1@26",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getPassengerPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.controller.VerifyCodeController#verifyCodeCheck/1@26",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getVerifyCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apipassenger.interceptor.InterceptorConfig",
+      "member": "addPathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apipassenger.interceptor.InterceptorConfig",
+      "member": "excludePathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apipassenger.interceptor.InterceptorConfig",
+      "member": "excludePathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.InterceptorConfig#addInterceptors/1@17",
+      "receiver": "com.jayden.apipassenger.interceptor.InterceptorConfig",
+      "member": "excludePathPatterns",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getIdentity",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.apipassenger.interceptor.JwtInterceptor",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.interceptor.JwtInterceptor#preHandle/3@26",
+      "receiver": "com.jayden.apipassenger.interceptor.JwtInterceptor",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDepLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDepLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDestLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDestLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.ForecastPriceService#forecastPrice/4@26",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getIdentity",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.apipassenger.service.TokenService",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.apipassenger.service.TokenService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.apipassenger.service.TokenService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "setRefreshToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.TokenService#refreshToken/1@23",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "setAccessToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.UserService#getUserByAccessToken/1@20",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "setPassengerPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30",
+      "receiver": "com.jayden.apipassenger.service.VerifyCodeService",
+      "member": "getNumberCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "setVerifyCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeGet/1@30",
+      "receiver": "com.jayden.apipassenger.service.VerifyCodeService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.apipassenger.service.VerifyCodeService",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.apipassenger.service.VerifyCodeService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "setPassengerPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.apipassenger.service.VerifyCodeService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.apipassenger.service.VerifyCodeService",
+      "member": "set",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "setAccessToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.apipassenger.service.VerifyCodeService#verifyCodeCheck/2@54",
+      "receiver": "com.jayden.internalcommon.response.TokenResponse",
+      "member": "setRefreshToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/0@21",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/0@21",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/0@21",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/0@21",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#success/1@31",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/1@41",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/2@51",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/3@62",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/3@62",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.dto.ResponseResult#fail/3@62",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "setData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.BigDecimalUtils#add/2@13",
+      "receiver": "com.jayden.internalcommon.util.BigDecimalUtils",
+      "member": "doubleValue",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.BigDecimalUtils#substract/2@26",
+      "receiver": "com.jayden.internalcommon.util.BigDecimalUtils",
+      "member": "doubleValue",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.BigDecimalUtils#multiply/2@38",
+      "receiver": "com.jayden.internalcommon.util.BigDecimalUtils",
+      "member": "doubleValue",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.BigDecimalUtils#divide/2@50",
+      "receiver": "com.jayden.internalcommon.util.BigDecimalUtils",
+      "member": "doubleValue",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+      "receiver": "com.jayden.internalcommon.util.JwtUtils",
+      "member": "getTime",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#generatorToken/3@29",
+      "receiver": "com.jayden.internalcommon.util.JwtUtils",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45",
+      "receiver": "com.jayden.internalcommon.util.JwtUtils",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45",
+      "receiver": "com.jayden.internalcommon.util.JwtUtils",
+      "member": "verify",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45",
+      "receiver": "com.jayden.internalcommon.util.JwtUtils",
+      "member": "asString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45",
+      "receiver": "com.jayden.internalcommon.util.JwtUtils",
+      "member": "asString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "setPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#parseToken/1@45",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "setIdentity",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#main/1@72",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.internalcommon.util.JwtUtils#main/1@72",
+      "receiver": "com.jayden.internalcommon.dto.TokenResult",
+      "member": "getIdentity",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.CarController#addCar/1@27",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.DriverUserWorkStatusController#changeWorkStatus/1@27",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "getDriverId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.DriverUserWorkStatusController#changeWorkStatus/1@27",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "getWorkStatus",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.UserController#getUser/1@45",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.UserController#getUser/1@45",
+      "receiver": "com.jayden.internalcommon.response.DriverUserExistsResponse",
+      "member": "setDriverPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.UserController#getUser/1@45",
+      "receiver": "com.jayden.internalcommon.response.DriverUserExistsResponse",
+      "member": "setIfExists",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.UserController#getUser/1@45",
+      "receiver": "com.jayden.internalcommon.response.DriverUserExistsResponse",
+      "member": "setDriverPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.UserController#getUser/1@45",
+      "receiver": "com.jayden.internalcommon.dto.DriverUser",
+      "member": "getDriverPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.controller.UserController#getUser/1@45",
+      "receiver": "com.jayden.internalcommon.response.DriverUserExistsResponse",
+      "member": "setIfExists",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "globalConfig",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "fileOverride",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "outputDir",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "packageConfig",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "pathInfo",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "strategyConfig",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "templateEngine",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.servicedriveruser.generator.MysqlGenerator",
+      "member": "execute",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setGmtModified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setGmtCreate",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.servicedriveruser.mapper.CarMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "getVehicleNo",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.servicedriveruser.service.CarService",
+      "member": "getTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.servicedriveruser.service.CarService",
+      "member": "getTrid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.servicedriveruser.service.CarService",
+      "member": "getTrname",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setTrid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.internalcommon.dto.Car",
+      "member": "setTrname",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#addCar/1@26",
+      "receiver": "com.jayden.servicedriveruser.mapper.CarMapper",
+      "member": "updateById",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.CarService#getCarById/1@50",
+      "receiver": "com.jayden.servicedriveruser.mapper.CarMapper",
+      "member": "selectByMap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "getDriverId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "getCarId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverCarBindingRelationshipMapper",
+      "member": "selectCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "getDriverId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverCarBindingRelationshipMapper",
+      "member": "selectCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "getCarId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverCarBindingRelationshipMapper",
+      "member": "selectCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "setBindingTime",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "setBindState",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#bind/1@31",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverCarBindingRelationshipMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "getDriverId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "getCarId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverCarBindingRelationshipMapper",
+      "member": "selectByMap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "setBindState",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.internalcommon.dto.DriverCarBindingRelationship",
+      "member": "setUnBindingTime",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverCarBindingRelationshipService#unbind/1@67",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverCarBindingRelationshipMapper",
+      "member": "updateById",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#testGetDriverUser/0@27",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserMapper",
+      "member": "selectById",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUser",
+      "member": "setGmtCreate",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUser",
+      "member": "setGmtModified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "setDriverId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUser",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "setWorkStatus",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "setGmtModified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "setGmtCreate",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#addDriverUser/1@32",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserWorkStatusMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48",
+      "receiver": "com.jayden.internalcommon.dto.DriverUser",
+      "member": "setGmtModified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#updateDriverUser/1@48",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserMapper",
+      "member": "updateById",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserMapper",
+      "member": "selectByMap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserService#getDriverUserByPhone/1@56",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserWorkStatusService#changeWorkStatus/2@27",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserWorkStatusMapper",
+      "member": "selectByMap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserWorkStatusService#changeWorkStatus/2@27",
+      "receiver": "com.jayden.internalcommon.dto.DriverUserWorkStatus",
+      "member": "setWorkStatus",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicedriveruser.service.DriverUserWorkStatusService#changeWorkStatus/2@27",
+      "receiver": "com.jayden.servicedriveruser.mapper.DriverUserWorkStatusMapper",
+      "member": "updateById",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.controller.DirectionController#driving/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDepLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.controller.DirectionController#driving/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDepLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.controller.DirectionController#driving/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDestLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.controller.DirectionController#driving/1@21",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDestLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.MapDirectionClient#parseDirectionEntity/1@50",
+      "receiver": "com.jayden.internalcommon.response.DirectionResponse",
+      "member": "setDistance",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.MapDirectionClient#parseDirectionEntity/1@50",
+      "receiver": "com.jayden.internalcommon.response.DirectionResponse",
+      "member": "setDuration",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.PointClient#upload/1@28",
+      "receiver": "com.jayden.internalcommon.request.PointRequest",
+      "member": "getTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.PointClient#upload/1@28",
+      "receiver": "com.jayden.internalcommon.request.PointRequest",
+      "member": "getTrid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.PointClient#upload/1@28",
+      "receiver": "com.jayden.internalcommon.request.PointRequest",
+      "member": "getPoints",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.ServiceClient#add/1@21",
+      "receiver": "com.jayden.internalcommon.response.ServiceResponse",
+      "member": "setSid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#add/2@31",
+      "receiver": "com.jayden.internalcommon.response.TerminalResponse",
+      "member": "setTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64",
+      "receiver": "com.jayden.internalcommon.response.TerminalResponse",
+      "member": "setCarId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64",
+      "receiver": "com.jayden.internalcommon.response.TerminalResponse",
+      "member": "setTid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64",
+      "receiver": "com.jayden.internalcommon.response.TerminalResponse",
+      "member": "setLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#aroundsearch/2@64",
+      "receiver": "com.jayden.internalcommon.response.TerminalResponse",
+      "member": "setLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112",
+      "receiver": "com.jayden.internalcommon.response.TrsearchResponse",
+      "member": "setDriveMile",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TerminalClient#trsearch/3@112",
+      "receiver": "com.jayden.internalcommon.response.TrsearchResponse",
+      "member": "setDriveTime",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TrackClient#add/1@25",
+      "receiver": "com.jayden.internalcommon.response.TrackResponse",
+      "member": "setTrid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.remote.TrackClient#add/1@25",
+      "receiver": "com.jayden.internalcommon.response.TrackResponse",
+      "member": "setTrname",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#initDicDistrict/1@24",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#initDicDistrict/1@24",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrictFromJSON/2@42",
+      "receiver": "com.jayden.servicemap.service.DicDistrictService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrictFromJSON/2@42",
+      "receiver": "com.jayden.servicemap.service.DicDistrictService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "receiver": "com.jayden.internalcommon.dto.DicDistrict",
+      "member": "setAddressCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "receiver": "com.jayden.internalcommon.dto.DicDistrict",
+      "member": "setAddressName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "receiver": "com.jayden.internalcommon.dto.DicDistrict",
+      "member": "setLevel",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "receiver": "com.jayden.internalcommon.dto.DicDistrict",
+      "member": "setParentAddressCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#insertDicDistrict/4@61",
+      "receiver": "com.jayden.servicemap.mapper.DicDistrictMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75",
+      "receiver": "com.jayden.servicemap.service.DicDistrictService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75",
+      "receiver": "com.jayden.servicemap.service.DicDistrictService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75",
+      "receiver": "com.jayden.servicemap.service.DicDistrictService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicemap.service.DicDistrictService#generateLevel/1@75",
+      "receiver": "com.jayden.servicemap.service.DicDistrictService",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "globalConfig",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "fileOverride",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "outputDir",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "packageConfig",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "pathInfo",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "strategyConfig",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "templateEngine",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.generator.MysqlGenerator#main/1@14",
+      "receiver": "com.jayden.serviceorder.generator.MysqlGenerator",
+      "member": "execute",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceorder.service.OrderInfoService#add/1@26",
+      "receiver": "com.jayden.serviceorder.mapper.OrderInfoMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.controller.UserController#loginOrRegisterUser/1@16",
+      "receiver": "com.jayden.internalcommon.request.VerifyCodeDTO",
+      "member": "getPassengerPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.servicepassengeruser.mapper.UserMapper",
+      "member": "selectByMap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setPassengerPhone",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setPassengerName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setProfilePhoto",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setPassengerGender",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setState",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setGmtCreate",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.internalcommon.dto.PassengerUser",
+      "member": "setGmtModified",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#loginOrRegisterUser/1@21",
+      "receiver": "com.jayden.servicepassengeruser.mapper.UserMapper",
+      "member": "insert",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48",
+      "receiver": "com.jayden.servicepassengeruser.mapper.UserMapper",
+      "member": "selectByMap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.servicepassengeruser.service.UserService#getUserByPhone/1@48",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDepLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDepLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDestLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getDestLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getCityCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.controller.ForecastPriceController#forecastPrice/1@26",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "getVehicleType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDepLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDepLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDestLongitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.request.ForecastPriceDTO",
+      "member": "setDestLatitude",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.serviceprice.service.PriceService",
+      "member": "getDistance",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.dto.ResponseResult",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.serviceprice.service.PriceService",
+      "member": "getDuration",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.serviceprice.mapper.PriceRuleMapper",
+      "member": "selectList",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.response.ForecastPriceResponse",
+      "member": "setPrice",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.response.ForecastPriceResponse",
+      "member": "setCityCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.response.ForecastPriceResponse",
+      "member": "setVehicleType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.response.ForecastPriceResponse",
+      "member": "setFareType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "getFareType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.response.ForecastPriceResponse",
+      "member": "setFareVersion",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#forecastPrice/6@42",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "getFareVersion",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#calculatePrice/4@93",
+      "receiver": "com.jayden.serviceprice.mapper.PriceRuleMapper",
+      "member": "selectList",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#calculatePrice/4@93",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#calculatePrice/4@93",
+      "receiver": "com.jayden.internalcommon.constant.CommonStatusEnum",
+      "member": "getMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#getPrice/3@121",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "getStartFare",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#getPrice/3@121",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "getStartMile",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#getPrice/3@121",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "getUnitPricePerMile",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#getPrice/3@121",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "getUnitPricePerMinute",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#main/1@157",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "setUnitPricePerMile",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#main/1@157",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "setUnitPricePerMinute",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#main/1@157",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "setStartFare",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceprice.service.PriceService#main/1@157",
+      "receiver": "com.jayden.internalcommon.dto.PriceRule",
+      "member": "setStartMile",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "com.jayden.serviceverifycode.service.VerifyCodeService#generateCode/1@10",
+      "receiver": "com.jayden.internalcommon.response.NumberCodeResponse",
+      "member": "setNumberCode",
+      "reason": "inherited/generated/unsupported overload"
+    }
+  ],
+  "model_sha256": "970acf9f42c1daed1596f693c35ee1ccaa0fd5cf0b0f7013309add7ac177e1c3",
+  "zero_entity_services": [
+    "ApiPassengerTokenService",
+    "ServiceMapMapDicDistrictClient",
+    "ServiceMapMapDirectionClient",
+    "ServiceMapPointClient",
+    "ServiceMapServiceClient",
+    "ServiceMapTerminalClient",
+    "ServiceMapTrackClient",
+    "ServiceMapDirectionService",
+    "ServiceMapPointService",
+    "ServiceMapServiceMapService",
+    "ServiceMapTerminalService",
+    "ServiceMapTrackService",
+    "ServiceVerifycodeVerifyCodeService"
+  ],
+  "zero_entity_operations": [
+    "ApiDriverVerifyCodeServiceVerifyCodeCheck",
+    "ApiPassengerTokenServiceRefreshToken",
+    "ApiPassengerVerifyCodeServiceVerifyCodeGet",
+    "ServiceMapMapDicDistrictClientDicDistrict",
+    "ServiceMapMapDirectionClientDirection",
+    "ServiceMapPointClientUpload",
+    "ServiceMapServiceClientAdd",
+    "ServiceMapTerminalClientAdd",
+    "ServiceMapTerminalClientAroundsearch",
+    "ServiceMapTerminalClientTrsearch",
+    "ServiceMapTrackClientAdd",
+    "ServiceMapDicDistrictServiceGenerateLevel",
+    "ServiceMapDirectionServiceDriving",
+    "ServiceMapPointServiceUpload",
+    "ServiceMapServiceMapServiceAdd",
+    "ServiceMapTerminalServiceAdd",
+    "ServiceMapTerminalServiceAroundsearch",
+    "ServiceMapTerminalServiceTrsearch",
+    "ServiceMapTrackServiceAdd",
+    "ServiceVerifycodeVerifyCodeServiceGenerateCode"
+  ],
+  "entity_relationship_policy": "Only declared entity-typed fields. Scalar *Id fields are retained as scalar attributes; no guessed foreign keys.",
+  "usecase_policy": "One Spring @Service class is one use-case proxy; all its public non-static methods are operations. Existing module boundary is not a clustering constraint. Module roles are actor proxies.",
+  "method_graph_policy": "Declared receiver types + method name/arity; Feign module/HTTP method/path to Controller route; monotonic union of reachable Mapper/entity types. No reflection/runtime dispatch/library implementation modeling.",
+  "seconds": 0.49283966596703976
+}

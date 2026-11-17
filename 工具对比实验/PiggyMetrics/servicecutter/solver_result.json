@@ -1,0 +1,147 @@
+{
+  "services": [
+    {
+      "nanoentities": [
+        "NotificationServiceNotificationSettings.lastNotified",
+        "NotificationServiceNotificationSettings.active",
+        "NotificationServiceNotificationSettings.frequency"
+      ],
+      "id": "A",
+      "name": "Service A"
+    },
+    {
+      "nanoentities": [
+        "AccountServiceAccount.expenses",
+        "AccountServiceItem.title",
+        "AccountServiceItem.icon",
+        "AccountServiceItem.period",
+        "AccountServiceItem.currency",
+        "AccountServiceItem.amount",
+        "AccountServiceSaving.capitalization",
+        "AccountServiceSaving.interest",
+        "AccountServiceAccount.incomes",
+        "AccountServiceAccount.note",
+        "AccountServiceSaving.currency",
+        "AccountServiceSaving.amount",
+        "AccountServiceAccount.lastSeen",
+        "AccountServiceAccount.saving",
+        "AccountServiceSaving.deposit",
+        "AccountServiceAccount.name"
+      ],
+      "id": "B",
+      "name": "Service B"
+    },
+    {
+      "nanoentities": [
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications",
+        "NotificationServiceRecipient.accountName"
+      ],
+      "id": "C",
+      "name": "Service C"
+    },
+    {
+      "nanoentities": [
+        "StatisticsServiceDataPoint.expenses",
+        "StatisticsServiceSaving.amount",
+        "StatisticsServiceDataPoint.id",
+        "StatisticsServiceDataPoint.rates",
+        "StatisticsServiceExchangeRatesContainer.base",
+        "AccountServiceUser.username",
+        "StatisticsServiceDataPoint.incomes",
+        "StatisticsServiceDataPointId.account",
+        "StatisticsServiceSaving.capitalization",
+        "StatisticsServiceDataPointId.date",
+        "StatisticsServiceAccount.expenses",
+        "StatisticsServiceExchangeRatesContainer.rates",
+        "StatisticsServiceItem.title",
+        "StatisticsServiceItemMetric.title",
+        "StatisticsServiceExchangeRatesContainer.date",
+        "StatisticsServiceAccount.incomes",
+        "StatisticsServiceDataPoint.statistics",
+        "StatisticsServiceSaving.interest",
+        "StatisticsServiceItem.period",
+        "AccountServiceUser.password",
+        "StatisticsServiceItem.amount",
+        "StatisticsServiceSaving.currency",
+        "StatisticsServiceItemMetric.amount",
+        "StatisticsServiceSaving.deposit",
+        "StatisticsServiceAccount.saving",
+        "StatisticsServiceItem.currency"
+      ],
+      "id": "D",
+      "name": "Service D"
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service B",
+      "sharedEntities": [
+        "NotificationServiceNotificationSettings.lastNotified",
+        "NotificationServiceNotificationSettings.active",
+        "NotificationServiceNotificationSettings.frequency"
+      ],
+      "direction": "INCOMING"
+    },
+    {
+      "serviceA": "Service A",
+      "serviceB": "Service C",
+      "sharedEntities": [
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications",
+        "NotificationServiceRecipient.accountName"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "Service B",
+      "serviceB": "Service C",
+      "sharedEntities": [
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications",
+        "NotificationServiceRecipient.accountName"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "Service B",
+      "serviceB": "Service D",
+      "sharedEntities": [
+        "AccountServiceAccount.expenses",
+        "AccountServiceItem.title",
+        "AccountServiceItem.icon",
+        "AccountServiceItem.period",
+        "AccountServiceItem.currency",
+        "AccountServiceItem.amount",
+        "AccountServiceSaving.capitalization",
+        "AccountServiceSaving.interest",
+        "AccountServiceAccount.incomes",
+        "AccountServiceAccount.note",
+        "AccountServiceSaving.amount",
+        "AccountServiceSaving.currency",
+        "AccountServiceAccount.lastSeen",
+        "AccountServiceAccount.saving",
+        "AccountServiceSaving.deposit",
+        "AccountServiceAccount.name"
+      ],
+      "direction": "INCOMING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Service D": [
+      "AccountServiceAccountServiceImpl",
+      "StatisticsServiceExchangeRatesServiceImpl",
+      "StatisticsServiceStatisticsServiceImpl"
+    ],
+    "Service C": [
+      "NotificationServiceEmailServiceImpl"
+    ],
+    "Service B": [
+      "NotificationServiceNotificationServiceImpl"
+    ],
+    "Service A": [
+      "NotificationServiceRecipientServiceImpl"
+    ]
+  }
+}

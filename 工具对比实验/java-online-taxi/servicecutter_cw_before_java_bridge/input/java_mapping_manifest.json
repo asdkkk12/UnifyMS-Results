@@ -1,0 +1,23 @@
+{
+  "source": "input/extraction.json",
+  "native_algorithm": "Chinese Whispers",
+  "cwNodeWeighting": 0,
+  "actual_java_fields": 138,
+  "nonempty_usecases": 18,
+  "omitted_stateless_usecases": [
+    "ApiPassengerTokenService",
+    "ServiceMapMapDicDistrictClient",
+    "ServiceMapMapDirectionClient",
+    "ServiceMapPointClient",
+    "ServiceMapServiceClient",
+    "ServiceMapTerminalClient",
+    "ServiceMapTrackClient",
+    "ServiceMapDirectionService",
+    "ServiceMapPointService",
+    "ServiceMapServiceMapService",
+    "ServiceMapTerminalService",
+    "ServiceMapTrackService",
+    "ServiceVerifycodeVerifyCodeService"
+  ],
+  "policy": "Actual Java field names only; entity-level AST reachability expanded to all fields as conservative co-access. No invented type-token attributes, sentinel references, guessed foreign keys or owner groups. Chinese Whispers selected for non-K disconnected graph handling; one native run, no quality-based selection. Prior GN diagnostic attempts retained."
+}

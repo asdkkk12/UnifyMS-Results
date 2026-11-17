@@ -1,0 +1,500 @@
+{
+  "application": "JavaOnlineTaxi",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/input/java-online-taxi.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/servicecutter/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "The decomposition is the official ServiceCutter solver result, bridged from its entity/nanoentity clusters."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 7,
+  "provided_interface_total": 49,
+  "CHD": 0.052894627238650564,
+  "Instability": 0.5377358490566038,
+  "IFN": 7.0,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "servicecutter.domain.PassengerUser"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "servicecutter.domain.Car"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "servicecutter.domain.OrderInfo",
+        "servicecutter.service.ApiBossCarService",
+        "servicecutter.service.ApiBossDriverCarBindingRelationshipService",
+        "servicecutter.service.ApiBossDriverUserService",
+        "servicecutter.service.ApiDriverPointService",
+        "servicecutter.service.ApiDriverUserService",
+        "servicecutter.service.ApiDriverVerifyCodeService",
+        "servicecutter.service.ApiPassengerForecastPriceService",
+        "servicecutter.service.ApiPassengerOrderService",
+        "servicecutter.service.ApiPassengerTokenService",
+        "servicecutter.service.ApiPassengerUserService",
+        "servicecutter.service.ApiPassengerVerifyCodeService",
+        "servicecutter.service.ServiceDriverUserCarService",
+        "servicecutter.service.ServiceDriverUserDriverCarBindingRelationshipService",
+        "servicecutter.service.ServiceDriverUserDriverUserService",
+        "servicecutter.service.ServiceDriverUserDriverUserWorkStatusService",
+        "servicecutter.service.ServiceMapDicDistrictService",
+        "servicecutter.service.ServiceMapDirectionService",
+        "servicecutter.service.ServiceMapMapDicDistrictClient",
+        "servicecutter.service.ServiceMapMapDirectionClient",
+        "servicecutter.service.ServiceMapPointClient",
+        "servicecutter.service.ServiceMapPointService",
+        "servicecutter.service.ServiceMapServiceClient",
+        "servicecutter.service.ServiceMapServiceMapService",
+        "servicecutter.service.ServiceMapTerminalClient",
+        "servicecutter.service.ServiceMapTerminalService",
+        "servicecutter.service.ServiceMapTrackClient",
+        "servicecutter.service.ServiceMapTrackService",
+        "servicecutter.service.ServiceOrderOrderInfoService",
+        "servicecutter.service.ServicePassengerUserUserService",
+        "servicecutter.service.ServicePricePriceService",
+        "servicecutter.service.ServiceVerifycodeVerifyCodeService"
+      ],
+      "provided_interface": 49,
+      "required_interface_external_calls": 26,
+      "required_interface_implicit_crud": 31,
+      "required_interface": 57,
+      "instability": 0.5377358490566038,
+      "CHD": 0.052894627238650564
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "servicecutter.domain.PriceRule"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "servicecutter.domain.DriverUser",
+        "servicecutter.domain.DriverUserWorkStatus"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "servicecutter.domain.DicDistrict"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "servicecutter.domain.DriverCarBindingRelationship"
+      ],
+      "provided_interface": 0,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 0,
+      "required_interface": 0,
+      "instability": null,
+      "CHD": null
+    }
+  ],
+  "UCM": 0.037849462365591335,
+  "UCM_pair_count": 465,
+  "Intra_Cohesion": 0.31750031750047625,
+  "Inter_Coupling": 0.22587577169622697,
+  "CMQ": 0.09162454580424928,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "Car": [
+        "address",
+        "brand",
+        "car",
+        "certifydatea",
+        "certifydateb",
+        "checkstate",
+        "commercialtype",
+        "date",
+        "enginedisplace",
+        "engineid",
+        "faretype",
+        "feeprintid",
+        "fixstate",
+        "fuetype",
+        "gmtcreate",
+        "gmtmodified",
+        "gpsbrand",
+        "gpsinstalldate",
+        "gpsmodel",
+        "id",
+        "integer",
+        "model",
+        "nextfixdate",
+        "ownername",
+        "platecolor",
+        "registerdate",
+        "seats",
+        "state",
+        "string",
+        "tid",
+        "transagency",
+        "transarea",
+        "transdateend",
+        "transdatestart",
+        "trid",
+        "trname",
+        "vehiclecolor",
+        "vehicleno",
+        "vehicletype",
+        "vin"
+      ],
+      "DicDistrict": [
+        "addresscode",
+        "addressname",
+        "dicdistrict",
+        "integer",
+        "level",
+        "parentaddresscode",
+        "string"
+      ],
+      "DriverCarBindingRelationship": [
+        "bindingtime",
+        "bindstate",
+        "carid",
+        "date",
+        "drivercarbindingrelationship",
+        "driverid",
+        "id",
+        "integer",
+        "unbindingtime"
+      ],
+      "DriverUser": [
+        "address",
+        "certificateno",
+        "commercialtype",
+        "contractcompany",
+        "contractoff",
+        "contracton",
+        "date",
+        "driverbirthday",
+        "drivercontactaddress",
+        "drivergender",
+        "driverlicenseoff",
+        "driverlicenseon",
+        "drivername",
+        "drivernation",
+        "driverphone",
+        "driveruser",
+        "getdriverlicensedate",
+        "getnetworkcarproofdate",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "licenseid",
+        "networkcarissuedate",
+        "networkcarissueorganization",
+        "networkcarproofoff",
+        "networkcarproofon",
+        "registerdate",
+        "state",
+        "string",
+        "taxidriver"
+      ],
+      "DriverUserWorkStatus": [
+        "date",
+        "driverid",
+        "driveruserworkstatus",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "workstatus"
+      ],
+      "PassengerUser": [
+        "date",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "passengergender",
+        "passengername",
+        "passengerphone",
+        "passengeruser",
+        "profilephoto",
+        "state",
+        "string"
+      ],
+      "PriceRule": [
+        "citycode",
+        "faretype",
+        "fareversion",
+        "integer",
+        "pricerule",
+        "real",
+        "startfare",
+        "startmile",
+        "string",
+        "unitpricepermile",
+        "unitpriceperminute",
+        "vehicletype"
+      ],
+      "OrderInfo": [
+        "address",
+        "canceloperator",
+        "canceltime",
+        "canceltypecode",
+        "carid",
+        "date",
+        "departtime",
+        "departure",
+        "deplatitude",
+        "deplongitude",
+        "destination",
+        "destlatitude",
+        "destlongitude",
+        "drivemile",
+        "driverarriveddeparturetime",
+        "driverid",
+        "driverphone",
+        "drivetime",
+        "encrypt",
+        "faretype",
+        "fareversion",
+        "gmtcreate",
+        "gmtmodified",
+        "id",
+        "integer",
+        "licenseid",
+        "orderinfo",
+        "orderstatus",
+        "ordertime",
+        "passengergetofflatitude",
+        "passengergetofflongitude",
+        "passengergetofftime",
+        "passengerid",
+        "passengerphone",
+        "pickuppassengerlatitude",
+        "pickuppassengerlongitude",
+        "pickuppassengertime",
+        "price",
+        "real",
+        "receiveordercarlatitude",
+        "receiveordercarlongitude",
+        "receiveordertime",
+        "string",
+        "topickuppassengeraddress",
+        "topickuppassengerlatitude",
+        "topickuppassengerlongitude",
+        "topickuppassengertime",
+        "vehicleno",
+        "vehicletype"
+      ]
+    },
+    "effective_entity_clusters": {
+      "PassengerUser": 0,
+      "Car": 1,
+      "OrderInfo": 2,
+      "PriceRule": 3,
+      "DriverUser": 4,
+      "DriverUserWorkStatus": 4,
+      "DicDistrict": 5,
+      "DriverCarBindingRelationship": 6
+    },
+    "intra_pair_count": 1,
+    "inter_pair_count": 27,
+    "pairs": [
+      {
+        "a": "Car",
+        "b": "DicDistrict",
+        "similarity": 0.11952286093343936
+      },
+      {
+        "a": "Car",
+        "b": "DriverCarBindingRelationship",
+        "similarity": 0.15811388300841897
+      },
+      {
+        "a": "Car",
+        "b": "DriverUser",
+        "similarity": 0.2839809171235324
+      },
+      {
+        "a": "Car",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.2795084971874737
+      },
+      {
+        "a": "Car",
+        "b": "PassengerUser",
+        "similarity": 0.3195048252113469
+      },
+      {
+        "a": "Car",
+        "b": "PriceRule",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "Car",
+        "b": "OrderInfo",
+        "similarity": 0.22587697572631282
+      },
+      {
+        "a": "DicDistrict",
+        "b": "DriverCarBindingRelationship",
+        "similarity": 0.1259881576697424
+      },
+      {
+        "a": "DicDistrict",
+        "b": "DriverUser",
+        "similarity": 0.13576884666042613
+      },
+      {
+        "a": "DicDistrict",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.1336306209562122
+      },
+      {
+        "a": "DicDistrict",
+        "b": "PassengerUser",
+        "similarity": 0.2182178902359924
+      },
+      {
+        "a": "DicDistrict",
+        "b": "PriceRule",
+        "similarity": 0.2182178902359924
+      },
+      {
+        "a": "DicDistrict",
+        "b": "OrderInfo",
+        "similarity": 0.10798984943120776
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "DriverUser",
+        "similarity": 0.17960530202677488
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.47140452079103173
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "PassengerUser",
+        "similarity": 0.28867513459481287
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "PriceRule",
+        "similarity": 0.09622504486493763
+      },
+      {
+        "a": "DriverCarBindingRelationship",
+        "b": "OrderInfo",
+        "similarity": 0.23809523809523808
+      },
+      {
+        "a": "DriverUser",
+        "b": "DriverUserWorkStatus",
+        "similarity": 0.31750031750047625
+      },
+      {
+        "a": "DriverUser",
+        "b": "PassengerUser",
+        "similarity": 0.36293309315564887
+      },
+      {
+        "a": "DriverUser",
+        "b": "PriceRule",
+        "similarity": 0.10369516947304253
+      },
+      {
+        "a": "DriverUser",
+        "b": "OrderInfo",
+        "similarity": 0.23092110260585344
+      },
+      {
+        "a": "DriverUserWorkStatus",
+        "b": "PassengerUser",
+        "similarity": 0.5103103630798288
+      },
+      {
+        "a": "DriverUserWorkStatus",
+        "b": "PriceRule",
+        "similarity": 0.10206207261596577
+      },
+      {
+        "a": "DriverUserWorkStatus",
+        "b": "OrderInfo",
+        "similarity": 0.30304576336566325
+      },
+      {
+        "a": "PassengerUser",
+        "b": "PriceRule",
+        "similarity": 0.16666666666666666
+      },
+      {
+        "a": "PassengerUser",
+        "b": "OrderInfo",
+        "similarity": 0.28867513459481287
+      },
+      {
+        "a": "PriceRule",
+        "b": "OrderInfo",
+        "similarity": 0.24743582965269675
+      }
+    ]
+  }
+}

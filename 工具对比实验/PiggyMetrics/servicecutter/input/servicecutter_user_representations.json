@@ -1,0 +1,132 @@
+{
+  "useCases": [
+    {
+      "name": "AccountServiceAccountServiceImpl",
+      "nanoentitiesRead": [
+        "AccountServiceAccount.name",
+        "AccountServiceAccount.lastSeen",
+        "AccountServiceAccount.incomes",
+        "AccountServiceAccount.expenses",
+        "AccountServiceAccount.saving",
+        "AccountServiceAccount.note",
+        "AccountServiceItem.title",
+        "AccountServiceItem.amount",
+        "AccountServiceItem.currency",
+        "AccountServiceItem.period",
+        "AccountServiceItem.icon",
+        "AccountServiceSaving.amount",
+        "AccountServiceSaving.currency",
+        "AccountServiceSaving.interest",
+        "AccountServiceSaving.deposit",
+        "AccountServiceSaving.capitalization",
+        "AccountServiceUser.username",
+        "AccountServiceUser.password",
+        "StatisticsServiceAccount.incomes",
+        "StatisticsServiceAccount.expenses",
+        "StatisticsServiceAccount.saving",
+        "StatisticsServiceDataPoint.id",
+        "StatisticsServiceDataPoint.incomes",
+        "StatisticsServiceDataPoint.expenses",
+        "StatisticsServiceDataPoint.statistics",
+        "StatisticsServiceDataPoint.rates",
+        "StatisticsServiceDataPointId.account",
+        "StatisticsServiceDataPointId.date",
+        "StatisticsServiceExchangeRatesContainer.date",
+        "StatisticsServiceExchangeRatesContainer.base",
+        "StatisticsServiceExchangeRatesContainer.rates",
+        "StatisticsServiceItem.title",
+        "StatisticsServiceItem.amount",
+        "StatisticsServiceItem.currency",
+        "StatisticsServiceItem.period",
+        "StatisticsServiceItemMetric.title",
+        "StatisticsServiceItemMetric.amount",
+        "StatisticsServiceSaving.amount",
+        "StatisticsServiceSaving.currency",
+        "StatisticsServiceSaving.interest",
+        "StatisticsServiceSaving.deposit",
+        "StatisticsServiceSaving.capitalization"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "NotificationServiceEmailServiceImpl",
+      "nanoentitiesRead": [
+        "NotificationServiceRecipient.accountName",
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "NotificationServiceNotificationServiceImpl",
+      "nanoentitiesRead": [
+        "AccountServiceAccount.name",
+        "AccountServiceAccount.lastSeen",
+        "AccountServiceAccount.incomes",
+        "AccountServiceAccount.expenses",
+        "AccountServiceAccount.saving",
+        "AccountServiceAccount.note",
+        "NotificationServiceNotificationSettings.active",
+        "NotificationServiceNotificationSettings.frequency",
+        "NotificationServiceNotificationSettings.lastNotified",
+        "NotificationServiceRecipient.accountName",
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "NotificationServiceRecipientServiceImpl",
+      "nanoentitiesRead": [
+        "NotificationServiceNotificationSettings.active",
+        "NotificationServiceNotificationSettings.frequency",
+        "NotificationServiceNotificationSettings.lastNotified",
+        "NotificationServiceRecipient.accountName",
+        "NotificationServiceRecipient.email",
+        "NotificationServiceRecipient.scheduledNotifications"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "StatisticsServiceExchangeRatesServiceImpl",
+      "nanoentitiesRead": [
+        "StatisticsServiceExchangeRatesContainer.date",
+        "StatisticsServiceExchangeRatesContainer.base",
+        "StatisticsServiceExchangeRatesContainer.rates"
+      ],
+      "nanoentitiesWritten": []
+    },
+    {
+      "name": "StatisticsServiceStatisticsServiceImpl",
+      "nanoentitiesRead": [
+        "StatisticsServiceAccount.incomes",
+        "StatisticsServiceAccount.expenses",
+        "StatisticsServiceAccount.saving",
+        "StatisticsServiceDataPoint.id",
+        "StatisticsServiceDataPoint.incomes",
+        "StatisticsServiceDataPoint.expenses",
+        "StatisticsServiceDataPoint.statistics",
+        "StatisticsServiceDataPoint.rates",
+        "StatisticsServiceDataPointId.account",
+        "StatisticsServiceDataPointId.date",
+        "StatisticsServiceExchangeRatesContainer.date",
+        "StatisticsServiceExchangeRatesContainer.base",
+        "StatisticsServiceExchangeRatesContainer.rates",
+        "StatisticsServiceItem.title",
+        "StatisticsServiceItem.amount",
+        "StatisticsServiceItem.currency",
+        "StatisticsServiceItem.period",
+        "StatisticsServiceItemMetric.title",
+        "StatisticsServiceItemMetric.amount",
+        "StatisticsServiceSaving.amount",
+        "StatisticsServiceSaving.currency",
+        "StatisticsServiceSaving.interest",
+        "StatisticsServiceSaving.deposit",
+        "StatisticsServiceSaving.capitalization"
+      ],
+      "nanoentitiesWritten": []
+    }
+  ],
+  "compatibilities": {},
+  "sharedOwnerGroups": []
+}

@@ -1,0 +1,153 @@
+{
+  "name": "LOAN",
+  "entities": [
+    {
+      "name": "LoanRequest",
+      "nanoentities": [
+        "approvalletter",
+        "approvalloan",
+        "attachedapprovalletter",
+        "attachedloanagreement",
+        "attachedloanterms",
+        "checkingaccount",
+        "checkingaccountnumber",
+        "credithistory",
+        "creditreferences",
+        "creditscore",
+        "email",
+        "income",
+        "integer",
+        "loan",
+        "loanagreement",
+        "loanamount",
+        "loanpurpose",
+        "loanrequesttatus",
+        "loanterm",
+        "name",
+        "phonenumber",
+        "postaladdress",
+        "real",
+        "requestedcahistory",
+        "requestedcredithistory",
+        "requestid",
+        "securitynumber",
+        "status",
+        "string",
+        "workreferences",
+        "zipcode"
+      ]
+    },
+    {
+      "name": "Loan",
+      "nanoentities": [
+        "belongedloanaccount",
+        "boolean",
+        "currentoverduedate",
+        "date",
+        "enddate",
+        "integer",
+        "ispaidinfull",
+        "loanaccount",
+        "loanid",
+        "loanrequest",
+        "loanstatus",
+        "real",
+        "referedloanrequest",
+        "remainamounttopay",
+        "repaymentamount",
+        "repaymentdays",
+        "startdate",
+        "status"
+      ]
+    },
+    {
+      "name": "LoanTerm",
+      "nanoentities": [
+        "content",
+        "integer",
+        "itemid",
+        "string"
+      ]
+    },
+    {
+      "name": "CheckingAccount",
+      "nanoentities": [
+        "balance",
+        "checkingaccountstatus",
+        "real",
+        "status"
+      ]
+    },
+    {
+      "name": "CreditHistory",
+      "nanoentities": [
+        "baddebits",
+        "integer",
+        "outstandingdebt",
+        "real"
+      ]
+    },
+    {
+      "name": "LoanAccount",
+      "nanoentities": [
+        "balance",
+        "integer",
+        "loanaccountid",
+        "loanaccountstatus",
+        "real",
+        "status"
+      ]
+    },
+    {
+      "name": "ApprovalLetter",
+      "nanoentities": [
+        "content",
+        "string"
+      ]
+    },
+    {
+      "name": "LoanAgreement",
+      "nanoentities": [
+        "content",
+        "string"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "origin": "LoanRequest",
+      "destination": "Loan",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "LoanRequest",
+      "destination": "CheckingAccount",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "LoanRequest",
+      "destination": "CreditHistory",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "LoanRequest",
+      "destination": "ApprovalLetter",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "LoanRequest",
+      "destination": "LoanAgreement",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Loan",
+      "destination": "LoanRequest",
+      "type": "AGGREGATION"
+    },
+    {
+      "origin": "Loan",
+      "destination": "LoanAccount",
+      "type": "AGGREGATION"
+    }
+  ]
+}

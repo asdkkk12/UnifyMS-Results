@@ -1,0 +1,516 @@
+{
+  "status": "success",
+  "case": "java-online-taxi",
+  "sourceDirectory": "/Users/yuanyaowu/Desktop/输出/java-online-taxi/input/source-java",
+  "javaFilesVerified": 126,
+  "files": [
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/ApiBossApplication.java",
+      "sha256": "57d14db7a4fc77f41348e98d495a12f3c2660029fcdfc743d437ae036c0a56f4"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/controller/CarController.java",
+      "sha256": "2760a1ecce480401976f310d49bd61e4e2b86d9c5be25aefb9542835f89bc30e"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/controller/DriverCarBindingRelationshipController.java",
+      "sha256": "bc9c2669011230cd0ca46df96bf68ae7192a6c7ebe0b29e35f74d1a3961398b3"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/controller/DriverUserController.java",
+      "sha256": "895e56098581433c71fd37222abc5b24e4c5dee2ef0f612128e5c11ecbd5b96a"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/remote/ServiceDriverUserClient.java",
+      "sha256": "59463b3bf332f5c570ba3b43bf45490a2295a771d52b2e7cda6695ff298eb44e"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/CarService.java",
+      "sha256": "2c95bf4b0b3386314233844b68375a9871cfc29bbf917ec28801efc109a723e1"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/DriverCarBindingRelationshipService.java",
+      "sha256": "20419b3ffb56588604fa32cd5e0cec007e76390a94de2c5a9a4af62368d032e6"
+    },
+    {
+      "path": "api-boss/src/main/java/com/jayden/apiboss/service/DriverUserService.java",
+      "sha256": "6080210dcf9aacab8f0e33ec91e03ded5c327eedea8eaa2423ca81707ada3071"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/ApiDriverApplication.java",
+      "sha256": "6b604edbdec3532198026b0c1bba79d3ff823092fa74bfb38451e6a2e39f6d28"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/controller/PointController.java",
+      "sha256": "907ce6474f7ed595e8d0fa471cccf30eb3f27341421177474b6c2b30f570085e"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/controller/TestController.java",
+      "sha256": "a807e8af0a752cedd90ede189f9943dc5bc9d7bb17e3cb9b1a79bd390c85667a"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/controller/UserController.java",
+      "sha256": "33246563b9b27d3a4d34f2adcfb7dd45e59e1b79c67a4b2f3d5310b1f869fc7d"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/controller/VerifyCodeController.java",
+      "sha256": "e53d7fc298c1d1b7ac359aadae082d4e680dfb0e38134883d9cf08025ce4a8e9"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/interceptor/InterceptorConfig.java",
+      "sha256": "c6bdad170af1b1168af781bb07325edd301a6407e6c598f571b7e1ad5128f311"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/interceptor/JwtInterceptor.java",
+      "sha256": "534d721669503c4d06a99c10d12ce8e094398cd936404926de60a7d0ce8974dd"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/remote/ServiceDriverUserClient.java",
+      "sha256": "31ea0297be5a5c23a803509a8f216c0204590cfe698e3efc58e18fbc2c7ce011"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/remote/ServiceMapClient.java",
+      "sha256": "7bf1a55464466ea0206f98e95b993f4b3a42385b1c8d988728ecfa336163d72b"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/remote/ServiceVerifyCodeClient.java",
+      "sha256": "ac2678b82d86d33ad0b78af9692a01afd103459292809278f44b0f2037ace9c6"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/PointService.java",
+      "sha256": "bff487fc4ffcd9786b8aa7cfed7ecea35243acb455e008b5a26d753d537ef37f"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/UserService.java",
+      "sha256": "85b51f14b5410d4a81f63a360ac48540fe2e857c06d32e3ba9367add420ec588"
+    },
+    {
+      "path": "api-driver/src/main/java/com/jayden/apidriver/service/VerifyCodeService.java",
+      "sha256": "8b06af9811f6d4f0dd4bbcdf51f074de80406a1625d0b8495d972b6eae3ad6e7"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/ApiPassengerApplication.java",
+      "sha256": "18dc846a7ad7f4959ba43f56c45831da3a33456feb082957f20e989a77b2b21b"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/controller/ForecastPriceController.java",
+      "sha256": "31000be82b8af4f293ee3a90606022366ef3fa64dd133bc43c0d19cb32a33f11"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/controller/OrderController.java",
+      "sha256": "8fbff02e4ea234a54ccc812eb36b8bcb15d9c305b3d4bfb55a2854c85880e081"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/controller/TestController.java",
+      "sha256": "598b67cba889d5f60d24591bb7ee80c91f3ca69a64bbc2559ebaf4f3b5ff3d88"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/controller/TokenController.java",
+      "sha256": "1d833566e374d8038db02479694c6a969407dc3ad6bd5ddf608727dfc68a90a1"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/controller/UserController.java",
+      "sha256": "54119ce615273d356c925b87cc329a121f0c38214b778574e668b5acf4112a38"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/controller/VerifyCodeController.java",
+      "sha256": "f5884a01293dfd0f112820455392dc85db25f81ce46a05e54a78c5e9d16d7b94"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/interceptor/InterceptorConfig.java",
+      "sha256": "5da2c029a7ef7dbd639eb0d2a69d45e8417413ecc949cbbd40431487b3f3a763"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/interceptor/JwtInterceptor.java",
+      "sha256": "5075af2544c02630128aca0279b089be6aa8623afa401ec155ec3ea8073dfdd1"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/remote/ServiceOrderClient.java",
+      "sha256": "af60b879090dce1cf5777e00d6e413bf8c1d57d128ff22afa323f73c5d879228"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/remote/ServicePassengerUserClient.java",
+      "sha256": "63e4035ad06794c256f9fe8c5064cea4f4ff1c4864d0c847b4fb4c60a90417e7"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/remote/ServicePriceClient.java",
+      "sha256": "e093e8ce3bee02bd7a5e3a12988ccc4da3156d6153abcaa7c71dbc6c04949df9"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/remote/ServiceVerifyCodeClient.java",
+      "sha256": "f83314283ba165ef01642e44929745700069b6c1f1c27f7a7cc84c49a8f1d005"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/ForecastPriceService.java",
+      "sha256": "adae3dd098b6368f7f11a5f6294b0795b98be02623ae884aef5ae036b41f9c53"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/OrderService.java",
+      "sha256": "b7ac89f6d4a0d9c54fe7a9cef1c1f747e3b4b13847cdbe09ebbcef617b14436a"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/TokenService.java",
+      "sha256": "4c4c30666d37d00a0e549ae3af5b2b8523aa2122a5911f145db049bb350a1040"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/UserService.java",
+      "sha256": "6ca32bc8f0fff3acb65b06c3cc60c1e7ca652b03727551304dafa1fa5396eb73"
+    },
+    {
+      "path": "api-passenger/src/main/java/com/jayden/apipassenger/service/VerifyCodeService.java",
+      "sha256": "592971d58b3c3ef6bb3234571fb4cb2f3baf41660c9d4e4ffb637de691390e3b"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/constant/AmapConfigConstants.java",
+      "sha256": "9ba09cacb3836bbcb3ed9b3a4405d0a10b0e8d722f466d25e1bef9fbafb3c7c5"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/constant/CommonStatusEnum.java",
+      "sha256": "4e04a83720edcac60352b2a14bb96dfb59fc6631765e9b135d05e37deac05080"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/constant/DriverCarConstants.java",
+      "sha256": "de72f49ecd64aaa66015959594692ed0af137b017918fc7d40c16ba23138db9f"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/constant/IdentityConstants.java",
+      "sha256": "7b4d0b18bced939ec4933a40d88ef8e32f24a142daecb58030e15fe68b2cd0e1"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/constant/TokenConstants.java",
+      "sha256": "d9910022da813128a67b108b6cfc267e405cdfe99fc1bcc0c35cb38e71711b64"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/Car.java",
+      "sha256": "207b4d6a1d2a429eb935d2ee74223fdf3a43facada862132e2fb14b1a95dfb4d"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DicDistrict.java",
+      "sha256": "6347f0143eec7b5d184b3842aba7ec29bed013a2c3cfc6274f8908211ad7b29d"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DriverCarBindingRelationship.java",
+      "sha256": "8d4036e11979866726735225f0bf37f53b33d38f8b1950830433ae5adb6cc263"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DriverUser.java",
+      "sha256": "42f8c8ee53820f0ba8ff93f4e2237c59562b9110d1e4ed7995baf9efbc8f5324"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/DriverUserWorkStatus.java",
+      "sha256": "ebe5fe3acc39e2ace3c72f7021e271bf645912c42cc3b3a8e958fdd94b0d8d12"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/PassengerUser.java",
+      "sha256": "766cafa1fdbe32c9004dfd3fc1dc56975e343b600aba424dd3527f1da1220b1a"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/PriceRule.java",
+      "sha256": "a7981d88a0a7db3b668f70a012d706510b83d0bddd244ae6c625d0c3a55e44cd"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/ResponseResult.java",
+      "sha256": "b7f9ab7e829bff8324c2f3f74651b840c92d586cd589f670ecb74f74bd548337"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/dto/TokenResult.java",
+      "sha256": "182dc8af3f25e4aae6cd24e4f1b314ec1a44aef4e380ab6a61e716ca30fcd5f2"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/request/ApiDriverPointRequest.java",
+      "sha256": "42ecdb998d68cbc63b89efc9f4e6a7c76c6b48626369ef014e613952fc1c3dbb"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/request/ForecastPriceDTO.java",
+      "sha256": "e2493c32569d4ccbaa666f47f021f4df4ac577f4562c47993f2b34b167da22f3"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/request/OrderRequest.java",
+      "sha256": "fa2f896d9e506b5c1d8bfae1a8faa6f961663e5de0f987ed459f7feeacd9f739"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/request/PointDTO.java",
+      "sha256": "6ffca14ea005f47ac7924eb45c3ae3f352beba446bd53bc988f757f79c58dcaf"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/request/PointRequest.java",
+      "sha256": "26605801836d649845ffb1eb7470a8dc6d3d603cd604d307530ed10103cb48df"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/request/VerifyCodeDTO.java",
+      "sha256": "4b936403abb70472a3edc3d077420c5b0f4074d08abd9b81103e71efb82cb408"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/DirectionResponse.java",
+      "sha256": "e96c9ab870089adce17f96389884fcdadbe0cca3a62839066e627ed239c4ae95"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/DriverUserExistsResponse.java",
+      "sha256": "8dd17052caf9393a862e4119d9e44047e68bf7a3f03122852c7f7942198f8f6c"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/ForecastPriceResponse.java",
+      "sha256": "90bd04935f7a621d9aecd632f230dbc7db5dd439b2376464111bdb99b4c98b2c"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/NumberCodeResponse.java",
+      "sha256": "cbdfe3fa1bdd4081e6e7e5a6d52f5aae9140e58245055d2e45850520035ead74"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/ServiceResponse.java",
+      "sha256": "efff60fd87c5d74a65eb43395c2235a556bd32d1cfe034333882c36375238691"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/TerminalResponse.java",
+      "sha256": "f29573f190f96e02956737a0e751d8127aba3733bc6c3d30ceb4a0c54dc6cea6"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/TokenResponse.java",
+      "sha256": "fb8eacec395269a82e7af93252c9bee14085c5f062cf058878276a93c735d9c8"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/TrackResponse.java",
+      "sha256": "fe907751526d1da11f21d15d1520399213f5fed7c8b630199eb0963f3b077463"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/response/TrsearchResponse.java",
+      "sha256": "9b179f8c4aa43173ef599e77848ee34dbe182d6309e2688bd7abd2e2b26e271a"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/util/BigDecimalUtils.java",
+      "sha256": "c12364cabafa5a44535eedb43c95fa21e681d19a1debcec2d11fa429e6ee8c85"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/util/JwtUtils.java",
+      "sha256": "cd19ab1cf9043572ae56a5388c91bfa206ff7fb546f85498074cf6dfb7255469"
+    },
+    {
+      "path": "internal-common/src/main/java/com/jayden/internalcommon/util/RedisPrefixUtils.java",
+      "sha256": "ecf04976c0b2c83fa42954166c777f171552ee9807ab1a35a04d810e5ab9ba58"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/ServiceDriverUserApplication.java",
+      "sha256": "6adc45ee3abe5fc1ccf944c2e5fa890602cdf9b2a0f21ed24968cce57cc673f6"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/controller/CarController.java",
+      "sha256": "ceccc4ec5ccd777509393f2a2f0c34ab72da024d7ab594649e9015cb1538d8fd"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/controller/DriverCarBindingRelationshipController.java",
+      "sha256": "841873a5e2329f73e985a0a95a3b13981c001568982c03f5369a4dd93b34cf80"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/controller/DriverUserWorkStatusController.java",
+      "sha256": "26eb9d9fdf2960813be7adef99cc66126877aaf04508ee4f760f6fe788c4e91e"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/controller/TestController.java",
+      "sha256": "2e5752a3edbf9d821eb725cff5fc1c42c50d7c1e1157a07993d050111d7ae529"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/controller/UserController.java",
+      "sha256": "42edac46546c004d5dfab1362146fd2db68d06bd0224f4b6771a6e6ca55f1296"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/generator/MysqlGenerator.java",
+      "sha256": "a8cd00f8d704eca577b6f2d1b5184aecad3086c61674e6a2e074019951d3165d"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/mapper/CarMapper.java",
+      "sha256": "db21de03ebcebe41828f0919110ed62477090c458134f0e0c29ab0dece277293"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/mapper/DriverCarBindingRelationshipMapper.java",
+      "sha256": "6b04ed61ba1dfa5ac9a2ae811582f59da26257e4997faa8922e36a7c55532b99"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/mapper/DriverUserMapper.java",
+      "sha256": "ba20097f06e803d1ce6d6fd5103fae39726dcb63b830e5b5d0b1598030f02cdb"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/mapper/DriverUserWorkStatusMapper.java",
+      "sha256": "027ddd1603ac8ca00d08ad3ee5924fe77536a94ecd90806c709795d1ab9010b1"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/remote/ServiceMapClient.java",
+      "sha256": "3de7bac4f171455c9f76039c7f9d1288d5bef491474398c76e9c8ad1e40bf0b9"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/CarService.java",
+      "sha256": "88decd57210da45c3eb727d8289f837ef97145c98c9b74ed755c94df639b3396"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverCarBindingRelationshipService.java",
+      "sha256": "718eedcb9d17ee9cf34b8521cbfbe0bc76627ac8ff3f7aef155b0d12ee65068e"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserService.java",
+      "sha256": "805bef97360beadca9436afb4539ae4784935009b4b159b4c3f2215d1949facd"
+    },
+    {
+      "path": "service-driver-user/src/main/java/com/jayden/servicedriveruser/service/DriverUserWorkStatusService.java",
+      "sha256": "638d73fe8352dcfb26d009fa80d987ebb63f1684671d1095f6d9a4436c28af01"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/ServiceMapApplication.java",
+      "sha256": "318f8b8706d781b1a48b9ad3eca62182502d1e4a6c744d3a0916add9cdec900b"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/controller/DicDistrictController.java",
+      "sha256": "da3f622c5b8682cf6a36c6a4a1ee8960542748dffb9744ff1867a363e3becba7"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/controller/DirectionController.java",
+      "sha256": "6b2b6588f6f9a899ab426e0e33ed8a30955783c6cbf06b2b4016a3bc4b04f0eb"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/controller/PointController.java",
+      "sha256": "83f0af53a91054bd095875a090ae5f2eda519ad2d2a044040af1d39f3cc292b8"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/controller/ServiceController.java",
+      "sha256": "30f0ec014bd692ba5d57adb45706f5b7f468d7baddb7de32abb4847ca2e53984"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/controller/TerminalController.java",
+      "sha256": "abbaef9165afcc3385e33ee7cfbc46d9b495395adc9254187bbb3362a415bcce"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/controller/TrackController.java",
+      "sha256": "6c95458feef6caa04b6f878dafe52dc8c25567c23e5b13ea45ff68b0d489040b"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/mapper/DicDistrictMapper.java",
+      "sha256": "38bdf5a71b8f62583445acc2c889b5f1d2b0354f43dccd26be9d0b8cd0595abf"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/MapDicDistrictClient.java",
+      "sha256": "4f7c7c4624d76342356bd397b064c00cfd021fe02729a4821d81a33c2514b086"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/MapDirectionClient.java",
+      "sha256": "33e336c55fee1f116353ce5f563ee6c40a998c969b89456b9bb59f710e9d60af"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/PointClient.java",
+      "sha256": "bd57b1630d713d81c491cea21dc0f84fc0e410c18111ac80526fdf2203361f84"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/ServiceClient.java",
+      "sha256": "4cd89f367c8c69e379aebc283a5d8527b63d08c335abf63c1ce2aa5c77d9ae6b"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/TerminalClient.java",
+      "sha256": "25835a92ddc64246096ddd1912c09f85a128eeec8a216ac3ef2ca1822adf3a52"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/remote/TrackClient.java",
+      "sha256": "3f66400af48b786e3b77fdfc7eda41cb681bc022057fbe77cdfa5196e4d1ccff"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/DicDistrictService.java",
+      "sha256": "5cd7046f3115a03a7f0ff6c6910a9d3c14bbe3698cd00b3205d91733821dacb4"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/DirectionService.java",
+      "sha256": "f8c308551ef717d618194a52a8fbacd8bb794f237a909a8d1490ec398acb6042"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/PointService.java",
+      "sha256": "95997f1e070bb895c7eadce5361c347ca1c3fe5a7c72503652b47aec4b6e6a85"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/ServiceMapService.java",
+      "sha256": "ddf9ce8e7f7a480869e42bb7760c7e258e5ccb6c48ed6f6a037d483660ecfd44"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/TerminalService.java",
+      "sha256": "75456509b035c4ee2f275479c08e67062cb425c5cc5610b3ef6b87d58d0724c0"
+    },
+    {
+      "path": "service-map/src/main/java/com/jayden/servicemap/service/TrackService.java",
+      "sha256": "4adfca4840e45797354c26f8764399a88231fa4eaf7c37df52267ae1f11d7dcf"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/ServiceOrderInfoApplication.java",
+      "sha256": "90d98427d7398bd4d0b1c2bf152badeb02f392b043be140f3d45067577d56e35"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/controller/OrderInfoController.java",
+      "sha256": "b888196d3f7ecb1297d93cead84ab068f24ec8739c3cc321640eb36bdfa4712d"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/controller/TestController.java",
+      "sha256": "e45ee5f7f3396430322d83e25878754e561c245cd82ba4bd8b451fb9ec0444f3"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/entity/OrderInfo.java",
+      "sha256": "9da7a5a4aba948e68d22581d2386764801ba02482e4a57d60ab0383afc2d67d1"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/generator/MysqlGenerator.java",
+      "sha256": "cd2a985450c2fb2da5a6b41284bd562f09481baef727b2c1ebd19e80b414424f"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/mapper/OrderInfoMapper.java",
+      "sha256": "af92c1e59b8eec8d94619d68753459ef619e18c50c2a93624f02504bd507c8a9"
+    },
+    {
+      "path": "service-order/src/main/java/com/jayden/serviceorder/service/OrderInfoService.java",
+      "sha256": "8f28dce29a7b5fa1dcfabe76f130b0d3bbfcf7a162c6e58da6233af6e1dd442a"
+    },
+    {
+      "path": "service-passenger-user/src/main/java/com/jayden/servicepassengeruser/ServicePassengerUserApplication.java",
+      "sha256": "e27c89ad158357f729994fd3c027c9b549b62539dfaa9d403824e916d1cbe0f2"
+    },
+    {
+      "path": "service-passenger-user/src/main/java/com/jayden/servicepassengeruser/controller/UserController.java",
+      "sha256": "b17ef4a05adc4d9e2654d03d282a7926681703a985e2557ed8227bb3b14a2e54"
+    },
+    {
+      "path": "service-passenger-user/src/main/java/com/jayden/servicepassengeruser/mapper/UserMapper.java",
+      "sha256": "f93fcccca438df58177de44e173c704d7698e1e86fc34a8e31cb4cba61109838"
+    },
+    {
+      "path": "service-passenger-user/src/main/java/com/jayden/servicepassengeruser/service/UserService.java",
+      "sha256": "443eb49e052d2a93b6b722e81a9eeda171806e338dfc5afadfc1cc51a535dd1e"
+    },
+    {
+      "path": "service-price/src/main/java/com/jayden/serviceprice/ServicePriceApplication.java",
+      "sha256": "bfafdf5c41bd09bd915523ce9acd7abb408e58fb3bbc120be0a6dfa0c9800010"
+    },
+    {
+      "path": "service-price/src/main/java/com/jayden/serviceprice/controller/ForecastPriceController.java",
+      "sha256": "17eaa6a4dfb760eb92293b476f9b5a11985ae1b00b2ca50fe34f08d4ef86f5ef"
+    },
+    {
+      "path": "service-price/src/main/java/com/jayden/serviceprice/mapper/PriceRuleMapper.java",
+      "sha256": "e10e0fbbf7251bd63be7003433882d965935b9de0064d453c8f2cefd5ab96075"
+    },
+    {
+      "path": "service-price/src/main/java/com/jayden/serviceprice/remote/ServiceMapClient.java",
+      "sha256": "397948d1d5849ded08143793398bf149884db81cc7611455767a05e80ce32ef8"
+    },
+    {
+      "path": "service-price/src/main/java/com/jayden/serviceprice/service/PriceService.java",
+      "sha256": "f67ef2335adfbc987ccb8aa8d7f81de6d1fa21d5dccc69c2e6afa6cf0b4a9e81"
+    },
+    {
+      "path": "service-verifycode/src/main/java/com/jayden/serviceverifycode/ServiceVerifyCodeApplication.java",
+      "sha256": "97fc81ccb5e9c1f97d52d18838fa8831afb1297658143c0dcf0b3a283a70d284"
+    },
+    {
+      "path": "service-verifycode/src/main/java/com/jayden/serviceverifycode/controller/VerifyCodeController.java",
+      "sha256": "cd293788e07b64a1e2a55e91db6b38f18bc39d1db2897a93b672bafa4f391d88"
+    },
+    {
+      "path": "service-verifycode/src/main/java/com/jayden/serviceverifycode/service/VerifyCodeService.java",
+      "sha256": "621fae028846356d8d500e243b198753f5ce47aac40a5fd057ef954f90ca3766"
+    }
+  ],
+  "modelInput": "/Users/yuanyaowu/Desktop/输出/java-online-taxi/input/java-online-taxi.remodel",
+  "modelInputSha256": "970acf9f42c1daed1596f693c35ee1ccaa0fd5cf0b0f7013309add7ac177e1c3",
+  "sourceModel": "Historical Java AST intermediate model; no new extraction",
+  "semantics": "Existing microservices regrouping; business classes are proxy use cases, modules are proxy actors, not manually specified business requirements"
+}

@@ -1,0 +1,410 @@
+{
+  "application": "Spring",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/spring_20261104_02/monoembed/java-input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/spring_20261104_02/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiAppDiscountCouponServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiCouponTemplateServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiDiscountCouponServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiDiscountCoupon",
+        "Spring.domain.ShopActivityShopActivityApiDiscountCouponTemplate"
+      ],
+      "service_names": [
+        "ShopActivityShopActivityApiAppDiscountCouponServiceImpl",
+        "ShopActivityShopActivityApiCouponTemplateServiceImpl",
+        "ShopActivityShopActivityApiDiscountCouponServiceImpl",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiActivityServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiExchangeActivityRuleServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiExchangeServiceImpl",
+        "Spring.domain.ShopActivityShopActivityApiExchangeActivityMember"
+      ],
+      "service_names": [
+        "ShopActivityShopActivityApiActivityServiceImpl",
+        "ShopActivityShopActivityApiExchangeActivityHistoryServiceImpl",
+        "ShopActivityShopActivityApiExchangeActivityRuleServiceImpl",
+        "ShopActivityShopActivityApiExchangeServiceImpl",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "Spring.service.ShopCartShopCartApiCartServiceImpl",
+        "Spring.service.ShopElasticsearchShopElasticsearchApiGoodsServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiAppClassificationServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsApproveServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsClassServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSpuServiceImpl",
+        "Spring.service.ShopUserShopUserApiGoodsCartServiceImpl"
+      ],
+      "service_names": [
+        "ShopCartShopCartApiCartServiceImpl",
+        "ShopElasticsearchShopElasticsearchApiGoodsServiceImpl",
+        "ShopGoodsShopGoodsApiAppClassificationServiceImpl",
+        "ShopGoodsShopGoodsApiAppGoodsSkuServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsApproveServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsClassServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsSkuServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsSpuServiceImpl",
+        "ShopUserShopUserApiGoodsCartServiceImpl"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl",
+        "Spring.service.ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl"
+      ],
+      "service_names": [
+        "ShopGoodsShopGoodsApiGoodsSkuImageServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsSkuStockServiceImpl",
+        "ShopGoodsShopGoodsApiGoodsSkuTagServiceImpl"
+      ]
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "Spring.service.ShopManageMenuServiceImpl",
+        "Spring.service.ShopManagePermissionServiceImpl",
+        "Spring.service.ShopManageRoleServiceImpl",
+        "Spring.service.ShopManageSysUserClientService",
+        "Spring.service.ShopManageSysUserServiceImpl"
+      ],
+      "service_names": [
+        "ShopManageMenuServiceImpl",
+        "ShopManagePermissionServiceImpl",
+        "ShopManageRoleServiceImpl",
+        "ShopManageSysUserClientService",
+        "ShopManageSysUserServiceImpl"
+      ]
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "Spring.service.ShopCartShopCartApiOrderCartServiceImpl",
+        "Spring.service.ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl",
+        "Spring.service.ShopOrderShopOrderApiAppUserOrderServiceImpl",
+        "Spring.service.ShopOrderShopOrderApiOrderTradeServiceImpl",
+        "Spring.service.ShopOrderShopOrderApiUserOrderServiceImpl",
+        "Spring.service.ShopSettlementShopSettlementApiSettlementOrderServiceImpl",
+        "Spring.service.ShopUserShopUserApiAddressServiceImpl",
+        "Spring.service.ShopUserShopUserApiNativeMessageServiceImpl",
+        "Spring.service.ShopUserShopUserApiUserAccountServiceImpl",
+        "Spring.service.ShopUserShopUserApiUserServiceImpl"
+      ],
+      "service_names": [
+        "ShopCartShopCartApiOrderCartServiceImpl",
+        "ShopElasticsearchShopElasticsearchApiUserOrderServiceImpl",
+        "ShopOrderShopOrderApiAppUserOrderServiceImpl",
+        "ShopOrderShopOrderApiOrderTradeServiceImpl",
+        "ShopOrderShopOrderApiUserOrderServiceImpl",
+        "ShopSettlementShopSettlementApiSettlementOrderServiceImpl",
+        "ShopUserShopUserApiAddressServiceImpl",
+        "ShopUserShopUserApiNativeMessageServiceImpl",
+        "ShopUserShopUserApiUserAccountServiceImpl",
+        "ShopUserShopUserApiUserServiceImpl"
+      ]
+    },
+    {
+      "cluster": 6,
+      "members": [
+        "Spring.service.ShopOssAliyunServiceImpl",
+        "Spring.service.ShopOssQiniuServiceImpl"
+      ],
+      "service_names": [
+        "ShopOssAliyunServiceImpl",
+        "ShopOssQiniuServiceImpl"
+      ]
+    },
+    {
+      "cluster": 7,
+      "members": [
+        "Spring.service.ShopManageDynamicFormServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiDynamicFormServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiFormServiceImpl"
+      ],
+      "service_names": [
+        "ShopManageDynamicFormServiceImpl",
+        "ShopPlatformShopPlatformApiDynamicFormServiceImpl",
+        "ShopPlatformShopPlatformApiFormServiceImpl"
+      ]
+    },
+    {
+      "cluster": 8,
+      "members": [
+        "Spring.service.ShopAuthShopAuthServerApiUserServiceImpl",
+        "Spring.service.ShopManageCommonEnumService",
+        "Spring.service.ShopPlatformShopPlatformApiSMSServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiSMSTemplateServiceImpl",
+        "Spring.service.ShopUserShopUserApiSMSCodeServiceImpl",
+        "Spring.service.ShopUserShopUserApiSignServiceImpl"
+      ],
+      "service_names": [
+        "ShopAuthShopAuthServerApiUserServiceImpl",
+        "ShopManageCommonEnumService",
+        "ShopPlatformShopPlatformApiSMSServiceImpl",
+        "ShopPlatformShopPlatformApiSMSTemplateServiceImpl",
+        "ShopUserShopUserApiSMSCodeServiceImpl",
+        "ShopUserShopUserApiSignServiceImpl"
+      ]
+    },
+    {
+      "cluster": 9,
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiBannerServiceImpl",
+        "Spring.service.ShopManageSystemConfigServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiSystemConfigServiceImpl",
+        "Spring.service.ShopUserShopUserApiInitService"
+      ],
+      "service_names": [
+        "ShopActivityShopActivityApiBannerServiceImpl",
+        "ShopManageSystemConfigServiceImpl",
+        "ShopPlatformShopPlatformApiSystemConfigDetailServiceImpl",
+        "ShopPlatformShopPlatformApiSystemConfigServiceImpl",
+        "ShopUserShopUserApiInitService"
+      ]
+    },
+    {
+      "cluster": 10,
+      "members": [
+        "Spring.service.ShopRiskShopRiskApiBlackListServiceImpl",
+        "Spring.service.ShopRiskShopRiskApiWhiteListServiceImpl",
+        "Spring.domain.ShopRiskShopRiskApiWhitelist"
+      ],
+      "service_names": [
+        "ShopRiskShopRiskApiBlackListServiceImpl",
+        "ShopRiskShopRiskApiWhiteListServiceImpl",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 11,
+      "members": [
+        "Spring.service.ShopManageDashboardServiceImpl",
+        "Spring.service.ShopPlatformShopPlatformApiFieldServiceImpl",
+        "Spring.service.ShopSellerShopSellerApiSellerLoginServiceImpl",
+        "Spring.service.ShopSellerShopSellerApiSellerSubscribeServiceImpl",
+        "Spring.service.ShopUserShopUserApiReceiverService",
+        "Spring.service.ShopUserShopUserApiAreaServiceImpl",
+        "Spring.service.ShopUserShopUserApiFeedbackServiceImpl"
+      ],
+      "service_names": [
+        "ShopManageDashboardServiceImpl",
+        "ShopPlatformShopPlatformApiFieldServiceImpl",
+        "ShopSellerShopSellerApiSellerLoginServiceImpl",
+        "ShopSellerShopSellerApiSellerSubscribeServiceImpl",
+        "ShopUserShopUserApiReceiverService",
+        "ShopUserShopUserApiAreaServiceImpl",
+        "ShopUserShopUserApiFeedbackServiceImpl"
+      ]
+    },
+    {
+      "cluster": 12,
+      "members": [
+        "Spring.service.ShopActivityShopActivityApiAssembleServiceImpl",
+        "Spring.service.ShopActivityShopActivityApiAssembleServiceRuleImpl",
+        "Spring.domain.ShopActivityShopActivityApiActivity",
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityGoods",
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityMember",
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityRecord",
+        "Spring.domain.ShopActivityShopActivityApiAssembleActivityRule",
+        "Spring.domain.ShopActivityShopActivityApiExchangeActivityGoods",
+        "Spring.domain.ShopActivityShopActivityApiExchangeActivityRule",
+        "Spring.domain.ShopActivityShopActivityApiInviteCode",
+        "Spring.domain.ShopActivityShopActivityApiInviteRewardRecord"
+      ],
+      "service_names": [
+        "ShopActivityShopActivityApiAssembleServiceImpl",
+        "ShopActivityShopActivityApiAssembleServiceRuleImpl",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 13,
+      "members": [
+        "Spring.service.ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl",
+        "Spring.service.ShopOrderShopOrderApiSellerOrderServiceImpl",
+        "Spring.domain.ShopElasticsearchShopElasticsearchApiESGoods",
+        "Spring.domain.ShopElasticsearchShopElasticsearchApiESSellerOrder",
+        "Spring.domain.ShopElasticsearchShopElasticsearchApiESUserOrder",
+        "Spring.domain.ShopPlatformShopPlatformApiArea"
+      ],
+      "service_names": [
+        "ShopElasticsearchShopElasticsearchApiSellerOrderServiceImpl",
+        "ShopOrderShopOrderApiSellerOrderServiceImpl",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 14,
+      "members": [
+        "Spring.domain.ShopCartShopCartApiGoodsCart",
+        "Spring.domain.ShopGoodsShopGoodsApiGoods",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsApprove",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsClass",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSku",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSkuImage",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSkuStock",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSkuTag",
+        "Spring.domain.ShopGoodsShopGoodsApiGoodsSpu"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 15,
+      "members": [
+        "Spring.service.ShopJobShopJobApiJobServiceImpl",
+        "Spring.domain.ShopJobShopJobApiJobGroup",
+        "Spring.domain.ShopJobShopJobApiJobInfo",
+        "Spring.domain.ShopJobShopJobApiJobLog"
+      ],
+      "service_names": [
+        "ShopJobShopJobApiJobServiceImpl",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 16,
+      "members": [
+        "Spring.domain.ShopManageRole",
+        "Spring.domain.ShopManageRoleMenu",
+        "Spring.domain.ShopManageSysRole"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 17,
+      "members": [
+        "Spring.domain.ShopCartShopCartApiOrderCart",
+        "Spring.domain.ShopOrderShopOrderApiOrderItem",
+        "Spring.domain.ShopOrderShopOrderApiOrderTrade",
+        "Spring.domain.ShopOrderShopOrderApiSaleAfterOrder",
+        "Spring.domain.ShopOrderShopOrderApiSellerOrder",
+        "Spring.domain.ShopOrderShopOrderApiUserOrder"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 18,
+      "members": [
+        "Spring.domain.ShopPlatformShopPlatformApiDynamicForm",
+        "Spring.domain.ShopPlatformShopPlatformApiField",
+        "Spring.domain.ShopPlatformShopPlatformApiFieldProps",
+        "Spring.domain.ShopPlatformShopPlatformApiForm"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 19,
+      "members": [
+        "Spring.service.ShopManageGeneratorService",
+        "Spring.domain.ShopPlatformShopPlatformApiSystemConfig",
+        "Spring.domain.ShopPlatformShopPlatformApiSystemConfigDetail"
+      ],
+      "service_names": [
+        "ShopManageGeneratorService",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 20,
+      "members": [
+        "Spring.domain.ShopActivityShopActivityApiBanner",
+        "Spring.domain.ShopActivityShopActivityApiIntegralLog",
+        "Spring.domain.ShopActivityShopActivityApiSecKillRule",
+        "Spring.domain.ShopManageMenu",
+        "Spring.domain.ShopManageSysUser",
+        "Spring.domain.ShopOrderShopOrderApiOrderEvaluate",
+        "Spring.domain.ShopPlatformShopPlatformApiSMSTemplate",
+        "Spring.domain.ShopRiskShopRiskApiBlackList",
+        "Spring.domain.ShopUserShopUserApiAddress",
+        "Spring.domain.ShopUserShopUserApiFeedback",
+        "Spring.domain.ShopUserShopUserApiNativeMessage",
+        "Spring.domain.ShopUserShopUserApiUser",
+        "Spring.domain.ShopUserShopUserApiUserAccount",
+        "Spring.domain.ShopUserShopUserApiUserInfo"
+      ],
+      "service_names": [
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

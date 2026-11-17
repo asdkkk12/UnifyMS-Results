@@ -1,0 +1,69 @@
+[
+  {
+    "arm": "without-guidance",
+    "module": "probability-JEV",
+    "error": "IOException: JEV HTTP 502",
+    "providerDetail": null,
+    "count": 4
+  },
+  {
+    "arm": "without-guidance",
+    "module": "probability-JEV",
+    "error": "SocketTimeoutException: Read timed out",
+    "providerDetail": null,
+    "count": 1
+  },
+  {
+    "arm": "without-offline",
+    "module": "candidate-JEV",
+    "error": "IOException: HTTP 400",
+    "providerDetail": {
+      "error_type": "max_tokens_exceeded"
+    },
+    "count": 12
+  },
+  {
+    "arm": "without-offline",
+    "module": "generation-LLM",
+    "error": "IOException: invalid completion content",
+    "providerDetail": null,
+    "count": 12
+  },
+  {
+    "arm": "without-offline",
+    "module": "generation-LLM",
+    "error": "TimeoutException: null",
+    "providerDetail": null,
+    "count": 6
+  },
+  {
+    "arm": "without-probability",
+    "module": "candidate-JEV",
+    "error": "IOException: HTTP 400",
+    "providerDetail": {
+      "error_type": "max_tokens_exceeded"
+    },
+    "count": 11
+  },
+  {
+    "arm": "without-probability",
+    "module": "generation-LLM",
+    "error": "ExecutionException: java.net.SocketTimeoutException: Read timed out",
+    "providerDetail": null,
+    "count": 2
+  },
+  {
+    "arm": "without-probability",
+    "module": "generation-LLM",
+    "error": "IOException: invalid completion content",
+    "providerDetail": null,
+    "count": 29
+  },
+  {
+    "arm": "without-probability",
+    "module": "generation-LLM",
+    "error": "TimeoutException: null",
+    "providerDetail": null,
+    "count": 9
+  }
+]

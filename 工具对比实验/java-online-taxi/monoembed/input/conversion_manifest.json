@@ -1,0 +1,960 @@
+{
+  "application": "JavaOnlineTaxi",
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/java_online_taxi_20261103_01/input/java-online-taxi.remodel",
+  "services": [
+    {
+      "name": "ApiBossCarService",
+      "operations": [
+        {
+          "name": "ApiBossCarServiceAddCar",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiBossDriverCarBindingRelationshipService",
+      "operations": [
+        {
+          "name": "ApiBossDriverCarBindingRelationshipServiceBind",
+          "args": []
+        },
+        {
+          "name": "ApiBossDriverCarBindingRelationshipServiceUnbind",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiBossDriverUserService",
+      "operations": [
+        {
+          "name": "ApiBossDriverUserServiceAddDriverUser",
+          "args": []
+        },
+        {
+          "name": "ApiBossDriverUserServiceUpdateDriverUser",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiDriverPointService",
+      "operations": [
+        {
+          "name": "ApiDriverPointServiceUpload",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiDriverUserService",
+      "operations": [
+        {
+          "name": "ApiDriverUserServiceUpdateUser",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiDriverVerifyCodeService",
+      "operations": [
+        {
+          "name": "ApiDriverVerifyCodeServiceCheckAndSendVerifyCode",
+          "args": []
+        },
+        {
+          "name": "ApiDriverVerifyCodeServiceVerifyCodeCheck",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiPassengerForecastPriceService",
+      "operations": [
+        {
+          "name": "ApiPassengerForecastPriceServiceForecastPrice",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiPassengerOrderService",
+      "operations": [
+        {
+          "name": "ApiPassengerOrderServiceAdd",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiPassengerTokenService",
+      "operations": [
+        {
+          "name": "ApiPassengerTokenServiceRefreshToken",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiPassengerUserService",
+      "operations": [
+        {
+          "name": "ApiPassengerUserServiceGetUserByAccessToken",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ApiPassengerVerifyCodeService",
+      "operations": [
+        {
+          "name": "ApiPassengerVerifyCodeServiceVerifyCodeGet",
+          "args": []
+        },
+        {
+          "name": "ApiPassengerVerifyCodeServiceVerifyCodeCheck",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceDriverUserCarService",
+      "operations": [
+        {
+          "name": "ServiceDriverUserCarServiceAddCar",
+          "args": []
+        },
+        {
+          "name": "ServiceDriverUserCarServiceGetCarById",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceDriverUserDriverCarBindingRelationshipService",
+      "operations": [
+        {
+          "name": "ServiceDriverUserDriverCarBindingRelationshipServiceBind",
+          "args": []
+        },
+        {
+          "name": "ServiceDriverUserDriverCarBindingRelationshipServiceUnbind",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceDriverUserDriverUserService",
+      "operations": [
+        {
+          "name": "ServiceDriverUserDriverUserServiceTestGetDriverUser",
+          "args": []
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceAddDriverUser",
+          "args": []
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceUpdateDriverUser",
+          "args": []
+        },
+        {
+          "name": "ServiceDriverUserDriverUserServiceGetDriverUserByPhone",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceDriverUserDriverUserWorkStatusService",
+      "operations": [
+        {
+          "name": "ServiceDriverUserDriverUserWorkStatusServiceChangeWorkStatus",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapMapDicDistrictClient",
+      "operations": [
+        {
+          "name": "ServiceMapMapDicDistrictClientDicDistrict",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapMapDirectionClient",
+      "operations": [
+        {
+          "name": "ServiceMapMapDirectionClientDirection",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapPointClient",
+      "operations": [
+        {
+          "name": "ServiceMapPointClientUpload",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapServiceClient",
+      "operations": [
+        {
+          "name": "ServiceMapServiceClientAdd",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapTerminalClient",
+      "operations": [
+        {
+          "name": "ServiceMapTerminalClientAdd",
+          "args": []
+        },
+        {
+          "name": "ServiceMapTerminalClientAroundsearch",
+          "args": []
+        },
+        {
+          "name": "ServiceMapTerminalClientTrsearch",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapTrackClient",
+      "operations": [
+        {
+          "name": "ServiceMapTrackClientAdd",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapDicDistrictService",
+      "operations": [
+        {
+          "name": "ServiceMapDicDistrictServiceInitDicDistrict",
+          "args": []
+        },
+        {
+          "name": "ServiceMapDicDistrictServiceInsertDicDistrict",
+          "args": []
+        },
+        {
+          "name": "ServiceMapDicDistrictServiceGenerateLevel",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapDirectionService",
+      "operations": [
+        {
+          "name": "ServiceMapDirectionServiceDriving",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapPointService",
+      "operations": [
+        {
+          "name": "ServiceMapPointServiceUpload",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapServiceMapService",
+      "operations": [
+        {
+          "name": "ServiceMapServiceMapServiceAdd",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapTerminalService",
+      "operations": [
+        {
+          "name": "ServiceMapTerminalServiceAdd",
+          "args": []
+        },
+        {
+          "name": "ServiceMapTerminalServiceAroundsearch",
+          "args": []
+        },
+        {
+          "name": "ServiceMapTerminalServiceTrsearch",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceMapTrackService",
+      "operations": [
+        {
+          "name": "ServiceMapTrackServiceAdd",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceOrderOrderInfoService",
+      "operations": [
+        {
+          "name": "ServiceOrderOrderInfoServiceAdd",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServicePassengerUserUserService",
+      "operations": [
+        {
+          "name": "ServicePassengerUserUserServiceLoginOrRegisterUser",
+          "args": []
+        },
+        {
+          "name": "ServicePassengerUserUserServiceGetUserByPhone",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServicePricePriceService",
+      "operations": [
+        {
+          "name": "ServicePricePriceServiceForecastPrice",
+          "args": []
+        },
+        {
+          "name": "ServicePricePriceServiceCalculatePrice",
+          "args": []
+        },
+        {
+          "name": "ServicePricePriceServiceGetPrice",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ServiceVerifycodeVerifyCodeService",
+      "operations": [
+        {
+          "name": "ServiceVerifycodeVerifyCodeServiceGenerateCode",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Car",
+      "fields": [
+        [
+          "id",
+          "Integer"
+        ],
+        [
+          "address",
+          "String"
+        ],
+        [
+          "vehicleNo",
+          "String"
+        ],
+        [
+          "plateColor",
+          "String"
+        ],
+        [
+          "seats",
+          "Integer"
+        ],
+        [
+          "brand",
+          "String"
+        ],
+        [
+          "model",
+          "String"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "ownerName",
+          "String"
+        ],
+        [
+          "vehicleColor",
+          "String"
+        ],
+        [
+          "engineId",
+          "String"
+        ],
+        [
+          "vin",
+          "String"
+        ],
+        [
+          "certifyDateA",
+          "Date"
+        ],
+        [
+          "fueType",
+          "String"
+        ],
+        [
+          "engineDisplace",
+          "String"
+        ],
+        [
+          "transAgency",
+          "String"
+        ],
+        [
+          "transArea",
+          "String"
+        ],
+        [
+          "transDateStart",
+          "Date"
+        ],
+        [
+          "transDateEnd",
+          "Date"
+        ],
+        [
+          "certifyDateB",
+          "Date"
+        ],
+        [
+          "fixState",
+          "String"
+        ],
+        [
+          "nextFixDate",
+          "Date"
+        ],
+        [
+          "checkState",
+          "String"
+        ],
+        [
+          "feePrintId",
+          "String"
+        ],
+        [
+          "gpsBrand",
+          "String"
+        ],
+        [
+          "gpsModel",
+          "String"
+        ],
+        [
+          "gpsInstallDate",
+          "Date"
+        ],
+        [
+          "registerDate",
+          "Date"
+        ],
+        [
+          "commercialType",
+          "Integer"
+        ],
+        [
+          "fareType",
+          "String"
+        ],
+        [
+          "state",
+          "Integer"
+        ],
+        [
+          "tid",
+          "String"
+        ],
+        [
+          "trid",
+          "String"
+        ],
+        [
+          "trname",
+          "String"
+        ],
+        [
+          "gmtCreate",
+          "Date"
+        ],
+        [
+          "gmtModified",
+          "Date"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "DicDistrict",
+      "fields": [
+        [
+          "addressCode",
+          "String"
+        ],
+        [
+          "addressName",
+          "String"
+        ],
+        [
+          "parentAddressCode",
+          "String"
+        ],
+        [
+          "level",
+          "Integer"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "DriverCarBindingRelationship",
+      "fields": [
+        [
+          "id",
+          "Integer"
+        ],
+        [
+          "driverId",
+          "Integer"
+        ],
+        [
+          "carId",
+          "Integer"
+        ],
+        [
+          "bindState",
+          "Integer"
+        ],
+        [
+          "bindingTime",
+          "Date"
+        ],
+        [
+          "unBindingTime",
+          "Date"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "DriverUser",
+      "fields": [
+        [
+          "id",
+          "Integer"
+        ],
+        [
+          "address",
+          "String"
+        ],
+        [
+          "driverName",
+          "String"
+        ],
+        [
+          "driverPhone",
+          "String"
+        ],
+        [
+          "driverGender",
+          "Integer"
+        ],
+        [
+          "driverBirthday",
+          "Date"
+        ],
+        [
+          "driverNation",
+          "String"
+        ],
+        [
+          "driverContactAddress",
+          "String"
+        ],
+        [
+          "licenseId",
+          "String"
+        ],
+        [
+          "getDriverLicenseDate",
+          "Date"
+        ],
+        [
+          "driverLicenseOn",
+          "Date"
+        ],
+        [
+          "driverLicenseOff",
+          "Date"
+        ],
+        [
+          "taxiDriver",
+          "Integer"
+        ],
+        [
+          "certificateNo",
+          "String"
+        ],
+        [
+          "networkCarIssueOrganization",
+          "String"
+        ],
+        [
+          "networkCarIssueDate",
+          "Date"
+        ],
+        [
+          "getNetworkCarProofDate",
+          "Date"
+        ],
+        [
+          "networkCarProofOn",
+          "Date"
+        ],
+        [
+          "networkCarProofOff",
+          "Date"
+        ],
+        [
+          "registerDate",
+          "Date"
+        ],
+        [
+          "commercialType",
+          "Integer"
+        ],
+        [
+          "contractCompany",
+          "String"
+        ],
+        [
+          "contractOn",
+          "Date"
+        ],
+        [
+          "contractOff",
+          "Date"
+        ],
+        [
+          "state",
+          "Integer"
+        ],
+        [
+          "gmtCreate",
+          "Date"
+        ],
+        [
+          "gmtModified",
+          "Date"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "DriverUserWorkStatus",
+      "fields": [
+        [
+          "id",
+          "Integer"
+        ],
+        [
+          "driverId",
+          "Integer"
+        ],
+        [
+          "workStatus",
+          "Integer"
+        ],
+        [
+          "gmtCreate",
+          "Date"
+        ],
+        [
+          "gmtModified",
+          "Date"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "PassengerUser",
+      "fields": [
+        [
+          "id",
+          "Integer"
+        ],
+        [
+          "gmtCreate",
+          "Date"
+        ],
+        [
+          "gmtModified",
+          "Date"
+        ],
+        [
+          "passengerPhone",
+          "String"
+        ],
+        [
+          "passengerName",
+          "String"
+        ],
+        [
+          "passengerGender",
+          "Integer"
+        ],
+        [
+          "state",
+          "Integer"
+        ],
+        [
+          "profilePhoto",
+          "String"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "PriceRule",
+      "fields": [
+        [
+          "cityCode",
+          "String"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "startFare",
+          "Real"
+        ],
+        [
+          "startMile",
+          "Integer"
+        ],
+        [
+          "unitPricePerMile",
+          "Real"
+        ],
+        [
+          "unitPricePerMinute",
+          "Real"
+        ],
+        [
+          "fareVersion",
+          "Integer"
+        ],
+        [
+          "fareType",
+          "String"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "OrderInfo",
+      "fields": [
+        [
+          "id",
+          "Integer"
+        ],
+        [
+          "passengerId",
+          "Integer"
+        ],
+        [
+          "passengerPhone",
+          "String"
+        ],
+        [
+          "driverId",
+          "Integer"
+        ],
+        [
+          "driverPhone",
+          "String"
+        ],
+        [
+          "carId",
+          "Integer"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "address",
+          "String"
+        ],
+        [
+          "orderTime",
+          "Date"
+        ],
+        [
+          "departTime",
+          "Date"
+        ],
+        [
+          "departure",
+          "String"
+        ],
+        [
+          "depLongitude",
+          "String"
+        ],
+        [
+          "depLatitude",
+          "String"
+        ],
+        [
+          "destination",
+          "String"
+        ],
+        [
+          "destLongitude",
+          "String"
+        ],
+        [
+          "destLatitude",
+          "String"
+        ],
+        [
+          "encrypt",
+          "Integer"
+        ],
+        [
+          "fareType",
+          "String"
+        ],
+        [
+          "fareVersion",
+          "Integer"
+        ],
+        [
+          "receiveOrderCarLongitude",
+          "String"
+        ],
+        [
+          "receiveOrderCarLatitude",
+          "String"
+        ],
+        [
+          "receiveOrderTime",
+          "Date"
+        ],
+        [
+          "licenseId",
+          "String"
+        ],
+        [
+          "vehicleNo",
+          "String"
+        ],
+        [
+          "toPickUpPassengerTime",
+          "Date"
+        ],
+        [
+          "toPickUpPassengerLongitude",
+          "String"
+        ],
+        [
+          "toPickUpPassengerLatitude",
+          "String"
+        ],
+        [
+          "toPickUpPassengerAddress",
+          "String"
+        ],
+        [
+          "driverArrivedDepartureTime",
+          "Date"
+        ],
+        [
+          "pickUpPassengerTime",
+          "Date"
+        ],
+        [
+          "pickUpPassengerLongitude",
+          "String"
+        ],
+        [
+          "pickUpPassengerLatitude",
+          "String"
+        ],
+        [
+          "passengerGetoffTime",
+          "Date"
+        ],
+        [
+          "passengerGetoffLongitude",
+          "String"
+        ],
+        [
+          "passengerGetoffLatitude",
+          "String"
+        ],
+        [
+          "cancelTime",
+          "Date"
+        ],
+        [
+          "cancelOperator",
+          "Integer"
+        ],
+        [
+          "cancelTypeCode",
+          "Integer"
+        ],
+        [
+          "driveMile",
+          "Integer"
+        ],
+        [
+          "driveTime",
+          "Integer"
+        ],
+        [
+          "orderStatus",
+          "Integer"
+        ],
+        [
+          "price",
+          "Real"
+        ],
+        [
+          "gmtCreate",
+          "Date"
+        ],
+        [
+          "gmtModified",
+          "Date"
+        ]
+      ],
+      "parent": null
+    }
+  ],
+  "note": "Synthetic source-like content derived from .remodel; not recovered implementation code."
+}

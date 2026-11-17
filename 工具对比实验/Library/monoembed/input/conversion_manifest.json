@@ -1,0 +1,742 @@
+{
+  "application": "Library",
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/library_20261103_01/input/library.remodel",
+  "services": [
+    {
+      "name": "LibraryManagementSystem",
+      "operations": [
+        {
+          "name": "recommendBook",
+          "args": [
+            "userid",
+            "book"
+          ]
+        },
+        {
+          "name": "queryBookCopy",
+          "args": [
+            "barcode"
+          ]
+        },
+        {
+          "name": "addBookCopy",
+          "args": [
+            "callNo",
+            "copy"
+          ]
+        },
+        {
+          "name": "deleteBookCopy",
+          "args": [
+            "barcode"
+          ]
+        },
+        {
+          "name": "makeReservation",
+          "args": [
+            "uid",
+            "barcode"
+          ]
+        },
+        {
+          "name": "cannelReservation",
+          "args": [
+            "uid",
+            "barcode"
+          ]
+        },
+        {
+          "name": "borrowBook",
+          "args": [
+            "uid",
+            "barcode"
+          ]
+        },
+        {
+          "name": "renewBook",
+          "args": [
+            "uid",
+            "barcode"
+          ]
+        },
+        {
+          "name": "returnBook",
+          "args": [
+            "barcode"
+          ]
+        },
+        {
+          "name": "payOverDueFee",
+          "args": [
+            "uid",
+            "fee",
+            "change"
+          ]
+        },
+        {
+          "name": "checkOverDueandComputeOverDueFee",
+          "args": []
+        },
+        {
+          "name": "dueSoonNotification",
+          "args": []
+        },
+        {
+          "name": "countDownSuspensionDay",
+          "args": []
+        }
+      ]
+    },
+    {
+      "name": "ThirdPartServices",
+      "operations": [
+        {
+          "name": "sendNotificationEmail",
+          "args": [
+            "user"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ListBookHistory",
+      "operations": [
+        {
+          "name": "listBorrowHistory",
+          "args": [
+            "userid"
+          ]
+        },
+        {
+          "name": "listHodingBook",
+          "args": [
+            "userid"
+          ]
+        },
+        {
+          "name": "listOverDueBook",
+          "args": [
+            "userid"
+          ]
+        },
+        {
+          "name": "listReservationBook",
+          "args": [
+            "userid"
+          ]
+        },
+        {
+          "name": "listRecommendBook",
+          "args": [
+            "userid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SearchBook",
+      "operations": [
+        {
+          "name": "searchBookByBarCode",
+          "args": [
+            "barcode"
+          ]
+        },
+        {
+          "name": "searchBookByTitle",
+          "args": [
+            "title"
+          ]
+        },
+        {
+          "name": "searchBookByAuthor",
+          "args": [
+            "authorname"
+          ]
+        },
+        {
+          "name": "searchBookByISBN",
+          "args": [
+            "ISBNnumber"
+          ]
+        },
+        {
+          "name": "searchBookBySubject",
+          "args": [
+            "subject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageUserCRUDService",
+      "operations": [
+        {
+          "name": "createUser",
+          "args": [
+            "userid",
+            "name",
+            "sex",
+            "password",
+            "email",
+            "faculty",
+            "loanednumber",
+            "borrowstatus",
+            "suspensiondays",
+            "overduefee"
+          ]
+        },
+        {
+          "name": "queryUser",
+          "args": [
+            "UserID"
+          ]
+        },
+        {
+          "name": "modifyUser",
+          "args": [
+            "userid",
+            "name",
+            "sex",
+            "password",
+            "email",
+            "faculty",
+            "loanednumber",
+            "borrowstatus",
+            "suspensiondays",
+            "overduefee"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "args": [
+            "UserID"
+          ]
+        },
+        {
+          "name": "createStudent",
+          "args": [
+            "userID : String",
+            "name : String",
+            "sex : Sex[M|F]",
+            "password : String",
+            "email : String",
+            "faculty : String",
+            "major : String",
+            "programme : Programme[BACHELOR|MASTER|PHD]",
+            "registrationStatus : StudentStatus[GRADUATED|PROGRAMMING]"
+          ]
+        },
+        {
+          "name": "createFaculty",
+          "args": [
+            "userID : String",
+            "name : String",
+            "sex : Sex[M|F]",
+            "password : String",
+            "email : String",
+            "faculty : String",
+            "position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR]",
+            "status : FacultyStatus[HASRETIRED|INPOSITION]"
+          ]
+        },
+        {
+          "name": "modifyStudent",
+          "args": [
+            "userID : String",
+            "name : String",
+            "sex : Sex[M|F]",
+            "password : String",
+            "email : String",
+            "faculty : String",
+            "major : String",
+            "programme : Programme[BACHELOR|MASTER|PHD]",
+            "registrationStatus : StudentStatus[GRADUATED|PROGRAMMING]"
+          ]
+        },
+        {
+          "name": "modifyFaculty",
+          "args": [
+            "userID : String",
+            "name : String",
+            "sex : Sex[M|F]",
+            "password : String",
+            "email : String",
+            "faculty : String",
+            "major : String",
+            "position : FacultyPosition[ASSISTANTPROFESSORS|ASSOCIATEPROFESSOR|PROFESSOR|CHAIRPROFESSOR]",
+            "status : FacultyStatus[HASRETIRED|INPOSITION]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageBookCRUDService",
+      "operations": [
+        {
+          "name": "createBook",
+          "args": [
+            "callno",
+            "title",
+            "edition",
+            "author",
+            "publisher",
+            "description",
+            "isbn",
+            "copynum"
+          ]
+        },
+        {
+          "name": "queryBook",
+          "args": [
+            "CallNo"
+          ]
+        },
+        {
+          "name": "modifyBook",
+          "args": [
+            "callno",
+            "title",
+            "edition",
+            "author",
+            "publisher",
+            "description",
+            "isbn",
+            "copynum"
+          ]
+        },
+        {
+          "name": "deleteBook",
+          "args": [
+            "CallNo"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageSubjectCRUDService",
+      "operations": [
+        {
+          "name": "createSubject",
+          "args": [
+            "name"
+          ]
+        },
+        {
+          "name": "querySubject",
+          "args": [
+            "Name"
+          ]
+        },
+        {
+          "name": "modifySubject",
+          "args": [
+            "name"
+          ]
+        },
+        {
+          "name": "deleteSubject",
+          "args": [
+            "Name"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageBookCopyCRUDService",
+      "operations": [
+        {
+          "name": "addBookCopy",
+          "args": [
+            "callNo:String",
+            "barcode : String",
+            "location : String"
+          ]
+        },
+        {
+          "name": "queryBookCopy",
+          "args": [
+            "Barcode"
+          ]
+        },
+        {
+          "name": "modifyBookCopy",
+          "args": [
+            "barcode",
+            "status",
+            "location",
+            "isreserved"
+          ]
+        },
+        {
+          "name": "deleteBookCopy",
+          "args": [
+            "barcode:String"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ManageLibrarianCRUDService",
+      "operations": [
+        {
+          "name": "createLibrarian",
+          "args": [
+            "librarianid",
+            "name",
+            "password"
+          ]
+        },
+        {
+          "name": "queryLibrarian",
+          "args": [
+            "LibrarianID"
+          ]
+        },
+        {
+          "name": "modifyLibrarian",
+          "args": [
+            "librarianid",
+            "name",
+            "password"
+          ]
+        },
+        {
+          "name": "deleteLibrarian",
+          "args": [
+            "LibrarianID"
+          ]
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "User",
+      "fields": [
+        [
+          "UserID",
+          "String"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "Sex",
+          "Sex"
+        ],
+        [
+          "Password",
+          "String"
+        ],
+        [
+          "Email",
+          "String"
+        ],
+        [
+          "Faculty",
+          "String"
+        ],
+        [
+          "LoanedNumber",
+          "Integer"
+        ],
+        [
+          "BorrowStatus",
+          "BorrowStatus"
+        ],
+        [
+          "SuspensionDays",
+          "Integer"
+        ],
+        [
+          "OverDueFee",
+          "Real"
+        ],
+        [
+          "LoanedBook",
+          "Loan"
+        ],
+        [
+          "ReservedBook",
+          "Reserve"
+        ],
+        [
+          "RecommendedBook",
+          "RecommendBook"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Student",
+      "fields": [
+        [
+          "Major",
+          "String"
+        ],
+        [
+          "Programme",
+          "Programme"
+        ],
+        [
+          "RegistrationStatus",
+          "StudentStatus"
+        ]
+      ],
+      "parent": "User"
+    },
+    {
+      "name": "Faculty",
+      "fields": [
+        [
+          "Position",
+          "FacultyPosition"
+        ],
+        [
+          "Status",
+          "FacultyStatus"
+        ]
+      ],
+      "parent": "User"
+    },
+    {
+      "name": "Book",
+      "fields": [
+        [
+          "CallNo",
+          "String"
+        ],
+        [
+          "Title",
+          "String"
+        ],
+        [
+          "Edition",
+          "String"
+        ],
+        [
+          "Author",
+          "String"
+        ],
+        [
+          "Publisher",
+          "String"
+        ],
+        [
+          "Description",
+          "String"
+        ],
+        [
+          "ISBn",
+          "String"
+        ],
+        [
+          "CopyNum",
+          "Integer"
+        ],
+        [
+          "Copys",
+          "BookCopy"
+        ],
+        [
+          "Subject",
+          "Subject"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Subject",
+      "fields": [
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "SuperSubject",
+          "Subject"
+        ],
+        [
+          "SubSubject",
+          "Subject"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "BookCopy",
+      "fields": [
+        [
+          "Barcode",
+          "String"
+        ],
+        [
+          "Status",
+          "CopyStatus"
+        ],
+        [
+          "Location",
+          "String"
+        ],
+        [
+          "IsReserved",
+          "Boolean"
+        ],
+        [
+          "BookBelongs",
+          "Book"
+        ],
+        [
+          "LoanedRecord",
+          "Loan"
+        ],
+        [
+          "ReservationRecord",
+          "Reserve"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Loan",
+      "fields": [
+        [
+          "LoanDate",
+          "Date"
+        ],
+        [
+          "RenewDate",
+          "Date"
+        ],
+        [
+          "DueDate",
+          "Date"
+        ],
+        [
+          "ReturnDate",
+          "Date"
+        ],
+        [
+          "RenewedTimes",
+          "Integer"
+        ],
+        [
+          "IsReturned",
+          "Boolean"
+        ],
+        [
+          "OverDueFee",
+          "Real"
+        ],
+        [
+          "OverDue3Days",
+          "Boolean"
+        ],
+        [
+          "OverDue10Days",
+          "Boolean"
+        ],
+        [
+          "OverDue17Days",
+          "Boolean"
+        ],
+        [
+          "OverDue31Days",
+          "Boolean"
+        ],
+        [
+          "LoanedUser",
+          "User"
+        ],
+        [
+          "LoanedCopy",
+          "BookCopy"
+        ],
+        [
+          "LoanLibrarian",
+          "Librarian"
+        ],
+        [
+          "ReturnLibrarian",
+          "Librarian"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Reserve",
+      "fields": [
+        [
+          "ReserveDate",
+          "Date"
+        ],
+        [
+          "IsReserveClosed",
+          "Boolean"
+        ],
+        [
+          "ReservedCopy",
+          "BookCopy"
+        ],
+        [
+          "ReservedUser",
+          "User"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "RecommendBook",
+      "fields": [
+        [
+          "RecommendDate",
+          "Date"
+        ],
+        [
+          "RecommendUser",
+          "User"
+        ]
+      ],
+      "parent": "Book"
+    },
+    {
+      "name": "Administrator",
+      "fields": [
+        [
+          "AdminID",
+          "String"
+        ],
+        [
+          "UserName",
+          "String"
+        ],
+        [
+          "Password",
+          "String"
+        ]
+      ],
+      "parent": null
+    },
+    {
+      "name": "Librarian",
+      "fields": [
+        [
+          "LibrarianID",
+          "String"
+        ],
+        [
+          "Name",
+          "String"
+        ],
+        [
+          "Password",
+          "String"
+        ]
+      ],
+      "parent": null
+    }
+  ],
+  "note": "Synthetic source-like content derived from .remodel; not recovered implementation code."
+}

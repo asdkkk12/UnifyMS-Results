@@ -1,0 +1,665 @@
+{
+  "application": "PiggyMetrics",
+  "model": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/piggy_metrics_20261103_01/input/PiggyMetrics.remodel",
+  "decomposition": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/piggy_metrics_20261103_01/microminer/decomposition.json",
+  "definitions": {
+    "IFN": "average provided operations per decomposition cluster",
+    "Instability": "1 - ProvideInterface / (ProvideInterface + RequiredInterface)",
+    "system_aggregation": "unweighted mean of defined per-cluster CHD and Instability values",
+    "RequiredInterface": "external Contract calls + inferred entity CRUD actions",
+    "CHD": "ordered operation-pair Jaccard average, including diagonal pairs",
+    "UCM": "0.2 CorrA + 0.3 CorrF + 0.5 CorrE averaged over use-case pairs",
+    "CMQ": "Intra_Cohesion - Inter_Coupling"
+  },
+  "assumptions": [
+    "This legacy evaluator fixes CorrF=0; Include/Extend relationships must be checked separately in the input model.",
+    "Contract calls are counted only when written as Service::operation().",
+    "Implicit CRUD is inferred from OCL-like allInstance/includes/excludes/any expressions; other entity mentions count as read.",
+    "Remodel-adapted MicroMiner output; not the published Java/KDM MicroMiner implementation."
+  ],
+  "evaluation_status": "legacy_extraction_estimate",
+  "limitations": [
+    "Entity inheritance is retained as a parent reference; inherited fields are not flattened. Contract references use names, not full type resolution.",
+    "Unqualified operation calls are not resolved; external-call counts may be incomplete and are not filtered by cluster ownership.",
+    "CRUD inference is heuristic, includes preconditions, and does not fully identify updates; counts sum per-operation entity/action pairs.",
+    "Use cases map only to same-name operations; relatedService, SSD, and workflow mappings are not resolved.",
+    "CMQ uses binary field/type feature vectors and last-cluster entity ownership for overlapping memberships; this is an explicit legacy convention, not a unique interpretation of fuzzy membership.",
+    "Empty entity-set Jaccard is defined as zero; UCM uses unordered distinct use-case pairs."
+  ],
+  "MS_Num": 6,
+  "provided_interface_total": 14,
+  "CHD": 0.7827040243706911,
+  "Instability": 0.6894383394383395,
+  "IFN": 2.3333333333333335,
+  "microservices": [
+    {
+      "cluster": 0,
+      "members": [
+        "PiggyMetrics.service.AccountServiceAccountServiceImpl",
+        "PiggyMetrics.domain.AccountServiceAccount",
+        "PiggyMetrics.domain.AccountServiceItem",
+        "PiggyMetrics.domain.AccountServiceSaving",
+        "PiggyMetrics.domain.AccountServiceUser",
+        "PiggyMetrics.domain.StatisticsServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer",
+        "PiggyMetrics.domain.StatisticsServiceItem",
+        "PiggyMetrics.domain.StatisticsServiceSaving",
+        "PiggyMetrics.domain.StatisticsServiceDataPoint",
+        "PiggyMetrics.domain.StatisticsServiceDataPointId",
+        "PiggyMetrics.domain.StatisticsServiceItemMetric"
+      ],
+      "provided_interface": 3,
+      "required_interface_external_calls": 1,
+      "required_interface_implicit_crud": 14,
+      "required_interface": 15,
+      "instability": 0.8333333333333334,
+      "CHD": 0.47003367003367
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceEmailServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "provided_interface": 1,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 1,
+      "required_interface": 1,
+      "instability": 0.5,
+      "CHD": 1.0
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceNotificationServiceImpl",
+        "PiggyMetrics.domain.AccountServiceAccount",
+        "PiggyMetrics.domain.NotificationServiceNotificationSettings",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "provided_interface": 2,
+      "required_interface_external_calls": 7,
+      "required_interface_implicit_crud": 5,
+      "required_interface": 12,
+      "instability": 0.8571428571428572,
+      "CHD": 0.8333333333333333
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "PiggyMetrics.service.NotificationServiceRecipientServiceImpl",
+        "PiggyMetrics.domain.NotificationServiceNotificationSettings",
+        "PiggyMetrics.domain.NotificationServiceRecipient"
+      ],
+      "provided_interface": 4,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 6,
+      "required_interface": 6,
+      "instability": 0.6,
+      "CHD": 0.75
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "PiggyMetrics.service.StatisticsServiceExchangeRatesServiceImpl",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer"
+      ],
+      "provided_interface": 2,
+      "required_interface_external_calls": 0,
+      "required_interface_implicit_crud": 2,
+      "required_interface": 2,
+      "instability": 0.5,
+      "CHD": 1.0
+    },
+    {
+      "cluster": 5,
+      "members": [
+        "PiggyMetrics.service.StatisticsServiceStatisticsServiceImpl",
+        "PiggyMetrics.domain.StatisticsServiceAccount",
+        "PiggyMetrics.domain.StatisticsServiceExchangeRatesContainer",
+        "PiggyMetrics.domain.StatisticsServiceItem",
+        "PiggyMetrics.domain.StatisticsServiceSaving",
+        "PiggyMetrics.domain.StatisticsServiceDataPoint",
+        "PiggyMetrics.domain.StatisticsServiceDataPointId",
+        "PiggyMetrics.domain.StatisticsServiceItemMetric"
+      ],
+      "provided_interface": 2,
+      "required_interface_external_calls": 2,
+      "required_interface_implicit_crud": 9,
+      "required_interface": 11,
+      "instability": 0.8461538461538461,
+      "CHD": 0.6428571428571428
+    }
+  ],
+  "UCM": 0.05333333333333334,
+  "UCM_pair_count": 15,
+  "Intra_Cohesion": 0.24719448716004078,
+  "Inter_Coupling": 0.22410046942945344,
+  "CMQ": 0.023094017730587335,
+  "CMQ_details": {
+    "version": "entity-features-v2-annotated-fields-own-name",
+    "features": {
+      "AccountServiceAccount": [
+        "accountserviceaccount",
+        "accountserviceitem",
+        "accountservicesaving",
+        "date",
+        "expenses",
+        "incomes",
+        "lastseen",
+        "name",
+        "note",
+        "saving",
+        "string"
+      ],
+      "AccountServiceItem": [
+        "accountserviceitem",
+        "amount",
+        "currency",
+        "icon",
+        "period",
+        "real",
+        "string",
+        "title"
+      ],
+      "AccountServiceSaving": [
+        "accountservicesaving",
+        "amount",
+        "capitalization",
+        "currency",
+        "deposit",
+        "interest",
+        "real",
+        "string"
+      ],
+      "AccountServiceUser": [
+        "accountserviceuser",
+        "password",
+        "string",
+        "username"
+      ],
+      "NotificationServiceNotificationSettings": [
+        "active",
+        "date",
+        "frequency",
+        "lastnotified",
+        "notificationservicenotificationsettings",
+        "string"
+      ],
+      "NotificationServiceRecipient": [
+        "accountname",
+        "email",
+        "notificationservicenotificationsettings",
+        "notificationservicerecipient",
+        "schedulednotifications",
+        "string"
+      ],
+      "StatisticsServiceAccount": [
+        "expenses",
+        "incomes",
+        "saving",
+        "statisticsserviceaccount",
+        "statisticsserviceitem",
+        "statisticsservicesaving"
+      ],
+      "StatisticsServiceExchangeRatesContainer": [
+        "base",
+        "date",
+        "rates",
+        "statisticsserviceexchangeratescontainer",
+        "string"
+      ],
+      "StatisticsServiceItem": [
+        "amount",
+        "currency",
+        "period",
+        "real",
+        "statisticsserviceitem",
+        "string",
+        "title"
+      ],
+      "StatisticsServiceSaving": [
+        "amount",
+        "capitalization",
+        "currency",
+        "deposit",
+        "interest",
+        "real",
+        "statisticsservicesaving",
+        "string"
+      ],
+      "StatisticsServiceDataPoint": [
+        "expenses",
+        "id",
+        "incomes",
+        "rates",
+        "statistics",
+        "statisticsservicedatapoint",
+        "statisticsservicedatapointid",
+        "statisticsserviceitemmetric",
+        "string"
+      ],
+      "StatisticsServiceDataPointId": [
+        "account",
+        "date",
+        "statisticsservicedatapointid",
+        "string"
+      ],
+      "StatisticsServiceItemMetric": [
+        "amount",
+        "real",
+        "statisticsserviceitemmetric",
+        "string",
+        "title"
+      ]
+    },
+    "effective_entity_clusters": {
+      "AccountServiceAccount": 2,
+      "AccountServiceItem": 0,
+      "AccountServiceSaving": 0,
+      "AccountServiceUser": 0,
+      "StatisticsServiceAccount": 5,
+      "StatisticsServiceExchangeRatesContainer": 5,
+      "StatisticsServiceItem": 5,
+      "StatisticsServiceSaving": 5,
+      "StatisticsServiceDataPoint": 5,
+      "StatisticsServiceDataPointId": 5,
+      "StatisticsServiceItemMetric": 5,
+      "NotificationServiceRecipient": 3,
+      "NotificationServiceNotificationSettings": 3
+    },
+    "intra_pair_count": 25,
+    "inter_pair_count": 53,
+    "pairs": [
+      {
+        "a": "AccountServiceAccount",
+        "b": "AccountServiceItem",
+        "similarity": 0.21320071635561041
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "AccountServiceSaving",
+        "similarity": 0.21320071635561041
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "AccountServiceUser",
+        "similarity": 0.15075567228888181
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "NotificationServiceNotificationSettings",
+        "similarity": 0.24618298195866545
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "NotificationServiceRecipient",
+        "similarity": 0.12309149097933272
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceAccount",
+        "similarity": 0.3692744729379982
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.26967994498529685
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.11396057645963795
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.10660035817780521
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.30151134457776363
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.30151134457776363
+      },
+      {
+        "a": "AccountServiceAccount",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.13483997249264842
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "AccountServiceSaving",
+        "similarity": 0.5
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "AccountServiceUser",
+        "similarity": 0.17677669529663687
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "NotificationServiceNotificationSettings",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "NotificationServiceRecipient",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceAccount",
+        "similarity": 0.0
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.15811388300841897
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.8017837257372732
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.5
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.11785113019775793
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.17677669529663687
+      },
+      {
+        "a": "AccountServiceItem",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.6324555320336759
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "AccountServiceUser",
+        "similarity": 0.17677669529663687
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "NotificationServiceNotificationSettings",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "NotificationServiceRecipient",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceAccount",
+        "similarity": 0.0
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.15811388300841897
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.5345224838248488
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.875
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.11785113019775793
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.17677669529663687
+      },
+      {
+        "a": "AccountServiceSaving",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.4743416490252569
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "NotificationServiceNotificationSettings",
+        "similarity": 0.20412414523193154
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "NotificationServiceRecipient",
+        "similarity": 0.20412414523193154
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceAccount",
+        "similarity": 0.0
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.22360679774997896
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.1889822365046136
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.17677669529663687
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.16666666666666666
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.25
+      },
+      {
+        "a": "AccountServiceUser",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.22360679774997896
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "NotificationServiceRecipient",
+        "similarity": 0.3333333333333333
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceAccount",
+        "similarity": 0.0
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.3651483716701107
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.1543033499620919
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.13608276348795434
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.4082482904638631
+      },
+      {
+        "a": "NotificationServiceNotificationSettings",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceAccount",
+        "similarity": 0.0
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.1543033499620919
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.13608276348795434
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.20412414523193154
+      },
+      {
+        "a": "NotificationServiceRecipient",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.18257418583505536
+      },
+      {
+        "a": "StatisticsServiceAccount",
+        "b": "StatisticsServiceExchangeRatesContainer",
+        "similarity": 0.0
+      },
+      {
+        "a": "StatisticsServiceAccount",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.1543033499620919
+      },
+      {
+        "a": "StatisticsServiceAccount",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.14433756729740646
+      },
+      {
+        "a": "StatisticsServiceAccount",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.2721655269759087
+      },
+      {
+        "a": "StatisticsServiceAccount",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.0
+      },
+      {
+        "a": "StatisticsServiceAccount",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.0
+      },
+      {
+        "a": "StatisticsServiceExchangeRatesContainer",
+        "b": "StatisticsServiceItem",
+        "similarity": 0.1690308509457033
+      },
+      {
+        "a": "StatisticsServiceExchangeRatesContainer",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.15811388300841897
+      },
+      {
+        "a": "StatisticsServiceExchangeRatesContainer",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.29814239699997197
+      },
+      {
+        "a": "StatisticsServiceExchangeRatesContainer",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.4472135954999579
+      },
+      {
+        "a": "StatisticsServiceExchangeRatesContainer",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.2
+      },
+      {
+        "a": "StatisticsServiceItem",
+        "b": "StatisticsServiceSaving",
+        "similarity": 0.5345224838248488
+      },
+      {
+        "a": "StatisticsServiceItem",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.1259881576697424
+      },
+      {
+        "a": "StatisticsServiceItem",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.1889822365046136
+      },
+      {
+        "a": "StatisticsServiceItem",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.6761234037828132
+      },
+      {
+        "a": "StatisticsServiceSaving",
+        "b": "StatisticsServiceDataPoint",
+        "similarity": 0.11785113019775793
+      },
+      {
+        "a": "StatisticsServiceSaving",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.17677669529663687
+      },
+      {
+        "a": "StatisticsServiceSaving",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.4743416490252569
+      },
+      {
+        "a": "StatisticsServiceDataPoint",
+        "b": "StatisticsServiceDataPointId",
+        "similarity": 0.3333333333333333
+      },
+      {
+        "a": "StatisticsServiceDataPoint",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.29814239699997197
+      },
+      {
+        "a": "StatisticsServiceDataPointId",
+        "b": "StatisticsServiceItemMetric",
+        "similarity": 0.22360679774997896
+      }
+    ]
+  }
+}

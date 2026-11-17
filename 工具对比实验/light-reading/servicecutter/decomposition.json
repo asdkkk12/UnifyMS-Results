@@ -1,0 +1,185 @@
+{
+  "method": "ServiceCutter official Chinese Whispers + Java AST bridge",
+  "is_official_servicecutter": true,
+  "source_solver_result": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/light_reading_20261103_01/servicecutter/solver_result.json",
+  "mapping_assumptions": [
+    "Native use-case responsibilities map directly to Java @Service proxy IDs, then to that class public methods.",
+    "A class remains one input unit, matching MicroMiner/MonoEmbed class granularity.",
+    "Use-case proxies lacking native responsibility fall back to the largest nanoentity cluster; their list is explicit.",
+    "Entity ownership uses the majority of its actual fields; no native field partition is changed."
+  ],
+  "fallback_cluster": 1,
+  "fallback_services": [
+    "ReadingCloudHomepageSearchServiceImpl"
+  ],
+  "clusters": [
+    {
+      "name": "Service A",
+      "members": [
+        "LightReading.domain.BookChapter"
+      ],
+      "servicecutter_nanoentities": [
+        "BookChapter.updateTime",
+        "BookChapter.lockStatus",
+        "BookChapter.id",
+        "BookChapter.createTime",
+        "BookChapter.sortNumber",
+        "BookChapter.content",
+        "BookChapter.name",
+        "BookChapter.bookId"
+      ]
+    },
+    {
+      "name": "Service B",
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserBookshelfServiceImpl",
+        "LightReading.service.ReadingCloudAccountUserLikeSeeServiceImpl",
+        "LightReading.service.ReadingCloudBookBookChapterServiceImpl",
+        "LightReading.service.ReadingCloudBookBookServiceImpl",
+        "LightReading.service.ReadingCloudHomepageBookCenterServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBannerServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBooklistItemServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexBooklistServiceImpl",
+        "LightReading.service.ReadingCloudHomepageIndexPageConfigServiceImpl",
+        "LightReading.service.ReadingCloudHomepageSearchServiceImpl",
+        "LightReading.domain.Book",
+        "LightReading.domain.IndexBanner",
+        "LightReading.domain.IndexBannerItem",
+        "LightReading.domain.IndexBooklist",
+        "LightReading.domain.IndexBooklistItem",
+        "LightReading.domain.IndexPageConfig",
+        "LightReading.domain.UserBookshelf",
+        "LightReading.domain.UserLikeSee"
+      ],
+      "servicecutter_nanoentities": [
+        "Book.updater",
+        "UserLikeSee.bookId",
+        "IndexBooklist.showLikeCount",
+        "IndexBannerItem.updateTime",
+        "IndexBooklist.createTime",
+        "IndexPageConfig.creater",
+        "UserBookshelf.userId",
+        "IndexBooklistItem.updateTime",
+        "IndexBanner.createTime",
+        "UserBookshelf.lastChapterId",
+        "IndexBannerItem.createTime",
+        "IndexPageConfig.startDate",
+        "IndexBooklist.name",
+        "Book.dicSerialStatus",
+        "IndexBooklistItem.createTime",
+        "UserLikeSee.createTime",
+        "IndexBooklist.startDate",
+        "IndexPageConfig.createTime",
+        "IndexPageConfig.sortNumber",
+        "Book.authorId",
+        "IndexBooklistItem.bookId",
+        "IndexPageConfig.itemId",
+        "IndexBanner.creater",
+        "IndexBannerItem.name",
+        "IndexPageConfig.id",
+        "IndexBannerItem.imgUrl",
+        "IndexBannerItem.updater",
+        "IndexBanner.updateTime",
+        "Book.id",
+        "IndexBooklist.updateTime",
+        "Book.bookName",
+        "UserBookshelf.id",
+        "IndexBooklist.id",
+        "IndexBanner.updater",
+        "Book.creater",
+        "IndexBannerItem.creater",
+        "IndexBooklistItem.creater",
+        "IndexBooklistItem.booklistId",
+        "UserLikeSee.userId",
+        "Book.bookScore",
+        "UserBookshelf.bookId",
+        "Book.wordCount",
+        "IndexBannerItem.sortNumber",
+        "IndexBooklist.moreType",
+        "Book.isbn",
+        "Book.dicChannel",
+        "UserBookshelf.createTime",
+        "Book.dicCategory",
+        "IndexPageConfig.updateTime",
+        "IndexBooklist.bookIds",
+        "IndexBannerItem.id",
+        "IndexBooklistItem.sortNumber",
+        "IndexPageConfig.pageType",
+        "Book.authorName",
+        "IndexPageConfig.endDate",
+        "Book.keyWord",
+        "Book.imgUrl",
+        "IndexPageConfig.updater",
+        "Book.onlineStatus",
+        "IndexBooklist.endDate",
+        "IndexPageConfig.itemType",
+        "IndexBooklist.moreUrl",
+        "Book.bookId",
+        "IndexBooklistItem.updater",
+        "IndexBannerItem.url",
+        "Book.createTime",
+        "IndexBooklist.style",
+        "Book.introduction",
+        "IndexBannerItem.bannerId",
+        "IndexBooklist.creater",
+        "IndexBooklist.showNumber",
+        "UserLikeSee.id",
+        "IndexBooklist.updater",
+        "IndexBooklistItem.id",
+        "Book.updateTime",
+        "IndexBanner.name",
+        "IndexBanner.id",
+        "UserBookshelf.lastReadTime"
+      ]
+    },
+    {
+      "name": "Service C",
+      "members": [
+        "LightReading.service.ReadingCloudBookDataDictionaryServiceImpl",
+        "LightReading.domain.DataDictionary"
+      ],
+      "servicecutter_nanoentities": [
+        "DataDictionary.sortNumber",
+        "DataDictionary.dicType",
+        "DataDictionary.name",
+        "DataDictionary.dicTypeName",
+        "DataDictionary.id",
+        "DataDictionary.code"
+      ]
+    },
+    {
+      "name": "Service D",
+      "members": [
+        "LightReading.service.ReadingCloudAccountUserServiceImpl",
+        "LightReading.domain.User"
+      ],
+      "servicecutter_nanoentities": [
+        "User.nickName",
+        "User.createTime",
+        "User.loginName",
+        "User.uuid",
+        "User.userPwd",
+        "User.updateTime",
+        "User.headImgUrl",
+        "User.id",
+        "User.phoneNumber"
+      ]
+    },
+    {
+      "name": "Service E",
+      "members": [
+        "LightReading.domain.BookAuthor"
+      ],
+      "servicecutter_nanoentities": [
+        "BookAuthor.createTime",
+        "BookAuthor.headImgUrl",
+        "BookAuthor.updateTime",
+        "BookAuthor.name",
+        "BookAuthor.introduction",
+        "BookAuthor.id",
+        "BookAuthor.creater",
+        "BookAuthor.updater"
+      ]
+    }
+  ]
+}

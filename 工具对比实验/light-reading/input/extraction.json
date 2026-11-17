@@ -1,0 +1,2965 @@
+{
+  "parser": "javalang 0.13.0",
+  "parsed_classes": 129,
+  "spring_applications": {
+    "light-reading-cloud-account": "reading-cloud-account",
+    "light-reading-cloud-book": "reading-cloud-book",
+    "light-reading-cloud-gateway": "reading-cloud-gateway",
+    "light-reading-cloud-homepage": "reading-cloud-homepage"
+  },
+  "interface_implementations": {
+    "cn.zealon.readingcloud.account.service.UserBookshelfService": [
+      "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl"
+    ],
+    "cn.zealon.readingcloud.account.service.UserLikeSeeService": [
+      "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl"
+    ],
+    "cn.zealon.readingcloud.account.service.UserService": [
+      "cn.zealon.readingcloud.account.service.impl.UserServiceImpl"
+    ],
+    "Runnable": [
+      "cn.zealon.readingcloud.account.service.task.LikeSeeClickTask",
+      "cn.zealon.readingcloud.account.service.task.UserBookshelfTask"
+    ],
+    "java.io.Serializable": [
+      "cn.zealon.readingcloud.account.vo.UserVO",
+      "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "cn.zealon.readingcloud.book.vo.BookChapterListVO",
+      "cn.zealon.readingcloud.common.pojo.account.User",
+      "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "cn.zealon.readingcloud.common.pojo.account.UserLikeSee",
+      "cn.zealon.readingcloud.common.pojo.book.Book",
+      "cn.zealon.readingcloud.common.pojo.book.BookAuthor",
+      "cn.zealon.readingcloud.common.pojo.book.BookChapter",
+      "cn.zealon.readingcloud.common.pojo.book.DataDictionary",
+      "cn.zealon.readingcloud.common.pojo.index.IndexBanner",
+      "cn.zealon.readingcloud.common.pojo.index.IndexBannerItem",
+      "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "cn.zealon.readingcloud.common.pojo.index.IndexBooklistItem",
+      "cn.zealon.readingcloud.common.pojo.index.IndexPageConfig",
+      "cn.zealon.readingcloud.common.result.Result",
+      "cn.zealon.readingcloud.common.vo.SimpleBookVO",
+      "cn.zealon.readingcloud.homepage.vo.BannerItemVO",
+      "cn.zealon.readingcloud.homepage.vo.BookVO",
+      "cn.zealon.readingcloud.homepage.vo.BooklistBookVO",
+      "cn.zealon.readingcloud.homepage.vo.IndexBannerVO",
+      "cn.zealon.readingcloud.homepage.vo.IndexBooklistVO",
+      "cn.zealon.readingcloud.homepage.vo.IndexPageVO"
+    ],
+    "cn.zealon.readingcloud.book.service.BookChapterService": [
+      "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl"
+    ],
+    "cn.zealon.readingcloud.book.service.BookService": [
+      "cn.zealon.readingcloud.book.service.impl.BookServiceImpl"
+    ],
+    "cn.zealon.readingcloud.book.service.DataDictionaryService": [
+      "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl"
+    ],
+    "feign.hystrix.FallbackFactory": [
+      "cn.zealon.readingcloud.account.feign.fallback.LikeSeeClientFallBack",
+      "cn.zealon.readingcloud.book.feign.fallback.BookClientFallBack"
+    ],
+    "org.springframework.cloud.gateway.filter.GlobalFilter": [
+      "cn.zealon.readingcloud.gateway.filter.AuthFilter"
+    ],
+    "org.springframework.core.Ordered": [
+      "cn.zealon.readingcloud.gateway.filter.AuthFilter"
+    ],
+    "cn.zealon.readingcloud.homepage.service.BookCenterService": [
+      "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl"
+    ],
+    "cn.zealon.readingcloud.homepage.service.IndexBannerService": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl"
+    ],
+    "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl"
+    ],
+    "cn.zealon.readingcloud.homepage.service.IndexBooklistService": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl"
+    ],
+    "cn.zealon.readingcloud.homepage.service.IndexPageConfigService": [
+      "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl"
+    ],
+    "cn.zealon.readingcloud.homepage.service.SearchService": [
+      "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl"
+    ]
+  },
+  "mapper_xml": [
+    {
+      "path": "reading-cloud-account/src/main/resources/mappers/UserLikeSeeMapper.xml",
+      "namespace": "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.account.UserLikeSee"
+      ],
+      "sha256": "07f3175f76a05606028c182a5c61bde3d69dda3f99bb6a44688ab3ca5012147c"
+    },
+    {
+      "path": "reading-cloud-account/src/main/resources/mappers/UserMapper.xml",
+      "namespace": "cn.zealon.readingcloud.account.dao.UserMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.account.User"
+      ],
+      "sha256": "19a3f26143e209f392b919dfa92b78f06ee8eaf8791fe2786396e3576b0a9126"
+    },
+    {
+      "path": "reading-cloud-book/src/main/resources/mappers/BookAuthorMapper.xml",
+      "namespace": "cn.zealon.readingcloud.book.dao.BookAuthorMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.book.BookAuthor"
+      ],
+      "sha256": "80d570bbea7d7a4b719ac1c743211c533c872e03f0dba72de40d1f589f41e0c6"
+    },
+    {
+      "path": "reading-cloud-book/src/main/resources/mappers/BookChapterMapper.xml",
+      "namespace": "cn.zealon.readingcloud.book.dao.BookChapterMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.book.BookChapter"
+      ],
+      "sha256": "1528bab6da2b0b377285735263e9da766556ff0326f5002ed2ed0c40a5e71343"
+    },
+    {
+      "path": "reading-cloud-book/src/main/resources/mappers/BookMapper.xml",
+      "namespace": "cn.zealon.readingcloud.book.dao.BookMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.book.Book"
+      ],
+      "sha256": "9e4d8fa9c69ea8bba9cf1e644434b4de2ff38edd8c69001731ddd78a3ecad8de"
+    },
+    {
+      "path": "reading-cloud-book/src/main/resources/mappers/DataDictionaryMapper.xml",
+      "namespace": "cn.zealon.readingcloud.book.dao.DataDictionaryMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.book.DataDictionary"
+      ],
+      "sha256": "a6ebe409e35b67a0a3b139263b675f31262e4fb4e0dddb963c06d57a20597062"
+    },
+    {
+      "path": "reading-cloud-homepage/src/main/resources/mappers/IndexBannerItemMapper.xml",
+      "namespace": "cn.zealon.readingcloud.homepage.dao.IndexBannerItemMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.index.IndexBannerItem"
+      ],
+      "sha256": "2da67f7f9f0453f585c64f32cb74d3cee4322ff9b5514f6dccdcde568dcab784"
+    },
+    {
+      "path": "reading-cloud-homepage/src/main/resources/mappers/IndexBannerMapper.xml",
+      "namespace": "cn.zealon.readingcloud.homepage.dao.IndexBannerMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.index.IndexBanner"
+      ],
+      "sha256": "da6fbb8de19ddad315135e4080286396b37e09ad6ff6a5d45507788154c4f39b"
+    },
+    {
+      "path": "reading-cloud-homepage/src/main/resources/mappers/IndexBooklistItemMapper.xml",
+      "namespace": "cn.zealon.readingcloud.homepage.dao.IndexBooklistItemMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.index.IndexBooklistItem"
+      ],
+      "sha256": "aef612f56e12e0253052a1fe16f7f200e7f1ce7d68e927b136987cbea8970f02"
+    },
+    {
+      "path": "reading-cloud-homepage/src/main/resources/mappers/IndexBooklistMapper.xml",
+      "namespace": "cn.zealon.readingcloud.homepage.dao.IndexBooklistMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.index.IndexBooklist"
+      ],
+      "sha256": "8a3d069f0e665f8951c02a1243d59f3cf3d20f18a1b7c9330639c995f424b957"
+    },
+    {
+      "path": "reading-cloud-homepage/src/main/resources/mappers/IndexPageConfigMapper.xml",
+      "namespace": "cn.zealon.readingcloud.homepage.dao.IndexPageConfigMapper",
+      "entities": [
+        "cn.zealon.readingcloud.common.pojo.index.IndexPageConfig"
+      ],
+      "sha256": "03cb2fc0d25436b9ad6181e9e868425a247da71fc02373ce6e1eef2c093dbd6d"
+    }
+  ],
+  "services": {
+    "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl": "ReadingCloudAccountUserBookshelfServiceImpl",
+    "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl": "ReadingCloudAccountUserLikeSeeServiceImpl",
+    "cn.zealon.readingcloud.account.service.impl.UserServiceImpl": "ReadingCloudAccountUserServiceImpl",
+    "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl": "ReadingCloudBookBookChapterServiceImpl",
+    "cn.zealon.readingcloud.book.service.impl.BookServiceImpl": "ReadingCloudBookBookServiceImpl",
+    "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl": "ReadingCloudBookDataDictionaryServiceImpl",
+    "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl": "ReadingCloudHomepageBookCenterServiceImpl",
+    "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl": "ReadingCloudHomepageIndexBannerServiceImpl",
+    "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+    "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl": "ReadingCloudHomepageIndexBooklistServiceImpl",
+    "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+    "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl": "ReadingCloudHomepageSearchServiceImpl"
+  },
+  "operations": [
+    {
+      "id": "ReadingCloudAccountUserBookshelfServiceImplSyncUserBookshelf",
+      "service": "ReadingCloudAccountUserBookshelfServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#syncUserBookshelf/2@45",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserBookshelfServiceImpl.java",
+      "line": 45,
+      "direct_entities": [
+        "UserBookshelf"
+      ],
+      "entities": [
+        "UserBookshelf"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserBookshelfServiceImplGetUserBookshelf",
+      "service": "ReadingCloudAccountUserBookshelfServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserBookshelfServiceImpl.java",
+      "line": 57,
+      "direct_entities": [
+        "Book",
+        "UserBookshelf"
+      ],
+      "entities": [
+        "Book",
+        "UserBookshelf"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#findPageWithResult/1@26",
+        "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudBookBookServiceImpl",
+          "operation": "ReadingCloudBookBookServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudAccountUserBookshelfServiceImplUserBookshelfExistBook",
+      "service": "ReadingCloudAccountUserBookshelfServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#userBookshelfExistBook/2@76",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserBookshelfServiceImpl.java",
+      "line": 76,
+      "direct_entities": [
+        "UserBookshelf"
+      ],
+      "entities": [
+        "UserBookshelf"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.dao.UserBookshelfMapper#selectCountByUserAndBookId/2@21",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserLikeSeeServiceImplLikeSeeClick",
+      "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#likeSeeClick/3@50",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserLikeSeeServiceImpl.java",
+      "line": 50,
+      "direct_entities": [
+        "UserLikeSee"
+      ],
+      "entities": [
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#deleteByUserIdAndBookId/2@15",
+        "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#insert/1@18",
+        "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount",
+      "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getBookLikesCount/1@73",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserLikeSeeServiceImpl.java",
+      "line": 73,
+      "direct_entities": [
+        "UserLikeSee"
+      ],
+      "entities": [
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#findPageWithCount/1@25",
+        "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391",
+        "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserLikeSeeServiceImplGetUserLikeBookList",
+      "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getUserLikeBookList/3@83",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserLikeSeeServiceImpl.java",
+      "line": 83,
+      "direct_entities": [
+        "Book",
+        "UserLikeSee"
+      ],
+      "entities": [
+        "Book",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#findPageWithResult/1@23",
+        "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+        "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudBookBookServiceImpl",
+          "operation": "ReadingCloudBookBookServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudAccountUserLikeSeeServiceImplUserLikeThisBook",
+      "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#userLikeThisBook/2@105",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserLikeSeeServiceImpl.java",
+      "line": 105,
+      "direct_entities": [
+        "UserLikeSee"
+      ],
+      "entities": [
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.dao.UserLikeSeeMapper#selectCountByUserAndBookId/2@20",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserServiceImplRegister",
+      "service": "ReadingCloudAccountUserServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserServiceImpl.java",
+      "line": 37,
+      "direct_entities": [
+        "User"
+      ],
+      "entities": [
+        "User"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserEncryptPassword/2@31",
+        "cn.zealon.readingcloud.account.dao.UserMapper#insert/1@12",
+        "cn.zealon.readingcloud.account.dao.UserMapper#selectByLoginName/1@16",
+        "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/0@12",
+        "cn.zealon.readingcloud.common.result.ResultUtil#verificationFailed/0@231",
+        "cn.zealon.readingcloud.common.utils.CommonUtil#getUUID/0@35"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserServiceImplLogin",
+      "service": "ReadingCloudAccountUserServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserServiceImpl.java",
+      "line": 60,
+      "direct_entities": [
+        "User"
+      ],
+      "entities": [
+        "User"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+        "cn.zealon.readingcloud.account.common.utils.UserUtil#getUserEncryptPassword/2@31",
+        "cn.zealon.readingcloud.account.dao.UserMapper#selectByLoginName/1@16",
+        "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#getLoginExpre/0@105",
+        "cn.zealon.readingcloud.common.result.ResultUtil#fail/0@48",
+        "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+        "cn.zealon.readingcloud.common.result.ResultUtil#verificationFailed/0@231"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserServiceImplLogout",
+      "service": "ReadingCloudAccountUserServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#logout/1@87",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserServiceImpl.java",
+      "line": 87,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserServiceImplUpdate",
+      "service": "ReadingCloudAccountUserServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#update/1@92",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserServiceImpl.java",
+      "line": 92,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudAccountUserServiceImplUpdatePassword",
+      "service": "ReadingCloudAccountUserServiceImpl",
+      "java_method": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#updatePassword/1@97",
+      "path": "reading-cloud-account/src/main/java/cn/zealon/readingcloud/account/service/impl/UserServiceImpl.java",
+      "line": 97,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudBookBookChapterServiceImplGetBookChapterListByBookId",
+      "service": "ReadingCloudBookBookChapterServiceImpl",
+      "java_method": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getBookChapterListByBookId/1@47",
+      "path": "reading-cloud-book/src/main/java/cn/zealon/readingcloud/book/service/impl/BookChapterServiceImpl.java",
+      "line": 47,
+      "direct_entities": [
+        "Book",
+        "BookChapter"
+      ],
+      "entities": [
+        "Book",
+        "BookChapter"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.dao.BookChapterMapper#findPageWithResult/1@17",
+        "cn.zealon.readingcloud.book.service.BookService#getBookById/1@18",
+        "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterListKey/1@21",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCacheForList/2@156",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+        "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudBookBookServiceImpl",
+          "operation": "ReadingCloudBookBookServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudBookBookChapterServiceImplGetChapterById",
+      "service": "ReadingCloudBookBookChapterServiceImpl",
+      "java_method": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterById/2@71",
+      "path": "reading-cloud-book/src/main/java/cn/zealon/readingcloud/book/service/impl/BookChapterServiceImpl.java",
+      "line": 71,
+      "direct_entities": [
+        "BookChapter"
+      ],
+      "entities": [
+        "BookChapter"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.dao.BookChapterMapper#selectById/1@15",
+        "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookChapterKey/1@16",
+        "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391",
+        "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudBookBookChapterServiceImplReadChapter",
+      "service": "ReadingCloudBookBookChapterServiceImpl",
+      "java_method": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "path": "reading-cloud-book/src/main/java/cn/zealon/readingcloud/book/service/impl/BookChapterServiceImpl.java",
+      "line": 86,
+      "direct_entities": [
+        "Book"
+      ],
+      "entities": [
+        "Book",
+        "BookChapter"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.service.BookService#getBookById/1@18",
+        "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterContent/2@201",
+        "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+        "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudBookBookServiceImpl",
+          "operation": "ReadingCloudBookBookServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudBookBookServiceImplGetBookById",
+      "service": "ReadingCloudBookBookServiceImpl",
+      "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33",
+      "path": "reading-cloud-book/src/main/java/cn/zealon/readingcloud/book/service/impl/BookServiceImpl.java",
+      "line": 33,
+      "direct_entities": [
+        "Book"
+      ],
+      "entities": [
+        "Book"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.dao.BookMapper#selectByBookId/1@16",
+        "cn.zealon.readingcloud.common.cache.RedisBookKey#getBookKey/1@11",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudBookBookServiceImplGetBookDetails",
+      "service": "ReadingCloudBookBookServiceImpl",
+      "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "path": "reading-cloud-book/src/main/java/cn/zealon/readingcloud/book/service/impl/BookServiceImpl.java",
+      "line": 46,
+      "direct_entities": [
+        "Book"
+      ],
+      "entities": [
+        "Book"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33",
+        "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudBookDataDictionaryServiceImplGetDictionarys",
+      "service": "ReadingCloudBookDataDictionaryServiceImpl",
+      "java_method": "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getDictionarys/2@30",
+      "path": "reading-cloud-book/src/main/java/cn/zealon/readingcloud/book/service/impl/DataDictionaryServiceImpl.java",
+      "line": 30,
+      "direct_entities": [
+        "DataDictionary"
+      ],
+      "entities": [
+        "DataDictionary"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.dao.DataDictionaryMapper#findPageWithResult/1@18",
+        "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getMap/1@46",
+        "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407",
+        "cn.zealon.readingcloud.common.cache.RedisService#setHashValsExpire/3@420"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudHomepageBookCenterServiceImplGetBookById",
+      "service": "ReadingCloudHomepageBookCenterServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/BookCenterServiceImpl.java",
+      "line": 27,
+      "direct_entities": [
+        "Book"
+      ],
+      "entities": [
+        "Book"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudBookBookServiceImpl",
+          "operation": "ReadingCloudBookBookServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookById/1@33"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBannerServiceImplGetBannerVO",
+      "service": "ReadingCloudHomepageIndexBannerServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl#getBannerVO/1@38",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBannerServiceImpl.java",
+      "line": 38,
+      "direct_entities": [
+        "IndexBanner",
+        "IndexBannerItem"
+      ],
+      "entities": [
+        "IndexBanner",
+        "IndexBannerItem"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBannerVoKey/1@20",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+        "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18",
+        "cn.zealon.readingcloud.homepage.dao.IndexBannerItemMapper#findPageWithResult/1@21",
+        "cn.zealon.readingcloud.homepage.dao.IndexBannerMapper#selectById/1@12"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistPagingBooks",
+      "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistPagingBooks/3@63",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistItemServiceImpl.java",
+      "line": 63,
+      "direct_entities": [
+        "IndexBooklistItem"
+      ],
+      "entities": [
+        "Book",
+        "IndexBooklistItem"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistItemPagingKey/1@40",
+        "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407",
+        "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+        "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18",
+        "cn.zealon.readingcloud.homepage.dao.IndexBooklistItemMapper#findPageWithResult/1@19",
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudHomepageBookCenterServiceImpl",
+          "operation": "ReadingCloudHomepageBookCenterServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistExchange",
+      "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistExchange/2@94",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistItemServiceImpl.java",
+      "line": 94,
+      "direct_entities": [
+        "IndexBooklist"
+      ],
+      "entities": [
+        "Book",
+        "IndexBooklist",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.result.ResultUtil#notFound/0@141",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+        "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getIndexBooklistById/1@26",
+        "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getRandomIndexBooklistVO/2@34"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistById",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistById/1@70"
+        },
+        {
+          "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBooklistServiceImplGetRandomIndexBooklistVO",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks",
+      "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistRandomBooks/5@120",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistItemServiceImpl.java",
+      "line": 120,
+      "direct_entities": [],
+      "entities": [
+        "Book",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159",
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistOrderBooks/4@147",
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getClientBookIds/2@209"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+          "operation": "ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount",
+          "java_method": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getBookLikesCount/1@73"
+        },
+        {
+          "service": "ReadingCloudHomepageBookCenterServiceImpl",
+          "operation": "ReadingCloudHomepageBookCenterServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistOrderBooks",
+      "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistOrderBooks/4@147",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistItemServiceImpl.java",
+      "line": 147,
+      "direct_entities": [],
+      "entities": [
+        "Book",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudAccountUserLikeSeeServiceImpl",
+          "operation": "ReadingCloudAccountUserLikeSeeServiceImplGetBookLikesCount",
+          "java_method": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getBookLikesCount/1@73"
+        },
+        {
+          "service": "ReadingCloudHomepageBookCenterServiceImpl",
+          "operation": "ReadingCloudHomepageBookCenterServiceImplGetBookById",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistVO",
+      "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistServiceImpl.java",
+      "line": 44,
+      "direct_entities": [
+        "IndexBooklist"
+      ],
+      "entities": [
+        "Book",
+        "IndexBooklist",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistVoKey/1@30",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+        "cn.zealon.readingcloud.common.enums.BooklistMoreTypeEnum#getValue/0@22",
+        "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistOrderBooks/4@49",
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistById/1@70",
+        "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistOrderBooks",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistOrderBooks/4@147"
+        },
+        {
+          "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistRandomBooks/5@120"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistById",
+      "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistById/1@70",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistServiceImpl.java",
+      "line": 70,
+      "direct_entities": [
+        "IndexBooklist"
+      ],
+      "entities": [
+        "IndexBooklist"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistDbKey/1@25",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@151",
+        "cn.zealon.readingcloud.common.cache.RedisService#getCache/2@168",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@215",
+        "cn.zealon.readingcloud.common.cache.RedisService#setExpireCache/3@254",
+        "cn.zealon.readingcloud.homepage.dao.IndexBooklistMapper#selectById/1@12"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudHomepageIndexBooklistServiceImplGetRandomIndexBooklistVO",
+      "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexBooklistServiceImpl.java",
+      "line": 83,
+      "direct_entities": [
+        "IndexBooklist"
+      ],
+      "entities": [
+        "Book",
+        "IndexBooklist",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getBooklistRandomVoKey/1@35",
+        "cn.zealon.readingcloud.common.cache.RedisService#getHashVal/3@391",
+        "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+        "cn.zealon.readingcloud.homepage.service.IndexBooklistItemService#getBooklistRandomBooks/5@39"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudHomepageIndexBooklistItemServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBooklistItemServiceImplGetBooklistRandomBooks",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistRandomBooks/5@120"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageIndexPageConfigServiceImplGetIndexPageByType",
+      "service": "ReadingCloudHomepageIndexPageConfigServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/IndexPageConfigServiceImpl.java",
+      "line": 47,
+      "direct_entities": [
+        "IndexPageConfig"
+      ],
+      "entities": [
+        "Book",
+        "IndexBanner",
+        "IndexBannerItem",
+        "IndexBooklist",
+        "IndexPageConfig",
+        "UserLikeSee"
+      ],
+      "calls": [
+        "cn.zealon.readingcloud.common.cache.RedisHomepageKey#getHomepageKey/1@15",
+        "cn.zealon.readingcloud.common.cache.RedisService#getHashListVal/3@407",
+        "cn.zealon.readingcloud.common.cache.RedisService#setHashValExpire/4@415",
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+        "cn.zealon.readingcloud.common.utils.CommonUtil#isEmpty/1@18",
+        "cn.zealon.readingcloud.homepage.service.IndexBannerService#getBannerVO/1@17",
+        "cn.zealon.readingcloud.homepage.service.IndexBooklistService#getIndexBooklistVO/2@19",
+        "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageWithPaging/3@109"
+      ],
+      "resolved_service_calls": [
+        {
+          "service": "ReadingCloudHomepageIndexBannerServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBannerServiceImplGetBannerVO",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl#getBannerVO/1@38"
+        },
+        {
+          "service": "ReadingCloudHomepageIndexBooklistServiceImpl",
+          "operation": "ReadingCloudHomepageIndexBooklistServiceImplGetIndexBooklistVO",
+          "java_method": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44"
+        }
+      ]
+    },
+    {
+      "id": "ReadingCloudHomepageSearchServiceImplGetHotSearchWordList",
+      "service": "ReadingCloudHomepageSearchServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getHotSearchWordList/1@50",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/SearchServiceImpl.java",
+      "line": 50,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+        "cn.zealon.readingcloud.homepage.dao.HotSearchWordMapper#getHotSearchWordList/1@20"
+      ],
+      "resolved_service_calls": []
+    },
+    {
+      "id": "ReadingCloudHomepageSearchServiceImplGetSearchResultBooks",
+      "service": "ReadingCloudHomepageSearchServiceImpl",
+      "java_method": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResultBooks/3@56",
+      "path": "reading-cloud-homepage/src/main/java/cn/zealon/readingcloud/homepage/service/impl/SearchServiceImpl.java",
+      "line": 56,
+      "direct_entities": [],
+      "entities": [],
+      "calls": [
+        "cn.zealon.readingcloud.common.result.ResultUtil#success/1@30",
+        "cn.zealon.readingcloud.homepage.domain.RequestQuery#toString/0@26",
+        "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79"
+      ],
+      "resolved_service_calls": []
+    }
+  ],
+  "entities": [
+    {
+      "entity": "User",
+      "java_class": "cn.zealon.readingcloud.common.pojo.account.User",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/account/User.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "uuid",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "userPwd",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "loginName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "nickName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "phoneNumber",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "headImgUrl",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "UserBookshelf",
+      "java_class": "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/account/UserBookshelf.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "userId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "lastChapterId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "lastReadTime",
+          "java_type": "Long",
+          "model_type": "Integer"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "UserLikeSee",
+      "java_class": "cn.zealon.readingcloud.common.pojo.account.UserLikeSee",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/account/UserLikeSee.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "userId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "Book",
+      "java_class": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/book/Book.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "authorId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "dicCategory",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "dicChannel",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "dicSerialStatus",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "onlineStatus",
+          "java_type": "Boolean",
+          "model_type": "String"
+        },
+        {
+          "name": "bookId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "bookName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "bookScore",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "keyWord",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "imgUrl",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "authorName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "introduction",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "isbn",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "wordCount",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "BookAuthor",
+      "java_class": "cn.zealon.readingcloud.common.pojo.book.BookAuthor",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/book/BookAuthor.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "name",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "introduction",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "headImgUrl",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "BookChapter",
+      "java_class": "cn.zealon.readingcloud.common.pojo.book.BookChapter",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/book/BookChapter.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "name",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "content",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "lockStatus",
+          "java_type": "Boolean",
+          "model_type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        }
+      ]
+    },
+    {
+      "entity": "DataDictionary",
+      "java_class": "cn.zealon.readingcloud.common.pojo.book.DataDictionary",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/book/DataDictionary.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "dicType",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "dicTypeName",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "code",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "name",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        }
+      ]
+    },
+    {
+      "entity": "IndexBanner",
+      "java_class": "cn.zealon.readingcloud.common.pojo.index.IndexBanner",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/index/IndexBanner.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "name",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "IndexBannerItem",
+      "java_class": "cn.zealon.readingcloud.common.pojo.index.IndexBannerItem",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/index/IndexBannerItem.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bannerId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "name",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "imgUrl",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "url",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "IndexBooklist",
+      "java_class": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/index/IndexBooklist.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "name",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "showNumber",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "style",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "moreType",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "moreUrl",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "bookIds",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "startDate",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "endDate",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "showLikeCount",
+          "java_type": "Boolean",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "IndexBooklistItem",
+      "java_class": "cn.zealon.readingcloud.common.pojo.index.IndexBooklistItem",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/index/IndexBooklistItem.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "booklistId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "bookId",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "sortNumber",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    },
+    {
+      "entity": "IndexPageConfig",
+      "java_class": "cn.zealon.readingcloud.common.pojo.index.IndexPageConfig",
+      "path": "reading-cloud-common/src/main/java/cn/zealon/readingcloud/common/pojo/index/IndexPageConfig.java",
+      "fields": [
+        {
+          "name": "id",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "pageType",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "itemType",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "itemId",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "startDate",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "endDate",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "sortNumber",
+          "java_type": "Integer",
+          "model_type": "Integer"
+        },
+        {
+          "name": "creater",
+          "java_type": "String",
+          "model_type": "String"
+        },
+        {
+          "name": "createTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updateTime",
+          "java_type": "Date",
+          "model_type": "Date"
+        },
+        {
+          "name": "updater",
+          "java_type": "String",
+          "model_type": "String"
+        }
+      ]
+    }
+  ],
+  "feign_routes": [
+    {
+      "method": "cn.zealon.readingcloud.account.feign.client.LikeSeeClient#getBookLikesCount/1@18",
+      "target_module": "reading-cloud-account",
+      "verb": "GET",
+      "path": "/account/like-see/get-count",
+      "controller_targets": [
+        "cn.zealon.readingcloud.account.controller.LikeSeeController#getBookLikesCount/1@44"
+      ]
+    },
+    {
+      "method": "cn.zealon.readingcloud.book.feign.client.BookClient#getBookById/1@20",
+      "target_module": "reading-cloud-book",
+      "verb": "ANY",
+      "path": "/book/getBookById",
+      "controller_targets": [
+        "cn.zealon.readingcloud.book.controller.BookController#getBookById/1@32"
+      ]
+    }
+  ],
+  "unresolved_project_calls": [
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#buildUserBookshelfQueueThreadPool/0@32",
+      "receiver": "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig",
+      "member": "setNameFormat",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig#buildUserBookshelfQueueThreadPool/0@32",
+      "receiver": "cn.zealon.readingcloud.account.common.config.BookshelfThreadPoolConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.RedisConfig#keyGenerator/0@40",
+      "receiver": "cn.zealon.readingcloud.account.common.config.RedisConfig",
+      "member": "append",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.RedisConfig#keyGenerator/0@40",
+      "receiver": "cn.zealon.readingcloud.account.common.config.RedisConfig",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.RedisConfig#cacheManager/1@56",
+      "receiver": "cn.zealon.readingcloud.account.common.config.RedisConfig",
+      "member": "serializeValuesWith",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#buildCommonQueueThreadPool/0@33",
+      "receiver": "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig",
+      "member": "setNameFormat",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig#buildCommonQueueThreadPool/0@33",
+      "receiver": "cn.zealon.readingcloud.account.common.config.ThreadPoolConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "signWith",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "setExpiration",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "claim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserVO",
+      "member": "getLoginName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "claim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserVO",
+      "member": "getNickName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "claim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserVO",
+      "member": "getPhoneNumber",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "claim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserVO",
+      "member": "getHeadImgUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "claim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserVO",
+      "member": "getUuid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "claim",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserVO",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.common.utils.JwtUtil#buildJwt/2@22",
+      "receiver": "cn.zealon.readingcloud.account.common.utils.JwtUtil",
+      "member": "compact",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#syncUserBookshelf/2@45",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "member": "setLastReadTime",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#syncUserBookshelf/2@45",
+      "receiver": "cn.zealon.readingcloud.account.bo.UserBookshelfBO",
+      "member": "getSyncType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "member": "getBookId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserBookshelfVO",
+      "member": "setBookName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getBookName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserBookshelfVO",
+      "member": "setAuthorName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getAuthorName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.account.vo.UserBookshelfVO",
+      "member": "setImgUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserBookshelfServiceImpl#getUserBookshelf/1@57",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getImgUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#likeSeeClick/3@50",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserLikeSee",
+      "member": "setUserId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#likeSeeClick/3@50",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserLikeSee",
+      "member": "setBookId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getUserLikeBookList/3@83",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserLikeSee",
+      "member": "getBookId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl#getUserLikeBookList/3@83",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserLikeSeeServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.bo.UserBO",
+      "member": "getLoginName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.bo.UserBO",
+      "member": "getLoginName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.bo.UserBO",
+      "member": "getLoginName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.bo.UserBO",
+      "member": "getUserPwd",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setUserPwd",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setHeadImgUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setUuid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#register/1@37",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "getUserPwd",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.account.vo.AuthVO",
+      "member": "setToken",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.account.vo.AuthVO",
+      "member": "setUser",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl#login/2@60",
+      "receiver": "cn.zealon.readingcloud.account.service.impl.UserServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.task.UserBookshelfTask#run/0@23",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "member": "setUserId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.task.UserBookshelfTask#run/0@23",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "member": "setUserId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.account.service.task.UserBookshelfTask#run/0@23",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.UserBookshelf",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#bookDocket/0@29",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "select",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#bookDocket/0@29",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "apis",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#bookDocket/0@29",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "paths",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#bookDocket/0@29",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#bookDocket/0@29",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "apiInfo",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "title",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "description",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "termsOfServiceUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "contact",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "license",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "licenseUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "version",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.BookSwaggerConfig#apiInfo/0@43",
+      "receiver": "cn.zealon.readingcloud.book.common.BookSwaggerConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.config.RedisConfig#keyGenerator/0@39",
+      "receiver": "cn.zealon.readingcloud.book.common.config.RedisConfig",
+      "member": "append",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.config.RedisConfig#keyGenerator/0@39",
+      "receiver": "cn.zealon.readingcloud.book.common.config.RedisConfig",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.common.config.RedisConfig#cacheManager/1@55",
+      "receiver": "cn.zealon.readingcloud.book.common.config.RedisConfig",
+      "member": "serializeValuesWith",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getBookChapterListByBookId/1@47",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getBookChapterListByBookId/1@47",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getBookChapterListByBookId/1@47",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getPre",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getPre",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getPre",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getNext",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getNext",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getNext",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.vo.BookChapterReadVO",
+      "member": "setCurrent",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.vo.BookChapterReadVO",
+      "member": "setPre",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#readChapter/2@86",
+      "receiver": "cn.zealon.readingcloud.book.vo.BookChapterReadVO",
+      "member": "setNext",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.BookChapter",
+      "member": "getLockStatus",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.BookChapter",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.BookChapter",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "setPre",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "setNext",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterNodeData/2@135",
+      "receiver": "cn.zealon.readingcloud.book.domain.BookPreviousAndNextChapterNode",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterContent/2@201",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookChapterServiceImpl#getChapterContent/2@201",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.BookChapter",
+      "member": "getContent",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.common.constant.CategoryConstant",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getDicCategory",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.book.vo.BookVO",
+      "member": "setCategoryName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.common.enums.BookSerialStatusEnum",
+      "member": "values",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getDicSerialStatus",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.BookServiceImpl#getBookDetails/1@46",
+      "receiver": "cn.zealon.readingcloud.book.vo.BookVO",
+      "member": "setSerialStatusName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getMap/1@46",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.DataDictionary",
+      "member": "getCode",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl#getMap/1@46",
+      "receiver": "cn.zealon.readingcloud.book.service.impl.DataDictionaryServiceImpl",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.common.request.RequestParams#getIntValue/1@22",
+      "receiver": "cn.zealon.readingcloud.common.request.RequestParams",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.common.request.RequestParams#getIntValue/1@22",
+      "receiver": "cn.zealon.readingcloud.common.request.RequestParams",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.common.request.RequestParams#getIntValue/1@22",
+      "receiver": "cn.zealon.readingcloud.common.request.RequestParams",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.common.request.RequestParams#getStringValue/1@42",
+      "receiver": "cn.zealon.readingcloud.common.request.RequestParams",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.common.utils.CommonUtil#getUUID/0@35",
+      "receiver": "cn.zealon.readingcloud.common.utils.CommonUtil",
+      "member": "replaceAll",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.common.utils.MD5Util#MD5Encode/2@20",
+      "receiver": "cn.zealon.readingcloud.common.utils.MD5Util",
+      "member": "equals",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.config.RedisRateLimiterConfig#ipKeyResolver/0@21",
+      "receiver": "cn.zealon.readingcloud.gateway.common.config.RedisRateLimiterConfig",
+      "member": "getRemoteAddress",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.config.RedisRateLimiterConfig#ipKeyResolver/0@21",
+      "receiver": "cn.zealon.readingcloud.gateway.common.config.RedisRateLimiterConfig",
+      "member": "getHostName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "setSigningKey",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "parseClaimsJws",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "getBody",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setUuid",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setLoginName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setNickName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setPhoneNumber",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "setHeadImgUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#validationToken/1@24",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil#main/1@53",
+      "receiver": "cn.zealon.readingcloud.gateway.common.utils.JwtUtil",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "getPath",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "getHeaders",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "getFirst",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "toString",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.common.pojo.account.User",
+      "member": "getNickName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "mutate",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "headers",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "request",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "getBytes",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "wrap",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#filter/2@41",
+      "receiver": "cn.zealon.readingcloud.gateway.filter.AuthFilter",
+      "member": "add",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.gateway.filter.AuthFilter#getWhiteList/0@97",
+      "receiver": "cn.zealon.readingcloud.gateway.common.config.SystemPropertiesConfig",
+      "member": "getWhitelist",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.Test#main/1@10",
+      "receiver": "cn.zealon.readingcloud.homepage.Test",
+      "member": "split",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#customDocket/0@30",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "select",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#customDocket/0@30",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "apis",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#customDocket/0@30",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "paths",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#customDocket/0@30",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#customDocket/0@30",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "apiInfo",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "title",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "description",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "termsOfServiceUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "contact",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "license",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "licenseUrl",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "version",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig#apiInfo/0@44",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HomepageSwaggerConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "setterFactory",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "andCommandKey",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "getSimpleName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "andCommandPropertiesDefaults",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "withExecutionTimeoutInMilliseconds",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "andThreadPoolPropertiesDefaults",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "withAllowMaximumSizeToDivergeFromCoreSize",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "withMaximumSize",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "withCoreSize",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "withMaxQueueSize",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig#bookFeignHystrixBuilder/0@19",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.HystrixCommandBookConfig",
+      "member": "getSimpleName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.JestConfig",
+      "member": "multiThreaded",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.JestConfig",
+      "member": "connTimeout",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.JestConfig",
+      "member": "readTimeout",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.JestConfig",
+      "member": "maxTotalConnection",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.JestConfig",
+      "member": "defaultMaxTotalConnectionPerRoute",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.JestConfig#jestClient/0@28",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.JestConfig",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.RedisConfig#keyGenerator/0@40",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.RedisConfig",
+      "member": "append",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.RedisConfig#keyGenerator/0@40",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.RedisConfig",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.common.config.RedisConfig#cacheManager/1@56",
+      "receiver": "cn.zealon.readingcloud.homepage.common.config.RedisConfig",
+      "member": "serializeValuesWith",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27",
+      "receiver": "cn.zealon.readingcloud.common.cache.RedisBookKey",
+      "member": "getFeignClientBookKey",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl#getBookById/1@27",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.BookCenterServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl#getBannerVO/1@38",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBanner",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBannerServiceImpl#getBannerVO/1@38",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBanner",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistPagingBooks/3@63",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl",
+      "member": "getBookId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistExchange/2@94",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl",
+      "member": "getData",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBooklistBookVOByBookIdArray/3@159",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.BooklistBookVO",
+      "member": "setLikeCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.BooklistBookVO",
+      "member": "setLikeCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.common.constant.CategoryConstant",
+      "member": "get",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getDicCategory",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.BooklistBookVO",
+      "member": "setCategoryName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.common.enums.BookSerialStatusEnum",
+      "member": "values",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.common.pojo.book.Book",
+      "member": "getDicSerialStatus",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl",
+      "member": "getName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getBookVO/1@186",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.BooklistBookVO",
+      "member": "setSerialStatusName",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistItemServiceImpl#getClientBookIds/2@209",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexBooklistVO",
+      "member": "getBooks",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getMoreType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getBookIds",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getShowNumber",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getShowLikeCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexBooklistVO",
+      "member": "setBooks",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getIndexBooklistVO/2@44",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexBooklistVO",
+      "member": "setRandomNumber",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getBookIds",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getShowNumber",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexBooklist",
+      "member": "getShowLikeCount",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexBooklistVO",
+      "member": "setBooks",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexBooklistServiceImpl#getRandomIndexBooklistVO/2@83",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexBooklistVO",
+      "member": "setRandomNumber",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl",
+      "member": "buildMessage",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexPageConfig",
+      "member": "getItemType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexPageVO",
+      "member": "setBooklist",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexPageConfig",
+      "member": "getItemId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexPageVO",
+      "member": "getBooklist",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexPageVO",
+      "member": "setBanner",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.common.pojo.index.IndexPageConfig",
+      "member": "getItemId",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.IndexPageConfigServiceImpl#getIndexPageByType/3@47",
+      "receiver": "cn.zealon.readingcloud.homepage.vo.IndexPageVO",
+      "member": "getBanner",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl",
+      "member": "addIndex",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl",
+      "member": "addType",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79",
+      "receiver": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl",
+      "member": "build",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79",
+      "receiver": "cn.zealon.readingcloud.homepage.domain.SearchBookResult",
+      "member": "setTotal",
+      "reason": "inherited/generated/unsupported overload"
+    },
+    {
+      "caller": "cn.zealon.readingcloud.homepage.service.impl.SearchServiceImpl#getSearchResult/1@79",
+      "receiver": "cn.zealon.readingcloud.homepage.domain.SearchBookResult",
+      "member": "setBookList",
+      "reason": "inherited/generated/unsupported overload"
+    }
+  ],
+  "model_sha256": "ea351f34e84f80608396be88552199eaadf18e39a5778f1738b8adbd4cc49530",
+  "zero_entity_services": [
+    "ReadingCloudHomepageSearchServiceImpl"
+  ],
+  "zero_entity_operations": [
+    "ReadingCloudAccountUserServiceImplLogout",
+    "ReadingCloudAccountUserServiceImplUpdate",
+    "ReadingCloudAccountUserServiceImplUpdatePassword",
+    "ReadingCloudHomepageSearchServiceImplGetHotSearchWordList",
+    "ReadingCloudHomepageSearchServiceImplGetSearchResultBooks"
+  ],
+  "entity_relationship_policy": "Only declared entity-typed fields. Scalar *Id fields are retained as scalar attributes; no guessed foreign keys.",
+  "usecase_policy": "One Spring @Service class is one use-case proxy; all its public non-static methods are operations. Existing module boundary is not a clustering constraint. Module roles are actor proxies.",
+  "method_graph_policy": "Declared receiver types, this.field selectors, interface-to-implementation expansion, method name/arity; Feign app name/HTTP method/path to Controller route; Mapper XML/result types and monotonic entity reachability. No reflection/runtime dispatch/library implementation modeling.",
+  "seconds": 0.6874591669766232
+}

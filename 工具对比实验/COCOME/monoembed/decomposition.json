@@ -1,0 +1,98 @@
+{
+  "application": "COCOME",
+  "method": "bailian-embedding-standardscaler-affinity",
+  "is_monoembed": false,
+  "is_monoembed_variant": true,
+  "warning": "API encoder variant; not the paper's ME-llm2vec-340K reproduction.",
+  "model": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "input": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/monoembed/input/typeData.json",
+  "damping": 0.8,
+  "random_state": 0,
+  "statistics_file": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/cocome_20261103_01/monoembed/decomposition.stats.json",
+  "clusters": [
+    {
+      "cluster": 0,
+      "members": [
+        "COCOME.service.ManageStoreCRUDService",
+        "COCOME.service.ManageProductCatalogCRUDService",
+        "COCOME.service.ManageCashDeskCRUDService",
+        "COCOME.service.ManageCashierCRUDService",
+        "COCOME.service.ManageSupplierCRUDService",
+        "COCOME.service.OpenCashDeskService"
+      ],
+      "service_names": [
+        "ManageStoreCRUDService",
+        "ManageProductCatalogCRUDService",
+        "ManageCashDeskCRUDService",
+        "ManageCashierCRUDService",
+        "ManageSupplierCRUDService",
+        "OpenCashDeskService"
+      ]
+    },
+    {
+      "cluster": 1,
+      "members": [
+        "COCOME.service.CoCoMESystem",
+        "COCOME.domain.Store",
+        "COCOME.domain.CashDesk",
+        "COCOME.domain.Sale",
+        "COCOME.domain.Cashier"
+      ],
+      "service_names": [
+        "CoCoMESystem",
+        "domain-model",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 2,
+      "members": [
+        "COCOME.service.ManageItemCRUDService",
+        "COCOME.domain.ProductCatalog",
+        "COCOME.domain.SalesLineItem",
+        "COCOME.domain.Item"
+      ],
+      "service_names": [
+        "ManageItemCRUDService",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 3,
+      "members": [
+        "COCOME.service.ThirdPartyServices",
+        "COCOME.service.ProcessSale",
+        "COCOME.domain.Payment",
+        "COCOME.domain.CashPayment",
+        "COCOME.domain.CardPayment"
+      ],
+      "service_names": [
+        "ThirdPartyServices",
+        "ProcessSale",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    },
+    {
+      "cluster": 4,
+      "members": [
+        "COCOME.service.OrderProducts",
+        "COCOME.domain.OrderEntry",
+        "COCOME.domain.Supplier",
+        "COCOME.domain.OrderProduct"
+      ],
+      "service_names": [
+        "OrderProducts",
+        "domain-model",
+        "domain-model",
+        "domain-model"
+      ]
+    }
+  ]
+}

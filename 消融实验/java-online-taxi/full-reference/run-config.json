@@ -1,0 +1,105 @@
+{
+  "profile": "formal",
+  "configurationVersion": "nominal-six-10gen-v1",
+  "metricVersion": "paper-ieee-eq5-21-v2-isolated-zero",
+  "outputDirectory": "/Users/yuanyaowu/Desktop/实验室材料/UnifyMs/UnifyMS代码/output/java-online-taxi-guidance-loss05-isolated0-10seeds-20261110/experiment",
+  "selector": "jev",
+  "evaluationBudget": 0,
+  "calibrationSeeds": [
+    11
+  ],
+  "validationSeeds": [
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "systems": [
+    {
+      "id": "JavaOnlineTaxi",
+      "input": "/Users/yuanyaowu/Desktop/输出/java-online-taxi/input/java-online-taxi.remodel"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "C0",
+      "populationSize": 200,
+      "generations": 100,
+      "crossoverProbability": 0.7,
+      "crossP": 0.5
+    },
+    {
+      "id": "C1",
+      "populationSize": 150,
+      "generations": 150,
+      "crossoverProbability": 0.7,
+      "crossP": 0.5
+    },
+    {
+      "id": "C2",
+      "populationSize": 100,
+      "generations": 200,
+      "crossoverProbability": 0.7,
+      "crossP": 0.5
+    },
+    {
+      "id": "C3",
+      "populationSize": 200,
+      "generations": 100,
+      "crossoverProbability": 0.5,
+      "crossP": 0.25
+    },
+    {
+      "id": "C4",
+      "populationSize": 200,
+      "generations": 100,
+      "crossoverProbability": 0.9,
+      "crossP": 0.75
+    },
+    {
+      "id": "C5",
+      "populationSize": 100,
+      "generations": 200,
+      "crossoverProbability": 0.9,
+      "crossP": 0.25
+    }
+  ],
+  "jev": {
+    "endpoint": "https://api.jevgo.cn/v1/systemone",
+    "model": "jev-1.14.0",
+    "timeoutMillis": 60000
+  },
+  "onlineControl": {
+    "mode": "jev",
+    "intervalGenerations": 10,
+    "historyWindows": 3,
+    "step": 0.05,
+    "minProbability": 0.1,
+    "maxProbability": 0.9,
+    "noveltyThreshold": 0.2,
+    "gainThreshold": 0.0002,
+    "requestTimeoutMillis": 5000
+  },
+  "guidance": {
+    "version": "small-model-batch-guidance-v1",
+    "mode": "jev",
+    "intervalGenerations": 10,
+    "maxTasks": 4,
+    "candidatesPerTask": 2,
+    "maxSelected": 3,
+    "lossTolerance": 0.5,
+    "generator": {
+      "baseUrl": "https://api.chatfire.cn/v1",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "apiKeyEnv": "CHATFIRE_API_KEY",
+      "temperature": 0.3,
+      "timeoutMillis": 60000
+    }
+  }
+}

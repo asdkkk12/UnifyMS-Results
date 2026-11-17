@@ -1,0 +1,18 @@
+{
+  "source": "/Volumes/PPLE/unifyms/microservices-decomposition-variability/runs/loan_20261103_02/input/loan.remodel",
+  "model": "servicecutter_model.json",
+  "user_representations": "servicecutter_user_representations.json",
+  "assumptions": [
+    "remodel associations are emitted as ServiceCutter AGGREGATION relations",
+    "use-case entity references are emitted against the first available attribute of each Entity",
+    "actor groups are represented as sharedOwnerGroups",
+    "include/extend relations are not represented by this adapter",
+    "use cases with no inferable entity use the first entity as a deterministic ServiceCutter sentinel"
+  ],
+  "counts": {
+    "entities": 8,
+    "relations": 7,
+    "use_cases": 10,
+    "shared_owner_groups": 2
+  }
+}
